@@ -37,7 +37,7 @@ export default function Home() {
   const [city, setCity] = useState("all");
   const [type, setType] = useState("all");
   const [emergencyOnly, setEmergencyOnly] = useState(false);
-
+  const [openNowOnly, setOpenNowOnly] = useState(false);
   const handleSearch = () => {
     console.log("搜尋條件：", { city, type, emergencyOnly });
     // 你可以這裡接資料、呼叫 API 等等
@@ -72,6 +72,7 @@ export default function Home() {
         <FilterPanel onCityChange={setCity}
           onTypeChange={setType}
           onEmergencyToggle={setEmergencyOnly}
+          onOpenNowToggle={setOpenNowOnly}
           onSearch={handleSearch} />
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

@@ -6,6 +6,7 @@ type FilterPanelProps = {
   onCityChange?: (value: string) => void;
   onTypeChange?: (value: string) => void;
   onEmergencyToggle?: (checked: boolean) => void;
+  onOpenNowToggle?: (checked: boolean) => void;
   onSearch?: () => void;
 };
 
@@ -13,6 +14,7 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
   onCityChange,
   onTypeChange,
   onEmergencyToggle,
+  onOpenNowToggle,
   onSearch,
 }) => {
   return (
