@@ -26,7 +26,7 @@ export default function Navbar() {
 
           {/* 電腦選單 */}
           <div className="desktop-menu hidden md:flex items-center space-x-4">
-            <div className="dropdown relative group">
+            {/* <div className="dropdown relative group">
               <Link href="/blog" className="nav-item">部落格</Link>
               <div className="dropdown-menu absolute hidden group-hover:block bg-white rounded shadow-md mt-2 p-2 z-10">
                 <Link href="/blog/mouse" className="dropdown-item block px-4 py-2 hover:bg-mintlight/20">鼠類飼養</Link>
@@ -35,7 +35,7 @@ export default function Navbar() {
                 <Link href="/blog/reptile" className="dropdown-item block px-4 py-2 hover:bg-mintlight/20">爬蟲相關</Link>
                 <Link href="/blog/other" className="dropdown-item block px-4 py-2 hover:bg-mintlight/20">其他特寵</Link>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* 手機選單按鈕 */}

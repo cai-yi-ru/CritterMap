@@ -17,6 +17,7 @@ interface Hospital {
     rating?: string;
     services?: string[];
     pets?: string[];
+    pet_category_group?: string[];
     website?: string;
     hours?: string;
     business_hours?: {

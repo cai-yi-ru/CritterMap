@@ -1,11 +1,3 @@
-// 接下來是將你的 HTML 拆分為 Next.js 專案結構的版本，主要元件會包含：
-// - pages/index.tsx (首頁)
-// - components/Navbar.tsx (導覽列)
-// - components/HospitalList.tsx
-// - components/MapContainer.tsx
-// - components/FilterPanel.tsx
-// - components/HospitalModal.tsx
-// 下面為首頁頁面 pages/index.tsx：
 
 'use client';
 
@@ -15,7 +7,9 @@ import Navbar from './components/Navbar';
 import FilterPanel from './components/FilterPanel';
 import HospitalList from './components/HospitalList';
 import HospitalModal from './components/HospitalModal';
-// import { hospitals } from '@/utils/hospitalList';
+import Footer from './components/Footer';
+
+
 import { getHospitals } from '@/lib/getHospitals';
 
 
@@ -32,6 +26,7 @@ export interface Hospital {
   rating?: string;
   services?: string[];
   pets?: string[];
+  pet_category_group?: string[];
   website?: string;
   hours?: string;
   business_hours?: {
@@ -64,23 +59,69 @@ export interface Hospital {
 const MapPanel = dynamic(() => import('./components/MapPanel'), {
   ssr: false
 });
+
+function isOpenNow(businessHours?: Record<string, string[]>): boolean {
+  if (!businessHours) return false;
+
+  const now = new Date();
+  const weekday = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'][now.getDay()];
+  const todayHours = businessHours[weekday] || [];
+
+  const nowMinutes = now.getHours() * 60 + now.getMinutes();
+
+  return todayHours.some(period => {
+    const [start, end] = period.split('-');
+    const [startH, startM] = start.split(':').map(Number);
+    const [endH, endM] = end.split(':').map(Number);
+    const startMinutes = startH * 60 + startM;
+    const endMinutes = endH * 60 + endM;
+    return nowMinutes >= startMinutes && nowMinutes <= endMinutes;
+  });
+}
+
 export default function Home() {
   const [filteredHospitals, setFilteredHospitals] = useState<Hospital[]>([]);
+  const [allHospitals, setAllHospitals] = useState<Hospital[]>([]);
   const [selectedHospital, setSelectedHospital] = useState<Hospital | null>(null);
   const [city, setCity] = useState("all");
   const [type, setType] = useState("all");
   const [emergencyOnly, setEmergencyOnly] = useState(false);
   const [openNowOnly, setOpenNowOnly] = useState(false);
   const handleSearch = () => {
-    console.log("搜尋條件：", { city, type, emergencyOnly });
-    // 你可以這裡接資料、呼叫 API 等等
+    console.log("搜尋條件：", { city, type, emergencyOnly, openNowOnly });
+  
+    let filtered = allHospitals;
+  
+    // 篩選城市
+    if (city !== 'all') {
+      filtered = filtered.filter(h => h.city === city);
+    }
+  
+    // 篩選支援寵物類別
+    if (type !== 'all') {
+      filtered = filtered.filter(h => h.pet_category_group?.includes(type));
+    }
+  
+    // 篩選是否急診
+    if (emergencyOnly) {
+      filtered = filtered.filter(h => h.emergency === true);
+    }
+  
+    // 篩選是否目前營業
+    if (openNowOnly) {
+      filtered = filtered.filter(h => isOpenNow(h.business_hours));
+    }
+  
+    console.log('filteredHospitals', filtered);
+    setFilteredHospitals(filtered);
   };
 
   // 初始載入醫院資料
   useEffect(() => {
     async function fetchHospitals() {
       const hospitals = await getHospitals();
-      setFilteredHospitals(hospitals);
+      setAllHospitals(hospitals);
+      setFilteredHospitals(hospitals)
     }
     fetchHospitals();
   }, []);
@@ -96,18 +137,18 @@ export default function Home() {
               <p className="text-gray-600">尋找您附近的特寵動物醫院，查看詳細資訊並獲取聯絡方式</p>
             </div>
             <div className="mt-4 md:mt-0">
-              <div className="flex items-center justify-center md:justify-end space-x-2">
+              {/* <div className="flex items-center justify-center md:justify-end space-x-2">
                 <div className="w-3 h-3 rounded-full bg-mint"></div>
                 <span className="text-sm text-gray-600">一般動物醫院</span>
                 <div className="w-3 h-3 rounded-full bg-softpink ml-3"></div>
                 <span className="text-sm text-gray-600">24小時急診</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </header>
 
         <FilterPanel onCityChange={setCity}
-          onTypeChange={setType}
+          onPetCategoryChange={setType}
           onEmergencyToggle={setEmergencyOnly}
           onOpenNowToggle={setOpenNowOnly}
           onSearch={handleSearch} />
@@ -127,6 +168,7 @@ export default function Home() {
       {selectedHospital && (
         <HospitalModal hospital={selectedHospital} onClose={() => setSelectedHospital(null)} />
       )}
+      <Footer></Footer>
     </div>
   );
 }

@@ -13,6 +13,7 @@ interface Hospital {
     rating?: string;
     services?: string[];
     pets?: string[];
+    pet_category_group?: string[];
     website?: string;
     hours?: string;
     business_hours?: {
@@ -57,7 +58,6 @@ const petEmojis: Record<string, string> = {
   "鳥類": "🦜",
   "鳥": "🦜",
   "爬蟲類": "🦎",
-  "蜜袋鼯": "🐿️",
   "刺蝟": "🦔"
 };
 

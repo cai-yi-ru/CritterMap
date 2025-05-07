@@ -35,6 +35,7 @@ export default function MapPanel({ hospitals }) {
     <div className="bg-white rounded-2xl shadow-sm p-6 aspect-square min-h-[300px] lg:aspect-auto lg:h-[600px]">
 
     <MapContainer
+        key="main-map"
       center={[22.622448929879802, 120.3331298763747]}
       zoom={13}
       scrollWheelZoom={true}
