@@ -39,18 +39,18 @@ const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick 
       {hospitals.map((hospital) => {
         const fullStars = Math.floor(hospital.rating);
         const hasHalfStar = hospital.rating % 1 >= 0.5;
-        
+
         // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        let starsHtml = "";
-        for (let i = 0; i < 5; i++) {
-          if (i < fullStars) {
-            starsHtml += "★";
-          } else if (i === fullStars && hasHalfStar) {
-            starsHtml += "<span style='opacity:0.5'>★</span>";
-          } else {
-            starsHtml += "<span style='opacity:0.2'>★</span>";
-          }
-        }
+        // let starsHtml = "";
+        // for (let i = 0; i < 5; i++) {
+        //   if (i < fullStars) {
+        //     starsHtml += "★";
+        //   } else if (i === fullStars && hasHalfStar) {
+        //     starsHtml += "<span style='opacity:0.5'>★</span>";
+        //   } else {
+        //     starsHtml += "<span style='opacity:0.2'>★</span>";
+        //   }
+        // }
 
         let petIcons = hospital.pets.slice(0, 4).map(p => petEmojis[p] || "").join(" ");
         if (hospital.pets.length > 4) {
