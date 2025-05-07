@@ -1,4 +1,98 @@
+@import "./style.css";
 @import "tailwindcss";
+
+
+@layer theme {
+  :root {
+    --color-mint: #7CC4B2;
+    --color-mintlight: #A8E0D2;
+    --color-mintdark: #5A9B8A;
+    --color-cream: #FFF8E1;
+    --color-offwhite: #FAF9F6;
+    --color-softpink: #FADADD;
+    --color-darktext: #3C4043;
+  }
+}
+@layer components {
+  /* 文字顏色 */
+  .text-mint { color: var(--color-mint); }
+  .text-mintlight { color: var(--color-mintlight); }
+  .text-mintdark { color: var(--color-mintdark); }
+  .text-cream { color: var(--color-cream); }
+  .text-offwhite { color: var(--color-offwhite); }
+  .text-softpink { color: var(--color-softpink); }
+  .text-darktext { color: var(--color-darktext); }
+
+  /* 背景顏色 */
+  .bg-mint { background-color: var(--color-mint); }
+  .bg-mintlight { background-color: var(--color-mintlight); }
+  .bg-mintdark { background-color: var(--color-mintdark); }
+  .bg-cream { background-color: var(--color-cream); }
+  .bg-offwhite { background-color: var(--color-offwhite); }
+  .bg-softpink { background-color: var(--color-softpink); }
+  .bg-darktext { background-color: var(--color-darktext); }
+
+  /* 邊框顏色 */
+  .border-mint { border-color: var(--color-mint); }
+  /* 顏色變數透明版 */
+  .border-mint-30 { border-color: rgba(130, 210, 180, 0.3); } /* mint #82D2B4 */
+  .focus\:border-mint:focus { border-color: var(--color-mint); }
+  .focus\:ring-mint-20:focus { box-shadow: 0 0 0 3px rgba(130, 210, 180, 0.2); }
+  .border-mintlight { border-color: var(--color-mintlight); }
+  .border-mintdark { border-color: var(--color-mintdark); }
+  .border-cream { border-color: var(--color-cream); }
+  .border-offwhite { border-color: var(--color-offwhite); }
+  .border-softpink { border-color: var(--color-softpink); }
+  .border-darktext { border-color: var(--color-darktext); }
+  /* Hover 背景色 */
+  .hover\:bg-mint:hover { background-color: var(--color-mint); }
+  .hover\:bg-mintlight:hover { background-color: var(--color-mintlight); }
+  .hover\:bg-mintdark:hover { background-color: var(--color-mintdark); }
+  .hover\:bg-cream:hover { background-color: var(--color-cream); }
+  .hover\:bg-offwhite:hover { background-color: var(--color-offwhite); }
+  .hover\:bg-softpink:hover { background-color: var(--color-softpink); }
+  .hover\:bg-darktext:hover { background-color: var(--color-darktext); }
+
+  /* Hover 文字色 */
+  .hover\:text-mint:hover { color: var(--color-mint); }
+  .hover\:text-mintlight:hover { color: var(--color-mintlight); }
+  .hover\:text-mintdark:hover { color: var(--color-mintdark); }
+  .hover\:text-cream:hover { color: var(--color-cream); }
+  .hover\:text-offwhite:hover { color: var(--color-offwhite); }
+  .hover\:text-softpink:hover { color: var(--color-softpink); }
+  .hover\:text-darktext:hover { color: var(--color-darktext); }
+
+
+  .focus\:border-mint:focus {
+    border-color: var(--color-mint);
+  }
+
+  .focus\:ring-2:focus {
+    box-shadow: 0 0 0 2px rgba(130, 210, 180, 0.2); /* 自訂 2px 的 ring 效果 */
+  }
+
+  .focus\:ring-mint-20:focus {
+    box-shadow: 0 0 0 3px rgba(130, 210, 180, 0.2); /* 這是你目前的版本 */
+  }
+}
+
+@layer base {
+  body {
+    background-color: var(--color-offwhite);
+    color: var(--color-darktext);
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded font-semibold text-white;
+    background-color: var(--color-mint);
+  }
+
+  .btn:hover {
+    background-color: var(--color-mintdark);
+  }
+}
 
 :root {
   --background: #ffffff;
@@ -19,8 +113,8 @@
   }
 }
 
-body {
+/* body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
+} */

@@ -1,103 +1,94 @@
-import Image from "next/image";
+// 接下來是將你的 HTML 拆分為 Next.js 專案結構的版本，主要元件會包含：
+// - pages/index.tsx (首頁)
+// - components/Navbar.tsx (導覽列)
+// - components/HospitalList.tsx
+// - components/MapContainer.tsx
+// - components/FilterPanel.tsx
+// - components/HospitalModal.tsx
+// 下面為首頁頁面 pages/index.tsx：
 
+'use client';
+
+import { useEffect, useState } from 'react';
+import dynamic from 'next/dynamic';
+import Navbar from './components/Navbar';
+import FilterPanel from './components/FilterPanel';
+import HospitalList from './components/HospitalList';
+import HospitalModal from './components/HospitalModal';
+import { hospitals } from '@/utils/hospitalList';
+
+export interface Hospital {
+  id: string;
+  name: string;
+  address: string;
+  phone?: string;
+  lat: number;
+  lng: number;
+  typeText: string;
+  emergency?: boolean;
+}
+
+const MapPanel = dynamic(() => import('./components/MapPanel'), {
+  ssr: false
+});
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const [filteredHospitals, setFilteredHospitals] = useState<any[]>([]);
+  const [selectedHospital, setSelectedHospital] = useState<Hospital | null>(null);
+  const [city, setCity] = useState("all");
+  const [type, setType] = useState("all");
+  const [emergencyOnly, setEmergencyOnly] = useState(false);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  const handleSearch = () => {
+    console.log("搜尋條件：", { city, type, emergencyOnly });
+    // 你可以這裡接資料、呼叫 API 等等
+  };
+
+  // 初始載入醫院資料
+  useEffect(() => {
+    setFilteredHospitals(hospitals);
+  }, []);
+
+  return (
+    <div className="bg-offwhite min-h-screen">
+      <Navbar />
+      <main className="pt-20 container mx-auto px-4 py-8">
+        <header className="mb-8 text-center md:text-left">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+            <div>
+              <h1 className="text-3xl font-bold text-mintdark mb-2">動物醫院地圖搜尋</h1>
+              <p className="text-gray-600">尋找您附近的動物醫院，查看詳細資訊並獲取聯絡方式</p>
+            </div>
+            <div className="mt-4 md:mt-0">
+              <div className="flex items-center justify-center md:justify-end space-x-2">
+                <div className="w-3 h-3 rounded-full bg-mint"></div>
+                <span className="text-sm text-gray-600">一般動物醫院</span>
+                <div className="w-3 h-3 rounded-full bg-softpink ml-3"></div>
+                <span className="text-sm text-gray-600">24小時急診</span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <FilterPanel onCityChange={setCity}
+          onTypeChange={setType}
+          onEmergencyToggle={setEmergencyOnly}
+          onSearch={handleSearch} />
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="order-1 lg:order-2 lg:col-span-2 aspect-square lg:aspect-auto">
+          <MapPanel hospitals={filteredHospitals} />
+        </div>
+
+        {/* 清單在手機時 order-2，桌機時 order-1 */}
+        <div className="order-2 lg:order-1">
+          <HospitalList hospitals={filteredHospitals} onHospitalClick={setSelectedHospital} />
+        </div>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+      {selectedHospital && (
+        <HospitalModal hospital={selectedHospital} onClose={() => setSelectedHospital(null)} />
+      )}
     </div>
   );
 }
