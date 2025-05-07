@@ -79,7 +79,7 @@ export default function HospitalModal({ hospital, onClose }: HospitalModalProps)
               </div>
             )}
 
-            {hospital.services?.length > 0 && (
+            {hospital.services && hospital.services?.length > 0 && (
               <div className="border-t border-gray-100 pt-5">
                 <h4 className="font-medium text-mintdark mb-3">可提供服務</h4>
                 <div className="flex flex-wrap gap-2">
@@ -95,7 +95,7 @@ export default function HospitalModal({ hospital, onClose }: HospitalModalProps)
               </div>
             )}
 
-            {hospital.pets?.length > 0 && (
+            {hospital.pets && hospital.pets?.length > 0 && (
               <div className="border-t border-gray-100 pt-5">
                 <h4 className="font-medium text-mintdark mb-3">適合寵物</h4>
                 <div className="flex flex-wrap gap-2">
