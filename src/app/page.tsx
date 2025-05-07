@@ -32,7 +32,7 @@ const MapPanel = dynamic(() => import('./components/MapPanel'), {
   ssr: false
 });
 export default function Home() {
-  const [filteredHospitals, setFilteredHospitals] = useState<any[]>([]);
+  const [filteredHospitals, setFilteredHospitals] = useState<Hospital[]>([]);
   const [selectedHospital, setSelectedHospital] = useState<Hospital | null>(null);
   const [city, setCity] = useState("all");
   const [type, setType] = useState("all");

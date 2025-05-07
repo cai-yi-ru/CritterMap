@@ -39,7 +39,8 @@ const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick 
       {hospitals.map((hospital) => {
         const fullStars = Math.floor(hospital.rating);
         const hasHalfStar = hospital.rating % 1 >= 0.5;
-
+        
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         let starsHtml = "";
         for (let i = 0; i < 5; i++) {
           if (i < fullStars) {
