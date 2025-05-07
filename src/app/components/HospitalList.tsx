@@ -37,8 +37,8 @@ const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick 
   return (
     <div className="mx-auto space-y-4 overflow-y-auto max-h-[600px] pr-2 hospital-list-container">
       {hospitals.map((hospital) => {
-        const fullStars = Math.floor(hospital.rating);
-        const hasHalfStar = hospital.rating % 1 >= 0.5;
+        // const fullStars = Math.floor(hospital.rating);
+        // const hasHalfStar = hospital.rating % 1 >= 0.5;
 
         // let starsHtml = "";
         // for (let i = 0; i < 5; i++) {
