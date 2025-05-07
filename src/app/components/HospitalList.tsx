@@ -1,14 +1,46 @@
 import React from "react";
 
 interface Hospital {
-  id: number;
-  name: string;
-  address: string;
-  rating: number;
-  typeText: string;
-  emergency: boolean;
-  pets: string[];
-}
+    id: string;
+    name: string;
+    address: string;
+    city?: string;
+    district?: string;
+    phone?: string;
+    type: string;
+    typeText: string;
+    emergency?: boolean;
+    rating?: string;
+    services?: string[];
+    pets?: string[];
+    website?: string;
+    hours?: string;
+    business_hours?: {
+      mon: string[];
+      tue: string[];
+      wed: string[];
+      thu: string[];
+      fri: string[];
+      sat: string[];
+      sun: string[];
+    };
+    reservationRequired?: boolean;
+    hasEmergencyService?: boolean;
+    emergencyHours?: string;
+    nightClinic?: boolean;
+    specialties?: string[];
+    appointmentLink?: string;
+    transportTips?: string;
+    clinicNotes?: string;
+    lat: number;
+    lng: number;
+    socialMedia?: {
+      facebook?: string;
+      instagram?: string;
+      line?: string;
+      [key: string]: string | undefined;
+    };
+  }
 
 interface HospitalListProps {
   hospitals: Hospital[];
@@ -50,9 +82,9 @@ const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick 
         //     starsHtml += "<span style='opacity:0.2'>★</span>";
         //   }
         // }
-
-        let petIcons = hospital.pets.slice(0, 4).map(p => petEmojis[p] || "").join(" ");
-        if (hospital.pets.length > 4) {
+        
+        let petIcons = hospital.pets?hospital.pets.slice(0, 4).map(p => petEmojis[p] || "").join(" "):"";
+        if (hospital.pets && hospital.pets.length > 4) {
           petIcons += ` +${hospital.pets.length - 4}`;
         }
 
