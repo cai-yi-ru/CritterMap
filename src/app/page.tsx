@@ -15,7 +15,9 @@ import Navbar from './components/Navbar';
 import FilterPanel from './components/FilterPanel';
 import HospitalList from './components/HospitalList';
 import HospitalModal from './components/HospitalModal';
-import { hospitals } from '@/utils/hospitalList';
+// import { hospitals } from '@/utils/hospitalList';
+import { getHospitals } from '@/lib/getHospitals';
+
 
 export interface Hospital {
   id: string;
@@ -76,7 +78,11 @@ export default function Home() {
 
   // 初始載入醫院資料
   useEffect(() => {
-    setFilteredHospitals(hospitals);
+    async function fetchHospitals() {
+      const hospitals = await getHospitals();
+      setFilteredHospitals(hospitals);
+    }
+    fetchHospitals();
   }, []);
 
   return (
@@ -86,8 +92,8 @@ export default function Home() {
         <header className="mb-8 text-center md:text-left">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between">
             <div>
-              <h1 className="text-3xl font-bold text-mintdark mb-2">動物醫院地圖搜尋</h1>
-              <p className="text-gray-600">尋找您附近的動物醫院，查看詳細資訊並獲取聯絡方式</p>
+              <h1 className="text-3xl font-bold text-mintdark mb-2">特寵動物醫院地圖查詢</h1>
+              <p className="text-gray-600">尋找您附近的特寵動物醫院，查看詳細資訊並獲取聯絡方式</p>
             </div>
             <div className="mt-4 md:mt-0">
               <div className="flex items-center justify-center md:justify-end space-x-2">
