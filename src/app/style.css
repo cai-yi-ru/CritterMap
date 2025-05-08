@@ -269,7 +269,27 @@
     background-color: #7CC4B2;
     color: white;
 }
+/* 免責聲明區塊樣式 */
+.disclaimer-section {
+    background-color: #FFF8E1;
+    border-top: 1px solid #F3E8C8;
+}
 
+.disclaimer-item {
+    position: relative;
+    padding-left: 1.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.disclaimer-item:last-child {
+    margin-bottom: 0;
+}
+
+.disclaimer-icon {
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+}
   /* 漢堡選單 */
   .mobile-menu-button {
       display: none;

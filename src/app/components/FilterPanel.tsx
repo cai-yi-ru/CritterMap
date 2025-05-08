@@ -36,6 +36,7 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
             <option value="taoyuan">桃園市</option>
             <option value="taichung">台中市</option> */}
             <option value="高雄市">高雄市</option>
+            <option value="屏東縣">屏東縣</option>
           </select>
         </div>
 
@@ -99,17 +100,17 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
         <div className="flex items-end">
           <button
             onClick={onSearch}
-            className="w-full bg-mint hover:bg-mintdark text-white font-medium py-2.5 px-4 rounded-lg transition duration-150 ease-in-out shadow-sm"
+            className="w-full bg-mint hover:bg-mintdark text-white font-medium py-2.5 px-4 rounded-lg transition duration-150 ease-in-out shadow-sm cursor-pointer transform hover:-translate-y-0.5"
           >
             搜尋
           </button>
         </div>
       </div>
-      <div className="mt-6 bg-[#FFF8F8] border-l-4 border-softpink p-4 rounded-lg text-sm text-gray-700 leading-relaxed space-y-2">
+      {/* <div className="mt-6 bg-[#FFF8F8] border-l-4 border-softpink p-4 rounded-lg text-sm text-gray-700 leading-relaxed space-y-2">
         <p>🔔 醫院營運狀況可能隨時調整，<strong>實際是否看診仍以醫院公告或電話詢問為準</strong>。</p>
         <p>📞 為避免撲空或延誤看診，<strong>出發前請務必致電確認是否看特寵，以及是否需要預約</strong>。</p>
         <p className="text-red-700 font-semibold">
-            本平台提供「急診」與「目前營業」等篩選功能，僅供快速查詢參考，<strong>不代表完整醫療服務內容</strong>。
+            本平台提供「目前營業」篩選功能，僅供快速查詢參考，<strong>不代表完整醫療服務內容</strong>。
         </p>
         <ul className="list-disc pl-5 text-[0.95rem] space-y-1 mt-2">
             <li>部分特寵醫院採預約制，未預約可能無法看診。</li>
@@ -117,7 +118,7 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
             <li>資料僅供參考用途，<strong>非代表推薦、醫療建議，亦不代表推薦特定醫院</strong>。</li>
             <li>資料由人工一間一間上網找資料整理，若有錯漏，敬請見諒，出發前請再次致電醫院確認。</li>
         </ul>
-        </div>
+      </div> */}
     </div>
   );
 };

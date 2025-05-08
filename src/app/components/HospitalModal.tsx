@@ -2,50 +2,9 @@
 
 import { Dialog,DialogTitle } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/solid';
+import type { Hospital } from '@/types/hospital';
 
 
-interface Hospital {
-    id: string;
-    name: string;
-    address: string;
-    city?: string;
-    district?: string;
-    phone?: string;
-    type: string;
-    typeText: string;
-    emergency?: boolean;
-    rating?: string;
-    services?: string[];
-    pets?: string[];
-    pet_category_group?: string[];
-    website?: string;
-    hours?: string;
-    business_hours?: {
-      mon: string[];
-      tue: string[];
-      wed: string[];
-      thu: string[];
-      fri: string[];
-      sat: string[];
-      sun: string[];
-    };
-    reservationRequired?: boolean;
-    hasEmergencyService?: boolean;
-    emergencyHours?: string;
-    nightClinic?: boolean;
-    specialties?: string[];
-    appointmentLink?: string;
-    transportTips?: string;
-    clinicNotes?: string;
-    lat: number;
-    lng: number;
-    socialMedia?: {
-      facebook?: string;
-      instagram?: string;
-      line?: string;
-      [key: string]: string | undefined;
-    };
-  }
 
 interface HospitalModalProps {
   hospital: Hospital;
@@ -139,6 +98,18 @@ export default function HospitalModal({ hospital, onClose }: HospitalModalProps)
                       {petIcon(pet)} {pet}
                     </span>
                   ))}
+                </div>
+              </div>
+            )}
+            {hospital.clinicNotes && (
+              <div className="border-t border-gray-100 pt-5">
+                <h4 className="font-medium text-mintdark mb-3">備註(<strong>僅供參考</strong>)</h4>
+                <div className="flex flex-wrap gap-2">
+                  <span
+                      className="flex items-center gap-1 px-3 py-1 text-sm rounded-lg bg-cream text-darktext"
+                    >
+                      {hospital.clinicNotes}
+                    </span>
                 </div>
               </div>
             )}

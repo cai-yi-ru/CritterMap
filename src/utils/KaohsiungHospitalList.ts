@@ -1,4 +1,4 @@
-export const hospitals = [
+export const KaohsiungHospitalList = [
   {
     "id": "cb069d91-23ee-4721-9487-c910f950f2d5",
     "name": "樂蹦動物醫院",
@@ -67,7 +67,7 @@ export const hospitals = [
     "socialMedia": {
       "facebook": "https://www.facebook.com/%E6%A8%82%E8%B9%A6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-105442371395173/"
     },
-    "clinicNotes": "本院採預約制，看診對象包含兔子、倉鼠、黃金鼠、刺蝟、蜜袋鼯、天竺鼠、龍貓。第一次看診請提前 5–10 分鐘報到填寫病歷單。取消預約請提前一天來電，若當天臨時取消請私訊或來電。預約遲到超過 10 分鐘視同現場候診，不保證看診時間。未提前取消預約且當日無故缺席達兩次者，將取消預約資格。定期領藥請至少提前兩天通知。不接受無預約現場門診，如有發燒或疑似傳染情況，請勿直接前來，請先來電諮詢。"
+    "clinicNotes": "採預約制，看診對象包含兔子、倉鼠、黃金鼠、刺蝟、蜜袋鼯、天竺鼠、龍貓。第一次看診請提前 5–10 分鐘報到填寫病歷單。取消預約請提前一天致電，若當天臨時取消請私訊或致電。預約遲到超過 10 分鐘視同現場候診，不保證看診時間。未提前取消預約且當日無故缺席達兩次者，將取消預約資格。定期領藥請至少提前兩天通知。不接受無預約現場門診，如有發燒或疑似傳染情況，請勿直接前來，請先致電諮詢。"
   },
   {
     "id": "8c4814f6-a4f2-471e-9963-60c007c3a2e6",
@@ -272,7 +272,7 @@ export const hospitals = [
       "facebook": "https://www.facebook.com/profile.php?id=100064180026471",
       "instagram": "https://www.instagram.com/exoticjs16/"
     },
-    "clinicNotes": "特別寵物科位於梅西動物醫療中心五樓，提供兔、鼠、蛇、蜥蜴、龜、鸚鵡、蜜袋鼯、浣熊、刺蝟等特殊寵物的疾病診斷及治療。設有專屬非犬貓醫療空間，減少吠叫、獵捕者氣息，貼心考量患者多具敏感且易受驚嚇的自然習性。配備標準白鐵籠、訂製壓克力籠、ICU保溫病房及獨立手術房等設施。\n本院採取預約制,看診前請提前撥打電話預約唷"
+    "clinicNotes": "特別寵物科位於梅西動物醫療中心五樓，提供兔、鼠、蛇、蜥蜴、龜、鸚鵡、蜜袋鼯、浣熊、刺蝟等特殊寵物的疾病診斷及治療。設有專屬非犬貓醫療空間，減少吠叫、獵捕者氣息，貼心考量患者多具敏感且易受驚嚇的自然習性。配備標準白鐵籠、訂製壓克力籠、ICU保溫病房及獨立手術房等設施。\n採取預約制,看診前請提前撥打電話預約唷"
   },
   {
     "id": "20ffc868-d6b7-4fd4-9df3-727f109a32f6",
@@ -520,7 +520,7 @@ export const hospitals = [
       "facebook": "https://www.facebook.com/monsterah62/",
       "instagram": ""
     },
-    "clinicNotes": "本院採預約制，就診請先來電洽詢。"
+    "clinicNotes": "本院採預約制，就診請先致電洽詢。"
   },
   {
     "id": "zodiac-pet",
@@ -828,7 +828,7 @@ export const hospitals = [
     "appointmentLink": "",
     "transportTips": "",
     "socialMedia": {},
-    "clinicNotes": "聖弘綜合動物醫院提供犬、貓、鼠、兔等多種寵物的內科與外科診療服務。建議飼主於就診前先行來電確認門診時間。"
+    "clinicNotes": "聖弘綜合動物醫院提供犬、貓、鼠、兔等多種寵物的內科與外科診療服務。建議飼主於就診前先行致電確認門診時間。"
   },
   {
     "id": "jeivita-animal-hospital",
@@ -886,7 +886,7 @@ export const hospitals = [
     "socialMedia": {
       "facebook": "https://www.facebook.com/p/%E6%8D%B7%E9%A3%9B%E9%81%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-Jeivita-Animal-Hospital-100054306468844/"
     },
-    "clinicNotes": "捷飛達動物醫院專注於賽鴿、鸚鵡、寵物鳥禽、兔、鼠、貂等特殊寵物的診療服務，提供門診醫療、外科手術、住院照顧、健康檢查等多項服務。建議飼主於就診前先行來電預約，以確保診療品質。"
+    "clinicNotes": "捷飛達動物醫院專注於賽鴿、鸚鵡、寵物鳥禽、兔、鼠、貂等特殊寵物的診療服務，提供門診醫療、外科手術、住院照顧、健康檢查等多項服務。建議飼主於就診前先行致電預約，以確保診療品質。"
   },
   {
     "id": "alliance-animal-hospital-renwu",
@@ -950,7 +950,7 @@ export const hospitals = [
       "facebook": "https://www.facebook.com/AllianceVH/",
       "instagram": "https://www.instagram.com/alliance.veterinary/"
     },
-    "clinicNotes": "聯盟動物醫院（仁武總院）提供24小時住院照護與夜間急診服務，專精於心臟科、內視鏡微創手術、貓科診療及鼠兔特寵科等。建議飼主於就診前先行來電或透過LINE線上預約，以確保診療品質。"
+    "clinicNotes": "聯盟動物醫院（仁武總院）提供24小時住院照護與夜間急診服務，專精於心臟科、內視鏡微創手術、貓科診療及鼠兔特寵科等。建議飼主於就診前先行致電或透過LINE線上預約，以確保診療品質。"
   },
   {
     "id": "hongyuan-animal-hospital",
@@ -1125,7 +1125,7 @@ export const hospitals = [
     "socialMedia": {
       "facebook": "https://www.facebook.com/hunglivet/"
     },
-    "clinicNotes": "宏力動物醫院目前提供至凌晨 2 點的夜間急診服務，並已取消 24 小時急診。建議就診前先行來電確認與預約。"
+    "clinicNotes": "宏力動物醫院目前提供至凌晨 2 點的夜間急診服務，並已取消 24 小時急診。建議就診前先行致電確認與預約。"
   },
   {
     "id": "maomao-animal-hospital",
@@ -1193,6 +1193,496 @@ export const hospitals = [
       "facebook": "https://www.facebook.com/MoaMaoAnimalHospital/",
       "instagram": "https://www.instagram.com/maomaovet/"
     },
-    "clinicNotes": "毛毛動物醫院大社分院提供犬、貓、鼠、兔、鳥類、爬蟲類等特殊寵物的診療服務，包含內科、外科、牙科、皮膚科、腫瘤科、家醫科、中獸醫科、復健科、心臟科、重症加護等多項服務。建議飼主於就診前先行來電預約，以確保診療品質。"
+    "clinicNotes": "毛毛動物醫院大社分院提供犬、貓、鼠、兔、鳥類、爬蟲類等特殊寵物的診療服務，包含內科、外科、牙科、皮膚科、腫瘤科、家醫科、中獸醫科、復健科、心臟科、重症加護等多項服務。建議飼主於就診前先行致電預約，以確保診療品質。"
+  },
+  {
+    "id": "udoch-animal-hospital",
+    "name": "烏鐸動物醫院",
+    "city": "高雄市",
+    "district": "苓雅區",
+    "address": "高雄市苓雅區中正一路139號",
+    "lat": 22.6282893,
+    "lng": 120.3308709,
+    "type": "general",
+    "typeText": "一般動物醫院",
+    "phone": "07-722-0804",
+    "hours": "週一、四、五 10:00–21:30\n週二 10:00–隔日00:00\n週三 00:00–09:30 / 10:00–21:30\n週六 10:30–隔日00:00\n週日 00:00–09:30 / 10:00–16:00",
+    "business_hours": {
+      "mon": ["10:00-21:30"],
+      "tue": ["10:00-00:00"],
+      "wed": ["00:00-09:30", "10:00-21:30"],
+      "thu": ["10:00-21:30"],
+      "fri": ["10:00-21:30"],
+      "sat": ["10:30-00:00"],
+      "sun": ["00:00-09:30", "10:00-16:00"]
+    },
+    "rating": "3.3",
+    "reservationRequired": false,
+    "hasEmergencyService": true,
+    "emergencyHours": "延長夜診至深夜，急診請至院內按鈴",
+    "nightClinic": true,
+    "services": [
+      "內科",
+      "外科",
+      "皮膚科",
+      "牙科",
+      "疼痛門診",
+      "安樂服務",
+      "預防針",
+      "晶片植入"
+    ],
+    "pets": ["犬", "貓"],
+    "pet_category_group": ["犬", "貓"],
+    "specialties": [
+      "一般動物診療"
+    ],
+    "website": "https://udochah.wixsite.com/udoch",
+    "appointmentLink": "",
+    "transportTips": "捷運五塊厝站4號出口後方約400公尺，捷運技擊館站2號出口前方約400公尺",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/p/%E7%83%8F%E9%90%B8%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-100054532446592/"
+    },
+    "clinicNotes": "設有夜間診療與急診按鈴服務。診療時間彈性，建議飼主提前致電確認。"
+  },
+  {
+    "id": "star-feather-animal-hospital-sanmin",
+    "name": "星羽動物醫院（三民院）",
+    "city": "高雄市",
+    "district": "三民區",
+    "address": "高雄市三民區信國路20號",
+    "lat": 22.6471426,
+    "lng": 120.3387335,
+    "type": "exotic",
+    "typeText": "特殊寵物診療",
+    "phone": "07-395-5131",
+    "hours": "週一至週三、週五至週六\n10:00–13:00 / 14:00–17:00 / 18:00–21:00\n週日 10:00–13:00 / 14:00–17:00\n週四固定公休",
+    "business_hours": {
+      "mon": [
+        "10:00-13:00",
+        "14:00-17:00",
+        "18:00-21:00"
+      ],
+      "tue": [
+        "10:00-13:00",
+        "14:00-17:00",
+        "18:00-21:00"
+      ],
+      "wed": [
+        "10:00-13:00",
+        "14:00-17:00",
+        "18:00-21:00"
+      ],
+      "thu": [],
+      "fri": [
+        "10:00-13:00",
+        "14:00-17:00",
+        "18:00-21:00"
+      ],
+      "sat": [
+        "10:00-13:00",
+        "14:00-17:00",
+        "18:00-21:00"
+      ],
+      "sun": [
+        "10:00-13:00",
+        "14:00-17:00"
+      ]
+    },
+    "rating": "",
+    "reservationRequired": true,
+    "hasEmergencyService": false,
+    "emergencyHours": "",
+    "nightClinic": false,
+    "services": [
+      "一般內科",
+      "一般外科",
+      "家醫科",
+      "皮膚科",
+      "牙科",
+      "心臟科",
+      "眼科",
+      "腫瘤科",
+      "特殊寵物內外科",
+      "腸胃道軟式內視鏡"
+    ],
+    "pets": [
+      "犬",
+      "貓",
+      "鸚鵡",
+      "鴿子",
+      "龜",
+      "守宮",
+      "蜥蜴",
+      "蛇",
+      "兔",
+      "天竺鼠",
+      "倉鼠",
+      "狐獴",
+      "龍貓",
+      "大小白鼠",
+      "蜜袋鼯",
+      "刺蝟"
+    ],
+    "pet_category_group": [
+      "犬",
+      "貓",
+      "兔",
+      "鼠",
+      "刺蝟",
+      "蜜袋鼯",
+      "鳥類",
+      "爬蟲",
+      "其他特寵"
+    ],
+    "specialties": [
+      "特殊寵物診療"
+    ],
+    "website": "https://starfeather.com.tw/",
+    "appointmentLink": "",
+    "transportTips": "",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/p/%E6%98%9F%E7%BE%BD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E4%B8%89%E6%B0%91%E9%99%A2-61562438660817/"
+    },
+    "clinicNotes": "星羽動物醫院三民院提供犬、貓及各類特殊寵物（如兔、鼠、刺蝟、蜜袋鼯、鳥類、爬蟲類等）的診療服務，設有分區住院病房，為不同物種提供專屬照護。本院採預約優先制，請於前一日診所上班時間致電預約。現場掛號視狀況安排，建議盡量事先預約避免久候。"
+  },
+  {
+    "id": "star-feather-animal-hospital-linyuan",
+    "name": "星羽動物醫院（林園院）",
+    "city": "高雄市",
+    "district": "林園區",
+    "address": "高雄市林園區東林西路487號",
+    "lat": 22.5035891,
+    "lng": 120.384304,
+    "type": "exotic",
+    "typeText": "特殊寵物診療",
+    "phone": "07-641-3808",
+    "hours": "週一、二、四、五、六\n0:00–14:00 / 17:00–21:00\n週日\n10:00–13:00 / 14:00–17:00\n週三公休",
+    "business_hours": {
+      "mon": ["10:00-14:00", "17:00-21:00"],
+      "tue": ["10:00-14:00", "17:00-21:00"],
+      "wed": [],
+      "thu": ["10:00-14:00", "17:00-21:00"],
+      "fri": ["10:00-14:00", "17:00-21:00"],
+      "sat": ["10:00-14:00", "17:00-21:00"],
+      "sun": ["10:00-13:00", "14:00-17:00"]
+    },
+    "rating": "",
+    "reservationRequired": true,
+    "hasEmergencyService": false,
+    "emergencyHours": "",
+    "nightClinic": false,
+    "services": [
+      "一般內科",
+      "一般外科",
+      "家醫科",
+      "皮膚科",
+      "牙科",
+      "心臟科",
+      "眼科",
+      "腫瘤科",
+      "特殊寵物內外科",
+      "腸胃道軟式內視鏡"
+    ],
+    "pets": [
+      "犬",
+      "貓",
+      "鸚鵡",
+      "鴿子",
+      "龜",
+      "守宮",
+      "蜥蜴",
+      "蛇",
+      "兔",
+      "天竺鼠",
+      "倉鼠",
+      "狐獴",
+      "龍貓",
+      "大小白鼠",
+      "蜜袋鼯",
+      "刺蝟"
+    ],
+    "pet_category_group": [
+      "犬",
+      "貓",
+      "兔",
+      "鼠",
+      "刺蝟",
+      "蜜袋鼯",
+      "鳥類",
+      "爬蟲",
+      "其他特寵"
+    ],
+    "specialties": [
+      "特殊寵物診療"
+    ],
+    "website": "https://starfeather.com.tw/",
+    "appointmentLink": "",
+    "transportTips": "",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/p/%E6%98%9F%E7%BE%BD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-100064155485163/"
+    },
+    "clinicNotes": "採預約優先制，建議飼主於營業時間致電預約。林園院設有大片草皮，提供犬隻散步放鬆，並為烏龜、爬蟲等提供日光浴空間，致力於為各類寵物提供舒適的診療環境。"
+  },
+  {
+    "id": "pei-yu-animal-hospital",
+    "name": "培昱動物醫院",
+    "city": "高雄市",
+    "district": "鳳山區",
+    "address": "高雄市鳳山區保泰路6號",
+    "lat": 22.5989478,
+    "lng": 120.3268014,
+    "type": "exotic",
+    "typeText": "特殊寵物診療",
+    "phone": "07-841-8289",
+    "hours": "週一至週六\n09:00–12:00 \n14:00–17:00 \n18:00–20:00\n週日公休",
+    "business_hours": {
+      "mon": ["09:00-12:00", "14:00-17:00", "18:00-20:00"],
+      "tue": ["09:00-12:00", "14:00-17:00", "18:00-20:00"],
+      "wed": ["09:00-12:00", "14:00-17:00", "18:00-20:00"],
+      "thu": ["09:00-12:00", "14:00-17:00", "18:00-20:00"],
+      "fri": ["09:00-12:00", "14:00-17:00", "18:00-20:00"],
+      "sat": ["09:00-12:00", "14:00-17:00", "18:00-20:00"],
+      "sun": []
+    },
+    "rating": "",
+    "reservationRequired": true,
+    "hasEmergencyService": false,
+    "emergencyHours": "",
+    "nightClinic": false,
+    "services": [
+      "中獸醫診療",
+      "針灸推拿",
+      "再生醫學",
+      "幹細胞療法",
+      "外泌體療法",
+      "一般內科",
+      "一般外科",
+      "心臟科",
+      "腎臟泌尿科",
+      "皮膚科",
+      "家醫科"
+    ],
+    "pets": [
+      "犬",
+      "貓",
+      "兔",
+      "鼠",
+      "龍貓",
+      "龜",
+      "守宮",
+      "蜥蜴",
+      "兩棲類",
+      "鳥類",
+      "鸚鵡"
+    ],
+    "pet_category_group": [
+      "犬",
+      "貓",
+      "兔",
+      "鼠",
+      "鳥類",
+      "爬蟲",
+      "其他特寵"
+    ],
+    "specialties": [
+      "中獸醫診療",
+      "特殊寵物診療"
+    ],
+    "website": "",
+    "appointmentLink": "",
+    "transportTips": "",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/profile.php?id=100064711207693"
+    },
+    "clinicNotes": "採預約優先制，建議飼主於營業時間致電預約。提供犬貓及多種特殊寵物（如兔、鼠、龍貓、龜、守宮、蜥蜴、兩棲類、鳥類等）的中西醫結合診療服務，包含針灸推拿、再生醫學、幹細胞療法等。"
+  },
+  {
+    "id": "dengchuan-animal-hospital",
+    "name": "登羣動物醫院",
+    "city": "高雄市",
+    "district": "前鎮區",
+    "address": "高雄市前鎮區瑞隆路228號",
+    "lat": 22.6058169,
+    "lng": 120.3338592,
+    "type": "general",
+    "typeText": "一般動物醫院",
+    "phone": "07-727-6739",
+    "hours": "週一至週六 09:00–13:00 / 14:00–21:30\n週日 09:00–17:00",
+    "business_hours": {
+      "mon": ["09:00-13:00", "14:00-21:30"],
+      "tue": ["09:00-13:00", "14:00-21:30"],
+      "wed": ["09:00-13:00", "14:00-21:30"],
+      "thu": ["09:00-13:00", "14:00-21:30"],
+      "fri": ["09:00-13:00", "14:00-21:30"],
+      "sat": ["09:00-13:00", "14:00-21:30"],
+      "sun": ["09:00-17:00"]
+    },
+    "rating": "",
+    "reservationRequired": false,
+    "hasEmergencyService": false,
+    "emergencyHours": "",
+    "nightClinic": false,
+    "services": [
+      "一般內科",
+      "一般外科",
+      "骨科",
+      "腫瘤科",
+      "神經內科",
+      "皮膚科",
+      "腎臟科（尿毒症洗腎治療）",
+      "眼科（白內障手術、眼球重建手術）",
+      "再生醫學",
+      "幹細胞治療",
+      "PRF療法",
+      "預防注射",
+      "專業寵物美容"
+    ],
+    "pets": [
+      "犬",
+      "貓"
+    ],
+    "pet_category_group": [
+      "犬",
+      "貓"
+    ],
+    "specialties": [
+      "再生醫學",
+      "幹細胞治療"
+    ],
+    "website": "https://dengchuan.blogspot.com/",
+    "appointmentLink": "",
+    "transportTips": "",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/stemvet/",
+      "instagram": "https://www.instagram.com/dengchuanvet/"
+    },
+    "clinicNotes": "部分貼文中有出現兔、鼠、鳥等特殊寵物案例，但診療物種請以實際聯繫院所為準。"
+  },
+  {
+    "id": "tomeetyou-animal-hospital",
+    "name": "小鳴動物醫院",
+    "city": "高雄市",
+    "district": "前鎮區",
+    "address": "高雄市前鎮區廣西路288號",
+    "lat": 22.6152864,
+    "lng": 120.3140525,
+    "type": "exotic",
+    "typeText": "特殊寵物診療",
+    "phone": "07-962-3055",
+    "hours": "週三 13:30–17:30 / 18:00–20:00\n週四至週六 08:30–12:00 / 13:30–17:30\n週日～週二公休",
+    "business_hours": {
+      "mon": [],
+      "tue": [],
+      "wed": ["13:30-17:30", "18:00-20:00"],
+      "thu": ["08:30-12:00", "13:30-17:30"],
+      "fri": ["08:30-12:00", "13:30-17:30"],
+      "sat": ["08:30-12:00", "13:30-17:30"],
+      "sun": []
+    },
+    "rating": "",
+    "reservationRequired": true,
+    "hasEmergencyService": false,
+    "emergencyHours": "",
+    "nightClinic": false,
+    "services": [
+      "特殊寵物內科",
+      "特殊寵物外科",
+      "內視鏡檢查與微創手術",
+      "耳道內視鏡檢查與治療",
+      "健康諮詢與講座"
+    ],
+    "pets": [
+      "兔",
+      "天竺鼠",
+      "倉鼠",
+      "刺蝟",
+      "蜜袋鼯",
+      "爬蟲類",
+      "禽鳥類"
+    ],
+    "pet_category_group": [
+      "兔",
+      "鼠",
+      "刺蝟",
+      "蜜袋鼯",
+      "鳥類",
+      "爬蟲"
+    ],
+    "specialties": [
+      "特殊寵物診療",
+      "內視鏡微創手術"
+    ],
+    "website": "https://www.tomeetyouah.com/",
+    "appointmentLink": "",
+    "transportTips": "",
+    "socialMedia": {
+      "facebook": "",
+      "instagram": "https://www.instagram.com/tomeetyouah/"
+    },
+    "clinicNotes": "採預約制，建議飼主於營業時間透過電話或LINE（ID：＠714zzvwn）預約掛號。"
+  },
+  {
+    "id": "yangming-little-monster-animal-hospital",
+    "name": "陽明小怪獸動物醫院－垚凱",
+    "city": "高雄市",
+    "district": "三民區",
+    "address": "高雄市三民區陽明路27號",
+    "lat": 22.6377648,
+    "lng": 120.3409321,
+    "type": "exotic",
+    "typeText": "特殊寵物診療",
+    "phone": "07-390-9898",
+    "hours": "週一至五 09:00–12:00 / 14:00–17:00 / 18:00–20:00\n週三無早診，週六與週日休息",
+    "business_hours": {
+      "mon": ["09:00-12:00", "14:00-17:00", "18:00-20:00"],
+      "tue": ["09:00-12:00", "14:00-17:00", "18:00-20:00"],
+      "wed": ["14:00-17:00", "18:00-20:00"],
+      "thu": ["09:00-12:00", "14:00-17:00", "18:00-20:00"],
+      "fri": ["09:00-12:00", "14:00-17:00", "18:00-20:00"],
+      "sat": [],
+      "sun": []
+    },
+    "rating": "",
+    "reservationRequired": true,
+    "hasEmergencyService": false,
+    "emergencyHours": "",
+    "nightClinic": false,
+    "services": [
+      "中獸醫診療",
+      "針灸推拿",
+      "再生醫學",
+      "幹細胞療法",
+      "外泌體療法",
+      "特殊寵物內外科"
+    ],
+    "pets": [
+      "兔",
+      "天竺鼠",
+      "寵物鼠",
+      "刺蝟",
+      "貂",
+      "犬",
+      "貓"
+    ],
+    "pet_category_group": [
+      "犬",
+      "貓",
+      "兔",
+      "鼠",
+      "刺蝟",
+      "貂"
+    ],
+    "specialties": [
+      "特殊寵物診療",
+      "中獸醫診療"
+    ],
+    "website": "",
+    "appointmentLink": "",
+    "transportTips": "",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/61567826075208",
+      "instagram": "https://www.instagram.com/agbug1127/"
+    },
+    "clinicNotes": "提供兔、天竺鼠、寵物鼠、刺蝟、貂等非犬貓寵物的診療服務。採預約制，建議飼主於營業時間透過電話或社群媒體預約掛號。"
   }
 ]
