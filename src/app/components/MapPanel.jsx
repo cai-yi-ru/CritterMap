@@ -50,14 +50,14 @@ export default function MapPanel({ hospitals }) {
         <Marker
           key={hospital.id}
           position={[hospital.lat, hospital.lng]}
-          icon={createHospitalIcon(hospital.emergency)}
+          icon={createHospitalIcon(hospital.hasEmergencyService)}
         >
           <Popup>
             <div>
-              <h3 className="font-bold text-mintdark">{hospital.name}</h3>
+              <h3 className="font-bold text-mintdark text-xl">{hospital.name}</h3>
               <p className="text-sm text-gray-600 mt-1">{hospital.address}</p>
               <div className="text-xs mt-1">
-                {hospital.typeText} {hospital.emergency && <span className="text-red-500 ml-2">24 小時急診</span>}
+                {hospital.typeText} {hospital.hasEmergencyService && <span className="text-red-500 ml-2">夜間急診</span>}
               </div>
             </div>
           </Popup>

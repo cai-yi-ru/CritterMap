@@ -51,6 +51,7 @@ interface HospitalListProps {
 const petEmojis: Record<string, string> = {
   "貓": "🐱",
   "狗": "🐶",
+  "犬": "🐶",
   "倉鼠": "🐹",
   "鼠": "🐹",
   "兔子": "🐰",

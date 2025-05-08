@@ -60,22 +60,54 @@ const MapPanel = dynamic(() => import('./components/MapPanel'), {
   ssr: false
 });
 
+/** 判斷跨日改良版 */
 function isOpenNow(businessHours?: Record<string, string[]>): boolean {
   if (!businessHours) return false;
 
   const now = new Date();
-  const weekday = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'][now.getDay()];
-  const todayHours = businessHours[weekday] || [];
+  const dayIndex = now.getDay(); // 0 是 Sunday
+  const weekdays = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+  const currentWeekday = weekdays[dayIndex];
+  const previousWeekday = weekdays[(dayIndex + 6) % 7];
 
   const nowMinutes = now.getHours() * 60 + now.getMinutes();
 
-  return todayHours.some(period => {
-    const [start, end] = period.split('-');
+  const checkPeriods = [
+    ...(businessHours[currentWeekday] || []),
+    ...(businessHours[previousWeekday] || []).filter(period => {
+      const [start, end] = period.split('-');
+      const [startH, startM] = start.split(':').map(Number);
+      const [endH, endM] = end.split(':').map(Number);
+      return (endH * 60 + endM) < (startH * 60 + startM); // 跨夜時段才會考慮
+    }).map(period => {
+      const [start, end] = period.split('-');
+      return [`-1d ${start}`, end]; // 標記為昨天的跨夜時段
+    }),
+  ];
+
+  return checkPeriods.some(period => {
+    let [start, end] = typeof period === 'string' ? period.split('-') : period;
+
+    const isPreviousDay = start.startsWith('-1d');
+    if (isPreviousDay) {
+      start = start.replace('-1d ', '');
+    }
+
     const [startH, startM] = start.split(':').map(Number);
     const [endH, endM] = end.split(':').map(Number);
+
     const startMinutes = startH * 60 + startM;
     const endMinutes = endH * 60 + endM;
-    return nowMinutes >= startMinutes && nowMinutes <= endMinutes;
+
+    if (isPreviousDay) {
+      // 跨夜情況：現在時間必須小於 end
+      return nowMinutes <= endMinutes;
+    } else if (endMinutes < startMinutes) {
+      // 當日跨夜：例如 22:00–01:00
+      return nowMinutes >= startMinutes || nowMinutes <= endMinutes;
+    } else {
+      return nowMinutes >= startMinutes && nowMinutes <= endMinutes;
+    }
   });
 }
 
@@ -85,10 +117,10 @@ export default function Home() {
   const [selectedHospital, setSelectedHospital] = useState<Hospital | null>(null);
   const [city, setCity] = useState("all");
   const [type, setType] = useState("all");
-  const [emergencyOnly, setEmergencyOnly] = useState(false);
+  const [reservationRequiredOnly, setReservationRequiredOnly] = useState(false);
   const [openNowOnly, setOpenNowOnly] = useState(false);
   const handleSearch = () => {
-    console.log("搜尋條件：", { city, type, emergencyOnly, openNowOnly });
+    // console.log("搜尋條件：", { city, type, reservationRequiredOnly, openNowOnly });
   
     let filtered = allHospitals;
   
@@ -102,9 +134,9 @@ export default function Home() {
       filtered = filtered.filter(h => h.pet_category_group?.includes(type));
     }
   
-    // 篩選是否急診
-    if (emergencyOnly) {
-      filtered = filtered.filter(h => h.emergency === true);
+    // 篩選是否非預約制
+    if (reservationRequiredOnly) {
+      filtered = filtered.filter(h => h.reservationRequired === false);
     }
   
     // 篩選是否目前營業
@@ -137,19 +169,19 @@ export default function Home() {
               <p className="text-gray-600">尋找您附近的特寵動物醫院，查看詳細資訊並獲取聯絡方式</p>
             </div>
             <div className="mt-4 md:mt-0">
-              {/* <div className="flex items-center justify-center md:justify-end space-x-2">
+              <div className="flex items-center justify-center md:justify-end space-x-2">
                 <div className="w-3 h-3 rounded-full bg-mint"></div>
                 <span className="text-sm text-gray-600">一般動物醫院</span>
                 <div className="w-3 h-3 rounded-full bg-softpink ml-3"></div>
-                <span className="text-sm text-gray-600">24小時急診</span>
-              </div> */}
+                <span className="text-sm text-gray-600">夜間急診</span>
+              </div>
             </div>
           </div>
         </header>
 
         <FilterPanel onCityChange={setCity}
           onPetCategoryChange={setType}
-          onEmergencyToggle={setEmergencyOnly}
+          onReservationRequiredToggle={setReservationRequiredOnly}
           onOpenNowToggle={setOpenNowOnly}
           onSearch={handleSearch} />
 

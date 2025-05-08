@@ -5,7 +5,7 @@ import React from "react";
 type FilterPanelProps = {
   onCityChange?: (value: string) => void;
   onPetCategoryChange?: (value: string) => void;
-  onEmergencyToggle?: (checked: boolean) => void;
+  onReservationRequiredToggle?: (checked: boolean) => void;
   onOpenNowToggle?: (checked: boolean) => void;
   onSearch?: () => void;
 };
@@ -13,7 +13,7 @@ type FilterPanelProps = {
 const FilterPanel: React.FC<FilterPanelProps> = ({
   onCityChange,
   onPetCategoryChange,
-  onEmergencyToggle,
+  onReservationRequiredToggle,
   onOpenNowToggle,
   onSearch,
 }) => {
@@ -71,7 +71,7 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
                 <input
                     type="checkbox"
                     id="emergency"
-                    onChange={(e) => onEmergencyToggle?.(e.target.checked)}
+                    onChange={(e) => onReservationRequiredToggle?.(e.target.checked)}
                     className="mt-1"
                 />
                 <span className="checkmark" />
@@ -105,7 +105,7 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
           </button>
         </div>
       </div>
-      {/* <div className="mt-6 bg-[#FFF8F8] border-l-4 border-softpink p-4 rounded-lg text-sm text-gray-700 leading-relaxed space-y-2">
+      <div className="mt-6 bg-[#FFF8F8] border-l-4 border-softpink p-4 rounded-lg text-sm text-gray-700 leading-relaxed space-y-2">
         <p>🔔 醫院營運狀況可能隨時調整，<strong>實際是否看診仍以醫院公告或電話詢問為準</strong>。</p>
         <p>📞 為避免撲空或延誤看診，<strong>出發前請務必致電確認是否看特寵，以及是否需要預約</strong>。</p>
         <p className="text-red-700 font-semibold">
@@ -115,9 +115,9 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
             <li>部分特寵醫院採預約制，未預約可能無法看診。</li>
             <li>有些醫院僅特定醫師或時段看診特寵，非全天候開放。</li>
             <li>資料僅供參考用途，<strong>非代表推薦、醫療建議，亦不代表推薦特定醫院</strong>。</li>
-            <li>資料由志工人工整理，若有錯漏，敬請見諒，出發前請再次確認。</li>
+            <li>資料由人工一間一間上網找資料整理，若有錯漏，敬請見諒，出發前請再次致電醫院確認。</li>
         </ul>
-        </div> */}
+        </div>
     </div>
   );
 };

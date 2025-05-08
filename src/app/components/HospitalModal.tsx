@@ -102,15 +102,18 @@ export default function HospitalModal({ hospital, onClose }: HospitalModalProps)
                 {hospital.rating.toFixed(1)}
               </div>
             )} */}
-            {hospital.emergency && (
+            {hospital.hasEmergencyService && (
               <div className="p-4 bg-softpink/30 rounded-lg border border-softpink/30">
-                <span className="text-red-700 font-medium">🚨 此醫院提供 24 小時急診服務</span>
+                <span className="text-red-700 font-medium">🚨 此醫院提供夜間急診服務</span>
+                <span className="text-sm text-gray-700 break-words whitespace-pre-wrap ml-1">
+                    {hospital.emergencyHours}
+                </span>
               </div>
             )}
 
             {hospital.services && hospital.services?.length > 0 && (
               <div className="border-t border-gray-100 pt-5">
-                <h4 className="font-medium text-mintdark mb-3">可提供服務</h4>
+                <h4 className="font-medium text-mintdark mb-3">可提供服務(<strong>僅供參考，前往之前務必致電詢問</strong>)</h4>
                 <div className="flex flex-wrap gap-2">
                   {hospital.services.map(service => (
                     <span
@@ -126,7 +129,7 @@ export default function HospitalModal({ hospital, onClose }: HospitalModalProps)
 
             {hospital.pets && hospital.pets?.length > 0 && (
               <div className="border-t border-gray-100 pt-5">
-                <h4 className="font-medium text-mintdark mb-3">適合寵物</h4>
+                <h4 className="font-medium text-mintdark mb-3">適合寵物(<strong>僅供參考，前往之前務必致電詢問</strong>)</h4>
                 <div className="flex flex-wrap gap-2">
                   {hospital.pets.map(pet => (
                     <span
