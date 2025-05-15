@@ -71,18 +71,51 @@ function isOpenNow(businessHours?: Record<string, string[]>): boolean {
     }
   });
 }
+const cityCenterMap: Record<string, [number, number]> = {
+    "基隆市": [25.1283, 121.7419],
+    "台北市": [25.0330, 121.5654],
+    "新北市": [25.0169, 121.4628],
+    "桃園市": [24.9937, 121.3000],
+    "新竹市": [24.8039, 120.9647],
+    "新竹縣": [24.7039, 121.1252],
+    "苗栗縣": [24.5602, 120.8214],
+    "台中市": [24.1477, 120.6736],
+    "彰化縣": [24.0685, 120.5571],
+    "南投縣": [23.8388, 120.9876],
+    "雲林縣": [23.7092, 120.4313],
+    "嘉義市": [23.4801, 120.4491],
+    "嘉義縣": [23.4589, 120.5740],
+    "台南市": [22.999150190097566, 120.21641191482486],
+    "高雄市": [22.6273, 120.3014],
+    "屏東縣": [22.6687, 120.5048],
+    "宜蘭縣": [24.7021, 121.7378],
+    "花蓮縣": [23.9872, 121.6015],
+    "台東縣": [23.023905725774426, 121.17445934255785],
+    "澎湖縣": [23.5713, 119.5798],
+    "金門縣": [24.4321, 118.3171],
+    "連江縣": [26.1608, 119.9484],
+    "all": [23.7, 120.9]
+}
 
 export default function HomeClient() {
   const [filteredHospitals, setFilteredHospitals] = useState<Hospital[]>([]);
   const [allHospitals, setAllHospitals] = useState<Hospital[]>([]);
   const [selectedHospital, setSelectedHospital] = useState<Hospital | null>(null);
-  const [city, setCity] = useState("all");
+  const [city, setCity] = useState("台北市");
   const [type, setType] = useState("all");
+  const [mapCenter, setMapCenter] = useState<[number, number]>(cityCenterMap['all']);
   const [reservationRequiredOnly, setReservationRequiredOnly] = useState(false);
   const [openNowOnly, setOpenNowOnly] = useState(false);
+
+//   const handleCityChange = (selectedCity: string) => {
+//     setCity(selectedCity);
+//     const newCenter = cityCenterMap[selectedCity] || cityCenterMap['all'];
+//     setMapCenter(newCenter);
+//   };
   const handleSearch = () => {
     // console.log("搜尋條件：", { city, type, reservationRequiredOnly, openNowOnly });
-  
+    // console.log('allHospitals',allHospitals);
+    
     let filtered = allHospitals;
   
     // 篩選城市
@@ -105,8 +138,10 @@ export default function HomeClient() {
       filtered = filtered.filter(h => isOpenNow(h.business_hours));
     }
   
-    console.log('filteredHospitals', filtered);
+    // console.log('filteredHospitals', filtered);
     setFilteredHospitals(filtered);
+    const newCenter = cityCenterMap[city] || cityCenterMap['all'];
+    setMapCenter(newCenter);
   };
 
   // 初始載入醫院資料
@@ -115,9 +150,13 @@ export default function HomeClient() {
       const hospitals = await getHospitals();
       setAllHospitals(hospitals);
       setFilteredHospitals(hospitals)
+      handleSearch()
     }
     fetchHospitals();
   }, []);
+  useEffect(() => {
+    handleSearch()
+  }, [allHospitals]);
 
   return (
     <div className="bg-offwhite min-h-screen">
@@ -139,16 +178,16 @@ export default function HomeClient() {
             </div>
           </div>
         </header>
-
+        
         <FilterPanel onCityChange={setCity}
           onPetCategoryChange={setType}
           onReservationRequiredToggle={setReservationRequiredOnly}
           onOpenNowToggle={setOpenNowOnly}
           onSearch={handleSearch} />
-
+        {/* <div className='my-3'>目前共整理：{allHospitals.length}間，特寵動物醫院</div> */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="order-1 lg:order-2 lg:col-span-2 aspect-square lg:aspect-auto">
-          <MapPanel hospitals={filteredHospitals} />
+          <MapPanel hospitals={filteredHospitals} center={mapCenter}/>
         </div>
 
         {/* 清單在手機時 order-2，桌機時 order-1 */}

@@ -27,16 +27,26 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
           </label>
           <select
             id="city"
+            defaultValue="台北市"
             className="filter-dropdown w-full rounded-lg border-2 border-mint-30 focus:border-mint focus:ring-2 focus:ring-mint-20 outline-none focus:outline-none appearance-none py-2.5 px-3 bg-white"
             onChange={(e) => onCityChange?.(e.target.value)}
             >
-            <option value="all">全部城市</option>
-            {/* <option value="taipei">台北市</option>
-            <option value="newtaipei">新北市</option>
-            <option value="taoyuan">桃園市</option>
-            <option value="taichung">台中市</option> */}
+            {/* <option value="all">全部城市</option> */}
+            <option value="基隆市">基隆市</option>
+            <option value="台北市">台北市</option>
+            <option value="新北市">新北市</option>
+            <option value="桃園市">桃園市</option>
+            <option value="新竹市">新竹市</option>
+            <option value="新竹縣">新竹縣</option>
+            <option value="苗栗縣">苗栗縣</option>
+            <option value="台中市">台中市</option>
+            <option value="彰化縣">彰化縣</option>
+            <option value="嘉義市">嘉義市</option>
+            <option value="台南市">台南市</option>
             <option value="高雄市">高雄市</option>
             <option value="屏東縣">屏東縣</option>
+            <option value="宜蘭縣">宜蘭縣</option>
+            <option value="台東縣">台東縣</option>
           </select>
         </div>
 

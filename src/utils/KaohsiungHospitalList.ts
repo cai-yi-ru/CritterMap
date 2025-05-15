@@ -387,15 +387,15 @@ export const KaohsiungHospitalList = [
     "type": "exotic",
     "typeText": "特殊寵物診療",
     "phone": "07-726-5577",
-    "hours": "週一至週五 10:00–12:00 / 14:00–21:00\n週六 10:00–12:00 / 14:00–19:00\n週日休診",
+    "hours": "週一 10:00–13:00 / 14:00–19:00\n週二至五 10:00–12:00 / 13:00–21:00\n週六、日 10:00–12:00 / 14:00–19:00",
     "business_hours": {
-      "mon": ["10:00-12:00", "14:00-21:00"],
-      "tue": ["10:00-12:00", "14:00-21:00"],
-      "wed": ["10:00-12:00", "14:00-19:00"],
-      "thu": ["10:00-12:00", "14:00-21:00"],
-      "fri": ["10:00-12:00", "14:00-21:00"],
+      "mon": ["10:00-13:00", "14:00-19:00"],
+      "tue": ["10:00-12:00", "13:00-21:00"],
+      "wed": ["10:00-12:00", "13:00-21:00"],
+      "thu": ["10:00-12:00", "13:00-21:00"],
+      "fri": ["10:00-12:00", "13:00-21:00"],
       "sat": ["10:00-12:00", "14:00-19:00"],
-      "sun": []
+      "sun": ["10:00-13:00", "14:00-19:00"]
     },
     "rating": "4.4",
     "reservationRequired": true,
@@ -1421,7 +1421,7 @@ export const KaohsiungHospitalList = [
     "socialMedia": {
       "facebook": "https://www.facebook.com/p/%E6%98%9F%E7%BE%BD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-100064155485163/"
     },
-    "clinicNotes": "採預約優先制，建議飼主於營業時間致電預約。林園院設有大片草皮，提供犬隻散步放鬆，並為烏龜、爬蟲等提供日光浴空間，致力於為各類寵物提供舒適的診療環境。"
+    "clinicNotes": "採預約優先制，建議飼主於營業時間致電預約。\n6/1會移到高雄市大寮區鳳林路四段790號之1\n5月最後一週會休息"
   },
   {
     "id": "pei-yu-animal-hospital",
@@ -1684,5 +1684,71 @@ export const KaohsiungHospitalList = [
       "instagram": "https://www.instagram.com/agbug1127/"
     },
     "clinicNotes": "提供兔、天竺鼠、寵物鼠、刺蝟、貂等非犬貓寵物的診療服務。採預約制，建議飼主於營業時間透過電話或社群媒體預約掛號。"
+  },
+  {
+    "id": "wishing-star-animal-hospital",
+    "name": "祈癒動物醫院",
+    "city": "高雄市",
+    "district": "仁武區",
+    "address": "高雄市仁武區京吉六路90號",
+    "lat": 22.6838825,
+    "lng": 120.3425544,
+    "type": "exotic",
+    "typeText": "犬貓及特殊寵物診療／馬匹、鼠兔爬蟲、行為醫學",
+    "phone": "07-375-2082",
+    "hours": "週一至週三、週五至週日 09:30–13:00、14:00–17:00、18:00–22:00，週四休診",
+    "business_hours": {
+      "mon": ["09:30-13:00", "14:00-17:00", "18:00-22:00"],
+      "tue": ["09:30-13:00", "14:00-17:00", "18:00-22:00"],
+      "wed": ["09:30-13:00", "14:00-17:00", "18:00-22:00"],
+      "thu": [],
+      "fri": ["09:30-13:00", "14:00-17:00", "18:00-22:00"],
+      "sat": ["09:30-13:00", "14:00-17:00", "18:00-22:00"],
+      "sun": ["09:30-13:00", "14:00-17:00", "18:00-22:00"]
+    },
+    "rating": "4.9",
+    "reservationRequired": true,
+    "hasEmergencyService": false,
+    "emergencyHours": "",
+    "nightClinic": true,
+    "services": [
+      "犬貓內外科診療",
+      "馬匹醫療",
+      "鼠兔醫療",
+      "爬蟲類醫療",
+      "行為醫學門診",
+      "疫苗注射",
+      "血檢與影像診斷"
+    ],
+    "pets": [
+      "犬",
+      "貓",
+      "兔",
+      "鼠",
+      "爬蟲類",
+      "馬"
+    ],
+    "pet_category_group": [
+      "犬",
+      "貓",
+      "兔",
+      "鼠",
+      "爬蟲",
+      "其他特寵"
+    ],
+    "specialties": [
+      "犬貓內外科",
+      "行為醫學",
+      "馬病診療",
+      "鼠兔與爬蟲專科"
+    ],
+    "website": "https://4c70b895cbb8.godaddysites.com/?fbclid=IwY2xjawKOcTJleHRuA2FlbQIxMABicmlkETFMbWNsUnYwejVrdDR6NG9sAR42_HgY-UtjqTKOqMNiIupYu8Bmd_cihnx9buajYrrdQGeDJxj3p_qjzwTobA_aem_zRmEl9wsU01uorXR8rnAHw",
+    "appointmentLink": "",
+    "transportTips": "建議開車或導航前往，周邊為住宅區，交通便利。",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/wishingstar.ah",
+      "instagram": "https://www.instagram.com/wishingstar_ah"
+    },
+    "clinicNotes": "1️⃣ 提供犬貓、馬匹、鼠兔與爬蟲等特殊寵物醫療服務，並設有行為醫學門診。\n2️⃣ 強調低壓力診療環境與動物友善操作，門診時間至晚間22:00，適合下班後就診。\n3️⃣ 週四固定休診，建議提前致電或透過官方帳號預約。"
   }
 ]
