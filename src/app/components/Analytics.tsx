@@ -2,8 +2,8 @@
 
 import Script from 'next/script';
 
-// const GA_MEASUREMENT_ID = 'G-XXXXXXX'; 
-const GA_MEASUREMENT_ID = 'G-3FL8VZDVZZ'; // 替換成你自己的 ID
+const GA_MEASUREMENT_ID = 'G-XXXXXXX'; 
+// const GA_MEASUREMENT_ID = 'G-3FL8VZDVZZ'; // 替換成你自己的 ID
 
 export default function Analytics() {
   return (

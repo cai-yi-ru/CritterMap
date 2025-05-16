@@ -106,7 +106,7 @@ export default function HospitalModal({ hospital, onClose }: HospitalModalProps)
                 <h4 className="font-medium text-mintdark mb-3">備註(<strong>僅供參考</strong>)</h4>
                 <div className="flex flex-wrap gap-2">
                   <span
-                      className="flex items-center gap-1 px-3 py-1 text-sm rounded-lg bg-cream text-darktext"
+                      className="flex items-center gap-1 px-3 py-1 text-sm rounded-lg bg-cream text-darktext whitespace-pre-wrap"
                     >
                       {hospital.clinicNotes}
                     </span>
