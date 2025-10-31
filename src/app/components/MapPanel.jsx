@@ -35,7 +35,7 @@ function MapUpdater({ center }) {
   return null;
 }
 
-export default function MapPanel({ hospitals, center }) {
+export default function MapPanel({ hospitals, center, onHospitalClick }) {
   useEffect(() => {
     delete L.Icon.Default.prototype._getIconUrl;
     L.Icon.Default.mergeOptions({
@@ -68,7 +68,12 @@ export default function MapPanel({ hospitals, center }) {
           >
             <Popup>
               <div>
-                <h3 className="font-bold text-mintdark text-xl">{hospital.name}</h3>
+                <h3 
+                  className="font-bold text-mintdark text-xl cursor-pointer hover:text-mint transition duration-150"
+                  onClick={() => onHospitalClick && onHospitalClick(hospital)}
+                >
+                  {hospital.name}
+                </h3>
                 <p className="text-sm text-gray-600 mt-1">{hospital.address}</p>
                 <div className="text-xs mt-1">
                   {hospital.typeText} {hospital.hasEmergencyService && <span className="text-red-500 ml-2">夜間急診</span>}

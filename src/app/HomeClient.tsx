@@ -187,7 +187,7 @@ export default function HomeClient() {
         {/* <div className='my-3'>目前共整理：{allHospitals.length}間，特寵動物醫院</div> */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="order-1 lg:order-2 lg:col-span-2 aspect-square lg:aspect-auto">
-          <MapPanel hospitals={filteredHospitals} center={mapCenter}/>
+          <MapPanel hospitals={filteredHospitals} center={mapCenter} onHospitalClick={setSelectedHospital}/>
         </div>
 
         {/* 清單在手機時 order-2，桌機時 order-1 */}

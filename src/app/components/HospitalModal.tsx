@@ -19,14 +19,14 @@ export default function HospitalModal({ hospital, onClose }: HospitalModalProps)
 
       {/* Modal 面板 */}
       <div className="fixed inset-0 flex items-center justify-center p-4">
-        <Dialog.Panel className="relative bg-white rounded-2xl shadow-xl max-w-md w-full mx-4 max-h-[90vh] overflow-y-auto p-6">
+        <Dialog.Panel className="relative bg-white rounded-2xl shadow-xl max-w-md w-full mx-4 max-h-[90vh] overflow-y-auto hide-scrollbar p-6">
           <div className="flex justify-between items-start mb-4">
             <DialogTitle className="text-xl font-bold text-mintdark">
               {hospital.name}
             </DialogTitle>
             <button
               onClick={onClose}
-              className="text-gray-400 hover:text-gray-600 transition duration-150"
+              className="text-gray-400 hover:text-gray-600 transition duration-150 cursor-pointer"
             >
               <XMarkIcon className="h-6 w-6" />
             </button>
