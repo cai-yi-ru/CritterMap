@@ -1290,9 +1290,9 @@ export const KaohsiungHospitalList = [
     },
     "rating": "",
     "reservationRequired": true,
-    "hasEmergencyService": false,
-    "emergencyHours": "",
-    "nightClinic": false,
+    "hasEmergencyService": true,
+    "emergencyHours": "\n▪️犬貓｜𝟮𝟰小時\n▪️特寵｜早上𝟭𝟬點至凌晨𝟮點",
+    "nightClinic": true,
     "services": [
       "一般內科",
       "一般外科",
@@ -1343,7 +1343,7 @@ export const KaohsiungHospitalList = [
     "socialMedia": {
       "facebook": "https://www.facebook.com/p/%E6%98%9F%E7%BE%BD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E4%B8%89%E6%B0%91%E9%99%A2-61562438660817/"
     },
-    "clinicNotes": "星羽動物醫院三民院提供犬、貓及各類特殊寵物（如兔、鼠、刺蝟、蜜袋鼯、鳥類、爬蟲類等）的診療服務，設有分區住院病房，為不同物種提供專屬照護。本院採預約優先制，請於前一日診所上班時間致電預約。現場掛號視狀況安排，建議盡量事先預約避免久候。"
+    "clinicNotes": "11／1 起，星羽動物醫院三民院 夜診服務開啟\n犬貓｜𝟮𝟰小時\n特寵｜早上𝟭𝟬點至凌晨𝟮點\n𖤐 𝟮𝟭：𝟬𝟬後看診需加收急診掛號及診察費。\n𖤐 犬貓及特寵皆有𝟮𝟰小時住院照護。\n提供犬、貓及各類特殊寵物（如兔、鼠、刺蝟、蜜袋鼯、鳥類、爬蟲類等）的診療服務，設有分區住院病房，為不同物種提供專屬照護。本院採預約優先制，請於前一日診所上班時間致電預約。現場掛號視狀況安排，建議盡量事先預約避免久候。"
   },
   {
     "id": "star-feather-animal-hospital-linyuan",
