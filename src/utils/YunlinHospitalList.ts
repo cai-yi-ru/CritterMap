@@ -1,3 +1,1 @@
-export const YunlinHospitalList = [
-    
-]
+export const YunlinHospitalList = [];
