@@ -54,7 +54,7 @@ export default function Footer() {
                 {/* <div className="border-t border-gray-200 mt-8 pt-8"> */}
                 <div className="text-center mt-8">
                     <p className="text-sm text-gray-500">
-                        © 2025 小獸所. 版權所有.
+                        © 2026 小獸所. 版權所有.
                     </p>
                 </div>
                 {/* <div className="text-center">

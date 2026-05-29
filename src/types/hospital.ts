@@ -39,4 +39,13 @@ export interface Hospital {
       line?: string;
       [key: string]: string | undefined;
     };
+    createdAt?: string;
+    updatedAt?: string;
+    last_checked?: string;
+    google_place_id?: string;
+    fb?: {
+      last_fb_post_date?: string;
+      last_fb_post_text?: string;
+    };
+    specialEvents?: string[]; // 特殊事件描述，例如「12/25 臨時休診」、「2/10-2/13 春節假期」等
   }
