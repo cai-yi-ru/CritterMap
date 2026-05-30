@@ -1,5 +1,7 @@
 import React from "react";
 import type { Hospital } from '@/types/hospital';
+import { getActiveAnnouncements } from '@/lib/hospitalAnnouncements';
+import { getHospitalTypeDisplayText } from '@/lib/hospitalTypeText';
 
 interface HospitalListProps {
   hospitals: Hospital[];
@@ -46,6 +48,8 @@ const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick 
         if (hospital.pets && hospital.pets.length > 4) {
           petIcons += ` +${hospital.pets.length - 4}`;
         }
+        const activeAnnouncements = getActiveAnnouncements(hospital.announcements);
+        const hasClosureAnnouncement = activeAnnouncements.some(announcement => announcement.type === 'closure');
 
         return (
           <div
@@ -66,9 +70,16 @@ const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick 
             <p className="text-gray-600 text-sm mt-2">{hospital.address}</p>
             <div className="flex items-center justify-between mt-3">
               <div>
-                <span className="text-xs px-2 py-1 bg-mintlight text-mintdark rounded-full">{hospital.typeText}</span>
+                <span className="text-xs px-2 py-1 bg-mintlight text-mintdark rounded-full">
+                  {getHospitalTypeDisplayText(hospital)}
+                </span>
                 {hospital.emergency && (
                   <span className="text-xs px-2 py-1 bg-softpink text-red-700 rounded-full ml-2">24小時急診</span>
+                )}
+                {activeAnnouncements.length > 0 && (
+                  <span className="text-xs px-2 py-1 bg-cream text-darktext rounded-full ml-2">
+                    {hasClosureAnnouncement ? '休診公告' : '最新公告'}
+                  </span>
                 )}
               </div>
               <div className="text-sm">{petIcons}</div>

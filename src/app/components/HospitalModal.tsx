@@ -2,7 +2,9 @@
 
 import { Dialog,DialogTitle } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/solid';
-import type { Hospital } from '@/types/hospital';
+import type { Hospital, HospitalAnnouncement } from '@/types/hospital';
+import { getActiveAnnouncements } from '@/lib/hospitalAnnouncements';
+import { getHospitalTypeDisplayText } from '@/lib/hospitalTypeText';
 
 
 
@@ -12,6 +14,8 @@ interface HospitalModalProps {
 }
 
 export default function HospitalModal({ hospital, onClose }: HospitalModalProps) {
+  const activeAnnouncements = getActiveAnnouncements(hospital.announcements);
+
   return (
     <Dialog open={!!hospital} onClose={onClose} className="relative z-50">
       {/* 背景遮罩 */}
@@ -53,7 +57,7 @@ export default function HospitalModal({ hospital, onClose }: HospitalModalProps)
             )}
             <div className="flex items-center">
               <span className="mr-2 text-mint">🏷️</span>
-              {hospital.typeText}
+              {getHospitalTypeDisplayText(hospital)}
             </div>
             {/* {hospital.rating && (
               <div className="flex items-center">
@@ -67,6 +71,52 @@ export default function HospitalModal({ hospital, onClose }: HospitalModalProps)
                 <span className="text-sm text-gray-700 break-words whitespace-pre-wrap ml-1">
                     {hospital.emergencyHours}
                 </span>
+              </div>
+            )}
+            {activeAnnouncements.length > 0 && (
+              <div className="border-t border-gray-100 pt-5">
+                <h4 className="font-medium text-mintdark mb-3">最新訊息</h4>
+                <div className="space-y-3">
+                  {activeAnnouncements.map((announcement) => (
+                    <div
+                      key={announcement.id}
+                      className="rounded-lg border border-softpink/40 bg-softpink/20 p-3"
+                    >
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="text-xs px-2 py-1 rounded-full bg-white text-red-700">
+                          {announcementTypeText(announcement.type)}
+                        </span>
+                        {(announcement.startDate || announcement.endDate) && (
+                          <span className="text-xs text-gray-500">
+                            {formatDateRange(announcement.startDate, announcement.endDate)}
+                          </span>
+                        )}
+                      </div>
+                      <div className="mt-2 font-medium text-darktext">{announcement.title}</div>
+                      {announcement.content && (
+                        <p className="mt-1 text-sm text-gray-700 whitespace-pre-wrap">{announcement.content}</p>
+                      )}
+                      {announcement.sourceLabel && (
+                        <div className="mt-2 text-xs text-gray-500">
+                          來源：
+                          {announcement.sourceUrl ? (
+                            <a
+                              href={announcement.sourceUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-mintdark hover:text-mint"
+                            >
+                              {announcement.sourceLabel}
+                            </a>
+                          ) : (
+                            announcement.sourceLabel
+                          )}
+                          {announcement.verifiedAt && `，確認日期：${announcement.verifiedAt}`}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
 
@@ -160,3 +210,26 @@ function petIcon(type: string) {
       default: return '';
     }
   }
+
+function announcementTypeText(type: HospitalAnnouncement['type']) {
+  switch (type) {
+    case 'closure':
+      return '休診';
+    case 'hours_change':
+      return '時間異動';
+    case 'service_change':
+      return '服務異動';
+    case 'notice':
+      return '提醒';
+    default:
+      return '公告';
+  }
+}
+
+function formatDateRange(startDate?: string, endDate?: string) {
+  if (startDate && endDate && startDate !== endDate) {
+    return `${startDate} 至 ${endDate}`;
+  }
+
+  return startDate || endDate || '';
+}

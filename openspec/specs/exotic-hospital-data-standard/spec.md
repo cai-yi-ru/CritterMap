@@ -3,13 +3,13 @@
 ## Purpose
 TBD - created by archiving change normalize-exotic-hospital-data. Update Purpose after archive.
 ## Requirements
-### Requirement: typeText 統一標準
+### Requirement: typeText 原始分類標準
 
-特寵醫院的 `typeText` 欄位 SHALL 使用以下兩種標準值之一：
+特寵醫院的 `typeText` 欄位 SHOULD 使用以下兩種標準值之一作為原始資料分類：
 - `"特殊寵物診療"`：主要或專門診療特殊寵物的醫院
 - `"犬貓與特寵診療"`：以犬貓為主、兼具特寵診療能力的醫院
 
-其他非標準表達（「特寵」、「特殊寵物」等）SHALL NOT 出現在 `type: "exotic"` 的資料中。
+畫面顯示文字 SHALL 由顯示層根據 `pet_category_group` 與 `typeText` 標準化，不直接把原始 `typeText` 顯示給使用者。
 
 #### Scenario: 純特寵醫院的 typeText
 - **WHEN** 醫院 `type` 為 `"exotic"` 且主要服務對象為特殊寵物（非犬貓）
@@ -18,6 +18,25 @@ TBD - created by archiving change normalize-exotic-hospital-data. Update Purpose
 #### Scenario: 兼診特寵的醫院 typeText
 - **WHEN** 醫院 `type` 為 `"exotic"` 且服務對象同時包含犬貓與特殊寵物
 - **THEN** `typeText` SHALL 為 `"犬貓與特寵診療"`
+
+---
+
+### Requirement: 醫院分類顯示文字標準
+
+醫院分類顯示文字 SHALL 使用簡潔的診療分類文字：
+- 同時支援犬貓與特寵的醫院 SHALL 顯示 `"犬貓診療、特寵診療"`
+- 僅支援特寵的醫院 SHALL 顯示 `"特寵診療"`
+- 僅支援犬貓的醫院 SHALL 顯示 `"犬貓診療"`
+
+顯示文字 SHALL 套用在醫院列表、醫院詳情 Modal 與地圖 popup。
+
+#### Scenario: 同時支援犬貓與特寵
+- **WHEN** 醫院 `pet_category_group` 同時包含 `"狗"` 或 `"貓"`，且包含任一特寵分類
+- **THEN** 畫面 SHALL 顯示 `"犬貓診療、特寵診療"`
+
+#### Scenario: 僅支援特寵
+- **WHEN** 醫院 `pet_category_group` 包含特寵分類，且不包含 `"狗"` 或 `"貓"`
+- **THEN** 畫面 SHALL 顯示 `"特寵診療"`
 
 ---
 
@@ -83,4 +102,3 @@ TBD - created by archiving change normalize-exotic-hospital-data. Update Purpose
 #### Scenario: 補填 last_checked
 - **WHEN** 特寵醫院資料缺少 `last_checked` 或值為空字串
 - **THEN** `last_checked` SHALL 被補填為本次整理日期 `"2026-03-25"`
-

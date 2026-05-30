@@ -7,11 +7,13 @@ import Navbar from './components/Navbar';
 import FilterPanel from './components/FilterPanel';
 import HospitalList from './components/HospitalList';
 import HospitalModal from './components/HospitalModal';
+import HospitalUpdates from './components/HospitalUpdates';
 import Footer from './components/Footer';
 import DisclaimerSection from './components/DisclaimerSection';
 
 import { getHospitals } from '@/lib/getHospitals';
-import type { Hospital } from '@/types/hospital';
+import { getHospitalUpdates } from '@/lib/getHospitalUpdates';
+import type { Hospital, HospitalUpdate } from '@/types/hospital';
 
 export const metadata = {
   title: '小獸所｜特寵醫院地圖查詢平台',
@@ -100,6 +102,7 @@ const cityCenterMap: Record<string, [number, number]> = {
 export default function HomeClient() {
   const [filteredHospitals, setFilteredHospitals] = useState<Hospital[]>([]);
   const [allHospitals, setAllHospitals] = useState<Hospital[]>([]);
+  const [hospitalUpdates, setHospitalUpdates] = useState<HospitalUpdate[]>([]);
   const [selectedHospital, setSelectedHospital] = useState<Hospital | null>(null);
   const [city, setCity] = useState("台北市");
   const [type, setType] = useState("all");
@@ -147,9 +150,13 @@ export default function HomeClient() {
   // 初始載入醫院資料
   useEffect(() => {
     async function fetchHospitals() {
-      const hospitals = await getHospitals();
+      const [hospitals, updates] = await Promise.all([
+        getHospitals(),
+        getHospitalUpdates(),
+      ]);
       setAllHospitals(hospitals);
       setFilteredHospitals(hospitals)
+      setHospitalUpdates(updates);
       handleSearch()
     }
     fetchHospitals();
@@ -186,8 +193,15 @@ export default function HomeClient() {
           onSearch={handleSearch} />
         {/* <div className='my-3'>目前共整理：{allHospitals.length}間，特寵動物醫院</div> */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <div className="order-1 lg:order-2 lg:col-span-2 aspect-square lg:aspect-auto">
-          <MapPanel hospitals={filteredHospitals} center={mapCenter} onHospitalClick={setSelectedHospital}/>
+        <div className="order-1 lg:order-2 lg:col-span-2">
+          <div className="aspect-square lg:aspect-auto">
+            <MapPanel hospitals={filteredHospitals} center={mapCenter} onHospitalClick={setSelectedHospital}/>
+          </div>
+          <HospitalUpdates
+            updates={hospitalUpdates}
+            hospitals={allHospitals}
+            onHospitalClick={setSelectedHospital}
+          />
         </div>
 
         {/* 清單在手機時 order-2，桌機時 order-1 */}

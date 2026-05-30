@@ -4,6 +4,7 @@ import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import { useEffect } from 'react';
+import { getHospitalTypeDisplayText } from '@/lib/hospitalTypeText';
 
 // 動物醫院圖示 SVG - 使用腳印圖示
 const petHospitalSvg = `
@@ -76,7 +77,7 @@ export default function MapPanel({ hospitals, center, onHospitalClick }) {
                 </h3>
                 <p className="text-sm text-gray-600 mt-1">{hospital.address}</p>
                 <div className="text-xs mt-1">
-                  {hospital.typeText} {hospital.hasEmergencyService && <span className="text-red-500 ml-2">夜間急診</span>}
+                  {getHospitalTypeDisplayText(hospital)} {hospital.hasEmergencyService && <span className="text-red-500 ml-2">夜間急診</span>}
                 </div>
               </div>
             </Popup>
