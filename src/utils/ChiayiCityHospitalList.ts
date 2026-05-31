@@ -33,7 +33,6 @@ export const ChiayiCityHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -126,7 +125,6 @@ export const ChiayiCityHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -209,7 +207,6 @@ export const ChiayiCityHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -304,7 +301,6 @@ export const ChiayiCityHospitalList = [
       "sat": [],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -404,7 +400,9 @@ export const ChiayiCityHospitalList = [
         "14:00-19:00"
       ]
     },
-    "rating": "4.8",
+    "google": {
+      "rating": "4.8"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",

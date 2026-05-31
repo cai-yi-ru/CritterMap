@@ -34,7 +34,6 @@ export const TainanHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -122,7 +121,9 @@ export const TainanHospitalList = [
       ],
       "sun": []
     },
-    "rating": "4.2",
+    "google": {
+      "rating": "4.2"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -211,7 +212,9 @@ export const TainanHospitalList = [
         "19:00-21:00"
       ]
     },
-    "rating": "4.8",
+    "google": {
+      "rating": "4.8"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -296,7 +299,9 @@ export const TainanHospitalList = [
         "15:00-18:00"
       ]
     },
-    "rating": "4.8",
+    "google": {
+      "rating": "4.8"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -385,7 +390,6 @@ export const TainanHospitalList = [
         "11:00-20:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -475,7 +479,6 @@ export const TainanHospitalList = [
         "14:00-17:30"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -557,7 +560,9 @@ export const TainanHospitalList = [
       ],
       "sun": []
     },
-    "rating": "4.0",
+    "google": {
+      "rating": "4.0"
+    },
     "reservationRequired": true,
     "hasEmergencyService": true,
     "emergencyHours": "24小時",
@@ -652,7 +657,6 @@ export const TainanHospitalList = [
         "18:00-21:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -736,7 +740,9 @@ export const TainanHospitalList = [
       ],
       "sun": []
     },
-    "rating": "4.4",
+    "google": {
+      "rating": "4.4"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -820,7 +826,6 @@ export const TainanHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -894,7 +899,9 @@ export const TainanHospitalList = [
       ],
       "sun": []
     },
-    "rating": "4.7",
+    "google": {
+      "rating": "4.7"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -961,7 +968,9 @@ export const TainanHospitalList = [
         "11:00-20:00"
       ]
     },
-    "rating": "4.4",
+    "google": {
+      "rating": "4.4"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1051,7 +1060,9 @@ export const TainanHospitalList = [
       ],
       "sun": []
     },
-    "rating": "4.5",
+    "google": {
+      "rating": "4.5"
+    },
     "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1139,7 +1150,9 @@ export const TainanHospitalList = [
         "14:00-20:30"
       ]
     },
-    "rating": "4.7",
+    "google": {
+      "rating": "4.7"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1244,7 +1257,9 @@ export const TainanHospitalList = [
         "14:00-18:00"
       ]
     },
-    "rating": "4.7",
+    "google": {
+      "rating": "4.7"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1344,7 +1359,9 @@ export const TainanHospitalList = [
       ],
       "sun": []
     },
-    "rating": "4.7",
+    "google": {
+      "rating": "4.7"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1421,7 +1438,6 @@ export const TainanHospitalList = [
         "15:00-21:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",

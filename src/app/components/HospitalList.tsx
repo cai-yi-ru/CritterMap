@@ -30,8 +30,9 @@ const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick 
   return (
     <div className="mx-auto space-y-4 overflow-y-auto max-h-[600px] pr-2 hospital-list-container">
       {hospitals.map((hospital) => {
-        // const fullStars = Math.floor(hospital.rating);
-        // const hasHalfStar = hospital.rating % 1 >= 0.5;
+        // const ratingValue = hospital.google?.rating ? Number(hospital.google.rating) : undefined;
+        // const fullStars = ratingValue ? Math.floor(ratingValue) : 0;
+        // const hasHalfStar = ratingValue ? ratingValue % 1 >= 0.5 : false;
 
         // let starsHtml = "";
         // for (let i = 0; i < 5; i++) {
@@ -63,7 +64,7 @@ const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick 
             <div className="flex justify-between items-start">
               <h3 className="text-lg font-semibold text-mintdark">{hospital.name}</h3>
               {/* <span className="rating flex items-center">
-                <span className="text-sm text-gray-600 mr-1">{hospital.rating}</span>
+                <span className="text-sm text-gray-600 mr-1">{hospital.google?.rating}</span>
                 <div
                   className="flex"
                   dangerouslySetInnerHTML={{ __html: starsHtml }}

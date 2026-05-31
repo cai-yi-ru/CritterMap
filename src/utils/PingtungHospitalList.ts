@@ -36,7 +36,6 @@ export const PingtungHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -125,7 +124,6 @@ export const PingtungHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -224,7 +222,6 @@ export const PingtungHospitalList = [
         "14:00-17:00"
       ]
     },
-    "rating": "",
     "reservationRequired": false,
     "hasEmergencyService": true,
     "emergencyHours": "\n提供夜間急診服務，建議飼主於前往前先致電確認",
@@ -310,7 +307,6 @@ export const PingtungHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -405,7 +401,6 @@ export const PingtungHospitalList = [
       "sat": [],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",

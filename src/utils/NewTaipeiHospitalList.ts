@@ -49,7 +49,6 @@ export const NewTaipeiHospitalList = [
         "18:00-20:30"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -140,7 +139,9 @@ export const NewTaipeiHospitalList = [
         "14:00-20:30"
       ]
     },
-    "rating": "4.2",
+    "google": {
+      "rating": "4.2"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -218,7 +219,6 @@ export const NewTaipeiHospitalList = [
         "14:00-20:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -316,7 +316,6 @@ export const NewTaipeiHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -411,7 +410,6 @@ export const NewTaipeiHospitalList = [
         "18:00-21:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -489,7 +487,9 @@ export const NewTaipeiHospitalList = [
         "18:00-21:00"
       ]
     },
-    "rating": "4.4",
+    "google": {
+      "rating": "4.4"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -582,7 +582,9 @@ export const NewTaipeiHospitalList = [
       ],
       "sun": []
     },
-    "rating": "4.9",
+    "google": {
+      "rating": "4.9"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -663,7 +665,9 @@ export const NewTaipeiHospitalList = [
       ],
       "sun": []
     },
-    "rating": "4.6",
+    "google": {
+      "rating": "4.6"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -764,7 +768,6 @@ export const NewTaipeiHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -841,7 +844,6 @@ export const NewTaipeiHospitalList = [
         "16:30-21:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -947,7 +949,9 @@ export const NewTaipeiHospitalList = [
         "18:00-21:00"
       ]
     },
-    "rating": " 4.4",
+    "google": {
+      "rating": "4.4"
+    },
     "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1049,7 +1053,6 @@ export const NewTaipeiHospitalList = [
         "18:00-20:30"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": true,
     "emergencyHours": "21:00–02:00",
@@ -1138,7 +1141,9 @@ export const NewTaipeiHospitalList = [
       ],
       "sun": []
     },
-    "rating": "4.9",
+    "google": {
+      "rating": "4.9"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1226,7 +1231,6 @@ export const NewTaipeiHospitalList = [
         "14:00-16:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1321,7 +1325,9 @@ export const NewTaipeiHospitalList = [
         "11:00-02:00"
       ]
     },
-    "rating": "4.8",
+    "google": {
+      "rating": "4.8"
+    },
     "reservationRequired": true,
     "hasEmergencyService": true,
     "emergencyHours": "22:00–02:00",
@@ -1410,7 +1416,9 @@ export const NewTaipeiHospitalList = [
       ],
       "sun": []
     },
-    "rating": "4.5",
+    "google": {
+      "rating": "4.5"
+    },
     "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1501,7 +1509,9 @@ export const NewTaipeiHospitalList = [
       ],
       "sun": []
     },
-    "rating": "4.3",
+    "google": {
+      "rating": "4.3"
+    },
     "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1593,7 +1603,6 @@ export const NewTaipeiHospitalList = [
         "15:00-20:30"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1687,7 +1696,6 @@ export const NewTaipeiHospitalList = [
         "18:30-21:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1763,7 +1771,9 @@ export const NewTaipeiHospitalList = [
       ],
       "sun": []
     },
-    "rating": "4.5",
+    "google": {
+      "rating": "4.5"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",

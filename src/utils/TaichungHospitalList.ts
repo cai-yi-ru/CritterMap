@@ -33,7 +33,9 @@ export const TaichungHospitalList = [
         "15:00-20:00"
       ]
     },
-    "rating": "4.7",
+    "google": {
+      "rating": "4.7"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -115,7 +117,6 @@ export const TaichungHospitalList = [
       "sat": [],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -216,7 +217,6 @@ export const TaichungHospitalList = [
         "14:30-20:30"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -314,7 +314,9 @@ export const TaichungHospitalList = [
         "14:00-19:00"
       ]
     },
-    "rating": "4.6",
+    "google": {
+      "rating": "4.6"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -403,7 +405,9 @@ export const TaichungHospitalList = [
         "15:00-21:00"
       ]
     },
-    "rating": "3.1",
+    "google": {
+      "rating": "3.1"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -501,7 +505,9 @@ export const TaichungHospitalList = [
         "18:30-20:30"
       ]
     },
-    "rating": "5.0",
+    "google": {
+      "rating": "5.0"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -585,7 +591,9 @@ export const TaichungHospitalList = [
       ],
       "sun": []
     },
-    "rating": "4.8",
+    "google": {
+      "rating": "4.8"
+    },
     "reservationRequired": true,
     "hasEmergencyService": true,
     "emergencyHours": "每日 21:00–09:00",
@@ -698,7 +706,9 @@ export const TaichungHospitalList = [
         "18:00-21:00"
       ]
     },
-    "rating": "4.3",
+    "google": {
+      "rating": "4.3"
+    },
     "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -800,7 +810,6 @@ export const TaichungHospitalList = [
         "09:00-18:00"
       ]
     },
-    "rating": "",
     "reservationRequired": false,
     "hasEmergencyService": true,
     "emergencyHours": "每日 21:00–06:00",
@@ -883,7 +892,6 @@ export const TaichungHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -975,7 +983,6 @@ export const TaichungHospitalList = [
         "14:00-20:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1070,7 +1077,6 @@ export const TaichungHospitalList = [
         "10:30–19:30"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1145,7 +1151,6 @@ export const TaichungHospitalList = [
         "10:30–21:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1222,7 +1227,6 @@ export const TaichungHospitalList = [
       "sat": [],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1320,7 +1324,9 @@ export const TaichungHospitalList = [
       ],
       "sun": []
     },
-    "rating": "4.1",
+    "google": {
+      "rating": "4.1"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1413,7 +1419,6 @@ export const TaichungHospitalList = [
         "18:30-22:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",

@@ -41,7 +41,6 @@ export const HsinchuCityHospitalList = [
         "17:00-21:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": true,
     "emergencyHours": "非犬貓類動物僅提供電話預約門診，請先致電安排。",
@@ -125,7 +124,6 @@ export const HsinchuCityHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -217,7 +215,6 @@ export const HsinchuCityHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -303,7 +300,6 @@ export const HsinchuCityHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -400,7 +396,6 @@ export const HsinchuCityHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -479,7 +474,6 @@ export const HsinchuCityHospitalList = [
         "00:00-23:59"
       ]
     },
-    "rating": "",
     "reservationRequired": false,
     "hasEmergencyService": true,
     "emergencyHours": "24小時",
@@ -573,7 +567,6 @@ export const HsinchuCityHospitalList = [
         "19:00-21:00"
       ]
     },
-    "rating": "",
     "reservationRequired": false,
     "hasEmergencyService": true,
     "emergencyHours": "",
@@ -655,7 +648,6 @@ export const HsinchuCityHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",

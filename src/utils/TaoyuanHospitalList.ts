@@ -41,7 +41,6 @@ export const TaoyuanHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -123,7 +122,6 @@ export const TaoyuanHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -210,7 +208,6 @@ export const TaoyuanHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -324,7 +321,6 @@ export const TaoyuanHospitalList = [
         "18:00-22:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -431,7 +427,6 @@ export const TaoyuanHospitalList = [
         "18:00-22:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -528,7 +523,6 @@ export const TaoyuanHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -617,7 +611,6 @@ export const TaoyuanHospitalList = [
         "09:30-14:30"
       ]
     },
-    "rating": "",
     "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -704,7 +697,6 @@ export const TaoyuanHospitalList = [
         "14:30-21:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -814,7 +806,6 @@ export const TaoyuanHospitalList = [
         "18:00-21:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -917,7 +908,6 @@ export const TaoyuanHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -991,7 +981,6 @@ export const TaoyuanHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1077,7 +1066,9 @@ export const TaoyuanHospitalList = [
       ],
       "sun": []
     },
-    "rating": "4.8",
+    "google": {
+      "rating": "4.8"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1152,7 +1143,6 @@ export const TaoyuanHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",

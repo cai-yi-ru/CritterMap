@@ -62,10 +62,10 @@ export default function HospitalModal({ hospital, onClose }: HospitalModalProps)
               <span className="mr-2 text-mint">🏷️</span>
               {getHospitalTypeDisplayText(hospital)}
             </div>
-            {/* {hospital.rating && (
+            {/* {hospital.google?.rating && (
               <div className="flex items-center">
                 <span className="text-yellow-400 mr-2">⭐</span>
-                {hospital.rating.toFixed(1)}
+                {hospital.google.rating}
               </div>
             )} */}
             {hospital.hasEmergencyService && (

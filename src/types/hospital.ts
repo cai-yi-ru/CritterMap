@@ -32,6 +32,14 @@ export interface HospitalSpecialClinic {
     verifiedAt?: string; // 最後確認特別門診資訊的日期，格式 YYYY-MM-DD。
   }
 
+export interface HospitalGoogleProfile {
+    rating?: string; // Google Maps 評分文字，例如 4.4。
+    reviewCount?: number; // Google Maps 評論數；僅在可確認時填入。
+    mapsUrl?: string; // Google Maps 商家頁網址。
+    placeId?: string; // Google Places ID，供未來串接地點 API 或比對資料使用。
+    verifiedAt?: string; // 最後確認 Google 商家資料的日期，格式 YYYY-MM-DD。
+  }
+
 export interface Hospital {
     id: string; // 醫院唯一識別碼，用於列表 key、更新動態關聯與資料維護。
     name: string; // 醫院名稱，顯示在列表、地圖 popup 與詳情 Modal。
@@ -42,7 +50,6 @@ export interface Hospital {
     type: string; // 醫院分類代碼，例如 exotic；供資料分類或未來邏輯使用。
     typeText: string; // 醫院分類原始文字；畫面會標準化顯示為「犬貓診療、特寵診療」或「特寵診療」。
     emergency?: boolean; // Legacy 急診標記；新資料建議優先使用 hasEmergencyService。
-    rating?: string; // 評分文字；目前 UI 多數地方未啟用，保留資料相容。
     services?: string[]; // 可提供服務項目，例如內科、外科、健康檢查。
     pets?: string[]; // 可看診寵物名稱，顯示在詳情與列表圖示摘要。
     pet_category_group?: string[]; // 標準化寵物分類，用於首頁寵物類型篩選。
@@ -74,10 +81,10 @@ export interface Hospital {
       line?: string; // LINE 官方帳號、預約或聯絡連結。
       [key: string]: string | undefined; // 其他社群或聯絡平台網址。
     };
+    google?: HospitalGoogleProfile; // Google Maps 商家資料，例如評分、評論數、地圖網址與 Place ID。
     createdAt?: string; // 資料建立時間，通常為 ISO datetime。
     updatedAt?: string; // 資料最後更新時間，通常為 ISO datetime。
     last_checked?: string; // 最後人工確認資料日期，格式 YYYY-MM-DD。
-    google_place_id?: string; // Google Places ID，供未來串接地點 API 或比對資料使用。
     fb?: {
       last_fb_post_date?: string; // 最後擷取或紀錄的 Facebook 貼文日期。
       last_fb_post_text?: string; // 最後擷取或紀錄的 Facebook 貼文摘要。

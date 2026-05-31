@@ -48,7 +48,9 @@ export const TaipeiHospitalList = [
         "13:30-17:00"
       ]
     },
-    "rating": "4.4",
+    "google": {
+      "rating": "4.4"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -142,7 +144,9 @@ export const TaipeiHospitalList = [
         "18:30-20:30"
       ]
     },
-    "rating": "4.3",
+    "google": {
+      "rating": "4.3"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -232,7 +236,9 @@ export const TaipeiHospitalList = [
         "10:00-20:30"
       ]
     },
-    "rating": "4.7",
+    "google": {
+      "rating": "4.7"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -331,7 +337,9 @@ export const TaipeiHospitalList = [
         "16:00-18:00"
       ]
     },
-    "rating": "4.3",
+    "google": {
+      "rating": "4.3"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -405,7 +413,9 @@ export const TaipeiHospitalList = [
       ],
       "sun": []
     },
-    "rating": "4.8",
+    "google": {
+      "rating": "4.8"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -500,7 +510,6 @@ export const TaipeiHospitalList = [
         "18:00-20:30"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": true,
     "emergencyHours": "24小時急診（夜間急診限犬貓）",
@@ -599,7 +608,9 @@ export const TaipeiHospitalList = [
       ],
       "sun": []
     },
-    "rating": "4.6",
+    "google": {
+      "rating": "4.6"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -670,7 +681,9 @@ export const TaipeiHospitalList = [
         "09:00-18:00"
       ]
     },
-    "rating": "2.2",
+    "google": {
+      "rating": "2.2"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -754,7 +767,6 @@ export const TaipeiHospitalList = [
         "18:00-21:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": true,
     "emergencyHours": "每日 10:00–21:00",
@@ -834,7 +846,9 @@ export const TaipeiHospitalList = [
         "14:00-21:00"
       ]
     },
-    "rating": "4.5",
+    "google": {
+      "rating": "4.5"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -910,7 +924,6 @@ export const TaipeiHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -980,7 +993,6 @@ export const TaipeiHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1050,7 +1062,6 @@ export const TaipeiHospitalList = [
       "sat": [],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1146,7 +1157,9 @@ export const TaipeiHospitalList = [
       ],
       "sun": []
     },
-    "rating": "3.4",
+    "google": {
+      "rating": "3.4"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1215,7 +1228,6 @@ export const TaipeiHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": true,
     "emergencyHours": "19:30–22:00（需致電確認）",
@@ -1295,7 +1307,6 @@ export const TaipeiHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1383,7 +1394,9 @@ export const TaipeiHospitalList = [
       ],
       "sun": []
     },
-    "rating": "4.7",
+    "google": {
+      "rating": "4.7"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1466,7 +1479,6 @@ export const TaipeiHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1557,7 +1569,6 @@ export const TaipeiHospitalList = [
         "19:00-21:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1641,7 +1652,6 @@ export const TaipeiHospitalList = [
         "00:00-24:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": true,
     "emergencyHours": "24小時",
@@ -1731,7 +1741,9 @@ export const TaipeiHospitalList = [
         "14:00-17:00"
       ]
     },
-    "rating": "4.7",
+    "google": {
+      "rating": "4.7"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1813,7 +1825,6 @@ export const TaipeiHospitalList = [
         "10:00-18:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1891,7 +1902,6 @@ export const TaipeiHospitalList = [
         "00:00-24:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": true,
     "emergencyHours": "21:30–08:30",
@@ -1973,7 +1983,9 @@ export const TaipeiHospitalList = [
         "15:00-20:30"
       ]
     },
-    "rating": "4.6",
+    "google": {
+      "rating": "4.6"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -2065,7 +2077,9 @@ export const TaipeiHospitalList = [
         "10:00-12:00"
       ]
     },
-    "rating": "4.7",
+    "google": {
+      "rating": "4.7"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -2155,7 +2169,6 @@ export const TaipeiHospitalList = [
         "15:00-21:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -2259,7 +2272,6 @@ export const TaipeiHospitalList = [
         "18:00-20:30"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -2348,7 +2360,6 @@ export const TaipeiHospitalList = [
         "11:00-21:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -2444,7 +2455,6 @@ export const TaipeiHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",

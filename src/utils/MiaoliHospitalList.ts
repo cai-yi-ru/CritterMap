@@ -31,7 +31,6 @@ export const MiaoliHospitalList = [
       "sat": [],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -102,7 +101,6 @@ export const MiaoliHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",

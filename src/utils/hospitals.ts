@@ -10,7 +10,9 @@ export const hospitals = [
         city: "taipei",
         phone: "02-2369-8798",
         hours: "週一至週五 09:00-21:00, 週六至週日 09:00-18:00",
-        rating: 4.7,
+        google: {
+          rating: "4.7"
+        },
         emergency: true,
         services: ["一般診療", "疫苗接種", "寵物美容", "外科手術", "牙科治療", "寵物住院"],
         pets: ["貓", "狗", "兔子", "倉鼠"],
@@ -27,7 +29,9 @@ export const hospitals = [
         city: "taipei",
         phone: "02-2378-5637",
         hours: "週一至週五 10:00-22:00, 週六至週日 10:00-18:00",
-        rating: 4.6,
+        google: {
+          rating: "4.6"
+        },
         emergency: true,
         services: ["一般診療", "疫苗接種", "寵物美容", "外科手術", "牙科治療", "寵物住院", "行為諮詢"],
         pets: ["貓", "狗", "兔子", "鳥類"],
@@ -44,7 +48,9 @@ export const hospitals = [
         city: "taoyuan",
         phone: "03-339-3520",
         hours: "週一至週五 09:00-20:00, 週六至週日 09:00-17:00",
-        rating: 4.5,
+        google: {
+          rating: "4.5"
+        },
         emergency: false,
         services: ["一般診療", "疫苗接種", "寵物美容", "外科手術", "寵物住院"],
         pets: ["貓", "狗"],
@@ -61,7 +67,9 @@ export const hospitals = [
         city: "taipei",
         phone: "02-2823-7561",
         hours: "週一至週五 09:00-21:00, 週六至週日 09:00-18:00",
-        rating: 4.3,
+        google: {
+          rating: "4.3"
+        },
         emergency: false,
         services: ["一般診療", "疫苗接種", "寵物美容", "外科手術"],
         pets: ["貓", "狗", "兔子"],
@@ -78,7 +86,9 @@ export const hospitals = [
         city: "taipei",
         phone: "02-2709-8765",
         hours: "週一至週五 10:00-19:00, 週六 10:00-17:00",
-        rating: 4.8,
+        google: {
+          rating: "4.8"
+        },
         emergency: false,
         services: ["牙齒檢查", "洗牙", "拔牙", "牙齒矯正", "口腔手術"],
         pets: ["貓", "狗"],
@@ -95,7 +105,9 @@ export const hospitals = [
         city: "taipei",
         phone: "02-2709-8234",
         hours: "週一至週五 09:00-21:00, 週六至週日 09:00-18:00",
-        rating: 4.2,
+        google: {
+          rating: "4.2"
+        },
         emergency: true,
         services: ["一般診療", "疫苗接種", "寵物美容", "外科手術", "牙科治療", "寵物住院"],
         pets: ["貓", "狗", "兔子", "倉鼠", "鳥類"],
@@ -112,7 +124,9 @@ export const hospitals = [
         city: "newtaipei",
         phone: "02-2257-3456",
         hours: "週一至週五 09:00-21:00, 週六至週日 09:00-18:00",
-        rating: 4.0,
+        google: {
+          rating: "4.0"
+        },
         emergency: false,
         services: ["一般診療", "疫苗接種", "寵物美容", "外科手術"],
         pets: ["貓", "狗"],
@@ -129,7 +143,9 @@ export const hospitals = [
         city: "taipei",
         phone: "02-2634-9876",
         hours: "週一至週五 10:00-19:00, 週六 10:00-17:00",
-        rating: 4.9,
+        google: {
+          rating: "4.9"
+        },
         emergency: false,
         services: ["一般診療", "疫苗接種", "外科手術", "營養諮詢", "行為諮詢"],
         pets: ["爬蟲類", "鳥類", "兔子", "倉鼠", "蜜袋鼯", "刺蝟"],
@@ -146,7 +162,9 @@ export const hospitals = [
         city: "taipei",
         phone: "02-2345-7890",
         hours: "週一至週五 09:00-20:00, 週六 09:00-17:00",
-        rating: 4.9,
+        google: {
+          rating: "4.9"
+        },
         emergency: false,
         services: ["一般診療", "疫苗接種", "貓咪絕育", "貓咪行為諮詢", "貓咪牙科"],
         pets: ["貓"],
@@ -163,7 +181,9 @@ export const hospitals = [
         city: "newtaipei",
         phone: "02-2987-1234",
         hours: "週一至週五 09:00-18:00, 週六 09:00-15:00",
-        rating: 4.7,
+        google: {
+          rating: "4.7"
+        },
         emergency: true,
         services: ["骨科手術", "軟組織手術", "神經外科", "腫瘤手術", "復健治療"],
         pets: ["貓", "狗"],
@@ -180,7 +200,9 @@ export const hospitals = [
         city: "taipei",
         phone: "02-2756-5678",
         hours: "週一至週五 10:00-19:00, 週六 10:00-17:00",
-        rating: 4.6,
+        google: {
+          rating: "4.6"
+        },
         emergency: false,
         services: ["皮膚檢查", "過敏測試", "皮膚病治療", "皮膚手術", "皮膚護理諮詢"],
         pets: ["貓", "狗"],
@@ -197,7 +219,9 @@ export const hospitals = [
         city: "taichung",
         phone: "04-2287-5678",
         hours: "週一至週五 09:00-21:00, 週六至週日 09:00-18:00",
-        rating: 4.3,
+        google: {
+          rating: "4.3"
+        },
         emergency: true,
         services: ["一般診療", "疫苗接種", "寵物美容", "外科手術", "牙科治療", "寵物住院"],
         pets: ["貓", "狗", "兔子", "倉鼠"],
@@ -244,7 +268,9 @@ export const hospitals = [
             "14:00-17:30"
           ]
         },
-        "rating": "4.9",
+        "google": {
+          "rating": "4.9"
+        },
         "reservationRequired": true,
         "hasEmergencyService": false,
         "emergencyHours": "",

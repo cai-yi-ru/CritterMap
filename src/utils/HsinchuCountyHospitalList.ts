@@ -40,7 +40,6 @@ export const HsinchuCountyHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -129,7 +128,6 @@ export const HsinchuCountyHospitalList = [
         "18:00-20:30"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",

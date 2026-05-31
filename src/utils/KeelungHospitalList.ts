@@ -35,7 +35,6 @@ export const KeelungHospitalList = [
         "11:00-19:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",

@@ -41,7 +41,6 @@ export const ChanghuaHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -129,7 +128,6 @@ export const ChanghuaHospitalList = [
       "sat": [],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -234,7 +232,6 @@ export const ChanghuaHospitalList = [
         "14:00-17:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -322,7 +319,6 @@ export const ChanghuaHospitalList = [
         "17:30-20:30"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -413,7 +409,6 @@ export const ChanghuaHospitalList = [
         "12:00-18:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -533,7 +528,6 @@ export const ChanghuaHospitalList = [
         "18:30-21:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",

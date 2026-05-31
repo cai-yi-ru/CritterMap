@@ -37,7 +37,9 @@ export const KaohsiungHospitalList = [
         "16:00-18:30"
       ]
     },
-    "rating": "4.7",
+    "google": {
+      "rating": "4.7"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -77,7 +79,6 @@ export const KaohsiungHospitalList = [
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2026-05-31T00:00:00.000Z",
     "last_checked": "2026-05-31",
-    "google_place_id": "",
     "fb": {
       "last_fb_post_date": "",
       "last_fb_post_text": ""
@@ -127,7 +128,9 @@ export const KaohsiungHospitalList = [
         "14:00-17:00"
       ]
     },
-    "rating": "4.8",
+    "google": {
+      "rating": "4.8"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -178,7 +181,6 @@ export const KaohsiungHospitalList = [
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2026-05-31T00:00:00.000Z",
     "last_checked": "2026-05-31",
-    "google_place_id": "",
     "fb": {
       "last_fb_post_date": "",
       "last_fb_post_text": ""
@@ -206,7 +208,7 @@ export const KaohsiungHospitalList = [
     "lat": 22.6912505,
     "lng": 120.3167668,
     "type": "exotic",
-    "typeText": "犬貓與特寵診療",
+    "typeText": "特寵診療",
     "phone": "07-350-3840",
     "specialEvents": [],
     "hours": "上午 09:30–12:30\n下午 14:00–17:30\n晚上 18:30–21:30\n每週五早上休診\n週日晚上休診",
@@ -245,11 +247,16 @@ export const KaohsiungHospitalList = [
         "14:00-17:30"
       ]
     },
-    "rating": "",
+    "google": {
+      "rating": "4.4",
+      "reviewCount": 1915,
+      "mapsUrl": "https://www.google.com/maps/place/%E6%A2%85%E8%A5%BF%E5%8B%95%E7%89%A9%E9%86%AB%E7%99%82%E4%B8%AD%E5%BF%83/@22.6913366,120.3167105,17z/data=!3m1!4b1!4m6!3m5!1s0x346e059894835b87:0xeea6eea3954f52db!8m2!3d22.6913366!4d120.3167105!16s%2Fg%2F11qn956kg5",
+      "verifiedAt": "2026-05-31"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
-    "nightClinic": false,
+    "nightClinic": true,
     "services": [
       "一般疾病診察",
       "鼠兔及野生動物齒科",
@@ -263,15 +270,20 @@ export const KaohsiungHospitalList = [
       "特別寵物住院看護",
       "出境健康證明",
       "拾獲野鳥檢傷",
-      "其他檢驗服務"
+      "其他檢驗服務",
+      "飼主衛教"
     ],
     "pets": [
       "兔",
       "鼠",
+      "天竺鼠",
+      "龍貓",
       "蛇",
       "蜥蜴",
-      "龜",
+      "守宮",
+      "烏龜",
       "鸚鵡",
+      "鳥類",
       "蜜袋鼯",
       "浣熊",
       "刺蝟",
@@ -281,8 +293,6 @@ export const KaohsiungHospitalList = [
       "青蛙"
     ],
     "pet_category_group": [
-      "狗",
-      "貓",
       "兔",
       "鼠",
       "鳥類",
@@ -294,13 +304,18 @@ export const KaohsiungHospitalList = [
       "其他特寵"
     ],
     "specialties": [
+      "特別寵物科",
+      "特殊寵物疾病診斷與治療",
       "特殊寵物內外科",
+      "鼠兔及野生動物齒科",
       "小型哺乳類醫療",
       "鳥類醫療",
       "爬蟲類醫療",
       "眼科",
       "牙科",
-      "影像診斷"
+      "影像診斷",
+      "特別寵物中獸醫醫療",
+      "野生動物醫療"
     ],
     "website": "https://www.jsah.com.tw/about/index/48",
     "appointmentLink": "",
@@ -309,15 +324,37 @@ export const KaohsiungHospitalList = [
       "facebook": "https://www.facebook.com/profile.php?id=100064180026471",
       "instagram": "https://www.instagram.com/exoticjs16/"
     },
-    "clinicNotes": "特別寵物科位於梅西動物醫療中心五樓，提供兔、鼠、蛇、蜥蜴、龜、鸚鵡、蜜袋鼯、浣熊、刺蝟等特殊寵物的疾病診斷及治療。設有專屬非犬貓醫療空間，減少吠叫、獵捕者氣息，貼心考量患者多具敏感且易受驚嚇的自然習性。配備標準白鐵籠、訂製壓克力籠、ICU保溫病房及獨立手術房等設施。\n採取預約制,看診前請提前撥打電話預約唷",
+    "clinicNotes": "特別寵物科位於梅西動物醫療中心五樓，提供兔、鼠、蛇、蜥蜴、龜、鸚鵡、蜜袋鼯、浣熊、刺蝟等特殊寵物的疾病診斷及治療。\n院內設有專屬非犬貓醫療空間、標準白鐵籠、訂製壓克力籠、ICU 保溫病房及獨立手術房，盡量降低特殊寵物候診與住院時的緊迫。\n採取預約制，看診前請提前撥打電話預約。Google Maps 商家頁為梅西動物醫療中心，特寵科門診、專線與月門診表以官網及 Instagram 公告為準。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2024-12-19T00:00:00.000Z",
-    "last_checked": "2026-03-25",
-    "google_place_id": "",
+    "updatedAt": "2026-05-31T00:00:00.000Z",
+    "last_checked": "2026-05-31",
     "fb": {
-      "last_fb_post_date": "",
-      "last_fb_post_text": ""
-    }
+      "last_fb_post_date": "2026-05",
+      "last_fb_post_text": "2026 年 5 月下旬可見梅西動物醫療中心住院醫師訓練計畫相關貼文；未見與梅西特寵科固定門診時間直接衝突的異動。"
+    },
+    "announcements": [
+      {
+        "id": "mercy-exotic-may-2026-nong16-closure",
+        "type": "hours_change",
+        "title": "2026 年 5 月農十六整修休診與梅西加診",
+        "content": "Instagram 2026-05-11 公告：農十六特別寵物科因院內水管整修，5/18-5/25 暫時休診；該期間如有門診需求請聯繫梅西分院，並於 5/18 晚上、5/19 早上與晚上、5/24 全天增加梅西分院特寵門診。",
+        "startDate": "2026-05-18",
+        "endDate": "2026-05-25",
+        "sourceLabel": "官方 Instagram",
+        "sourceUrl": "https://www.instagram.com/exoticjs16/p/DYMCsO5E8d9/",
+        "verifiedAt": "2026-05-31"
+      },
+      {
+        "id": "mercy-exotic-june-2026-schedule-published",
+        "type": "notice",
+        "title": "2026 年 6 月門診表已發布",
+        "content": "Instagram 2026-05-24 公告 6 月門診表，並再次提醒特寵看診採預約制，有疑問或約診需求請致電梅西分院 07-3503840。",
+        "startDate": "2026-05-24",
+        "sourceLabel": "官方 Instagram",
+        "sourceUrl": "https://www.instagram.com/exoticjs16/p/DYuBgc0E8c7/",
+        "verifiedAt": "2026-05-31"
+      }
+    ]
   },
   {
     "id": "20ffc868-d6b7-4fd4-9df3-727f109a32f6",
@@ -328,28 +365,24 @@ export const KaohsiungHospitalList = [
     "lat": 22.6546566,
     "lng": 120.29792,
     "type": "exotic",
-    "typeText": "犬貓與特寵診療",
+    "typeText": "特寵診療",
     "phone": "07-550-3582",
     "specialEvents": [],
-    "hours": "上午 09:00–12:30\n下午 14:00–17:30\n晚上 18:30–21:00\n週日休診\n每週五早上休診",
+    "hours": "週一至週五 上午休診 / 下午 14:00–17:30 / 晚上 18:30–21:00\n週六 上午 09:00–12:30 / 下午 14:00–17:30 / 晚上 18:30–21:00\n週日休診\n看診採預約制",
     "business_hours": {
       "mon": [
-        "09:00-12:30",
         "14:00-17:30",
         "18:30-21:00"
       ],
       "tue": [
-        "09:00-12:30",
         "14:00-17:30",
         "18:30-21:00"
       ],
       "wed": [
-        "09:00-12:30",
         "14:00-17:30",
         "18:30-21:00"
       ],
       "thu": [
-        "09:00-12:30",
         "14:00-17:30",
         "18:30-21:00"
       ],
@@ -364,74 +397,106 @@ export const KaohsiungHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
+    "google": {
+      "rating": "4.4",
+      "reviewCount": 853,
+      "mapsUrl": "https://www.google.com/maps/place/%E4%B8%AD%E8%88%88%E8%BE%B2%E5%8D%81%E5%85%AD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6546566,120.29792,17z/data=!3m1!4b1!4m6!3m5!1s0x346e04ff51a4f8ff:0xb884a5c74180e3b0!8m2!3d22.6546566!4d120.29792!16s%2Fg%2F11b6362bd3",
+      "verifiedAt": "2026-05-31"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
-    "nightClinic": false,
+    "nightClinic": true,
     "services": [
-      "特殊寵物內外科診療",
-      "禽鳥類醫療",
-      "爬蟲類醫療",
-      "小型哺乳類醫療",
+      "一般疾病診察",
+      "鼠兔及野生動物齒科",
+      "外科手術",
+      "修蹄服務",
+      "進階身體檢查",
       "眼科檢查",
-      "牙科診療",
-      "影像診斷",
-      "住院照護",
-      "出境健康證明"
+      "電腦斷層掃描",
+      "專門寵物食譜及飼料販賣",
+      "禽鳥類特別服務",
+      "特別寵物住院看護",
+      "出境健康證明",
+      "拾獲野鳥檢傷",
+      "其他檢驗服務",
+      "飼主衛教"
     ],
     "pets": [
       "兔",
       "鼠",
-      "刺蝟",
-      "蜜袋鼯",
-      "鸚鵡",
+      "天竺鼠",
+      "龍貓",
       "蛇",
       "蜥蜴",
-      "龜",
+      "守宮",
+      "烏龜",
+      "鸚鵡",
+      "鳥類",
+      "蜜袋鼯",
       "浣熊",
+      "刺蝟",
       "豬",
       "羊",
       "貂",
       "青蛙"
     ],
     "pet_category_group": [
-      "狗",
-      "貓",
       "兔",
       "鼠",
+      "天竺鼠",
+      "龍貓",
       "鳥類",
       "爬蟲",
       "刺蝟",
       "蜜袋鼯",
       "貂",
+      "兩棲",
+      "野生動物",
       "其他特寵"
     ],
     "specialties": [
+      "特別寵物科",
+      "特殊寵物疾病診斷與治療",
       "特殊寵物內外科",
+      "鼠兔及野生動物齒科",
       "小型哺乳類醫療",
       "鳥類醫療",
       "爬蟲類醫療",
       "眼科",
       "牙科",
-      "影像診斷"
+      "影像診斷",
+      "野生動物醫療"
     ],
-    "website": "https://www.jsah.com.tw/about/index/48",
+    "website": "https://www.jsah.com.tw/about/index/49",
     "appointmentLink": "",
     "transportTips": "",
     "socialMedia": {
       "facebook": "https://www.facebook.com/Exo.JS16/",
       "instagram": "https://www.instagram.com/exoticjs16/"
     },
-    "clinicNotes": "中興農十六特別寵物科提供兔、鼠、刺蝟、蜜袋鼯、鸚鵡、蛇、蜥蜴、龜等特殊寵物的疾病診斷及治療。設有專屬非犬貓醫療空間，減少吠叫、獵捕者氣息，貼心考量患者多具敏感且易受驚嚇的自然習性。配備標準白鐵籠、訂製壓克力籠、ICU保溫病房及獨立手術房等設施。\n本院採取預約制,看診前請提前撥打電話預約唷",
+    "clinicNotes": "中興農十六特別寵物科提供兔、鼠、蛇、蜥蜴、烏龜、鸚鵡、禽鳥、蜜袋鼯、浣熊、刺蝟等特殊寵物的疾病診斷及治療，官方 Instagram 亦列出龍貓、天竺鼠、守宮、貂等看診對象。\n官方網站說明本科聘有 6 位特別寵物專科獸醫師，提供預防醫學衛教、特別寵物照護關懷與精密疾病診斷。\n本院採預約制，看診前請提前撥打電話預約。Google Maps 商家頁為中興農十六動物醫院院本部；特寵科專線與門診時段以官方網站及官方 Instagram 公告為準。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2024-12-19T00:00:00.000Z",
-    "last_checked": "2026-03-25",
-    "google_place_id": "",
+    "updatedAt": "2026-05-31T00:00:00.000Z",
+    "last_checked": "2026-05-31",
     "fb": {
-      "last_fb_post_date": "",
-      "last_fb_post_text": ""
-    }
+      "last_fb_post_date": "2026-05-10",
+      "last_fb_post_text": "官方 Facebook 可見 2026 年 5 月門診異動通知：農十六分院因水管整修，5/18-5/25 暫時休診，門診需求請聯繫梅西分院。"
+    },
+    "announcements": [
+      {
+        "id": "nong16-exotic-may-2026-renovation-closure",
+        "type": "hours_change",
+        "title": "2026 年 5 月農十六整修休診",
+        "content": "官方 Instagram 與 Facebook 公告：農十六分院院內緊急進行水管整修工程，5/18-5/25 暫時休診；若有門診需求請聯繫梅西分院。梅西分院於 5/18 晚上、5/19 早上與晚上、5/24 全天增加特寵門診。",
+        "startDate": "2026-05-18",
+        "endDate": "2026-05-25",
+        "sourceLabel": "官方 Instagram / Facebook",
+        "sourceUrl": "https://www.instagram.com/exoticjs16/p/DYMCsO5E8d9/",
+        "verifiedAt": "2026-05-31"
+      }
+    ]
   },
   {
     "id": "action-animal-hospital",
@@ -442,41 +507,40 @@ export const KaohsiungHospitalList = [
     "lat": 22.6188772,
     "lng": 120.3177393,
     "type": "exotic",
-    "typeText": "犬貓與特寵診療",
+    "typeText": "犬貓診療、特寵診療",
     "phone": "07-726-5577",
     "specialEvents": [],
-    "hours": "週一 10:00–13:00 / 14:00–19:00\n週二至五 10:00–12:00 / 13:00–21:00\n週六、日 10:00–12:00 / 14:00–19:00",
+    "hours": "週一、二、四、五 10:00–12:00 / 14:00–21:00\n週三、六 10:00–12:00 / 14:00–19:00\n週日休診",
     "business_hours": {
       "mon": [
-        "10:00-13:00",
-        "14:00-19:00"
+        "10:00-12:00",
+        "14:00-21:00"
       ],
       "tue": [
         "10:00-12:00",
-        "13:00-21:00"
+        "14:00-21:00"
       ],
       "wed": [
         "10:00-12:00",
-        "13:00-21:00"
+        "14:00-19:00"
       ],
       "thu": [
         "10:00-12:00",
-        "13:00-21:00"
+        "14:00-21:00"
       ],
       "fri": [
         "10:00-12:00",
-        "13:00-21:00"
+        "14:00-21:00"
       ],
       "sat": [
         "10:00-12:00",
         "14:00-19:00"
       ],
-      "sun": [
-        "10:00-13:00",
-        "14:00-19:00"
-      ]
+      "sun": []
     },
-    "rating": "4.4",
+    "google": {
+      "rating": "4.6"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -491,19 +555,23 @@ export const KaohsiungHospitalList = [
       "寵物復健科",
       "中草藥治療",
       "緩和醫療",
-      "長期照護"
+      "長期照護",
+      "雷射治療",
+      "中西醫整合醫療"
     ],
     "pets": [
       "貓",
       "狗",
       "兔",
       "鼠",
+      "天竺鼠",
+      "鳥類",
       "刺蝟",
       "蜜袋鼯",
       "烏龜",
       "守宮",
       "蜥蜴",
-      "青蛙"
+      "蛙類"
     ],
     "pet_category_group": [
       "狗",
@@ -511,6 +579,7 @@ export const KaohsiungHospitalList = [
       "兔",
       "鼠",
       "天竺鼠",
+      "鳥類",
       "爬蟲",
       "刺蝟",
       "蜜袋鼯",
@@ -521,24 +590,188 @@ export const KaohsiungHospitalList = [
       "針灸治療",
       "草藥食療",
       "復健推拿",
-      "特殊寵物醫療"
+      "雷射與物理治療",
+      "爬蟲與特殊寵物醫療",
+      "小型哺乳類內外科",
+      "兩棲爬蟲醫療",
+      "鳥禽類醫療",
+      "兔與囓齒類醫療",
+      "ISFM 貓友善金牌",
+      "貓友善醫療"
     ],
     "website": "https://actionah2020.com/",
-    "appointmentLink": "",
+    "appointmentLink": "https://lin.ee/qbHqTSH",
     "transportTips": "",
     "socialMedia": {
       "facebook": "https://www.facebook.com/action1218/",
-      "instagram": ""
+      "instagram": "",
+      "line": "https://lin.ee/qbHqTSH"
     },
-    "clinicNotes": "目前本院特殊寵物診療的物種以兩棲爬蟲類(不包含蛇類)、兔子、寵物鼠與天竺鼠為主。",
+    "clinicNotes": "官方網站標示線上預約看診平台為 Facebook 與 Line，且所有診療均以現場看診為基礎；建議先透過電話、Facebook 或官方 Line 預約與確認醫師門診。官方網站說明亞幸提供中西醫整合醫療，包含寵物針灸、中草藥食療、復健、雷射、特殊寵物科、腫瘤科、牙科、緩和醫療與長照等；官方醫師介紹與 Facebook 可見資訊支持小型哺乳類、兔與囓齒類、鳥禽、兩棲爬蟲等特寵診療。特殊寵物以爬寵特寵為主，官方列出烏龜、兔子、蜜袋鼯、蜥蜴、守宮與蛙類等，不含蛇類請先來電確認。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2024-12-19T00:00:00.000Z",
-    "last_checked": "2026-03-25",
-    "google_place_id": "",
+    "updatedAt": "2026-05-31T00:00:00.000Z",
+    "last_checked": "2026-05-31",
     "fb": {
-      "last_fb_post_date": "",
-      "last_fb_post_text": ""
-    }
+      "last_fb_post_date": "2026-05-31",
+      "last_fb_post_text": "官方 Facebook 可見 6 月門診時間，並分享大山異寵動物醫院 6/1 試營運前可致電亞幸 07-7265577 預約大山門診。"
+    },
+    "announcements": [
+      {
+        "id": "action-june-2026-exotic-schedule",
+        "type": "notice",
+        "title": "2026 年 6 月特寵門診與大山異寵預約提醒",
+        "content": "官方 Facebook 可見 6 月門診時間；另分享大山異寵動物醫院 6/1 試營運前資訊，試營運期間可致電亞幸 07-7265577 預約大山異寵門診。大山院址為苓雅區凱旋二路139號，與亞幸本院地址不同。",
+        "startDate": "2026-06-01",
+        "endDate": "2026-06-30",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/action1218/",
+        "verifiedAt": "2026-05-31"
+      }
+    ]
+  },
+  {
+    "id": "dashan-exotic-animal-hospital",
+    "name": "大山異寵動物醫院",
+    "city": "高雄市",
+    "district": "苓雅區",
+    "address": "高雄市苓雅區凱旋二路139號",
+    "lat": 22.6292518,
+    "lng": 120.3217156,
+    "type": "exotic",
+    "typeText": "特寵診療",
+    "phone": "07-223-5666",
+    "specialEvents": [],
+    "hours": "週一、二、四、五、六、日 10:00–12:00 / 14:00–17:00 / 18:00–20:30\n週三休診\n試營運期間預約優先；官方貼文提醒 6/1 試營運前可致電亞幸 07-7265577 預約大山門診。",
+    "business_hours": {
+      "mon": [
+        "10:00-12:00",
+        "14:00-17:00",
+        "18:00-20:30"
+      ],
+      "tue": [
+        "10:00-12:00",
+        "14:00-17:00",
+        "18:00-20:30"
+      ],
+      "wed": [],
+      "thu": [
+        "10:00-12:00",
+        "14:00-17:00",
+        "18:00-20:30"
+      ],
+      "fri": [
+        "10:00-12:00",
+        "14:00-17:00",
+        "18:00-20:30"
+      ],
+      "sat": [
+        "10:00-12:00",
+        "14:00-17:00",
+        "18:00-20:30"
+      ],
+      "sun": [
+        "10:00-12:00",
+        "14:00-17:00",
+        "18:00-20:30"
+      ]
+    },
+    "google": {
+      "mapsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E5%B1%B1%E7%95%B0%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6292518,120.3217156,17z/data=!3m1!4b1!4m6!3m5!1s0x346e05000103b1ff:0x8db5419d774f920b!8m2!3d22.6292518!4d120.3217156!16s%2Fg%2F11zc4r1kr1",
+      "verifiedAt": "2026-05-31"
+    },
+    "reservationRequired": true,
+    "hasEmergencyService": false,
+    "emergencyHours": "",
+    "nightClinic": true,
+    "services": [
+      "特殊寵物科",
+      "異寵內科",
+      "異寵外科",
+      "中西醫整合醫療",
+      "健康檢查",
+      "住院照護",
+      "飼養管理諮詢"
+    ],
+    "pets": [
+      "兔",
+      "鼠",
+      "天竺鼠",
+      "浣熊",
+      "刺蝟",
+      "鳥類",
+      "烏龜",
+      "守宮",
+      "蜥蜴",
+      "蛇",
+      "蛙類",
+      "其他特寵"
+    ],
+    "pet_category_group": [
+      "兔",
+      "鼠",
+      "天竺鼠",
+      "鳥類",
+      "爬蟲",
+      "刺蝟",
+      "兩棲",
+      "其他特寵"
+    ],
+    "specialties": [
+      "異寵專科醫療",
+      "爬蟲類醫療",
+      "鳥類醫療",
+      "小型哺乳類醫療",
+      "中西醫整合醫療",
+      "健康管理",
+      "飼養管理與照護諮詢"
+    ],
+    "website": "",
+    "appointmentLink": "",
+    "transportTips": "鄰近捷運文化中心站與高雄市文化中心周邊；地址與亞幸動物醫院本院不同，導航請使用凱旋二路139號。",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/61566032887018",
+      "instagram": "https://www.instagram.com/mountain___vet/"
+    },
+    "clinicNotes": "亞幸動物醫院官方 Facebook 2026-04-22 公告將異寵醫療自原有體系獨立，成立大山異寵動物醫院，定位為專屬異寵醫院，聚焦爬蟲類、鳥類與各式小型哺乳動物，並結合臨床經驗、飼養管理與整合醫療。Chrome 查核獨立 Facebook 頁顯示電話 07-223-5666、地址苓雅區凱旋二路139號、尚無評分；官方 Instagram mountain___vet 標示週三公休、電話 07-2235666，並說明座落高雄，提供非犬貓寵物專業醫療團隊。Google Maps 已有獨立商家頁與座標，但頁面仍提示新增電話、營業時間與網站，且未見評分與評論數，故 google.rating/reviewCount 暫不填。2026 年 6 月班表標示醫師為藍將誠、利嘉彥、陳弈凱，週三休診；試營運期間預約優先、免掛號費，6/1 試營運前可致電亞幸 07-7265577 預約大山門診。",
+    "specialClinic": {
+      "hasExoticSpecialClinic": true,
+      "label": "異寵專屬門診",
+      "note": "亞幸體系成立的異寵專屬院所；6 月班表為週三休診，其餘日 10:00-12:00、14:00-17:00、18:00-20:30，仍請以官方 FB/IG 與電話確認。",
+      "reservationRequired": true,
+      "sourceLabel": "官方 Facebook / Instagram",
+      "sourceUrl": "https://www.instagram.com/mountain___vet/",
+      "verifiedAt": "2026-05-31"
+    },
+    "createdAt": "2026-05-31T00:00:00.000Z",
+    "updatedAt": "2026-05-31T00:00:00.000Z",
+    "last_checked": "2026-05-31",
+    "fb": {
+      "last_fb_post_date": "2026-05-31",
+      "last_fb_post_text": "大山獨立 Facebook 頁已建立，顯示電話 07 223 5666、地址苓雅區凱旋二路139號、尚無評分；亞幸官方 Facebook 與大山官方 IG 另發布新班表與 6/1 試營運預約提醒。"
+    },
+    "announcements": [
+      {
+        "id": "dashan-exotic-trial-opening-2026-06-01",
+        "type": "notice",
+        "title": "2026 年 6 月 1 日試營運預約提醒",
+        "content": "亞幸官方 Facebook 可見大山異寵動物醫院 6/1 試營運前資訊；試營運期間可致電亞幸體系預約專線 07-7265577 預約大山異寵門診。大山院址為苓雅區凱旋二路139號，與亞幸本院不同。",
+        "startDate": "2026-06-01",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/action1218/",
+        "verifiedAt": "2026-05-31"
+      },
+      {
+        "id": "dashan-exotic-june-2026-schedule",
+        "type": "hours_change",
+        "title": "2026 年 6 月試營運門診班表",
+        "content": "官方 Facebook / Instagram 2026 年 6 月班表顯示，週三休診；其餘日依藍將誠、利嘉彥、陳弈凱醫師排班看診，營業時間為 10:00-12:00、14:00-17:00、18:00-20:30。試營運期間免掛號費、預約優先，建議先致電確認。",
+        "startDate": "2026-06-01",
+        "endDate": "2026-06-30",
+        "sourceLabel": "官方 Facebook / Instagram",
+        "sourceUrl": "https://www.instagram.com/p/DYw4EouT5Bh/",
+        "verifiedAt": "2026-05-31"
+      }
+    ]
   },
   {
     "id": "monsterah62",
@@ -590,7 +823,9 @@ export const KaohsiungHospitalList = [
         "18:30-21:00"
       ]
     },
-    "rating": "4.2",
+    "google": {
+      "rating": "4.2"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -642,7 +877,6 @@ export const KaohsiungHospitalList = [
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-12-19T00:00:00.000Z",
     "last_checked": "2026-03-25",
-    "google_place_id": "",
     "fb": {
       "last_fb_post_date": "",
       "last_fb_post_text": ""
@@ -690,7 +924,6 @@ export const KaohsiungHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -736,7 +969,6 @@ export const KaohsiungHospitalList = [
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-12-19T00:00:00.000Z",
     "last_checked": "2026-03-25",
-    "google_place_id": "",
     "fb": {
       "last_fb_post_date": "",
       "last_fb_post_text": ""
@@ -781,7 +1013,6 @@ export const KaohsiungHospitalList = [
         "14:00-21:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -817,7 +1048,6 @@ export const KaohsiungHospitalList = [
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-12-19T00:00:00.000Z",
     "last_checked": "2026-03-25",
-    "google_place_id": "",
     "fb": {
       "last_fb_post_date": "",
       "last_fb_post_text": ""
@@ -862,7 +1092,6 @@ export const KaohsiungHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -911,7 +1140,6 @@ export const KaohsiungHospitalList = [
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-12-19T00:00:00.000Z",
     "last_checked": "2026-03-25",
-    "google_place_id": "",
     "fb": {
       "last_fb_post_date": "",
       "last_fb_post_text": ""
@@ -949,7 +1177,6 @@ export const KaohsiungHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1001,7 +1228,6 @@ export const KaohsiungHospitalList = [
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-12-19T00:00:00.000Z",
     "last_checked": "",
-    "google_place_id": "",
     "fb": {
       "last_fb_post_date": "",
       "last_fb_post_text": ""
@@ -1051,7 +1277,6 @@ export const KaohsiungHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1083,7 +1308,6 @@ export const KaohsiungHospitalList = [
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-12-19T00:00:00.000Z",
     "last_checked": "",
-    "google_place_id": "",
     "fb": {
       "last_fb_post_date": "",
       "last_fb_post_text": ""
@@ -1129,7 +1353,6 @@ export const KaohsiungHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1167,7 +1390,6 @@ export const KaohsiungHospitalList = [
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-12-19T00:00:00.000Z",
     "last_checked": "2026-03-25",
-    "google_place_id": "",
     "fb": {
       "last_fb_post_date": "",
       "last_fb_post_text": ""
@@ -1210,7 +1432,6 @@ export const KaohsiungHospitalList = [
         "09:00-02:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": true,
     "emergencyHours": "21:00–02:00",
@@ -1255,7 +1476,6 @@ export const KaohsiungHospitalList = [
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-12-19T00:00:00.000Z",
     "last_checked": "",
-    "google_place_id": "",
     "fb": {
       "last_fb_post_date": "",
       "last_fb_post_text": ""
@@ -1306,7 +1526,9 @@ export const KaohsiungHospitalList = [
       ],
       "sun": []
     },
-    "rating": "4.2",
+    "google": {
+      "rating": "4.2"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1344,7 +1566,6 @@ export const KaohsiungHospitalList = [
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-12-19T00:00:00.000Z",
     "last_checked": "",
-    "google_place_id": "",
     "fb": {
       "last_fb_post_date": "",
       "last_fb_post_text": ""
@@ -1390,7 +1611,6 @@ export const KaohsiungHospitalList = [
         "13:30-18:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1430,7 +1650,6 @@ export const KaohsiungHospitalList = [
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-12-19T00:00:00.000Z",
     "last_checked": "2026-03-25",
-    "google_place_id": "",
     "fb": {
       "last_fb_post_date": "",
       "last_fb_post_text": ""
@@ -1485,7 +1704,6 @@ export const KaohsiungHospitalList = [
         "13:00-18:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": true,
     "emergencyHours": "\n週一至六 \n12:00–13:00\n18:00–19:00\n22:00–02:00\n週日 \n12:00–13:00\n18:00–02:00",
@@ -1526,7 +1744,6 @@ export const KaohsiungHospitalList = [
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-12-19T00:00:00.000Z",
     "last_checked": "",
-    "google_place_id": "",
     "fb": {
       "last_fb_post_date": "",
       "last_fb_post_text": ""
@@ -1581,7 +1798,6 @@ export const KaohsiungHospitalList = [
         "14:00-18:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1630,7 +1846,6 @@ export const KaohsiungHospitalList = [
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-12-19T00:00:00.000Z",
     "last_checked": "2026-03-25",
-    "google_place_id": "",
     "fb": {
       "last_fb_post_date": "",
       "last_fb_post_text": ""
@@ -1674,7 +1889,9 @@ export const KaohsiungHospitalList = [
         "10:00-16:00"
       ]
     },
-    "rating": "3.3",
+    "google": {
+      "rating": "3.3"
+    },
     "reservationRequired": false,
     "hasEmergencyService": true,
     "emergencyHours": "延長夜診至深夜，急診請至院內按鈴",
@@ -1710,7 +1927,6 @@ export const KaohsiungHospitalList = [
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-12-19T00:00:00.000Z",
     "last_checked": "",
-    "google_place_id": "",
     "fb": {
       "last_fb_post_date": "",
       "last_fb_post_text": ""
@@ -1761,7 +1977,6 @@ export const KaohsiungHospitalList = [
         "14:00-17:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": true,
     "emergencyHours": "\n▪️犬貓｜𝟮𝟰小時\n▪️特寵｜早上𝟭𝟬點至凌晨𝟮點",
@@ -1822,7 +2037,6 @@ export const KaohsiungHospitalList = [
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-12-19T00:00:00.000Z",
     "last_checked": "2026-03-25",
-    "google_place_id": "",
     "fb": {
       "last_fb_post_date": "",
       "last_fb_post_text": ""
@@ -1873,7 +2087,6 @@ export const KaohsiungHospitalList = [
         "14:00-17:00"
       ]
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -1934,7 +2147,6 @@ export const KaohsiungHospitalList = [
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-12-19T00:00:00.000Z",
     "last_checked": "2026-03-25",
-    "google_place_id": "",
     "fb": {
       "last_fb_post_date": "",
       "last_fb_post_text": ""
@@ -1986,7 +2198,6 @@ export const KaohsiungHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -2041,7 +2252,6 @@ export const KaohsiungHospitalList = [
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-12-19T00:00:00.000Z",
     "last_checked": "2026-03-25",
-    "google_place_id": "",
     "fb": {
       "last_fb_post_date": "",
       "last_fb_post_text": ""
@@ -2089,7 +2299,6 @@ export const KaohsiungHospitalList = [
         "09:00-17:00"
       ]
     },
-    "rating": "",
     "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -2132,7 +2341,6 @@ export const KaohsiungHospitalList = [
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-12-19T00:00:00.000Z",
     "last_checked": "",
-    "google_place_id": "",
     "fb": {
       "last_fb_post_date": "",
       "last_fb_post_text": ""
@@ -2172,7 +2380,6 @@ export const KaohsiungHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -2217,7 +2424,6 @@ export const KaohsiungHospitalList = [
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-12-19T00:00:00.000Z",
     "last_checked": "2026-03-25",
-    "google_place_id": "",
     "fb": {
       "last_fb_post_date": "",
       "last_fb_post_text": ""
@@ -2264,7 +2470,6 @@ export const KaohsiungHospitalList = [
       "sat": [],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -2310,7 +2515,6 @@ export const KaohsiungHospitalList = [
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-12-19T00:00:00.000Z",
     "last_checked": "2026-03-25",
-    "google_place_id": "",
     "fb": {
       "last_fb_post_date": "",
       "last_fb_post_text": ""
@@ -2362,7 +2566,9 @@ export const KaohsiungHospitalList = [
         "18:00-22:00"
       ]
     },
-    "rating": "4.9",
+    "google": {
+      "rating": "4.9"
+    },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -2409,7 +2615,6 @@ export const KaohsiungHospitalList = [
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-12-19T00:00:00.000Z",
     "last_checked": "2026-03-25",
-    "google_place_id": "",
     "fb": {
       "last_fb_post_date": "",
       "last_fb_post_text": ""

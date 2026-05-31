@@ -36,7 +36,6 @@ export const YilanHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -82,7 +81,6 @@ export const YilanHospitalList = [
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2026-05-16T00:00:00.000Z",
     "last_checked": "2026-05-16",
-    "google_place_id": "",
     "fb": {
       "last_fb_post_date": "",
       "last_fb_post_text": ""
@@ -125,7 +123,6 @@ export const YilanHospitalList = [
       ],
       "sun": []
     },
-    "rating": "",
     "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
@@ -159,7 +156,6 @@ export const YilanHospitalList = [
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2026-05-16T00:00:00.000Z",
     "last_checked": "2026-05-16",
-    "google_place_id": "",
     "fb": {
       "last_fb_post_date": "",
       "last_fb_post_text": ""
