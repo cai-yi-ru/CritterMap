@@ -50,6 +50,9 @@ const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick 
         }
         const activeAnnouncements = getActiveAnnouncements(hospital.announcements);
         const hasClosureAnnouncement = activeAnnouncements.some(announcement => announcement.type === 'closure');
+        const specialClinicLabel = hospital.specialClinic?.hasExoticSpecialClinic
+          ? hospital.specialClinic.label || '特寵特別門診'
+          : '';
 
         return (
           <div
@@ -79,6 +82,11 @@ const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick 
                 {activeAnnouncements.length > 0 && (
                   <span className="text-xs px-2 py-1 bg-cream text-darktext rounded-full ml-2">
                     {hasClosureAnnouncement ? '休診公告' : '最新公告'}
+                  </span>
+                )}
+                {specialClinicLabel && (
+                  <span className="text-xs px-2 py-1 bg-softpink/40 text-red-700 rounded-full ml-2">
+                    {specialClinicLabel}
                   </span>
                 )}
               </div>

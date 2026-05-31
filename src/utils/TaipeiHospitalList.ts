@@ -2393,6 +2393,15 @@ export const TaipeiHospitalList = [
       "instagram": ""
     },
     "clinicNotes": "1️⃣ 特寵門診固定於每週三看診，建議提前透過LINE（ID: @693viezk）預約。\n2️⃣ 醫院採全面預約制（免掛號費），視診量而定接受現場掛號，現場掛號需多收100元掛號費，建議飼主事先預約。\n3️⃣ 特寵門診常常滿診，請提前安排就診時間。\n4️⃣ 無提供夜間急診服務，請依門診時段安排就醫。",
+    "specialClinic": {
+      "hasExoticSpecialClinic": true,
+      "label": "特寵特別門診",
+      "note": "特寵門診固定於每週三看診，建議提前透過 LINE（ID: @693viezk）預約；門診常常滿診，請提前安排。",
+      "reservationRequired": true,
+      "sourceLabel": "官方網站與維護者整理",
+      "sourceUrl": "https://www.lovecat.com.tw/pages/%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E6%9C%8D%E5%8B%99%E9%A0%85%E7%9B%AE",
+      "verifiedAt": "2026-03-25"
+    },
     "last_checked": "2026-03-25"
   },
   {

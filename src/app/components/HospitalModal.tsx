@@ -15,6 +15,9 @@ interface HospitalModalProps {
 
 export default function HospitalModal({ hospital, onClose }: HospitalModalProps) {
   const activeAnnouncements = getActiveAnnouncements(hospital.announcements);
+  const specialClinic = hospital.specialClinic?.hasExoticSpecialClinic
+    ? hospital.specialClinic
+    : undefined;
 
   return (
     <Dialog open={!!hospital} onClose={onClose} className="relative z-50">
@@ -132,6 +135,45 @@ export default function HospitalModal({ hospital, onClose }: HospitalModalProps)
                       {service}
                     </span>
                   ))}
+                </div>
+              </div>
+            )}
+
+            {specialClinic && (
+              <div className="border-t border-gray-100 pt-5">
+                <div className="rounded-lg border border-softpink/40 bg-softpink/20 p-4">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <h4 className="font-medium text-red-700">特別門診提醒</h4>
+                    <span className="text-xs px-2 py-1 rounded-full bg-white text-red-700">
+                      {specialClinic.label || '特寵特別門診'}
+                    </span>
+                    {specialClinic.reservationRequired && (
+                      <span className="text-xs px-2 py-1 rounded-full bg-white text-darktext">
+                        需預約
+                      </span>
+                    )}
+                  </div>
+                  {specialClinic.note && (
+                    <p className="mt-2 text-sm text-gray-700 whitespace-pre-wrap">{specialClinic.note}</p>
+                  )}
+                  {specialClinic.sourceLabel && (
+                    <div className="mt-2 text-xs text-gray-500">
+                      來源：
+                      {specialClinic.sourceUrl ? (
+                        <a
+                          href={specialClinic.sourceUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-mintdark hover:text-mint"
+                        >
+                          {specialClinic.sourceLabel}
+                        </a>
+                      ) : (
+                        specialClinic.sourceLabel
+                      )}
+                      {specialClinic.verifiedAt && `，確認日期：${specialClinic.verifiedAt}`}
+                    </div>
+                  )}
                 </div>
               </div>
             )}

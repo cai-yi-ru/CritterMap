@@ -22,6 +22,16 @@ export interface HospitalUpdate {
     verifiedAt?: string; // 最後確認此更新內容的日期，格式 YYYY-MM-DD。
   }
 
+export interface HospitalSpecialClinic {
+    hasExoticSpecialClinic?: boolean; // 是否為特寵特別門診、限定門診或需特別安排。
+    label?: string; // 顯示用短標籤，例如「特寵特別門診」、「兔病特別門診」。
+    note?: string; // 特別門診限制摘要，例如固定時段、指定醫師或預約方式。
+    reservationRequired?: boolean; // 此特別門診是否需要預約；不影響全院 reservationRequired 篩選。
+    sourceLabel?: string; // 特別門診資訊來源名稱，例如官方網站、Facebook、LINE 公告。
+    sourceUrl?: string; // 特別門診資訊來源網址。
+    verifiedAt?: string; // 最後確認特別門診資訊的日期，格式 YYYY-MM-DD。
+  }
+
 export interface Hospital {
     id: string; // 醫院唯一識別碼，用於列表 key、更新動態關聯與資料維護。
     name: string; // 醫院名稱，顯示在列表、地圖 popup 與詳情 Modal。
@@ -55,6 +65,7 @@ export interface Hospital {
     appointmentLink?: string; // 線上預約連結，若醫院有提供可在未來 UI 使用。
     transportTips?: string; // 交通提醒，例如捷運出口、停車資訊或地標。
     clinicNotes?: string; // 維護者整理的就診備註與注意事項，顯示在詳情。
+    specialClinic?: HospitalSpecialClinic; // 特寵特別門診、限定時段或需特別安排的結構化提醒。
     lat: number; // 緯度，用於地圖 Marker 位置。
     lng: number; // 經度，用於地圖 Marker 位置。
     socialMedia?: {
