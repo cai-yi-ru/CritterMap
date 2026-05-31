@@ -5,6 +5,28 @@ import type { HospitalUpdate } from '@/types/hospital';
 // Run `npm run prune:hospital-updates` to preview expired items, then use `:write` to prune.
 export const HospitalUpdateList: HospitalUpdate[] = [
   {
+    id: 'update-pingtung-npust-vmth-contact-2026-06-01',
+    hospitalId: 'npust-vmth',
+    type: 'contact',
+    title: '伴侶動物與特殊寵物門診搬遷',
+    summary: '屏科大附設獸醫教學醫院官方公告伴侶動物科及特殊寵物科已搬遷至屏東市信義路151號城中院區；大動物與野生動物仍依官方院區公告確認，預約專線 08-7740270。',
+    updatedAt: '2026-06-01',
+    sourceLabel: '官方網站、官方 Facebook、Google Maps',
+    sourceUrl: 'https://vmth.npust.edu.tw/',
+    verifiedAt: '2026-06-01',
+  },
+  {
+    id: 'update-pingtung-tatung-hours-2026-06-01',
+    hospitalId: 'tatung-animal-hospital',
+    type: 'hours',
+    title: '固定門診時間更新',
+    summary: '大同動物醫院依官方 Facebook 與 Google Maps 更新固定門診時間：週一至週六 09:00-13:00、14:00-17:30、18:30-22:00，週三 13:00-15:00 院內開會及進修休診；週日 09:00-13:00、14:00-17:00。',
+    updatedAt: '2026-06-01',
+    sourceLabel: '官方 Facebook、Google Maps',
+    sourceUrl: 'https://www.facebook.com/ttahpt/',
+    verifiedAt: '2026-06-01',
+  },
+  {
     id: 'update-kaohsiung-kabu-content-2026-06-01',
     hospitalId: 'kabu-animal-hospital-kaohsiung',
     type: 'content',
