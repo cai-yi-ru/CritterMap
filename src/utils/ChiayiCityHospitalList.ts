@@ -5,13 +5,13 @@ export const ChiayiCityHospitalList = [
     "city": "嘉義市",
     "district": "西區",
     "address": "嘉義市西區新榮路241號",
-    "lat": 23.4770582,
-    "lng": 120.4442651,
+    "lat": 23.4770594,
+    "lng": 120.4442613,
     "type": "exotic",
-    "typeText": "犬貓與特寵診療",
+    "typeText": "犬貓診療、特寵診療",
     "phone": "05-2283568",
     "specialEvents": [],
-    "hours": "週一至週六 10:00–20:30；週日休診",
+    "hours": "週一至週六 10:00-20:30；週日休診。\n國定假日另行公告，請以官方網站最新消息或 Facebook 貼文為準。",
     "business_hours": {
       "mon": [
         "10:00-20:30"
@@ -30,98 +30,6 @@ export const ChiayiCityHospitalList = [
       ],
       "sat": [
         "10:00-20:30"
-      ],
-      "sun": []
-    },
-    "reservationRequired": true,
-    "hasEmergencyService": false,
-    "emergencyHours": "",
-    "nightClinic": true,
-    "services": [
-      "一般內外科診療",
-      "疫苗注射",
-      "結紮手術",
-      "健康檢查",
-      "皮膚科",
-      "腫瘤科",
-      "心臟科",
-      "牙科",
-      "家醫科",
-      "放射科",
-      "內視鏡檢查",
-      "高壓氧治療",
-      "重症加護",
-      "寵物美容",
-      "安親住宿"
-    ],
-    "pets": [
-      "貓",
-      "狗",
-      "兔",
-      "鼠"
-    ],
-    "pet_category_group": [
-      "狗",
-      "貓",
-      "兔",
-      "鼠"
-    ],
-    "specialties": [
-      "皮膚科",
-      "腫瘤科",
-      "心臟科",
-      "牙科",
-      "高壓氧治療",
-      "重症加護"
-    ],
-    "website": "",
-    "appointmentLink": "",
-    "transportTips": "臨近嘉義火車站，醫院對面及隔壁設有停車場，距離約10公尺，停車方便。",
-    "socialMedia": {
-      "facebook": "https://www.facebook.com/058vet/",
-      "instagram": ""
-    },
-    "clinicNotes": "1️⃣ 門診採預約掛號制，建議提前電話預約。\n2️⃣ 提供犬貓與特殊寵物（兔、鼠）之一般內外科診療、疫苗注射、結紮手術、健康檢查等服務。\n3️⃣ 設有皮膚科、腫瘤科、心臟科、牙科等專科門診，並配備高壓氧治療、內視鏡檢查等先進設備。\n4️⃣ 提供寵物美容與安親住宿服務，需提前預約。\n5️⃣ 醫院設有獨立診間與候診區，環境溫馨，定期消毒，確保寵物安全與舒適。",
-    "last_checked": "2026-03-25"
-  },
-  {
-    "id": "chiayi-shang-zhe-animal-hospital",
-    "name": "上哲動物醫院",
-    "city": "嘉義市",
-    "district": "東區",
-    "address": "嘉義市東區吳鳳北路259號",
-    "lat": 23.4803885,
-    "lng": 120.4529192,
-    "type": "exotic",
-    "typeText": "犬貓與特寵診療",
-    "phone": "05-2231500",
-    "specialEvents": [],
-    "hours": "週一、二、四、五 09:10–12:00、14:00–18:00、19:30–20:30；週六 09:10–12:00、14:00–18:00；週三與週日休診",
-    "business_hours": {
-      "mon": [
-        "09:10-12:00",
-        "14:00-18:00",
-        "19:30-20:30"
-      ],
-      "tue": [
-        "09:10-12:00",
-        "14:00-18:00",
-        "19:30-20:30"
-      ],
-      "wed": [],
-      "thu": [
-        "09:10-12:00",
-        "14:00-18:00",
-        "19:30-20:30"
-      ],
-      "fri": [
-        "09:10-12:00",
-        "14:00-18:00",
-        "19:30-20:30"
-      ],
-      "sat": [
-        "09:10-12:00",
-        "14:00-18:00"
       ],
       "sun": []
     },
@@ -130,19 +38,23 @@ export const ChiayiCityHospitalList = [
     "emergencyHours": "",
     "nightClinic": true,
     "services": [
-      "一般內外科診療",
-      "疫苗注射",
-      "結紮手術",
+      "一般內科",
+      "外科手術",
+      "家庭醫學",
+      "影像診斷",
       "健康檢查",
+      "預防注射",
+      "驅蟲",
+      "晶片植入",
+      "犬貓絕育",
       "皮膚科",
-      "骨科",
+      "腫瘤科",
       "心臟科",
-      "產科",
-      "X光檢查",
-      "氣體麻醉",
-      "心電圖",
-      "住院隔離病房",
-      "到府接送服務"
+      "齒科",
+      "高壓氧治療",
+      "四級雷射治療",
+      "重症照護",
+      "寵物美容"
     ],
     "pets": [
       "貓",
@@ -154,15 +66,99 @@ export const ChiayiCityHospitalList = [
       "狗",
       "貓",
       "兔",
-      "鼠",
-      "野生動物"
+      "鼠"
     ],
     "specialties": [
+      "鼠兔門診",
       "皮膚科",
-      "骨科",
       "心臟科",
-      "產科"
+      "腫瘤科",
+      "齒科",
+      "高壓氧治療",
+      "四級雷射治療",
+      "重症照護"
     ],
+    "website": "https://058vet.com/",
+    "appointmentLink": "",
+    "transportTips": "臨近嘉義火車站；官方列出 CITY PARKING 城市車旅新榮站與賀達收費停車場，步行約1分鐘。",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/058vet/",
+      "instagram": "",
+      "line": "https://line.me/ti/p/@bcn8236u"
+    },
+    "google": {
+      "rating": "4.5",
+      "reviewCount": 291,
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E4%BD%A0%E6%88%91%E7%89%A0%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%20%E5%98%89%E7%BE%A9%E5%B8%82%E8%A5%BF%E5%8D%80%E6%96%B0%E6%A6%AE%E8%B7%AF241%E8%99%9F",
+      "verifiedAt": "2026-06-01"
+    },
+    "clinicNotes": "本院採預約優先制，可來電預約或現場掛號；如遇急診病患會優先處置，可能延後一般門診看診時間。\n本院無24小時門診服務，非門診時間可於粉絲專頁或來電詢問可否接受急診。\n官方網站明確列有鼠兔門診；特殊寵物就診建議先致電確認當日可看診安排。",
+    "fb": {
+      "last_fb_post_text": "初五(2/21)起，正常營業。"
+    },
+    "last_checked": "2026-06-01"
+  },
+  {
+    "id": "chiayi-shang-zhe-animal-hospital",
+    "name": "上哲動物醫院",
+    "city": "嘉義市",
+    "district": "東區",
+    "address": "嘉義市東區吳鳳北路259號",
+    "lat": 23.4803531,
+    "lng": 120.4529318,
+    "type": "exotic",
+    "typeText": "犬貓診療、特寵診療",
+    "phone": "05-2231500",
+    "specialEvents": [],
+    "hours": "週一、二、四、五 09:30-12:00、15:30-18:00、19:00-20:30；週六 09:30-12:00、15:00-18:00；週三、週日休診。\n一般門診建議提前來電預約，目前沒有夜間急診服務。",
+    "business_hours": {
+      "mon": [
+        "09:30-12:00",
+        "15:30-18:00",
+        "19:00-20:30"
+      ],
+      "tue": [
+        "09:30-12:00",
+        "15:30-18:00",
+        "19:00-20:30"
+      ],
+      "wed": [],
+      "thu": [
+        "09:30-12:00",
+        "15:30-18:00",
+        "19:00-20:30"
+      ],
+      "fri": [
+        "09:30-12:00",
+        "15:30-18:00",
+        "19:00-20:30"
+      ],
+      "sat": [
+        "09:30-12:00",
+        "15:00-18:00"
+      ],
+      "sun": []
+    },
+    "reservationRequired": false,
+    "hasEmergencyService": false,
+    "emergencyHours": "",
+    "nightClinic": true,
+    "services": [
+      "犬貓及非犬貓小動物醫療"
+    ],
+    "pets": [
+      "貓",
+      "狗",
+      "鼠"
+    ],
+    "pet_category_group": [
+      "狗",
+      "貓",
+      "兔",
+      "鼠",
+      "其他特寵"
+    ],
+    "specialties": [],
     "website": "",
     "appointmentLink": "",
     "transportTips": "",
@@ -170,8 +166,14 @@ export const ChiayiCityHospitalList = [
       "facebook": "https://www.facebook.com/p/%E5%98%89%E7%BE%A9%E4%B8%8A%E5%93%B2%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-100063718011441/",
       "instagram": ""
     },
-    "clinicNotes": "1️⃣ 門診時間為週一、二、四、五三段診療時段：09:10–12:00、14:00–18:00、19:30–20:30，週六僅看上午與下午，週三與週日休診。\n2️⃣ 提供犬貓與特殊寵物（兔、鼠）之一般內外科診療、疫苗注射、結紮手術、健康檢查等服務。\n3️⃣ 特寵門診專精於鼠兔等草食類動物照護，亦為台灣特殊寵物暨野生動物醫學會成員院所。\n4️⃣ 設有皮膚科、骨科、心臟科、產科等專科門診，並配備X光、氣體麻醉、心電圖等設備。\n5️⃣ 提供住院照護與到府接送服務，建議提前電話聯繫安排。",
-    "last_checked": "2026-03-25"
+    "google": {
+      "rating": "3.9",
+      "reviewCount": 114,
+      "mapsUrl": "https://www.google.com/maps/place/%E4%B8%8A%E5%93%B2%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2(%E9%BC%A0%E5%85%94%E7%89%B9%E5%AF%B5%E5%B0%88%E7%A7%91)/@23.4803531,120.4529318,17z/data=!3m1!4b1!4m6!3m5!1s0x346e9433f7ba8d77:0xa034e91000d09f32!8m2!3d23.4803531!4d120.4529318!16s%2Fg%2F1vwllwsy",
+      "verifiedAt": "2026-06-01"
+    },
+    "clinicNotes": "一般門診建議提前來電預約。官方 Facebook 標示提供犬貓及非犬貓小動物醫療，週三、週日固定休診，目前沒有夜間急診服務。\n非犬貓小動物或特殊需求建議先電話確認當日可看診狀況。",
+    "last_checked": "2026-06-01"
   },
   {
     "id": "chiayi-jia-le-animal-hospital",
@@ -179,13 +181,13 @@ export const ChiayiCityHospitalList = [
     "city": "嘉義市",
     "district": "東區",
     "address": "嘉義市東區民族路67號",
-    "lat": 23.4768478,
-    "lng": 120.4598687,
+    "lat": 23.4768224,
+    "lng": 120.4598707,
     "type": "exotic",
-    "typeText": "犬貓與特寵診療",
+    "typeText": "犬貓診療、特寵診療",
     "phone": "05-2773122",
     "specialEvents": [],
-    "hours": "週一至週六 10:00–20:30；週日休診",
+    "hours": "週一至週六 10:00-20:30；週日休診。\n非犬貓特殊動物門診週一至週六中午 12:00 起看診，休診資訊以官方 Facebook 公告為主。",
     "business_hours": {
       "mon": [
         "10:00-20:30"
@@ -207,62 +209,50 @@ export const ChiayiCityHospitalList = [
       ],
       "sun": []
     },
-    "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
     "nightClinic": true,
     "services": [
-      "一般內外科診療",
-      "疫苗注射",
-      "結紮手術",
-      "健康檢查",
-      "皮膚科",
-      "骨科",
-      "心臟科",
-      "腫瘤科",
-      "內分泌科",
-      "行為問題諮詢",
-      "X光檢查",
-      "血液檢查",
-      "氣體麻醉",
-      "住院照護"
+      "非犬貓特殊動物門診"
     ],
     "pets": [
       "貓",
       "狗",
-      "兔",
-      "鼠",
-      "鳥類",
-      "爬蟲",
-      "蜜袋鼯",
       "其他特寵"
     ],
     "pet_category_group": [
       "狗",
       "貓",
-      "兔",
-      "鼠",
-      "鳥類",
-      "爬蟲",
-      "蜜袋鼯"
+      "其他特寵"
     ],
-    "specialties": [
-      "皮膚科",
-      "骨科",
-      "心臟科",
-      "腫瘤科",
-      "內分泌科",
-      "行為問題諮詢"
-    ],
+    "specialties": [],
     "website": "",
     "appointmentLink": "",
     "transportTips": "",
     "socialMedia": {
       "facebook": "https://www.facebook.com/ChiaYi.Jia.le.animal.hospital/",
-      "instagram": ""
+      "instagram": "https://www.instagram.com/jia_le_ah/"
     },
-    "clinicNotes": "1️⃣ 門診時間為週一至週六 10:00–20:30，週日休診。\n2️⃣ 提供犬貓與特殊寵物（兔、鼠、鳥類、爬蟲、蜜袋鼯等）之一般內外科診療、疫苗注射、結紮手術、健康檢查等服務。\n3️⃣ 設有皮膚科、骨科、心臟科、腫瘤科、內分泌科、行為問題諮詢等專科門診，並配備X光檢查、血液檢查、氣體麻醉等先進設備。\n4️⃣ 提供住院照護服務，需提前電話預約。\n5️⃣ 建議初診或特殊寵物就診前先行電話預約，以確保診療品質。",
-    "last_checked": "2026-03-25"
+    "google": {
+      "rating": "3.6",
+      "reviewCount": 251,
+      "mapsUrl": "https://www.google.com/maps/place/%E5%98%89%E6%A8%82%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.4768224,120.4598707,17z/data=!3m1!4b1!4m6!3m5!1s0x346e957f1b7300cb:0x3efcd81abc924a95!8m2!3d23.4768224!4d120.4598707!16s%2Fg%2F11s4c_bxdh",
+      "verifiedAt": "2026-06-01"
+    },
+    "clinicNotes": "官方 Facebook 標示非犬貓特殊動物門診為週一至週六中午 12:00 起看診，休診資訊以粉專公告為主。\n特殊動物就診前建議先電話確認當日門診狀況。",
+    "specialClinic": {
+      "hasExoticSpecialClinic": true,
+      "label": "非犬貓特殊動物門診",
+      "note": "週一至週六中午 12:00 起看診；休診資訊以官方 Facebook 公告為主，建議就診前先電話確認。",
+      "sourceLabel": "官方 Facebook",
+      "sourceUrl": "https://www.facebook.com/ChiaYi.Jia.le.animal.hospital/",
+      "verifiedAt": "2026-06-01"
+    },
+    "fb": {
+      "last_fb_post_date": "2026-05-28",
+      "last_fb_post_text": "分享 2026-06-07 高齡動物與慢性疾病照護相關課程資訊，非院內門診異動。"
+    },
+    "last_checked": "2026-06-01"
   },
   {
     "id": "chiayi-ncyu-animal-hospital",
@@ -270,13 +260,13 @@ export const ChiayiCityHospitalList = [
     "city": "嘉義市",
     "district": "西區",
     "address": "嘉義市西區新民路580號",
-    "lat": 23.4742133,
-    "lng": 120.4362444,
+    "lat": 23.4624135,
+    "lng": 120.4438326,
     "type": "exotic",
-    "typeText": "犬貓與特寵診療",
+    "typeText": "犬貓診療、特寵診療",
     "phone": "05-2732988",
     "specialEvents": [],
-    "hours": "週一至週五 08:30–11:30、13:30–16:30；週三夜間門診已取消；週六、日休診",
+    "hours": "週一至週五 08:30–11:30、13:30–16:30；週六、日休診。\n門診採預約制與現場掛號並行，建議先電話或網路登記預約。",
     "business_hours": {
       "mon": [
         "08:30-11:30",
@@ -301,61 +291,94 @@ export const ChiayiCityHospitalList = [
       "sat": [],
       "sun": []
     },
-    "reservationRequired": true,
+    "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
     "nightClinic": false,
     "services": [
       "小動物內科",
       "小動物外科",
-      "眼科",
-      "心臟科",
+      "小動物眼科",
       "中獸醫暨復健科",
       "特殊寵物科",
-      "針灸門診",
+      "基本健康檢查",
       "營養諮詢",
+      "行為諮詢",
       "放射攝影檢查",
       "超音波檢查",
       "血液生化檢測",
       "糞便檢測",
-      "住院照護"
+      "針灸治療",
+      "中藥治療",
+      "物理治療"
     ],
     "pets": [
       "貓",
       "狗",
       "兔",
-      "鼠",
       "鳥類",
       "爬蟲",
-      "刺蝟",
       "蜜袋鼯",
+      "兩棲",
       "其他特寵"
     ],
     "pet_category_group": [
       "狗",
       "貓",
       "兔",
-      "鼠",
       "鳥類",
       "爬蟲",
-      "刺蝟",
-      "蜜袋鼯"
+      "蜜袋鼯",
+      "兩棲",
+      "其他特寵"
     ],
     "specialties": [
-      "眼科",
+      "小動物眼科",
       "心臟科",
       "中獸醫暨復健科",
       "特殊寵物科"
     ],
     "website": "https://www.ncyu.edu.tw/ncyuvh/",
     "appointmentLink": "https://forms.gle/UFY4zbcAvEpXcDcCA",
-    "transportTips": "醫院位於嘉義大學新民校區內，建議由新民路校門進入；洽公人員可由世賢路開口進入停放車輛。",
+    "transportTips": "醫院位於嘉義大學新民校區。駕車可由世賢路路口停車場進入；搭乘台鐵至嘉義火車站後，可轉乘忠孝新民幹線至新民校區正門，再步行約 5-10 分鐘。",
     "socialMedia": {
       "facebook": "https://www.facebook.com/NCYUVH/",
       "instagram": ""
     },
-    "clinicNotes": "1️⃣ 門診時間為週一至週五 08:30–11:30、13:30–16:30，週三夜間門診已取消，週六、日休診。\n2️⃣ 提供犬貓與特殊寵物（兔、鼠、鳥類、爬蟲、刺蝟、蜜袋鼯等）之內科、外科、眼科、心臟科、中獸醫暨復健科、特殊寵物科等診療服務。\n3️⃣ 設有針灸門診、營養諮詢，並配備放射攝影、超音波、血液生化檢測、糞便檢測等先進設備。\n4️⃣ 提供住院照護服務，需提前電話或網路預約。\n5️⃣ 建議初診或特殊寵物就診前先行電話或網路預約，以確保診療品質。",
-    "last_checked": "2026-03-25"
+    "google": {
+      "rating": "4.0",
+      "reviewCount": 233,
+      "mapsUrl": "https://www.google.com/maps/place/%E5%9C%8B%E7%AB%8B%E5%98%89%E7%BE%A9%E5%A4%A7%E5%AD%B8%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.4624135,120.4438326,17z/",
+      "verifiedAt": "2026-06-01"
+    },
+    "clinicNotes": "門診採預約制與現場掛號並行，建議先電話或網路登記預約。\n官方設有特殊寵物科，服務非傳統寵物，包括鳥類、小型哺乳動物、爬蟲類與兩棲類；特殊寵物就診前建議確認當日門診安排。",
+    "specialClinic": {
+      "hasExoticSpecialClinic": true,
+      "label": "特殊寵物科",
+      "note": "官方設有特殊寵物科，主要服務鳥類、小型哺乳動物（兔、蜜袋鼯等）、爬蟲類與兩棲類；門診班表顯示特寵門診為指定門診，建議就診前先電話或網路登記確認。",
+      "reservationRequired": false,
+      "sourceLabel": "官方網站",
+      "sourceUrl": "https://website.ncyu.edu.tw/ncyuvh/Contents?nodeId=57470",
+      "verifiedAt": "2026-06-01"
+    },
+    "announcements": [
+      {
+        "id": "ncyu-dragon-boat-closure-2026-06-19",
+        "type": "closure",
+        "title": "端午節暫停門診",
+        "content": "配合端午節放假，國立嘉義大學獸醫學院附設動物醫院於 2026-06-19 暫停門診；長期用藥或回診需求建議提前安排。",
+        "startDate": "2026-06-19",
+        "endDate": "2026-06-19",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/NCYUVH/",
+        "verifiedAt": "2026-06-01"
+      }
+    ],
+    "fb": {
+      "last_fb_post_date": "2026-06-01",
+      "last_fb_post_text": "<休診公告> 配合端午節放假，本院於115年6月19日暫停門診；請飼主提前準備藥品。"
+    },
+    "last_checked": "2026-06-01"
   },
   {
     "id": "mascot-animal-hospital",
@@ -366,60 +389,65 @@ export const ChiayiCityHospitalList = [
     "lat": 23.4773222,
     "lng": 120.4681494,
     "type": "exotic",
-    "typeText": "犬貓與特寵診療",
+    "typeText": "犬貓診療、特寵診療",
     "phone": "05-2760177",
     "specialEvents": [],
-    "hours": "週一至週六 09:00–13:00, 14:00–21:00；週日 09:00–13:00, 14:00–19:00",
+    "hours": "週一至週五 09:00–12:00、14:00–21:00（最晚掛號 20:00）；週六至週日 09:00–12:00、14:00–19:00（最晚掛號 18:00）。\n門診可現場掛號；手術需提前預約至門診評估。",
     "business_hours": {
       "mon": [
-        "09:00-13:00",
+        "09:00-12:00",
         "14:00-21:00"
       ],
       "tue": [
-        "09:00-13:00",
+        "09:00-12:00",
         "14:00-21:00"
       ],
       "wed": [
-        "09:00-13:00",
+        "09:00-12:00",
         "14:00-21:00"
       ],
       "thu": [
-        "09:00-13:00",
+        "09:00-12:00",
         "14:00-21:00"
       ],
       "fri": [
-        "09:00-13:00",
+        "09:00-12:00",
         "14:00-21:00"
       ],
       "sat": [
-        "09:00-13:00",
-        "14:00-21:00"
+        "09:00-12:00",
+        "14:00-19:00"
       ],
       "sun": [
-        "09:00-13:00",
+        "09:00-12:00",
         "14:00-19:00"
       ]
     },
     "google": {
-      "rating": "4.8"
+      "rating": "4.8",
+      "reviewCount": 602,
+      "mapsUrl": "https://www.google.com/maps/place/%E8%90%8C%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.4773222,120.4681494,17z/",
+      "verifiedAt": "2026-06-01"
     },
-    "reservationRequired": true,
+    "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
     "nightClinic": true,
     "services": [
-      "犬貓內外科診療",
+      "小動物牙科（貓慢性口炎）",
+      "小動物腫瘤科",
+      "小動物內外科",
+      "小動物心臟科",
+      "小動物骨科",
+      "小動物中醫治療",
       "鳥類診療",
-      "腫瘤治療",
-      "牙科",
-      "中獸醫",
-      "心臟科",
-      "疫苗注射",
-      "血液檢測",
-      "X光-DR",
-      "超音波檢查",
-      "氣體麻醉",
-      "高壓氧治療"
+      "鳥類內外科",
+      "腹腔鏡",
+      "日本飛鳥四級雷射",
+      "動物高壓氧治療",
+      "小動物重症急診加護",
+      "再生醫療（幹細胞、外泌體）",
+      "貓狗鳥健康檢查與疫苗施打"
     ],
     "pets": [
       "貓",
@@ -432,18 +460,53 @@ export const ChiayiCityHospitalList = [
       "鳥類"
     ],
     "specialties": [
-      "腫瘤治療",
-      "氣體麻醉",
-      "高壓氧治療"
+      "小動物牙科",
+      "小動物腫瘤科",
+      "小動物心臟科",
+      "小動物骨科",
+      "鳥類內外科",
+      "中獸醫",
+      "腹腔鏡",
+      "雷射治療",
+      "高壓氧治療",
+      "重症急診加護",
+      "再生醫療"
     ],
     "website": "https://mascot-animal.com/",
-    "appointmentLink": "",
-    "transportTips": "",
+    "appointmentLink": "https://line.me/R/ti/p/@096hytik",
+    "transportTips": "門口可停約三台汽車，機車可停多台；附近有付費停車場及公有停車格。",
     "socialMedia": {
       "facebook": "https://www.facebook.com/mascot0718/",
-      "instagram": ""
+      "instagram": "https://www.instagram.com/mascot__0718/",
+      "line": "https://line.me/R/ti/p/@096hytik"
     },
-    "clinicNotes": "1️⃣ 提供犬、貓及鳥類診療服務，含中獸醫、牙科、心臟科、氣體麻醉與高壓氧等專業治療，建議提前電話預約。\n2️⃣ 門診時間為週一至週六 09:00–13:00 / 14:00–21:00，週日 09:00–13:00 / 14:00–19:00。\n3️⃣ 無提供急診服務，請依門診時段安排就醫。",
-    "last_checked": "2026-03-25"
+    "clinicNotes": "門診可現場掛號；手術需提前預約至門診評估。鳥類內外科為預約制，建議先透過電話或 LINE 確認。\n官方 2026 年 6 月班表標示週一至週五最晚掛號 20:00，週六至週日最晚掛號 18:00。",
+    "specialClinic": {
+      "hasExoticSpecialClinic": true,
+      "label": "鳥類預約門診",
+      "note": "官方 Facebook 與 Google Maps 皆標示鳥類內外科／鳥門診需預約；犬貓一般門診可現場掛號。",
+      "reservationRequired": true,
+      "sourceLabel": "官方 Facebook",
+      "sourceUrl": "https://www.facebook.com/mascot0718/",
+      "verifiedAt": "2026-06-01"
+    },
+    "announcements": [
+      {
+        "id": "mascot-june-2026-schedule",
+        "type": "hours_change",
+        "title": "2026 年 6 月門診班表",
+        "content": "6 月門診可現場掛號；手術需提前預約至門診評估。週一至週五 09:00-12:00、14:00-21:00，最晚掛號 20:00；週六至週日 09:00-12:00、14:00-19:00，最晚掛號 18:00。",
+        "startDate": "2026-06-01",
+        "endDate": "2026-06-30",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/mascot0718/posts/pfbid02ZBxZMSDyykQECkd1y7ibVZ1xowvgkKeG4D4XqW5LBpdDDFi8kAcsor3FQYRy6DiVl",
+        "verifiedAt": "2026-06-01"
+      }
+    ],
+    "fb": {
+      "last_fb_post_date": "2026-05-21",
+      "last_fb_post_text": "【2026 6月 萌寵動物醫院 醫師班表】門診可現場掛號；手術請提前預約至門診評估；週一至週五 09:00-12:00、14:00-21:00，週六週日 09:00-12:00、14:00-19:00。"
+    },
+    "last_checked": "2026-06-01"
   }
 ];
