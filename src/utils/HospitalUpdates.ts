@@ -5,6 +5,17 @@ import type { HospitalUpdate } from '@/types/hospital';
 // Run `npm run prune:hospital-updates` to preview expired items, then use `:write` to prune.
 export const HospitalUpdateList: HospitalUpdate[] = [
   {
+    id: 'update-yilan-pawsome-announcement-2026-06-01',
+    hospitalId: 'pawsome-animal-hospital',
+    type: 'announcement',
+    title: '柏森動物醫院 6 月休診公告',
+    summary: '柏森動物醫院公告 6 月固定週四、週日休診，另於 6/3、6/13、6/19、6/27 休診。',
+    updatedAt: '2026-06-01',
+    sourceLabel: '官方 Facebook',
+    sourceUrl: 'https://www.facebook.com/p/%E6%9F%8F%E6%A3%AE%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-Pawsome-100092606860182/',
+    verifiedAt: '2026-06-01',
+  },
+  {
     id: 'update-pingtung-npust-vmth-contact-2026-06-01',
     hospitalId: 'npust-vmth',
     type: 'contact',
