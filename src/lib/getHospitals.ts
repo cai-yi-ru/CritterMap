@@ -15,8 +15,9 @@ import { KaohsiungHospitalList } from '@/utils/KaohsiungHospitalList';
 import { PingtungHospitalList } from '@/utils/PingtungHospitalList';
 import { YilanHospitalList } from '@/utils/YilanHospitalList';
 import { TaitungHospitalList } from '@/utils/TaitungHospitalList';
+import type { Hospital } from '@/types/hospital';
 
-export async function getHospitals() {
+export async function getHospitals(): Promise<Hospital[]> {
   // 這裡也可以改為資料庫查詢
   return [
     ...TaipeiHospitalList,
@@ -35,5 +36,5 @@ export async function getHospitals() {
     ...PingtungHospitalList,
     ...YilanHospitalList,
     ...TaitungHospitalList,
-  ];
+  ] as Hospital[];
 }

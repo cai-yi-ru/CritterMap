@@ -5,10 +5,10 @@ export const KeelungHospitalList = [
     "city": "基隆市",
     "district": "仁愛區",
     "address": "基隆市仁愛區仁四路17之1號",
-    "lat": 25.1274647,
-    "lng": 121.7424423,
+    "lat": 25.1274657,
+    "lng": 121.7426723,
     "type": "general",
-    "typeText": "一般犬貓與小型哺乳類診療",
+    "typeText": "犬貓診療、特寵診療",
     "phone": "02-2426-0870",
     "specialEvents": [],
     "hours": "週一至週日 11:00–19:00",
@@ -58,11 +58,12 @@ export const KeelungHospitalList = [
     "pet_category_group": [
       "犬",
       "貓",
-      "鼠"
+      "鼠",
+      "天竺鼠"
     ],
     "specialties": [
-      "犬貓內外科",
-      "小型哺乳類診療"
+      "寵物鼠疾病診療",
+      "天竺鼠疾病診療"
     ],
     "website": "https://twstay.com.tw/panwen/",
     "appointmentLink": "",
@@ -71,6 +72,14 @@ export const KeelungHospitalList = [
       "facebook": "",
       "instagram": ""
     },
-    "clinicNotes": "1️⃣ 提供犬、貓、寵物鼠、天竺鼠等小型哺乳類的診療服務。\n2️⃣ 建議致電預約看診，以確保診療品質。\n3️⃣ 營業時間為週一至週日 11:00–19:00。"
+    "google": {
+      "rating": "3.9",
+      "reviewCount": 221,
+      "mapsUrl": "https://www.google.com/maps/place/%E5%9F%BA%E9%9A%86%E6%B1%8E%E6%B1%B6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.1274657,121.7426723,17z/data=!3m1!4b1!4m6!3m5!1s0x345d4f5a2df35191:0x97ca24c6286c09bd!8m2!3d25.1274657!4d121.7426723!16s%2Fg%2F11h1vdnhg6?entry=ttu",
+      "verifiedAt": "2026-06-01"
+    },
+    "clinicNotes": "提供犬、貓、寵物鼠、天竺鼠診療服務。\n請先致電預約看診，以確保診療品質。\n營業時間為週一至週日 11:00–19:00。",
+    "updatedAt": "2026-06-01",
+    "last_checked": "2026-06-01"
   }
 ];
