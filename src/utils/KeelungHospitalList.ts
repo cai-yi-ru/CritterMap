@@ -75,8 +75,10 @@ export const KeelungHospitalList = [
     "google": {
       "rating": "3.9",
       "reviewCount": 221,
-      "mapsUrl": "https://www.google.com/maps/place/%E5%9F%BA%E9%9A%86%E6%B1%8E%E6%B1%B6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.1274657,121.7426723,17z/data=!3m1!4b1!4m6!3m5!1s0x345d4f5a2df35191:0x97ca24c6286c09bd!8m2!3d25.1274657!4d121.7426723!16s%2Fg%2F11h1vdnhg6?entry=ttu",
-      "verifiedAt": "2026-06-01"
+      "mapsUrl": "https://www.google.com/maps/place/%E5%9F%BA%E9%9A%86%E6%B1%8E%E6%B1%B6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.1274657,121.7426723,17z/data=!3m1!4b1!4m6!3m5!1s0x345d4f5a2df35191:0x97ca24c6286c09bd!8m2!3d25.1274657!4d121.7426723!16s%2Fg%2F11h1vdnhg6",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%9F%BA%E9%9A%86%E6%B1%8E%E6%B1%B6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.1274657,121.7426723,17z/data=!4m8!3m7!1s0x345d4f5a2df35191:0x97ca24c6286c09bd!8m2!3d25.1274657!4d121.7426723!9m1!1b1!16s%2Fg%2F11h1vdnhg6",
+      "placeId": "0x345d4f5a2df35191:0x97ca24c6286c09bd",
+      "verifiedAt": "2026-06-03"
     },
     "clinicNotes": "提供犬、貓、寵物鼠、天竺鼠診療服務。\n請先致電預約看診，以確保診療品質。\n營業時間為週一至週日 11:00–19:00。",
     "updatedAt": "2026-06-01",

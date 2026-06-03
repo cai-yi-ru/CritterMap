@@ -594,8 +594,11 @@ export const HsinchuCityHospitalList: Hospital[] = [
       "facebook": "https://www.facebook.com/HappinesssAnimalHospital/"
     },
     "google": {
-      "mapsUrl": "https://www.google.com/maps?cid=1869314233915218740",
-      "verifiedAt": "2026-06-01"
+      "rating": "4.5",
+      "mapsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E7%A6%8F%E5%B0%8F%E5%B9%B8%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.7979899,120.9525492,17z/data=!4m8!3m7!1s0x3468359a85406bcf:0x19f1236446191b34!8m2!3d24.7979899!4d120.9525492!16s%2Fg%2F11f26m8qrh",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E7%A6%8F%E5%B0%8F%E5%B9%B8%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.7979899,120.9525492,17z/data=!4m8!3m7!1s0x3468359a85406bcf:0x19f1236446191b34!8m2!3d24.7979899!4d120.9525492!9m1!1b1!16s%2Fg%2F11f26m8qrh",
+      "placeId": "ChIJz2tAhZo1aDQRNBsZRmQj8Rk",
+      "verifiedAt": "2026-06-03"
     },
     "clinicNotes": "官方 Facebook 為主要資訊來源；公開資料對電話與門診時間有差異，出發前請先電話或查閱官方 Facebook 確認當日看診安排。\n目前保守標示為犬貓與特殊寵物診療；急診、夜診、詳細可看診物種與服務項目尚未由官方頁面直接確認。",
     "updatedAt": "2026-06-01",

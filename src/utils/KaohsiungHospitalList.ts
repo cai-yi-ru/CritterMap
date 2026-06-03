@@ -83,8 +83,8 @@ export const KaohsiungHospitalList = [
     },
     "clinicNotes": "營業時間以 Google 商家資訊為準；官方 Facebook 門診公告另標示上午、下午與晚上時段的最後掛號時間。官方 Facebook 標示為完全預約制，無現場、急診服務；線上預約僅提供非當日約診，需私訊粉專提供預約日期時段、寵物姓名、品種、聯絡電話與就醫原因，當日掛號請電話洽詢。若有緊急狀況請先來電或私訊官方 Facebook 確認。看診物種依 Google 商家、官方 Facebook 預約須知與官方 Instagram 簡介整理，以兔、倉鼠、刺蝟、蜜袋鼯、天竺鼠、龍貓、松鼠等小型哺乳類特寵為主；寵物分類為站內篩選用標準化分類。初診請提早 5-10 分鐘報到填寫病歷單，取消或更改預約請提早一天告知。預約遲到超過 10 分鐘會改為現場候診，超過 15 分鐘以上取消當日約診；無故未到或當日臨時取消累計 2 次將取消預約看診資格。定期領藥需提早 2 天登記。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-06-01T00:00:00.000Z",
-    "last_checked": "2026-06-01",
+    "updatedAt": "2026-06-03T00:00:00.000Z",
+    "last_checked": "2026-06-03",
     "fb": {
       "last_fb_post_date": "",
       "last_fb_post_text": ""
@@ -544,9 +544,11 @@ export const KaohsiungHospitalList = [
     },
     "google": {
       "rating": "4.4",
-      "reviewCount": 853,
+      "reviewCount": 854,
       "mapsUrl": "https://www.google.com/maps/place/%E4%B8%AD%E8%88%88%E8%BE%B2%E5%8D%81%E5%85%AD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6546566,120.29792,17z/data=!3m1!4b1!4m6!3m5!1s0x346e04ff51a4f8ff:0xb884a5c74180e3b0!8m2!3d22.6546566!4d120.29792!16s%2Fg%2F11b6362bd3",
-      "verifiedAt": "2026-06-01"
+      "reviewsUrl": "https://www.google.com/maps/place/%E4%B8%AD%E8%88%88%E8%BE%B2%E5%8D%81%E5%85%AD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6546566,120.29792,17z/data=!3m1!4b1!4m6!3m5!1s0x346e04ff51a4f8ff:0xb884a5c74180e3b0!8m2!3d22.6546566!4d120.29792!9m1!1b1!16s%2Fg%2F11b6362bd3",
+      "placeId": "0x346e04ff51a4f8ff:0xb884a5c74180e3b0",
+      "verifiedAt": "2026-06-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -708,8 +710,9 @@ export const KaohsiungHospitalList = [
     "google": {
       "rating": "4.6",
       "reviewCount": 1094,
-      "mapsUrl": "https://www.google.com/maps?cid=13876036556262969363",
-      "verifiedAt": "2026-06-01"
+      "mapsUrl": "https://maps.google.com/?cid=13876036556262969363",
+      "reviewsUrl": "https://www.google.com/maps/place/%E4%BA%9E%E5%B9%B8%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.618895,120.3177324,17z/data=!4m8!3m7!1s%2Fg%2F11r975s6hh!8m2!3d22.618895!4d120.3177324!9m1!1b1",
+      "verifiedAt": "2026-06-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -847,7 +850,9 @@ export const KaohsiungHospitalList = [
     },
     "google": {
       "mapsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E5%B1%B1%E7%95%B0%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6292518,120.3217156,17z/data=!3m1!4b1!4m6!3m5!1s0x346e05000103b1ff:0x8db5419d774f920b!8m2!3d22.6292518!4d120.3217156!16s%2Fg%2F11zc4r1kr1",
-      "verifiedAt": "2026-06-01"
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E5%B1%B1%E7%95%B0%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6292518,120.3217156,17z/data=!4m8!3m7!1s0x346e05000103b1ff:0x8db5419d774f920b!8m2!3d22.6292518!4d120.3217156!9m1!1b1!16s%2Fg%2F11zc4r1kr1",
+      "placeId": "0x346e05000103b1ff:0x8db5419d774f920b",
+      "verifiedAt": "2026-06-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -979,7 +984,9 @@ export const KaohsiungHospitalList = [
       "rating": "4.3",
       "reviewCount": 808,
       "mapsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E6%AF%9B%E5%B0%8F%E6%AF%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%7C+%E7%8A%AC%E8%B2%93%E7%89%B9%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.639686,120.3486158,17z/data=!3m1!4b1!4m6!3m5!1s0x346e1b2dc2aca2a9:0xa2e9b73e0e330bcb!8m2!3d22.639686!4d120.3486158!16s%2Fg%2F11f5v0r3h1",
-      "verifiedAt": "2026-05-31"
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E6%AF%9B%E5%B0%8F%E6%AF%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%7C+%E7%8A%AC%E8%B2%93%E7%89%B9%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.639686,120.3486158,17z/data=!3m1!4b1!4m8!3m7!1s0x346e1b2dc2aca2a9:0xa2e9b73e0e330bcb!8m2!3d22.639686!4d120.3486158!9m1!1b1!16s%2Fg%2F11f5v0r3h1",
+      "placeId": "0x346e1b2dc2aca2a9:0xa2e9b73e0e330bcb",
+      "verifiedAt": "2026-06-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -1136,7 +1143,9 @@ export const KaohsiungHospitalList = [
       "rating": "5.0",
       "reviewCount": 107,
       "mapsUrl": "https://www.google.com/maps/place/%E6%8B%BE%E8%B2%B3%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2(%E7%95%B6%E6%9C%88%E7%87%9F%E6%A5%AD%E6%97%A5%E5%85%AC%E5%91%8A%E8%AB%8B%E8%A6%8BFB%2FIG)/@22.6516743,120.285007,17z/data=!3m1!4b1!4m6!3m5!1s0x346e05ac2efc9b5b:0xa9f2488d51672786!8m2!3d22.6516743!4d120.285007!16s%2Fg%2F11lng5trbf",
-      "verifiedAt": "2026-05-31"
+      "reviewsUrl": "https://www.google.com/maps/place/%E6%8B%BE%E8%B2%B3%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2(%E7%95%B6%E6%9C%88%E7%87%9F%E6%A5%AD%E6%97%A5%E5%85%AC%E5%91%8A%E8%AB%8B%E8%A6%8BFB%2FIG)/@22.6516743,120.285007,17z/data=!4m8!3m7!1s0x346e05ac2efc9b5b:0xa9f2488d51672786!8m2!3d22.6516743!4d120.285007!9m1!1b1!16s%2Fg%2F11lng5trbf",
+      "placeId": "0x346e05ac2efc9b5b:0xa9f2488d51672786",
+      "verifiedAt": "2026-06-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -1262,9 +1271,10 @@ export const KaohsiungHospitalList = [
     },
     "google": {
       "rating": "4.4",
-      "reviewCount": 276,
+      "reviewCount": 277,
       "mapsUrl": "https://www.google.com/maps/place/%E6%9C%AC%E4%B8%B8%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E8%88%87%E8%B2%93%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@22.6062397,120.3332996,17z/data=!3m1!4b1!4m6!3m5!1s0x346e03288b0c988f:0xd450b600ebbec960!8m2!3d22.6062397!4d120.3332996!16s%2Fg%2F11rr2pry1w",
-      "verifiedAt": "2026-05-31"
+      "reviewsUrl": "https://www.google.com/maps/place/%E6%9C%AC%E4%B8%B8%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E8%88%87%E8%B2%93%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@22.6062397,120.3332996,17z/data=!4m8!3m7!1s0x346e03288b0c988f:0xd450b600ebbec960!8m2!3d22.6062397!4d120.3332996!9m1!1b1!16s%2Fg%2F11rr2pry1w",
+      "verifiedAt": "2026-06-03"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -1356,6 +1366,7 @@ export const KaohsiungHospitalList = [
       "rating": "4.2",
       "reviewCount": 593,
       "mapsUrl": "https://www.google.com/maps/place/%E8%93%8B%E4%BA%9E%E9%87%8E%E7%94%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6481341,120.3191231,17z/data=!3m5!1s0x346e04e76ca10ca7:0x21978790a330ab29!8m2!3d22.6481341!4d120.3191231!16s%2Fg%2F11xs835jv",
+      "reviewsUrl": "https://www.google.com/maps/place/%E8%93%8B%E4%BA%9E%E9%87%8E%E7%94%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6481341,120.3191231,17z/data=!4m8!3m7!1s0x346e04e76ca10ca7:0x21978790a330ab29!8m2!3d22.6481341!4d120.3191231!9m1!1b1!16s%2Fg%2F11xs835jv",
       "verifiedAt": "2026-05-31"
     },
     "reservationRequired": false,
@@ -1557,8 +1568,10 @@ export const KaohsiungHospitalList = [
     "google": {
       "rating": "4.5",
       "reviewCount": 79,
-      "mapsUrl": "https://www.google.com/maps/place/%E8%81%96%E5%BC%98%E7%B6%9C%E5%90%88%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.675339,120.32211,17z/data=!3m5!1s0x346e053f923de1c1:0xa6f86c6ff995735d",
-      "verifiedAt": "2026-05-31"
+      "mapsUrl": "https://www.google.com/maps/place/%E8%81%96%E5%BC%98%E7%B6%9C%E5%90%88%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.675339,120.32211,17z/data=!3m1!4b1!4m6!3m5!1s0x346e053f923de1c1:0xa6f86c6ff995735d!8m2!3d22.675339!4d120.32211!16s%2Fg%2F1tkkrm5w",
+      "reviewsUrl": "https://www.google.com/maps/place/%E8%81%96%E5%BC%98%E7%B6%9C%E5%90%88%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.675339,120.32211,17z/data=!4m8!3m7!1s0x346e053f923de1c1:0xa6f86c6ff995735d!8m2!3d22.675339!4d120.32211!9m1!1b1!16s%2Fg%2F1tkkrm5w",
+      "placeId": "0x346e053f923de1c1:0xa6f86c6ff995735d",
+      "verifiedAt": "2026-06-03"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -1639,8 +1652,10 @@ export const KaohsiungHospitalList = [
     "google": {
       "rating": "4.2",
       "reviewCount": 184,
-      "mapsUrl": "https://www.google.com/maps/place/%E6%8D%B7%E9%A3%9B%E9%81%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6851727,120.3219956,17z/",
-      "verifiedAt": "2026-05-31"
+      "mapsUrl": "https://www.google.com/maps/place/%E6%8D%B7%E9%A3%9B%E9%81%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6851727,120.3219956,17z/data=!3m1!4b1!4m6!3m5!1s0x346e0542c061374b:0x9f63263d1abb3fc9!8m2!3d22.6851727!4d120.3219956!16s%2Fg%2F1pzqfh8j_",
+      "reviewsUrl": "https://www.google.com/maps/place/%E6%8D%B7%E9%A3%9B%E9%81%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6851727,120.3219956,17z/data=!4m8!3m7!1s0x346e0542c061374b:0x9f63263d1abb3fc9!8m2!3d22.6851727!4d120.3219956!9m1!1b1!16s%2Fg%2F1pzqfh8j_",
+      "placeId": "0x346e0542c061374b:0x9f63263d1abb3fc9",
+      "verifiedAt": "2026-06-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -1738,7 +1753,9 @@ export const KaohsiungHospitalList = [
       "rating": "4.7",
       "reviewCount": 725,
       "mapsUrl": "https://www.google.com/maps/place/%E8%81%AF%E7%9B%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E4%BB%81%E6%AD%A6%E7%B8%BD%E9%99%A2/@22.6978568,120.3469454,17z/data=!3m1!4b1!4m6!3m5!1s0x346e117d43f4fcb5:0x506d0adb3a6c32e9!8m2!3d22.6978568!4d120.3469454!16s%2Fg%2F11kz1z0z79",
-      "verifiedAt": "2026-05-31"
+      "reviewsUrl": "https://www.google.com/maps/place/%E8%81%AF%E7%9B%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E4%BB%81%E6%AD%A6%E7%B8%BD%E9%99%A2/@22.6978568,120.3469454,17z/data=!4m8!3m7!1s0x346e117d43f4fcb5:0x506d0adb3a6c32e9!8m2!3d22.6978568!4d120.3469454!9m1!1b1!16s%2Fg%2F11kz1z0z79",
+      "placeId": "0x346e117d43f4fcb5:0x506d0adb3a6c32e9",
+      "verifiedAt": "2026-06-03"
     },
     "reservationRequired": false,
     "hasEmergencyService": true,
@@ -1856,7 +1873,8 @@ export const KaohsiungHospitalList = [
       "rating": "4.2",
       "reviewCount": 79,
       "mapsUrl": "https://www.google.com/maps/place/%E5%BC%98%E8%8B%91%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2(%E7%9C%8B%E8%A8%BA%E8%AB%8B%E9%A0%90%E7%B4%84%EF%BC%8C%E5%85%AC%E4%BC%91%E7%9C%8BFB)/@22.7841022,120.2818093,17z/data=!3m1!4b1!4m6!3m5!1s0x346e0e9bb64e3a6d:0x478a32e30c32d26!8m2!3d22.7841022!4d120.2818093!16s%2Fg%2F1q6bd_gcz",
-      "verifiedAt": "2026-05-31"
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%BC%98%E8%8B%91%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2(%E7%9C%8B%E8%A8%BA%E8%AB%8B%E9%A0%90%E7%B4%84%EF%BC%8C%E5%85%AC%E4%BC%91%E7%9C%8BFB)/@22.7841022,120.2818093,17z/data=!4m8!3m7!1s0x346e0e9bb64e3a6d:0x478a32e30c32d26!8m2!3d22.7841022!4d120.2818093!9m1!1b1!16s%2Fg%2F1q6bd_gcz",
+      "verifiedAt": "2026-06-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -1944,7 +1962,9 @@ export const KaohsiungHospitalList = [
       "rating": "4.5",
       "reviewCount": 115,
       "mapsUrl": "https://www.google.com/maps/place/%E9%9F%93%E7%89%B9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E8%88%87%E7%89%B9%E5%AF%B5%E9%86%AB%E7%99%82/@22.619086,120.2975687,17z/data=!3m1!4b1!4m6!3m5!1s0x346e054a08a32f2b:0xa246aa895995192d!8m2!3d22.619086!4d120.2975687!16s%2Fg%2F11v03gjzkc",
-      "verifiedAt": "2026-05-31"
+      "reviewsUrl": "https://www.google.com/maps/place/%E9%9F%93%E7%89%B9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E8%88%87%E7%89%B9%E5%AF%B5%E9%86%AB%E7%99%82/@22.619086,120.2975687,17z/data=!4m8!3m7!1s0x346e054a08a32f2b:0xa246aa895995192d!8m2!3d22.619086!4d120.2975687!9m1!1b1!16s%2Fg%2F11v03gjzkc",
+      "placeId": "0x346e054a08a32f2b:0xa246aa895995192d",
+      "verifiedAt": "2026-06-03"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -2116,7 +2136,9 @@ export const KaohsiungHospitalList = [
       "rating": "3.8",
       "reviewCount": 1576,
       "mapsUrl": "https://www.google.com/maps/place/%E5%AE%8F%E5%8A%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6600018,120.3247709,17z/data=!3m5!1s0x346e0523dd5f2dd3:0x4fde243b4849de61!8m2!3d22.6600018!4d120.3247709!16s%2Fg%2F1pzq_cfys",
-      "verifiedAt": "2026-05-31"
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%AE%8F%E5%8A%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6600018,120.3247709,17z/data=!4m8!3m7!1s0x346e0523dd5f2dd3:0x4fde243b4849de61!8m2!3d22.6600018!4d120.3247709!9m1!1b1!16s%2Fg%2F1pzq_cfys",
+      "placeId": "0x346e0523dd5f2dd3:0x4fde243b4849de61",
+      "verifiedAt": "2026-06-03"
     },
     "clinicNotes": "宏力動物醫院提供夜間急診與 24 小時住院照護，官方近期 Facebook 公告與 Google 商家顯示公開門診與急診時段至 00:00；官網部分固定頁仍保留至 02:00 的舊時段，急症就診前請先致電確認。\n官方醫療團隊資料列有特殊寵物與水生動物醫療，建議先電話確認可看診醫師與時段。",
     "specialClinic": {
@@ -2245,10 +2267,12 @@ export const KaohsiungHospitalList = [
       "line": "https://line.me/ti/p/~%40577kyzdb"
     },
     "google": {
-      "rating": "4.5",
-      "reviewCount": 367,
-      "mapsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E7%A4%BE%E6%AF%9B%E6%AF%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E7%9C%8B%E8%A8%BA%E8%AB%8B%E8%87%B3%E4%B8%AD%E5%B1%B1%E8%B7%AF114%E8%99%9F%EF%BC%89/@22.731948,120.3464925,17z/data=!3m1!4b1!4m6!3m5!1s0x346e117e7dbd0995:0xe55e8ad09b0fd866!8m2!3d22.731948!4d120.3464925!16s%2Fg%2F11k7j9s2t8",
-      "verifiedAt": "2026-05-31"
+      "rating": "4.6",
+      "reviewCount": 351,
+      "mapsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E7%A4%BE%E6%AF%9B%E6%AF%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.731948,120.3464925,17z/data=!4m6!3m5!1s0x346e110004e0a0e7:0xb7e8e7be39399349!8m2!3d22.731948!4d120.3464925!16s%2Fg%2F11ympywxxw",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E7%A4%BE%E6%AF%9B%E6%AF%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.731948,120.3464925,17z/data=!4m6!3m5!1s0x346e110004e0a0e7:0xb7e8e7be39399349!8m2!3d22.731948!4d120.3464925!9m1!1b1!16s%2Fg%2F11ympywxxw",
+      "placeId": "0x346e110004e0a0e7:0xb7e8e7be39399349",
+      "verifiedAt": "2026-06-03"
     },
     "clinicNotes": "大社毛毛動物醫院看診地點已更新為高雄市大社區中山路114號，建議就診前先透過電話或官方 LINE 預約確認。\n院方提供犬貓與鼠、兔、鳥類、爬蟲類等特殊寵物診療；休息時間 12:00-14:00、17:30-18:30，請避免於休息時段現場購買商品或詢問。",
     "createdAt": "2024-01-01T00:00:00.000Z",
@@ -2311,9 +2335,11 @@ export const KaohsiungHospitalList = [
     },
     "google": {
       "rating": "3.3",
-      "reviewCount": 101,
+      "reviewCount": 102,
       "mapsUrl": "https://www.google.com/maps/place/%E7%83%8F%E9%90%B8%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+Udoch+Animal+Hospital/@22.6282893,120.3308709,17z/data=!3m1!4b1!4m6!3m5!1s0x346e04b9cbebc371:0xc6134c8f46016bfc!8m2!3d22.6282893!4d120.3308709!16s%2Fg%2F11b6ck1z7w",
-      "verifiedAt": "2026-05-31"
+      "reviewsUrl": "https://www.google.com/maps/place/%E7%83%8F%E9%90%B8%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+Udoch+Animal+Hospital/@22.6282893,120.3308709,17z/data=!4m8!3m7!1s0x346e04b9cbebc371:0xc6134c8f46016bfc!8m2!3d22.6282893!4d120.3308709!9m1!1b1!16s%2Fg%2F11b6ck1z7w",
+      "placeId": "ChIJccPry7kEbjQR_GsBRo9ME8Y",
+      "verifiedAt": "2026-06-03"
     },
     "reservationRequired": false,
     "hasEmergencyService": true,
@@ -2488,10 +2514,11 @@ export const KaohsiungHospitalList = [
       "line": "https://liff.line.me/1645278921-kWRPP32q/?accountId=570wsaxt"
     },
     "google": {
-      "rating": "4.5",
-      "reviewCount": 381,
+      "rating": "4.7",
+      "reviewCount": 221,
       "mapsUrl": "https://www.google.com/maps/place/%E6%98%9F%E7%BE%BD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E4%B8%89%E6%B0%91%E9%99%A2-24%E5%B0%8F%E6%99%82%E6%80%A5%E9%87%8D%E7%97%87%E5%8B%95%E7%89%A9%E7%85%A7%E8%AD%B7%E9%86%AB%E9%99%A2%7C%E7%8A%AC%E8%B2%93%E6%9A%A8%E7%89%B9%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%7C%E5%AF%B5%E7%89%A9%E6%B4%97%E7%89%99%7C%E5%AF%B5%E7%89%A9%E7%B5%90%E7%B4%AE%7C%E9%B8%9A%E9%B5%A1%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%7C%E9%BC%A0%E5%85%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%7C%E5%AF%B5%E7%89%A9%E5%A4%96%E7%A7%91%7C%E9%AB%98%E9%9B%84%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E6%8E%A8%E8%96%A6/@22.6471426,120.3387335,17z/data=!3m1!4b1!4m6!3m5!1s0x346e05004e7eb425:0x4da909ae87edda82!8m2!3d22.6471426!4d120.3387335!16s%2Fg%2F11w232msk0",
-      "verifiedAt": "2026-05-31"
+      "reviewsUrl": "https://www.google.com/maps/place/%E6%98%9F%E7%BE%BD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E4%B8%89%E6%B0%91%E9%99%A2-24%E5%B0%8F%E6%99%82%E6%80%A5%E9%87%8D%E7%97%87%E5%8B%95%E7%89%A9%E7%85%A7%E8%AD%B7%E9%86%AB%E9%99%A2%7C%E7%8A%AC%E8%B2%93%E6%9A%A8%E7%89%B9%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%7C%E5%AF%B5%E7%89%A9%E6%B4%97%E7%89%99%7C%E5%AF%B5%E7%89%A9%E7%B5%90%E7%B4%AE%7C%E9%B8%9A%E9%B5%A1%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%7C%E9%BC%A0%E5%85%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%7C%E5%AF%B5%E7%89%A9%E5%A4%96%E7%A7%91%7C%E9%AB%98%E9%9B%84%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E6%8E%A8%E8%96%A6/@22.6471426,120.3387335,17z/data=!4m8!3m7!1s0x346e05004e7eb425:0x4da909ae87edda82!8m2!3d22.6471426!4d120.3387335!9m1!1b1!16s%2Fg%2F11w232msk0",
+      "verifiedAt": "2026-06-03"
     },
     "clinicNotes": "官方公告顯示 2026 年 5 月起犬貓及特寵看診營業時間調整為 10:00–13:00、14:00–17:00、18:00–02:00；夜間急診僅至凌晨 02:00，住院仍維持 24 小時照護。\n本院採預約優先制，請於預約前一天之人員上班時間來電預約；現場掛號依櫃檯安排候診。21:00 後看診需加收急診掛號及診察費，日診休診前 30 分鐘屬急診掛號。",
     "createdAt": "2024-01-01T00:00:00.000Z",
@@ -2574,7 +2601,9 @@ export const KaohsiungHospitalList = [
       "rating": "4.6",
       "reviewCount": 519,
       "mapsUrl": "https://www.google.com/maps/place/%E6%98%9F%E7%BE%BD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9C%E5%A4%A7%E5%AF%AE%E9%99%A2/@22.5454859,120.4111253,17z/data=!3m1!4b1!4m6!3m5!1s0x3471e3e511802209:0x2fbef8ea5e652b4b!8m2!3d22.5454859!4d120.4111253!16s%2Fg%2F11mvsg3xgz",
-      "verifiedAt": "2026-05-31"
+      "reviewsUrl": "https://www.google.com/maps/place/%E6%98%9F%E7%BE%BD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9C%E5%A4%A7%E5%AF%AE%E9%99%A2/@22.5454859,120.4111253,17z/data=!4m8!3m7!1s0x3471e3e511802209:0x2fbef8ea5e652b4b!8m2!3d22.5454859!4d120.4111253!9m1!1b1!16s%2Fg%2F11mvsg3xgz",
+      "placeId": "0x3471e3e511802209:0x2fbef8ea5e652b4b",
+      "verifiedAt": "2026-06-03"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -2710,10 +2739,12 @@ export const KaohsiungHospitalList = [
       "sun": []
     },
     "google": {
-      "rating": "4.5",
-      "reviewCount": 200,
+      "rating": "4.4",
+      "reviewCount": 177,
       "mapsUrl": "https://www.google.com/maps/place/%E5%9F%B9%E6%98%B1%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.5989478,120.3268014,17z/data=!3m1!4b1!4m6!3m5!1s0x346e03da3309fe6b:0x21e745c316224bcc!8m2!3d22.5989478!4d120.3268014!16s%2Fg%2F11t4c9k49x",
-      "verifiedAt": "2026-05-31"
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%9F%B9%E6%98%B1%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.5989478,120.3268014,17z/data=!4m8!3m7!1s0x346e03da3309fe6b:0x21e745c316224bcc!8m2!3d22.5989478!4d120.3268014!9m1!1b1!16s%2Fg%2F11t4c9k49x",
+      "placeId": "0x346e03da3309fe6b:0x21e745c316224bcc",
+      "verifiedAt": "2026-06-03"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -2874,7 +2905,9 @@ export const KaohsiungHospitalList = [
       "rating": "4.2",
       "reviewCount": 103,
       "mapsUrl": "https://www.google.com/maps/place/%E7%99%BB%E7%BE%A3%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6058169,120.3338592,17z/data=!3m1!4b1!4m6!3m5!1s0x346e05fad3b61d31:0x57c535660e387a82!8m2!3d22.6058169!4d120.3338592!16s%2Fg%2F11h21z37gd",
-      "verifiedAt": "2026-05-31"
+      "reviewsUrl": "https://www.google.com/maps/place/%E7%99%BB%E7%BE%A3%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6058169,120.3338592,17z/data=!4m8!3m7!1s0x346e05fad3b61d31:0x57c535660e387a82!8m2!3d22.6058169!4d120.3338592!9m1!1b1!16s%2Fg%2F11h21z37gd",
+      "placeId": "0x346e05fad3b61d31:0x57c535660e387a82",
+      "verifiedAt": "2026-06-03"
     },
     "clinicNotes": "官方網站另列輔助電話 07-7217109。官方網站門診時間為週一至週六 09:00-13:00 / 14:00-21:30、週日 09:00-17:00；Google 商家目前顯示時間較短，前往前建議先致電確認。\n官方主要資訊以犬貓與小動物一般內外科、尿毒症透析、電腦斷層與再生醫學為主；未找到固定特寵門診或完整特殊寵物物種清單，兔、鼠、鳥、爬蟲等特殊寵物就診前請先致電確認。",
     "createdAt": "2024-01-01T00:00:00.000Z",
@@ -2979,7 +3012,9 @@ export const KaohsiungHospitalList = [
       "rating": "4.9",
       "reviewCount": 97,
       "mapsUrl": "https://www.google.com/maps/place/%E5%B0%8F%E9%B3%B4%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.615284,120.314047,17z/data=!3m1!4b1!4m6!3m5!1s0x346e058ee7cb5525:0xc904ec5ba4d78b30!8m2!3d22.615284!4d120.314047!16s%2Fg%2F11w7dgb48c",
-      "verifiedAt": "2026-05-31"
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%B0%8F%E9%B3%B4%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.615284,120.314047,17z/data=!4m8!3m7!1s0x346e058ee7cb5525:0xc904ec5ba4d78b30!8m2!3d22.615284!4d120.314047!9m1!1b1!16s%2Fg%2F11w7dgb48c",
+      "placeId": "0x346e058ee7cb5525:0xc904ec5ba4d78b30",
+      "verifiedAt": "2026-06-03"
     },
     "clinicNotes": "小鳴動物醫院為特殊寵物醫院，官方服務項目列有兔、各種鼠、天竺鼠、刺蝟、蜜袋鼯、各種禽鳥、鸚鵡、龜、蜥蜴、蛇等看診物種。\n門診採預約優先制，建議飼主於營業時間透過電話或 LINE（ID：@714zzvwn）預約掛號；實際看診醫師與當月班表請以官方門診公告為準。",
     "createdAt": "2024-01-01T00:00:00.000Z",
@@ -3104,7 +3139,9 @@ export const KaohsiungHospitalList = [
       "rating": "5.0",
       "reviewCount": 54,
       "mapsUrl": "https://www.google.com/maps/place/%E9%99%BD%E6%98%8E%E5%B0%8F%E6%80%AA%E7%8D%B8%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6377648,120.3409321,17z/data=!3m1!4b1!4m6!3m5!1s0x346e050047525a7f:0xbfb3f21d7f78a7ab!8m2!3d22.6377648!4d120.3409321!16s%2Fg%2F11wp51nb55",
-      "verifiedAt": "2026-06-01"
+      "reviewsUrl": "https://www.google.com/maps/place/%E9%99%BD%E6%98%8E%E5%B0%8F%E6%80%AA%E7%8D%B8%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6377648,120.3409321,17z/data=!4m8!3m7!1s0x346e050047525a7f:0xbfb3f21d7f78a7ab!8m2!3d22.6377648!4d120.3409321!9m1!1b1!16s%2Fg%2F11wp51nb55",
+      "placeId": "0x346e050047525a7f:0xbfb3f21d7f78a7ab",
+      "verifiedAt": "2026-06-03"
     },
     "clinicNotes": "官方 Facebook 介紹提供中獸醫、針灸推拿、再生醫學、幹細胞、外泌體、特寵與野生動物診療，並列出鼠、兔、天竺鼠、龍貓、龜、守宮、蜥蜴、兩棲、鳥禽、鸚鵡等看診物種。\nGoogle Maps 與第三方資料顯示電話資料有差異；目前官方 Facebook 與 Google Maps 皆以 07-390-9898 為主要聯絡電話。採預約制資料仍建議飼主就診前先電話確認。",
     "createdAt": "2024-01-01T00:00:00.000Z",
@@ -3165,7 +3202,9 @@ export const KaohsiungHospitalList = [
       "rating": "4.6",
       "reviewCount": 103,
       "mapsUrl": "https://www.google.com/maps/place/%E7%A5%88%E7%99%92%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6838825,120.3425544,17z/data=!3m5!1s0x346e05003ce6a051:0x94164279a3292100!8m2!3d22.6838825!4d120.3425544!16s%2Fg%2F11l_5dxqrn",
-      "verifiedAt": "2026-06-01"
+      "reviewsUrl": "https://www.google.com/maps/place/%E7%A5%88%E7%99%92%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6838825,120.3425544,17z/data=!4m8!3m7!1s0x346e05003ce6a051:0x94164279a3292100!8m2!3d22.6838825!4d120.3425544!9m1!1b1!16s%2Fg%2F11l_5dxqrn",
+      "placeId": "0x346e05003ce6a051:0x94164279a3292100",
+      "verifiedAt": "2026-06-03"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,

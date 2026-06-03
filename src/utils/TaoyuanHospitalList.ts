@@ -79,11 +79,12 @@ export const TaoyuanHospitalList = [
     "google": {
       "rating": "4.7",
       "reviewCount": 142,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E7%B6%AD%E7%89%B9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E6%A1%83%E5%9C%92%E5%B8%82%E5%A4%A7%E5%9C%92%E5%8D%80%E5%A4%A7%E6%88%90%E8%B7%AF%E4%BA%8C%E6%AE%B551%E8%99%9F",
-      "verifiedAt": "2026-06-02"
+      "mapsUrl": "https://www.google.com/maps/place/%E7%B6%AD%E7%89%B9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0206853,121.2203014,17z/data=!4m8!3m7!1sUFggav-SLqzd1e8P-6at2Qo!8m2!3d25.0206853!4d121.2203014",
+      "reviewsUrl": "https://www.google.com/maps/place/%E7%B6%AD%E7%89%B9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0206853,121.2203014,17z/data=!4m8!3m7!1sUFggav-SLqzd1e8P-6at2Qo!8m2!3d25.0206853!4d121.2203014!9m1!1b1",
+      "verifiedAt": "2026-06-03"
     },
     "clinicNotes": "提供犬貓與兔、鼠、禽鳥診療，並有健檢、住院、鮮食、處方飼料與保險相關服務。院方已公告自 2026-07-01 起固定每週日、週一休診，門診調整為週二至週六 09:00-12:00、14:00-17:00、18:00-20:00。",
-    "last_checked": "2026-06-02",
+    "last_checked": "2026-06-03",
     "fb": {
       "last_fb_post_date": "2026-05-28",
       "last_fb_post_text": "院方公告 6 月門診與休診安排，並說明自 2026-07-01 起調整固定休診日與門診時段。"
@@ -399,6 +400,7 @@ export const TaoyuanHospitalList = [
       "rating": "4.5",
       "reviewCount": 586,
       "mapsUrl": "https://www.google.com/maps/place/%E9%80%97%E8%99%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E6%A1%83%E5%9C%92%E9%99%A2%E5%8D%80%EF%BC%89/@24.9911296,121.29731,17z/data=!3m1!4b1!4m6!3m5!1s0x34681f625a763151:0x3f811694e3a6ba13!8m2!3d24.9911296!4d121.29731!16s%2Fg%2F11gyymfyz1",
+      "reviewsUrl": "https://www.google.com/maps/place/%E9%80%97%E8%99%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E6%A1%83%E5%9C%92%E9%99%A2%E5%8D%80%EF%BC%89/@24.9911296,121.29731,17z/data=!4m8!3m7!1s0x34681f625a763151:0x3f811694e3a6ba13!8m2!3d24.9911296!4d121.29731!9m1!1b1!16s%2Fg%2F11gyymfyz1",
       "verifiedAt": "2026-06-02"
     },
     "clinicNotes": "提供犬貓與兔、天竺鼠、倉鼠、鳥類、松鼠、刺蝟、貂、蜜袋鼯等特殊寵物診療。門診採預約優先制，建議提前預約；院方公告自 2026-07-01 起營業時間調整為 09:00-20:30，營業時間外不再受理掛號及加班診療。",
@@ -522,6 +524,7 @@ export const TaoyuanHospitalList = [
       "rating": "4.6",
       "reviewCount": 308,
       "mapsUrl": "https://www.google.com/maps/place/%E9%80%97%E8%99%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E5%8D%97%E5%B4%81%E9%99%A2%E5%8D%80%EF%BC%89/@25.043508,121.295991,17z/data=!3m1!4b1!4m6!3m5!1s0x34681f693a5b29ef:0xc9f015ee0c2e6856!8m2!3d25.043508!4d121.295991!16s%2Fg%2F11k4x0m7wx",
+      "reviewsUrl": "https://www.google.com/maps/place/%E9%80%97%E8%99%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E5%8D%97%E5%B4%81%E9%99%A2%E5%8D%80%EF%BC%89/@25.043508,121.295991,17z/data=!4m8!3m7!1s0x34681f693a5b29ef:0xc9f015ee0c2e6856!8m2!3d25.043508!4d121.295991!9m1!1b1!16s%2Fg%2F11k4x0m7wx",
       "verifiedAt": "2026-06-02"
     },
     "clinicNotes": "提供犬貓與兔、天竺鼠、倉鼠、鳥類、松鼠、刺蝟、貂、蜜袋鼯等特殊寵物診療。門診採預約優先制，建議提前預約；院方公告自 2026-07-01 起營業時間調整為 09:00-20:30，營業時間外不再受理掛號及加班診療。",
@@ -624,6 +627,7 @@ export const TaoyuanHospitalList = [
       "rating": "4.4",
       "reviewCount": 121,
       "mapsUrl": "https://www.google.com/maps/place/%E5%93%B2%E5%AE%89%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.9910879,121.2962995,17z/data=!3m1!4b1!4m6!3m5!1s0x34681f1062daaf59:0xb4bbeebcf6a8a0e1!8m2!3d24.9910879!4d121.2962995!16s%2Fg%2F1pzszhfsr",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%93%B2%E5%AE%89%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.9910879,121.2962995,17z/data=!4m8!3m7!1s0x34681f1062daaf59:0xb4bbeebcf6a8a0e1!8m2!3d24.9910879!4d121.2962995!9m1!1b1!16s%2Fg%2F1pzszhfsr",
       "verifiedAt": "2026-06-02"
     },
     "clinicNotes": "1️⃣ 提供犬、貓、蜜袋鼯、貂、兔等動物的內外科診療。\n2️⃣ 門診不需預約，直接到院即可掛號。\n3️⃣ 設有骨外科、影像、心腎檢查、針灸與中藥治療等多樣服務。\n4️⃣ 營業時間為週一至週六 09:00–21:00，週日休診。",
@@ -797,11 +801,12 @@ export const TaoyuanHospitalList = [
     "google": {
       "rating": "4.6",
       "reviewCount": 607,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%8E%9F%E9%87%8E%E5%8B%95%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2+%E6%A1%83%E5%9C%92%E5%B8%82%E5%B9%B3%E9%8E%AE%E5%8D%80%E5%BB%A3%E5%BE%B7%E8%A1%9712%E8%99%9F",
-      "verifiedAt": "2026-06-02"
+      "mapsUrl": "https://www.google.com/maps/place/%E5%8E%9F%E9%87%8E%E5%8B%95%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@24.9565681,121.202675,17z/data=!3m1!4b1!4m6!3m5!1s0x346823cc9e922439:0xebbfed15543ad636!8m2!3d24.9565681!4d121.2048637!16s%2Fg%2F11jcm6m9r9",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%8E%9F%E9%87%8E%E5%8B%95%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@24.9565681,121.202675,17z/data=!4m8!3m7!1s0x346823cc9e922439:0xebbfed15543ad636!8m2!3d24.9565681!4d121.2048637!9m1!1b1!16s%2Fg%2F11jcm6m9r9",
+      "verifiedAt": "2026-06-03"
     },
     "clinicNotes": "本筆為廣德街12號特寵院區，官網明列鼠兔、小型哺乳類、鳥類、爬蟲與兩棲類診療。每月最後一個週二固定院休，院休前營業日僅到 19:00，國定假日另行公告。",
-    "last_checked": "2026-06-02",
+    "last_checked": "2026-06-03",
     "announcements": [
       {
         "id": "wild-ah-monthly-closure-rule",
@@ -915,7 +920,8 @@ export const TaoyuanHospitalList = [
     "google": {
       "rating": "4.5",
       "reviewCount": 346,
-      "mapsUrl": "https://www.google.com/maps/place/%E9%87%8E%E6%A3%AE%E9%9D%9E%E7%8A%AC%E8%B2%93%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@24.9630142,121.2176308,17z/data=!3m1!4b1!4m6!3m5!1s0x346823c51ffb2ef7:0x98bb29148ab5a500!8m2!3d24.9630142!4d121.2176308!16s%2Fg%2F11n7hgr9zw?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E9%87%8E%E6%A3%AE%E9%9D%9E%E7%8A%AC%E8%B2%93%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@24.9630142,121.2176308,17z/data=!3m1!4b1!4m6!3m5!1s0x346823c51ffb2ef7:0x98bb29148ab5a500!8m2!3d24.9630142!4d121.2176308!16s%2Fg%2F11n7hgr9zw",
+      "reviewsUrl": "https://www.google.com/maps/place/%E9%87%8E%E6%A3%AE%E9%9D%9E%E7%8A%AC%E8%B2%93%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@24.9630142,121.2176308,17z/data=!4m8!3m7!1s0x346823c51ffb2ef7:0x98bb29148ab5a500!8m2!3d24.9630142!4d121.2176308!9m1!1b1!16s%2Fg%2F11n7hgr9zw",
       "verifiedAt": "2026-06-02"
     },
     "clinicNotes": "僅接診非犬貓動物，犬、貓、毒蛇、靈長類與節肢動物不接診。建議電話預約；超過營業時間的現場門診診察費為 1.5 倍，Instagram 不接受私訊。",
@@ -995,6 +1001,7 @@ export const TaoyuanHospitalList = [
       "rating": "4.1",
       "reviewCount": 223,
       "mapsUrl": "https://www.google.com/maps/place/%E5%BA%B7%E6%B7%87%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.9625872,121.2215505,17z/data=!3m1!4b1!4m6!3m5!1s0x3468223412604769:0xda1337d7ff032d74!8m2!3d24.9625872!4d121.2215505!16s%2Fg%2F11b7wc54c5",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%BA%B7%E6%B7%87%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.9625872,121.2215505,17z/data=!4m8!3m7!1s0x3468223412604769:0xda1337d7ff032d74!8m2!3d24.9625872!4d121.2215505!9m1!1b1!16s%2Fg%2F11b7wc54c5",
       "placeId": "0x3468223412604769:0xda1337d7ff032d74",
       "verifiedAt": "2026-06-02"
     },
@@ -1103,7 +1110,8 @@ export const TaoyuanHospitalList = [
     "google": {
       "rating": "4.6",
       "reviewCount": 261,
-      "mapsUrl": "https://www.google.com/maps/place/%E7%90%AA%E6%AC%A3%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E9%BE%9C%E5%B1%B1%E5%88%86%E9%99%A2%EF%BD%9C%E7%89%99%E7%A7%91%EF%BD%9C%E4%B8%AD%E8%A5%BF%E7%8D%B8%E9%86%AB%EF%BD%9C%E7%89%B9%E5%AF%B5%E7%A7%91%EF%BD%9C%E6%95%99%E8%82%B2%E4%B8%AD%E5%BF%83/@25.0584073,121.3602174,17z/data=!4m10!1m2!2m1!1z55Cq5qyj5YuV54mp6Yar6ZmiIOm-nOWxseWIhumZog!3m6!1s0x3442a737349a5925:0xf756759e1d01899f!8m2!3d25.0584073!4d121.3602174!15sCh_nkKrmrKPli5XnianphqvpmaIg6b6c5bGx5YiG6ZmiWiYiJOeQqiDmrKMg5YuV54mpIOmGq-mZoiDpvpwg5bGxIOWIhumZopIBD2FuaW1hbF9ob3NwaXRhbJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuVFVSSkxUbFlaVVJuRUFF4AEA-gEECEgQIQ!16s%2Fg%2F11bw2h1ypp?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E7%90%AA%E6%AC%A3%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E9%BE%9C%E5%B1%B1%E5%88%86%E9%99%A2%EF%BD%9C%E7%89%99%E7%A7%91%EF%BD%9C%E4%B8%AD%E8%A5%BF%E7%8D%B8%E9%86%AB%EF%BD%9C%E7%89%B9%E5%AF%B5%E7%A7%91%EF%BD%9C%E6%95%99%E8%82%B2%E4%B8%AD%E5%BF%83/@25.0584073,121.3602174,17z/data=!4m10!1m2!2m1!1z55Cq5qyj5YuV54mp6Yar6ZmiIOm-nOWxseWIhumZog!3m6!1s0x3442a737349a5925:0xf756759e1d01899f!8m2!3d25.0584073!4d121.3602174!15sCh_nkKrmrKPli5XnianphqvpmaIg6b6c5bGx5YiG6ZmiWiYiJOeQqiDmrKMg5YuV54mpIOmGq-mZoiDpvpwg5bGxIOWIhumZopIBD2FuaW1hbF9ob3NwaXRhbJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuVFVSSkxUbFlaVVJuRUFF4AEA-gEECEgQIQ!16s%2Fg%2F11bw2h1ypp",
+      "reviewsUrl": "https://www.google.com/maps/place/%E7%90%AA%E6%AC%A3%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E9%BE%9C%E5%B1%B1%E5%88%86%E9%99%A2%EF%BD%9C%E7%89%99%E7%A7%91%EF%BD%9C%E4%B8%AD%E8%A5%BF%E7%8D%B8%E9%86%AB%EF%BD%9C%E7%89%B9%E5%AF%B5%E7%A7%91%EF%BD%9C%E6%95%99%E8%82%B2%E4%B8%AD%E5%BF%83/@25.0584073,121.3602174,17z/data=!4m8!3m7!1s0x3442a737349a5925:0xf756759e1d01899f!8m2!3d25.0584073!4d121.3602174!9m1!1b1!16s%2Fg%2F11bw2h1ypp",
       "verifiedAt": "2026-06-02"
     },
     "clinicNotes": "龜山分院提供犬貓與特寵診療，特寵門診建議先電話預約；目前暫不接受鳥禽類。臨時異動以官方網站或社群公告為準。",
@@ -1156,6 +1164,7 @@ export const TaoyuanHospitalList = [
       "rating": "4.8",
       "reviewCount": 307,
       "mapsUrl": "https://www.google.com/maps/place/%E6%96%B0%E4%B8%96%E7%B4%80%E7%8D%B8%E9%86%AB%E9%99%A2/@24.9907622,121.3193228,17z/data=!3m1!4b1!4m6!3m5!1s0x34681f2032b62b4b:0x35f2dd5d2140c928!8m2!3d24.9907622!4d121.3193228!16s%2Fg%2F11fr4vw0qk",
+      "reviewsUrl": "https://www.google.com/maps/place/%E6%96%B0%E4%B8%96%E7%B4%80%E7%8D%B8%E9%86%AB%E9%99%A2/@24.9907622,121.3193228,17z/data=!4m8!3m7!1s0x34681f2032b62b4b:0x35f2dd5d2140c928!8m2!3d24.9907622!4d121.3193228!9m1!1b1!16s%2Fg%2F11fr4vw0qk",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": true,

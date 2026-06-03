@@ -79,6 +79,7 @@ export const YilanHospitalList = [
       "rating": "4.7",
       "reviewCount": 183,
       "mapsUrl": "https://www.google.com/maps/place/%E4%B8%8A%E5%AF%B6%E8%B2%9D%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.6775742,121.7633005,17z/data=!3m1!4b1!4m6!3m5!1s0x3467e766662d3033:0x5a24bc5fd2406c2c!8m2!3d24.6775742!4d121.7633005!16s%2Fg%2F11splh15x4",
+      "reviewsUrl": "https://www.google.com/maps/place/%E4%B8%8A%E5%AF%B6%E8%B2%9D%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.6775742,121.7633005,17z/data=!4m8!3m7!1s0x3467e766662d3033:0x5a24bc5fd2406c2c!8m2!3d24.6775742!4d121.7633005!9m1!1b1!16s%2Fg%2F11splh15x4",
       "verifiedAt": "2026-06-01"
     },
     "clinicNotes": "提供犬貓獨立診間，並看診犬貓、鼠、兔、烏龜、刺蝟、蜜袋鼯與禽類。\n建議先電話預約；初診請先來電預約掛號，最晚掛號時間 18:00，預防針請於 16:30 前到院。\n固定門診為週二至週五 10:00–13:00、14:00–19:00；週六 10:00–13:00、14:00–17:00；週日與週一公休。\n院方公告不設急診與住院服務。",
@@ -155,7 +156,8 @@ export const YilanHospitalList = [
     "google": {
       "rating": "4.8",
       "reviewCount": 110,
-      "mapsUrl": "https://www.google.com/maps/place/%E6%9F%8F%E6%A3%AE%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2pawsome+animal+hospital(%E6%AF%8F%E6%9C%88%E7%8F%AD%E8%A1%A8%E5%8F%AF%E8%87%B3%E7%B2%89%E5%B0%88%E6%9F%A5%E8%A9%A2%EF%BC%8C%E8%AB%8B%E7%95%99%E6%84%8F%E6%9C%80%E5%BE%8C%E6%8E%9B%E8%99%9F%E6%99%82%E9%96%93)/@24.670792,121.7774761,17z/data=!3m1!4b1!4m6!3m5!1s0x3467e7985d528501:0x4e310d488013cc83!8m2!3d24.670792!4d121.7774761!16s%2Fg%2F11svhq407v?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D",
+      "mapsUrl": "https://www.google.com/maps/place/%E6%9F%8F%E6%A3%AE%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2pawsome+animal+hospital(%E6%AF%8F%E6%9C%88%E7%8F%AD%E8%A1%A8%E5%8F%AF%E8%87%B3%E7%B2%89%E5%B0%88%E6%9F%A5%E8%A9%A2%EF%BC%8C%E8%AB%8B%E7%95%99%E6%84%8F%E6%9C%80%E5%BE%8C%E6%8E%9B%E8%99%9F%E6%99%82%E9%96%93)/@24.670792,121.7774761,17z/data=!3m1!4b1!4m6!3m5!1s0x3467e7985d528501:0x4e310d488013cc83!8m2!3d24.670792!4d121.7774761!16s%2Fg%2F11svhq407v",
+      "reviewsUrl": "https://www.google.com/maps/place/%E6%9F%8F%E6%A3%AE%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2pawsome+animal+hospital(%E6%AF%8F%E6%9C%88%E7%8F%AD%E8%A1%A8%E5%8F%AF%E8%87%B3%E7%B2%89%E5%B0%88%E6%9F%A5%E8%A9%A2%EF%BC%8C%E8%AB%8B%E7%95%99%E6%84%8F%E6%9C%80%E5%BE%8C%E6%8E%9B%E8%99%9F%E6%99%82%E9%96%93)/@24.670792,121.7774761,17z/data=!4m8!3m7!1s0x3467e7985d528501:0x4e310d488013cc83!8m2!3d24.670792!4d121.7774761!9m1!1b1!16s%2Fg%2F11svhq407v",
       "verifiedAt": "2026-06-01"
     },
     "clinicNotes": "提供狗、貓、鼠、兔診療。\n採預約優先制，亦可現場候診；不接受線上預約，粉專私訊無法即時回覆，請於門診時間來電詢問。\n固定門診為週一至週三、週五至週六 09:00–12:00、15:00–20:00；最後掛號時間為 11:30、19:30；週四、週日休診。\n每月班表與加休資訊以官方 Facebook 公告為準。",

@@ -87,6 +87,7 @@ export const TaitungHospitalList = [
       "rating": "4.7",
       "reviewCount": 38,
       "mapsUrl": "https://www.google.com/maps/place/%E8%B0%B7%E7%B1%B3%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.0493686,121.1647317,17z/data=!3m1!4b1!4m6!3m5!1s0x346f090ac92a2465:0xb987fefbead3ed1!8m2!3d23.0493686!4d121.1647317!16s%2Fg%2F11vhcb5cx5",
+      "reviewsUrl": "https://www.google.com/maps/place/%E8%B0%B7%E7%B1%B3%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.0493686,121.1647317,17z/data=!4m8!3m7!1s0x346f090ac92a2465:0xb987fefbead3ed1!8m2!3d23.0493686!4d121.1647317!9m1!1b1!16s%2Fg%2F11vhcb5cx5",
       "verifiedAt": "2026-06-03"
     },
     "specialClinic": {

@@ -37,6 +37,7 @@ export const TaichungHospitalList = [
       "rating": "4.6",
       "reviewCount": 585,
       "mapsUrl": "https://www.google.com/maps/place/%E7%BE%BD%E6%A3%AE%E6%9E%97%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%2F%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E9%86%AB%E9%99%A2%2F%E9%A0%90%E7%B4%84%E5%88%B6/@24.1464159,120.6993232,17z/data=!3m1!4b1!4m6!3m5!1s0x34693d13a34290cf:0xe9a02cb3a233cc26!8m2!3d24.1464159!4d120.6993232!16s%2Fg%2F11nfl0wllc",
+      "reviewsUrl": "https://www.google.com/maps/place/%E7%BE%BD%E6%A3%AE%E6%9E%97%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%2F%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E9%86%AB%E9%99%A2%2F%E9%A0%90%E7%B4%84%E5%88%B6/@24.1464159,120.6993232,17z/data=!4m8!3m7!1s0x34693d13a34290cf:0xe9a02cb3a233cc26!8m2!3d24.1464159!4d120.6993232!9m1!1b1!16s%2Fg%2F11nfl0wllc",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": true,
@@ -194,7 +195,8 @@ export const TaichungHospitalList = [
     "google": {
       "rating": "4.3",
       "reviewCount": 1074,
-      "mapsUrl": "https://www.google.com/maps/place/%E4%B8%AD%E8%88%88%E5%A4%A7%E5%AD%B8%E7%8D%B8%E9%86%AB%E6%95%99%E5%AD%B8%E9%86%AB%E9%99%A2/@24.1466019,120.6639197,17z/data=!4m10!1m2!2m1!1z5ZyL56uL5Lit6IiI5aSn5a2454246Yar5pWZ5a246Yar6Zmi!3m6!1s0x34693d1d66e43737:0x222fef5f1bd06a4e!8m2!3d24.1466019!4d120.6686833!15sCiTlnIvnq4vkuK3oiIjlpKflrbjnjbjphqvmlZnlrbjphqvpmaKSAQ9hbmltYWxfaG9zcGl0YWzgAQA!16s%2Fg%2F11r_pgjls?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E4%B8%AD%E8%88%88%E5%A4%A7%E5%AD%B8%E7%8D%B8%E9%86%AB%E6%95%99%E5%AD%B8%E9%86%AB%E9%99%A2/@24.1466019,120.6639197,17z/data=!4m10!1m2!2m1!1z5ZyL56uL5Lit6IiI5aSn5a2454246Yar5pWZ5a246Yar6Zmi!3m6!1s0x34693d1d66e43737:0x222fef5f1bd06a4e!8m2!3d24.1466019!4d120.6686833!15sCiTlnIvnq4vkuK3oiIjlpKflrbjnjbjphqvmlZnlrbjphqvpmaKSAQ9hbmltYWxfaG9zcGl0YWzgAQA!16s%2Fg%2F11r_pgjls",
+      "reviewsUrl": "https://www.google.com/maps/place/%E4%B8%AD%E8%88%88%E5%A4%A7%E5%AD%B8%E7%8D%B8%E9%86%AB%E6%95%99%E5%AD%B8%E9%86%AB%E9%99%A2/@24.1466019,120.6639197,17z/data=!4m8!3m7!1s0x34693d1d66e43737:0x222fef5f1bd06a4e!8m2!3d24.1466019!4d120.6639197!9m1!1b1!16s%2Fg%2F11r_pgjls",
       "verifiedAt": "2026-06-02"
     },
     "specialClinic": {
@@ -357,6 +359,7 @@ export const TaichungHospitalList = [
       "rating": "4.6",
       "reviewCount": 556,
       "mapsUrl": "https://www.google.com/maps/place/%E5%B0%8F%E5%B3%B6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9CLine%E6%88%96%E9%9B%BB%E8%A9%B1%E9%A0%90%E7%B4%84/@24.1306384,120.6658307,17z/data=!3m1!4b1!4m6!3m5!1s0x34693d266ab4a321:0x76806ee9053acc89!8m2!3d24.1306384!4d120.6658307!16s%2Fg%2F11qkb28f36",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%B0%8F%E5%B3%B6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9CLine%E6%88%96%E9%9B%BB%E8%A9%B1%E9%A0%90%E7%B4%84/@24.1306384,120.6658307,17z/data=!4m8!3m7!1s0x34693d266ab4a321:0x76806ee9053acc89!8m2!3d24.1306384!4d120.6658307!9m1!1b1!16s%2Fg%2F11qkb28f36",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": true,
@@ -485,7 +488,8 @@ export const TaichungHospitalList = [
     "google": {
       "rating": "5.0",
       "reviewCount": 4,
-      "mapsUrl": "https://www.google.com/maps/place/%E9%81%94%E7%88%BE%E6%96%87%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.1572854,120.6639797,17z/data=!3m1!4b1!4m6!3m5!1s0x34693d007b7aeeaf:0xdf9f26c7a343efcd!8m2!3d24.1572854!4d120.6639797!16s%2Fg%2F11njwxh9yf?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E9%81%94%E7%88%BE%E6%96%87%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.1572854,120.6639797,17z/data=!3m1!4b1!4m6!3m5!1s0x34693d007b7aeeaf:0xdf9f26c7a343efcd!8m2!3d24.1572854!4d120.6639797!16s%2Fg%2F11njwxh9yf",
+      "reviewsUrl": "https://www.google.com/maps/place/%E9%81%94%E7%88%BE%E6%96%87%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.1572854,120.6639797,17z/data=!4m8!3m7!1s0x34693d007b7aeeaf:0xdf9f26c7a343efcd!8m2!3d24.1572854!4d120.6639797!9m1!1b1!16s%2Fg%2F11njwxh9yf",
       "verifiedAt": "2026-06-02"
     },
     "specialClinic": {
@@ -554,6 +558,7 @@ export const TaichungHospitalList = [
       "rating": "5.0",
       "reviewCount": 47,
       "mapsUrl": "https://www.google.com/maps/place/%E5%85%94%E5%85%94%E5%A0%82%E4%B8%AD%E8%A5%BF%E7%8D%B8%E9%86%AB%E5%85%94%E5%B0%88%E7%A7%91%E8%A8%BA%E6%89%80/@24.1458805,120.6689334,17z/data=!3m1!4b1!4m6!3m5!1s0x34693d0071500a45:0x598399cdaed6ca85!8m2!3d24.1458805!4d120.6689334!16s%2Fg%2F11x7n18_65",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%85%94%E5%85%94%E5%A0%82%E4%B8%AD%E8%A5%BF%E7%8D%B8%E9%86%AB%E5%85%94%E5%B0%88%E7%A7%91%E8%A8%BA%E6%89%80/@24.1458805,120.6689334,17z/data=!4m8!3m7!1s0x34693d0071500a45:0x598399cdaed6ca85!8m2!3d24.1458805!4d120.6689334!9m1!1b1!16s%2Fg%2F11x7n18_65",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": true,
@@ -716,6 +721,7 @@ export const TaichungHospitalList = [
       "rating": "4.8",
       "reviewCount": 321,
       "mapsUrl": "https://www.google.com/maps/place/%E6%84%9F%E6%81%A9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.1616989,120.6631104,17z/data=!3m1!4b1!4m6!3m5!1s0x34693d822ace849d:0x698ce5020b13861!8m2!3d24.1616989!4d120.6631104!16s%2Fg%2F11s8klwjpx",
+      "reviewsUrl": "https://www.google.com/maps/place/%E6%84%9F%E6%81%A9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.1616989,120.6631104,17z/data=!4m8!3m7!1s0x34693d822ace849d:0x698ce5020b13861!8m2!3d24.1616989!4d120.6631104!9m1!1b1!16s%2Fg%2F11s8klwjpx",
       "verifiedAt": "2026-06-02"
     },
     "clinicNotes": "本院提供犬貓一般門診與兔、鼠、鳥類、兩棲爬蟲類、蜜袋鼯等特寵診療，另有兔病、貓病、口腔保健、檢驗、行為門診與急診服務。\n一般門診建議先來電確認或預約；急診中心時段為每日 21:00-09:00，急診請撥 0931-784-894 聯繫。",
@@ -771,7 +777,8 @@ export const TaichungHospitalList = [
     "google": {
       "rating": "4.2",
       "reviewCount": 652,
-      "mapsUrl": "https://www.google.com/maps/place/%E6%AF%9B%E5%85%8B%E5%88%A9%E9%87%8E%E7%94%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9C%E7%84%A1%E6%8F%90%E4%BE%9B%E6%80%A5%E8%A8%BA/@24.171651,120.6870864,17z/data=!3m1!4b1!4m6!3m5!1s0x346917df6bfc5719:0x407cde8ec07a1b6b!8m2!3d24.171651!4d120.6870864!16s%2Fg%2F11fvs9q2nl?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E6%AF%9B%E5%85%8B%E5%88%A9%E9%87%8E%E7%94%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9C%E7%84%A1%E6%8F%90%E4%BE%9B%E6%80%A5%E8%A8%BA/@24.171651,120.6870864,17z/data=!3m1!4b1!4m6!3m5!1s0x346917df6bfc5719:0x407cde8ec07a1b6b!8m2!3d24.171651!4d120.6870864!16s%2Fg%2F11fvs9q2nl",
+      "reviewsUrl": "https://www.google.com/maps/place/%E6%AF%9B%E5%85%8B%E5%88%A9%E9%87%8E%E7%94%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9C%E7%84%A1%E6%8F%90%E4%BE%9B%E6%80%A5%E8%A8%BA/@24.171651,120.6870864,17z/data=!4m8!3m7!1s0x346917df6bfc5719:0x407cde8ec07a1b6b!8m2!3d24.171651!4d120.6870864!9m1!1b1!16s%2Fg%2F11fvs9q2nl",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": false,
@@ -889,6 +896,7 @@ export const TaichungHospitalList = [
       "rating": "3.9",
       "reviewCount": 387,
       "mapsUrl": "https://www.google.com/maps/place/%E5%BA%B7%E5%BE%B7%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E5%A4%9C%E9%96%93%E6%80%A5%E8%A8%BA-%E5%8F%B0%E4%B8%AD%E5%8C%97%E5%B1%AF%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%2F%E7%8D%B8%E9%86%AB%2F%E7%8A%AC%E8%B2%93%E9%BC%A0%E5%85%94+24%E5%B0%8F%E6%99%82%E4%BD%8F%E9%99%A2%E7%85%A7%E8%AD%B7%2F%E5%A4%9C%E9%96%93%E4%BD%8F%E9%99%A2%2F%E5%8A%A0%E8%AD%B7%2F%E6%80%A5%E8%A8%BA+%E7%8A%AC%E8%B2%93%E8%A1%80%E5%BA%AB%E4%B8%AD%E5%BF%83%2FX%E5%85%89%2F%E5%85%A7%E5%A4%96%E7%A7%91%2F%E8%B6%85%E9%9F%B3%E6%B3%A2+%E8%A9%95%E5%83%B9+PTT+Dcard/@24.175348,120.6859193,17z/data=!3m1!4b1!4m6!3m5!1s0x346917062745c30d:0xcf1d4c7339140057!8m2!3d24.175348!4d120.6859193!16s%2Fg%2F11fmqc3y0v",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%BA%B7%E5%BE%B7%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E5%A4%9C%E9%96%93%E6%80%A5%E8%A8%BA-%E5%8F%B0%E4%B8%AD%E5%8C%97%E5%B1%AF%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%2F%E7%8D%B8%E9%86%AB%2F%E7%8A%AC%E8%B2%93%E9%BC%A0%E5%85%94+24%E5%B0%8F%E6%99%82%E4%BD%8F%E9%99%A2%E7%85%A7%E8%AD%B7%2F%E5%A4%9C%E9%96%93%E4%BD%8F%E9%99%A2%2F%E5%8A%A0%E8%AD%B7%2F%E6%80%A5%E8%A8%BA+%E7%8A%AC%E8%B2%93%E8%A1%80%E5%BA%AB%E4%B8%AD%E5%BF%83%2FX%E5%85%89%2F%E5%85%A7%E5%A4%96%E7%A7%91%2F%E8%B6%85%E9%9F%B3%E6%B3%A2+%E8%A9%95%E5%83%B9+PTT+Dcard/@24.175348,120.6859193,17z/data=!4m8!3m7!1s0x346917062745c30d:0xcf1d4c7339140057!8m2!3d24.175348!4d120.6859193!9m1!1b1!16s%2Fg%2F11fmqc3y0v",
       "verifiedAt": "2026-06-02"
     },
     "clinicNotes": "本院 24 小時營業，提供犬貓急診、鼠兔急診與犬貓血庫中心服務。犬貓急診為每日 21:00-09:00，特寵（倉鼠、兔子等）急診為每日 21:00-06:00。\n日間及住院探訪時段為 09:00-21:00；特寵急診請先致電諮詢，急診與血庫需求建議出發前先電話確認。",
@@ -1080,7 +1088,8 @@ export const TaichungHospitalList = [
     "google": {
       "rating": "4.7",
       "reviewCount": 136,
-      "mapsUrl": "https://www.google.com/maps/place/%E4%BC%B4%E5%BF%83%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2+%2F+%E9%A0%90%E7%B4%84%E5%84%AA%E5%85%88%E5%88%B6+%2F+%E8%AB%8B%E5%85%88%E4%BE%86%E9%9B%BB%E8%A9%A2%E5%95%8F+%EF%BC%885%2F28%E3%80%816%2F11%E3%80%816%2F19%E9%99%A2%E4%BC%91%EF%BC%89/@24.150541,120.6469742,17z/data=!3m1!4b1!4m6!3m5!1s0x34693d8221071977:0x8efaf44d782879e2!8m2!3d24.150541!4d120.6469742!16s%2Fg%2F11y37brk2l?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E4%BC%B4%E5%BF%83%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2+%2F+%E9%A0%90%E7%B4%84%E5%84%AA%E5%85%88%E5%88%B6+%2F+%E8%AB%8B%E5%85%88%E4%BE%86%E9%9B%BB%E8%A9%A2%E5%95%8F+%EF%BC%885%2F28%E3%80%816%2F11%E3%80%816%2F19%E9%99%A2%E4%BC%91%EF%BC%89/@24.150541,120.6469742,17z/data=!3m1!4b1!4m6!3m5!1s0x34693d8221071977:0x8efaf44d782879e2!8m2!3d24.150541!4d120.6469742!16s%2Fg%2F11y37brk2l",
+      "reviewsUrl": "https://www.google.com/maps/place/%E4%BC%B4%E5%BF%83%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2+%2F+%E9%A0%90%E7%B4%84%E5%84%AA%E5%85%88%E5%88%B6+%2F+%E8%AB%8B%E5%85%88%E4%BE%86%E9%9B%BB%E8%A9%A2%E5%95%8F+%EF%BC%885%2F28%E3%80%816%2F11%E3%80%816%2F19%E9%99%A2%E4%BC%91%EF%BC%89/@24.150541,120.6469742,17z/data=!4m8!3m7!1s0x34693d8221071977:0x8efaf44d782879e2!8m2!3d24.150541!4d120.6469742!9m1!1b1!16s%2Fg%2F11y37brk2l",
       "verifiedAt": "2026-06-02"
     },
     "announcements": [
@@ -1170,7 +1179,8 @@ export const TaichungHospitalList = [
     "google": {
       "rating": "4.1",
       "reviewCount": 279,
-      "mapsUrl": "https://www.google.com.tw/maps/place/404%E8%87%BA%E4%B8%AD%E5%B8%82%E5%8C%97%E5%8D%80%E9%8C%A6%E7%A5%A5%E9%87%8C%E8%82%B2%E6%A8%82%E8%A1%9770%E8%99%9F/@24.1576863,120.6921967,733m/data=!3m2!1e3!4b1!4m6!3m5!1s0x34693d5e4de37439:0x404870446c5be5dd!8m2!3d24.1576863!4d120.6921967!16s%2Fg%2F11rhw2ktst?entry=ttu",
+      "mapsUrl": "https://www.google.com.tw/maps/place/404%E8%87%BA%E4%B8%AD%E5%B8%82%E5%8C%97%E5%8D%80%E9%8C%A6%E7%A5%A5%E9%87%8C%E8%82%B2%E6%A8%82%E8%A1%9770%E8%99%9F/@24.1576863,120.6921967,733m/data=!3m2!1e3!4b1!4m6!3m5!1s0x34693d5e4de37439:0x404870446c5be5dd!8m2!3d24.1576863!4d120.6921967!16s%2Fg%2F11rhw2ktst",
+      "reviewsUrl": "https://www.google.com.tw/maps/place/404%E8%87%BA%E4%B8%AD%E5%B8%82%E5%8C%97%E5%8D%80%E9%8C%A6%E7%A5%A5%E9%87%8C%E8%82%B2%E6%A8%82%E8%A1%9770%E8%99%9F/@24.1576863,120.6921967,733m/data=!4m8!3m7!1s0x34693d5e4de37439:0x404870446c5be5dd!8m2!3d24.1576863!4d120.6921967!9m1!1b1!16s%2Fg%2F11rhw2ktst",
       "verifiedAt": "2026-06-02"
     },
     "clinicNotes": "本分院提供犬貓兔醫療照護，兔科為分院重點服務，包含兔科內外科診療、住院照護、MLS 雷射治療與兔科心臟超音波檢查。\n官方資訊顯示可預約掛號也可現場掛號；預約掛號至門診前 30 分鐘截止，現場掛號至門診前 15 分鐘截止。門診與營業時段不同，前往前建議先電話確認當日掛號安排。",
@@ -1183,8 +1193,8 @@ export const TaichungHospitalList = [
     "city": "台中市",
     "district": "豐原區",
     "address": "台中市豐原區圓環北路二段251號",
-    "lat": 24.2604221,
-    "lng": 120.7256169,
+    "lat": 24.260438,
+    "lng": 120.7255934,
     "type": "general",
     "typeText": "犬貓診療、特寵診療",
     "phone": "04-2524-9607",
@@ -1192,25 +1202,25 @@ export const TaichungHospitalList = [
     "hours": "營業時間：週一至週六 10:00-21:00，週日 10:00-20:00。門診時間：週一至週六 10:30-21:00，週日 10:30-17:00；每月第1週週三 10:30-15:00 僅提供寄療服務，15:00-21:00 門診。",
     "business_hours": {
       "mon": [
-        "10:30-21:00"
+        "10:00-21:00"
       ],
       "tue": [
-        "10:30-21:00"
+        "10:00-21:00"
       ],
       "wed": [
-        "10:30-21:00"
+        "10:00-21:00"
       ],
       "thu": [
-        "10:30-21:00"
+        "10:00-21:00"
       ],
       "fri": [
-        "10:30-21:00"
+        "10:00-21:00"
       ],
       "sat": [
-        "10:30-21:00"
+        "10:00-21:00"
       ],
       "sun": [
-        "10:30-17:00"
+        "10:00-20:00"
       ]
     },
     "reservationRequired": false,
@@ -1240,6 +1250,7 @@ export const TaichungHospitalList = [
       "家醫科",
       "貓科",
       "兔科",
+      "心臟科",
       "皮膚科",
       "外科",
       "影像科"
@@ -1255,8 +1266,9 @@ export const TaichungHospitalList = [
     "google": {
       "rating": "4.4",
       "reviewCount": 356,
-      "mapsUrl": "https://www.google.com/maps/search/%E5%85%A8%E5%9C%8B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E8%B1%90%E5%8E%9F%E5%88%86%E9%99%A2",
-      "verifiedAt": "2026-06-02"
+      "mapsUrl": "https://www.google.com/maps/place/%E5%85%A8%E5%9C%8B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E8%B1%90%E5%8E%9F%E5%88%86%E9%99%A2/@24.260438,120.7255934,17z/data=!3m1!4b1!4m6!3m5!1s0x34691a6d328c7e1f:0xaa77b5f4002277c6!8m2!3d24.260438!4d120.7255934!16s%2Fg%2F1vfn4cwt?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%85%A8%E5%9C%8B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E8%B1%90%E5%8E%9F%E5%88%86%E9%99%A2/@24.260438,120.7255934,17z/data=!4m8!3m7!1s0x34691a6d328c7e1f:0xaa77b5f4002277c6!8m2!3d24.260438!4d120.7255934!9m1!1b1!16s%2Fg%2F1vfn4cwt?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D",
+      "verifiedAt": "2026-06-04"
     },
     "announcements": [
       {
@@ -1270,8 +1282,8 @@ export const TaichungHospitalList = [
       }
     ],
     "clinicNotes": "本分院提供犬貓與兔科診療，官方團隊頁列有家醫科、貓科、兔科、皮膚科、外科與影像科服務。\n可預約掛號也可現場掛號；預約掛號至門診前 30 分鐘截止，現場掛號至門診前 15 分鐘截止。每月第 1 週週三上午至 15:00 僅提供寄療服務，前往前建議先電話確認。",
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "updatedAt": "2026-06-04",
+    "last_checked": "2026-06-04"
   },
   {
     "id": "asia-university-veterinary-teaching-hospital",
@@ -1377,6 +1389,7 @@ export const TaichungHospitalList = [
       "rating": "5.0",
       "reviewCount": 34,
       "mapsUrl": "https://www.google.com/maps/place/%E4%BA%9E%E6%B4%B2%E5%A4%A7%E5%AD%B8%E9%99%84%E5%B1%AC%E7%8D%B8%E9%86%AB%E6%95%99%E5%AD%B8%E9%86%AB%E9%99%A2/@24.0463388,120.6854073,17z/data=!3m1!4b1!4m6!3m5!1s0x34693b0985fabadb:0x245dbaf1fe95ce59!8m2!3d24.0463388!4d120.6854073!16s%2Fg%2F11v0ddnqvg",
+      "reviewsUrl": "https://www.google.com/maps/place/%E4%BA%9E%E6%B4%B2%E5%A4%A7%E5%AD%B8%E9%99%84%E5%B1%AC%E7%8D%B8%E9%86%AB%E6%95%99%E5%AD%B8%E9%86%AB%E9%99%A2/@24.0463388,120.6854073,17z/data=!4m8!3m7!1s0x34693b0985fabadb:0x245dbaf1fe95ce59!8m2!3d24.0463388!4d120.6854073!9m1!1b1!16s%2Fg%2F11v0ddnqvg",
       "verifiedAt": "2026-06-02"
     },
     "announcements": [
@@ -1538,7 +1551,8 @@ export const TaichungHospitalList = [
     "google": {
       "rating": "4.7",
       "reviewCount": 125,
-      "mapsUrl": "https://www.google.com/maps/place/%E7%91%9E%E7%91%9E%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E3%80%8A%E8%A5%BF%E5%B1%AF%E5%8D%80%E6%8E%A8%E8%96%A6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E3%80%8B%E9%86%AB%E5%B8%AB%E7%8F%AD%E8%A1%A8%E8%A9%B3%E8%A6%8BFB%E7%B2%89%E5%B0%88%EF%BD%9C%E6%9D%B1%E6%B5%B7%E9%99%84%E8%BF%91%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9C%E5%AF%B5%E7%89%A9%E6%B4%97%E7%89%99%E6%8B%94%E7%89%99%EF%BD%9C%E8%85%AB%E7%98%A4%E6%9A%A8%E5%A4%96%E7%A7%91%E9%96%80%E8%A8%BA%EF%BD%9C%E5%AF%B5%E7%89%A9%E4%B8%AD%E9%86%AB%E9%87%9D%E7%81%B8%EF%BD%9C%E4%B8%AD%E7%8D%B8%E9%86%AB%E9%96%80%E8%A8%BA%EF%BD%9C%E5%85%A9%E6%A3%B2%E7%88%AC%E8%9F%B2%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@24.1811972,120.619776,17z/data=!3m1!4b1!4m6!3m5!1s0x346915ca548eb32b:0x9d007dd3e0350186!8m2!3d24.1811972!4d120.619776!16s%2Fg%2F11ldmphpjr?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E7%91%9E%E7%91%9E%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E3%80%8A%E8%A5%BF%E5%B1%AF%E5%8D%80%E6%8E%A8%E8%96%A6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E3%80%8B%E9%86%AB%E5%B8%AB%E7%8F%AD%E8%A1%A8%E8%A9%B3%E8%A6%8BFB%E7%B2%89%E5%B0%88%EF%BD%9C%E6%9D%B1%E6%B5%B7%E9%99%84%E8%BF%91%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9C%E5%AF%B5%E7%89%A9%E6%B4%97%E7%89%99%E6%8B%94%E7%89%99%EF%BD%9C%E8%85%AB%E7%98%A4%E6%9A%A8%E5%A4%96%E7%A7%91%E9%96%80%E8%A8%BA%EF%BD%9C%E5%AF%B5%E7%89%A9%E4%B8%AD%E9%86%AB%E9%87%9D%E7%81%B8%EF%BD%9C%E4%B8%AD%E7%8D%B8%E9%86%AB%E9%96%80%E8%A8%BA%EF%BD%9C%E5%85%A9%E6%A3%B2%E7%88%AC%E8%9F%B2%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@24.1811972,120.619776,17z/data=!3m1!4b1!4m6!3m5!1s0x346915ca548eb32b:0x9d007dd3e0350186!8m2!3d24.1811972!4d120.619776!16s%2Fg%2F11ldmphpjr",
+      "reviewsUrl": "https://www.google.com/maps/place/%E7%91%9E%E7%91%9E%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E3%80%8A%E8%A5%BF%E5%B1%AF%E5%8D%80%E6%8E%A8%E8%96%A6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E3%80%8B%E9%86%AB%E5%B8%AB%E7%8F%AD%E8%A1%A8%E8%A9%B3%E8%A6%8BFB%E7%B2%89%E5%B0%88%EF%BD%9C%E6%9D%B1%E6%B5%B7%E9%99%84%E8%BF%91%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9C%E5%AF%B5%E7%89%A9%E6%B4%97%E7%89%99%E6%8B%94%E7%89%99%EF%BD%9C%E8%85%AB%E7%98%A4%E6%9A%A8%E5%A4%96%E7%A7%91%E9%96%80%E8%A8%BA%EF%BD%9C%E5%AF%B5%E7%89%A9%E4%B8%AD%E9%86%AB%E9%87%9D%E7%81%B8%EF%BD%9C%E4%B8%AD%E7%8D%B8%E9%86%AB%E9%96%80%E8%A8%BA%EF%BD%9C%E5%85%A9%E6%A3%B2%E7%88%AC%E8%9F%B2%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@24.1811972,120.619776,17z/data=!4m8!3m7!1s0x346915ca548eb32b:0x9d007dd3e0350186!8m2!3d24.1811972!4d120.619776!9m1!1b1!16s%2Fg%2F11ldmphpjr",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": false,

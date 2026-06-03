@@ -1,24 +1,10 @@
 import type { Hospital } from '@/types/hospital';
-
-const exoticPetCategories = new Set([
-  '兔',
-  '鼠',
-  '天竺鼠',
-  '鳥類',
-  '爬蟲',
-  '刺蝟',
-  '蜜袋鼯',
-  '貂',
-  '龍貓',
-  '兩棲',
-  '野生動物',
-  '其他特寵',
-]);
+import { isDogOrCatCategory, isExoticPetCategory } from './petIcons';
 
 export function getHospitalTypeDisplayText(hospital: Pick<Hospital, 'pet_category_group' | 'typeText'>) {
   const categories = hospital.pet_category_group || [];
-  const hasDogOrCat = categories.includes('狗') || categories.includes('貓');
-  const hasExoticPet = categories.some((category) => exoticPetCategories.has(category));
+  const hasDogOrCat = categories.some(isDogOrCatCategory);
+  const hasExoticPet = categories.some(isExoticPetCategory);
 
   if (hasDogOrCat && hasExoticPet) {
     return '犬貓診療、特寵診療';

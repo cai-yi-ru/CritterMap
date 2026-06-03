@@ -89,8 +89,10 @@ export const ChiayiCityHospitalList = [
     "google": {
       "rating": "4.5",
       "reviewCount": 291,
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E4%BD%A0%E6%88%91%E7%89%A0%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%20%E5%98%89%E7%BE%A9%E5%B8%82%E8%A5%BF%E5%8D%80%E6%96%B0%E6%A6%AE%E8%B7%AF241%E8%99%9F",
-      "verifiedAt": "2026-06-01"
+      "mapsUrl": "https://www.google.com/maps/place/%E4%BD%A0%E6%88%91%E7%89%A0%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.4770594,120.4442613,17z/data=!3m1!4b1!4m6!3m5!1s0x346e9423f482027d:0x4c936138b0fff578!8m2!3d23.4770594!4d120.4442613!16s%2Fg%2F11v03gjzkc",
+      "reviewsUrl": "https://www.google.com/maps/place/%E4%BD%A0%E6%88%91%E7%89%A0%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.4770594,120.4442613,17z/data=!4m8!3m7!1s0x346e9423f482027d:0x4c936138b0fff578!8m2!3d23.4770594!4d120.4442613!9m1!1b1!16s%2Fg%2F11v03gjzkc",
+      "placeId": "ChIJfQKC9COUbjQRePX_sDhhk0w",
+      "verifiedAt": "2026-06-03"
     },
     "clinicNotes": "本院採預約優先制，可來電預約或現場掛號；如遇急診病患會優先處置，可能延後一般門診看診時間。\n本院無24小時門診服務，非門診時間可於粉絲專頁或來電詢問可否接受急診。\n官方網站明確列有鼠兔門診；特殊寵物就診建議先致電確認當日可看診安排。",
     "fb": {
@@ -170,6 +172,7 @@ export const ChiayiCityHospitalList = [
       "rating": "3.9",
       "reviewCount": 114,
       "mapsUrl": "https://www.google.com/maps/place/%E4%B8%8A%E5%93%B2%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2(%E9%BC%A0%E5%85%94%E7%89%B9%E5%AF%B5%E5%B0%88%E7%A7%91)/@23.4803531,120.4529318,17z/data=!3m1!4b1!4m6!3m5!1s0x346e9433f7ba8d77:0xa034e91000d09f32!8m2!3d23.4803531!4d120.4529318!16s%2Fg%2F1vwllwsy",
+      "reviewsUrl": "https://www.google.com/maps/place/%E4%B8%8A%E5%93%B2%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2(%E9%BC%A0%E5%85%94%E7%89%B9%E5%AF%B5%E5%B0%88%E7%A7%91)/@23.4803531,120.4529318,17z/data=!4m8!3m7!1s0x346e9433f7ba8d77:0xa034e91000d09f32!8m2!3d23.4803531!4d120.4529318!9m1!1b1!16s%2Fg%2F1vwllwsy",
       "verifiedAt": "2026-06-01"
     },
     "clinicNotes": "一般門診建議提前來電預約。官方 Facebook 標示提供犬貓及非犬貓小動物醫療，週三、週日固定休診，目前沒有夜間急診服務。\n非犬貓小動物或特殊需求建議先電話確認當日可看診狀況。",
@@ -237,6 +240,7 @@ export const ChiayiCityHospitalList = [
       "rating": "3.6",
       "reviewCount": 251,
       "mapsUrl": "https://www.google.com/maps/place/%E5%98%89%E6%A8%82%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.4768224,120.4598707,17z/data=!3m1!4b1!4m6!3m5!1s0x346e957f1b7300cb:0x3efcd81abc924a95!8m2!3d23.4768224!4d120.4598707!16s%2Fg%2F11s4c_bxdh",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%98%89%E6%A8%82%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.4768224,120.4598707,17z/data=!4m8!3m7!1s0x346e957f1b7300cb:0x3efcd81abc924a95!8m2!3d23.4768224!4d120.4598707!9m1!1b1!16s%2Fg%2F11s4c_bxdh",
       "verifiedAt": "2026-06-01"
     },
     "clinicNotes": "官方 Facebook 標示非犬貓特殊動物門診為週一至週六中午 12:00 起看診，休診資訊以粉專公告為主。\n特殊動物就診前建議先電話確認當日門診狀況。",
@@ -348,8 +352,10 @@ export const ChiayiCityHospitalList = [
     "google": {
       "rating": "4.0",
       "reviewCount": 233,
-      "mapsUrl": "https://www.google.com/maps/place/%E5%9C%8B%E7%AB%8B%E5%98%89%E7%BE%A9%E5%A4%A7%E5%AD%B8%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.4624135,120.4438326,17z/",
-      "verifiedAt": "2026-06-01"
+      "mapsUrl": "https://www.google.com/maps/place/%E5%9C%8B%E7%AB%8B%E5%98%89%E7%BE%A9%E5%A4%A7%E5%AD%B8%E7%8D%B8%E9%86%AB%E5%AD%B8%E9%99%A2%E9%99%84%E8%A8%AD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.4624135,120.4438326,17z/data=!4m6!3m5!1slEogaun9LKTh1e8P_riI8QU!8m2!3d23.4624135!4d120.4438326!16s%2FlEogaun9LKTh1e8P_riI8QU",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%9C%8B%E7%AB%8B%E5%98%89%E7%BE%A9%E5%A4%A7%E5%AD%B8%E7%8D%B8%E9%86%AB%E5%AD%B8%E9%99%A2%E9%99%84%E8%A8%AD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.4624135,120.4438326,17z/data=!4m6!3m5!1slEogaun9LKTh1e8P_riI8QU!8m2!3d23.4624135!4d120.4438326!9m1!1b1!16s%2FlEogaun9LKTh1e8P_riI8QU",
+      "placeId": "lEogaun9LKTh1e8P_riI8QU",
+      "verifiedAt": "2026-06-03"
     },
     "clinicNotes": "門診採預約制與現場掛號並行，建議先電話或網路登記預約。\n官方設有特殊寵物科，服務非傳統寵物，包括鳥類、小型哺乳動物、爬蟲類與兩棲類；特殊寵物就診前建議確認當日門診安排。",
     "specialClinic": {
@@ -426,8 +432,10 @@ export const ChiayiCityHospitalList = [
     "google": {
       "rating": "4.8",
       "reviewCount": 602,
-      "mapsUrl": "https://www.google.com/maps/place/%E8%90%8C%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.4773222,120.4681494,17z/",
-      "verifiedAt": "2026-06-01"
+      "mapsUrl": "https://www.google.com/maps/place/600%E5%98%89%E7%BE%A9%E5%B8%82%E6%9D%B1%E5%8D%80%E9%95%B7%E7%AB%B9%E9%87%8C%E5%A4%A7%E9%9B%85%E8%B7%AF%E4%BA%8C%E6%AE%B5563-5%E8%99%9F%E8%90%8C%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E8%85%AB%E7%98%A4%E6%B2%BB%E7%99%82%E4%B8%AD%E5%BF%83%EF%BC%89+-%7C%E5%B0%8F%E5%8B%95%E7%89%A9%E7%89%99%E7%A7%91%7C+%E5%B0%8F%E5%8B%95%E7%89%A9%E5%85%A7%E5%A4%96%E7%A7%91%7C%E8%85%B9%E8%85%94%E9%8F%A1%2F%E9%AA%A8%E7%A7%91%7C%E5%BF%83%E8%87%9F%E7%A7%91%7C%E9%B3%A5%E9%96%80%E8%A8%BA%E9%A0%90%E7%B4%84%7C%E6%B0%A3%E9%AB%94%E9%BA%BB%E9%86%89%7C%E9%AB%98%E5%A3%93%E6%B0%A7%E6%B2%BB%E7%99%82%7C/@23.4773222,120.4681494,3660a,13.1y/data=!4m2!3m1!1s0x346e950f948d6e6b:0xff7549d88e8bcedd",
+      "reviewsUrl": "https://www.google.com/maps/place/600%E5%98%89%E7%BE%A9%E5%B8%82%E6%9D%B1%E5%8D%80%E9%95%B7%E7%AB%B9%E9%87%8C%E5%A4%A7%E9%9B%85%E8%B7%AF%E4%BA%8C%E6%AE%B5563-5%E8%99%9F%E8%90%8C%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E8%85%AB%E7%98%A4%E6%B2%BB%E7%99%82%E4%B8%AD%E5%BF%83%EF%BC%89+-%7C%E5%B0%8F%E5%8B%95%E7%89%A9%E7%89%99%E7%A7%91%7C+%E5%B0%8F%E5%8B%95%E7%89%A9%E5%85%A7%E5%A4%96%E7%A7%91%7C%E8%85%B9%E8%85%94%E9%8F%A1%2F%E9%AA%A8%E7%A7%91%7C%E5%BF%83%E8%87%9F%E7%A7%91%7C%E9%B3%A5%E9%96%80%E8%A8%BA%E9%A0%90%E7%B4%84%7C%E6%B0%A3%E9%AB%94%E9%BA%BB%E9%86%89%7C%E9%AB%98%E5%A3%93%E6%B0%A7%E6%B2%BB%E7%99%82%7C/@23.4773222,120.4681494,3660a,13.1y/data=!4m2!3m1!1s0x346e950f948d6e6b:0xff7549d88e8bcedd!9m1!1b1",
+      "placeId": "ChIJa26NlA-VbjQR3c6LjthJdf8",
+      "verifiedAt": "2026-06-03"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,

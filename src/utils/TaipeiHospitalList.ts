@@ -51,8 +51,10 @@ export const TaipeiHospitalList = [
     "google": {
       "rating": "4.5",
       "reviewCount": 503,
-      "mapsUrl": "https://www.google.com/maps/search/%E5%8F%A4%E4%BA%AD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%20%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E6%AD%A3%E5%8D%80%E7%BE%85%E6%96%AF%E7%A6%8F%E8%B7%AF%E4%BA%8C%E6%AE%B5138%E8%99%9F",
-      "verifiedAt": "2026-06-02"
+      "mapsUrl": "https://www.google.com/maps?cid=11752491678769815060",
+      "reviewsUrl": "https://search.google.com/local/reviews?placeid=ChIJvVwtAIypQjQRFB7PGuo8GaM",
+      "placeId": "ChIJvVwtAIypQjQRFB7PGuo8GaM",
+      "verifiedAt": "2026-06-04"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -97,8 +99,8 @@ export const TaipeiHospitalList = [
       "facebook": "https://www.facebook.com/p/古亭動物醫院-100076144097985/"
     },
     "clinicNotes": "本院採預約制，請提前致電預約掛號，尚未開放網路、傳真、留言或其他方式預約。\n為維持醫療品質，每日門診量有限，請準時前往；若遲到需重新預約。",
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "updatedAt": "2026-06-04",
+    "last_checked": "2026-06-04"
   },
   {
     "id": "brave-vet-exotic-animal-hospital",
@@ -152,7 +154,8 @@ export const TaipeiHospitalList = [
     "google": {
       "rating": "4.4",
       "reviewCount": 894,
-      "mapsUrl": "https://www.google.com/maps/place/%E4%B8%8D%E8%90%8A%E6%A2%85%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@25.0631701,121.5121234,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a93f056892d3:0x2f73addbd95e026c!8m2!3d25.0631701!4d121.5121234!16s%2Fg%2F11c1q4drmg?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E4%B8%8D%E8%90%8A%E6%A2%85%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@25.0631701,121.5121234,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a93f056892d3:0x2f73addbd95e026c!8m2!3d25.0631701!4d121.5121234!16s%2Fg%2F11c1q4drmg",
+      "reviewsUrl": "https://www.google.com/maps/place/%E4%B8%8D%E8%90%8A%E6%A2%85%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@25.0631701,121.5121234,17z/data=!4m8!3m7!1s0x3442a93f056892d3:0x2f73addbd95e026c!8m2!3d25.0631701!4d121.5121234!9m1!1b1!16s%2Fg%2F11c1q4drmg",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": true,
@@ -231,7 +234,8 @@ export const TaipeiHospitalList = [
     "google": {
       "rating": "4.2",
       "reviewCount": 223,
-      "mapsUrl": "https://www.google.com/maps/place/%E7%89%A7%E5%85%89%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@25.0686728,121.5187188,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a9824fd03fe5:0x22df439a7018763b!8m2!3d25.0686728!4d121.5187188!16s%2Fg%2F11s03x50gq?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E7%89%A7%E5%85%89%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@25.0686728,121.5187188,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a9824fd03fe5:0x22df439a7018763b!8m2!3d25.0686728!4d121.5187188!16s%2Fg%2F11s03x50gq",
+      "reviewsUrl": "https://www.google.com/maps/place/%E7%89%A7%E5%85%89%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@25.0686728,121.5187188,17z/data=!4m8!3m7!1s0x3442a9824fd03fe5:0x22df439a7018763b!8m2!3d25.0686728!4d121.5187188!9m1!1b1!16s%2Fg%2F11s03x50gq",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": true,
@@ -345,7 +349,8 @@ export const TaipeiHospitalList = [
     "google": {
       "rating": "4.2",
       "reviewCount": 1077,
-      "mapsUrl": "https://www.google.com/maps/place/%E5%87%A1%E8%B3%BD%E7%88%BE%E8%B3%BD%E9%B4%BF%E5%AF%B5%E7%89%A9%E9%B3%A5%E9%86%AB%E9%99%A2/@25.0686729,121.519024,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a9461ce50fad:0x53ad5f9f0b3afadb!8m2!3d25.0686729!4d121.519024!16s%2Fg%2F124t47qb9?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E5%87%A1%E8%B3%BD%E7%88%BE%E8%B3%BD%E9%B4%BF%E5%AF%B5%E7%89%A9%E9%B3%A5%E9%86%AB%E9%99%A2/@25.0686729,121.519024,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a9461ce50fad:0x53ad5f9f0b3afadb!8m2!3d25.0686729!4d121.519024!16s%2Fg%2F124t47qb9",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%87%A1%E8%B3%BD%E7%88%BE%E8%B3%BD%E9%B4%BF%E5%AF%B5%E7%89%A9%E9%B3%A5%E9%86%AB%E9%99%A2/@25.0686729,121.519024,17z/data=!4m8!3m7!1s0x3442a9461ce50fad:0x53ad5f9f0b3afadb!8m2!3d25.0686729!4d121.519024!9m1!1b1!16s%2Fg%2F124t47qb9",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": true,
@@ -427,7 +432,8 @@ export const TaipeiHospitalList = [
     "google": {
       "rating": "4.7",
       "reviewCount": 324,
-      "mapsUrl": "https://www.google.com/maps/place/%E6%B2%90%E6%B2%90%E9%BC%A0%E5%85%94%E9%B3%A5%E7%88%AC%E5%B0%88%E7%A7%91%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@25.0513725,121.540314,8z/data=!4m10!1m2!2m1!1z5rKQ5rKQ54m55a-15YuV54mp6Yar6Zmi!3m6!1s0x3442ab162870a893:0xdffd0216f6b80d0e!8m2!3d25.0513725!4d121.540314!15sChjmspDmspDnibnlr7Xli5XnianphqvpmaJaHyId5rKQIOaykCDnibkg5a-1IOWLleeJqSDphqvpmaKSAQ9hbmltYWxfaG9zcGl0YWyaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTjRja3BsUm1oblJSQULgAQD6AQQIABAk!16s%2Fg%2F11h2489zn6?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D",
+      "mapsUrl": "https://www.google.com/maps/place/%E6%B2%90%E6%B2%90%E9%BC%A0%E5%85%94%E9%B3%A5%E7%88%AC%E5%B0%88%E7%A7%91%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@25.0513725,121.540314,8z/data=!4m10!1m2!2m1!1z5rKQ5rKQ54m55a-15YuV54mp6Yar6Zmi!3m6!1s0x3442ab162870a893:0xdffd0216f6b80d0e!8m2!3d25.0513725!4d121.540314!15sChjmspDmspDnibnlr7Xli5XnianphqvpmaJaHyId5rKQIOaykCDnibkg5a-1IOWLleeJqSDphqvpmaKSAQ9hbmltYWxfaG9zcGl0YWyaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTjRja3BsUm1oblJSQULgAQD6AQQIABAk!16s%2Fg%2F11h2489zn6",
+      "reviewsUrl": "https://www.google.com/maps/place/%E6%B2%90%E6%B2%90%E9%BC%A0%E5%85%94%E9%B3%A5%E7%88%AC%E5%B0%88%E7%A7%91%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@25.0513725,121.540314,8z/data=!4m8!3m7!1s0x3442ab162870a893:0xdffd0216f6b80d0e!8m2!3d25.0513725!4d121.540314!9m1!1b1!16s%2Fg%2F11h2489zn6",
       "placeId": "ChIJk6hwKBarQjQRDg249hYC_d8",
       "verifiedAt": "2026-06-02"
     },
@@ -537,7 +543,8 @@ export const TaipeiHospitalList = [
     "google": {
       "rating": "3.7",
       "reviewCount": 1213,
-      "mapsUrl": "https://www.google.com/maps/place/%E4%BC%8A%E7%94%B8%E5%9C%92%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0801714,121.5496049,17z/data=!3m1!4b1!4m6!3m5!1s0x3442ac0f75ed0417:0x9af551e1e92fd50d!8m2!3d25.0801714!4d121.5496049!16s%2Fg%2F12qfz1gb9?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E4%BC%8A%E7%94%B8%E5%9C%92%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0801714,121.5496049,17z/data=!3m1!4b1!4m6!3m5!1s0x3442ac0f75ed0417:0x9af551e1e92fd50d!8m2!3d25.0801714!4d121.5496049!16s%2Fg%2F12qfz1gb9",
+      "reviewsUrl": "https://www.google.com/maps/place/%E4%BC%8A%E7%94%B8%E5%9C%92%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0801714,121.5496049,17z/data=!4m8!3m7!1s0x3442ac0f75ed0417:0x9af551e1e92fd50d!8m2!3d25.0801714!4d121.5496049!9m1!1b1!16s%2Fg%2F12qfz1gb9",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": true,
@@ -657,7 +664,8 @@ export const TaipeiHospitalList = [
     "google": {
       "rating": "4.7",
       "reviewCount": 569,
-      "mapsUrl": "https://www.google.com/maps/place/%E8%AB%BE%E4%BA%9E%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0567612,121.5300425,17z/data=!3m1!4b1!4m6!3m5!1s0x140dd0e5dc4582bb:0xee4d30a7b04efd07!8m2!3d25.0567612!4d121.5300425!16s%2Fg%2F11b6scl3y0?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D",
+      "mapsUrl": "https://www.google.com/maps/place/%E8%AB%BE%E4%BA%9E%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0567612,121.5300425,17z/data=!3m1!4b1!4m6!3m5!1s0x140dd0e5dc4582bb:0xee4d30a7b04efd07!8m2!3d25.0567612!4d121.5300425!16s%2Fg%2F11b6scl3y0",
+      "reviewsUrl": "https://www.google.com/maps/place/%E8%AB%BE%E4%BA%9E%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0567612,121.5300425,17z/data=!4m8!3m7!1s0x140dd0e5dc4582bb:0xee4d30a7b04efd07!8m2!3d25.0567612!4d121.5300425!9m1!1b1!16s%2Fg%2F11b6scl3y0",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": false,
@@ -732,8 +740,9 @@ export const TaipeiHospitalList = [
     "google": {
       "rating": "4.0",
       "reviewCount": 54,
-      "mapsUrl": "https://www.google.com/maps/search/%E5%A4%A7%E7%9B%B4%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E5%B1%B1%E5%8D%80%E5%8C%97%E5%AE%89%E8%B7%AF468%E8%99%9F",
-      "verifiedAt": "2026-06-02"
+      "mapsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E7%9B%B4%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0795824,121.5426554,17z/data=!3m1!4b1!4m5!3m4!1s0x3442ac043a56fa55:0xe0ce3c14bc273707!8m2!3d25.079588!4d121.544843",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E7%9B%B4%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0795824,121.5426554,17z/data=!4m8!3m7!1s0x3442ac043a56fa55:0xe0ce3c14bc273707!8m2!3d25.079588!4d121.544843!9m1!1b1",
+      "verifiedAt": "2026-06-03"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -770,8 +779,8 @@ export const TaipeiHospitalList = [
       "instagram": "https://www.instagram.com/dazhiah468/"
     },
     "clinicNotes": "提供犬、貓、鼠、兔診療，門診採現場掛號或電話預約，手術需提前預約。\n實際門診班表與臨時異動建議以官方 Facebook 公告為準。",
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "updatedAt": "2026-06-04",
+    "last_checked": "2026-06-04"
   },
   {
     "id": "ohohni-animal-hospital",
@@ -826,7 +835,8 @@ export const TaipeiHospitalList = [
     "google": {
       "rating": "4.9",
       "reviewCount": 327,
-      "mapsUrl": "https://www.google.com/maps/place/%E6%AD%90%E6%AD%90%E5%A6%AE%E7%8A%AC%E8%B2%93%E5%85%94%E5%8B%95%E7%89%A9%E9%86%AB/@25.0841814,121.5486615,15z/data=!4m6!3m5!1s0x3442adf914bc144f:0x8b4c00ba76214a7d!8m2!3d25.083404!4d121.548919!16s%2Fg%2F11vbgpl0bm?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D",
+      "mapsUrl": "https://www.google.com/maps/place/%E6%AD%90%E6%AD%90%E5%A6%AE%E7%8A%AC%E8%B2%93%E5%85%94%E5%8B%95%E7%89%A9%E9%86%AB/@25.0841814,121.5486615,15z/data=!4m6!3m5!1s0x3442adf914bc144f:0x8b4c00ba76214a7d!8m2!3d25.083404!4d121.548919!16s%2Fg%2F11vbgpl0bm",
+      "reviewsUrl": "https://www.google.com/maps/place/%E6%AD%90%E6%AD%90%E5%A6%AE%E7%8A%AC%E8%B2%93%E5%85%94%E5%8B%95%E7%89%A9%E9%86%AB/@25.0841814,121.5486615,15z/data=!4m8!3m7!1s0x3442adf914bc144f:0x8b4c00ba76214a7d!8m2!3d25.0841814!4d121.5486615!9m1!1b1!16s%2Fg%2F11vbgpl0bm",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": true,
@@ -935,7 +945,8 @@ export const TaipeiHospitalList = [
     "google": {
       "rating": "4.5",
       "reviewCount": 232,
-      "mapsUrl": "https://www.google.com/maps/place/%E6%99%AF%E8%88%88%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.9951507,121.5457155,17z/data=!3m1!4b1!4m6!3m5!1s0x3442aa05b57d37e9:0xb070094946633421!8m2!3d24.9951507!4d121.5457155!16s%2Fg%2F1q673s51b?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E6%99%AF%E8%88%88%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.9951507,121.5457155,17z/data=!3m1!4b1!4m6!3m5!1s0x3442aa05b57d37e9:0xb070094946633421!8m2!3d24.9951507!4d121.5457155!16s%2Fg%2F1q673s51b",
+      "reviewsUrl": "https://www.google.com/maps/place/%E6%99%AF%E8%88%88%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.9951507,121.5457155,17z/data=!4m8!3m7!1s0x3442aa05b57d37e9:0xb070094946633421!8m2!3d24.9951507!4d121.5457155!9m1!1b1!16s%2Fg%2F1q673s51b",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": true,
@@ -1015,7 +1026,8 @@ export const TaipeiHospitalList = [
     "google": {
       "rating": "4.6",
       "reviewCount": 479,
-      "mapsUrl": "https://www.google.com/maps/place/%E5%85%A8%E9%99%BD%E7%8A%AC%E8%B2%93%E9%B3%A5%E9%A1%9E%E5%B0%88%E7%A7%91%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0492335,121.5666323,17z/data=!3m1!4b1!4m6!3m5!1s0x3442ab96642d1f59:0xacccbbec54fd7015!8m2!3d25.0492335!4d121.5666323!16s%2Fg%2F1yh5t8z5v?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E5%85%A8%E9%99%BD%E7%8A%AC%E8%B2%93%E9%B3%A5%E9%A1%9E%E5%B0%88%E7%A7%91%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0492335,121.5666323,17z/data=!3m1!4b1!4m6!3m5!1s0x3442ab96642d1f59:0xacccbbec54fd7015!8m2!3d25.0492335!4d121.5666323!16s%2Fg%2F1yh5t8z5v",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%85%A8%E9%99%BD%E7%8A%AC%E8%B2%93%E9%B3%A5%E9%A1%9E%E5%B0%88%E7%A7%91%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0492335,121.5666323,17z/data=!4m8!3m7!1s0x3442ab96642d1f59:0xacccbbec54fd7015!8m2!3d25.0492335!4d121.5666323!9m1!1b1!16s%2Fg%2F1yh5t8z5v",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": false,
@@ -1084,7 +1096,8 @@ export const TaipeiHospitalList = [
     "google": {
       "rating": "4.7",
       "reviewCount": 327,
-      "mapsUrl": "https://www.google.com/maps/place/%E5%AE%89%E5%BA%AD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0297087,121.52666,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a984a6cb4cb5:0x98a4532e68166e8e!8m2!3d25.0297087!4d121.52666!16s%2Fg%2F12qh15f2b?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E5%AE%89%E5%BA%AD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0297087,121.52666,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a984a6cb4cb5:0x98a4532e68166e8e!8m2!3d25.0297087!4d121.52666!16s%2Fg%2F12qh15f2b",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%AE%89%E5%BA%AD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0297087,121.52666,17z/data=!4m8!3m7!1s0x3442a984a6cb4cb5:0x98a4532e68166e8e!8m2!3d25.0297087!4d121.52666!9m1!1b1!16s%2Fg%2F12qh15f2b",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": true,
@@ -1169,8 +1182,10 @@ export const TaipeiHospitalList = [
     "google": {
       "rating": "3.8",
       "reviewCount": 929,
-      "mapsUrl": "https://www.google.com/maps/place/%E5%8F%B0%E5%A4%A7%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/data=!4m7!3m6!1s0x3442aa2407400001:0xc9a66439a4b69c1d!8m2!3d25.0156319!4d121.5430757!16s%2Fg%2F11kj3f09z4!19sChIJAQBABySqQjQRHZy2pDlkpsk?authuser=0&hl=zh-TW&rclk=1",
-      "verifiedAt": "2026-06-02"
+      "mapsUrl": "https://www.google.com/maps/place/%E5%8F%B0%E5%A4%A7%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/data=!4m7!3m6!1s0x3442aa2407400001:0xc9a66439a4b69c1d!8m2!3d25.0156319!4d121.5430757!16s%2Fg%2F11kj3f09z4!19sChIJAQBABySqQjQRHZy2pDlkpsk",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%8F%B0%E5%A4%A7%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0156319,121.5430757,17z/data=!4m8!3m7!1s0x3442aa2407400001:0xc9a66439a4b69c1d!8m2!3d25.0156319!4d121.5430757!9m1!1b1!16s%2Fg%2F11kj3f09z4",
+      "placeId": "ChIJAQBABySqQjQRHZy2pDlkpsk",
+      "verifiedAt": "2026-06-03"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -1248,8 +1263,8 @@ export const TaipeiHospitalList = [
       "sourceUrl": "https://www.vh.ntu.edu.tw/index.php?do=guide&id=201&lang=tw",
       "verifiedAt": "2026-06-02"
     },
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "updatedAt": "2026-06-03",
+    "last_checked": "2026-06-03"
   },
   {
     "id": "san-diego-animal-hospital",
@@ -1288,7 +1303,8 @@ export const TaipeiHospitalList = [
     "google": {
       "rating": "3.9",
       "reviewCount": 97,
-      "mapsUrl": "https://www.google.com/maps/place/%E8%81%96%E5%9C%B0%E7%89%99%E5%93%A5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.022938,121.52597,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a98fd761b661:0x58d5661f4b22119c!8m2!3d25.022938!4d121.52597!16s%2Fg%2F11c0vlgq5z?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D",
+      "mapsUrl": "https://www.google.com/maps/place/%E8%81%96%E5%9C%B0%E7%89%99%E5%93%A5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.022938,121.52597,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a98fd761b661:0x58d5661f4b22119c!8m2!3d25.022938!4d121.52597!16s%2Fg%2F11c0vlgq5z",
+      "reviewsUrl": "https://www.google.com/maps/place/%E8%81%96%E5%9C%B0%E7%89%99%E5%93%A5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.022938,121.52597,17z/data=!4m8!3m7!1s0x3442a98fd761b661:0x58d5661f4b22119c!8m2!3d25.022938!4d121.52597!9m1!1b1!16s%2Fg%2F11c0vlgq5z",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": false,
@@ -1354,7 +1370,8 @@ export const TaipeiHospitalList = [
     "google": {
       "rating": "4.8",
       "reviewCount": 132,
-      "mapsUrl": "https://www.google.com/maps/place/%E6%AF%9B%E6%B4%BE%E6%A8%82%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0288536,121.5400524,17z/data=!3m1!4b1!4m6!3m5!1s0x3442ab04b80f1165:0x7c7a8a31c0f1db2a!8m2!3d25.0288536!4d121.5400524!16s%2Fg%2F11t0lys14v?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E6%AF%9B%E6%B4%BE%E6%A8%82%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0288536,121.5400524,17z/data=!3m1!4b1!4m6!3m5!1s0x3442ab04b80f1165:0x7c7a8a31c0f1db2a!8m2!3d25.0288536!4d121.5400524!16s%2Fg%2F11t0lys14v",
+      "reviewsUrl": "https://www.google.com/maps/place/%E6%AF%9B%E6%B4%BE%E6%A8%82%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0288536,121.5400524,17z/data=!4m8!3m7!1s0x3442ab04b80f1165:0x7c7a8a31c0f1db2a!8m2!3d25.0288536!4d121.5400524!9m1!1b1!16s%2Fg%2F11t0lys14v",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": false,
@@ -1456,7 +1473,8 @@ export const TaipeiHospitalList = [
     "google": {
       "rating": "4.8",
       "reviewCount": 304,
-      "mapsUrl": "https://www.google.com/maps/place/%E8%90%8A%E7%89%B9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91/@25.0202109,121.5304394,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a987533d1419:0xa8bfef7e08b1071f!8m2!3d25.0202109!4d121.5304394!16s%2Fg%2F11s8b66508?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E8%90%8A%E7%89%B9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91/@25.0202109,121.5304394,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a987533d1419:0xa8bfef7e08b1071f!8m2!3d25.0202109!4d121.5304394!16s%2Fg%2F11s8b66508",
+      "reviewsUrl": "https://www.google.com/maps/place/%E8%90%8A%E7%89%B9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91/@25.0202109,121.5304394,17z/data=!4m8!3m7!1s0x3442a987533d1419:0xa8bfef7e08b1071f!8m2!3d25.0202109!4d121.5304394!9m1!1b1!16s%2Fg%2F11s8b66508",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": false,
@@ -1543,7 +1561,8 @@ export const TaipeiHospitalList = [
     "google": {
       "rating": "4.2",
       "reviewCount": 5,
-      "mapsUrl": "https://www.google.com/maps/place/%E4%BB%81%E6%84%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.037394,121.552162,17z/data=!3m1!4b1!4m6!3m5!1s0x3442ab00108c2031:0xc50a4f5eac7e35fb!8m2!3d25.037394!4d121.552162!16s%2Fg%2F11lmkypyvt?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D",
+      "mapsUrl": "https://www.google.com/maps/place/%E4%BB%81%E6%84%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.037394,121.552162,17z/data=!3m1!4b1!4m6!3m5!1s0x3442ab00108c2031:0xc50a4f5eac7e35fb!8m2!3d25.037394!4d121.552162!16s%2Fg%2F11lmkypyvt",
+      "reviewsUrl": "https://www.google.com/maps/place/%E4%BB%81%E6%84%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.037394,121.552162,17z/data=!4m8!3m7!1s0x3442ab00108c2031:0xc50a4f5eac7e35fb!8m2!3d25.037394!4d121.552162!9m1!1b1!16s%2Fg%2F11lmkypyvt",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": true,
@@ -1628,7 +1647,8 @@ export const TaipeiHospitalList = [
     "google": {
       "rating": "4.7",
       "reviewCount": 206,
-      "mapsUrl": "https://www.google.com/maps/place/%E5%AF%B5%E6%A8%82%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0327814,121.5517474,17z/data=!3m1!4b1!4m6!3m5!1s0x3442abcc4e5b141f:0xa1264513b21cdd8a!8m2!3d25.0327814!4d121.5517474!16s%2Fg%2F11c4nvwnzw?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E5%AF%B5%E6%A8%82%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0327814,121.5517474,17z/data=!3m1!4b1!4m6!3m5!1s0x3442abcc4e5b141f:0xa1264513b21cdd8a!8m2!3d25.0327814!4d121.5517474!16s%2Fg%2F11c4nvwnzw",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%AF%B5%E6%A8%82%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0327814,121.5517474,17z/data=!4m8!3m7!1s0x3442abcc4e5b141f:0xa1264513b21cdd8a!8m2!3d25.0327814!4d121.5517474!9m1!1b1!16s%2Fg%2F11c4nvwnzw",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": true,
@@ -1743,7 +1763,8 @@ export const TaipeiHospitalList = [
     "google": {
       "rating": "4.3",
       "reviewCount": 728,
-      "mapsUrl": "https://www.google.com/maps/place/%E8%8A%9D%E5%B1%B1%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.103596,121.519959,17z/data=!3m1!4b1!4m6!3m5!1s0x3442ae979dda8e8f:0xcc44b912e6a01315!8m2!3d25.103596!4d121.519959!16s%2Fg%2F11cn650g09?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D",
+      "mapsUrl": "https://www.google.com/maps/place/%E8%8A%9D%E5%B1%B1%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.103596,121.519959,17z/data=!3m1!4b1!4m6!3m5!1s0x3442ae979dda8e8f:0xcc44b912e6a01315!8m2!3d25.103596!4d121.519959!16s%2Fg%2F11cn650g09",
+      "reviewsUrl": "https://www.google.com/maps/place/%E8%8A%9D%E5%B1%B1%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.103596,121.519959,17z/data=!4m8!3m7!1s0x3442ae979dda8e8f:0xcc44b912e6a01315!8m2!3d25.103596!4d121.519959!9m1!1b1!16s%2Fg%2F11cn650g09",
       "verifiedAt": "2026-06-02"
     },
     "hasEmergencyService": true,
@@ -1850,6 +1871,7 @@ export const TaipeiHospitalList = [
       "rating": "3.8",
       "reviewCount": 455,
       "mapsUrl": "https://www.google.com/maps/place/%E5%B8%83%E9%81%94%E7%BE%8A%E6%80%A5%E8%A8%BA%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.1053842,121.5282977,17z/data=!3m1!4b1!4m6!3m5!1s0x3442afd1deaca98f:0x5cb54f72bcb53265!8m2!3d25.1053842!4d121.5282977!16s%2Fg%2F11j6t0qhx7",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%B8%83%E9%81%94%E7%BE%8A%E6%80%A5%E8%A8%BA%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.1053842,121.5282977,17z/data=!4m8!3m7!1s0x3442afd1deaca98f:0x5cb54f72bcb53265!8m2!3d25.1053842!4d121.5282977!9m1!1b1!16s%2Fg%2F11j6t0qhx7",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": false,
@@ -1938,6 +1960,7 @@ export const TaipeiHospitalList = [
       "rating": "4.6",
       "reviewCount": 245,
       "mapsUrl": "https://www.google.com/maps/place/%E6%9D%9C%E7%91%AA%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E5%85%A8%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@25.1354176,121.4965108,17z/data=!3m1!4b1!4m6!3m5!1s0x3442ae522db542d1:0xa8fc017906c9ddf7!8m2!3d25.1354176!4d121.4965108!16s%2Fg%2F1pp2ty6fg",
+      "reviewsUrl": "https://www.google.com/maps/place/%E6%9D%9C%E7%91%AA%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E5%85%A8%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@25.1354176,121.4965108,17z/data=!4m8!3m7!1s0x3442ae522db542d1:0xa8fc017906c9ddf7!8m2!3d25.1354176!4d121.4965108!9m1!1b1!16s%2Fg%2F1pp2ty6fg",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": true,
@@ -2045,6 +2068,7 @@ export const TaipeiHospitalList = [
       "rating": "4.3",
       "reviewCount": 135,
       "mapsUrl": "https://www.google.com/maps/place/%E5%8A%8D%E6%A9%8B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.122378,121.524396,17z/data=!3m1!4b1!4m6!3m5!1s0x3442ae62c3c727a3:0x7a82166b657e6c9e!8m2!3d25.122378!4d121.524396!16s%2Fg%2F1wnbvq8j",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%8A%8D%E6%A9%8B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.122378,121.524396,17z/data=!4m8!3m7!1s0x3442ae62c3c727a3:0x7a82166b657e6c9e!8m2!3d25.122378!4d121.524396!9m1!1b1!16s%2Fg%2F1wnbvq8j",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": true,
@@ -2130,8 +2154,8 @@ export const TaipeiHospitalList = [
       "rating": "3.9",
       "reviewCount": 463,
       "mapsUrl": "https://www.google.com/maps/place/%E5%85%A8%E5%9C%8B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E5%8F%B0%E5%8C%97%E5%88%86%E9%99%A2/@25.0577448,121.5803163,17z/data=!3m5!1s0x3442ab075a9087f7:0x2b6eb56813ed0417!8m2!3d25.0577448!4d121.5803163",
-      "placeId": "0x3442ab075a9087f7:0x2b6eb56813ed0417",
-      "verifiedAt": "2026-06-02"
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%85%A8%E5%9C%8B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E5%8F%B0%E5%8C%97%E5%88%86%E9%99%A2/@25.0577448,121.5803163,17z/data=!4m7!3m6!1s0x3442ab075a9087f7:0x2b6eb56813ed0417!8m2!3d25.0577448!4d121.5803163!9m1!1b1",
+      "verifiedAt": "2026-06-03"
     },
     "reservationRequired": false,
     "hasEmergencyService": true,
@@ -2187,8 +2211,8 @@ export const TaipeiHospitalList = [
         "verifiedAt": "2026-06-02"
       }
     ],
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "updatedAt": "2026-06-03",
+    "last_checked": "2026-06-03"
   },
   {
     "id": "amazon-exotic-animal-hospital",
@@ -2237,6 +2261,7 @@ export const TaipeiHospitalList = [
       "rating": "4.6",
       "reviewCount": 672,
       "mapsUrl": "https://www.google.com/maps/place/%E4%BA%9E%E9%A6%AC%E6%A3%AE%E7%89%B9%E5%AF%B5%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@25.0790168,121.5798869,17z/data=!3m1!4b1!4m6!3m5!1s0x3442acec8ace5c1d:0x133340624804a0e5!8m2!3d25.0790168!4d121.5798869!16s%2Fg%2F1tj43lph",
+      "reviewsUrl": "https://www.google.com/maps/place/%E4%BA%9E%E9%A6%AC%E6%A3%AE%E7%89%B9%E5%AF%B5%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@25.0790168,121.5798869,17z/data=!4m8!3m7!1s0x3442acec8ace5c1d:0x133340624804a0e5!8m2!3d25.0790168!4d121.5798869!9m1!1b1!16s%2Fg%2F1tj43lph",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": false,
@@ -2363,8 +2388,9 @@ export const TaipeiHospitalList = [
     "google": {
       "rating": "4.3",
       "reviewCount": 648,
-      "mapsUrl": "https://www.google.com/maps/place/%E4%B8%AD%E7%A0%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0536899,121.616113,17z",
-      "verifiedAt": "2026-06-02"
+      "mapsUrl": "https://www.google.com/maps/place/%E4%B8%AD%E7%A0%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.053629,121.616422,19z/data=!4m6!3m5!1s0x3442ab59c3010d17:0x8ce1abf7898f5d8e!8m2!3d25.0536899!4d121.616113!16s%2Fg%2F1tdf8t9h",
+      "reviewsUrl": "https://www.google.com/maps/place/%E4%B8%AD%E7%A0%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.053629,121.616422,19z/data=!4m8!3m7!1s0x3442ab59c3010d17:0x8ce1abf7898f5d8e!8m2!3d25.0536899!4d121.616113!9m1!1b1!16s%2Fg%2F1tdf8t9h",
+      "verifiedAt": "2026-06-03"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -2409,8 +2435,8 @@ export const TaipeiHospitalList = [
     "appointmentLink": "",
     "transportTips": "鄰近捷運南港展覽館站，步行約5分鐘可達。",
     "clinicNotes": "本院採現場候位制，如需指定獸醫師建議先致電確認班表。\n提供犬貓一般內外科、兔科、鼠科、爬蟲類與特寵外科相關診療資訊；急症、特殊寵物與出國檢疫需求建議出發前先電話確認。",
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "updatedAt": "2026-06-03",
+    "last_checked": "2026-06-03"
   },
   {
     "id": "ark-exotic-animal-hospital",
@@ -2459,6 +2485,7 @@ export const TaipeiHospitalList = [
       "rating": "4.8",
       "reviewCount": 628,
       "mapsUrl": "https://www.google.com/maps/place/%E4%BA%9E%E5%90%84%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E9%86%AB%E9%99%A2/@25.0517736,121.6166635,17z/data=!3m5!1s0x3442ab6d2f3b1319:0x9be7a5a95b0bff5e!8m2!3d25.0517736!4d121.6166635!16s%2Fg%2F11srh7h_2p",
+      "reviewsUrl": "https://www.google.com/maps/place/%E4%BA%9E%E5%90%84%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E9%86%AB%E9%99%A2/@25.0517736,121.6166635,17z/data=!4m8!3m7!1s0x3442ab6d2f3b1319:0x9be7a5a95b0bff5e!8m2!3d25.0517736!4d121.6166635!9m1!1b1!16s%2Fg%2F11srh7h_2p",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": true,
@@ -2591,8 +2618,9 @@ export const TaipeiHospitalList = [
     "google": {
       "rating": "4.8",
       "reviewCount": 36,
-      "mapsUrl": "https://www.google.com/maps/place/%E5%9C%8B%E5%AF%B6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+GOBO+Animal+Medical+Center/@25.0468344,121.5402743,17z/data=!3m5!1s0x3442a900473aa517:0xf81d70c342df5ea",
-      "verifiedAt": "2026-06-02"
+      "mapsUrl": "https://www.google.com/maps/place/%E5%9C%8B%E5%AF%B6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+GOBO+Animal+Medical+Center/@25.0468344,121.5402743,17z/data=!4m7!3m6!1s0x3442a900473aa517:0xf81d70c342df5ea!8m2!3d25.0468344!4d121.5402743",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%9C%8B%E5%AF%B6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+GOBO+Animal+Medical+Center/@25.0468344,121.5402743,17z/data=!4m7!3m6!1s0x3442a900473aa517:0xf81d70c342df5ea!8m2!3d25.0468344!4d121.5402743!9m1!1b1",
+      "verifiedAt": "2026-06-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -2650,8 +2678,8 @@ export const TaipeiHospitalList = [
       "sourceUrl": "https://www.instagram.com/goboamc/",
       "verifiedAt": "2026-06-02"
     },
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "updatedAt": "2026-06-03",
+    "last_checked": "2026-06-03"
   },
   {
     "id": "lovecat-animal-hospital",
@@ -2693,8 +2721,9 @@ export const TaipeiHospitalList = [
       "rating": "4.3",
       "reviewCount": 109,
       "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ8QWxJ8urQjQRhK2S4XdL2jk",
+      "reviewsUrl": "https://search.google.com/local/reviews?placeid=ChIJ8QWxJ8urQjQRhK2S4XdL2jk",
       "placeId": "ChIJ8QWxJ8urQjQRhK2S4XdL2jk",
-      "verifiedAt": "2026-06-02"
+      "verifiedAt": "2026-06-04"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -2751,8 +2780,8 @@ export const TaipeiHospitalList = [
       "sourceUrl": "https://www.lovecat.com.tw/pages/%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E9%96%80%E8%A8%BA%E6%99%82%E9%96%93",
       "verifiedAt": "2026-06-02"
     },
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "updatedAt": "2026-06-04",
+    "last_checked": "2026-06-04"
   },
   {
     "id": "changhong-animal-hospital",
@@ -2803,6 +2832,7 @@ export const TaipeiHospitalList = [
       "rating": "4.7",
       "reviewCount": 471,
       "mapsUrl": "https://www.google.com/maps/place/%E9%95%B7%E5%AE%8F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@25.0593544,121.5303654,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a95c3c6b6a4b:0x9e3bb49e95b4a643!8m2!3d25.0593544!4d121.5303654!16s%2Fg%2F1z3t9cmyn",
+      "reviewsUrl": "https://www.google.com/maps/place/%E9%95%B7%E5%AE%8F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@25.0593544,121.5303654,17z/data=!4m8!3m7!1s0x3442a95c3c6b6a4b:0x9e3bb49e95b4a643!8m2!3d25.0593544!4d121.5303654!9m1!1b1!16s%2Fg%2F1z3t9cmyn",
       "verifiedAt": "2026-06-02"
     },
     "reservationRequired": true,

@@ -13,6 +13,7 @@ import DisclaimerSection from './components/DisclaimerSection';
 
 import { getHospitals } from '@/lib/getHospitals';
 import { getHospitalUpdates } from '@/lib/getHospitalUpdates';
+import { getCanonicalPetCategory } from '@/lib/petIcons';
 import type { Hospital, HospitalUpdate } from '@/types/hospital';
 
 const MapPanel = dynamic(() => import('./components/MapPanel'), {
@@ -118,7 +119,10 @@ export default function HomeClient({ embed = false }: HomeClientProps) {
     }
 
     if (type !== 'all') {
-      filtered = filtered.filter(h => h.pet_category_group?.includes(type));
+      filtered = filtered.filter(h => {
+        const categories = [...(h.pet_category_group || []), ...(h.pets || [])];
+        return categories.some(category => getCanonicalPetCategory(category) === type);
+      });
     }
 
     if (reservationRequiredOnly) {

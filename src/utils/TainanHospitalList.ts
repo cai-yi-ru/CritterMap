@@ -84,7 +84,8 @@ export const TainanHospitalList = [
     "google": {
       "rating": "4.5",
       "reviewCount": 412,
-      "mapsUrl": "https://www.google.com/maps/place/%E5%BB%A3%E6%85%88%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.9915872,120.1922208,17z/data=!3m1!4b1!4m6!3m5!1s0x346e76706ae54153:0xea9161dddf4f17aa!8m2!3d22.9915872!4d120.1922208!16s%2Fg%2F11xkjbw_t?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E5%BB%A3%E6%85%88%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.9915872,120.1922208,17z/data=!3m1!4b1!4m6!3m5!1s0x346e76706ae54153:0xea9161dddf4f17aa!8m2!3d22.9915872!4d120.1922208!16s%2Fg%2F11xkjbw_t",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%BB%A3%E6%85%88%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.9915872,120.1922208,17z/data=!4m8!3m7!1s0x346e76706ae54153:0xea9161dddf4f17aa!8m2!3d22.9915872!4d120.1922208!9m1!1b1!16s%2Fg%2F11xkjbw_t",
       "verifiedAt": "2026-06-03"
     },
     "clinicNotes": "門診時間為週一至週五 10:00–20:00，週六 09:00–12:00、15:00–17:00，週日休診。\n特殊寵物與專科服務建議就診前先電話確認看診醫師與可安排時段。",
@@ -134,6 +135,7 @@ export const TainanHospitalList = [
       "rating": "4.2",
       "reviewCount": 141,
       "mapsUrl": "https://www.google.com/maps/place/%E7%AB%8B%E5%AE%89%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.9883641,120.191848,17z/data=!3m1!4b1!4m6!3m5!1s0x346e775ef092157b:0xbc2ff36c1a2c983d!8m2!3d22.9883641!4d120.191848!16s%2Fg%2F11sl2074jg",
+      "reviewsUrl": "https://www.google.com/maps/place/%E7%AB%8B%E5%AE%89%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.9883641,120.191848,17z/data=!4m8!3m7!1s0x346e775ef092157b:0xbc2ff36c1a2c983d!8m2!3d22.9883641!4d120.191848!9m1!1b1!16s%2Fg%2F11sl2074jg",
       "verifiedAt": "2026-06-03"
     },
     "reservationRequired": true,
@@ -239,7 +241,9 @@ export const TainanHospitalList = [
     "google": {
       "rating": "4.7",
       "reviewCount": 87,
-      "mapsUrl": "https://www.google.com/maps?cid=16396922474647766138",
+      "mapsUrl": "https://www.google.com/maps/place/Let%E2%80%99s+go+%E9%82%A3%E9%9A%BB%E7%8B%97%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.9728414,120.218773,17z/data=!3m1!4b1!4m5!3m4!1s0x346e75d6170c1031:0xe38d921db6ffc47a!8m2!3d22.9728147!4d120.22096",
+      "reviewsUrl": "https://www.google.com/maps/place/Let%E2%80%99s+go+%E9%82%A3%E9%9A%BB%E7%8B%97%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.9728414,120.218773,17z/data=!4m8!3m7!1s0x346e75d6170c1031:0xe38d921db6ffc47a!8m2!3d22.9728147!4d120.22096!9m1!1b1",
+      "placeId": "ChIJMRAMF9Z1bjQResT_th2SjeM",
       "verifiedAt": "2026-06-03"
     },
     "reservationRequired": true,
@@ -325,7 +329,8 @@ export const TainanHospitalList = [
     "google": {
       "rating": "4.7",
       "reviewCount": 452,
-      "mapsUrl": "https://www.google.com/maps/place/%E9%85%B7%E6%AF%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%2F%E7%8A%AC%E8%B2%93%E5%85%A7%E5%A4%96%E7%A7%91%2F%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%2F%E7%8A%AC%E8%B2%93%E8%85%AB%E7%98%A4%E7%A7%91%E5%BF%83%E8%87%9F%E7%A7%91%2F%E9%AB%98%E5%A3%93%E6%B0%A7%E6%B2%BB%E7%99%82%E4%B8%AD%E5%BF%83/@22.9797896,120.1949081,17z/data=!3m1!4b1!4m6!3m5!1s0x346e75736fe99a13:0xcbcedc4e52733ca5!8m2!3d22.9797896!4d120.1949081!16s%2Fg%2F11q8jzw8qr?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E9%85%B7%E6%AF%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%2F%E7%8A%AC%E8%B2%93%E5%85%A7%E5%A4%96%E7%A7%91%2F%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%2F%E7%8A%AC%E8%B2%93%E8%85%AB%E7%98%A4%E7%A7%91%E5%BF%83%E8%87%9F%E7%A7%91%2F%E9%AB%98%E5%A3%93%E6%B0%A7%E6%B2%BB%E7%99%82%E4%B8%AD%E5%BF%83/@22.9797896,120.1949081,17z/data=!3m1!4b1!4m6!3m5!1s0x346e75736fe99a13:0xcbcedc4e52733ca5!8m2!3d22.9797896!4d120.1949081!16s%2Fg%2F11q8jzw8qr",
+      "reviewsUrl": "https://www.google.com/maps/place/%E9%85%B7%E6%AF%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%2F%E7%8A%AC%E8%B2%93%E5%85%A7%E5%A4%96%E7%A7%91%2F%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%2F%E7%8A%AC%E8%B2%93%E8%85%AB%E7%98%A4%E7%A7%91%E5%BF%83%E8%87%9F%E7%A7%91%2F%E9%AB%98%E5%A3%93%E6%B0%A7%E6%B2%BB%E7%99%82%E4%B8%AD%E5%BF%83/@22.9797896,120.1949081,17z/data=!4m8!3m7!1s0x346e75736fe99a13:0xcbcedc4e52733ca5!8m2!3d22.9797896!4d120.1949081!9m1!1b1!16s%2Fg%2F11q8jzw8qr",
       "verifiedAt": "2026-06-03"
     },
     "reservationRequired": true,
@@ -488,7 +493,8 @@ export const TainanHospitalList = [
     "google": {
       "rating": "4.5",
       "reviewCount": 337,
-      "mapsUrl": "https://www.google.com/maps/place/%E6%85%88%E6%84%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E9%87%91%E8%8F%AF%E5%88%86%E9%99%A2/@22.9746773,120.1878787,17z/data=!3m1!4b1!4m6!3m5!1s0x346e75d980bc03d7:0xfb35f3fa53e88306!8m2!3d22.9746773!4d120.1878787!16s%2Fg%2F1th7w2zh?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D",
+      "mapsUrl": "https://www.google.com/maps/place/%E6%85%88%E6%84%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E9%87%91%E8%8F%AF%E5%88%86%E9%99%A2/@22.9746773,120.1878787,17z/data=!3m1!4b1!4m6!3m5!1s0x346e75d980bc03d7:0xfb35f3fa53e88306!8m2!3d22.9746773!4d120.1878787!16s%2Fg%2F1th7w2zh",
+      "reviewsUrl": "https://www.google.com/maps/place/%E6%85%88%E6%84%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E9%87%91%E8%8F%AF%E5%88%86%E9%99%A2/@22.9746773,120.1878787,17z/data=!4m8!3m7!1s0x346e75d980bc03d7:0xfb35f3fa53e88306!8m2!3d22.9746773!4d120.1878787!9m1!1b1!16s%2Fg%2F1th7w2zh",
       "verifiedAt": "2026-06-03"
     },
     "specialClinic": {
@@ -611,7 +617,8 @@ export const TainanHospitalList = [
     "google": {
       "rating": "4.2",
       "reviewCount": 226,
-      "mapsUrl": "https://www.google.com/maps/place/%E5%95%84%E6%9C%A8%E9%B3%A5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.0043632,120.2007642,17z/data=!3m1!4b1!4m6!3m5!1s0x346e774db3145d73:0x95aaa294df2de2de!8m2!3d23.0043632!4d120.2007642!16s%2Fg%2F11s0s32qhg?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E5%95%84%E6%9C%A8%E9%B3%A5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.0043632,120.2007642,17z/data=!3m1!4b1!4m6!3m5!1s0x346e774db3145d73:0x95aaa294df2de2de!8m2!3d23.0043632!4d120.2007642!16s%2Fg%2F11s0s32qhg",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%95%84%E6%9C%A8%E9%B3%A5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.0043632,120.2007642,17z/data=!4m8!3m7!1s0x346e774db3145d73:0x95aaa294df2de2de!8m2!3d23.0043632!4d120.2007642!9m1!1b1!16s%2Fg%2F11s0s32qhg",
       "verifiedAt": "2026-06-03"
     },
     "announcements": [
@@ -669,6 +676,7 @@ export const TainanHospitalList = [
       "rating": "4.0",
       "reviewCount": 817,
       "mapsUrl": "https://www.google.com/maps/place/%E5%87%B1%E6%97%8B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+24%E5%B0%8F%E6%99%82%E6%80%A5%E8%A8%BA+(%E8%B2%93+%E7%8B%97+%E9%BC%A0+%E5%85%94%E5%AD%90+%E9%B3%A5)%E2%80%94%E9%B8%9A%E9%B5%A1+%E5%80%89%E9%BC%A0+%E5%A4%A9%E7%AB%BA%E9%BC%A0+%E5%88%BA%E8%9D%9F+%E8%9C%9C%E8%A2%8B%E9%BC%AF+%E7%83%8F%E9%BE%9C+%E9%BE%8D%E8%B2%93+%E5%AE%88%E5%AE%AE+-%E9%B3%A5%E9%86%AB%E9%99%A2-%E9%BC%A0%E9%86%AB%E9%99%A2-%E5%85%94%E5%AD%90%E9%86%AB%E9%99%A2/@23.0126887,120.2113296,17z/data=!3m1!4b1!4m6!3m5!1s0x346e76fbcebf1743:0x51f252453a45b352!8m2!3d23.0126887!4d120.2113296!16s%2Fg%2F1pzrjprm_",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%87%B1%E6%97%8B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+24%E5%B0%8F%E6%99%82%E6%80%A5%E8%A8%BA+(%E8%B2%93+%E7%8B%97+%E9%BC%A0+%E5%85%94%E5%AD%90+%E9%B3%A5)%E2%80%94%E9%B8%9A%E9%B5%A1+%E5%80%89%E9%BC%A0+%E5%A4%A9%E7%AB%BA%E9%BC%A0+%E5%88%BA%E8%9D%9F+%E8%9C%9C%E8%A2%8B%E9%BC%AF+%E7%83%8F%E9%BE%9C+%E9%BE%8D%E8%B2%93+%E5%AE%88%E5%AE%AE+-%E9%B3%A5%E9%86%AB%E9%99%A2-%E9%BC%A0%E9%86%AB%E9%99%A2-%E5%85%94%E5%AD%90%E9%86%AB%E9%99%A2/@23.0126887,120.2113296,17z/data=!4m8!3m7!1s0x346e76fbcebf1743:0x51f252453a45b352!8m2!3d23.0126887!4d120.2113296!9m1!1b1!16s%2Fg%2F1pzrjprm_",
       "verifiedAt": "2026-06-03"
     },
     "reservationRequired": true,
@@ -769,7 +777,8 @@ export const TainanHospitalList = [
     "google": {
       "rating": "4.7",
       "reviewCount": 679,
-      "mapsUrl": "https://www.google.com/maps/place/%E5%B1%B1%E8%B1%AC%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.9933356,120.1717964,17z/data=!3m1!4b1!4m6!3m5!1s0x346e772628f81351:0xb281867dbd3fc74b!8m2!3d22.9933356!4d120.1717964!16s%2Fg%2F11j19t6n7c?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E5%B1%B1%E8%B1%AC%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.9933356,120.1717964,17z/data=!3m1!4b1!4m6!3m5!1s0x346e772628f81351:0xb281867dbd3fc74b!8m2!3d22.9933356!4d120.1717964!16s%2Fg%2F11j19t6n7c",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%B1%B1%E8%B1%AC%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.9933356,120.1717964,17z/data=!4m8!3m7!1s0x346e772628f81351:0xb281867dbd3fc74b!8m2!3d22.9933356!4d120.1717964!9m1!1b1!16s%2Fg%2F11j19t6n7c",
       "verifiedAt": "2026-06-03"
     },
     "reservationRequired": false,
@@ -860,7 +869,8 @@ export const TainanHospitalList = [
     "google": {
       "rating": "4.5",
       "reviewCount": 210,
-      "mapsUrl": "https://www.google.com/maps/place/%E5%95%84%E6%9C%A8%E9%B3%A5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2(%E5%AE%89%E5%8D%97%E5%88%86%E9%99%A2)/@23.0426724,120.2048047,17z/data=!3m1!4b1!4m6!3m5!1s0x346e77041fff15e3:0xce1985c94974cb85!8m2!3d23.0426724!4d120.2048047!16s%2Fg%2F11ff1yj35s?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E5%95%84%E6%9C%A8%E9%B3%A5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2(%E5%AE%89%E5%8D%97%E5%88%86%E9%99%A2)/@23.0426724,120.2048047,17z/data=!3m1!4b1!4m6!3m5!1s0x346e77041fff15e3:0xce1985c94974cb85!8m2!3d23.0426724!4d120.2048047!16s%2Fg%2F11ff1yj35s",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%95%84%E6%9C%A8%E9%B3%A5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2(%E5%AE%89%E5%8D%97%E5%88%86%E9%99%A2)/@23.0426724,120.2048047,17z/data=!4m8!3m7!1s0x346e77041fff15e3:0xce1985c94974cb85!8m2!3d23.0426724!4d120.2048047!9m1!1b1!16s%2Fg%2F11ff1yj35s",
       "verifiedAt": "2026-06-03"
     },
     "reservationRequired": false,
@@ -999,7 +1009,8 @@ export const TainanHospitalList = [
     "google": {
       "rating": "4.8",
       "reviewCount": 70,
-      "mapsUrl": "https://www.google.com/maps/place/%E5%B0%8F%E9%AF%A2%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@23.0255208,120.2597893,17z/data=!3m1!4b1!4m6!3m5!1s0x346e71004612c84b:0x7c2825a9b117260d!8m2!3d23.0255208!4d120.2597893!16s%2Fg%2F11y7qknvzx?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D",
+      "mapsUrl": "https://www.google.com/maps/place/%E5%B0%8F%E9%AF%A2%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@23.0255208,120.2597893,17z/data=!3m1!4b1!4m6!3m5!1s0x346e71004612c84b:0x7c2825a9b117260d!8m2!3d23.0255208!4d120.2597893!16s%2Fg%2F11y7qknvzx",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%B0%8F%E9%AF%A2%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@23.0255208,120.2597893,17z/data=!4m8!3m7!1s0x346e71004612c84b:0x7c2825a9b117260d!8m2!3d23.0255208!4d120.2597893!9m1!1b1!16s%2Fg%2F11y7qknvzx",
       "verifiedAt": "2026-06-03"
     },
     "fb": {
@@ -1057,7 +1068,8 @@ export const TainanHospitalList = [
     "google": {
       "rating": "4.4",
       "reviewCount": 443,
-      "mapsUrl": "https://www.google.com/maps/place/%E9%82%A6%E5%B0%BC%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.0194844,120.2473529,17z/data=!3m1!4b1!4m6!3m5!1s0x346e772c718b8249:0x968681cd9f6cc32c!8m2!3d23.0194844!4d120.2473529!16s%2Fg%2F11cjtxl2p6?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E9%82%A6%E5%B0%BC%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.0194844,120.2473529,17z/data=!3m1!4b1!4m6!3m5!1s0x346e772c718b8249:0x968681cd9f6cc32c!8m2!3d23.0194844!4d120.2473529!16s%2Fg%2F11cjtxl2p6",
+      "reviewsUrl": "https://www.google.com/maps/place/%E9%82%A6%E5%B0%BC%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.0194844,120.2473529,17z/data=!4m8!3m7!1s0x346e772c718b8249:0x968681cd9f6cc32c!8m2!3d23.0194844!4d120.2473529!9m1!1b1!16s%2Fg%2F11cjtxl2p6",
       "verifiedAt": "2026-06-03"
     },
     "reservationRequired": true,
@@ -1142,7 +1154,8 @@ export const TainanHospitalList = [
     "google": {
       "rating": "4.4",
       "reviewCount": 291,
-      "mapsUrl": "https://www.google.com/maps/place/%E6%85%88%E6%84%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E4%B8%AD%E8%8F%AF%E9%99%A2/@23.0153795,120.2292466,17z/data=!3m1!4b1!4m6!3m5!1s0x346e76de88c01781:0x79108c390b770c62!8m2!3d23.0153795!4d120.2292466!16s%2Fg%2F1vd6_23g?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D",
+      "mapsUrl": "https://www.google.com/maps/place/%E6%85%88%E6%84%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E4%B8%AD%E8%8F%AF%E9%99%A2/@23.0153795,120.2292466,17z/data=!3m1!4b1!4m6!3m5!1s0x346e76de88c01781:0x79108c390b770c62!8m2!3d23.0153795!4d120.2292466!16s%2Fg%2F1vd6_23g",
+      "reviewsUrl": "https://www.google.com/maps/place/%E6%85%88%E6%84%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E4%B8%AD%E8%8F%AF%E9%99%A2/@23.0153795,120.2292466,17z/data=!4m8!3m7!1s0x346e76de88c01781:0x79108c390b770c62!8m2!3d23.0153795!4d120.2292466!9m1!1b1!16s%2Fg%2F1vd6_23g",
       "verifiedAt": "2026-06-03"
     },
     "reservationRequired": false,
@@ -1220,7 +1233,8 @@ export const TainanHospitalList = [
     "google": {
       "rating": "4.5",
       "reviewCount": 633,
-      "mapsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E7%81%A3%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.001386,120.2643701,17z/data=!3m1!4b1!4m6!3m5!1s0x346e71256d550639:0x3156b4c8af2aec8e!8m2!3d23.001386!4d120.2643701!16s%2Fg%2F1tcwnx0d?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E7%81%A3%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.001386,120.2643701,17z/data=!3m1!4b1!4m6!3m5!1s0x346e71256d550639:0x3156b4c8af2aec8e!8m2!3d23.001386!4d120.2643701!16s%2Fg%2F1tcwnx0d",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E7%81%A3%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.001386,120.2643701,17z/data=!4m8!3m7!1s0x346e71256d550639:0x3156b4c8af2aec8e!8m2!3d23.001386!4d120.2643701!9m1!1b1!16s%2Fg%2F1tcwnx0d",
       "verifiedAt": "2026-06-03"
     },
     "reservationRequired": false,
@@ -1314,7 +1328,8 @@ export const TainanHospitalList = [
     "google": {
       "rating": "4.5",
       "reviewCount": 512,
-      "mapsUrl": "https://www.google.com/maps/place/%E6%83%A0%E9%A6%A8%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.1301738,120.2961604,17z/data=!3m1!4b1!4m6!3m5!1s0x346e05c2f44a8643:0xf6b2d0b5fa394fa8!8m2!3d23.1301738!4d120.2961604!16s%2Fg%2F11ffv_x572?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E6%83%A0%E9%A6%A8%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.1301738,120.2961604,17z/data=!3m1!4b1!4m6!3m5!1s0x346e05c2f44a8643:0xf6b2d0b5fa394fa8!8m2!3d23.1301738!4d120.2961604!16s%2Fg%2F11ffv_x572",
+      "reviewsUrl": "https://www.google.com/maps/place/%E6%83%A0%E9%A6%A8%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.1301738,120.2961604,17z/data=!4m8!3m7!1s0x346e05c2f44a8643:0xf6b2d0b5fa394fa8!8m2!3d23.1301738!4d120.2961604!9m1!1b1!16s%2Fg%2F11ffv_x572",
       "verifiedAt": "2026-06-03"
     },
     "reservationRequired": false,
@@ -1419,7 +1434,8 @@ export const TainanHospitalList = [
     "google": {
       "rating": "4.6",
       "reviewCount": 307,
-      "mapsUrl": "https://www.google.com/maps/place/%E6%AF%9B%E6%AF%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E5%8F%B0%E5%8D%97%E6%AD%B8%E4%BB%81%E5%88%86%E9%99%A2%EF%BD%9C%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E6%B2%BB%E7%99%82+%E7%8A%AC%E8%B2%93%E7%8D%B8%E9%86%AB%EF%BD%9CX%E5%85%89+%E8%B6%85%E9%9F%B3%E6%B3%A2%7C%E6%B4%97%E7%89%99+%E9%BA%BB%E9%86%89%7C%E4%BD%8F%E9%99%A2/@22.9694851,120.2887808,17z/data=!3m1!4b1!4m6!3m5!1s0x346e716be845495f:0x8fc72dd6d10516b3!8m2!3d22.9694851!4d120.2887808!16s%2Fg%2F11sryzm15_?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E6%AF%9B%E6%AF%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E5%8F%B0%E5%8D%97%E6%AD%B8%E4%BB%81%E5%88%86%E9%99%A2%EF%BD%9C%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E6%B2%BB%E7%99%82+%E7%8A%AC%E8%B2%93%E7%8D%B8%E9%86%AB%EF%BD%9CX%E5%85%89+%E8%B6%85%E9%9F%B3%E6%B3%A2%7C%E6%B4%97%E7%89%99+%E9%BA%BB%E9%86%89%7C%E4%BD%8F%E9%99%A2/@22.9694851,120.2887808,17z/data=!3m1!4b1!4m6!3m5!1s0x346e716be845495f:0x8fc72dd6d10516b3!8m2!3d22.9694851!4d120.2887808!16s%2Fg%2F11sryzm15_",
+      "reviewsUrl": "https://www.google.com/maps/place/%E6%AF%9B%E6%AF%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E5%8F%B0%E5%8D%97%E6%AD%B8%E4%BB%81%E5%88%86%E9%99%A2%EF%BD%9C%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E6%B2%BB%E7%99%82+%E7%8A%AC%E8%B2%93%E7%8D%B8%E9%86%AB%EF%BD%9CX%E5%85%89+%E8%B6%85%E9%9F%B3%E6%B3%A2%7C%E6%B4%97%E7%89%99+%E9%BA%BB%E9%86%89%7C%E4%BD%8F%E9%99%A2/@22.9694851,120.2887808,17z/data=!4m8!3m7!1s0x346e716be845495f:0x8fc72dd6d10516b3!8m2!3d22.9694851!4d120.2887808!9m1!1b1!16s%2Fg%2F11sryzm15_",
       "verifiedAt": "2026-06-03"
     },
     "reservationRequired": false,
@@ -1516,7 +1532,8 @@ export const TainanHospitalList = [
     "google": {
       "rating": "4.7",
       "reviewCount": 609,
-      "mapsUrl": "https://www.google.com/maps/place/%E5%AE%8F%E5%AE%B6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.9616195,120.1907857,17z/data=!3m1!4b1!4m6!3m5!1s0x346e75d6f10c5bad:0xe80d5c143a3fd08c!8m2!3d22.9616195!4d120.1907857!16s%2Fg%2F12nqgnvbz?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D",
+      "mapsUrl": "https://www.google.com/maps/place/%E5%AE%8F%E5%AE%B6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.9616195,120.1907857,17z/data=!3m1!4b1!4m6!3m5!1s0x346e75d6f10c5bad:0xe80d5c143a3fd08c!8m2!3d22.9616195!4d120.1907857!16s%2Fg%2F12nqgnvbz",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%AE%8F%E5%AE%B6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.9616195,120.1907857,17z/data=!4m8!3m7!1s0x346e75d6f10c5bad:0xe80d5c143a3fd08c!8m2!3d22.9616195!4d120.1907857!9m1!1b1!16s%2Fg%2F12nqgnvbz",
       "verifiedAt": "2026-06-03"
     },
     "reservationRequired": false,
@@ -1616,7 +1633,8 @@ export const TainanHospitalList = [
     "google": {
       "rating": "4.7",
       "reviewCount": 66,
-      "mapsUrl": "https://www.google.com/maps/place/%E5%B3%BD%E7%81%A3%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.0157708,120.2105757,17z/data=!3m1!4b1!4m6!3m5!1s0x346e772b6587bc6b:0xa0ed730a699f21ac!8m2!3d23.0157708!4d120.2105757!16s%2Fg%2F11x1lt4nx0?entry=ttu",
+      "mapsUrl": "https://www.google.com/maps/place/%E5%B3%BD%E7%81%A3%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.0157708,120.2105757,17z/data=!3m1!4b1!4m6!3m5!1s0x346e772b6587bc6b:0xa0ed730a699f21ac!8m2!3d23.0157708!4d120.2105757!16s%2Fg%2F11x1lt4nx0",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%B3%BD%E7%81%A3%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.0157708,120.2105757,17z/data=!4m8!3m7!1s0x346e772b6587bc6b:0xa0ed730a699f21ac!8m2!3d23.0157708!4d120.2105757!9m1!1b1!16s%2Fg%2F11x1lt4nx0",
       "verifiedAt": "2026-06-03"
     },
     "reservationRequired": false,

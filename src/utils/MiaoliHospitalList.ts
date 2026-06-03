@@ -61,8 +61,10 @@ export const MiaoliHospitalList = [
     "google": {
       "rating": "4.6",
       "reviewCount": 165,
-      "mapsUrl": "https://www.google.com/maps/place/%E9%B4%BB%E6%88%90%E8%B3%BD%E9%B4%BF%E9%86%AB%E9%99%A2/@24.4726105,120.8180314,17z/data=!3m1!4b1!4m6!3m5!1s0x346900a7a5da1d73:0x7053512859122594!8m2!3d24.4726105!4d120.8180314!16s%2Fg%2F1pp2x894r?entry=ttu",
-      "verifiedAt": "2026-06-02"
+      "mapsUrl": "https://www.google.com/maps/place/%E9%B4%BB%E6%88%90%E8%B3%BD%E9%B4%BF%E9%86%AB%E9%99%A2/@24.4726105,120.8180314,17z/data=!3m1!4b1!4m6!3m5!1s0x346900a7a5da1d73:0x7053512859122594!8m2!3d24.4726105!4d120.8180314!16s%2Fg%2F1pp2x894r",
+      "reviewsUrl": "https://www.google.com/maps/place/%E9%B4%BB%E6%88%90%E8%B3%BD%E9%B4%BF%E9%86%AB%E9%99%A2/@24.4726105,120.8180314,17z/data=!4m8!3m7!1s0x346900a7a5da1d73:0x7053512859122594!8m2!3d24.4726105!4d120.8180314!9m1!1b1!16s%2Fg%2F1pp2x894r",
+      "placeId": "0x346900a7a5da1d73:0x7053512859122594",
+      "verifiedAt": "2026-06-03"
     },
     "clinicNotes": "本院以鳥類與賽鴿診療為主，採電話預約制，建議先致電確認時段再前往。\n固定門診為週一至週五 09:00–12:00、14:00–17:00，週六、週日休診。\n目前未見夜間門診或急診資訊。",
     "updatedAt": "2026-06-02",
@@ -153,8 +155,10 @@ export const MiaoliHospitalList = [
     "google": {
       "rating": "4.6",
       "reviewCount": 387,
-      "mapsUrl": "https://www.google.com/maps/place/%E6%B3%A2%E6%AF%94%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@24.6940401,120.8796815,17z/data=!3m1!4b1!4m6!3m5!1s0x3469b338a45cfbc7:0x163ec91e1c5190da!8m2!3d24.6940401!4d120.8796815!16s%2Fg%2F11b7hqyb8y?entry=ttu",
-      "verifiedAt": "2026-06-02"
+      "mapsUrl": "https://www.google.com/maps/place/%E6%B3%A2%E6%AF%94%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@24.6940401,120.8796815,17z/data=!3m1!4b1!4m6!3m5!1s0x3469b338a45cfbc7:0x163ec91e1c5190da!8m2!3d24.6940401!4d120.8796815!16s%2Fg%2F11b7hqyb8y",
+      "reviewsUrl": "https://www.google.com/maps/place/%E6%B3%A2%E6%AF%94%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@24.6940401,120.8796815,17z/data=!4m8!3m7!1s0x3469b338a45cfbc7:0x163ec91e1c5190da!8m2!3d24.6940401!4d120.8796815!9m1!1b1!16s%2Fg%2F11b7hqyb8y",
+      "placeId": "0x3469b338a45cfbc7:0x163ec91e1c5190da",
+      "verifiedAt": "2026-06-03"
     },
     "clinicNotes": "採現場掛號，掛號時間為上午 08:00–11:00、下午 14:00–15:30。\n週三、週四、週六可能有不定期休診，建議出發前先查看 Facebook 當月班表與休診公告。\n院方公告目前以 Facebook 粉專為主。",
     "announcements": [

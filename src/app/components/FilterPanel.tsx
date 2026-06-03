@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { petIconDefinitions } from "@/lib/petIcons";
+import { petCategoryFilterOptions } from "@/lib/petIcons";
 
 type FilterPanelProps = {
   city?: string;
@@ -87,7 +87,7 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
             onChange={(e) => onPetCategoryChange?.(e.target.value)}
         >
             <option value="all">全部類別</option>
-            {petIconDefinitions.map((definition) => (
+            {petCategoryFilterOptions.map((definition) => (
               <option
                 key={definition.key}
                 value={definition.label}
