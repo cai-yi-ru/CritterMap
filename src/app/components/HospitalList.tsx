@@ -2,6 +2,7 @@ import React from "react";
 import type { Hospital } from '@/types/hospital';
 import { getActiveAnnouncements } from '@/lib/hospitalAnnouncements';
 import { getHospitalDisplayTags } from '@/lib/hospitalDisplayTags';
+import { Badge } from '@/components/ui/badge';
 import PetIcon from './PetIcon';
 
 interface HospitalListProps {
@@ -12,8 +13,8 @@ interface HospitalListProps {
 const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick }) => {
   if (hospitals.length === 0) {
     return (
-      <section className="rounded-[28px] border border-sage-100 bg-white/88 p-6 text-center shadow-soft">
-        <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-petal-100 text-xl">?</div>
+      <section className="rounded-2xl border border-sage-100 bg-card p-6 text-center">
+        <div className="mx-auto mb-3 flex size-12 items-center justify-center rounded-xl bg-petal-100 text-xl">?</div>
         <h2 className="text-lg font-extrabold text-forest-900">沒有符合條件的醫院</h2>
         <p className="mt-2 text-sm leading-6 text-stone-500">可以放寬城市、寵物類別或營業條件後再試一次。</p>
       </section>
@@ -21,17 +22,17 @@ const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick 
   }
 
   return (
-    <section className="flex max-h-[520px] flex-col rounded-[28px] border border-sage-100 bg-white/88 p-3 shadow-soft sm:max-h-[580px] lg:h-[640px] lg:max-h-none">
+    <section className="flex max-h-[520px] flex-col rounded-2xl border border-sage-100 bg-card p-3 sm:max-h-[580px] lg:h-[640px] lg:max-h-none">
       <div className="flex items-center justify-between px-2 pb-3 pt-1">
         <div>
           <h2 className="text-lg font-extrabold text-forest-900">醫院清單</h2>
           <p className="text-xs font-medium text-stone-500">點擊卡片查看詳細資訊</p>
         </div>
-        <span className="rounded-full bg-sage-100 px-3 py-1 text-xs font-bold text-forest-900">
+        <Badge variant="secondary" className="text-forest-900">
           {hospitals.length} 間
-        </span>
+        </Badge>
       </div>
-      <div className="hide-scrollbar min-h-0 flex-1 space-y-3 overflow-y-auto pr-1">
+      <div className="hide-scrollbar min-h-0 flex-1 overflow-y-auto pr-1">
       {hospitals.map((hospital) => {
         // const ratingValue = hospital.google?.rating ? Number(hospital.google.rating) : undefined;
         // const fullStars = ratingValue ? Math.floor(ratingValue) : 0;
@@ -64,7 +65,7 @@ const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick 
         return (
           <article
             key={hospital.id}
-            className="hospital-card cursor-pointer rounded-3xl border border-sage-100 bg-linen-50 p-4 transition hover:-translate-y-0.5 hover:border-sage-300 hover:bg-white hover:shadow-soft"
+            className="cursor-pointer border-b border-sage-100 bg-card p-4 transition last:border-b-0 hover:bg-sage-50"
             onClick={() => onHospitalClick(hospital)}
           >
             <div className="flex items-start justify-between gap-3">
@@ -78,7 +79,7 @@ const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick 
                   </p>
                 )}
               </div>
-              <div className="flex shrink-0 items-center gap-1 rounded-2xl bg-white px-2.5 py-2 shadow-[0_4px_16px_rgba(61,91,74,0.08)]">
+              <div className="flex shrink-0 items-center gap-1 rounded-xl border border-sage-100 bg-white px-2.5 py-2">
                 {visiblePets.length > 0 ? (
                   <>
                     {visiblePets.map((pet) => (
@@ -95,22 +96,22 @@ const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick 
             </div>
             <div className="mt-3 flex flex-wrap gap-2">
                 {hospitalTypeTags.map((tag) => (
-                  <span key={tag} className="rounded-full bg-sage-100 px-2.5 py-1 text-xs font-bold text-forest-900">
+                  <Badge key={tag} variant="secondary" className="text-forest-900">
                     {tag}
-                  </span>
+                  </Badge>
                 ))}
                 {hospital.emergency && (
-                  <span className="rounded-full bg-petal-100 px-2.5 py-1 text-xs font-bold text-rose-700">24小時急診</span>
+                  <Badge className="bg-petal-100 text-rose-700">24小時急診</Badge>
                 )}
                 {activeAnnouncements.length > 0 && (
-                  <span className="rounded-full bg-honey-100 px-2.5 py-1 text-xs font-bold text-clay-700">
+                  <Badge className="bg-honey-100 text-clay-700">
                     {hasClosureAnnouncement ? '休診公告' : '最新公告'}
-                  </span>
+                  </Badge>
                 )}
                 {specialClinicLabel && (
-                  <span className="rounded-full bg-petal-100 px-2.5 py-1 text-xs font-bold text-rose-700">
+                  <Badge className="bg-petal-100 text-rose-700">
                     {specialClinicLabel}
-                  </span>
+                  </Badge>
                 )}
             </div>
           </article>

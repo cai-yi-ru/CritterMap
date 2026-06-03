@@ -24,12 +24,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-Hant">
+    <html lang="zh-Hant" className={notoSansTc.variable}>
       <head>
         <Analytics />
       </head>
       <body
-        className={`${notoSansTc.variable} antialiased`}
+        className="antialiased"
       >
         {children}
       </body>

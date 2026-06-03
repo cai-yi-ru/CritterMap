@@ -1,14 +1,24 @@
-'use client';
+"use client";
 
-import { Dialog,DialogTitle } from '@headlessui/react';
-import { XMarkIcon } from '@heroicons/react/24/solid';
-import type { Hospital, HospitalAnnouncement } from '@/types/hospital';
-import { getActiveAnnouncements } from '@/lib/hospitalAnnouncements';
-import { getHospitalTypeDisplayText } from '@/lib/hospitalTypeText';
-import { getHospitalDisplayTags } from '@/lib/hospitalDisplayTags';
-import PetIcon from './PetIcon';
-
-
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { Separator } from "@/components/ui/separator";
+import { getActiveAnnouncements } from "@/lib/hospitalAnnouncements";
+import { getHospitalDisplayTags } from "@/lib/hospitalDisplayTags";
+import { getHospitalTypeDisplayText } from "@/lib/hospitalTypeText";
+import type { Hospital, HospitalAnnouncement } from "@/types/hospital";
+import { ExternalLinkIcon, NavigationIcon, PhoneIcon } from "lucide-react";
+import type { ReactNode } from "react";
+import PetIcon from "./PetIcon";
 
 interface HospitalModalProps {
   hospital: Hospital;
@@ -17,276 +27,201 @@ interface HospitalModalProps {
 
 export default function HospitalModal({ hospital, onClose }: HospitalModalProps) {
   const activeAnnouncements = getActiveAnnouncements(hospital.announcements);
-  const specialClinic = hospital.specialClinic?.hasExoticSpecialClinic
-    ? hospital.specialClinic
-    : undefined;
+  const specialClinic = hospital.specialClinic?.hasExoticSpecialClinic ? hospital.specialClinic : undefined;
   const hospitalTypeTags = getHospitalDisplayTags(hospital);
 
   return (
-    <Dialog open={!!hospital} onClose={onClose} className="relative z-50">
-      {/* 背景遮罩 */}
-      <div className="fixed inset-0 bg-forest-950/40 backdrop-blur-sm" aria-hidden="true" />
-
-      {/* Modal 面板 */}
-      <div className="fixed inset-0 flex items-center justify-center p-4">
-        <Dialog.Panel className="relative mx-4 flex max-h-[90vh] w-full max-w-2xl flex-col overflow-hidden rounded-[32px] border border-sage-100 bg-linen-50 shadow-[0_30px_80px_rgba(61,91,74,0.22)]">
-          <div className="border-b border-sage-100 bg-white/86 p-5 sm:p-6">
-            <div className="flex items-start justify-between gap-4">
-              <div className="min-w-0">
-                <DialogTitle className="text-xl font-extrabold leading-8 text-forest-900 sm:text-2xl">
-                  {hospital.name}
-                </DialogTitle>
-                <div className="mt-2 flex flex-wrap gap-2">
-                  {hospitalTypeTags.map((tag) => (
-                    <span key={tag} className="rounded-full bg-sage-100 px-3 py-1 text-xs font-bold text-forest-900">
-                      {tag}
-                    </span>
-                  ))}
-                  {hospital.hasEmergencyService && (
-                    <span className="rounded-full bg-petal-100 px-3 py-1 text-xs font-bold text-rose-700">
-                      夜間急診
-                    </span>
-                  )}
-                  {specialClinic && (
-                    <span className="rounded-full bg-petal-100 px-3 py-1 text-xs font-bold text-rose-700">
-                      {specialClinic.label || '特寵特別門診'}
-                    </span>
-                  )}
-                </div>
-              </div>
-            <button
-              onClick={onClose}
-              className="flex h-10 w-10 shrink-0 cursor-pointer items-center justify-center rounded-2xl border border-sage-100 bg-white text-stone-500 transition hover:text-forest-900"
-              aria-label="關閉醫院詳情"
-            >
-              <XMarkIcon className="h-6 w-6" />
-            </button>
-            </div>
+    <Dialog open={Boolean(hospital)} onOpenChange={(open) => !open && onClose()}>
+      <DialogContent className="flex h-[calc(100dvh-1rem)] max-h-[calc(100dvh-1rem)] max-w-[calc(100vw-1rem)] flex-col gap-0 overflow-hidden border-sage-100 bg-card p-0 sm:h-[92vh] sm:max-h-[760px] sm:max-w-3xl">
+        <DialogHeader className="shrink-0 border-b border-sage-100 p-5 pr-12 sm:p-6 sm:pr-14">
+          <div className="flex flex-wrap gap-2">
+            {hospitalTypeTags.map((tag) => (
+              <Badge key={tag} variant="secondary" className="text-forest-900">
+                {tag}
+              </Badge>
+            ))}
+            {hospital.hasEmergencyService && <Badge className="bg-petal-100 text-rose-700">夜間急診</Badge>}
+            {specialClinic && <Badge className="bg-petal-100 text-rose-700">{specialClinic.label || "特寵特別門診"}</Badge>}
           </div>
+          <DialogTitle className="text-2xl font-extrabold leading-8 text-forest-900">
+            {hospital.name}
+          </DialogTitle>
+          <DialogDescription className="leading-7 text-stone-600">
+            {hospital.address}
+          </DialogDescription>
+        </DialogHeader>
 
-          <div className="hide-scrollbar min-h-0 flex-1 overflow-y-auto px-5 py-5 sm:px-6">
-            <div className="space-y-4 text-sm text-stone-700">
-              <section className="rounded-3xl border border-sage-100 bg-white/76 p-4">
-                <h3 className="mb-3 text-sm font-extrabold text-forest-900">基本資訊</h3>
-                <div className="space-y-3">
-                  <div className="flex items-start">
-                    <span className="mr-2 text-sage-600">📍</span>
-                    <span>{hospital.address}</span>
+        <div className="hide-scrollbar min-h-0 flex-1 overflow-y-auto overscroll-contain px-5 py-5 sm:px-6">
+          <div className="grid gap-4">
+            <section className="rounded-2xl border border-sage-100 bg-sage-50/70 p-4">
+              <h3 className="text-sm font-extrabold text-forest-900">就診前重點</h3>
+              <div className="mt-3 grid gap-3 md:grid-cols-2">
+                <InfoLine label="電話" value={hospital.phone || "尚未整理"} icon={<PhoneIcon />} />
+                <InfoLine label="分類" value={getHospitalTypeDisplayText(hospital)} />
+                {hospital.hours && (
+                  <div className="md:col-span-2">
+                    <div className="text-xs font-bold text-stone-500">營業時間</div>
+                    <p className="mt-1 whitespace-pre-wrap text-sm leading-7 text-stone-700">{hospital.hours}</p>
                   </div>
-                  {hospital.hours && (
-                    <div className="flex items-start">
-                      <span className="mr-2 text-sage-600">🕒</span>
-                      <span className="break-words whitespace-pre-wrap text-sm leading-7 text-stone-700">
-                          {hospital.hours}
-                      </span>
-                    </div>
-                  )}
-                  {hospital.phone && (
-                    <div className="flex items-center">
-                      <span className="mr-2 text-sage-600">📞</span>
-                      {hospital.phone}
-                    </div>
-                  )}
-                  {hospital.google?.rating && (
-                    <div className="flex items-center">
-                      <span className="mr-2 text-sage-600">★</span>
-                      <span>
-                        Google 參考：{hospital.google.rating}
-                        {typeof hospital.google.reviewCount === 'number' && `（${hospital.google.reviewCount.toLocaleString()} 則評論）`}
-                        {hospital.google.verifiedAt && `，確認日期：${hospital.google.verifiedAt}`}
-                      </span>
-                    </div>
-                  )}
-                  <div className="flex items-center">
-                    <span className="mr-2 text-sage-600">🏷️</span>
-                    {getHospitalTypeDisplayText(hospital)}
+                )}
+                {hospital.google?.rating && (
+                  <div className="md:col-span-2">
+                    <div className="text-xs font-bold text-stone-500">Google 參考</div>
+                    <p className="mt-1 text-sm leading-7 text-stone-700">
+                      ★ {hospital.google.rating}
+                      {typeof hospital.google.reviewCount === "number" && `，${hospital.google.reviewCount.toLocaleString()} 則評論`}
+                      {hospital.google.verifiedAt && `，確認日期：${hospital.google.verifiedAt}`}
+                    </p>
                   </div>
-                </div>
-              </section>
-              {hospital.hasEmergencyService && (
-                <div className="rounded-3xl border border-petal-200 bg-petal-100 p-4">
-                  <span className="font-bold text-rose-700">🚨 此醫院提供夜間急診服務</span>
-                  <span className="ml-1 break-words whitespace-pre-wrap text-sm text-stone-700">
-                      {hospital.emergencyHours}
-                  </span>
-                </div>
-              )}
-              {activeAnnouncements.length > 0 && (
-                <section className="rounded-3xl border border-petal-200 bg-white/76 p-4">
-                  <h4 className="mb-3 font-extrabold text-forest-900">最新訊息</h4>
-                  <div className="space-y-3">
-                    {activeAnnouncements.map((announcement) => (
-                      <div
-                        key={announcement.id}
-                        className="rounded-3xl border border-petal-200 bg-petal-100/80 p-3"
-                      >
-                        <div className="flex flex-wrap items-center gap-2">
-                          <span className="rounded-full bg-white px-2 py-1 text-xs font-bold text-rose-700">
-                            {announcementTypeText(announcement.type)}
+                )}
+              </div>
+            </section>
+
+            {hospital.hasEmergencyService && (
+              <Alert className="border-petal-200 bg-petal-100/70 text-rose-800">
+                <AlertTitle className="font-extrabold">此醫院提供夜間急診服務</AlertTitle>
+                {hospital.emergencyHours && (
+                  <AlertDescription className="mt-1 whitespace-pre-wrap text-stone-700">
+                    {hospital.emergencyHours}
+                  </AlertDescription>
+                )}
+              </Alert>
+            )}
+
+            {activeAnnouncements.length > 0 && (
+              <section className="rounded-2xl border border-petal-200 bg-white p-4">
+                <h3 className="text-sm font-extrabold text-forest-900">最新訊息</h3>
+                <div className="mt-3 grid gap-3">
+                  {activeAnnouncements.map((announcement) => (
+                    <article key={announcement.id} className="rounded-xl border border-petal-200 bg-petal-100/50 p-3">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <Badge className="bg-white text-rose-700">{announcementTypeText(announcement.type)}</Badge>
+                        {(announcement.startDate || announcement.endDate) && (
+                          <span className="text-xs text-stone-500">
+                            {formatDateRange(announcement.startDate, announcement.endDate)}
                           </span>
-                          {(announcement.startDate || announcement.endDate) && (
-                            <span className="text-xs text-stone-500">
-                              {formatDateRange(announcement.startDate, announcement.endDate)}
-                            </span>
-                          )}
-                        </div>
-                        <div className="mt-2 font-bold text-forest-900">{announcement.title}</div>
-                        {announcement.content && (
-                          <p className="mt-1 whitespace-pre-wrap text-sm text-stone-700">{announcement.content}</p>
-                        )}
-                        {announcement.sourceLabel && (
-                          <div className="mt-2 text-xs text-stone-500">
-                            來源：
-                            {announcement.sourceUrl ? (
-                              <a
-                                href={announcement.sourceUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-forest-800 hover:text-sage-600"
-                              >
-                                {announcement.sourceLabel}
-                              </a>
-                            ) : (
-                              announcement.sourceLabel
-                            )}
-                            {announcement.verifiedAt && `，確認日期：${announcement.verifiedAt}`}
-                          </div>
                         )}
                       </div>
-                    ))}
-                  </div>
-                </section>
-              )}
+                      <div className="mt-2 font-bold text-forest-900">{announcement.title}</div>
+                      {announcement.content && <p className="mt-1 whitespace-pre-wrap text-sm leading-6 text-stone-700">{announcement.content}</p>}
+                      {announcement.sourceLabel && (
+                        <div className="mt-2 text-xs text-stone-500">
+                          來源：
+                          {announcement.sourceUrl ? (
+                            <a href={announcement.sourceUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">
+                              {announcement.sourceLabel}
+                            </a>
+                          ) : (
+                            announcement.sourceLabel
+                          )}
+                          {announcement.verifiedAt && `，確認日期：${announcement.verifiedAt}`}
+                        </div>
+                      )}
+                    </article>
+                  ))}
+                </div>
+              </section>
+            )}
 
-              <div className="grid gap-4 md:grid-cols-2">
-              {hospital.services && hospital.services?.length > 0 && (
-                <section className="rounded-3xl border border-sage-100 bg-white/76 p-4">
-                  <h4 className="mb-3 font-extrabold text-forest-900">可提供服務 <span className="text-xs font-medium text-stone-500">僅供參考</span></h4>
-                  <div className="flex flex-wrap gap-2">
-                    {hospital.services.map(service => (
-                      <span
-                        key={service}
-                        className="rounded-full bg-sage-100 px-3 py-1 text-sm font-semibold text-forest-900"
-                      >
+            <div className="grid gap-4 md:grid-cols-2">
+              {hospital.services && hospital.services.length > 0 && (
+                <section className="rounded-2xl border border-sage-100 bg-white p-4">
+                  <h3 className="text-sm font-extrabold text-forest-900">可提供服務 <span className="text-xs font-medium text-stone-500">僅供參考</span></h3>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {hospital.services.map((service) => (
+                      <Badge key={service} variant="secondary" className="text-forest-900">
                         {service}
-                      </span>
+                      </Badge>
                     ))}
                   </div>
                 </section>
               )}
 
-              {hospital.pets && hospital.pets?.length > 0 && (
-                <section className="rounded-3xl border border-sage-100 bg-white/76 p-4">
-                  <h4 className="mb-3 font-extrabold text-forest-900">適合寵物 <span className="text-xs font-medium text-stone-500">僅供參考</span></h4>
-                  <div className="flex flex-wrap gap-2">
-                    {hospital.pets.map(pet => (
-                      <span
-                        key={pet}
-                        className="flex items-center gap-1 rounded-full bg-honey-100 px-3 py-1 text-sm font-semibold text-clay-700"
-                      >
+              {hospital.pets && hospital.pets.length > 0 && (
+                <section className="rounded-2xl border border-sage-100 bg-white p-4">
+                  <h3 className="text-sm font-extrabold text-forest-900">適合寵物 <span className="text-xs font-medium text-stone-500">僅供參考</span></h3>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {hospital.pets.map((pet) => (
+                      <span key={pet} className="inline-flex items-center gap-1 rounded-full border border-honey-200 bg-honey-100 px-2.5 py-1 text-xs font-semibold text-clay-700">
                         <PetIcon pet={pet} size="sm" showLabel />
                       </span>
                     ))}
                   </div>
                 </section>
               )}
-              </div>
+            </div>
 
             {specialClinic && (
-              <section className="rounded-3xl border border-petal-200 bg-white/76 p-4">
-                <div className="rounded-3xl border border-petal-200 bg-petal-100/80 p-4">
-                  <div className="flex flex-wrap items-center gap-2">
-                    <h4 className="font-extrabold text-rose-700">特別門診提醒</h4>
-                    <span className="rounded-full bg-white px-2 py-1 text-xs font-bold text-rose-700">
-                      {specialClinic.label || '特寵特別門診'}
-                    </span>
-                    {specialClinic.reservationRequired && (
-                      <span className="rounded-full bg-white px-2 py-1 text-xs font-bold text-forest-900">
-                        需預約
-                      </span>
-                    )}
-                  </div>
-                  {specialClinic.note && (
-                    <p className="mt-2 whitespace-pre-wrap text-sm text-stone-700">{specialClinic.note}</p>
-                  )}
-                  {specialClinic.sourceLabel && (
-                    <div className="mt-2 text-xs text-stone-500">
-                      來源：
-                      {specialClinic.sourceUrl ? (
-                        <a
-                          href={specialClinic.sourceUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-forest-800 hover:text-sage-600"
-                        >
-                          {specialClinic.sourceLabel}
-                        </a>
-                      ) : (
-                        specialClinic.sourceLabel
-                      )}
-                      {specialClinic.verifiedAt && `，確認日期：${specialClinic.verifiedAt}`}
-                    </div>
-                  )}
-                </div>
-              </section>
+              <Alert className="border-petal-200 bg-petal-100/60">
+                <AlertTitle className="font-extrabold text-rose-700">
+                  {specialClinic.label || "特寵特別門診"}
+                  {specialClinic.reservationRequired && "，需預約"}
+                </AlertTitle>
+                {specialClinic.note && <AlertDescription className="mt-1 whitespace-pre-wrap text-stone-700">{specialClinic.note}</AlertDescription>}
+              </Alert>
             )}
-            {hospital.clinicNotes && (
-              <section className="rounded-3xl border border-sage-100 bg-white/76 p-4">
-                <h4 className="mb-3 font-extrabold text-forest-900">備註 <span className="text-xs font-medium text-stone-500">僅供參考</span></h4>
-                <div className="flex flex-wrap gap-2">
-                  <span
-                      className="flex items-center gap-1 whitespace-pre-wrap rounded-3xl bg-honey-100 px-3 py-2 text-sm text-clay-700"
-                    >
-                      {hospital.clinicNotes}
-                    </span>
-                </div>
-              </section>
-            )}
-            </div>
-          </div>
 
-          <div className="border-t border-sage-100 bg-white/86 p-5 sm:p-6">
-          <div className="flex flex-col gap-3 sm:flex-row sm:justify-between">
-            <a
-              href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
-                hospital.address
-              )}`}
-              target="_blank"
-              className="inline-flex items-center justify-center rounded-2xl bg-forest-800 px-4 py-3 text-sm font-extrabold text-white shadow-soft transition hover:bg-forest-900"
-              rel="noopener noreferrer"
-            >
-              🧭 導航路線
-            </a>
-            {hospital.website && (
-              <a
-                href={hospital.website}
-                target="_blank"
-                className="inline-flex items-center justify-center rounded-2xl border border-sage-300 bg-white px-4 py-3 text-sm font-extrabold text-forest-900 shadow-soft transition hover:bg-sage-100"
-                rel="noopener noreferrer"
-              >
-                🌐 訪問網站
-              </a>
+            {hospital.clinicNotes && (
+              <section className="rounded-2xl border border-sage-100 bg-white p-4">
+                <h3 className="text-sm font-extrabold text-forest-900">備註 <span className="text-xs font-medium text-stone-500">僅供參考</span></h3>
+                <p className="mt-2 whitespace-pre-wrap text-sm leading-7 text-stone-700">{hospital.clinicNotes}</p>
+              </section>
             )}
+
+            <Separator />
+            <p className="text-xs leading-6 text-stone-500">
+              資料可能異動，出發前請以醫院公告與電話確認為準。
+            </p>
           </div>
-          </div>
-        </Dialog.Panel>
-      </div>
+        </div>
+
+        <DialogFooter className="mx-0 mb-0 shrink-0 rounded-none border-t border-sage-100 bg-white/85 p-4 sm:flex-row">
+          <Button render={<a href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(hospital.address)}`} target="_blank" rel="noopener noreferrer" />}>
+            <NavigationIcon data-icon="inline-start" />
+            導航路線
+          </Button>
+          {hospital.phone && (
+            <Button variant="outline" render={<a href={`tel:${hospital.phone}`} />}>
+              <PhoneIcon data-icon="inline-start" />
+              撥打電話
+            </Button>
+          )}
+          {hospital.website && (
+            <Button variant="outline" render={<a href={hospital.website} target="_blank" rel="noopener noreferrer" />}>
+              <ExternalLinkIcon data-icon="inline-start" />
+              訪問網站
+            </Button>
+          )}
+        </DialogFooter>
+      </DialogContent>
     </Dialog>
   );
 }
 
-function announcementTypeText(type: HospitalAnnouncement['type']) {
+function InfoLine({ label, value, icon }: { label: string; value: string; icon?: ReactNode }) {
+  return (
+    <div>
+      <div className="text-xs font-bold text-stone-500">{label}</div>
+      <div className="mt-1 flex items-center gap-2 text-sm font-semibold text-stone-700">
+        {icon}
+        <span>{value}</span>
+      </div>
+    </div>
+  );
+}
+
+function announcementTypeText(type: HospitalAnnouncement["type"]) {
   switch (type) {
-    case 'closure':
-      return '休診';
-    case 'hours_change':
-      return '時間異動';
-    case 'service_change':
-      return '服務異動';
-    case 'notice':
-      return '提醒';
+    case "closure":
+      return "休診";
+    case "hours_change":
+      return "時間異動";
+    case "service_change":
+      return "服務異動";
+    case "notice":
+      return "提醒";
     default:
-      return '公告';
+      return "公告";
   }
 }
 
@@ -295,5 +230,5 @@ function formatDateRange(startDate?: string, endDate?: string) {
     return `${startDate} 至 ${endDate}`;
   }
 
-  return startDate || endDate || '';
+  return startDate || endDate || "";
 }

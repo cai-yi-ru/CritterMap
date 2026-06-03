@@ -1,12 +1,14 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import type { Hospital, HospitalUpdate } from '@/types/hospital';
 
 interface HospitalUpdatesProps {
   updates: HospitalUpdate[];
   hospitals: Hospital[];
-  onHospitalClick: (hospital: Hospital) => void;
+  onUpdateClick: (update: HospitalUpdate, hospital: Hospital) => void;
 }
 
 const updateTypeText: Record<HospitalUpdate['type'], string> = {
@@ -17,7 +19,7 @@ const updateTypeText: Record<HospitalUpdate['type'], string> = {
   contact: '聯絡資訊',
 };
 
-export default function HospitalUpdates({ updates, hospitals, onHospitalClick }: HospitalUpdatesProps) {
+export default function HospitalUpdates({ updates, hospitals, onUpdateClick }: HospitalUpdatesProps) {
   const [expanded, setExpanded] = useState(false);
   const [defaultVisibleCount, setDefaultVisibleCount] = useState(9);
   const hospitalById = useMemo(
@@ -58,28 +60,28 @@ export default function HospitalUpdates({ updates, hospitals, onHospitalClick }:
   }
 
   return (
-    <section className="mt-5 rounded-[28px] border border-sage-100 bg-white/88 p-4 shadow-soft">
+    <section className="mt-5 rounded-2xl border border-sage-100 bg-card p-4">
       <div className="mb-3 flex items-center justify-between gap-3">
         <div>
           <h2 className="text-lg font-extrabold text-forest-900">最新更新</h2>
-          <p className="text-xs font-medium text-stone-500">資料有異動時會整理在這裡</p>
+          <p className="text-xs font-medium text-stone-500">點開可先看更新內容，再進完整醫院資料</p>
         </div>
-        <span className="rounded-full bg-honey-100 px-3 py-1 text-xs font-bold text-clay-700">
+        <Badge variant="outline" className="border-honey-200 bg-honey-100 text-clay-700">
           顯示 {visibleUpdates.length} / {allVisibleUpdates.length} 筆
-        </span>
+        </Badge>
       </div>
       <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
         {visibleUpdates.map(({ update, hospital }) => (
           <article
             key={update.id}
-            className="cursor-pointer rounded-3xl border border-sage-100 bg-linen-50 p-4 transition hover:-translate-y-0.5 hover:border-sage-300 hover:bg-white"
-            onClick={() => onHospitalClick(hospital)}
+            className="cursor-pointer rounded-xl border border-sage-100 bg-sage-50/70 p-4 transition hover:border-sage-300 hover:bg-white"
+            onClick={() => onUpdateClick(update, hospital)}
           >
             <div className="min-w-0">
                 <div className="flex flex-wrap items-center gap-2">
-                  <span className="rounded-full bg-sage-100 px-2.5 py-1 text-xs font-bold text-forest-900">
+                  <Badge variant="secondary" className="text-forest-900">
                     {updateTypeText[update.type]}
-                  </span>
+                  </Badge>
                   <time className="text-xs font-medium text-stone-500" dateTime={update.updatedAt}>
                     更新於 {update.updatedAt}
                   </time>
@@ -110,13 +112,13 @@ export default function HospitalUpdates({ updates, hospitals, onHospitalClick }:
       </div>
       {canExpand && (
         <div className="mt-4 flex justify-center">
-          <button
+          <Button
             type="button"
             onClick={() => setExpanded((value) => !value)}
-            className="rounded-full border border-sage-200 bg-white px-5 py-2.5 text-sm font-extrabold text-forest-900 shadow-soft transition hover:bg-sage-100"
+            variant="outline"
           >
             {expanded ? '收合最新更新' : `展開全部 ${allVisibleUpdates.length} 筆更新`}
-          </button>
+          </Button>
         </div>
       )}
     </section>

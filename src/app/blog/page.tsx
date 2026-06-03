@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import SponsoredSlot from "../components/SponsoredSlot";
 import { BlogHero, BlogPostCard } from "./components";
 import { getFilteredPosts, getPetCategories, getTopicTags } from "@/lib/blog";
 
@@ -31,7 +32,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
           description="把看診前準備、日常觀察和特寵照護觀念整理成容易保存的筆記。文章僅供參考，不取代獸醫師診斷。"
         />
 
-        <section className="mt-5 rounded-[28px] border border-sage-100 bg-white/84 p-4 shadow-soft">
+        <section className="mt-5 rounded-2xl border border-sage-100 bg-card p-4">
           <div className="mb-3 text-sm font-extrabold text-forest-900">依寵物分類</div>
           <div className="flex flex-wrap gap-2">
             <FilterLink href="/blog" active={!petCategory && !topicTag}>全部</FilterLink>
@@ -51,6 +52,8 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
           </div>
         </section>
 
+        <SponsoredSlot context="blog-list" className="mt-5" />
+
         <section className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {posts.map((post) => (
             <BlogPostCard key={post.slug} post={post} />
@@ -58,7 +61,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
         </section>
 
         {posts.length === 0 && (
-          <section className="mt-6 rounded-[28px] border border-sage-100 bg-white/84 p-8 text-center shadow-soft">
+          <section className="mt-6 rounded-2xl border border-sage-100 bg-card p-8 text-center">
             <h2 className="text-xl font-extrabold text-forest-900">目前沒有符合的文章</h2>
             <p className="mt-2 text-sm text-stone-500">可以改用其他分類或回到全部文章。</p>
           </section>
@@ -73,8 +76,8 @@ function FilterLink({ href, active, children }: { href: string; active?: boolean
   return (
     <Link
       href={href}
-      className={`rounded-full px-3 py-1.5 text-xs font-bold transition ${
-        active ? "bg-forest-800 text-white" : "bg-sage-100 text-forest-900 hover:bg-sage-200"
+      className={`rounded-full border px-3 py-1.5 text-xs font-bold transition ${
+        active ? "border-forest-800 bg-forest-800 text-white" : "border-sage-100 bg-sage-50 text-forest-900 hover:bg-sage-100"
       }`}
     >
       {children}

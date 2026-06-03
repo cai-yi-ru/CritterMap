@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import SponsoredSlot from "../../components/SponsoredSlot";
 import { BlogRenderer } from "../components";
 import { getPostBySlug } from "@/lib/blog";
 
@@ -37,10 +38,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     <div className="min-h-screen">
       <Navbar />
       <main className="mx-auto max-w-4xl px-4 pb-14 pt-24 sm:px-6 lg:px-8">
-        <Link href="/blog" className="inline-flex rounded-full bg-white/84 px-4 py-2 text-sm font-bold text-forest-900 shadow-soft">
+        <Link href="/blog" className="inline-flex rounded-full border border-sage-100 bg-card px-4 py-2 text-sm font-bold text-forest-900">
           ← 回文章列表
         </Link>
-        <article className="mt-5 rounded-[32px] border border-sage-100 bg-white/88 p-5 shadow-soft sm:p-8">
+        <article className="mt-5 rounded-2xl border border-sage-100 bg-card p-5 sm:p-8">
           <div className="flex flex-wrap items-center gap-2">
             <span className="rounded-full bg-sage-100 px-3 py-1 text-xs font-bold text-forest-900">{post.petCategory}</span>
             <time className="text-xs font-medium text-stone-500" dateTime={post.date}>{post.date}</time>
@@ -64,6 +65,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           <div className="mt-8 border-t border-sage-100 pt-2">
             <BlogRenderer post={post} />
           </div>
+          <SponsoredSlot context="blog-article" className="mt-8" />
         </article>
       </main>
       <Footer />

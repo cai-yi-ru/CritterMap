@@ -47,20 +47,20 @@ export default function MapPanel({ hospitals, center, onHospitalClick, embed = f
   }, []);
 
   return (
-    <div className={`rounded-[28px] border border-sage-100 bg-white/88 p-3 shadow-soft ${embed ? 'h-[58vh] min-h-[360px]' : 'aspect-square min-h-[340px] lg:aspect-auto lg:h-[640px]'}`}>
+    <div className={`rounded-2xl border border-sage-100 bg-card p-3 ${embed ? 'h-[58vh] min-h-[360px]' : 'aspect-square min-h-[340px] lg:aspect-auto lg:h-[640px]'}`}>
       <div className="mb-3 flex items-center justify-between px-1">
         <div>
           <h2 className="text-lg font-extrabold text-forest-900">地圖</h2>
           <p className="text-xs font-medium text-stone-500">點擊標記查看醫院摘要</p>
         </div>
-        <span className="rounded-full bg-sage-100 px-3 py-1 text-xs font-bold text-forest-900">{hospitals.length} 個標記</span>
+        <span className="rounded-full border border-sage-100 bg-sage-50 px-3 py-1 text-xs font-bold text-forest-900">{hospitals.length} 個標記</span>
       </div>
       <MapContainer
         key="main-map"
         center={center}
         zoom={12}
         scrollWheelZoom={true}
-        className="h-[calc(100%-56px)] w-full rounded-3xl"
+        className="h-[calc(100%-56px)] w-full rounded-xl"
       >
         <MapUpdater center={center} />
         <TileLayer
@@ -103,7 +103,7 @@ export default function MapPanel({ hospitals, center, onHospitalClick, embed = f
                 </div>
                 <button
                   type="button"
-                  className="mt-4 w-full rounded-2xl bg-forest-800 px-4 py-2.5 text-sm font-extrabold text-white transition hover:bg-forest-900"
+                  className="mt-4 w-full rounded-xl bg-forest-800 px-4 py-2.5 text-sm font-extrabold text-white transition hover:bg-forest-900"
                   onClick={() => onHospitalClick && onHospitalClick(hospital)}
                 >
                   查看詳情

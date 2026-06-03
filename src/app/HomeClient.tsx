@@ -8,8 +8,10 @@ import FilterPanel from './components/FilterPanel';
 import HospitalList from './components/HospitalList';
 import HospitalModal from './components/HospitalModal';
 import HospitalUpdates from './components/HospitalUpdates';
+import HospitalUpdateSheet from './components/HospitalUpdateSheet';
 import Footer from './components/Footer';
 import DisclaimerSection from './components/DisclaimerSection';
+import SponsoredSlot from './components/SponsoredSlot';
 
 import { getHospitals } from '@/lib/getHospitals';
 import { getHospitalUpdates } from '@/lib/getHospitalUpdates';
@@ -105,6 +107,7 @@ export default function HomeClient({ embed = false }: HomeClientProps) {
   const [allHospitals, setAllHospitals] = useState<Hospital[]>([]);
   const [hospitalUpdates, setHospitalUpdates] = useState<HospitalUpdate[]>([]);
   const [selectedHospital, setSelectedHospital] = useState<Hospital | null>(null);
+  const [selectedUpdate, setSelectedUpdate] = useState<{ update: HospitalUpdate; hospital: Hospital } | null>(null);
   const [city, setCity] = useState("台北市");
   const [type, setType] = useState("all");
   const [mapCenter, setMapCenter] = useState<[number, number]>(cityCenterMap['all']);
@@ -161,12 +164,11 @@ export default function HomeClient({ embed = false }: HomeClientProps) {
   return (
     <div className={`site-shell min-h-screen ${embed ? 'embed-shell' : ''}`}>
       {!embed && <Navbar />}
-      <main className={embed ? "mx-auto w-full max-w-6xl px-3 py-3 sm:px-5" : "mx-auto w-full max-w-7xl px-4 pb-14 pt-24 sm:px-6 lg:px-8"}>
-        <header className={embed ? "mb-4 rounded-[28px] border border-sage-100 bg-white/86 p-4 shadow-soft" : "mb-7 rounded-[32px] border border-sage-100 bg-white/82 p-5 shadow-soft sm:p-7"}>
+      <main className={embed ? "mx-auto w-full max-w-6xl px-3 py-3 sm:px-5" : "mx-auto w-full max-w-7xl px-4 pb-12 pt-20 sm:px-6 lg:px-8"}>
+        <header className={embed ? "mb-4 rounded-2xl border border-sage-100 bg-card p-4" : "mb-5 rounded-2xl border border-sage-100 bg-card p-5 sm:p-6"}>
           <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-2xl">
-              <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-petal-100 px-3 py-1 text-xs font-semibold text-clay-700">
-                <span aria-hidden="true">✦</span>
+              <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-sage-100 bg-sage-50 px-3 py-1 text-xs font-semibold text-forest-900">
                 全台特寵醫療資訊整理
               </div>
               <h1 className="text-balance text-3xl font-extrabold tracking-normal text-forest-900 sm:text-4xl">
@@ -177,11 +179,11 @@ export default function HomeClient({ embed = false }: HomeClientProps) {
               </p>
             </div>
             <div className="grid grid-cols-2 gap-3 sm:flex sm:items-center">
-              <div className="rounded-2xl bg-sage-50 px-4 py-3">
+              <div className="rounded-xl border border-sage-100 bg-sage-50 px-4 py-3">
                 <div className="text-xs font-medium text-stone-500">目前整理</div>
                 <div className="text-xl font-extrabold text-forest-900">{totalLabel}</div>
               </div>
-              <div className="rounded-2xl bg-honey-100 px-4 py-3">
+              <div className="rounded-xl border border-honey-200 bg-honey-100 px-4 py-3">
                 <div className="text-xs font-medium text-stone-500">搜尋結果</div>
                 <div className="text-xl font-extrabold text-forest-900">{resultLabel}</div>
               </div>
@@ -211,13 +213,29 @@ export default function HomeClient({ embed = false }: HomeClientProps) {
         </div>
 
         {!embed && (
-          <HospitalUpdates
-            updates={hospitalUpdates}
-            hospitals={allHospitals}
-            onHospitalClick={setSelectedHospital}
-          />
+          <>
+            <SponsoredSlot context="home" className="mt-5" />
+            <HospitalUpdates
+              updates={hospitalUpdates}
+              hospitals={allHospitals}
+              onUpdateClick={(update, hospital) => setSelectedUpdate({ update, hospital })}
+            />
+          </>
         )}
       </main>
+
+      <HospitalUpdateSheet
+        update={selectedUpdate?.update || null}
+        hospital={selectedUpdate?.hospital || null}
+        open={Boolean(selectedUpdate)}
+        onOpenChange={(open) => {
+          if (!open) setSelectedUpdate(null);
+        }}
+        onViewHospitalDetail={(hospital) => {
+          setSelectedUpdate(null);
+          setSelectedHospital(hospital);
+        }}
+      />
 
       {selectedHospital && (
         <HospitalModal hospital={selectedHospital} onClose={() => setSelectedHospital(null)} />
