@@ -79,6 +79,14 @@ export const HsinchuCountyHospitalList = [
       "facebook": "https://www.facebook.com/vetdory/",
       "instagram": "https://www.instagram.com/dory_ah/"
     },
+    "google": {
+      "rating": "4.5",
+      "reviewCount": 221,
+      "mapsUrl": "https://www.google.com/maps/place/%E6%9C%B5%E6%A6%B4%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/data=!4m7!3m6!1s0x3468473e9b1d7fab:0xf5e5a4cb4c0ade18!8m2!3d24.7230384!4d121.0921439!16s%2Fg%2F11fqylqbcl!19sChIJq38dmz5HaDQRGN4KTMuk5fU",
+      "reviewsUrl": "https://www.google.com/maps/place/%E6%9C%B5%E6%A6%B4%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.7452181,121.076142,14z/data=!4m12!1m2!2m1!1z5pyx5qa05YuV54mp6Yar6ZmiIOaWsOeruee4o-erueadsemOruS4reixkOi3r-S6jOautTIyNeiZnw!3m8!1s0x3468473e9b1d7fab:0xf5e5a4cb4c0ade18!8m2!3d24.7230384!4d121.0921439!9m1!1b1!15sCjrmnLHmprTli5XnianphqvpmaIg5paw56u557ij56u55p2x6Y6u5Lit6LGQ6Lev5LqM5q61MjI16JmfWkoiSOacsSDmprQg5YuV54mpIOmGq-mZoiDmlrDnq7kg57ijIOeruSDmnbEg6Y6uIOS4rSDosZAg6LevIOS6jCDmrrUgMjI1IOiZn5IBD2FuaW1hbF9ob3NwaXRhbJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VOSU5WazJRMkozRUFF4AEA-gEECAAQGw!16s%2Fg%2F11fqylqbcl",
+      "placeId": "ChIJq38dmz5HaDQRGN4KTMuk5fU",
+      "verifiedAt": "2026-06-03"
+    },
     "clinicNotes": "1️⃣ 提供犬、貓、鼠、兔等多種動物的診療服務。\n2️⃣ 設有牙科與復健治療設備，提供全面的醫療服務。\n3️⃣ 門診時間為週一、二、四、五 09:30–12:00、14:00–17:00、18:00–20:00；週六 09:30–12:00、14:00–17:00；週三、週日休診。\n4️⃣ 採現場掛號，建議提前到院；如有特殊需求，請致電詢問。",
     "updatedAt": "2026-06-01",
     "last_checked": "2026-06-01"
@@ -185,8 +193,10 @@ export const HsinchuCountyHospitalList = [
     "google": {
       "rating": "4.6",
       "reviewCount": 368,
-      "mapsUrl": "https://www.google.com/maps/place/%E7%A7%98%E5%A2%83%E9%87%8E%E7%94%9F%E5%8B%95%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2+%5B%E9%A0%90%E7%B4%84%E5%84%AA%E5%85%88%5D+-+%E9%BC%A0%E3%80%81%E5%85%94%E3%80%81%E8%B2%82%E3%80%81%E5%85%A9%E6%A3%B2%E9%A1%9E%E3%80%81%E7%88%AC%E8%9F%B2%E3%80%81%E9%BE%9C%E3%80%81%E8%9C%A5%E8%9C%B4%E3%80%81%E6%B0%B4%E6%97%8F%E3%80%81%E9%B3%A5%E9%A1%9E%E3%80%81%E8%9C%9C%E8%A2%8B%E9%BC%AF%E3%80%81%E5%88%BA%E8%9D%9F%E3%80%81%E9%9D%9E%E7%8A%AC%E8%B2%93%E3%80%81%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E9%86%AB%E9%99%A2/@24.8197575,121.0255115,17z/data=!3m1!4b1!4m6!3m5!1s0x3468375ee2d8f659:0x48cff3eadb58d0b9!8m2!3d24.8197575!4d121.0255115!16s%2Fg%2F11rjsvl9pt?entry=ttu",
-      "verifiedAt": "2026-06-01"
+      "mapsUrl": "https://www.google.com/maps/place/%E7%A7%98%E5%A2%83%E9%87%8E%E7%94%9F%E5%8B%95%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2+%5B%E9%A0%90%E7%B4%84%E5%84%AA%E5%85%88%5D+-+%E9%BC%A0%E3%80%81%E5%85%94%E3%80%81%E8%B2%82%E3%80%81%E5%85%A9%E6%A3%B2%E9%A1%9E%E3%80%81%E7%88%AC%E8%9F%B2%E3%80%81%E9%BE%9C%E3%80%81%E8%9C%A5%E8%9C%B4%E3%80%81%E6%B0%B4%E6%97%8F%E3%80%81%E9%B3%A5%E9%A1%9E%E3%80%81%E8%9C%9C%E8%A2%8B%E9%BC%AF%E3%80%81%E5%88%BA%E8%9D%9F%E3%80%81%E9%9D%9E%E7%8A%AC%E8%B2%93%E3%80%81%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E9%86%AB%E9%99%A2/@24.8197575,121.0255115,17z/data=!3m1!4b1!4m6!3m5!1s0x3468375ee2d8f659:0x48cff3eadb58d0b9!8m2!3d24.8197575!4d121.0255115!16s%2Fg%2F11rjsvl9pt",
+      "reviewsUrl": "https://www.google.com/maps/place/%E7%A7%98%E5%A2%83%E9%87%8E%E7%94%9F%E5%8B%95%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2+%5B%E9%A0%90%E7%B4%84%E5%84%AA%E5%85%88%5D+-+%E9%BC%A0%E3%80%81%E5%85%94%E3%80%81%E8%B2%82%E3%80%81%E5%85%A9%E6%A3%B2%E9%A1%9E%E3%80%81%E7%88%AC%E8%9F%B2%E3%80%81%E9%BE%9C%E3%80%81%E8%9C%A5%E8%9C%B4%E3%80%81%E6%B0%B4%E6%97%8F%E3%80%81%E9%B3%A5%E9%A1%9E%E3%80%81%E8%9C%9C%E8%A2%8B%E9%BC%AF%E3%80%81%E5%88%BA%E8%9D%9F%E3%80%81%E9%9D%9E%E7%8A%AC%E8%B2%93%E3%80%81%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E9%86%AB%E9%99%A2/@24.8197575,121.0255115,17z/data=!4m8!3m7!1s0x3468375ee2d8f659:0x48cff3eadb58d0b9!8m2!3d24.8197575!4d121.0255115!9m1!1b1!16s%2Fg%2F11rjsvl9pt",
+      "placeId": "0x3468375ee2d8f659:0x48cff3eadb58d0b9",
+      "verifiedAt": "2026-06-03"
     },
     "clinicNotes": "僅提供非犬貓特殊寵物診療，犬貓暫不進入院內，避免小型特殊動物緊迫。\n電話預約優先；Facebook、Instagram 與 LINE 不提供預約。現場掛號可能無法接診或需久候，建議出發前先電話確認。\n候診時請全程將動物安置於外出籠。其他少見物種可先致電詢問。",
     "announcements": [

@@ -1,8 +1,14 @@
 "use client";
 
 import React from "react";
+import { petIconDefinitions } from "@/lib/petIcons";
 
 type FilterPanelProps = {
+  city?: string;
+  petCategory?: string;
+  reservationRequiredOnly?: boolean;
+  openNowOnly?: boolean;
+  compact?: boolean;
   onCityChange?: (value: string) => void;
   onPetCategoryChange?: (value: string) => void;
   onReservationRequiredToggle?: (checked: boolean) => void;
@@ -11,6 +17,11 @@ type FilterPanelProps = {
 };
 
 const FilterPanel: React.FC<FilterPanelProps> = ({
+  city = "台北市",
+  petCategory = "all",
+  reservationRequiredOnly = false,
+  openNowOnly = false,
+  compact = false,
   onCityChange,
   onPetCategoryChange,
   onReservationRequiredToggle,
@@ -18,20 +29,35 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
   onSearch,
 }) => {
   return (
-    <div className="bg-cream rounded-2xl shadow-sm p-6 mb-8">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-        {/* 城市 */}
-        <div>
-          <label htmlFor="city" className="block text-sm font-medium text-darktext mb-2">
+    <section className={`mb-5 overflow-hidden rounded-[30px] border border-sage-100 bg-white/90 shadow-soft ${compact ? "p-4" : "p-4 sm:p-5"}`}>
+      <div className="mb-4 flex flex-col gap-3 xl:flex-row xl:items-center xl:justify-between">
+        <div className="flex items-start gap-3">
+          <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-sage-100 text-sm font-black text-forest-900">
+            查
+          </div>
+          <div>
+            <h2 className="text-lg font-extrabold text-forest-900">篩選條件</h2>
+            <p className="mt-1 text-sm leading-6 text-stone-500">先縮小範圍，再打電話確認看診資訊。</p>
+          </div>
+        </div>
+        <div className="flex w-fit items-center gap-2 rounded-full border border-sage-100 bg-linen-50 px-3 py-2 text-xs font-bold text-stone-500">
+          <span className="inline-flex items-center gap-1.5"><span className="h-2.5 w-2.5 rounded-full bg-sage-500" />一般標記</span>
+          <span className="h-4 w-px bg-sage-200" />
+          <span className="inline-flex items-center gap-1.5"><span className="h-2.5 w-2.5 rounded-full bg-petal-400" />急診標記</span>
+        </div>
+      </div>
+      <div className={`grid grid-cols-1 items-end gap-3 ${compact ? "md:grid-cols-2" : "xl:grid-cols-[240px_minmax(280px,1fr)_210px_210px_150px]"}`}>
+        <div className="order-1">
+          <label htmlFor="city" className="mb-2 block text-xs font-extrabold tracking-wide text-forest-900">
             城市
           </label>
           <select
             id="city"
-            defaultValue="台北市"
-            className="filter-dropdown w-full rounded-lg border-2 border-mint-30 focus:border-mint focus:ring-2 focus:ring-mint-20 outline-none focus:outline-none appearance-none py-2.5 px-3 bg-white"
+            value={city}
+            className="w-full rounded-2xl border border-sage-200 bg-linen-50 px-4 py-3 text-sm font-semibold text-forest-900 outline-none transition focus:border-sage-500 focus:ring-4 focus:ring-sage-100"
             onChange={(e) => onCityChange?.(e.target.value)}
             >
-            {/* <option value="all">全部城市</option> */}
+            <option value="all">全部城市</option>
             <option value="基隆市">基隆市</option>
             <option value="台北市">台北市</option>
             <option value="新北市">新北市</option>
@@ -50,86 +76,76 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
           </select>
         </div>
 
-        {/* 支援寵物類別 */}
-        <div>
-        <label htmlFor="petCategory" className="block text-sm font-medium text-darktext mb-2">
+        <div className="order-2">
+        <label htmlFor="petCategory" className="mb-2 block text-xs font-extrabold tracking-wide text-forest-900">
             支援寵物類別
         </label>
         <select
             id="petCategory"
-            className="filter-dropdown w-full rounded-lg border-2 border-mint-30 focus:border-mint focus:ring focus:ring-mint/20 focus:ring-opacity-50 py-2.5 px-3 bg-white"
-            onChange={(e) => onPetCategoryChange?.(e.target.value)} // 可改為 onPetCategoryChange?
+            value={petCategory}
+            className="w-full rounded-2xl border border-sage-200 bg-linen-50 px-4 py-3 text-sm font-semibold text-forest-900 outline-none transition focus:border-sage-500 focus:ring-4 focus:ring-sage-100"
+            onChange={(e) => onPetCategoryChange?.(e.target.value)}
         >
             <option value="all">全部類別</option>
-            <option value="貓">🐱 貓</option>
-            <option value="狗">🐶 狗</option>
-            <option value="兔">🐰 兔</option>
-            <option value="鼠">🐹 鼠</option>
-            <option value="天竺鼠">🐹 天竺鼠</option>
-            <option value="鳥類">🐦 鳥類</option>
-            <option value="爬蟲">🦎 爬蟲</option>
-            <option value="刺蝟">🦔 刺蝟</option>
-            <option value="蜜袋鼯"> 蜜袋鼯</option>
-            <option value="其他特寵">🌟 其他特寵</option>
+            {petIconDefinitions.map((definition) => (
+              <option
+                key={definition.key}
+                value={definition.label}
+              >
+                {definition.label}
+              </option>
+            ))}
         </select>
         </div>
 
-        <div className="space-y-6">
-            {/* 非預約制 */}
-            <div>
-                <label className="block text-sm font-medium text-darktext mb-2">非預約制</label>
-                <label className="custom-checkbox flex items-start gap-2">
+        <div className="order-3 grid gap-3 sm:grid-cols-2 xl:contents">
+            <label className={`flex min-h-14 cursor-pointer items-center gap-3 rounded-2xl border px-4 py-3 transition ${
+              reservationRequiredOnly
+                ? "border-sage-300 bg-sage-50 shadow-[inset_0_0_0_1px_rgba(111,161,109,0.16)]"
+                : "border-sage-100 bg-linen-50 hover:border-sage-200"
+            }`}>
                 <input
                     type="checkbox"
                     id="emergency"
+                    checked={reservationRequiredOnly}
                     onChange={(e) => onReservationRequiredToggle?.(e.target.checked)}
-                    className="mt-1"
+                    className="h-5 w-5 rounded border-sage-300 accent-sage-600"
                 />
-                <span className="checkmark" />
-                <span className="text-sm text-gray-700">僅顯示非預約制的寵物醫院</span>
-                </label>
-            </div>
+                <span>
+                  <span className="block text-sm font-bold text-forest-900">非預約制</span>
+                  <span className="block text-xs text-stone-500">僅顯示可不預約資訊</span>
+                </span>
+            </label>
 
-            {/* 現在看診 */}
-            <div>
-                <label className="block text-sm font-medium text-darktext mb-2">目前營業中</label>
-                <label className="custom-checkbox flex items-start gap-2">
+            <label className={`flex min-h-14 cursor-pointer items-center gap-3 rounded-2xl border px-4 py-3 transition ${
+              openNowOnly
+                ? "border-sage-300 bg-sage-50 shadow-[inset_0_0_0_1px_rgba(111,161,109,0.16)]"
+                : "border-sage-100 bg-linen-50 hover:border-sage-200"
+            }`}>
                 <input
                     type="checkbox"
                     id="openNow"
+                    checked={openNowOnly}
                     onChange={(e) => onOpenNowToggle?.(e.target.checked)}
-                    className="mt-1"
+                    className="h-5 w-5 rounded border-sage-300 accent-sage-600"
                 />
-                <span className="checkmark" />
-                <span className="text-sm text-gray-700">僅顯示目前有看診的醫院</span>
-                </label>
-            </div>
+                <span>
+                  <span className="block text-sm font-bold text-forest-900">目前營業中</span>
+                  <span className="block text-xs text-stone-500">依整理時段初步判斷</span>
+                </span>
+            </label>
         </div>
 
-        {/* 搜尋按鈕 */}
-        <div className="flex items-end">
+        <div className={compact ? "order-4 md:col-span-2" : "order-4 flex items-end xl:col-auto"}>
           <button
             onClick={onSearch}
-            className="w-full bg-mint hover:bg-mintdark text-white font-medium py-2.5 px-4 rounded-lg transition duration-150 ease-in-out shadow-sm cursor-pointer transform hover:-translate-y-0.5"
+            className="min-h-14 w-full rounded-2xl bg-forest-800 px-5 py-3 text-sm font-extrabold text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-forest-900"
           >
             搜尋
           </button>
         </div>
       </div>
-      {/* <div className="mt-6 bg-[#FFF8F8] border-l-4 border-softpink p-4 rounded-lg text-sm text-gray-700 leading-relaxed space-y-2">
-        <p>🔔 醫院營運狀況可能隨時調整，<strong>實際是否看診仍以醫院公告或電話詢問為準</strong>。</p>
-        <p>📞 為避免撲空或延誤看診，<strong>出發前請務必致電確認是否看特寵，以及是否需要預約</strong>。</p>
-        <p className="text-red-700 font-semibold">
-            本平台提供「目前營業」篩選功能，僅供快速查詢參考，<strong>不代表完整醫療服務內容</strong>。
-        </p>
-        <ul className="list-disc pl-5 text-[0.95rem] space-y-1 mt-2">
-            <li>部分特寵醫院採預約制，未預約可能無法看診。</li>
-            <li>有些醫院僅特定醫師或時段看診特寵，非全天候開放。</li>
-            <li>資料僅供參考用途，<strong>非代表推薦、醫療建議，亦不代表推薦特定醫院</strong>。</li>
-            <li>資料由人工一間一間上網找資料整理，若有錯漏，敬請見諒，出發前請再次致電醫院確認。</li>
-        </ul>
-      </div> */}
-    </div>
+    </section>
   );
 };
 

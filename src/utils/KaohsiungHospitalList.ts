@@ -41,7 +41,9 @@ export const KaohsiungHospitalList = [
       "rating": "4.7",
       "reviewCount": 133,
       "mapsUrl": "https://www.google.com/maps/place/%E6%A8%82%E8%B9%A6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6123012,120.3027957,17z/data=!3m1!4b1!4m6!3m5!1s0x346e039434bd1921:0xa0e8f422b0b736d5!8m2!3d22.6123012!4d120.3027957!16s%2Fg%2F11pb2htp84",
-      "verifiedAt": "2026-06-01"
+      "reviewsUrl": "https://www.google.com/maps/place/%E6%A8%82%E8%B9%A6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6123012,120.3027957,17z/data=!4m8!3m7!1s0x346e039434bd1921:0xa0e8f422b0b736d5!8m2!3d22.6123012!4d120.3027957!9m1!1b1!16s%2Fg%2F11pb2htp84",
+      "placeId": "0x346e039434bd1921:0xa0e8f422b0b736d5",
+      "verifiedAt": "2026-06-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -136,7 +138,8 @@ export const KaohsiungHospitalList = [
       "rating": "4.8",
       "reviewCount": 427,
       "mapsUrl": "https://www.google.com/maps/place/%E7%AA%A9%E7%AA%A9%E5%85%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E5%85%94%E5%B0%88%E7%A7%91%E3%80%81%E9%BC%A0%E5%B0%88%E7%A7%91+%E3%80%81%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E7%A7%91(%E9%A0%90%E7%B4%84%E5%84%AA%E5%85%88%E5%88%B6)/@22.630432,120.326095,17z/data=!3m1!4b1!4m6!3m5!1s0x346e05c110c2e6ad:0xc88126388bf0d28b!8m2!3d22.630432!4d120.326095!16s%2Fg%2F11r9nqcnbw",
-      "verifiedAt": "2026-06-01"
+      "reviewsUrl": "https://www.google.com/maps/place/%E7%AA%A9%E7%AA%A9%E5%85%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E5%85%94%E5%B0%88%E7%A7%91%E3%80%81%E9%BC%A0%E5%B0%88%E7%A7%91+%E3%80%81%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E7%A7%91(%E9%A0%90%E7%B4%84%E5%84%AA%E5%85%88%E5%88%B6)/@22.630432,120.326095,17z/data=!4m8!3m7!1s0x346e05c110c2e6ad:0xc88126388bf0d28b!8m2!3d22.630432!4d120.326095!9m1!1b1!16s%2Fg%2F11r9nqcnbw",
+      "verifiedAt": "2026-06-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -263,9 +266,11 @@ export const KaohsiungHospitalList = [
     },
     "google": {
       "rating": "3.3",
-      "reviewCount": 286,
+      "reviewCount": 287,
       "mapsUrl": "https://www.google.com/maps/place/%E5%8D%A1%E5%B8%83%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.669903,120.3075499,17z/data=!3m1!4b1!4m6!3m5!1s0x346e05202ce6e363:0x3c68bbc1971c728f!8m2!3d22.669903!4d120.3075499!16s%2Fg%2F11bw3dkxmj",
-      "verifiedAt": "2026-06-01"
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%8D%A1%E5%B8%83%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.669903,120.3075499,17z/data=!4m8!3m7!1s0x346e05202ce6e363:0x3c68bbc1971c728f!8m2!3d22.669903!4d120.3075499!9m1!1b1!16s%2Fg%2F11bw3dkxmj",
+      "placeId": "0x346e05202ce6e363:0x3c68bbc1971c728f",
+      "verifiedAt": "2026-06-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": true,
@@ -383,7 +388,8 @@ export const KaohsiungHospitalList = [
       "rating": "4.4",
       "reviewCount": 1915,
       "mapsUrl": "https://www.google.com/maps/place/%E6%A2%85%E8%A5%BF%E5%8B%95%E7%89%A9%E9%86%AB%E7%99%82%E4%B8%AD%E5%BF%83/@22.6913366,120.3167105,17z/data=!3m1!4b1!4m6!3m5!1s0x346e059894835b87:0xeea6eea3954f52db!8m2!3d22.6913366!4d120.3167105!16s%2Fg%2F11qn956kg5",
-      "verifiedAt": "2026-06-01"
+      "reviewsUrl": "https://www.google.com/maps/place/%E6%A2%85%E8%A5%BF%E5%8B%95%E7%89%A9%E9%86%AB%E7%99%82%E4%B8%AD%E5%BF%83/@22.6913366,120.3167105,17z/data=!4m8!3m7!1s0x346e059894835b87:0xeea6eea3954f52db!8m2!3d22.6913366!4d120.3167105!9m1!1b1!16s%2Fg%2F11qn956kg5",
+      "verifiedAt": "2026-06-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,

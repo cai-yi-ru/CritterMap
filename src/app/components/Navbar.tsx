@@ -2,90 +2,97 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const pathname = usePathname();
+  const isBlog = pathname?.startsWith("/blog");
 
   return (
-    <nav className="navbar fixed w-full z-50 bg-offwhite">
-      <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <Link href="/" className="logo-container flex items-center space-x-2">
-            <div className="w-10 h-10 bg-mint rounded-full flex items-center justify-center text-white text-xl">
-              🐹
-            </div>
-            <span className="logo-text">小獸所</span>
-          </Link>
-
-          {/* 標題（僅電腦版） */}
-          <div className="hidden md:block text-lg font-medium text-mintdark">
-            特寵醫院地圖查詢平台
+    <nav className="fixed inset-x-0 top-0 z-50 border-b border-sage-100 bg-linen-50/90 backdrop-blur-xl">
+      <div className="mx-auto flex h-18 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        <Link href="/" className="group flex items-center gap-3" aria-label="回到小獸所首頁">
+          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-forest-800 text-lg text-white shadow-soft transition group-hover:-rotate-3">
+            小
           </div>
-
-          {/* 電腦選單 */}
-          <div className="desktop-menu hidden md:flex items-center space-x-4">
-            {/* <div className="dropdown relative group">
-              <Link href="/blog" className="nav-item">部落格</Link>
-              <div className="dropdown-menu absolute hidden group-hover:block bg-white rounded shadow-md mt-2 p-2 z-10">
-                <Link href="/blog/mouse" className="dropdown-item block px-4 py-2 hover:bg-mintlight/20">鼠類飼養</Link>
-                <Link href="/blog/rabbit" className="dropdown-item block px-4 py-2 hover:bg-mintlight/20">兔兔照護</Link>
-                <Link href="/blog/bird" className="dropdown-item block px-4 py-2 hover:bg-mintlight/20">鳥類照顧</Link>
-                <Link href="/blog/reptile" className="dropdown-item block px-4 py-2 hover:bg-mintlight/20">爬蟲相關</Link>
-                <Link href="/blog/other" className="dropdown-item block px-4 py-2 hover:bg-mintlight/20">其他特寵</Link>
-              </div>
-            </div> */}
+          <div>
+            <div className="text-lg font-extrabold text-forest-900">小獸所</div>
+            <div className="text-xs font-medium text-stone-500">特寵醫院地圖</div>
           </div>
+        </Link>
 
-          {/* 手機選單按鈕 */}
-          {/* <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="mobile-menu-button md:hidden"
+        <div className="hidden items-center gap-2 rounded-full border border-sage-100 bg-white/76 p-1 md:flex">
+          <Link
+            href="/"
+            className={`rounded-full px-4 py-2 text-sm font-semibold transition ${
+              isBlog
+                ? "text-stone-600 hover:bg-sage-100 hover:text-forest-900"
+                : "bg-sage-100 text-forest-900"
+            }`}
           >
-            <svg className="w-6 h-6 text-mintdark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button> */}
+            找醫院
+          </Link>
+          <Link
+            href="/blog"
+            className={`rounded-full px-4 py-2 text-sm font-semibold transition ${
+              isBlog
+                ? "bg-petal-100 text-forest-900"
+                : "text-stone-600 hover:bg-petal-100 hover:text-forest-900"
+            }`}
+          >
+            照護文章
+          </Link>
         </div>
+
+        <div className="hidden items-center gap-3 md:flex">
+          <span className="rounded-full bg-honey-100 px-3 py-1.5 text-xs font-semibold text-clay-700">
+            出發前請先致電確認
+          </span>
+        </div>
+
+        <button
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          className="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-sage-100 bg-white text-forest-900 shadow-soft md:hidden"
+          aria-label="開啟選單"
+          aria-expanded={mobileMenuOpen}
+        >
+          <span className="sr-only">選單</span>
+          <span className="flex flex-col gap-1.5">
+            <span className={`h-0.5 w-5 rounded-full bg-current transition ${mobileMenuOpen ? "translate-y-2 rotate-45" : ""}`} />
+            <span className={`h-0.5 w-5 rounded-full bg-current transition ${mobileMenuOpen ? "opacity-0" : ""}`} />
+            <span className={`h-0.5 w-5 rounded-full bg-current transition ${mobileMenuOpen ? "-translate-y-2 -rotate-45" : ""}`} />
+          </span>
+        </button>
       </div>
 
-      {/* 手機選單 */}
-      <div className={`${mobileMenuOpen ? "" : "hidden"} md:hidden bg-white border-t`}>
-        <div className="container mx-auto px-4 py-4">
-          <div className="mobile-dropdown-container">
-            <button
-              onClick={() => setDropdownOpen(!dropdownOpen)}
-              className="w-full text-left py-2 flex justify-between items-center"
+      {mobileMenuOpen && (
+        <div className="border-t border-sage-100 bg-linen-50 px-4 py-4 md:hidden">
+          <div className="mx-auto grid max-w-7xl gap-2">
+            <Link
+              href="/"
+              className={`rounded-2xl px-4 py-3 text-sm font-semibold shadow-soft ${
+                isBlog ? "bg-white text-forest-900" : "bg-sage-100 text-forest-900"
+              }`}
+              onClick={() => setMobileMenuOpen(false)}
             >
-              <span>部落格</span>
-              <svg
-                className={`w-4 h-4 transform transition-transform ${dropdownOpen ? "rotate-180" : ""}`}
-                fill="none" stroke="currentColor" viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            <div className={`mobile-dropdown ${dropdownOpen ? "" : "hidden"} pl-4`}>
-              {[
-                { href: "/blog/mouse", label: "🐭 鼠類飼養" },
-                { href: "/blog/rabbit", label: "🐰 兔兔照護" },
-                { href: "/blog/bird", label: "🦜 鳥類照顧" },
-                { href: "/blog/reptile", label: "🦎 爬蟲相關" },
-                { href: "/blog/other", label: "🌟 其他特寵" },
-              ].map(({ href, label }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className="block py-2 px-2 rounded-md text-darktext hover:bg-mintlight/30 active:bg-mintlight/50 transition"
-                >
-                  {label}
-                </Link>
-              ))}
+              找醫院
+            </Link>
+            <Link
+              href="/blog"
+              className={`rounded-2xl px-4 py-3 text-sm font-semibold shadow-soft ${
+                isBlog ? "bg-petal-100 text-forest-900" : "bg-white text-forest-900"
+              }`}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              照護文章
+            </Link>
+            <div className="rounded-2xl bg-honey-100 px-4 py-3 text-xs font-semibold leading-6 text-clay-700">
+              資訊僅供參考，實際看診與門診時段請以醫院公告為準。
             </div>
           </div>
         </div>
-      </div>
+      )}
     </nav>
   );
 }

@@ -15,10 +15,6 @@ import { getHospitals } from '@/lib/getHospitals';
 import { getHospitalUpdates } from '@/lib/getHospitalUpdates';
 import type { Hospital, HospitalUpdate } from '@/types/hospital';
 
-export const metadata = {
-  title: '小獸所｜特寵醫院地圖查詢平台',
-  description: '查詢全台支援特殊寵物的動物醫院地圖與資訊。',
-};
 const MapPanel = dynamic(() => import('./components/MapPanel'), {
   ssr: false
 });
@@ -73,7 +69,7 @@ function isOpenNow(businessHours?: Record<string, string[]>): boolean {
     }
   });
 }
-const cityCenterMap: Record<string, [number, number]> = {
+export const cityCenterMap: Record<string, [number, number]> = {
     "基隆市": [25.1283, 121.7419],
     "台北市": [25.0330, 121.5654],
     "新北市": [25.0169, 121.4628],
@@ -99,7 +95,11 @@ const cityCenterMap: Record<string, [number, number]> = {
     "all": [23.7, 120.9]
 }
 
-export default function HomeClient() {
+type HomeClientProps = {
+  embed?: boolean;
+};
+
+export default function HomeClient({ embed = false }: HomeClientProps) {
   const [filteredHospitals, setFilteredHospitals] = useState<Hospital[]>([]);
   const [allHospitals, setAllHospitals] = useState<Hospital[]>([]);
   const [hospitalUpdates, setHospitalUpdates] = useState<HospitalUpdate[]>([]);
@@ -110,38 +110,25 @@ export default function HomeClient() {
   const [reservationRequiredOnly, setReservationRequiredOnly] = useState(false);
   const [openNowOnly, setOpenNowOnly] = useState(false);
 
-//   const handleCityChange = (selectedCity: string) => {
-//     setCity(selectedCity);
-//     const newCenter = cityCenterMap[selectedCity] || cityCenterMap['all'];
-//     setMapCenter(newCenter);
-//   };
-  const handleSearch = () => {
-    // console.log("搜尋條件：", { city, type, reservationRequiredOnly, openNowOnly });
-    // console.log('allHospitals',allHospitals);
-    
+  const handleSearch = () => {    
     let filtered = allHospitals;
-  
-    // 篩選城市
+
     if (city !== 'all') {
       filtered = filtered.filter(h => h.city === city);
     }
-  
-    // 篩選支援寵物類別
+
     if (type !== 'all') {
       filtered = filtered.filter(h => h.pet_category_group?.includes(type));
     }
-  
-    // 篩選是否非預約制
+
     if (reservationRequiredOnly) {
       filtered = filtered.filter(h => h.reservationRequired === false);
     }
-  
-    // 篩選是否目前營業
+
     if (openNowOnly) {
       filtered = filtered.filter(h => isOpenNow(h.business_hours));
     }
-  
-    // console.log('filteredHospitals', filtered);
+
     setFilteredHospitals(filtered);
     const newCenter = cityCenterMap[city] || cityCenterMap['all'];
     setMapCenter(newCenter);
@@ -152,70 +139,87 @@ export default function HomeClient() {
     async function fetchHospitals() {
       const [hospitals, updates] = await Promise.all([
         getHospitals(),
-        getHospitalUpdates(),
+        getHospitalUpdates(30),
       ]);
       setAllHospitals(hospitals);
       setFilteredHospitals(hospitals)
       setHospitalUpdates(updates);
-      handleSearch()
     }
     fetchHospitals();
   }, []);
   useEffect(() => {
     handleSearch()
-  }, [allHospitals]);
+  }, [allHospitals, city, type, reservationRequiredOnly, openNowOnly]);
+
+  const totalLabel = allHospitals.length > 0 ? `${allHospitals.length} 間` : '整理中';
+  const resultLabel = filteredHospitals.length > 0 ? `${filteredHospitals.length} 間符合` : '沒有符合結果';
 
   return (
-    <div className="bg-offwhite min-h-screen">
-      <Navbar />
-      <main className="pt-20 container mx-auto px-4 py-8">
-        <header className="mb-8 text-center md:text-left">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-            <div>
-              <h1 className="text-3xl font-bold text-mintdark mb-2">特寵動物醫院地圖查詢</h1>
-              <p className="text-gray-600">尋找您附近的特寵動物醫院，查看詳細資訊並獲取聯絡方式</p>
+    <div className={`site-shell min-h-screen ${embed ? 'embed-shell' : ''}`}>
+      {!embed && <Navbar />}
+      <main className={embed ? "mx-auto w-full max-w-6xl px-3 py-3 sm:px-5" : "mx-auto w-full max-w-7xl px-4 pb-14 pt-24 sm:px-6 lg:px-8"}>
+        <header className={embed ? "mb-4 rounded-[28px] border border-sage-100 bg-white/86 p-4 shadow-soft" : "mb-7 rounded-[32px] border border-sage-100 bg-white/82 p-5 shadow-soft sm:p-7"}>
+          <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+            <div className="max-w-2xl">
+              <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-petal-100 px-3 py-1 text-xs font-semibold text-clay-700">
+                <span aria-hidden="true">✦</span>
+                全台特寵醫療資訊整理
+              </div>
+              <h1 className="text-balance text-3xl font-extrabold tracking-normal text-forest-900 sm:text-4xl">
+                特寵動物醫院地圖查詢
+              </h1>
+              <p className="mt-3 max-w-xl text-sm leading-7 text-stone-600 sm:text-base">
+                依縣市、寵物類別、是否營業與預約條件快速篩選。出發前仍請致電醫院確認看診時段與收案狀況。
+              </p>
             </div>
-            <div className="mt-4 md:mt-0">
-              <div className="flex items-center justify-center md:justify-end space-x-2">
-                <div className="w-3 h-3 rounded-full bg-mint"></div>
-                <span className="text-sm text-gray-600">一般動物醫院</span>
-                <div className="w-3 h-3 rounded-full bg-softpink ml-3"></div>
-                <span className="text-sm text-gray-600">夜間急診</span>
+            <div className="grid grid-cols-2 gap-3 sm:flex sm:items-center">
+              <div className="rounded-2xl bg-sage-50 px-4 py-3">
+                <div className="text-xs font-medium text-stone-500">目前整理</div>
+                <div className="text-xl font-extrabold text-forest-900">{totalLabel}</div>
+              </div>
+              <div className="rounded-2xl bg-honey-100 px-4 py-3">
+                <div className="text-xs font-medium text-stone-500">搜尋結果</div>
+                <div className="text-xl font-extrabold text-forest-900">{resultLabel}</div>
               </div>
             </div>
           </div>
         </header>
         
-        <FilterPanel onCityChange={setCity}
+        <FilterPanel
+          city={city}
+          petCategory={type}
+          reservationRequiredOnly={reservationRequiredOnly}
+          openNowOnly={openNowOnly}
+          compact={embed}
+          onCityChange={setCity}
           onPetCategoryChange={setType}
           onReservationRequiredToggle={setReservationRequiredOnly}
           onOpenNowToggle={setOpenNowOnly}
           onSearch={handleSearch} />
-        {/* <div className='my-3'>目前共整理：{allHospitals.length}間，特寵動物醫院</div> */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <div className="order-1 lg:order-2 lg:col-span-2">
-          <div className="aspect-square lg:aspect-auto">
-            <MapPanel hospitals={filteredHospitals} center={mapCenter} onHospitalClick={setSelectedHospital}/>
-          </div>
+
+        <div className={embed ? "grid grid-cols-1 gap-4" : "grid grid-cols-1 gap-5 lg:grid-cols-[minmax(320px,420px)_1fr]"}>
+          <aside className={embed ? "order-2" : "order-2 lg:order-1"}>
+            <HospitalList hospitals={filteredHospitals} onHospitalClick={setSelectedHospital} />
+          </aside>
+          <section className={embed ? "order-1" : "order-1 lg:order-2"}>
+            <MapPanel hospitals={filteredHospitals} center={mapCenter} onHospitalClick={setSelectedHospital} embed={embed} />
+          </section>
+        </div>
+
+        {!embed && (
           <HospitalUpdates
             updates={hospitalUpdates}
             hospitals={allHospitals}
             onHospitalClick={setSelectedHospital}
           />
-        </div>
-
-        {/* 清單在手機時 order-2，桌機時 order-1 */}
-        <div className="order-2 lg:order-1">
-          <HospitalList hospitals={filteredHospitals} onHospitalClick={setSelectedHospital} />
-        </div>
-        </div>
+        )}
       </main>
 
       {selectedHospital && (
         <HospitalModal hospital={selectedHospital} onClose={() => setSelectedHospital(null)} />
       )}
-      <DisclaimerSection></DisclaimerSection>
-      <Footer></Footer>
+      {!embed && <DisclaimerSection />}
+      {!embed && <Footer />}
     </div>
   );
 }

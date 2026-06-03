@@ -74,8 +74,10 @@ export const HsinchuCityHospitalList: Hospital[] = [
     "google": {
       "rating": "4.1",
       "reviewCount": 420,
-      "mapsUrl": "https://www.google.com/maps/place/%E6%96%B0%E7%AB%B9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.8135629,120.9595005,17z/data=!3m1!4b1!4m6!3m5!1s0x346835b984145369:0x9fa9ca6f78303a74!8m2!3d24.8135629!4d120.9595005!16s%2Fg%2F11b6js5cmw?entry=ttu",
-      "verifiedAt": "2026-06-01"
+      "mapsUrl": "https://www.google.com/maps/place/%E6%96%B0%E7%AB%B9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.8135629,120.9595005,17z/data=!3m1!4b1!4m6!3m5!1s0x346835b984145369:0x9fa9ca6f78303a74!8m2!3d24.8135629!4d120.9595005!16s%2Fg%2F11b6js5cmw",
+      "reviewsUrl": "https://www.google.com/maps/place/%E6%96%B0%E7%AB%B9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.8135629,120.9595005,17z/data=!4m8!3m7!1s0x346835b984145369:0x9fa9ca6f78303a74!8m2!3d24.8135629!4d120.9595005!9m1!1b1!16s%2Fg%2F11b6js5cmw",
+      "placeId": "0x346835b984145369:0x9fa9ca6f78303a74",
+      "verifiedAt": "2026-06-03"
     },
     "clinicNotes": "門診時間週一至週六為 10:00–15:00、17:00–21:00，週日僅開放 17:00–21:00。\n市府動物友善標章名單標示本院服務犬、貓及其他非犬貓動物；特殊寵物實際可看診物種、預約方式與急症安排建議先電話確認。",
     "updatedAt": "2026-06-01",
@@ -168,7 +170,8 @@ export const HsinchuCityHospitalList: Hospital[] = [
       "rating": "3.4",
       "reviewCount": 274,
       "mapsUrl": "https://www.google.com/maps/place/%E5%85%89%E8%8F%AF%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.8169263,120.9693291,17z/data=!3m1!4b1!4m6!3m5!1s0x346835c9213cebeb:0x966722abccdc96ed!8m2!3d24.8169263!4d120.9693291!16s%2Fg%2F11b7lbyn_1",
-      "verifiedAt": "2026-06-01"
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%85%89%E8%8F%AF%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.8169263,120.9693291,17z/data=!4m8!3m7!1s0x346835c9213cebeb:0x966722abccdc96ed!8m2!3d24.8169263!4d120.9693291!9m1!1b1!16s%2Fg%2F11b7lbyn_1",
+      "verifiedAt": "2026-06-03"
     },
     "clinicNotes": "門診時間為週一至週六 09:00–12:00、13:00–21:00，週日休診。\n官方 Facebook 已公告 2026 年 6 月醫師輪值表；門診、複診需求建議先留意醫師門診時間，避免撲空。特殊寵物實際可看診物種與急症安排建議先電話確認。",
     "fb": {
@@ -277,8 +280,10 @@ export const HsinchuCityHospitalList: Hospital[] = [
     "google": {
       "rating": "4.5",
       "reviewCount": 354,
-      "mapsUrl": "https://www.google.com/maps/place/%E5%85%A8%E8%82%B2%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.796988,120.9683904,17z/data=!3m1!4b1!4m6!3m5!1s0x346835ed9e9eee59:0xe8476baccf70d0e5!8m2!3d24.796988!4d120.9683904!16s%2Fg%2F1tltk2wt?entry=ttu",
-      "verifiedAt": "2026-06-01"
+      "mapsUrl": "https://www.google.com/maps/place/%E5%85%A8%E8%82%B2%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.796988,120.9683904,17z/data=!3m1!4b1!4m6!3m5!1s0x346835ed9e9eee59:0xe8476baccf70d0e5!8m2!3d24.796988!4d120.9683904!16s%2Fg%2F1tltk2wt",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%85%A8%E8%82%B2%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.796988,120.9683904,17z/data=!4m8!3m7!1s0x346835ed9e9eee59:0xe8476baccf70d0e5!8m2!3d24.796988!4d120.9683904!9m1!1b1!16s%2Fg%2F1tltk2wt",
+      "placeId": "0x346835ed9e9eee59:0xe8476baccf70d0e5",
+      "verifiedAt": "2026-06-03"
     },
     "clinicNotes": "門診時間為週一至週五 09:30–11:30、14:30–16:30、18:00–19:30；週六至 16:30，週日休診。\n目前未確認官方網站或官方社群帳號；特殊寵物實際可看診物種、掛號方式與急症安排建議先電話確認。",
     "updatedAt": "2026-06-01",
@@ -357,7 +362,8 @@ export const HsinchuCityHospitalList: Hospital[] = [
       "rating": "4.7",
       "reviewCount": 350,
       "mapsUrl": "https://www.google.com/maps/place/%E7%B4%90%E7%B4%84%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.8107336,120.9814259,17z/data=!3m1!4b1!4m6!3m5!1s0x346835da0769130b:0xcc480d6780b00bab!8m2!3d24.8107336!4d120.9814259!16s%2Fg%2F1thvdn_q",
-      "verifiedAt": "2026-06-01"
+      "reviewsUrl": "https://www.google.com/maps/place/%E7%B4%90%E7%B4%84%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.8107336,120.9814259,17z/data=!4m8!3m7!1s0x346835da0769130b:0xcc480d6780b00bab!8m2!3d24.8107336!4d120.9814259!9m1!1b1!16s%2Fg%2F1thvdn_q",
+      "verifiedAt": "2026-06-03"
     },
     "clinicNotes": "目前固定門診為週一至週五 09:30–11:30、14:00–19:30；週六 09:30–11:30、14:00–17:30，週日休診。\n官方 Facebook 與 Pixnet 資訊可確認心臟病、腫瘤外科與高階杜普勒心臟超音波相關服務；未找到官方現行特殊寵物診療範圍，特殊寵物就診前請先電話確認。",
     "updatedAt": "2026-06-01",
@@ -445,7 +451,8 @@ export const HsinchuCityHospitalList: Hospital[] = [
       "rating": "4.5",
       "reviewCount": 674,
       "mapsUrl": "https://www.google.com/maps/place/%E5%AE%89%E5%AE%9A%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.803467,120.9815298,17z/data=!3m1!4b1!4m6!3m5!1s0x34683671f49569e5:0xd4f9b111a6893f63!8m2!3d24.803467!4d120.9815298!16s%2Fg%2F11xf7yndk",
-      "verifiedAt": "2026-06-01"
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%AE%89%E5%AE%9A%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.803467,120.9815298,17z/data=!4m8!3m7!1s0x34683671f49569e5:0xd4f9b111a6893f63!8m2!3d24.803467!4d120.9815298!9m1!1b1!16s%2Fg%2F11xf7yndk",
+      "verifiedAt": "2026-06-03"
     },
     "clinicNotes": "門診時間為週一至週六 09:00–11:30、14:00–16:30、18:00–20:30，週日休診。\n現場病患優先掛號；電話掛號後仍需於看診時間內到院，建議先電話確認。特殊寵物實際可看診物種與急症安排也建議先致電確認。",
     "updatedAt": "2026-06-01",
@@ -528,8 +535,10 @@ export const HsinchuCityHospitalList: Hospital[] = [
     "google": {
       "rating": "4.0",
       "reviewCount": 315,
-      "mapsUrl": "https://www.google.com/maps/place/%E5%85%A8%E5%A4%A9%E5%80%99%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.7878558,121.0200103,17z/data=!3m1!4b1!4m6!3m5!1s0x3468373460d55181:0xe0df728cd95621f1!8m2!3d24.7878558!4d121.0200103!16s%2Fg%2F11ssf7_d23?entry=ttu",
-      "verifiedAt": "2026-06-01"
+      "mapsUrl": "https://www.google.com/maps/place/%E5%85%A8%E5%A4%A9%E5%80%99%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.7878558,121.0200103,17z/data=!3m1!4b1!4m6!3m5!1s0x3468373460d55181:0xe0df728cd95621f1!8m2!3d24.7878558!4d121.0200103!16s%2Fg%2F11ssf7_d23",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%85%A8%E5%A4%A9%E5%80%99%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.7878558,121.0200103,17z/data=!4m8!3m7!1s0x3468373460d55181:0xe0df728cd95621f1!8m2!3d24.7878558!4d121.0200103!9m1!1b1!16s%2Fg%2F11ssf7_d23",
+      "placeId": "0x3468373460d55181:0xe0df728cd95621f1",
+      "verifiedAt": "2026-06-03"
     },
     "clinicNotes": "全年無休，一般門診 09:00–21:00，21:00–09:00 為夜間急診時段。\n官方網站標示服務對象為犬、貓、鼠、兔，院內設有犬貓鼠兔獨立診間、ICU 氧氣病房、高壓氧治療中心、內視鏡、高階心臟超音波與外科手術設備。特殊需求或急症就診建議先電話確認。",
     "updatedAt": "2026-06-01",
@@ -645,8 +654,10 @@ export const HsinchuCityHospitalList: Hospital[] = [
     "google": {
       "rating": "4.6",
       "reviewCount": 83,
-      "mapsUrl": "https://www.google.com/maps/place/%E5%BA%A6%E5%BA%A6%E9%B3%A5%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2%EF%BC%88%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@24.8011484,120.9657388,17z/data=!3m1!4b1!4m6!3m5!1s0x3468352128b95dd9:0xc08ffb7bf05aa8c6!8m2!3d24.8011484!4d120.9657388!16s%2Fg%2F11tc1s0zwy?entry=ttu",
-      "verifiedAt": "2026-06-01"
+      "mapsUrl": "https://www.google.com/maps/place/%E5%BA%A6%E5%BA%A6%E9%B3%A5%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2%EF%BC%88%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@24.8011484,120.9657388,17z/data=!3m1!4b1!4m6!3m5!1s0x3468352128b95dd9:0xc08ffb7bf05aa8c6!8m2!3d24.8011484!4d120.9657388!16s%2Fg%2F11tc1s0zwy",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%BA%A6%E5%BA%A6%E9%B3%A5%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2%EF%BC%88%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@24.8011484,120.9657388,17z/data=!4m8!3m7!1s0x3468352128b95dd9:0xc08ffb7bf05aa8c6!8m2!3d24.8011484!4d120.9657388!9m1!1b1!16s%2Fg%2F11tc1s0zwy",
+      "placeId": "0x3468352128b95dd9:0xc08ffb7bf05aa8c6",
+      "verifiedAt": "2026-06-03"
     },
     "clinicNotes": "提供非犬貓寵物門診醫療，不包含外科、住院與住宿服務。\n本院採預約制，不使用 Facebook 預約；官方 Facebook 標示可先加入 LINE ID @978zickn 詢問。Google 商家固定營業時間為週三、週四、週六 12:00–21:00。",
     "fb": {

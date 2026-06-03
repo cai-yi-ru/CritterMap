@@ -36,6 +36,7 @@ export interface HospitalGoogleProfile {
     rating?: string; // Google Maps 評分文字，例如 4.4。
     reviewCount?: number; // Google Maps 評論數；僅在可確認時填入。
     mapsUrl?: string; // Google Maps 商家頁網址。
+    reviewsUrl?: string; // Google Maps 評論頁網址。
     placeId?: string; // Google Places ID，供未來串接地點 API 或比對資料使用。
     verifiedAt?: string; // 最後確認 Google 商家資料的日期，格式 YYYY-MM-DD。
   }

@@ -4,7 +4,7 @@ import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import { useEffect } from 'react';
-import { getHospitalTypeDisplayText } from '@/lib/hospitalTypeText';
+import { getHospitalDisplayTags } from '@/lib/hospitalDisplayTags';
 
 // 動物醫院圖示 SVG - 使用腳印圖示
 const petHospitalSvg = `
@@ -36,7 +36,7 @@ function MapUpdater({ center }) {
   return null;
 }
 
-export default function MapPanel({ hospitals, center, onHospitalClick }) {
+export default function MapPanel({ hospitals, center, onHospitalClick, embed = false }) {
   useEffect(() => {
     delete L.Icon.Default.prototype._getIconUrl;
     L.Icon.Default.mergeOptions({
@@ -47,13 +47,20 @@ export default function MapPanel({ hospitals, center, onHospitalClick }) {
   }, []);
 
   return (
-    <div className="bg-white rounded-2xl shadow-sm p-6 aspect-square min-h-[300px] lg:aspect-auto lg:h-[600px]">
+    <div className={`rounded-[28px] border border-sage-100 bg-white/88 p-3 shadow-soft ${embed ? 'h-[58vh] min-h-[360px]' : 'aspect-square min-h-[340px] lg:aspect-auto lg:h-[640px]'}`}>
+      <div className="mb-3 flex items-center justify-between px-1">
+        <div>
+          <h2 className="text-lg font-extrabold text-forest-900">地圖</h2>
+          <p className="text-xs font-medium text-stone-500">點擊標記查看醫院摘要</p>
+        </div>
+        <span className="rounded-full bg-sage-100 px-3 py-1 text-xs font-bold text-forest-900">{hospitals.length} 個標記</span>
+      </div>
       <MapContainer
         key="main-map"
         center={center}
         zoom={12}
         scrollWheelZoom={true}
-        className="h-full w-full rounded-xl"
+        className="h-[calc(100%-56px)] w-full rounded-3xl"
       >
         <MapUpdater center={center} />
         <TileLayer
@@ -68,17 +75,39 @@ export default function MapPanel({ hospitals, center, onHospitalClick }) {
             icon={createHospitalIcon(hospital.hasEmergencyService)}
           >
             <Popup>
-              <div>
+              <div className="min-w-[220px] max-w-[280px]">
                 <h3 
-                  className="font-bold text-mintdark text-xl cursor-pointer hover:text-mint transition duration-150"
+                  className="cursor-pointer text-base font-extrabold leading-6 text-forest-900 transition hover:text-sage-600"
                   onClick={() => onHospitalClick && onHospitalClick(hospital)}
                 >
                   {hospital.name}
                 </h3>
-                <p className="text-sm text-gray-600 mt-1">{hospital.address}</p>
-                <div className="text-xs mt-1">
-                  {getHospitalTypeDisplayText(hospital)} {hospital.hasEmergencyService && <span className="text-red-500 ml-2">夜間急診</span>}
+                <p className="mt-2 line-clamp-2 text-sm leading-6 text-stone-600">{hospital.address}</p>
+                {hospital.google?.rating && (
+                  <p className="mt-2 text-xs font-semibold text-stone-500">
+                    Google 參考：★ {hospital.google.rating}
+                    {typeof hospital.google.reviewCount === 'number' && ` · ${hospital.google.reviewCount.toLocaleString()} 則評論`}
+                  </p>
+                )}
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {getHospitalDisplayTags(hospital).map(tag => (
+                    <span key={tag} className="rounded-full bg-sage-100 px-2.5 py-1 text-xs font-bold text-forest-900">
+                      {tag}
+                    </span>
+                  ))}
+                  {hospital.hasEmergencyService && (
+                    <span className="rounded-full bg-petal-100 px-2.5 py-1 text-xs font-bold text-rose-700">
+                      夜間急診
+                    </span>
+                  )}
                 </div>
+                <button
+                  type="button"
+                  className="mt-4 w-full rounded-2xl bg-forest-800 px-4 py-2.5 text-sm font-extrabold text-white transition hover:bg-forest-900"
+                  onClick={() => onHospitalClick && onHospitalClick(hospital)}
+                >
+                  查看詳情
+                </button>
               </div>
             </Popup>
           </Marker>

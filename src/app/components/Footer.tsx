@@ -1,76 +1,24 @@
 export default function Footer() {
     return (
-        <footer className="footer w-full bg-white border-t border-gray-200">
-            <div className="container mx-auto px-4 py-4">
-                {/* <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-                    <div className="md:col-span-1">
-                        <div className="flex justify-center items-center mb-4">
-                            <div className="w-10 h-10 bg-mint rounded-full flex items-center justify-center text-white text-xl">🐹</div>
-                            <span className="logo-text ml-2">小獸所</span>
-                        </div>
-                        <p className="text-gray-600 text-sm">
-                            小獸所特寵醫院地圖查詢平台致力於幫助特殊寵物主人尋找合適的獸醫資源，提供全台灣最完整的特寵醫療資訊。
-                        </p>
-                    </div>
-
-                    <div>
-                        <h3 className="text-lg font-medium text-mintdark mb-4">快速連結</h3>
-                        <ul className="space-y-2 text-sm">
-                            <li><a href="/">首頁</a></li>
-                            <li><a href="/blog">部落格</a></li>
-                            <li><a href="/about">關於我們</a></li>
-                            <li><a href="/contact">聯絡我們</a></li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h3 className="text-lg font-medium text-mintdark mb-4">部落格分類</h3>
-                        <ul className="space-y-2 text-sm">
-                            <li><a href="/blog/mouse">鼠類飼養</a></li>
-                            <li><a href="/blog/rabbit">兔兔照護</a></li>
-                            <li><a href="/blog/bird">鳥類照顧</a></li>
-                            <li><a href="/blog/reptile">爬蟲相關</a></li>
-                            <li><a href="/blog/other">其他特寵</a></li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h3 className="text-lg font-medium text-mintdark mb-4">聯絡我們</h3>
-                        <ul className="space-y-2 text-sm text-gray-600">
-                            <li>📧 info@xiaoshou.com</li>
-                            <li>📞 02-1234-5678</li>
-                            <li>📍 台北市信義區松仁路100號</li>
-                        </ul>
-                        <div className="mt-4 flex justify-center space-x-4 text-gray-500">
-                            <a href="#" aria-label="Facebook" className="hover:text-mint">📘</a>
-                            <a href="#" aria-label="Instagram" className="hover:text-mint">📸</a>
-                            <a href="#" aria-label="Twitter" className="hover:text-mint">🐦</a>
-                            <a href="#" aria-label="YouTube" className="hover:text-mint">📺</a>
+        <footer className="border-t border-sage-100 bg-linen-50">
+            <div className="mx-auto grid max-w-7xl gap-6 px-4 py-8 sm:px-6 md:grid-cols-[1.3fr_1fr] lg:px-8">
+                <div>
+                    <div className="flex items-center gap-3">
+                        <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-forest-800 text-lg font-bold text-white">小</div>
+                        <div>
+                            <div className="text-lg font-extrabold text-forest-900">小獸所</div>
+                            <div className="text-xs font-medium text-stone-500">特寵醫院地圖與照護文章</div>
                         </div>
                     </div>
-                </div> */}
-
-                {/* 版權資訊 */}
-                {/* <div className="border-t border-gray-200 mt-8 pt-8"> */}
-                <div className="text-center mt-8">
-                    <p className="text-sm text-gray-500">
-                        © 2026 小獸所. 版權所有.
+                    <p className="mt-4 max-w-xl text-sm leading-7 text-stone-600">
+                        我們整理全台特寵友善醫療資訊，幫助飼主更快找到可詢問的醫療資源。資料仍可能異動，出發前請以醫院公告與電話確認為準。
                     </p>
                 </div>
-                {/* <div className="text-center">
-                    <div className="flex flex-col md:flex-row justify-between items-center">
-                        <p className="text-sm text-gray-500">
-                            © 2025 小獸所. 版權所有.
-                        </p>
-                        <div className="mt-4 md:mt-0">
-                            <ul className="flex space-x-6">
-                                <li><a href="/privacy" className="text-sm text-gray-500 hover:text-mint">隱私政策</a></li>
-                                <li><a href="/terms" className="text-sm text-gray-500 hover:text-mint">使用條款</a></li>
-                                <li><a href="/sitemap" className="text-sm text-gray-500 hover:text-mint">網站地圖</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> */}
+                <div className="flex flex-col gap-3 text-sm font-semibold text-stone-600 md:items-end">
+                    <a href="/" className="hover:text-forest-900">找醫院</a>
+                    <a href="/blog" className="hover:text-forest-900">照護文章</a>
+                    <p className="pt-2 text-xs font-medium text-stone-500">© 2026 小獸所. 版權所有.</p>
+                </div>
             </div>
         </footer>
     );

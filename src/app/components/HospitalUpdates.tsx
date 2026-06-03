@@ -1,3 +1,6 @@
+'use client';
+
+import { useEffect, useMemo, useState } from 'react';
 import type { Hospital, HospitalUpdate } from '@/types/hospital';
 
 interface HospitalUpdatesProps {
@@ -7,7 +10,7 @@ interface HospitalUpdatesProps {
 }
 
 const updateTypeText: Record<HospitalUpdate['type'], string> = {
-  hours: '營業時間',
+  hours: '營業時間更新',
   content: '內容更新',
   announcement: '最新公告',
   services: '服務項目',
@@ -15,54 +18,84 @@ const updateTypeText: Record<HospitalUpdate['type'], string> = {
 };
 
 export default function HospitalUpdates({ updates, hospitals, onHospitalClick }: HospitalUpdatesProps) {
-  const hospitalById = new Map(hospitals.map((hospital) => [hospital.id, hospital]));
-  const visibleUpdates = updates
+  const [expanded, setExpanded] = useState(false);
+  const [defaultVisibleCount, setDefaultVisibleCount] = useState(9);
+  const hospitalById = useMemo(
+    () => new Map(hospitals.map((hospital) => [hospital.id, hospital])),
+    [hospitals],
+  );
+  const allVisibleUpdates = updates
     .map((update) => ({
       update,
       hospital: hospitalById.get(update.hospitalId),
     }))
     .filter((item): item is { update: HospitalUpdate; hospital: Hospital } => Boolean(item.hospital));
+  const visibleUpdates = expanded ? allVisibleUpdates : allVisibleUpdates.slice(0, defaultVisibleCount);
+  const canExpand = allVisibleUpdates.length > defaultVisibleCount;
 
-  if (visibleUpdates.length === 0) {
+  useEffect(() => {
+    const updateVisibleCount = () => {
+      if (window.innerWidth >= 1024) {
+        setDefaultVisibleCount(9);
+      } else if (window.innerWidth >= 768) {
+        setDefaultVisibleCount(6);
+      } else {
+        setDefaultVisibleCount(3);
+      }
+    };
+
+    updateVisibleCount();
+    window.addEventListener('resize', updateVisibleCount);
+    return () => window.removeEventListener('resize', updateVisibleCount);
+  }, []);
+
+  useEffect(() => {
+    setExpanded(false);
+  }, [defaultVisibleCount]);
+
+  if (allVisibleUpdates.length === 0) {
     return null;
   }
 
   return (
-    <section className="mt-4 bg-white rounded-xl shadow-sm p-4">
-      <div className="flex items-center justify-between gap-3 mb-3">
-        <h2 className="text-base font-semibold text-mintdark">最新更新</h2>
-        <span className="text-xs text-gray-500">目前顯示最新 {visibleUpdates.length} 筆</span>
+    <section className="mt-5 rounded-[28px] border border-sage-100 bg-white/88 p-4 shadow-soft">
+      <div className="mb-3 flex items-center justify-between gap-3">
+        <div>
+          <h2 className="text-lg font-extrabold text-forest-900">最新更新</h2>
+          <p className="text-xs font-medium text-stone-500">資料有異動時會整理在這裡</p>
+        </div>
+        <span className="rounded-full bg-honey-100 px-3 py-1 text-xs font-bold text-clay-700">
+          顯示 {visibleUpdates.length} / {allVisibleUpdates.length} 筆
+        </span>
       </div>
-      <div className="space-y-3">
+      <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
         {visibleUpdates.map(({ update, hospital }) => (
           <article
             key={update.id}
-            className="border border-gray-100 rounded-lg p-3 cursor-pointer transition hover:border-mintlight hover:bg-offwhite"
+            className="cursor-pointer rounded-3xl border border-sage-100 bg-linen-50 p-4 transition hover:-translate-y-0.5 hover:border-sage-300 hover:bg-white"
             onClick={() => onHospitalClick(hospital)}
           >
-            <div className="flex items-start justify-between gap-3">
-              <div className="min-w-0">
+            <div className="min-w-0">
                 <div className="flex flex-wrap items-center gap-2">
-                  <span className="text-xs px-2 py-1 rounded-full bg-mintlight text-mintdark">
+                  <span className="rounded-full bg-sage-100 px-2.5 py-1 text-xs font-bold text-forest-900">
                     {updateTypeText[update.type]}
                   </span>
-                  <time className="text-xs text-gray-500" dateTime={update.updatedAt}>
-                    {update.updatedAt}
+                  <time className="text-xs font-medium text-stone-500" dateTime={update.updatedAt}>
+                    更新於 {update.updatedAt}
                   </time>
                 </div>
-                <h3 className="mt-2 text-sm font-semibold text-darktext">{hospital.name}</h3>
-                <p className="mt-1 text-sm text-gray-600">{update.summary}</p>
-              </div>
+                <h3 className="mt-3 text-sm font-extrabold text-forest-900">{hospital.name}</h3>
+                <p className="mt-1 line-clamp-2 text-sm leading-6 text-stone-600">{update.summary}</p>
             </div>
             {update.sourceLabel && (
-              <div className="mt-2 text-xs text-gray-500">
+              <div className="mt-3 text-xs font-medium text-stone-500">
                 來源：
                 {update.sourceUrl ? (
                   <a
                     href={update.sourceUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-mintdark hover:text-mint"
+                    className="text-forest-800 hover:text-sage-600"
                     onClick={(event) => event.stopPropagation()}
                   >
                     {update.sourceLabel}
@@ -75,6 +108,17 @@ export default function HospitalUpdates({ updates, hospitals, onHospitalClick }:
           </article>
         ))}
       </div>
+      {canExpand && (
+        <div className="mt-4 flex justify-center">
+          <button
+            type="button"
+            onClick={() => setExpanded((value) => !value)}
+            className="rounded-full border border-sage-200 bg-white px-5 py-2.5 text-sm font-extrabold text-forest-900 shadow-soft transition hover:bg-sage-100"
+          >
+            {expanded ? '收合最新更新' : `展開全部 ${allVisibleUpdates.length} 筆更新`}
+          </button>
+        </div>
+      )}
     </section>
   );
 }

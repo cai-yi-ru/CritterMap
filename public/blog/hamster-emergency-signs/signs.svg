@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+  <rect width="1200" height="750" fill="#EEF6EE"/>
+  <text x="120" y="140" font-family="Noto Sans TC, sans-serif" font-size="52" font-weight="800" fill="#203C35">需要快點詢問醫院的變化</text>
+  <g font-family="Noto Sans TC, sans-serif" font-size="34" font-weight="700">
+    <rect x="120" y="210" width="430" height="150" rx="34" fill="#FFFFFF"/>
+    <text x="170" y="300" fill="#203C35">呼吸明顯異常</text>
+    <rect x="650" y="210" width="430" height="150" rx="34" fill="#FFFFFF"/>
+    <text x="700" y="300" fill="#203C35">突然不吃不喝</text>
+    <rect x="120" y="430" width="430" height="150" rx="34" fill="#FFFFFF"/>
+    <text x="170" y="520" fill="#203C35">無法站穩或抽搐</text>
+    <rect x="650" y="430" width="430" height="150" rx="34" fill="#FFFFFF"/>
+    <text x="700" y="520" fill="#203C35">傷口或腹部膨大</text>
+  </g>
+</svg>
