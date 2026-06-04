@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/sheet";
 import { getActiveAnnouncements } from "@/lib/hospitalAnnouncements";
 import { getHospitalDisplayTags } from "@/lib/hospitalDisplayTags";
+import { getHospitalReservationLabel, getHospitalReservationTone } from "@/lib/hospitalReservation";
 import type { Hospital, HospitalUpdate } from "@/types/hospital";
 import { ExternalLinkIcon, MapPinIcon, PhoneIcon, StethoscopeIcon } from "lucide-react";
 import PetIcon from "./PetIcon";
@@ -43,6 +44,7 @@ export default function HospitalUpdateSheet({
   const activeAnnouncements = hospital ? getActiveAnnouncements(hospital.announcements) : [];
   const specialClinic = hospital?.specialClinic?.hasExoticSpecialClinic ? hospital.specialClinic : undefined;
   const visiblePets = hospital?.pets?.slice(0, 8) || [];
+  const reservationTone = hospital ? getHospitalReservationTone(hospital) : "unknown";
 
   return (
     <Sheet open={open} onOpenChange={onOpenChange}>
@@ -106,6 +108,18 @@ export default function HospitalUpdateSheet({
                       {tag}
                     </Badge>
                   ))}
+                  <Badge
+                    className={
+                      reservationTone === "required"
+                        ? "bg-honey-100 text-clay-700"
+                        : reservationTone === "walkIn"
+                          ? "bg-sage-100 text-forest-900"
+                          : "bg-white text-stone-600"
+                    }
+                    variant={reservationTone === "unknown" ? "outline" : "default"}
+                  >
+                    {getHospitalReservationLabel(hospital)}
+                  </Badge>
                   {hospital.hasEmergencyService && <Badge className="bg-petal-100 text-rose-700">夜間急診</Badge>}
                   {specialClinic && (
                     <Badge className="bg-petal-100 text-rose-700">
@@ -163,12 +177,12 @@ export default function HospitalUpdateSheet({
                 查看完整醫院資料
               </Button>
               <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-                <Button variant="outline" render={<a href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(hospital.address)}`} target="_blank" rel="noopener noreferrer" />}>
+                <Button variant="outline" nativeButton={false} render={<a href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(hospital.address)}`} target="_blank" rel="noopener noreferrer" />}>
                   <MapPinIcon data-icon="inline-start" />
                   導航路線
                 </Button>
                 {hospital.phone && (
-                  <Button variant="outline" render={<a href={`tel:${hospital.phone}`} />}>
+                  <Button variant="outline" nativeButton={false} render={<a href={`tel:${hospital.phone}`} />}>
                     <PhoneIcon data-icon="inline-start" />
                     撥打電話
                   </Button>

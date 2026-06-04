@@ -1,65 +1,71 @@
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Badge } from "@/components/ui/badge";
+import { AlertTriangleIcon, CheckCircle2Icon, ClockIcon, PhoneCallIcon, ShieldCheckIcon } from "lucide-react";
+
+const noticeItems = [
+  {
+    title: "營業與門診可能異動",
+    description: "實際看診、休診、指定醫師與收費標準，請以醫院公告或電話回覆為準。",
+    icon: ClockIcon,
+  },
+  {
+    title: "出發前請先致電",
+    description: "特寵門診常見預約制或限定時段，先確認可減少撲空與延誤。",
+    icon: PhoneCallIcon,
+  },
+  {
+    title: "篩選結果僅供參考",
+    description: "平台整理的服務與寵物分類，不代表該院完整醫療能力或即時收案狀態。",
+    icon: CheckCircle2Icon,
+  },
+];
+
 export default function DisclaimerSection() {
-    return (
-      <section className="mt-10 border-t border-honey-200 bg-honey-100/45 py-10">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl border border-honey-200 bg-card p-6 md:p-8">
-            <h2 className="mb-6 flex items-center text-xl font-extrabold text-forest-900">
-              <span className="mr-2">!</span>
-              免責注意事項
-            </h2>
-  
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-              <div>
-                <div className="disclaimer-item">
-                  <span className="disclaimer-icon">🔔</span>
-                  <p className="text-stone-700">醫院營運狀況可能隨時調整，實際是否看診仍以醫院公告或電話詢問為準。</p>
+  return (
+    <section className="mt-10 border-t border-sage-100 bg-sage-50/70 py-6 sm:py-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="overflow-hidden rounded-2xl border border-sage-100 bg-card">
+          <div className="grid lg:grid-cols-[minmax(320px,0.95fr)_1.25fr]">
+            <Alert className="rounded-none border-0 border-b border-sage-100 bg-transparent p-5 sm:p-6 lg:border-b-0 lg:border-r">
+              <AlertTriangleIcon className="mt-1 text-clay-700" />
+              <div className="flex flex-col gap-3">
+                <div className="flex flex-wrap items-center gap-2">
+                  <AlertTitle className="text-lg font-extrabold text-forest-900">免責注意事項</AlertTitle>
+                  <Badge className="bg-honey-100 text-clay-700">出發前確認</Badge>
                 </div>
-  
-                <div className="disclaimer-item">
-                  <span className="disclaimer-icon">📞</span>
-                  <p className="text-stone-700">為避免撲空或延誤看診，出發前請務必致電確認是否看特寵，以及是否需要預約。</p>
-                </div>
-  
-                <div className="disclaimer-item">
-                  <span className="disclaimer-icon">ℹ️</span>
-                  <p className="text-stone-700">本平台提供篩選功能僅供快速查詢參考，不代表完整醫療服務內容。</p>
-                </div>
+                <AlertDescription className="max-w-[58ch] text-sm leading-7 text-stone-700">
+                  小獸所提供整理後的查詢資訊，不取代獸醫師診斷，也不代表推薦特定醫院。若寵物有急症，請立即聯繫最近的動物醫院或 24 小時急診醫院。
+                </AlertDescription>
               </div>
-  
-              <div>
-                <ul className="space-y-3 text-stone-700">
-                  <li className="flex">
-                    <span className="mr-2 text-sage-600">•</span>
-                    <span>部分特寵醫院採預約制，未預約可能無法看診。</span>
-                  </li>
-                  <li className="flex">
-                    <span className="mr-2 text-sage-600">•</span>
-                    <span>有些醫院僅特定醫師或時段看診特寵，非全天候開放。</span>
-                  </li>
-                  <li className="flex">
-                    <span className="mr-2 text-sage-600">•</span>
-                    <span>資料僅供參考用途，非代表推薦、醫療建議，亦不代表推薦特定醫院。</span>
-                  </li>
-                  <li className="flex">
-                    <span className="mr-2 text-sage-600">•</span>
-                    <span>資料由人工一間一間上網找資料整理，若有錯漏，敬請見諒，出發前請再次致電醫院確認。</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-  
-            <div className="mt-6 rounded-xl border border-honey-200 bg-honey-100 p-4">
-              <div className="flex items-start">
-                <span className="mr-2 mt-0.5 flex-shrink-0 text-clay-700">△</span>
-                <p className="text-clay-700">
-                  <span className="font-medium">重要提醒：</span>
-                  本平台資訊僅供參考，實際診療服務、營業時間及收費標準請以各醫院公告為準。若遇寵物緊急狀況，請立即聯繫最近的動物醫院或24小時急診醫院。
-                </p>
-              </div>
+            </Alert>
+
+            <div className="grid divide-y divide-sage-100 md:grid-cols-3 md:divide-x md:divide-y-0">
+              {noticeItems.map((item) => {
+                const Icon = item.icon;
+
+                return (
+                  <article key={item.title} className="flex gap-3 p-5 sm:p-6 md:flex-col">
+                    <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-sage-100 text-forest-800">
+                      <Icon />
+                    </div>
+                    <div>
+                      <h3 className="text-sm font-extrabold leading-6 text-forest-900">{item.title}</h3>
+                      <p className="mt-1 text-sm leading-6 text-stone-600">{item.description}</p>
+                    </div>
+                  </article>
+                );
+              })}
             </div>
           </div>
+          <div className="flex flex-col gap-2 border-t border-sage-100 bg-honey-100/45 px-5 py-3 text-sm leading-6 text-clay-700 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+            <span className="inline-flex items-center gap-2 font-bold text-forest-900">
+              <ShieldCheckIcon className="shrink-0" />
+              資料會持續整理，但醫院現場狀況可能即時變動。
+            </span>
+            <span className="text-stone-700">看診前請以電話、官方公告或院方回覆為準。</span>
+          </div>
         </div>
-      </section>
-    );
-  }
-  
+      </div>
+    </section>
+  );
+}

@@ -14,10 +14,12 @@ import {
 import { Separator } from "@/components/ui/separator";
 import { getActiveAnnouncements } from "@/lib/hospitalAnnouncements";
 import { getHospitalDisplayTags } from "@/lib/hospitalDisplayTags";
+import { getHospitalReservationLabel } from "@/lib/hospitalReservation";
 import { getHospitalTypeDisplayText } from "@/lib/hospitalTypeText";
 import type { Hospital, HospitalAnnouncement } from "@/types/hospital";
 import { ExternalLinkIcon, NavigationIcon, PhoneIcon } from "lucide-react";
 import type { ReactNode } from "react";
+import BusinessHoursSummary from "./BusinessHoursSummary";
 import PetIcon from "./PetIcon";
 
 interface HospitalModalProps {
@@ -58,20 +60,24 @@ export default function HospitalModal({ hospital, onClose }: HospitalModalProps)
               <div className="mt-3 grid gap-3 md:grid-cols-2">
                 <InfoLine label="電話" value={hospital.phone || "尚未整理"} icon={<PhoneIcon />} />
                 <InfoLine label="分類" value={getHospitalTypeDisplayText(hospital)} />
-                {hospital.hours && (
-                  <div className="md:col-span-2">
-                    <div className="text-xs font-bold text-stone-500">營業時間</div>
-                    <p className="mt-1 whitespace-pre-wrap text-sm leading-7 text-stone-700">{hospital.hours}</p>
-                  </div>
-                )}
+                <InfoLine label="預約方式" value={getHospitalReservationLabel(hospital)} />
+                <BusinessHoursSummary businessHours={hospital.business_hours} fallbackHours={hospital.hours} />
                 {hospital.google?.rating && (
                   <div className="md:col-span-2">
-                    <div className="text-xs font-bold text-stone-500">Google 參考</div>
-                    <p className="mt-1 text-sm leading-7 text-stone-700">
-                      ★ {hospital.google.rating}
-                      {typeof hospital.google.reviewCount === "number" && `，${hospital.google.reviewCount.toLocaleString()} 則評論`}
-                      {hospital.google.verifiedAt && `，確認日期：${hospital.google.verifiedAt}`}
-                    </p>
+                    <div className="flex flex-col gap-1 rounded-xl border border-sage-100 bg-white p-3 sm:flex-row sm:items-end sm:justify-between">
+                      <div>
+                        <div className="text-xs font-bold text-stone-500">Google 參考</div>
+                        <p className="mt-1 text-sm leading-7 text-stone-700">
+                          ★ {hospital.google.rating}
+                          {typeof hospital.google.reviewCount === "number" && `，${hospital.google.reviewCount.toLocaleString()} 則評論`}
+                        </p>
+                      </div>
+                      {hospital.google.verifiedAt && (
+                        <div className="text-xs text-stone-500 sm:text-right">
+                          確認日期：{hospital.google.verifiedAt}
+                        </div>
+                      )}
+                    </div>
                   </div>
                 )}
               </div>
@@ -176,18 +182,18 @@ export default function HospitalModal({ hospital, onClose }: HospitalModalProps)
         </div>
 
         <DialogFooter className="mx-0 mb-0 shrink-0 rounded-none border-t border-sage-100 bg-white/85 p-4 sm:flex-row">
-          <Button render={<a href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(hospital.address)}`} target="_blank" rel="noopener noreferrer" />}>
+          <Button nativeButton={false} render={<a href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(hospital.address)}`} target="_blank" rel="noopener noreferrer" />}>
             <NavigationIcon data-icon="inline-start" />
             導航路線
           </Button>
           {hospital.phone && (
-            <Button variant="outline" render={<a href={`tel:${hospital.phone}`} />}>
+            <Button variant="outline" nativeButton={false} render={<a href={`tel:${hospital.phone}`} />}>
               <PhoneIcon data-icon="inline-start" />
               撥打電話
             </Button>
           )}
           {hospital.website && (
-            <Button variant="outline" render={<a href={hospital.website} target="_blank" rel="noopener noreferrer" />}>
+            <Button variant="outline" nativeButton={false} render={<a href={hospital.website} target="_blank" rel="noopener noreferrer" />}>
               <ExternalLinkIcon data-icon="inline-start" />
               訪問網站
             </Button>
