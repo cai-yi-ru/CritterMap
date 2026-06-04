@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect } from "react";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
@@ -21,17 +24,65 @@ const copyByContext: Record<SponsoredSlotProps["context"], { title: string; desc
   },
 };
 
+const slotByContext: Record<SponsoredSlotProps["context"], string | undefined> = {
+  home: process.env.NEXT_PUBLIC_ADSENSE_SLOT_HOME || process.env.NEXT_PUBLIC_ADSENSE_SLOT,
+  "blog-list": process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_LIST || process.env.NEXT_PUBLIC_ADSENSE_SLOT,
+  "blog-article": process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_ARTICLE || process.env.NEXT_PUBLIC_ADSENSE_SLOT,
+};
+
+declare global {
+  interface Window {
+    adsbygoogle?: unknown[];
+  }
+}
+
 export default function SponsoredSlot({ context, className }: SponsoredSlotProps) {
   const copy = copyByContext[context];
+  const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
+  const adsenseSlot = slotByContext[context];
+  const isAdsenseReady = Boolean(adsenseClient && adsenseSlot);
+
+  useEffect(() => {
+    if (!isAdsenseReady) {
+      return;
+    }
+
+    try {
+      window.adsbygoogle = window.adsbygoogle || [];
+      window.adsbygoogle.push({});
+    } catch {
+      // AdSense may reject duplicate pushes during client-side remounts.
+    }
+  }, [isAdsenseReady, adsenseSlot]);
 
   return (
     <aside
       className={cn(
         "rounded-2xl border border-honey-200 bg-accent/45 px-4 py-3 text-sm text-accent-foreground",
+        isAdsenseReady && "min-h-[120px]",
         className,
       )}
-      aria-label="贊助資訊版位"
+      aria-label={isAdsenseReady ? "廣告" : "贊助資訊版位"}
     >
+      {isAdsenseReady ? (
+        <>
+          <div className="mb-2 flex items-center justify-between gap-3">
+            <Badge variant="outline" className="border-honey-200 bg-white/70 text-clay-700">
+              廣告
+            </Badge>
+            <span className="text-xs font-medium text-clay-700/80">{copy.title}</span>
+          </div>
+          <ins
+            key={`${adsenseClient}-${adsenseSlot}`}
+            className="adsbygoogle"
+            style={{ display: "block" }}
+            data-ad-client={adsenseClient}
+            data-ad-slot={adsenseSlot}
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          />
+        </>
+      ) : (
       <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <div className="mb-1 flex items-center gap-2">
@@ -44,6 +95,7 @@ export default function SponsoredSlot({ context, className }: SponsoredSlotProps
         </div>
         <span className="text-xs font-medium text-clay-700/80">預留版位</span>
       </div>
+      )}
     </aside>
   );
 }

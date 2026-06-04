@@ -100,12 +100,14 @@ export const cityCenterMap: Record<string, [number, number]> = {
 
 type HomeClientProps = {
   embed?: boolean;
+  initialHospitals?: Hospital[];
+  initialUpdates?: HospitalUpdate[];
 };
 
-export default function HomeClient({ embed = false }: HomeClientProps) {
-  const [filteredHospitals, setFilteredHospitals] = useState<Hospital[]>([]);
-  const [allHospitals, setAllHospitals] = useState<Hospital[]>([]);
-  const [hospitalUpdates, setHospitalUpdates] = useState<HospitalUpdate[]>([]);
+export default function HomeClient({ embed = false, initialHospitals = [], initialUpdates = [] }: HomeClientProps) {
+  const [filteredHospitals, setFilteredHospitals] = useState<Hospital[]>(initialHospitals);
+  const [allHospitals, setAllHospitals] = useState<Hospital[]>(initialHospitals);
+  const [hospitalUpdates, setHospitalUpdates] = useState<HospitalUpdate[]>(initialUpdates);
   const [selectedHospital, setSelectedHospital] = useState<Hospital | null>(null);
   const [selectedUpdate, setSelectedUpdate] = useState<{ update: HospitalUpdate; hospital: Hospital } | null>(null);
   const [city, setCity] = useState("台北市");
@@ -143,6 +145,10 @@ export default function HomeClient({ embed = false }: HomeClientProps) {
 
   // 初始載入醫院資料
   useEffect(() => {
+    if (initialHospitals.length > 0) {
+      return;
+    }
+
     async function fetchHospitals() {
       const [hospitals, updates] = await Promise.all([
         getHospitals(),
@@ -153,7 +159,7 @@ export default function HomeClient({ embed = false }: HomeClientProps) {
       setHospitalUpdates(updates);
     }
     fetchHospitals();
-  }, []);
+  }, [initialHospitals.length]);
   useEffect(() => {
     handleSearch()
   }, [allHospitals, city, type, reservationRequiredOnly, openNowOnly]);

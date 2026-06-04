@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import SponsoredSlot from "../components/SponsoredSlot";
 import { BlogHero, BlogPostCard } from "./components";
 import { getFilteredPosts, getPetCategories, getTopicTags } from "@/lib/blog";
+import { absoluteUrl, siteName } from "@/lib/seo";
 
 type BlogPageProps = {
   searchParams?: Promise<Record<string, string | string[] | undefined>>;
@@ -13,6 +14,16 @@ type BlogPageProps = {
 export const metadata = {
   title: "照護文章",
   description: "小獸所整理的特寵照護、看診準備與醫療資訊文章。",
+  alternates: {
+    canonical: "/blog",
+  },
+  openGraph: {
+    type: "website",
+    url: absoluteUrl("/blog"),
+    siteName,
+    title: "照護文章｜小獸所",
+    description: "小獸所整理的特寵照護、看診準備與醫療資訊文章。",
+  },
 };
 
 export default async function BlogPage({ searchParams }: BlogPageProps) {
@@ -22,9 +33,29 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
   const posts = getFilteredPosts({ petCategory, topicTag });
   const categories = getPetCategories();
   const topicTags = getTopicTags();
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "小獸所照護文章",
+    url: absoluteUrl("/blog"),
+    inLanguage: "zh-Hant-TW",
+    description: "特寵照護、看診準備與醫療資訊文章列表。",
+    hasPart: posts.map((post) => ({
+      "@type": "Article",
+      headline: post.title,
+      url: absoluteUrl(`/blog/${post.slug}`),
+      datePublished: post.date,
+      description: post.excerpt,
+      about: [post.petCategory, ...post.topicTags],
+    })),
+  };
 
   return (
     <div className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <Navbar />
       <main className="mx-auto max-w-7xl px-4 pb-14 pt-24 sm:px-6 lg:px-8">
         <BlogHero

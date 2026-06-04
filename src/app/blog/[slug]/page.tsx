@@ -5,6 +5,7 @@ import Footer from "../../components/Footer";
 import SponsoredSlot from "../../components/SponsoredSlot";
 import { BlogRenderer } from "../components";
 import { getPostBySlug } from "@/lib/blog";
+import { absoluteUrl, siteName } from "@/lib/seo";
 
 type BlogPostPageProps = {
   params: Promise<{ slug: string }>;
@@ -25,6 +26,25 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
   return {
     title: post.title,
     description: post.excerpt,
+    alternates: {
+      canonical: `/blog/${post.slug}`,
+    },
+    openGraph: {
+      type: "article",
+      url: absoluteUrl(`/blog/${post.slug}`),
+      siteName,
+      title: post.title,
+      description: post.excerpt,
+      publishedTime: post.date,
+      images: post.coverImage
+        ? [
+            {
+              url: absoluteUrl(post.coverImage),
+              alt: post.coverAlt || post.title,
+            },
+          ]
+        : undefined,
+    },
   };
 }
 
@@ -33,9 +53,34 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const post = getPostBySlug(slug);
 
   if (!post) notFound();
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    dateModified: post.date,
+    image: post.coverImage ? absoluteUrl(post.coverImage) : undefined,
+    inLanguage: "zh-Hant-TW",
+    mainEntityOfPage: absoluteUrl(`/blog/${post.slug}`),
+    author: {
+      "@type": "Organization",
+      name: siteName,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: siteName,
+      url: absoluteUrl("/"),
+    },
+    about: [post.petCategory, ...post.topicTags],
+  };
 
   return (
     <div className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <Navbar />
       <main className="mx-auto max-w-4xl px-4 pb-14 pt-24 sm:px-6 lg:px-8">
         <Link href="/blog" className="inline-flex rounded-full border border-sage-100 bg-card px-4 py-2 text-sm font-bold text-forest-900">
