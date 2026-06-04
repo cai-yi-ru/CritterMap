@@ -1,4 +1,6 @@
 
+import "server-only";
+
 import { TaipeiHospitalList } from '@/utils/TaipeiHospitalList';
 import { NewTaipeiHospitalList } from '@/utils/NewTaipeiHospitalList';
 import { KeelungHospitalList } from '@/utils/KeelungHospitalList';

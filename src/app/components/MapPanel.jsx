@@ -4,7 +4,6 @@ import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import { useEffect } from 'react';
-import { getHospitalDisplayTags } from '@/lib/hospitalDisplayTags';
 
 // 動物醫院圖示 SVG - 使用腳印圖示
 const petHospitalSvg = `
@@ -82,15 +81,17 @@ export default function MapPanel({ hospitals, center, onHospitalClick, embed = f
                 >
                   {hospital.name}
                 </h3>
-                <p className="mt-2 line-clamp-2 text-sm leading-6 text-stone-600">{hospital.address}</p>
-                {hospital.google?.rating && (
+                <p className="mt-2 line-clamp-2 text-sm leading-6 text-stone-600">
+                  {[hospital.city, hospital.district].filter(Boolean).join(' ') || '地區整理中'}
+                </p>
+                {hospital.googleRating && (
                   <p className="mt-2 text-xs font-semibold text-stone-500">
-                    Google 參考：★ {hospital.google.rating}
-                    {typeof hospital.google.reviewCount === 'number' && ` · ${hospital.google.reviewCount.toLocaleString()} 則評論`}
+                    Google 參考：★ {hospital.googleRating}
+                    {typeof hospital.googleReviewCount === 'number' && ` · ${hospital.googleReviewCount.toLocaleString()} 則評論`}
                   </p>
                 )}
                 <div className="mt-3 flex flex-wrap gap-2">
-                  {getHospitalDisplayTags(hospital).map(tag => (
+                  {hospital.displayTags.map(tag => (
                     <span key={tag} className="rounded-full bg-sage-100 px-2.5 py-1 text-xs font-bold text-forest-900">
                       {tag}
                     </span>

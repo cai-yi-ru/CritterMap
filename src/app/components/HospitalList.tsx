@@ -1,13 +1,11 @@
 import React from "react";
-import type { Hospital } from '@/types/hospital';
-import { getActiveAnnouncements } from '@/lib/hospitalAnnouncements';
-import { getHospitalDisplayTags } from '@/lib/hospitalDisplayTags';
+import type { HospitalSummary } from '@/types/hospitalPublic';
 import { Badge } from '@/components/ui/badge';
 import PetIcon from './PetIcon';
 
 interface HospitalListProps {
-  hospitals: Hospital[];
-  onHospitalClick: (hospital: Hospital) => void;
+  hospitals: HospitalSummary[];
+  onHospitalClick: (hospital: HospitalSummary) => void;
 }
 
 const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick }) => {
@@ -49,18 +47,9 @@ const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick 
         //   }
         // }
         
-        const visiblePets = hospital.pets?.slice(0, 4) || [];
-        const remainingPetCount = hospital.pets && hospital.pets.length > 4
-          ? hospital.pets.length - 4
-          : 0;
-        const activeAnnouncements = getActiveAnnouncements(hospital.announcements);
-        const hasClosureAnnouncement = activeAnnouncements.some(announcement => announcement.type === 'closure');
-        const specialClinicLabel = hospital.specialClinic?.hasExoticSpecialClinic
-          ? hospital.specialClinic.label || '特寵特別門診'
-          : '';
-        const googleRating = hospital.google?.rating;
-        const googleReviewCount = hospital.google?.reviewCount;
-        const hospitalTypeTags = getHospitalDisplayTags(hospital);
+        const visiblePets = hospital.pets || [];
+        const locationLabel = [hospital.city, hospital.district].filter(Boolean).join(" ");
+        const reservationTone = hospital.reservationTone;
 
         return (
           <article
@@ -71,11 +60,11 @@ const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick 
             <div className="flex items-start justify-between gap-3">
               <div className="min-w-0">
                 <h3 className="text-base font-extrabold leading-6 text-forest-900">{hospital.name}</h3>
-                <p className="mt-1 line-clamp-2 text-sm leading-6 text-stone-600">{hospital.address}</p>
-                {googleRating && (
+                <p className="mt-1 line-clamp-2 text-sm leading-6 text-stone-600">{locationLabel || "地區整理中"}</p>
+                {hospital.googleRating && (
                   <p className="mt-1 text-xs font-semibold text-stone-500">
-                    Google 參考：★ {googleRating}
-                    {typeof googleReviewCount === 'number' && ` · ${googleReviewCount.toLocaleString()} 則評論`}
+                    Google 參考：★ {hospital.googleRating}
+                    {typeof hospital.googleReviewCount === 'number' && ` · ${hospital.googleReviewCount.toLocaleString()} 則評論`}
                   </p>
                 )}
               </div>
@@ -85,9 +74,6 @@ const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick 
                     {visiblePets.map((pet) => (
                       <PetIcon key={pet} pet={pet} size="sm" />
                     ))}
-                    {remainingPetCount > 0 && (
-                      <span className="text-xs font-bold text-stone-500">+{remainingPetCount}</span>
-                    )}
                   </>
                 ) : (
                   <PetIcon pet="其他特寵" size="sm" />
@@ -95,22 +81,32 @@ const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick 
               </div>
             </div>
             <div className="mt-3 flex flex-wrap gap-2">
-                {hospitalTypeTags.map((tag) => (
+                {hospital.displayTags.map((tag) => (
                   <Badge key={tag} variant="secondary" className="text-forest-900">
                     {tag}
                   </Badge>
                 ))}
-                {hospital.emergency && (
-                  <Badge className="bg-petal-100 text-rose-700">24小時急診</Badge>
-                )}
-                {activeAnnouncements.length > 0 && (
+                <Badge
+                  className={
+                    reservationTone === "required"
+                      ? "bg-honey-100 text-clay-700"
+                      : reservationTone === "walkIn"
+                        ? "bg-sage-100 text-forest-900"
+                        : "bg-white text-stone-600"
+                  }
+                  variant={reservationTone === "unknown" ? "outline" : "default"}
+                >
+                  {hospital.reservationLabel}
+                </Badge>
+                {hospital.hasEmergencyService && <Badge className="bg-petal-100 text-rose-700">夜間急診</Badge>}
+                {hospital.hasActiveAnnouncement && (
                   <Badge className="bg-honey-100 text-clay-700">
-                    {hasClosureAnnouncement ? '休診公告' : '最新公告'}
+                    {hospital.hasClosureAnnouncement ? '休診公告' : '最新公告'}
                   </Badge>
                 )}
-                {specialClinicLabel && (
+                {hospital.specialClinicLabel && (
                   <Badge className="bg-petal-100 text-rose-700">
-                    {specialClinicLabel}
+                    {hospital.specialClinicLabel}
                   </Badge>
                 )}
             </div>

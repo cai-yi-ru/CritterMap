@@ -2,6 +2,7 @@
 import HomeClient from './HomeClient';
 import { getHospitals } from "@/lib/getHospitals";
 import { getHospitalUpdates } from "@/lib/getHospitalUpdates";
+import { filterHospitals, summarizeHospitals } from "@/lib/hospitalSearch";
 import { absoluteUrl, defaultDescription, defaultTitle, siteName, siteUrl } from "@/lib/seo";
 
 export const metadata = {
@@ -30,6 +31,9 @@ export default async function Home({ searchParams }: HomePageProps) {
   const pets = Array.from(
     new Set(hospitals.flatMap((hospital) => [...(hospital.pet_category_group || []), ...(hospital.pets || [])])),
   );
+  const initialHospitals = summarizeHospitals(filterHospitals(hospitals, { city: "台北市", petCategory: "all" }));
+  const updateHospitalIds = new Set(updates.map((update) => update.hospitalId));
+  const updateHospitals = summarizeHospitals(hospitals.filter((hospital) => updateHospitalIds.has(hospital.id)));
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -82,7 +86,13 @@ export default async function Home({ searchParams }: HomePageProps) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       )}
-      <HomeClient embed={embed} initialHospitals={hospitals} initialUpdates={updates} />
+      <HomeClient
+        embed={embed}
+        initialHospitals={initialHospitals}
+        initialUpdates={updates}
+        initialUpdateHospitals={updateHospitals}
+        hospitalCount={hospitals.length}
+      />
     </>
   );
 }

@@ -1,3 +1,5 @@
+import "server-only";
+
 import { HospitalUpdateList } from '@/utils/HospitalUpdates';
 import type { HospitalUpdate } from '@/types/hospital';
 

@@ -3,12 +3,13 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import type { Hospital, HospitalUpdate } from '@/types/hospital';
+import type { HospitalUpdate } from '@/types/hospital';
+import type { HospitalSummary } from '@/types/hospitalPublic';
 
 interface HospitalUpdatesProps {
   updates: HospitalUpdate[];
-  hospitals: Hospital[];
-  onUpdateClick: (update: HospitalUpdate, hospital: Hospital) => void;
+  hospitals: HospitalSummary[];
+  onUpdateClick: (update: HospitalUpdate, hospital: HospitalSummary) => void;
 }
 
 const updateTypeText: Record<HospitalUpdate['type'], string> = {
@@ -31,7 +32,7 @@ export default function HospitalUpdates({ updates, hospitals, onUpdateClick }: H
       update,
       hospital: hospitalById.get(update.hospitalId),
     }))
-    .filter((item): item is { update: HospitalUpdate; hospital: Hospital } => Boolean(item.hospital));
+    .filter((item): item is { update: HospitalUpdate; hospital: HospitalSummary } => Boolean(item.hospital));
   const visibleUpdates = expanded ? allVisibleUpdates : allVisibleUpdates.slice(0, defaultVisibleCount);
   const canExpand = allVisibleUpdates.length > defaultVisibleCount;
 

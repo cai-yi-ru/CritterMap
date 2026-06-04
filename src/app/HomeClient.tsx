@@ -1,7 +1,7 @@
 
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useTransition, useState } from 'react';
 import dynamic from 'next/dynamic';
 import Navbar from './components/Navbar';
 import FilterPanel from './components/FilterPanel';
@@ -13,65 +13,14 @@ import Footer from './components/Footer';
 import DisclaimerSection from './components/DisclaimerSection';
 import SponsoredSlot from './components/SponsoredSlot';
 
-import { getHospitals } from '@/lib/getHospitals';
-import { getHospitalUpdates } from '@/lib/getHospitalUpdates';
-import { getCanonicalPetCategory } from '@/lib/petIcons';
+import { getHospitalDetail, searchHospitals } from './actions/hospitals';
 import type { Hospital, HospitalUpdate } from '@/types/hospital';
+import type { HospitalSummary } from '@/types/hospitalPublic';
 
 const MapPanel = dynamic(() => import('./components/MapPanel'), {
   ssr: false
 });
 
-/** 判斷跨日改良版 */
-function isOpenNow(businessHours?: Record<string, string[]>): boolean {
-  if (!businessHours) return false;
-
-  const now = new Date();
-  const dayIndex = now.getDay(); // 0 是 Sunday
-  const weekdays = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
-  const currentWeekday = weekdays[dayIndex];
-  const previousWeekday = weekdays[(dayIndex + 6) % 7];
-
-  const nowMinutes = now.getHours() * 60 + now.getMinutes();
-
-  const checkPeriods = [
-    ...(businessHours[currentWeekday] || []),
-    ...(businessHours[previousWeekday] || []).filter(period => {
-      const [start, end] = period.split('-');
-      const [startH, startM] = start.split(':').map(Number);
-      const [endH, endM] = end.split(':').map(Number);
-      return (endH * 60 + endM) < (startH * 60 + startM); // 跨夜時段才會考慮
-    }).map(period => {
-      const [start, end] = period.split('-');
-      return [`-1d ${start}`, end]; // 標記為昨天的跨夜時段
-    }),
-  ];
-
-  return checkPeriods.some(period => {
-    let [start, end] = typeof period === 'string' ? period.split('-') : period;
-
-    const isPreviousDay = start.startsWith('-1d');
-    if (isPreviousDay) {
-      start = start.replace('-1d ', '');
-    }
-
-    const [startH, startM] = start.split(':').map(Number);
-    const [endH, endM] = end.split(':').map(Number);
-
-    const startMinutes = startH * 60 + startM;
-    const endMinutes = endH * 60 + endM;
-
-    if (isPreviousDay) {
-      // 跨夜情況：現在時間必須小於 end
-      return nowMinutes <= endMinutes;
-    } else if (endMinutes < startMinutes) {
-      // 當日跨夜：例如 22:00–01:00
-      return nowMinutes >= startMinutes || nowMinutes <= endMinutes;
-    } else {
-      return nowMinutes >= startMinutes && nowMinutes <= endMinutes;
-    }
-  });
-}
 export const cityCenterMap: Record<string, [number, number]> = {
     "基隆市": [25.1283, 121.7419],
     "台北市": [25.0330, 121.5654],
@@ -100,14 +49,23 @@ export const cityCenterMap: Record<string, [number, number]> = {
 
 type HomeClientProps = {
   embed?: boolean;
-  initialHospitals?: Hospital[];
+  initialHospitals?: HospitalSummary[];
   initialUpdates?: HospitalUpdate[];
+  initialUpdateHospitals?: HospitalSummary[];
+  hospitalCount?: number;
 };
 
-export default function HomeClient({ embed = false, initialHospitals = [], initialUpdates = [] }: HomeClientProps) {
-  const [filteredHospitals, setFilteredHospitals] = useState<Hospital[]>(initialHospitals);
-  const [allHospitals, setAllHospitals] = useState<Hospital[]>(initialHospitals);
-  const [hospitalUpdates, setHospitalUpdates] = useState<HospitalUpdate[]>(initialUpdates);
+export default function HomeClient({
+  embed = false,
+  initialHospitals = [],
+  initialUpdates = [],
+  initialUpdateHospitals = [],
+  hospitalCount = initialHospitals.length,
+}: HomeClientProps) {
+  const [isPending, startTransition] = useTransition();
+  const [filteredHospitals, setFilteredHospitals] = useState<HospitalSummary[]>(initialHospitals);
+  const hospitalUpdates = initialUpdates;
+  const [updateHospitals] = useState<HospitalSummary[]>(initialUpdateHospitals);
   const [selectedHospital, setSelectedHospital] = useState<Hospital | null>(null);
   const [selectedUpdate, setSelectedUpdate] = useState<{ update: HospitalUpdate; hospital: Hospital } | null>(null);
   const [city, setCity] = useState("台北市");
@@ -117,55 +75,43 @@ export default function HomeClient({ embed = false, initialHospitals = [], initi
   const [openNowOnly, setOpenNowOnly] = useState(false);
 
   const handleSearch = () => {    
-    let filtered = allHospitals;
-
-    if (city !== 'all') {
-      filtered = filtered.filter(h => h.city === city);
-    }
-
-    if (type !== 'all') {
-      filtered = filtered.filter(h => {
-        const categories = [...(h.pet_category_group || []), ...(h.pets || [])];
-        return categories.some(category => getCanonicalPetCategory(category) === type);
-      });
-    }
-
-    if (reservationRequiredOnly) {
-      filtered = filtered.filter(h => h.reservationRequired === false);
-    }
-
-    if (openNowOnly) {
-      filtered = filtered.filter(h => isOpenNow(h.business_hours));
-    }
-
-    setFilteredHospitals(filtered);
     const newCenter = cityCenterMap[city] || cityCenterMap['all'];
     setMapCenter(newCenter);
+    startTransition(async () => {
+      const filtered = await searchHospitals({
+        city,
+        petCategory: type,
+        reservationRequiredOnly,
+        openNowOnly,
+      });
+      setFilteredHospitals(filtered);
+    });
   };
 
-  // 初始載入醫院資料
-  useEffect(() => {
-    if (initialHospitals.length > 0) {
-      return;
-    }
+  const handleHospitalClick = (hospital: HospitalSummary) => {
+    startTransition(async () => {
+      const detail = await getHospitalDetail(hospital.id);
+      if (detail) {
+        setSelectedHospital(detail);
+      }
+    });
+  };
 
-    async function fetchHospitals() {
-      const [hospitals, updates] = await Promise.all([
-        getHospitals(),
-        getHospitalUpdates(30),
-      ]);
-      setAllHospitals(hospitals);
-      setFilteredHospitals(hospitals)
-      setHospitalUpdates(updates);
-    }
-    fetchHospitals();
-  }, [initialHospitals.length]);
+  const handleUpdateClick = (update: HospitalUpdate, hospital: HospitalSummary) => {
+    startTransition(async () => {
+      const detail = await getHospitalDetail(hospital.id);
+      if (detail) {
+        setSelectedUpdate({ update, hospital: detail });
+      }
+    });
+  };
+
   useEffect(() => {
     handleSearch()
-  }, [allHospitals, city, type, reservationRequiredOnly, openNowOnly]);
+  }, [city, type, reservationRequiredOnly, openNowOnly]);
 
-  const totalLabel = allHospitals.length > 0 ? `${allHospitals.length} 間` : '整理中';
-  const resultLabel = filteredHospitals.length > 0 ? `${filteredHospitals.length} 間符合` : '沒有符合結果';
+  const totalLabel = hospitalCount > 0 ? `${hospitalCount} 間` : '整理中';
+  const resultLabel = isPending ? '搜尋中' : filteredHospitals.length > 0 ? `${filteredHospitals.length} 間符合` : '沒有符合結果';
 
   return (
     <div className={`site-shell min-h-screen ${embed ? 'embed-shell' : ''}`}>
@@ -211,10 +157,10 @@ export default function HomeClient({ embed = false, initialHospitals = [], initi
 
         <div className={embed ? "grid grid-cols-1 gap-4" : "grid grid-cols-1 gap-5 lg:grid-cols-[minmax(320px,420px)_1fr]"}>
           <aside className={embed ? "order-2" : "order-2 lg:order-1"}>
-            <HospitalList hospitals={filteredHospitals} onHospitalClick={setSelectedHospital} />
+            <HospitalList hospitals={filteredHospitals} onHospitalClick={handleHospitalClick} />
           </aside>
           <section className={embed ? "order-1" : "order-1 lg:order-2"}>
-            <MapPanel hospitals={filteredHospitals} center={mapCenter} onHospitalClick={setSelectedHospital} embed={embed} />
+            <MapPanel hospitals={filteredHospitals} center={mapCenter} onHospitalClick={handleHospitalClick} embed={embed} />
           </section>
         </div>
 
@@ -223,8 +169,8 @@ export default function HomeClient({ embed = false, initialHospitals = [], initi
             <SponsoredSlot context="home" className="mt-5" />
             <HospitalUpdates
               updates={hospitalUpdates}
-              hospitals={allHospitals}
-              onUpdateClick={(update, hospital) => setSelectedUpdate({ update, hospital })}
+              hospitals={updateHospitals}
+              onUpdateClick={handleUpdateClick}
             />
           </>
         )}
