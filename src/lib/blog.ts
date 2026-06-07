@@ -6,6 +6,8 @@ export type BlogPostMeta = {
   slug: string;
   excerpt: string;
   date: string;
+  publishAt?: string;
+  updatedAt?: string;
   petCategory: string;
   topicTags: string[];
   readingTime: string;
@@ -15,6 +17,12 @@ export type BlogPostMeta = {
 
 export type BlogPost = BlogPostMeta & {
   content: string;
+};
+
+export type BlogPostTextStats = {
+  wordCount: number;
+  cjkCharacterCount: number;
+  latinWordCount: number;
 };
 
 const blogDirectory = path.join(process.cwd(), "src", "content", "blog");
@@ -89,17 +97,22 @@ function stripQuotes(value: string) {
   return value.replace(/^["']/, "").replace(/["']$/, "");
 }
 
-export function getAllPosts(): BlogPost[] {
+type GetAllPostsOptions = {
+  includeScheduled?: boolean;
+};
+
+export function getAllPosts(options: GetAllPostsOptions = {}): BlogPost[] {
   if (!fs.existsSync(blogDirectory)) return [];
 
   return fs
     .readdirSync(blogDirectory)
-    .filter((fileName) => fileName.endsWith(".mdx"))
+    .filter((fileName) => fileName.endsWith(".mdx") && !fileName.startsWith("_"))
     .map((fileName) => {
       const filePath = path.join(blogDirectory, fileName);
       return parseFrontmatter(fs.readFileSync(filePath, "utf8"));
     })
-    .sort((a, b) => b.date.localeCompare(a.date));
+    .filter((post) => options.includeScheduled || isPublished(post))
+    .sort((a, b) => getPublishSortValue(b).localeCompare(getPublishSortValue(a)));
 }
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
@@ -126,4 +139,43 @@ export function getFilteredPosts({
     const matchesTopic = !topicTag || post.topicTags.includes(topicTag);
     return matchesCategory && matchesTopic;
   });
+}
+
+function isPublished(post: BlogPost) {
+  if (!post.publishAt) return true;
+
+  const publishedAt = new Date(post.publishAt);
+  if (Number.isNaN(publishedAt.getTime())) return true;
+
+  return publishedAt.getTime() <= Date.now();
+}
+
+function getPublishSortValue(post: BlogPost) {
+  return post.publishAt || post.date;
+}
+
+export function getPostModifiedDate(post: BlogPost) {
+  return post.updatedAt || post.date;
+}
+
+export function getPostTextStats(post: BlogPost): BlogPostTextStats {
+  const plainText = post.content
+    .replace(/```[\s\S]*?```/g, " ")
+    .replace(/<([A-Za-z][A-Za-z0-9]*)\b[^>]*>([\s\S]*?)<\/\1>/g, " $2 ")
+    .replace(/<[^>]+\/?>/g, " ")
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/[#{}`*_~>|-]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  const cjkCharacterCount = plainText.match(/\p{Script=Han}/gu)?.length ?? 0;
+  const latinWordCount =
+    plainText
+      .replace(/\p{Script=Han}/gu, " ")
+      .match(/[A-Za-z0-9]+(?:[-'][A-Za-z0-9]+)*/g)?.length ?? 0;
+
+  return {
+    wordCount: cjkCharacterCount + latinWordCount,
+    cjkCharacterCount,
+    latinWordCount,
+  };
 }

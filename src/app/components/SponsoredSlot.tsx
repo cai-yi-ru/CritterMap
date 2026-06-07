@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
@@ -30,6 +30,11 @@ const slotByContext: Record<SponsoredSlotProps["context"], string | undefined> =
   "blog-article": process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_ARTICLE || process.env.NEXT_PUBLIC_ADSENSE_SLOT,
 };
 
+const adFallbackCopy = {
+  title: "這裡預留給精選內容與合作推薦",
+  description: "廣告或合作內容暫時未顯示，版面仍會保持低干擾。",
+};
+
 declare global {
   interface Window {
     adsbygoogle?: unknown[];
@@ -37,6 +42,8 @@ declare global {
 }
 
 export default function SponsoredSlot({ context, className }: SponsoredSlotProps) {
+  const slotRef = useRef<HTMLDivElement>(null);
+  const [showAdFallback, setShowAdFallback] = useState(false);
   const copy = copyByContext[context];
   const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
   const adsenseSlot = slotByContext[context];
@@ -44,6 +51,7 @@ export default function SponsoredSlot({ context, className }: SponsoredSlotProps
 
   useEffect(() => {
     if (!isAdsenseReady) {
+      setShowAdFallback(false);
       return;
     }
 
@@ -53,6 +61,48 @@ export default function SponsoredSlot({ context, className }: SponsoredSlotProps
     } catch {
       // AdSense may reject duplicate pushes during client-side remounts.
     }
+
+    setShowAdFallback(false);
+    let canShowFallback = false;
+
+    const updateFallbackState = () => {
+      if (!canShowFallback) {
+        return;
+      }
+
+      const slot = slotRef.current;
+      const adNode = slot?.querySelector<HTMLModElement>(".adsbygoogle");
+
+      if (!slot || !adNode) {
+        setShowAdFallback(true);
+        return;
+      }
+
+      const hasRenderedFrame = Boolean(adNode.querySelector("iframe"));
+      const adStatus = adNode.getAttribute("data-ad-status");
+      const isVisiblyCollapsed = adNode.offsetHeight < 24 || adNode.offsetWidth < 24;
+
+      setShowAdFallback(!hasRenderedFrame && (adStatus === "unfilled" || isVisiblyCollapsed));
+    };
+
+    const fallbackTimer = window.setTimeout(() => {
+      canShowFallback = true;
+      updateFallbackState();
+    }, 2600);
+    const observer = new MutationObserver(updateFallbackState);
+
+    if (slotRef.current) {
+      observer.observe(slotRef.current, {
+        attributes: true,
+        childList: true,
+        subtree: true,
+      });
+    }
+
+    return () => {
+      window.clearTimeout(fallbackTimer);
+      observer.disconnect();
+    };
   }, [isAdsenseReady, adsenseSlot]);
 
   return (
@@ -65,7 +115,7 @@ export default function SponsoredSlot({ context, className }: SponsoredSlotProps
       aria-label={isAdsenseReady ? "廣告" : "贊助資訊版位"}
     >
       {isAdsenseReady ? (
-        <>
+        <div ref={slotRef}>
           <div className="mb-2 flex items-center justify-between gap-3">
             <Badge variant="outline" className="border-honey-200 bg-white/70 text-clay-700">
               廣告
@@ -81,20 +131,26 @@ export default function SponsoredSlot({ context, className }: SponsoredSlotProps
             data-ad-format="auto"
             data-full-width-responsive="true"
           />
-        </>
-      ) : (
-      <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <div className="mb-1 flex items-center gap-2">
-            <Badge variant="outline" className="border-honey-200 bg-white/70 text-clay-700">
-              贊助資訊
-            </Badge>
-            <span className="font-bold text-forest-900">{copy.title}</span>
-          </div>
-          <p className="leading-6 text-clay-700">{copy.description}</p>
+          {showAdFallback && (
+            <div className="flex min-h-[84px] flex-col items-center justify-center px-3 py-4 text-center">
+              <p className="text-sm font-bold text-forest-900">{adFallbackCopy.title}</p>
+              <p className="mt-1 max-w-[32rem] text-xs leading-6 text-clay-700">{adFallbackCopy.description}</p>
+            </div>
+          )}
         </div>
-        <span className="text-xs font-medium text-clay-700/80">預留版位</span>
-      </div>
+      ) : (
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <div className="mb-1 flex items-center gap-2">
+              <Badge variant="outline" className="border-honey-200 bg-white/70 text-clay-700">
+                贊助資訊
+              </Badge>
+              <span className="font-bold text-forest-900">{copy.title}</span>
+            </div>
+            <p className="leading-6 text-clay-700">{copy.description}</p>
+          </div>
+          <span className="text-xs font-medium text-clay-700/80">預留版位</span>
+        </div>
       )}
     </aside>
   );

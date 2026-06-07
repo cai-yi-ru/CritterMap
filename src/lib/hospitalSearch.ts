@@ -94,7 +94,8 @@ function isOpenNow(businessHours?: Record<string, string[]>): boolean {
   ];
 
   return checkPeriods.some((period) => {
-    let [start, end] = typeof period === "string" ? period.split("-") : period;
+    const [rawStart, end] = typeof period === "string" ? period.split("-") : period;
+    let start = rawStart;
     const isPreviousDay = start.startsWith("-1d");
 
     if (isPreviousDay) {

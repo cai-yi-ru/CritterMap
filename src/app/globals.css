@@ -141,51 +141,130 @@ a {
 }
 
 .prose-critter h2 {
-  margin-top: 2.4rem;
-  margin-bottom: 0.9rem;
-  font-size: 1.55rem;
+  margin-top: 2.75rem;
+  margin-bottom: 0.85rem;
+  max-width: 30em;
+  font-size: 1.45rem;
+  line-height: 1.35;
   font-weight: 800;
   color: #203c35;
+  text-wrap: balance;
+}
+
+.prose-critter h2::after {
+  display: block;
+  width: 3rem;
+  height: 2px;
+  margin-top: 0.75rem;
+  border-radius: 9999px;
+  background: #c4dcc0;
+  content: "";
 }
 
 .prose-critter h3 {
-  margin-top: 1.8rem;
+  margin-top: 1.75rem;
   margin-bottom: 0.7rem;
+  max-width: 34em;
   font-size: 1.2rem;
+  line-height: 1.45;
   font-weight: 800;
   color: #203c35;
+  text-wrap: balance;
 }
 
 .prose-critter p {
+  max-width: 72ch;
   margin: 1rem 0;
+  font-size: 1rem;
   line-height: 2;
-  color: #57534e;
+  color: #44403c;
+  text-wrap: pretty;
 }
 
 .prose-critter ul,
 .prose-critter ol {
+  max-width: 72ch;
   margin: 1rem 0;
   padding-left: 1.25rem;
-  color: #57534e;
+  color: #44403c;
+}
+
+.prose-critter ul {
+  list-style: disc;
+}
+
+.prose-critter ol {
+  list-style: decimal;
 }
 
 .prose-critter li {
-  margin: 0.45rem 0;
-  line-height: 1.8;
+  margin: 0.5rem 0;
+  padding-left: 0.2rem;
+  line-height: 1.9;
+}
+
+.prose-critter li::marker {
+  color: #557f54;
+  font-weight: 800;
 }
 
 .prose-critter blockquote {
-  margin: 1.5rem 0;
+  max-width: 72ch;
+  margin: 1.75rem 0;
   border: 1px solid #c4dcc0;
-  border-radius: 14px;
-  background: #eef6ee;
-  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  background: #f4fbf3;
+  padding: 1rem 1.15rem;
   color: #203c35;
   font-weight: 600;
 }
 
 .prose-critter strong {
   color: #203c35;
+}
+
+.prose-critter a {
+  color: #2f5d50;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #a8cda3;
+  text-underline-offset: 3px;
+}
+
+.blog-article-image,
+.prose-critter figure img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.prose-reminder-description {
+  text-wrap: pretty;
+}
+
+@media (max-width: 640px) {
+  .prose-critter h2 {
+    font-size: 1.3rem;
+    line-height: 1.45;
+  }
+
+  .prose-critter p,
+  .prose-critter li {
+    line-height: 1.9;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }
 
 @theme inline {

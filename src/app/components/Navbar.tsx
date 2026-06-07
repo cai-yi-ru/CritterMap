@@ -15,8 +15,9 @@ export default function Navbar() {
     <nav className="fixed inset-x-0 top-0 z-50 border-b border-sage-100 bg-background/92 backdrop-blur-xl">
       <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="group flex items-center gap-3" aria-label="回到小獸所首頁">
-          <div className="flex size-10 items-center justify-center rounded-xl bg-primary text-base font-black text-primary-foreground transition group-hover:-rotate-3">
-            小
+          <div className="flex size-10 flex-col items-center justify-center rounded-xl bg-primary text-xs font-black leading-[0.95] text-primary-foreground transition group-hover:-rotate-3">
+            <span>特</span>
+            <span>寵</span>
           </div>
           <div>
             <div className="text-lg font-extrabold text-forest-900">小獸所</div>

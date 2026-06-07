@@ -3,7 +3,7 @@ import HomeClient from './HomeClient';
 import { getHospitals } from "@/lib/getHospitals";
 import { getHospitalUpdates } from "@/lib/getHospitalUpdates";
 import { filterHospitals, summarizeHospitals } from "@/lib/hospitalSearch";
-import { absoluteUrl, defaultDescription, defaultTitle, siteName, siteUrl } from "@/lib/seo";
+import { defaultDescription, defaultTitle, siteName, siteUrl } from "@/lib/seo";
 
 export const metadata = {
   title: defaultTitle,

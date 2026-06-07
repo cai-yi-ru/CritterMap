@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getAllPosts } from "@/lib/blog";
+import { getAllPosts, getPostModifiedDate } from "@/lib/blog";
 import { getHospitals } from "@/lib/getHospitals";
 import { absoluteUrl } from "@/lib/seo";
 
@@ -23,16 +23,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: absoluteUrl("/blog"),
-      lastModified: posts[0]?.date ? new Date(posts[0].date) : new Date(),
+      lastModified: posts[0] ? new Date(getPostModifiedDate(posts[0])) : new Date(),
       changeFrequency: "weekly",
       priority: 0.7,
     },
     ...posts.map((post) => ({
       url: absoluteUrl(`/blog/${post.slug}`),
-      lastModified: new Date(post.date),
+      lastModified: new Date(getPostModifiedDate(post)),
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })),
   ];
 }
-
