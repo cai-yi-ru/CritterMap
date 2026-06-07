@@ -1,27 +1,15 @@
 "use client";
 
 import { Badge } from "@/components/ui/badge";
+import { formatPeriods, getBusinessHoursStatus, getTaiwanNow, weekdays } from "@/lib/businessHours";
 import type { Hospital } from "@/types/hospital";
 
 type BusinessHours = NonNullable<Hospital["business_hours"]>;
-type WeekdayKey = keyof BusinessHours;
 
 type BusinessHoursSummaryProps = {
   businessHours?: Hospital["business_hours"];
   fallbackHours?: string;
 };
-
-const weekdays: Array<{ key: WeekdayKey; label: string }> = [
-  { key: "mon", label: "週一" },
-  { key: "tue", label: "週二" },
-  { key: "wed", label: "週三" },
-  { key: "thu", label: "週四" },
-  { key: "fri", label: "週五" },
-  { key: "sat", label: "週六" },
-  { key: "sun", label: "週日" },
-];
-
-const dayIndexToKey: WeekdayKey[] = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
 
 export default function BusinessHoursSummary({ businessHours, fallbackHours }: BusinessHoursSummaryProps) {
   if (!businessHours) {
@@ -36,10 +24,10 @@ export default function BusinessHoursSummary({ businessHours, fallbackHours }: B
   }
 
   const now = new Date();
-  const todayKey = dayIndexToKey[now.getDay()];
+  const todayKey = getTaiwanNow(now).weekday;
   const todayLabel = weekdays.find((weekday) => weekday.key === todayKey)?.label || "今日";
   const todayPeriods = businessHours[todayKey] || [];
-  const todayStatus = getTodayStatus(todayPeriods, now);
+  const todayStatus = getBusinessHoursStatus(businessHours as BusinessHours, now);
 
   return (
     <section className="md:col-span-2">
@@ -99,89 +87,4 @@ export default function BusinessHoursSummary({ businessHours, fallbackHours }: B
       </p>
     </section>
   );
-}
-
-function getTodayStatus(periods: string[], now: Date) {
-  if (periods.length === 0) {
-    return {
-      kind: "closed-today" as const,
-      badge: "今日休診",
-      summary: "今日休診",
-    };
-  }
-
-  const nowMinutes = now.getHours() * 60 + now.getMinutes();
-  const parsedPeriods = periods.map(parsePeriod).filter(Boolean);
-  const currentPeriod = parsedPeriods.find((period) => {
-    if (!period) return false;
-    return period.end < period.start
-      ? nowMinutes >= period.start || nowMinutes <= period.end
-      : nowMinutes >= period.start && nowMinutes <= period.end;
-  });
-
-  if (currentPeriod) {
-    return {
-      kind: "open" as const,
-      badge: "營業中",
-      summary: `營業中至 ${formatMinutes(currentPeriod.end, currentPeriod.end < currentPeriod.start)}`,
-    };
-  }
-
-  const nextPeriod = parsedPeriods
-    .filter((period): period is NonNullable<typeof period> => Boolean(period))
-    .filter((period) => period.start > nowMinutes)
-    .sort((a, b) => a.start - b.start)[0];
-
-  if (nextPeriod) {
-    return {
-      kind: "later" as const,
-      badge: "今日有營業",
-      summary: `今日尚未營業，${formatMinutes(nextPeriod.start)} 開始`,
-    };
-  }
-
-  return {
-    kind: "ended" as const,
-    badge: "今日已結束",
-    summary: "今日營業時段已結束",
-  };
-}
-
-function formatPeriods(periods: string[]) {
-  if (periods.length === 0) return "休診";
-  return periods.map(formatPeriod).join("、");
-}
-
-function formatPeriod(period: string) {
-  const parsed = parsePeriod(period);
-  if (!parsed) return period;
-
-  return `${formatMinutes(parsed.start)}-${formatMinutes(parsed.end, parsed.end < parsed.start)}`;
-}
-
-function parsePeriod(period: string) {
-  const [start, end] = period.split("-");
-  const startMinutes = parseTime(start);
-  const endMinutes = parseTime(end);
-
-  if (startMinutes === undefined || endMinutes === undefined) return undefined;
-
-  return {
-    start: startMinutes,
-    end: endMinutes,
-  };
-}
-
-function parseTime(value?: string) {
-  if (!value) return undefined;
-  const [hour, minute] = value.split(":").map(Number);
-  if (!Number.isFinite(hour) || !Number.isFinite(minute)) return undefined;
-  return hour * 60 + minute;
-}
-
-function formatMinutes(minutes: number, isNextDay = false) {
-  const normalizedMinutes = minutes % (24 * 60);
-  const hour = Math.floor(normalizedMinutes / 60).toString().padStart(2, "0");
-  const minute = (normalizedMinutes % 60).toString().padStart(2, "0");
-  return `${isNextDay ? "隔日 " : ""}${hour}:${minute}`;
 }

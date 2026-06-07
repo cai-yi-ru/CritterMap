@@ -70,7 +70,7 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
       <div className="mb-4 flex flex-col gap-3 xl:flex-row xl:items-center xl:justify-between">
         <div>
           <h2 className="text-lg font-extrabold text-forest-900">篩選條件</h2>
-          <p className="mt-1 text-sm leading-6 text-stone-500">先縮小範圍，再打電話確認看診資訊。</p>
+          <p className="mt-1 text-sm leading-6 text-stone-500">先用條件篩選，再致電確認門診時間與是否能看診。</p>
         </div>
         <div className="flex w-fit items-center gap-2 rounded-full border border-sage-100 bg-sage-50 px-3 py-2 text-xs font-bold text-stone-600">
           <span className="inline-flex items-center gap-1.5"><span className="h-2.5 w-2.5 rounded-full bg-sage-500" />一般標記</span>

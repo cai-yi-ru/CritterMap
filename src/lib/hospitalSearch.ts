@@ -3,6 +3,7 @@ import "server-only";
 import { getActiveAnnouncements } from "@/lib/hospitalAnnouncements";
 import { getHospitalDisplayTags } from "@/lib/hospitalDisplayTags";
 import { getHospitalReservationLabel, getHospitalReservationTone } from "@/lib/hospitalReservation";
+import { isOpenNow } from "@/lib/businessHours";
 import { getCanonicalPetCategory } from "@/lib/petIcons";
 import type { Hospital } from "@/types/hospital";
 import type { HospitalSummary } from "@/types/hospitalPublic";
@@ -66,55 +67,4 @@ export function summarizeHospital(hospital: Hospital): HospitalSummary {
 
 export function summarizeHospitals(hospitals: Hospital[]) {
   return hospitals.map(summarizeHospital);
-}
-
-function isOpenNow(businessHours?: Record<string, string[]>): boolean {
-  if (!businessHours) return false;
-
-  const now = new Date();
-  const dayIndex = now.getDay();
-  const weekdays = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
-  const currentWeekday = weekdays[dayIndex];
-  const previousWeekday = weekdays[(dayIndex + 6) % 7];
-  const nowMinutes = now.getHours() * 60 + now.getMinutes();
-
-  const checkPeriods = [
-    ...(businessHours[currentWeekday] || []),
-    ...(businessHours[previousWeekday] || [])
-      .filter((period) => {
-        const [start, end] = period.split("-");
-        const [startH, startM] = start.split(":").map(Number);
-        const [endH, endM] = end.split(":").map(Number);
-        return endH * 60 + endM < startH * 60 + startM;
-      })
-      .map((period) => {
-        const [start, end] = period.split("-");
-        return [`-1d ${start}`, end];
-      }),
-  ];
-
-  return checkPeriods.some((period) => {
-    const [rawStart, end] = typeof period === "string" ? period.split("-") : period;
-    let start = rawStart;
-    const isPreviousDay = start.startsWith("-1d");
-
-    if (isPreviousDay) {
-      start = start.replace("-1d ", "");
-    }
-
-    const [startH, startM] = start.split(":").map(Number);
-    const [endH, endM] = end.split(":").map(Number);
-    const startMinutes = startH * 60 + startM;
-    const endMinutes = endH * 60 + endM;
-
-    if (isPreviousDay) {
-      return nowMinutes <= endMinutes;
-    }
-
-    if (endMinutes < startMinutes) {
-      return nowMinutes >= startMinutes || nowMinutes <= endMinutes;
-    }
-
-    return nowMinutes >= startMinutes && nowMinutes <= endMinutes;
-  });
 }
