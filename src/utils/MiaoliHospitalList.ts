@@ -174,5 +174,107 @@ export const MiaoliHospitalList = [
     ],
     "updatedAt": "2026-06-02",
     "last_checked": "2026-06-02"
+  },
+  {
+    "id": "mrhoo-animal-hospital",
+    "name": "毛爾呼動物醫院",
+    "city": "苗栗縣",
+    "district": "頭份市",
+    "address": "苗栗縣頭份市中興里建國路二段197號",
+    "lat": 24.6957207,
+    "lng": 120.9020705,
+    "type": "exotic",
+    "typeText": "犬貓診療、特寵診療",
+    "phone": "037-674-882",
+    "specialEvents": [],
+    "hours": "週一至週五 09:00–12:00、14:00–18:00、19:00–21:00；週六休診；週日 09:00–12:00、14:00–18:00。特殊寵物門診為每週一、二、四，建議先電話預約。",
+    "business_hours": {
+      "mon": [
+        "09:00-12:00",
+        "14:00-18:00",
+        "19:00-21:00"
+      ],
+      "tue": [
+        "09:00-12:00",
+        "14:00-18:00",
+        "19:00-21:00"
+      ],
+      "wed": [
+        "09:00-12:00",
+        "14:00-18:00",
+        "19:00-21:00"
+      ],
+      "thu": [
+        "09:00-12:00",
+        "14:00-18:00",
+        "19:00-21:00"
+      ],
+      "fri": [
+        "09:00-12:00",
+        "14:00-18:00",
+        "19:00-21:00"
+      ],
+      "sat": [],
+      "sun": [
+        "09:00-12:00",
+        "14:00-18:00"
+      ]
+    },
+    "reservationRequired": false,
+    "hasEmergencyService": false,
+    "emergencyHours": "",
+    "nightClinic": true,
+    "services": [
+      "犬貓診療",
+      "特殊寵物門診",
+      "小型哺乳類診療"
+    ],
+    "pets": [
+      "犬",
+      "貓",
+      "兔",
+      "鼠",
+      "蜜袋鼯",
+      "貂"
+    ],
+    "pet_category_group": [
+      "狗",
+      "貓",
+      "兔",
+      "鼠",
+      "蜜袋鼯",
+      "貂",
+      "其他特寵"
+    ],
+    "specialties": [
+      "犬貓醫療",
+      "兔鼠等小型哺乳類診療"
+    ],
+    "website": "https://www.facebook.com/Mrhoo674882/",
+    "appointmentLink": "",
+    "transportTips": "位於頭份市建國路二段，鄰近中興里與頭份交流道生活圈，建議使用導航前往。",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/Mrhoo674882/"
+    },
+    "google": {
+      "rating": "4.2",
+      "reviewCount": 196,
+      "mapsUrl": "https://www.google.com/maps/place/%E6%AF%9B%E7%88%BE%E5%91%BC%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.6957207,120.9020705,17z/data=!3m1!4b1!4m6!3m5!1s0x34684ddca9096895:0xe349af4dbac032cc!8m2!3d24.6957207!4d120.9020705!16s%2Fg%2F11t1jytdtg",
+      "reviewsUrl": "https://www.google.com/maps/place/%E6%AF%9B%E7%88%BE%E5%91%BC%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.6957207,120.9020705,17z/data=!4m8!3m7!1s0x34684ddca9096895:0xe349af4dbac032cc!8m2!3d24.6957207!4d120.9020705!9m1!1b1!16s%2Fg%2F11t1jytdtg",
+      "placeId": "0x34684ddca9096895:0xe349af4dbac032cc",
+      "verifiedAt": "2026-06-09"
+    },
+    "clinicNotes": "本院提供犬貓診療，官方 Facebook 公告另有特殊寵物獸醫師看診兔、鼠、蜜袋鼯、雪貂等小型哺乳動物。\n特殊寵物門診為每週一、二、四，來診前建議先致電 037-674-882 預約或確認當日醫師時段。\n目前未見特寵急診服務資訊，晚間或急症建議先電話確認是否能接診。",
+    "specialClinic": {
+      "hasExoticSpecialClinic": true,
+      "label": "特殊寵物門診",
+      "note": "每週一、二、四由特殊寵物獸醫師看診兔、鼠、蜜袋鼯、雪貂等小型哺乳動物；來診前建議先電話預約。",
+      "reservationRequired": true,
+      "sourceLabel": "官方 Facebook",
+      "sourceUrl": "https://www.facebook.com/Mrhoo674882/",
+      "verifiedAt": "2026-06-09"
+    },
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   }
 ];

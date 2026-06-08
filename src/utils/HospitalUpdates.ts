@@ -5,6 +5,17 @@ import type { HospitalUpdate } from '@/types/hospital';
 // Run `npm run prune:hospital-updates` to preview expired items, then use `:write` to prune.
 export const HospitalUpdateList: HospitalUpdate[] = [
   {
+    id: 'update-miaoli-mrhoo-content-2026-06-09',
+    hospitalId: 'mrhoo-animal-hospital',
+    type: 'content',
+    title: '新增毛爾呼動物醫院',
+    summary: '新增毛爾呼動物醫院，院址為苗栗縣頭份市中興里建國路二段197號，電話 037-674-882；官方 Facebook 與 Google Maps 顯示本院提供犬貓診療，另有每週一、二、四特殊寵物門診，看診兔、鼠、蜜袋鼯、雪貂等小型哺乳動物，建議先電話預約。',
+    updatedAt: '2026-06-09',
+    sourceLabel: '官方 Facebook、Google Maps',
+    sourceUrl: 'https://www.facebook.com/Mrhoo674882/',
+    verifiedAt: '2026-06-09',
+  },
+  {
     id: 'update-tainan-fiord-hours-2026-06-03',
     hospitalId: 'fiord-animal-hospital',
     type: 'hours',
