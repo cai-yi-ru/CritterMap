@@ -1,7 +1,7 @@
 
 'use client';
 
-import { useEffect, useTransition, useState } from 'react';
+import { useCallback, useEffect, useTransition, useState } from 'react';
 import dynamic from 'next/dynamic';
 import Navbar from './components/Navbar';
 import FilterPanel from './components/FilterPanel';
@@ -73,8 +73,9 @@ export default function HomeClient({
   const [mapCenter, setMapCenter] = useState<[number, number]>(cityCenterMap['all']);
   const [reservationRequiredOnly, setReservationRequiredOnly] = useState(false);
   const [openNowOnly, setOpenNowOnly] = useState(false);
+  const [hasEmergencyServiceOnly, setHasEmergencyServiceOnly] = useState(false);
 
-  const handleSearch = () => {    
+  const handleSearch = useCallback(() => {
     const newCenter = cityCenterMap[city] || cityCenterMap['all'];
     setMapCenter(newCenter);
     startTransition(async () => {
@@ -83,10 +84,11 @@ export default function HomeClient({
         petCategory: type,
         reservationRequiredOnly,
         openNowOnly,
+        hasEmergencyServiceOnly,
       });
       setFilteredHospitals(filtered);
     });
-  };
+  }, [city, hasEmergencyServiceOnly, openNowOnly, reservationRequiredOnly, startTransition, type]);
 
   const handleHospitalClick = (hospital: HospitalSummary) => {
     startTransition(async () => {
@@ -108,7 +110,7 @@ export default function HomeClient({
 
   useEffect(() => {
     handleSearch()
-  }, [city, type, reservationRequiredOnly, openNowOnly]);
+  }, [handleSearch]);
 
   const totalLabel = hospitalCount > 0 ? `${hospitalCount} 間` : '整理中';
   const resultLabel = isPending ? '搜尋中' : filteredHospitals.length > 0 ? `${filteredHospitals.length} 間符合` : '沒有符合結果';
@@ -148,11 +150,13 @@ export default function HomeClient({
           petCategory={type}
           reservationRequiredOnly={reservationRequiredOnly}
           openNowOnly={openNowOnly}
+          hasEmergencyServiceOnly={hasEmergencyServiceOnly}
           compact={embed}
           onCityChange={setCity}
           onPetCategoryChange={setType}
           onReservationRequiredToggle={setReservationRequiredOnly}
           onOpenNowToggle={setOpenNowOnly}
+          onHasEmergencyServiceToggle={setHasEmergencyServiceOnly}
           onSearch={handleSearch} />
 
         <div className={embed ? "grid grid-cols-1 gap-4" : "grid grid-cols-1 gap-5 lg:grid-cols-[minmax(320px,420px)_1fr]"}>

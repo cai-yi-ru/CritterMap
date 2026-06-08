@@ -13,6 +13,7 @@ type HospitalSearchFilters = {
   petCategory?: string;
   reservationRequiredOnly?: boolean;
   openNowOnly?: boolean;
+  hasEmergencyServiceOnly?: boolean;
 };
 
 export function filterHospitals(hospitals: Hospital[], filters: HospitalSearchFilters) {
@@ -35,6 +36,10 @@ export function filterHospitals(hospitals: Hospital[], filters: HospitalSearchFi
 
   if (filters.openNowOnly) {
     filtered = filtered.filter((hospital) => isOpenNow(hospital.business_hours));
+  }
+
+  if (filters.hasEmergencyServiceOnly) {
+    filtered = filtered.filter((hospital) => hospital.hasEmergencyService === true);
   }
 
   return filtered;

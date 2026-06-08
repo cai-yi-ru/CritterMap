@@ -8,6 +8,7 @@ type SearchHospitalsInput = {
   petCategory?: string;
   reservationRequiredOnly?: boolean;
   openNowOnly?: boolean;
+  hasEmergencyServiceOnly?: boolean;
 };
 
 export async function searchHospitals(input: SearchHospitalsInput) {

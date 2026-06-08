@@ -18,11 +18,13 @@ type FilterPanelProps = {
   petCategory?: string;
   reservationRequiredOnly?: boolean;
   openNowOnly?: boolean;
+  hasEmergencyServiceOnly?: boolean;
   compact?: boolean;
   onCityChange?: (value: string) => void;
   onPetCategoryChange?: (value: string) => void;
   onReservationRequiredToggle?: (checked: boolean) => void;
   onOpenNowToggle?: (checked: boolean) => void;
+  onHasEmergencyServiceToggle?: (checked: boolean) => void;
   onSearch?: () => void;
 };
 
@@ -58,11 +60,13 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
   petCategory = "all",
   reservationRequiredOnly = false,
   openNowOnly = false,
+  hasEmergencyServiceOnly = false,
   compact = false,
   onCityChange,
   onPetCategoryChange,
   onReservationRequiredToggle,
   onOpenNowToggle,
+  onHasEmergencyServiceToggle,
   onSearch,
 }) => {
   return (
@@ -78,7 +82,7 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
           <span className="inline-flex items-center gap-1.5"><span className="h-2.5 w-2.5 rounded-full bg-petal-400" />急診標記</span>
         </div>
       </div>
-      <div className={`grid grid-cols-1 items-end gap-3 ${compact ? "md:grid-cols-2" : "xl:grid-cols-[240px_minmax(280px,1fr)_210px_210px_150px]"}`}>
+      <div className={`grid grid-cols-1 items-end gap-3 ${compact ? "md:grid-cols-2" : "xl:grid-cols-[240px_minmax(280px,1fr)_minmax(420px,2fr)_150px]"}`}>
         <div className="order-1">
           <label htmlFor="city" className="mb-2 block text-xs font-extrabold tracking-wide text-forest-900">
             城市
@@ -130,14 +134,14 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
         </Select>
         </div>
 
-        <div className="order-3 grid gap-3 sm:grid-cols-2 xl:contents">
+        <div className={`order-3 grid gap-3 sm:grid-cols-2 xl:grid-cols-3 ${compact ? "md:col-span-2" : ""}`}>
             <label className={`flex min-h-14 cursor-pointer items-center gap-3 rounded-xl border px-4 py-3 transition ${
               reservationRequiredOnly
                 ? "border-sage-300 bg-sage-50"
                 : "border-sage-100 bg-white hover:border-sage-200"
             }`}>
                 <Checkbox
-                    id="emergency"
+                    id="reservationRequired"
                     checked={reservationRequiredOnly}
                     onCheckedChange={(checked) => onReservationRequiredToggle?.(checked === true)}
                 />
@@ -160,6 +164,22 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
                 <span>
                   <span className="block text-sm font-bold text-forest-900">目前營業中</span>
                   <span className="block text-xs text-stone-500">依營業時間資料判斷</span>
+                </span>
+            </label>
+
+            <label className={`flex min-h-14 cursor-pointer items-center gap-3 rounded-xl border px-4 py-3 transition ${
+              hasEmergencyServiceOnly
+                ? "border-petal-200 bg-petal-50"
+                : "border-sage-100 bg-white hover:border-sage-200"
+            }`}>
+                <Checkbox
+                    id="hasEmergencyService"
+                    checked={hasEmergencyServiceOnly}
+                    onCheckedChange={(checked) => onHasEmergencyServiceToggle?.(checked === true)}
+                />
+                <span>
+                  <span className="block text-sm font-bold text-forest-900">有急診服務</span>
+                  <span className="block text-xs text-stone-500">仍建議先電話確認</span>
                 </span>
             </label>
         </div>
