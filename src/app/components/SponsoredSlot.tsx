@@ -32,7 +32,7 @@ const slotByContext: Record<SponsoredSlotProps["context"], string | undefined> =
 
 const adFallbackCopy = {
   title: "這裡預留給精選內容與合作推薦",
-  description: "廣告或合作內容暫時未顯示，版面仍會保持低干擾。",
+  description: "廣告或合作內容暫時未顯示",
 };
 
 declare global {
