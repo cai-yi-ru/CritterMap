@@ -228,6 +228,7 @@ export const KaohsiungHospitalList = [
       }
     ]
   },
+  /*
   {
     "id": "kabu-animal-hospital-kaohsiung",
     "name": "卡布動物醫院",
@@ -336,6 +337,7 @@ export const KaohsiungHospitalList = [
       }
     ]
   },
+  */
   {
     "id": "8d652bb4-7f3a-4628-afbb-8e8e8f3f82a7",
     "name": "中興梅西動物醫療中心（特別寵物科）",
@@ -2295,6 +2297,7 @@ export const KaohsiungHospitalList = [
       }
     ]
   },
+  /*
   {
     "id": "udoch-animal-hospital",
     "name": "烏鐸動物醫院",
@@ -2390,6 +2393,7 @@ export const KaohsiungHospitalList = [
       "last_fb_post_text": ""
     }
   },
+  */
   {
     "id": "star-feather-animal-hospital-sanmin",
     "name": "星羽動物醫院（三民院）",
