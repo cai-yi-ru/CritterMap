@@ -339,11 +339,11 @@ export const HospitalUpdateList: HospitalUpdate[] = [
     hospitalId: 'changhong-animal-hospital',
     type: 'hours',
     title: '固定門診時間更新',
-    summary: '長宏動物醫院 Google Maps 顯示院名標註預約制，固定門診為週一至週五 09:30-12:00、13:30-17:00、18:30-21:00，週六 09:30-12:00、13:30-17:00，週日休診；官方網站與 Facebook 確認本院提供犬、貓、兔診療並建議電話預約。',
+    summary: '長宏動物醫院 Google Maps 顯示院名標註預約制，固定門診為週一至週五 09:30-12:00、13:30-17:00、18:30-21:00，週六 09:30-12:00、13:30-17:00，週日休診；官方網站標示主治犬、貓、兔等內外科，兔以外非犬貓個案建議先電話確認。',
     updatedAt: '2026-06-02',
     sourceLabel: '官方網站、官方 Facebook、Google Maps',
     sourceUrl: 'https://changchung0113.blogspot.com/p/blog-page.html',
-    verifiedAt: '2026-06-02',
+    verifiedAt: '2026-06-09',
   },
   {
     id: 'update-newtaipei-liming-content-2026-06-02',
