@@ -5,6 +5,17 @@ import type { HospitalUpdate } from '@/types/hospital';
 // Run `npm run prune:hospital-updates` to preview expired items, then use `:write` to prune.
 export const HospitalUpdateList: HospitalUpdate[] = [
   {
+    id: 'update-taichung-legendpet-content-2026-06-10',
+    hospitalId: 'legendpet-animal-hospital-taichung',
+    type: 'content',
+    title: '新增傳騏動物醫院',
+    summary: '新增傳騏動物醫院，院址為台中市南屯區永春東七路521號，電話 04-2389-3177；官方網站、Facebook 與 Google Maps 顯示本院提供犬貓內外科、微創手術、腫瘤科與特寵門診，採預約制，特寵就診請先確認醫師時段與可看診物種。',
+    updatedAt: '2026-06-10',
+    sourceLabel: '官方網站、官方 Facebook、Google Maps',
+    sourceUrl: 'https://www.legendpet.com.tw/',
+    verifiedAt: '2026-06-10',
+  },
+  {
     id: 'update-nantou-drlang-content-2026-06-09',
     hospitalId: 'dr-lang-animal-hospital',
     type: 'content',

@@ -615,7 +615,7 @@ export const TaichungHospitalList = [
     ],
     "clinicNotes": "本院為兔科專科診所，採預約制；服務以中西獸醫整合醫療為主，包含中獸醫、復健、針灸、推拿、中藥調理、健康檢查與病後調理。\n院方公開說明無外科與急診重症服務。拿藥前請依公告提前 2 至 3 天透過 LINE 告知，額外院休與門診異動請先查看官方 Facebook 公告。",
     "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "last_checked": "2026-06-10"
   },
   {
     "id": "grace-animal-hospital-taichung",
@@ -688,7 +688,7 @@ export const TaichungHospitalList = [
       "鼠",
       "鳥類",
       "爬蟲",
-      "蜜袋鼯"
+      "兩棲"
     ],
     "pet_category_group": [
       "狗",
@@ -697,7 +697,6 @@ export const TaichungHospitalList = [
       "鼠",
       "鳥類",
       "爬蟲",
-      "蜜袋鼯",
       "兩棲"
     ],
     "specialties": [
@@ -724,9 +723,9 @@ export const TaichungHospitalList = [
       "reviewsUrl": "https://www.google.com/maps/place/%E6%84%9F%E6%81%A9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.1616989,120.6631104,17z/data=!4m8!3m7!1s0x34693d822ace849d:0x698ce5020b13861!8m2!3d24.1616989!4d120.6631104!9m1!1b1!16s%2Fg%2F11s8klwjpx",
       "verifiedAt": "2026-06-02"
     },
-    "clinicNotes": "本院提供犬貓一般門診與兔、鼠、鳥類、兩棲爬蟲類、蜜袋鼯等特寵診療，另有兔病、貓病、口腔保健、檢驗、行為門診與急診服務。\n一般門診建議先來電確認或預約；急診中心時段為每日 21:00-09:00，急診請撥 0931-784-894 聯繫。",
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "clinicNotes": "本院提供犬貓一般門診與兔科、鼠科、鳥科、兩棲爬蟲類等特寵診療，另有兔病、貓病、口腔保健、檢驗、行為門診與急診服務。\n一般門診建議先來電確認或預約；急診中心時段為每日 21:00-09:00，急診請撥 0931-784-894 聯繫。",
+    "updatedAt": "2026-06-10",
+    "last_checked": "2026-06-10"
   },
   {
     "id": "mowgli-animal-hospital-taichung",
@@ -948,12 +947,10 @@ export const TaichungHospitalList = [
     "emergencyHours": "",
     "nightClinic": false,
     "services": [
-      "犬貓內外科診療",
-      "龜類診療",
-      "蛇與爬蟲類診療",
-      "鼠科診療",
-      "兔科診療",
-      "鸚鵡與鳥類疾病診療",
+      "犬貓診療",
+      "龜蛇爬蟲診療",
+      "鼠兔貂類診療",
+      "鸚鵡鳥類疾病診療",
       "內視鏡手術",
       "動物皮膚專科"
     ],
@@ -966,7 +963,8 @@ export const TaichungHospitalList = [
       "爬蟲",
       "龜",
       "蛇",
-      "鸚鵡"
+      "鸚鵡",
+      "貂"
     ],
     "pet_category_group": [
       "狗",
@@ -974,7 +972,8 @@ export const TaichungHospitalList = [
       "兔",
       "鼠",
       "鳥類",
-      "爬蟲"
+      "爬蟲",
+      "貂"
     ],
     "specialties": [
       "鳥類疾病診療",
@@ -989,9 +988,9 @@ export const TaichungHospitalList = [
       "facebook": "https://www.facebook.com/asiafirstveterinary/",
       "instagram": ""
     },
-    "clinicNotes": "1️⃣ 提供犬貓與多種特殊寵物（龜、蛇、鼠、兔、鸚鵡與鳥類、爬蟲等）診療服務。\n2️⃣ 門診時間為週一至週六 09:00–12:00、17:00–19:45，12:00–17:00為休診時間，週日休診。\n3️⃣ 採現場掛號，建議提前到院候診。\n4️⃣ 無提供急診服務，請依門診時段安排就醫。",
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "clinicNotes": "本院提供犬貓診療，以及龜蛇爬蟲、鼠兔貂類、鸚鵡與鳥類等特寵診療，另有內視鏡手術與動物皮膚專科。\n門診時間為週一至週六 09:00-12:00、17:00-19:45，12:00-17:00 休診，週日休診；未見官方急診資訊，請依門診時段安排就醫。",
+    "updatedAt": "2026-06-10",
+    "last_checked": "2026-06-10"
   },
   {
     "id": "ohana-exotic-animal-hospital-taichung",
@@ -1108,6 +1107,116 @@ export const TaichungHospitalList = [
     "last_checked": "2026-06-02"
   },
   {
+    "id": "legendpet-animal-hospital-taichung",
+    "name": "傳騏動物醫院",
+    "city": "台中市",
+    "district": "南屯區",
+    "address": "台中市南屯區永春東七路521號",
+    "lat": 24.1383415,
+    "lng": 120.6326621,
+    "type": "exotic",
+    "typeText": "犬貓診療、特寵診療",
+    "phone": "04-2389-3177",
+    "specialEvents": [],
+    "hours": "週一至週日 10:00–20:30；請先預約或來電確認。2026 年 6 月 18 日院內訓練，18:00 開始看診。",
+    "business_hours": {
+      "mon": [
+        "10:00-20:30"
+      ],
+      "tue": [
+        "10:00-20:30"
+      ],
+      "wed": [
+        "10:00-20:30"
+      ],
+      "thu": [
+        "10:00-20:30"
+      ],
+      "fri": [
+        "10:00-20:30"
+      ],
+      "sat": [
+        "10:00-20:30"
+      ],
+      "sun": [
+        "10:00-20:30"
+      ]
+    },
+    "reservationRequired": true,
+    "hasEmergencyService": false,
+    "emergencyHours": "",
+    "nightClinic": true,
+    "services": [
+      "一般內科",
+      "一般外科",
+      "微創手術",
+      "牙科",
+      "一般眼科",
+      "復健科",
+      "心臟科",
+      "腫瘤科",
+      "特寵門診",
+      "健康檢查"
+    ],
+    "pets": [
+      "貓",
+      "狗",
+      "其他特寵"
+    ],
+    "pet_category_group": [
+      "貓",
+      "狗",
+      "其他特寵"
+    ],
+    "specialties": [
+      "微創手術",
+      "腫瘤科",
+      "牙科",
+      "骨科",
+      "心臟科",
+      "復健科",
+      "特寵門診"
+    ],
+    "website": "https://www.legendpet.com.tw/",
+    "appointmentLink": "https://forms.gle/koGX8Kd6kfEuZsE87",
+    "transportTips": "",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/LegendPet",
+      "instagram": "https://www.instagram.com/legend_animal_hospital/",
+      "youtube": "https://www.youtube.com/channel/UCwVR3JDecEvjEASMaTT3L5w"
+    },
+    "google": {
+      "rating": "4.9",
+      "reviewCount": 611,
+      "mapsUrl": "https://www.google.com/maps/place/%E5%82%B3%E9%A8%8F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2(%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%8C%E8%AB%8B%E5%85%88%E4%BE%86%E9%9B%BB%E8%A9%A2%E5%95%8F)/@24.1383415,120.6326621,17z/data=!3m1!4b1!4m6!3m5!1s0x34693d92567621b7:0xb595d27ef0084d97!8m2!3d24.1383415!4d120.6326621!16s%2Fg%2F11qq9dw9th",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%82%B3%E9%A8%8F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2(%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%8C%E8%AB%8B%E5%85%88%E4%BE%86%E9%9B%BB%E8%A9%A2%E5%95%8F)/@24.1383415,120.6326621,17z/data=!4m8!3m7!1s0x34693d92567621b7:0xb595d27ef0084d97!8m2!3d24.1383415!4d120.6326621!9m1!1b1!16s%2Fg%2F11qq9dw9th",
+      "verifiedAt": "2026-06-10"
+    },
+    "specialClinic": {
+      "hasExoticSpecialClinic": true,
+      "label": "特寵門診",
+      "note": "官方門診資訊列有特寵科醫師，特寵看診請先預約或來電確認醫師時段與可看診物種。",
+      "reservationRequired": true,
+      "sourceLabel": "官方網站、官方 Facebook",
+      "sourceUrl": "https://www.legendpet.com.tw/about_tw.php?id=12",
+      "verifiedAt": "2026-06-10"
+    },
+    "announcements": [
+      {
+        "id": "legendpet-june-2026-clinic-schedule",
+        "type": "hours_change",
+        "title": "2026 年 6 月門診提醒",
+        "content": "2026 年 6 月班表公告：李衛民獸醫師 6/13、6/27 12:00-18:00 休診；6/18 因院內訓練，18:00 開始看診。前往前請先預約或來電確認。",
+        "sourceLabel": "官方網站、官方 Facebook",
+        "sourceUrl": "https://www.legendpet.com.tw/about_tw.php?id=12",
+        "verifiedAt": "2026-06-10"
+      }
+    ],
+    "clinicNotes": "本院提供犬貓內外科、微創手術、牙科、心臟科、腫瘤科、復健科與特寵門診等服務；官方資料僅以「特寵門診／特寵科」描述特寵服務，未逐項公開列出可看診物種。\nGoogle 商家標示為預約制，官方 6 月班表也提醒請先預約或來電確認；雖已開放現場門診，特寵就診前仍建議先確認醫師時段與可受理物種。",
+    "updatedAt": "2026-06-10",
+    "last_checked": "2026-06-10"
+  },
+  {
     "id": "national-vet-7th-branch-taichung",
     "name": "全國動物醫院 七期分院",
     "city": "台中市",
@@ -1183,9 +1292,18 @@ export const TaichungHospitalList = [
       "reviewsUrl": "https://www.google.com.tw/maps/place/404%E8%87%BA%E4%B8%AD%E5%B8%82%E5%8C%97%E5%8D%80%E9%8C%A6%E7%A5%A5%E9%87%8C%E8%82%B2%E6%A8%82%E8%A1%9770%E8%99%9F/@24.1576863,120.6921967,733m/data=!4m8!3m7!1s0x34693d5e4de37439:0x404870446c5be5dd!8m2!3d24.1576863!4d120.6921967!9m1!1b1!16s%2Fg%2F11rhw2ktst",
       "verifiedAt": "2026-06-02"
     },
-    "clinicNotes": "本分院提供犬貓兔醫療照護，兔科為分院重點服務，包含兔科內外科診療、住院照護、MLS 雷射治療與兔科心臟超音波檢查。\n官方資訊顯示可預約掛號也可現場掛號；預約掛號至門診前 30 分鐘截止，現場掛號至門診前 15 分鐘截止。門診與營業時段不同，前往前建議先電話確認當日掛號安排。",
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "specialClinic": {
+      "hasExoticSpecialClinic": true,
+      "label": "兔科特別門診",
+      "note": "官方分院頁與團隊頁明列兔科服務，包含兔科內外科診療、住院照護、MLS 雷射治療與兔科心臟超音波檢查。",
+      "reservationRequired": false,
+      "sourceLabel": "官方分院頁、官方團隊頁",
+      "sourceUrl": "https://www.vet.com.tw/store_detail.php?Key=6",
+      "verifiedAt": "2026-06-10"
+    },
+    "clinicNotes": "本分院提供犬貓與兔科醫療照護，兔科為官方明列的特別門診服務，包含兔科內外科診療、住院照護、MLS 雷射治療與兔科心臟超音波檢查。\n官方資訊顯示可預約掛號也可現場掛號；預約掛號至門診前 30 分鐘截止，現場掛號至門診前 15 分鐘截止。門診與營業時段不同，前往前建議先電話確認當日掛號安排。",
+    "updatedAt": "2026-06-10",
+    "last_checked": "2026-06-10"
   },
   {
     "id": "national-vet-fengyuan-branch",
@@ -1250,7 +1368,6 @@ export const TaichungHospitalList = [
       "家醫科",
       "貓科",
       "兔科",
-      "心臟科",
       "皮膚科",
       "外科",
       "影像科"
@@ -1281,9 +1398,18 @@ export const TaichungHospitalList = [
         "verifiedAt": "2026-06-02"
       }
     ],
-    "clinicNotes": "本分院提供犬貓與兔科診療，官方團隊頁列有家醫科、貓科、兔科、皮膚科、外科與影像科服務。\n可預約掛號也可現場掛號；預約掛號至門診前 30 分鐘截止，現場掛號至門診前 15 分鐘截止。每月第 1 週週三上午至 15:00 僅提供寄療服務，前往前建議先電話確認。",
-    "updatedAt": "2026-06-04",
-    "last_checked": "2026-06-04"
+    "specialClinic": {
+      "hasExoticSpecialClinic": true,
+      "label": "兔科特別門診",
+      "note": "官方團隊頁將兔科列為特別門診，兔科就診前建議先依門診班表與電話確認。",
+      "reservationRequired": false,
+      "sourceLabel": "官方團隊頁",
+      "sourceUrl": "https://www.vet.com.tw/store_detail2.php?cID=13",
+      "verifiedAt": "2026-06-10"
+    },
+    "clinicNotes": "本分院提供犬貓與兔科診療，官方團隊頁列有家醫科、貓科、兔科、皮膚科、外科與影像科服務；兔科屬特別門診，建議先依門診班表與電話確認。\n可預約掛號也可現場掛號；預約掛號至門診前 30 分鐘截止，現場掛號至門診前 15 分鐘截止。每月第 1 週週三上午至 15:00 僅提供寄療服務，前往前建議先電話確認。",
+    "updatedAt": "2026-06-10",
+    "last_checked": "2026-06-10"
   },
   {
     "id": "asia-university-veterinary-teaching-hospital",
@@ -1501,9 +1627,9 @@ export const TaichungHospitalList = [
       "instagram": "https://www.instagram.com/taichung_versele_laga/",
       "line": "https://line.naver.jp/ti/p/~%40120tiigp"
     },
-    "clinicNotes": "本院以鳥類、賽鴿、爬蟲類、兩棲與小型哺乳類等特殊寵物醫療為主，官方服務項目包含專業內外科治療、精密影像診斷、住宿與術後照護。\n門診時間本次未能由可讀文字重新核實，前往前建議先電話確認當日門診與預約安排。",
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "clinicNotes": "本院以鳥類、賽鴿、爬蟲類、兩棲與小型哺乳類等特殊寵物醫療為主，官方服務項目包含鳥類醫療、爬蟲類醫療、小型哺乳類醫療、專業內外科治療、精密影像診斷、住宿與術後照護。\n看診請先來電預約；急診請先電話說明狀況，前往前建議確認當日門診與預約安排。",
+    "updatedAt": "2026-06-10",
+    "last_checked": "2026-06-10"
   },
   {
     "id": "rayray-animal-hospital",
@@ -1613,6 +1739,6 @@ export const TaichungHospitalList = [
     ],
     "clinicNotes": "門診時間為每日 11:00-17:30、18:30-22:00，17:30-18:30 休診。本院採預約優先制，現場就診前建議先電話確認。\n兩棲爬蟲、中獸醫、牙科、外科與腫瘤門診需依指定醫師時段預約；未見官方急診承諾，急症前往前請先致電確認。",
     "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "last_checked": "2026-06-10"
   }
 ];
