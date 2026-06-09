@@ -5,6 +5,17 @@ import type { HospitalUpdate } from '@/types/hospital';
 // Run `npm run prune:hospital-updates` to preview expired items, then use `:write` to prune.
 export const HospitalUpdateList: HospitalUpdate[] = [
   {
+    id: 'update-newtaipei-petsmile-content-2026-06-09',
+    hospitalId: 'petsmile-animal-hospital',
+    type: 'content',
+    title: '新增史麥動物醫院',
+    summary: '新增史麥動物醫院，院址為新北市汐止區新興路3號1樓，電話 02-7729-6929；官方網站與官方 Facebook 顯示本院提供犬貓診療與特殊寵物診療，週五設有異寵（特寵）特約門診，建議先預約確認。',
+    updatedAt: '2026-06-09',
+    sourceLabel: '官方網站、官方 Facebook、Google Maps',
+    sourceUrl: 'https://petsmilehospital.com/',
+    verifiedAt: '2026-06-09',
+  },
+  {
     id: 'update-hsinchucounty-dory-contact-2026-06-09',
     hospitalId: 'dory-animal-hospital',
     type: 'contact',

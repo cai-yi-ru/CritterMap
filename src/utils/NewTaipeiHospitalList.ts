@@ -529,7 +529,7 @@ export const NewTaipeiHospitalList = [
       "reviewCount": 288,
       "mapsUrl": "https://www.google.com/maps/place/%E9%BA%97%E6%98%8E%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E3%80%8A%E5%9C%9F%E5%9F%8E%E5%B0%88%E6%A5%AD%E7%8D%B8%E9%86%AB%E3%80%8B%E6%9D%BF%E6%A9%8B%E5%8D%8024%E5%B0%8F%E6%99%82%EF%BD%9C%E9%BC%A0%E5%85%94%E6%80%A5%E8%A8%BA%EF%BD%9C%E8%87%A8%E7%B5%82%E7%84%A1%E7%97%9B%E8%AB%AE%E8%A9%A2%EF%BD%9Cicu%E7%97%85%E6%88%BF%EF%BD%9C%E9%AB%98%E5%A3%93%E6%B0%A7%EF%BD%9C%E5%A4%9C%E9%96%93%E6%80%A5%E8%A8%BA%EF%BD%9C%E5%AF%B5%E7%89%A9%E7%B5%90%E7%B4%AE%E5%81%A5%E6%AA%A2%EF%BD%9C%E8%B6%85%E9%9F%B3%E6%B3%A2%E6%8E%A8%E8%96%A6/@24.98563,121.4286761,17z/data=!3m1!4b1!4m6!3m5!1s0x34681d8e3bc26557:0x75cdcac7dc17c322!8m2!3d24.98563!4d121.4286761!16s%2Fg%2F11wvrrhl1d",
       "reviewsUrl": "https://www.google.com/maps/place/%E9%BA%97%E6%98%8E%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E3%80%8A%E5%9C%9F%E5%9F%8E%E5%B0%88%E6%A5%AD%E7%8D%B8%E9%86%AB%E3%80%8B%E6%9D%BF%E6%A9%8B%E5%8D%8024%E5%B0%8F%E6%99%82%EF%BD%9C%E9%BC%A0%E5%85%94%E6%80%A5%E8%A8%BA%EF%BD%9C%E8%87%A8%E7%B5%82%E7%84%A1%E7%97%9B%E8%AB%AE%E8%A9%A2%EF%BD%9Cicu%E7%97%85%E6%88%BF%EF%BD%9C%E9%AB%98%E5%A3%93%E6%B0%A7%EF%BD%9C%E5%A4%9C%E9%96%93%E6%80%A5%E8%A8%BA%EF%BD%9C%E5%AF%B5%E7%89%A9%E7%B5%90%E7%B4%AE%E5%81%A5%E6%AA%A2%EF%BD%9C%E8%B6%85%E9%9F%B3%E6%B3%A2%E6%8E%A8%E8%96%A6/@24.98563,121.4286761,17z/data=!4m8!3m7!1s0x34681d8e3bc26557:0x75cdcac7dc17c322!8m2!3d24.98563!4d121.4286761!9m1!1b1!16s%2Fg%2F11wvrrhl1d",
-      "verifiedAt": "2026-06-02"
+      "verifiedAt": "2026-06-09"
     },
     "reservationRequired": true,
     "hasEmergencyService": true,
@@ -571,12 +571,13 @@ export const NewTaipeiHospitalList = [
     "appointmentLink": "https://liming-vet.com/contact/",
     "transportTips": "鄰近板橋溪崑、樹林地區；Google Maps 商家地址顯示為溪福里金門街306號1樓之一。",
     "socialMedia": {
+      "facebook": "https://www.facebook.com/p/%E9%BA%97%E6%98%8E%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-61571583883362/",
       "instagram": "https://www.instagram.com/liming_animal/",
       "line": "https://line.me/R/ti/p/@a0286873377"
     },
-    "clinicNotes": "官方網站標示本院提供犬貓兔鼠照護、特殊寵物診療、中獸醫、高壓氧、內外科、影像與血液檢查，以及全天候住院與重症照護。\nGoogle 商家顯示 24 小時營業，並標示鼠兔急診；急症或夜間就診前建議先電話確認醫師與收案狀況。\n官方文章曾提到龜、兔、鼠等特殊寵物看診需求可洽詢院方，其他未列物種建議先致電確認。",
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "clinicNotes": "官方網站標示本院提供犬貓兔鼠照護、特殊寵物診療、中獸醫、高壓氧、內外科、影像與血液檢查，以及全天候住院與重症照護。\n官方 Facebook 與 Google 商家皆標示特寵兔鼠急診；急症或夜間就診前建議先電話確認醫師與收案狀況。\n官方文章曾提到龜、兔、鼠等特殊寵物看診需求可洽詢院方，其他未列物種建議先致電確認。",
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
   {
     "id": "congo-exotic-animal-hospital",
@@ -1220,11 +1221,11 @@ export const NewTaipeiHospitalList = [
       ]
     },
     "google": {
-      "rating": "4.7",
-      "reviewCount": 9,
+      "rating": "4.5",
+      "reviewCount": 11,
       "mapsUrl": "https://www.google.com/maps/place/%E5%A5%BD%E5%A5%BD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E4%B8%89%E9%87%8D%E5%88%86%E9%99%A2Hao+Hao+Vet+Clinic%EF%BD%9C%E7%89%B9%E5%AF%B5%E9%86%AB%E7%99%82%EF%BD%9C%E7%8A%AC%E8%B2%93%E9%86%AB%E7%99%82/@25.0661378,121.4987576,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a9a40df59523:0xeab3d56f2b019171!8m2!3d25.0661378!4d121.4987576!16s%2Fg%2F11nbkzf_fl",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%A5%BD%E5%A5%BD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E4%B8%89%E9%87%8D%E5%88%86%E9%99%A2Hao+Hao+Vet+Clinic%EF%BD%9C%E7%89%B9%E5%AF%B5%E9%86%AB%E7%99%82%EF%BD%9C%E7%8A%AC%E8%B2%93%E9%86%AB%E7%99%82/@25.0661378,121.4987576,17z/data=!4m8!3m7!1s0x3442a9a40df59523:0xeab3d56f2b019171!8m2!3d25.0661378!4d121.4987576!9m1!1b1!16s%2Fg%2F11nbkzf_fl",
-      "verifiedAt": "2026-06-02"
+      "verifiedAt": "2026-06-09"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -1272,11 +1273,11 @@ export const NewTaipeiHospitalList = [
         "endDate": "2026-07-31",
         "sourceLabel": "官方 Instagram",
         "sourceUrl": "https://www.instagram.com/haohaovetclinic_sanchong/p/DYPkfnEzVro/",
-        "verifiedAt": "2026-06-02"
+        "verifiedAt": "2026-06-09"
       }
     ],
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
   {
     "id": "taipu-animal-hospital-xinzhuang",
@@ -1442,11 +1443,7 @@ export const NewTaipeiHospitalList = [
       "兔科診療",
       "疫苗注射",
       "健康檢查",
-      "結紮手術",
-      "X光檢查",
-      "超音波檢查",
-      "洗牙",
-      "氣體麻醉"
+      "X光檢查"
     ],
     "pets": [
       "犬",
@@ -1468,9 +1465,9 @@ export const NewTaipeiHospitalList = [
       "facebook": "https://www.facebook.com/leapdogcatrabbit/",
       "instagram": "https://www.instagram.com/leapvet/"
     },
-    "clinicNotes": "本院為犬、貓、兔專科動物醫院，提供內外科診療、疫苗注射、健康檢查等服務。\n門診採全預約制，請提前來電預約。\n設有獨立的狗病房及貓/兔病房；週日固定休診，無急診服務。",
-    "updatedAt": "2026-06-01",
-    "last_checked": "2026-06-01"
+    "clinicNotes": "官方 Facebook 與 Instagram 皆以犬貓兔專科為院所定位；目前官方可確認的特寵範圍以兔為主，未確認鼠、鳥、爬蟲等其他特寵診療。\n門診採全預約制，請提前來電預約。\n設有獨立的狗病房及貓/兔病房；週日固定休診，無急診服務。",
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
   {
     "id": "capybara-exotic-animal-hospital",
@@ -1735,10 +1732,10 @@ export const NewTaipeiHospitalList = [
     },
     "google": {
       "rating": "4.6",
-      "reviewCount": 459,
+      "reviewCount": 461,
       "mapsUrl": "https://www.google.com/maps/place/%E5%98%89%E5%BE%B7%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E5%85%AC%E4%BC%91%E6%97%A5%E8%AB%8B%E7%9C%8BFB+%E9%9D%9E%E7%8A%AC%E8%B2%93%E5%B9%B3%E6%97%A5%E4%B8%8B%E5%8D%883%E9%BB%9E%E9%96%8B%E5%A7%8B%E7%9C%8B%2B%E6%98%9F%E6%9C%9F%E5%85%AD%E6%9C%83%E7%9C%8B%E4%B8%80%E6%95%B4%E5%A4%A9+%E6%9C%AC%E9%99%A2%E7%9C%8B%E8%A8%BA%E4%B8%8D%E6%98%AF%E9%A0%90%E7%B4%84%E5%88%B6+%E9%87%9D%E7%81%B8%E8%AB%8B%E4%BE%86%E9%9B%BB%E9%A0%90%E7%B4%84/@25.0653849,121.63466,17z/data=!3m1!4b1!4m6!3m5!1s0x345d534e86a846e7:0xbd49e044d05b8a4c!8m2!3d25.0653849!4d121.63466!16s%2Fg%2F1pzpkdmy4",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%98%89%E5%BE%B7%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E5%85%AC%E4%BC%91%E6%97%A5%E8%AB%8B%E7%9C%8BFB+%E9%9D%9E%E7%8A%AC%E8%B2%93%E5%B9%B3%E6%97%A5%E4%B8%8B%E5%8D%883%E9%BB%9E%E9%96%8B%E5%A7%8B%E7%9C%8B%2B%E6%98%9F%E6%9C%9F%E5%85%AD%E6%9C%83%E7%9C%8B%E4%B8%80%E6%95%B4%E5%A4%A9+%E6%9C%AC%E9%99%A2%E7%9C%8B%E8%A8%BA%E4%B8%8D%E6%98%AF%E9%A0%90%E7%B4%84%E5%88%B6+%E9%87%9D%E7%81%B8%E8%AB%8B%E4%BE%86%E9%9B%BB%E9%A0%90%E7%B4%84/@25.0653849,121.63466,17z/data=!4m8!3m7!1s0x345d534e86a846e7:0xbd49e044d05b8a4c!8m2!3d25.0653849!4d121.63466!9m1!1b1!16s%2Fg%2F1pzpkdmy4",
-      "verifiedAt": "2026-06-01"
+      "verifiedAt": "2026-06-09"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -1747,8 +1744,7 @@ export const NewTaipeiHospitalList = [
     "services": [
       "犬貓診療",
       "非犬貓診療（龜、蛇、小鼠等）",
-      "針灸治療",
-      "寵物美容"
+      "針灸治療"
     ],
     "pets": [
       "犬",
@@ -1773,7 +1769,7 @@ export const NewTaipeiHospitalList = [
       "facebook": "https://www.facebook.com/p/%E5%98%89%E5%BE%B7%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E9%9D%9E%E7%8A%AC%E8%B2%93%E5%B9%B3%E6%97%A5%E4%B8%8B%E5%8D%883%E9%BB%9E%E9%96%8B%E5%A7%8B%E7%9C%8B%E6%98%9F%E6%9C%9F%E5%85%AD%E6%9C%83%E7%9C%8B%E4%B8%80%E6%95%B4%E5%A4%A9-100054299299386/",
       "instagram": ""
     },
-    "clinicNotes": "非犬貓看診時間為平日下午 3 點後及週六整天。\n本院一般看診不需預約，採現場掛號；針灸治療及寵物美容請先來電預約。\n公休日為週四、週日。",
+    "clinicNotes": "官方 Facebook 標示非犬貓看診時間為平日下午 3 點後及週六整天，並例示龜、蛇、小鼠。\n本院一般看診不需預約，採現場掛號；針灸治療請先來電預約。\n公休日為週四、週日。",
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "特寵特別門診",
@@ -1781,14 +1777,112 @@ export const NewTaipeiHospitalList = [
       "reservationRequired": false,
       "sourceLabel": "官方 Facebook",
       "sourceUrl": "https://www.facebook.com/p/%E5%98%89%E5%BE%B7%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E9%9D%9E%E7%8A%AC%E8%B2%93%E5%B9%B3%E6%97%A5%E4%B8%8B%E5%8D%883%E9%BB%9E%E9%96%8B%E5%A7%8B%E7%9C%8B%E6%98%9F%E6%9C%9F%E5%85%AD%E6%9C%83%E7%9C%8B%E4%B8%80%E6%95%B4%E5%A4%A9-100054299299386/",
-      "verifiedAt": "2026-06-01"
+      "verifiedAt": "2026-06-09"
     },
     "fb": {
       "last_fb_post_date": "2026-05-25",
       "last_fb_post_text": "上午停診，下午兩點開始看診。"
     },
-    "updatedAt": "2026-06-01",
-    "last_checked": "2026-06-01"
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
+  },
+  {
+    "id": "petsmile-animal-hospital",
+    "name": "史麥動物醫院",
+    "city": "新北市",
+    "district": "汐止區",
+    "address": "新北市汐止區新興路3號1樓",
+    "lat": 25.0650539,
+    "lng": 121.6565108,
+    "type": "exotic",
+    "typeText": "犬貓診療、特寵診療",
+    "phone": "02-7729-6929",
+    "specialEvents": [],
+    "hours": "週一至週三、週五至週日 10:00–13:00、14:00–21:00；週四休息",
+    "business_hours": {
+      "mon": [
+        "10:00-13:00",
+        "14:00-21:00"
+      ],
+      "tue": [
+        "10:00-13:00",
+        "14:00-21:00"
+      ],
+      "wed": [
+        "10:00-13:00",
+        "14:00-21:00"
+      ],
+      "thu": [],
+      "fri": [
+        "10:00-13:00",
+        "14:00-21:00"
+      ],
+      "sat": [
+        "10:00-13:00",
+        "14:00-21:00"
+      ],
+      "sun": [
+        "10:00-13:00",
+        "14:00-21:00"
+      ]
+    },
+    "google": {
+      "rating": "5.0",
+      "reviewCount": 35,
+      "mapsUrl": "https://www.google.com/maps/place/%E5%8F%B2%E9%BA%A5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0650539,121.6565108,17z/data=!3m1!4b1!4m6!3m5!1s0x345d53253546cd79:0xb2e0948ce7f5fe0!8m2!3d25.0650539!4d121.6565108!16s%2Fg%2F11xs2tny8w",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%8F%B2%E9%BA%A5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0650539,121.6565108,17z/data=!4m8!3m7!1s0x345d53253546cd79:0xb2e0948ce7f5fe0!8m2!3d25.0650539!4d121.6565108!9m1!1b1!16s%2Fg%2F11xs2tny8w",
+      "verifiedAt": "2026-06-09"
+    },
+    "reservationRequired": true,
+    "hasEmergencyService": false,
+    "emergencyHours": "",
+    "nightClinic": true,
+    "services": [
+      "犬貓診療",
+      "特殊寵物診療",
+      "內科",
+      "影像檢查",
+      "預防醫學",
+      "健康檢查"
+    ],
+    "pets": [
+      "犬",
+      "貓",
+      "特殊寵物"
+    ],
+    "pet_category_group": [
+      "狗",
+      "貓",
+      "其他特寵"
+    ],
+    "specialties": [
+      "心臟科",
+      "特殊寵物科",
+      "家醫科",
+      "內科",
+      "中獸醫",
+      "皮膚科"
+    ],
+    "website": "https://petsmilehospital.com/",
+    "appointmentLink": "https://line.me/R/ti/p/@509ylcjw",
+    "transportTips": "",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/profile.php?id=61580415659866",
+      "line": "https://line.me/R/ti/p/@509ylcjw"
+    },
+    "clinicNotes": "官方網站顯示本院提供犬貓與特殊寵物診療，並設有心臟專科、內科、影像檢查與預防醫學服務。\n官方 Facebook 標示週五為異寵（特寵）特約門診，建議先透過電話、LINE 或 Messenger 預約確認。\n目前未見特寵急診資訊。",
+    "specialClinic": {
+      "hasExoticSpecialClinic": true,
+      "label": "特寵特約門診",
+      "note": "官方 Facebook 標示週五為異寵（特寵）特約門診，建議先預約確認。",
+      "reservationRequired": true,
+      "sourceLabel": "官方 Facebook",
+      "sourceUrl": "https://www.facebook.com/profile.php?id=61580415659866",
+      "verifiedAt": "2026-06-09"
+    },
+    "createdAt": "2026-06-09",
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
   {
     "id": "huaien-animal-hospital",
@@ -1841,7 +1935,7 @@ export const NewTaipeiHospitalList = [
       "reviewCount": 300,
       "mapsUrl": "https://www.google.com/maps/place/%E6%87%B7%E6%81%A9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0737492,121.3609878,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a72700000001:0x820e034dac096cb5!8m2!3d25.0737492!4d121.3609878!16s%2Fg%2F11dx9__s9l",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%87%B7%E6%81%A9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0737492,121.3609878,17z/data=!4m8!3m7!1s0x3442a72700000001:0x820e034dac096cb5!8m2!3d25.0737492!4d121.3609878!9m1!1b1!16s%2Fg%2F11dx9__s9l",
-      "verifiedAt": "2026-06-01"
+      "verifiedAt": "2026-06-09"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -1871,13 +1965,13 @@ export const NewTaipeiHospitalList = [
     "socialMedia": {
       "facebook": "https://www.facebook.com/petcare88/"
     },
-    "clinicNotes": "本院已搬遷至文化北路一段307號1樓。\n看診前建議先電話確認當日門診安排；手術需求請提早預約。",
+    "clinicNotes": "官方 Facebook 標示本院提供犬、貓、兔、鼠、龜等寵物內外科診療；未確認鳥類、天竺鼠、刺蝟、蜜袋鼯或其他爬蟲診療。\n看診前建議先電話確認當日門診安排；手術需求請提早預約。",
     "fb": {
       "last_fb_post_date": "2026-05-19",
       "last_fb_post_text": "侯醫師因事，5／19（二）下午休診；早上及晚上正常門診。"
     },
-    "updatedAt": "2026-06-01",
-    "last_checked": "2026-06-01"
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
   {
     "id": "alliance-vet-linkou",
@@ -1927,7 +2021,7 @@ export const NewTaipeiHospitalList = [
       "reviewCount": 398,
       "mapsUrl": "https://www.google.com/maps/place/%E8%81%AF%E7%9B%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2(%E6%9E%97%E5%8F%A3%E6%96%87%E5%8C%96%E5%88%86%E9%99%A2)+%E6%9E%97%E5%8F%A3%E6%9C%80%E7%BE%8E%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E8%85%AB%E7%98%A4%E5%B0%88%E7%A7%91+%E5%8C%96%E7%99%82+%E5%AE%89%E5%AF%A7%E7%85%A7%E8%AD%B7+%E5%81%A5%E6%AA%A2+%E9%A0%90%E9%98%B2%E9%87%9D+%E4%B8%80%E8%88%AC%E7%8A%AC%E8%B2%93%E5%85%A7%E5%A4%96%E7%A7%91+%E4%B8%AD%E7%8D%B8%E9%86%AB/@25.0802993,121.3780964,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a766e5f97e11:0x10461e84762f8c78!8m2!3d25.0802993!4d121.3780964!16s%2Fg%2F11khzv6_y6",
       "reviewsUrl": "https://www.google.com/maps/place/%E8%81%AF%E7%9B%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2(%E6%9E%97%E5%8F%A3%E6%96%87%E5%8C%96%E5%88%86%E9%99%A2)+%E6%9E%97%E5%8F%A3%E6%9C%80%E7%BE%8E%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E8%85%AB%E7%98%A4%E5%B0%88%E7%A7%91+%E5%8C%96%E7%99%82+%E5%AE%89%E5%AF%A7%E7%85%A7%E8%AD%B7+%E5%81%A5%E6%AA%A2+%E9%A0%90%E9%98%B2%E9%87%9D+%E4%B8%80%E8%88%AC%E7%8A%AC%E8%B2%93%E5%85%A7%E5%A4%96%E7%A7%91+%E4%B8%AD%E7%8D%B8%E9%86%AB/@25.0802993,121.3780964,17z/data=!4m8!3m7!1s0x3442a766e5f97e11:0x10461e84762f8c78!8m2!3d25.0802993!4d121.3780964!9m1!1b1!16s%2Fg%2F11khzv6_y6",
-      "verifiedAt": "2026-06-01"
+      "verifiedAt": "2026-06-09"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -1963,7 +2057,7 @@ export const NewTaipeiHospitalList = [
       "鼠兔特寵科",
       "腫瘤專科"
     ],
-    "website": "https://vet.pet100pa.com/hospital_detail/446",
+    "website": "https://pharmacy.pet100pa.com/hospital_detail/446",
     "appointmentLink": "https://lin.ee/Y4DTDz9",
     "transportTips": "",
     "socialMedia": {
@@ -1971,7 +2065,16 @@ export const NewTaipeiHospitalList = [
       "instagram": "https://www.instagram.com/alliance.linkou/",
       "line": "https://lin.ee/Y4DTDz9"
     },
-    "clinicNotes": "提供犬、貓、兔、鼠等診療，設有心臟科、內視鏡微創手術、貓科、鼠兔特寵科與腫瘤專科等服務。\n門診可透過官方 LINE 或官網預約；上午診 12:30 止掛、午晚診 20:30 止掛。\n2026 年 6 月班表已發布，實際看診醫師與排班請以院方當月公告為準。",
+    "clinicNotes": "官方 Facebook 明確公告林口文化院提供鼠兔特寵門診；官方網站服務項目亦列特寵科兔科、鼠科，但分院專長列表以腫瘤專科、犬貓內科、中獸醫為主。\n鼠兔特寵門診請依院方當月班表與指定醫師預約確認，不代表全時段皆可看診。\n門診可透過官方 LINE 或官網預約；上午診 12:30 止掛、午晚診 20:30 止掛。",
+    "specialClinic": {
+      "hasExoticSpecialClinic": true,
+      "label": "鼠兔特寵門診",
+      "note": "鼠兔特寵門診請依院方當月班表與指定醫師預約確認。",
+      "reservationRequired": true,
+      "sourceLabel": "官方 Facebook",
+      "sourceUrl": "https://www.facebook.com/AllianceVH/posts/916039220537765/",
+      "verifiedAt": "2026-06-09"
+    },
     "announcements": [
       {
         "id": "alliance-vet-linkou-2026-06-roster",
@@ -1981,11 +2084,11 @@ export const NewTaipeiHospitalList = [
         "startDate": "2026-05-26",
         "sourceLabel": "官方 Instagram",
         "sourceUrl": "https://www.instagram.com/alliance.linkou/p/DYzCW5wvdAM/",
-        "verifiedAt": "2026-06-01"
+        "verifiedAt": "2026-06-09"
       }
     ],
-    "updatedAt": "2026-06-01",
-    "last_checked": "2026-06-01"
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
   {
     "id": "xin-en-animal-hospital",
@@ -2149,8 +2252,8 @@ export const NewTaipeiHospitalList = [
       "facebook": "https://www.facebook.com/p/MDS-%E9%82%81%E5%BE%B7%E6%B0%8F-100053768365911/",
       "youtube": "https://www.youtube.com/channel/UCFEyBb1lyLBKAgkznb2ydNw"
     },
-    "clinicNotes": "院址為板橋區海山路11號，目前未確認到可使用的官方網站。\n固定營業時間為週一、二、五 10:00–15:30、18:00–20:30；週三、四、六 10:00–15:30；週日休息。\n未確認到可信官方預約入口；就診前建議先電話確認當日看診安排。",
-    "updatedAt": "2026-06-01",
-    "last_checked": "2026-06-01"
+    "clinicNotes": "以賽鴿與寵物鳥診療為主；未確認兔、鼠、爬蟲或其他特寵診療，其他物種請先致電確認。\n院方原網站 mds168.com 目前已非可用官方網站；固定營業時間為週一、二、五 10:00–15:30、18:00–20:30；週三、四、六 10:00–15:30；週日休息。\n未確認到可信官方預約入口；就診前建議先電話確認當日看診安排。",
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   }
 ];
