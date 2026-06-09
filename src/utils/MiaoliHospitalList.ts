@@ -36,7 +36,6 @@ export const MiaoliHospitalList = [
       "sat": [],
       "sun": []
     },
-    "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
     "nightClinic": false,
@@ -64,12 +63,13 @@ export const MiaoliHospitalList = [
       "mapsUrl": "https://www.google.com/maps/place/%E9%B4%BB%E6%88%90%E8%B3%BD%E9%B4%BF%E9%86%AB%E9%99%A2/@24.4726105,120.8180314,17z/data=!3m1!4b1!4m6!3m5!1s0x346900a7a5da1d73:0x7053512859122594!8m2!3d24.4726105!4d120.8180314!16s%2Fg%2F1pp2x894r",
       "reviewsUrl": "https://www.google.com/maps/place/%E9%B4%BB%E6%88%90%E8%B3%BD%E9%B4%BF%E9%86%AB%E9%99%A2/@24.4726105,120.8180314,17z/data=!4m8!3m7!1s0x346900a7a5da1d73:0x7053512859122594!8m2!3d24.4726105!4d120.8180314!9m1!1b1!16s%2Fg%2F1pp2x894r",
       "placeId": "0x346900a7a5da1d73:0x7053512859122594",
-      "verifiedAt": "2026-06-03"
+      "verifiedAt": "2026-06-09"
     },
-    "clinicNotes": "本院以鳥類與賽鴿診療為主，採電話預約制，建議先致電確認時段再前往。\n固定門診為週一至週五 09:00–12:00、14:00–17:00，週六、週日休診。\n目前未見夜間門診或急診資訊。",
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "clinicNotes": "本院以鳥類與賽鴿診療為主，官方 Facebook 類別標示為鳥類醫療服務。\n固定門診為週一至週五 09:00–12:00、14:00–17:00，週六、週日休診。\n目前未見官方明確列出其他非鳥類特寵物種、夜間門診或急診資訊。",
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
+  /*
   {
     "id": "bobby-animal-hospital",
     "name": "波比寵物專科醫院",
@@ -175,6 +175,7 @@ export const MiaoliHospitalList = [
     "updatedAt": "2026-06-02",
     "last_checked": "2026-06-02"
   },
+  */
   {
     "id": "mrhoo-animal-hospital",
     "name": "毛爾呼動物醫院",

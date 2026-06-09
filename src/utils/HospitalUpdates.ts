@@ -5,6 +5,17 @@ import type { HospitalUpdate } from '@/types/hospital';
 // Run `npm run prune:hospital-updates` to preview expired items, then use `:write` to prune.
 export const HospitalUpdateList: HospitalUpdate[] = [
   {
+    id: 'update-miaoli-bobby-content-2026-06-09',
+    hospitalId: 'bobby-animal-hospital',
+    type: 'content',
+    title: '波比寵物專科醫院暫自特寵清單移除',
+    summary: '官方 Facebook 與 Google Maps 查核後，目前僅能確認波比寵物專科醫院的掛號時間、地址與電話；未見官方明確列出特寵診療或看診物種，已先註解於苗栗特寵清單外，待院方補充官方資訊後再評估恢復。',
+    updatedAt: '2026-06-09',
+    sourceLabel: '官方 Facebook、Google Maps',
+    sourceUrl: 'https://www.facebook.com/p/%E6%B3%A2%E6%AF%94%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2-100064134787477/',
+    verifiedAt: '2026-06-09',
+  },
+  {
     id: 'update-newtaipei-petsmile-content-2026-06-09',
     hospitalId: 'petsmile-animal-hospital',
     type: 'content',
