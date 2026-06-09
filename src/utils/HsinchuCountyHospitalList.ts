@@ -4,9 +4,9 @@ export const HsinchuCountyHospitalList = [
     "name": "朵栗動物醫院",
     "city": "新竹縣",
     "district": "竹東鎮",
-    "address": "新竹縣竹東鎮中豐路二段225號",
-    "lat": 24.7231184,
-    "lng": 121.0919932,
+    "address": "新竹縣竹東鎮上舘里中豐路二段219號",
+    "lat": 24.7230384,
+    "lng": 121.0921439,
     "type": "exotic",
     "typeText": "犬貓診療、特寵診療",
     "phone": "03-5103210",
@@ -45,13 +45,8 @@ export const HsinchuCountyHospitalList = [
     "emergencyHours": "",
     "nightClinic": true,
     "services": [
-      "犬貓內外科診療",
-      "鼠兔診療",
-      "牙科治療",
-      "復健治療",
-      "疫苗接種",
-      "結紮手術",
-      "健康檢查"
+      "犬貓鼠兔動物醫療",
+      "雷射治療"
     ],
     "pets": [
       "犬",
@@ -63,14 +58,11 @@ export const HsinchuCountyHospitalList = [
       "狗",
       "貓",
       "兔",
-      "鼠",
-      "其他特寵"
+      "鼠"
     ],
     "specialties": [
-      "犬貓內外科",
-      "小型哺乳類診療",
-      "牙科治療",
-      "復健治療"
+      "犬貓鼠兔動物醫療",
+      "雷射治療"
     ],
     "website": "",
     "appointmentLink": "",
@@ -85,11 +77,11 @@ export const HsinchuCountyHospitalList = [
       "mapsUrl": "https://www.google.com/maps/place/%E6%9C%B5%E6%A6%B4%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/data=!4m7!3m6!1s0x3468473e9b1d7fab:0xf5e5a4cb4c0ade18!8m2!3d24.7230384!4d121.0921439!16s%2Fg%2F11fqylqbcl!19sChIJq38dmz5HaDQRGN4KTMuk5fU",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%9C%B5%E6%A6%B4%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.7452181,121.076142,14z/data=!4m12!1m2!2m1!1z5pyx5qa05YuV54mp6Yar6ZmiIOaWsOeruee4o-erueadsemOruS4reixkOi3r-S6jOautTIyNeiZnw!3m8!1s0x3468473e9b1d7fab:0xf5e5a4cb4c0ade18!8m2!3d24.7230384!4d121.0921439!9m1!1b1!15sCjrmnLHmprTli5XnianphqvpmaIg5paw56u557ij56u55p2x6Y6u5Lit6LGQ6Lev5LqM5q61MjI16JmfWkoiSOacsSDmprQg5YuV54mpIOmGq-mZoiDmlrDnq7kg57ijIOeruSDmnbEg6Y6uIOS4rSDosZAg6LevIOS6jCDmrrUgMjI1IOiZn5IBD2FuaW1hbF9ob3NwaXRhbJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VOSU5WazJRMkozRUFF4AEA-gEECAAQGw!16s%2Fg%2F11fqylqbcl",
       "placeId": "ChIJq38dmz5HaDQRGN4KTMuk5fU",
-      "verifiedAt": "2026-06-03"
+      "verifiedAt": "2026-06-09"
     },
-    "clinicNotes": "1️⃣ 提供犬、貓、鼠、兔等多種動物的診療服務。\n2️⃣ 設有牙科與復健治療設備，提供全面的醫療服務。\n3️⃣ 門診時間為週一、二、四、五 09:30–12:00、14:00–17:00、18:00–20:00；週六 09:30–12:00、14:00–17:00；週三、週日休診。\n4️⃣ 採現場掛號，建議提前到院；如有特殊需求，請致電詢問。",
-    "updatedAt": "2026-06-01",
-    "last_checked": "2026-06-01"
+    "clinicNotes": "官方公開資訊標示提供犬、貓、鼠、兔動物醫療；鼠兔以外的特殊寵物看診前建議先電話確認。\n醫療相關問題或預約看診請直接電話聯繫；官方 LINE 主要用於綁定病歷、預防提醒與營業資訊，無法即時回覆醫療問題。",
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
   {
     "id": "mystery-exotic-animal-hospital",

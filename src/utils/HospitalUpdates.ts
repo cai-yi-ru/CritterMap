@@ -5,6 +5,17 @@ import type { HospitalUpdate } from '@/types/hospital';
 // Run `npm run prune:hospital-updates` to preview expired items, then use `:write` to prune.
 export const HospitalUpdateList: HospitalUpdate[] = [
   {
+    id: 'update-hsinchucounty-dory-contact-2026-06-09',
+    hospitalId: 'dory-animal-hospital',
+    type: 'contact',
+    title: '朵栗動物醫院地址校正',
+    summary: '朵栗動物醫院官方 Facebook 與 Google Maps 確認院址為新竹縣竹東鎮上舘里中豐路二段219號；官方 Facebook 標示本院提供犬、貓、鼠、兔動物醫療，因此保留於鼠兔特寵清單，鼠兔以外特殊寵物建議先電話確認。',
+    updatedAt: '2026-06-09',
+    sourceLabel: '官方 Facebook、Google Maps',
+    sourceUrl: 'https://www.facebook.com/vetdory/',
+    verifiedAt: '2026-06-09',
+  },
+  {
     id: 'update-miaoli-mrhoo-content-2026-06-09',
     hospitalId: 'mrhoo-animal-hospital',
     type: 'content',
