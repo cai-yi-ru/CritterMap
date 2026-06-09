@@ -851,10 +851,12 @@ export const KaohsiungHospitalList = [
       ]
     },
     "google": {
+      "rating": "5.0",
+      "reviewCount": 1,
       "mapsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E5%B1%B1%E7%95%B0%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6292518,120.3217156,17z/data=!3m1!4b1!4m6!3m5!1s0x346e05000103b1ff:0x8db5419d774f920b!8m2!3d22.6292518!4d120.3217156!16s%2Fg%2F11zc4r1kr1",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E5%B1%B1%E7%95%B0%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6292518,120.3217156,17z/data=!4m8!3m7!1s0x346e05000103b1ff:0x8db5419d774f920b!8m2!3d22.6292518!4d120.3217156!9m1!1b1!16s%2Fg%2F11zc4r1kr1",
       "placeId": "0x346e05000103b1ff:0x8db5419d774f920b",
-      "verifiedAt": "2026-06-03"
+      "verifiedAt": "2026-06-10"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -891,7 +893,7 @@ export const KaohsiungHospitalList = [
       "facebook": "https://www.facebook.com/61566032887018",
       "instagram": "https://www.instagram.com/mountain___vet/"
     },
-    "clinicNotes": "亞幸動物醫院官方公告將異寵醫療自原有體系獨立，成立大山異寵動物醫院，定位為專屬異寵醫院，聚焦爬蟲類、鳥類與小型哺乳動物等非犬貓寵物。\n官方 Facebook 與 Instagram 顯示電話 07-223-5666、地址苓雅區凱旋二路139號；Instagram 標示週三公休。Google Maps 已有獨立商家頁與座標，但目前尚未顯示評分與評論數。\n2026 年 6 月班表標示醫師為藍將誠、利嘉彥、陳弈凱，週三休診；試營運期間預約優先、免掛號費，6/1 試營運前可致電亞幸 07-7265577 預約大山門診。",
+    "clinicNotes": "亞幸動物醫院官方公告將異寵醫療自原有體系獨立，成立大山異寵動物醫院，定位為專屬異寵醫院，聚焦爬蟲類、鳥類與小型哺乳動物等非犬貓寵物。\n官方 Facebook 與 Instagram 顯示電話 07-223-5666、地址苓雅區凱旋二路139號；Instagram 標示週三公休。Google Maps 已有獨立商家頁與座標。\n2026 年 6 月班表標示醫師為藍將誠、利嘉彥、陳弈凱，週三休診；試營運期間預約優先、免掛號費，目前預約請以 07-223-5666 與官方社群公告為準。",
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "異寵專屬門診",
@@ -899,14 +901,14 @@ export const KaohsiungHospitalList = [
       "reservationRequired": true,
       "sourceLabel": "官方 Facebook / Instagram",
       "sourceUrl": "https://www.instagram.com/mountain___vet/p/DYw4EouT5Bh/",
-      "verifiedAt": "2026-06-01"
+      "verifiedAt": "2026-06-10"
     },
     "createdAt": "2026-05-31T00:00:00.000Z",
-    "updatedAt": "2026-06-01T00:00:00.000Z",
-    "last_checked": "2026-06-01",
+    "updatedAt": "2026-06-10T00:00:00.000Z",
+    "last_checked": "2026-06-10",
     "fb": {
-      "last_fb_post_date": "2026-05",
-      "last_fb_post_text": "大山獨立 Facebook 頁可見電話 07 223 5666、地址苓雅區凱旋二路139號、尚無評分；6 月試營運班表以官方 Instagram 貼文較完整。"
+      "last_fb_post_date": "2026-06",
+      "last_fb_post_text": "官方 Facebook 明確標示專注爬蟲類、鳥類、小型哺乳動物等特殊寵物醫療照護；官方 Instagram 標示提供非犬貓寵物專業醫療團隊。"
     },
     "announcements": [
       {
@@ -931,6 +933,195 @@ export const KaohsiungHospitalList = [
         "verifiedAt": "2026-06-01"
       }
     ]
+  },
+  {
+    "id": "aegis-vet-kaohsiung",
+    "name": "伊吉森動物醫院",
+    "city": "高雄市",
+    "district": "鼓山區",
+    "address": "高雄市鼓山區美術東四路120號",
+    "lat": 22.6525158,
+    "lng": 120.2901196,
+    "type": "exotic",
+    "typeText": "犬貓診療、特寵診療",
+    "phone": "07-553-5533",
+    "specialEvents": [],
+    "hours": "採預約制或預約優先；固定門診與特寵醫師時段請以官方每月門診表為準。",
+    "google": {
+      "rating": "5.0",
+      "reviewCount": 23,
+      "mapsUrl": "https://www.google.com/maps/place/%E4%BC%8A%E5%90%89%E6%A3%AE%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E9%99%84%E8%A8%AD%E5%AF%B5%E7%89%A9%E7%BE%8E%E5%AE%B9%EF%BC%89/@22.6525158,120.2901196,17z/data=!3m1!4b1!4m6!3m5!1s0x346e05003ce2f313:0x183cba12fd300f75!8m2!3d22.6525158!4d120.2901196!16s%2Fg%2F11yskd_pxm",
+      "reviewsUrl": "https://www.google.com/maps/place/%E4%BC%8A%E5%90%89%E6%A3%AE%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E9%99%84%E8%A8%AD%E5%AF%B5%E7%89%A9%E7%BE%8E%E5%AE%B9%EF%BC%89/@22.6525158,120.2901196,17z/data=!4m8!3m7!1s0x346e05003ce2f313:0x183cba12fd300f75!8m2!3d22.6525158!4d120.2901196!9m1!1b1!16s%2Fg%2F11yskd_pxm",
+      "placeId": "0x346e05003ce2f313:0x183cba12fd300f75",
+      "verifiedAt": "2026-06-10"
+    },
+    "reservationRequired": true,
+    "hasEmergencyService": false,
+    "emergencyHours": "",
+    "nightClinic": false,
+    "services": [
+      "犬貓家醫",
+      "一般內外科",
+      "牙科",
+      "骨科",
+      "特寵專科",
+      "健康檢查",
+      "慢性病照護",
+      "寵物美容"
+    ],
+    "pets": [
+      "犬",
+      "貓",
+      "鳥類",
+      "爬蟲",
+      "鼠",
+      "兔",
+      "貂"
+    ],
+    "pet_category_group": [
+      "狗",
+      "貓",
+      "兔",
+      "鼠",
+      "鳥類",
+      "爬蟲",
+      "貂"
+    ],
+    "specialties": [
+      "特寵專科",
+      "犬貓家醫",
+      "牙科",
+      "骨科"
+    ],
+    "website": "https://www.facebook.com/61585229068999/",
+    "appointmentLink": "",
+    "transportTips": "",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/61585229068999/",
+      "instagram": "https://www.instagram.com/aegis.vet/"
+    },
+    "specialClinic": {
+      "hasExoticSpecialClinic": true,
+      "label": "特寵專科門診",
+      "note": "官方 Google 商家貼文列出特寵物種為鳥類、爬蟲類、鼠、兔、貂；特寵門診與醫師時段請依每月門診表或電話確認。",
+      "reservationRequired": true,
+      "sourceLabel": "Google Maps 業主貼文、官方 Instagram",
+      "sourceUrl": "https://www.google.com/maps/place/%E4%BC%8A%E5%90%89%E6%A3%AE%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E9%99%84%E8%A8%AD%E5%AF%B5%E7%89%A9%E7%BE%8E%E5%AE%B9%EF%BC%89/@22.6525158,120.2901196,17z/data=!3m1!4b1!4m6!3m5!1s0x346e05003ce2f313:0x183cba12fd300f75!8m2!3d22.6525158!4d120.2901196!16s%2Fg%2F11yskd_pxm",
+      "verifiedAt": "2026-06-10"
+    },
+    "clinicNotes": "官方 Facebook 試營運貼文與 Google 商家資料顯示本院提供犬貓與特殊寵物醫療；官方 Instagram 簡介列有犬貓家醫、一般內外科、牙科、骨科、特寵專科、健檢與慢性病照護。\n特寵物種以官方 Google 商家貼文可見的鳥類、爬蟲類、鼠、兔、貂為準；其他物種可先來電詢問。門診採預約制或預約優先，特寵醫師時段請依每月門診表與電話確認。",
+    "createdAt": "2026-06-10T00:00:00.000Z",
+    "updatedAt": "2026-06-10T00:00:00.000Z",
+    "last_checked": "2026-06-10",
+    "fb": {
+      "last_fb_post_date": "2026-05",
+      "last_fb_post_text": "官方 Facebook 近期門診表提醒本院採預約優先，預約方式可透過官方 LINE 或電話安排。"
+    },
+    "announcements": []
+  },
+  {
+    "id": "huaxing-exotic-animal-medicine-department",
+    "name": "華興非犬貓特殊寵物醫療門診部",
+    "city": "高雄市",
+    "district": "鳳山區",
+    "address": "高雄市鳳山區五甲二路535號2F",
+    "lat": 22.5959287,
+    "lng": 120.3322277,
+    "type": "exotic",
+    "typeText": "特寵診療",
+    "phone": "07-831-0383",
+    "specialEvents": [],
+    "hours": "週一至週六 10:00–14:00、15:00–21:00；週日休診。\n採預約制，無現場掛號；最後約診時段為 13:00 與 20:00。",
+    "business_hours": {
+      "mon": [
+        "10:00-14:00",
+        "15:00-21:00"
+      ],
+      "tue": [
+        "10:00-14:00",
+        "15:00-21:00"
+      ],
+      "wed": [
+        "10:00-14:00",
+        "15:00-21:00"
+      ],
+      "thu": [
+        "10:00-14:00",
+        "15:00-21:00"
+      ],
+      "fri": [
+        "10:00-14:00",
+        "15:00-21:00"
+      ],
+      "sat": [
+        "10:00-14:00",
+        "15:00-21:00"
+      ],
+      "sun": []
+    },
+    "google": {
+      "rating": "5.0",
+      "reviewCount": 18,
+      "mapsUrl": "https://www.google.com/maps/place/%E8%8F%AF%E8%88%88%E7%89%B9%E5%AF%B5%22%E9%9D%9E%E7%8A%AC%E8%B2%93%22%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E9%86%AB%E7%99%82%E9%96%80%E8%A8%BA%E9%83%A8+%EF%BC%88%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@22.5959287,120.3322277,17z/data=!3m1!4b1!4m6!3m5!1s0x346e0354d80b3c4b:0x79652541938a6747!8m2!3d22.5959287!4d120.3322277!16s%2Fg%2F11xcfgt_jy",
+      "reviewsUrl": "https://www.google.com/maps/place/%E8%8F%AF%E8%88%88%E7%89%B9%E5%AF%B5%22%E9%9D%9E%E7%8A%AC%E8%B2%93%22%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E9%86%AB%E7%99%82%E9%96%80%E8%A8%BA%E9%83%A8+%EF%BC%88%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@22.5959287,120.3322277,17z/data=!4m8!3m7!1s0x346e0354d80b3c4b:0x79652541938a6747!8m2!3d22.5959287!4d120.3322277!9m1!1b1!16s%2Fg%2F11xcfgt_jy",
+      "placeId": "0x346e0354d80b3c4b:0x79652541938a6747",
+      "verifiedAt": "2026-06-10"
+    },
+    "reservationRequired": true,
+    "hasEmergencyService": false,
+    "emergencyHours": "",
+    "nightClinic": true,
+    "services": [
+      "特殊寵物診斷治療"
+    ],
+    "pets": [
+      "兔",
+      "天竺鼠",
+      "倉鼠",
+      "蜜袋鼯",
+      "刺蝟",
+      "陸龜",
+      "澤龜",
+      "箱龜",
+      "蜥蜴",
+      "守宮",
+      "角蛙",
+      "中小型鸚鵡",
+      "野鳥"
+    ],
+    "pet_category_group": [
+      "兔",
+      "鼠",
+      "天竺鼠",
+      "鳥類",
+      "爬蟲",
+      "兩棲",
+      "刺蝟",
+      "蜜袋鼯"
+    ],
+    "specialties": [
+      "特殊寵物疾病診斷治療"
+    ],
+    "website": "https://www.facebook.com/61575704126190/",
+    "appointmentLink": "",
+    "transportTips": "",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/61575704126190/"
+    },
+    "specialClinic": {
+      "hasExoticSpecialClinic": true,
+      "label": "非犬貓特殊寵物門診",
+      "note": "位於華興動物醫院 2F，採預約制，無現場掛號；週一至週六 10:00-14:00、15:00-21:00，週日休診。",
+      "reservationRequired": true,
+      "sourceLabel": "官方 Facebook",
+      "sourceUrl": "https://www.facebook.com/61575704126190/",
+      "verifiedAt": "2026-06-10"
+    },
+    "clinicNotes": "本門診部位於華興動物醫院 2F，採預約制，就診前需先以電話或官方 Facebook 預約，無現場掛號，目前未提供急診服務。\n服務對象以小型哺乳類、兩棲爬蟲與中小型鸚鵡、野鳥等非犬貓特殊寵物為主；一般華興動物醫院院本部地址與電話不同，特寵就診請使用本門診部資訊。",
+    "createdAt": "2026-06-10T00:00:00.000Z",
+    "updatedAt": "2026-06-10T00:00:00.000Z",
+    "last_checked": "2026-06-10",
+    "announcements": []
   },
   {
     "id": "monsterah62",
@@ -988,7 +1179,7 @@ export const KaohsiungHospitalList = [
       "mapsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E6%AF%9B%E5%B0%8F%E6%AF%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%7C+%E7%8A%AC%E8%B2%93%E7%89%B9%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.639686,120.3486158,17z/data=!3m1!4b1!4m6!3m5!1s0x346e1b2dc2aca2a9:0xa2e9b73e0e330bcb!8m2!3d22.639686!4d120.3486158!16s%2Fg%2F11f5v0r3h1",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E6%AF%9B%E5%B0%8F%E6%AF%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%7C+%E7%8A%AC%E8%B2%93%E7%89%B9%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.639686,120.3486158,17z/data=!3m1!4b1!4m8!3m7!1s0x346e1b2dc2aca2a9:0xa2e9b73e0e330bcb!8m2!3d22.639686!4d120.3486158!9m1!1b1!16s%2Fg%2F11f5v0r3h1",
       "placeId": "0x346e1b2dc2aca2a9:0xa2e9b73e0e330bcb",
-      "verifiedAt": "2026-06-03"
+      "verifiedAt": "2026-06-10"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -1046,7 +1237,7 @@ export const KaohsiungHospitalList = [
       "肝膽胃腸科"
     ],
     "website": "",
-    "appointmentLink": "",
+    "appointmentLink": "https://line.me/ti/p/@07-5528158",
     "transportTips": "",
     "socialMedia": {
       "facebook": "https://www.facebook.com/monsterah62/",
@@ -1195,10 +1386,10 @@ export const KaohsiungHospitalList = [
       "line": "https://line.me/ti/p/@07-5528158",
       "youtube": "https://www.youtube.com/channel/UCIEcNHK2tjr9If94yZFxcew"
     },
-    "clinicNotes": "拾貳寵動物醫院官方網站標示為犬貓特寵家醫，提供貓友善醫療、中獸醫、高壓氧艙、復健理療與 Fear Free 零恐懼醫療；院內設備包含血液檢驗、PCR核酸檢測、超音波、X光、雷射、血壓機、氧氣機與高壓氧艙等。\n官方 Facebook 與 Instagram 標示全預約制看診，請加入官方 LINE @07-5528158 或致電 07-5528158#1 預約；小盒子私訊不回覆。\nGoogle 商家名稱提醒當月營業日公告請見 FB/IG，且官方動態顯示院休日仍可預約高壓氧艙時段；固定時段與實際營業日請以官方月公告為準。",
+    "clinicNotes": "拾貳寵動物醫院官方網站標示為犬貓特寵家醫，並提供貓友善醫療、中獸醫、高壓氧艙、復健理療與 Fear Free 零恐懼醫療等資訊；特寵物種未在公開頁面逐一列出，建議預約時先確認可看診物種。\n官方 Facebook 與 Instagram 標示全預約制看診，請加入官方 LINE @07-5528158 或致電 07-5528158#1 預約；小盒子私訊不回覆。\nGoogle 商家名稱提醒當月營業日公告請見 FB/IG，且官方動態顯示院休日仍可預約高壓氧艙時段；固定時段與實際營業日請以官方月公告為準。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-05-31T00:00:00.000Z",
-    "last_checked": "2026-05-31",
+    "updatedAt": "2026-06-10T00:00:00.000Z",
+    "last_checked": "2026-06-10",
     "fb": {
       "last_fb_post_date": "2026-05-31",
       "last_fb_post_text": "官方 Facebook/Instagram 與 Google 商家近期可見 6 月營業日公告，提醒當月營業日請見 FB/IG，並透過官方 LINE 預約系統完成預約。"
@@ -1492,15 +1683,13 @@ export const KaohsiungHospitalList = [
       "犬",
       "貓",
       "鼠",
-      "兔",
-      "爬蟲"
+      "鳥類"
     ],
     "pet_category_group": [
-      "犬",
+      "狗",
       "貓",
       "鼠",
-      "兔",
-      "爬蟲"
+      "鳥類"
     ],
     "specialties": [
       "內外科診療",
@@ -1514,15 +1703,16 @@ export const KaohsiungHospitalList = [
     "socialMedia": {
       "facebook": "https://www.facebook.com/profile.php?id=100063831650630"
     },
-    "clinicNotes": "官方 Facebook 可確認電話與地址；目前未找到獨立官網或官方 Instagram。\n固定門診時間、特殊寵物或飛鳥門診與預約規則建議就診前先以電話 07-384-5936 確認。",
+    "clinicNotes": "官方 Facebook 曾明確標示非犬貓門診採預約制，並可見倉鼠健檢與玄鳳鸚鵡就診案例；本次未找到獨立官網、官方 Instagram 或穩定對應的 Google Maps 商家頁。\n目前官方可直接支持的非犬貓物種以鼠類與鳥類為主；兔與爬蟲等物種缺少可直接開啟的官方佐證，建議就診前先以電話 07-384-5936 確認當日可看診物種與門診時間。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-05-31T00:00:00.000Z",
-    "last_checked": "2026-05-31",
+    "updatedAt": "2026-06-10T00:00:00.000Z",
+    "last_checked": "2026-06-10",
     "fb": {
-      "last_fb_post_date": "2023",
-      "last_fb_post_text": "官方 Facebook 可見電話、地址與院所基本資料；近期可讀內容有限，未查到 2026 年月門診、休診或服務異動公告。"
+      "last_fb_post_date": "2022-01-19",
+      "last_fb_post_text": "官方 Facebook 舊貼文可見非犬貓門診採預約制；官方影片另可見倉鼠健檢與玄鳳鸚鵡就診案例。本次未找到 2026 年近期特寵範圍公告。"
     }
   },
+  /*
   {
     "id": "shenghong-animal-hospital",
     "name": "聖弘綜合動物醫院",
@@ -1611,6 +1801,7 @@ export const KaohsiungHospitalList = [
       "last_fb_post_text": ""
     }
   },
+  */
   {
     "id": "jeivita-animal-hospital",
     "name": "捷飛達動物醫院",
@@ -1657,7 +1848,7 @@ export const KaohsiungHospitalList = [
       "mapsUrl": "https://www.google.com/maps/place/%E6%8D%B7%E9%A3%9B%E9%81%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6851727,120.3219956,17z/data=!3m1!4b1!4m6!3m5!1s0x346e0542c061374b:0x9f63263d1abb3fc9!8m2!3d22.6851727!4d120.3219956!16s%2Fg%2F1pzqfh8j_",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%8D%B7%E9%A3%9B%E9%81%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6851727,120.3219956,17z/data=!4m8!3m7!1s0x346e0542c061374b:0x9f63263d1abb3fc9!8m2!3d22.6851727!4d120.3219956!9m1!1b1!16s%2Fg%2F1pzqfh8j_",
       "placeId": "0x346e0542c061374b:0x9f63263d1abb3fc9",
-      "verifiedAt": "2026-06-03"
+      "verifiedAt": "2026-06-10"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -1707,8 +1898,8 @@ export const KaohsiungHospitalList = [
     },
     "clinicNotes": "官方網站列出主要治療對象為賽鴿、鴿子、寵物鳥、鸚鵡、飛禽、兔、鼠、貂、特殊動物與野生動物；服務包含門診醫療、外科手術、住院照顧、一般病房、ICU 病房、健康檢查與安親照顧。\n建議飼主於就診前先致電預約，以利安排診療與住院照護。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-05-31T00:00:00.000Z",
-    "last_checked": "2026-05-31",
+    "updatedAt": "2026-06-10T00:00:00.000Z",
+    "last_checked": "2026-06-10",
     "fb": {
       "last_fb_post_date": "2026-05-16",
       "last_fb_post_text": "官方 Facebook 與 Instagram 近期可見鳥寶手術與餵食管照護提醒，並提及緊急手術可能影響既有預約時間。"
@@ -1834,8 +2025,8 @@ export const KaohsiungHospitalList = [
     "address": "高雄市岡山區介壽西路129號",
     "lat": 22.7841022,
     "lng": 120.2818093,
-    "type": "general",
-    "typeText": "一般動物醫院",
+    "type": "exotic",
+    "typeText": "犬貓診療、特寵診療",
     "phone": "07-625-9310",
     "specialEvents": [],
     "hours": "週一至五 09:00–12:00 / 14:00–17:30 / 18:30–21:00\n週六 10:00–12:00 / 14:00–17:30\n週日休息",
@@ -1893,12 +2084,20 @@ export const KaohsiungHospitalList = [
     "pets": [
       "犬",
       "貓",
-      "非犬貓（未具體說明）"
+      "鼠",
+      "兔",
+      "鳥類",
+      "烏龜",
+      "兩棲爬蟲"
     ],
     "pet_category_group": [
-      "犬",
+      "狗",
       "貓",
-      "其他特寵"
+      "鼠",
+      "兔",
+      "鳥類",
+      "爬蟲",
+      "兩棲"
     ],
     "specialties": [
       "內外科",
@@ -1911,13 +2110,13 @@ export const KaohsiungHospitalList = [
     "socialMedia": {
       "facebook": "https://www.facebook.com/profile.php?id=100054488948234"
     },
-    "clinicNotes": "官方 Facebook 標示為全預約制，看診請先電話預約；12:00-14:00 與 17:00-18:30 為休息時段。若訊息未即時回覆或較急需看診，建議直接來電聯絡。\n週日固定休診，國定假日與臨時公休請以官方 Facebook 公告為準。非犬貓診療項目建議預約時先確認當日可看診物種與醫師安排。",
+    "clinicNotes": "官方 Google 商家資料明確列出犬、貓、鼠、兔、鳥類、烏龜及兩棲爬蟲等動物醫療與照護；官方 Facebook 也可見兔與陸龜等非犬貓案例。\n官方 Facebook 標示為全預約制，看診請先電話預約；12:00-14:00 與 17:00-18:30 為休息時段。若訊息未即時回覆或較急需看診，建議直接來電聯絡。\n週日固定休診，國定假日與臨時公休請以官方 Facebook 公告為準；非犬貓診療建議預約時先確認當日可看診物種與醫師安排。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-05-31T00:00:00.000Z",
-    "last_checked": "2026-05-31",
+    "updatedAt": "2026-06-10T00:00:00.000Z",
+    "last_checked": "2026-06-10",
     "fb": {
       "last_fb_post_date": "",
-      "last_fb_post_text": ""
+      "last_fb_post_text": "官方 Facebook 首頁標示採預約制，Google 商家資料明確列出犬、貓、鼠、兔、鳥類、烏龜及兩棲爬蟲等動物醫療與照護。"
     }
   },
   {
@@ -1966,7 +2165,7 @@ export const KaohsiungHospitalList = [
       "mapsUrl": "https://www.google.com/maps/place/%E9%9F%93%E7%89%B9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E8%88%87%E7%89%B9%E5%AF%B5%E9%86%AB%E7%99%82/@22.619086,120.2975687,17z/data=!3m1!4b1!4m6!3m5!1s0x346e054a08a32f2b:0xa246aa895995192d!8m2!3d22.619086!4d120.2975687!16s%2Fg%2F11v03gjzkc",
       "reviewsUrl": "https://www.google.com/maps/place/%E9%9F%93%E7%89%B9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E8%88%87%E7%89%B9%E5%AF%B5%E9%86%AB%E7%99%82/@22.619086,120.2975687,17z/data=!4m8!3m7!1s0x346e054a08a32f2b:0xa246aa895995192d!8m2!3d22.619086!4d120.2975687!9m1!1b1!16s%2Fg%2F11v03gjzkc",
       "placeId": "0x346e054a08a32f2b:0xa246aa895995192d",
-      "verifiedAt": "2026-06-03"
+      "verifiedAt": "2026-06-10"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -2004,10 +2203,10 @@ export const KaohsiungHospitalList = [
       "instagram": "https://www.instagram.com/Huntah20230519/",
       "line": "https://page.line.me/043yuepg"
     },
-    "clinicNotes": "韓特動物醫院提供犬貓、鼠兔、爬蟲與兩棲類特寵診療，官方社群明列龜、角蛙、守宮、鬆獅蜥等看診物種；服務包含牙科、麻醉與疼痛管理、一般外科與家庭醫學。\n院方未標示急診服務，可透過官方 LINE 提前預約；當日就診建議先電話確認。12:00-13:30 為休息時段，手術日休息可能延至 15:00，實際門診請以官方月表為準。",
+    "clinicNotes": "韓特動物醫院官方 Facebook 與 Instagram 簡介列出犬貓、鼠兔與爬蟲服務，物種包含龜、角蛙、守宮、鬆獅蜥等；服務包含牙科、麻醉與疼痛管理、一般外科與家庭醫學。\n院方未標示急診服務，也標示不提供線上訊息回覆；初診、預約與回診可使用官方 LINE。12:00-13:30 為休息時段，手術日休息可能延至 15:00，實際門診請以官方月表為準。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-05-31T00:00:00.000Z",
-    "last_checked": "2026-05-31",
+    "updatedAt": "2026-06-10T00:00:00.000Z",
+    "last_checked": "2026-06-10",
     "fb": {
       "last_fb_post_date": "2026-05-20",
       "last_fb_post_text": "官方 Facebook 發布 2026 年 6 月門診表，提醒週四公休、週日門診至 18:00，並可透過官方 LINE 提前預約。"
@@ -2022,7 +2221,7 @@ export const KaohsiungHospitalList = [
         "endDate": "2026-06-30",
         "sourceLabel": "官方 Facebook / Google Maps",
         "sourceUrl": "https://www.facebook.com/p/%E9%9F%93%E7%89%B9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-100089019825289/",
-        "verifiedAt": "2026-05-31"
+        "verifiedAt": "2026-06-10"
       }
     ]
   },
@@ -3112,55 +3311,32 @@ export const KaohsiungHospitalList = [
     "emergencyHours": "",
     "nightClinic": true,
     "services": [
-      "家醫科",
-      "小動物內科",
-      "小動物外科",
-      "皮膚科",
-      "腫瘤科",
+      "一般門診",
+      "鼠兔醫療",
+      "馬匹健康照護",
       "犬貓行為諮詢",
-      "犬貓行為醫學門診",
-      "非犬貓特寵醫學門診",
-      "馬病門診"
+      "犬貓行為醫學門診"
     ],
     "pets": [
       "犬",
       "貓",
       "兔",
-      "天竺鼠",
-      "倉鼠",
-      "蜜袋鼯",
-      "刺蝟",
-      "陸龜",
-      "澤龜",
-      "蜥蜴",
-      "變色龍",
-      "守宮",
-      "蛇",
+      "鼠",
       "馬"
     ],
     "pet_category_group": [
       "狗",
       "貓",
       "兔",
-      "天竺鼠",
       "鼠",
-      "爬蟲",
-      "蜜袋鼯",
-      "刺蝟",
       "其他特寵"
     ],
     "specialties": [
       "犬貓行為醫學",
       "犬貓行為諮詢",
       "零恐懼醫療",
-      "小動物內外科",
-      "皮膚科",
-      "腫瘤科",
-      "小型哺乳類醫療",
-      "爬蟲類醫療",
-      "馬病門診",
-      "馬匹整脊復健",
-      "馬匹齒科與蹄病照護"
+      "鼠兔醫療",
+      "馬匹健康照護"
     ],
     "website": "https://4c70b895cbb8.godaddysites.com/",
     "appointmentLink": "https://line.me/R/ti/p/@268vukdh",
@@ -3170,13 +3346,13 @@ export const KaohsiungHospitalList = [
       "instagram": "https://www.instagram.com/wishingstar_ah/",
       "line": "https://line.me/R/ti/p/@268vukdh"
     },
-    "clinicNotes": "官方網站與社群提供一般門診電話與 LINE 預約資訊：07-375-2082、LINE @268vukdh；行為門診另由林醫師 Line cindyvbt 預約。\n官方服務頁列出犬貓、小型哺乳類、爬蟲類與馬病門診；非犬貓特寵與馬病服務建議就診前先確認可約時段。",
+    "clinicNotes": "官方 Facebook 簡介明確列出服務對象包含犬貓、馬匹與鼠兔醫療，並設有犬貓行為醫學門診與馬匹健康照護團隊；官網目前只提供電話、地址、營業時間與 LINE 預約資訊，未列出完整服務項目。\n目前可由官方文字支持的非犬貓範圍以鼠兔與馬匹相關照護為主；爬蟲、蜜袋鼯、刺蝟、龜、蜥蜴、蛇等物種本次未在官方可見文字中確認，就診前請先致電或透過 LINE 確認。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-06-01T00:00:00.000Z",
-    "last_checked": "2026-06-01",
+    "updatedAt": "2026-06-10T00:00:00.000Z",
+    "last_checked": "2026-06-10",
     "fb": {
       "last_fb_post_date": "2026-05-31",
-      "last_fb_post_text": "6月班表公告：6/22-6/26 劉醫師、林醫師出國參加研討會；一般門診預約 07-375-2082/Line @268vukdh；行為門診預約林醫師 Line cindyvbt。"
+      "last_fb_post_text": "官方 Facebook 簡介列出服務對象包含犬貓、馬匹與鼠兔醫療，另設犬貓行為醫學門診與馬匹健康照護團隊；6月班表公告提醒一般門診與行為門診預約方式。"
     },
     "announcements": [
       {
@@ -3188,7 +3364,7 @@ export const KaohsiungHospitalList = [
         "endDate": "2026-06-26",
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/profile.php?id=61572653235703",
-        "verifiedAt": "2026-06-01"
+        "verifiedAt": "2026-06-10"
       },
       {
         "id": "wishing-star-2026-06-hours-adjustment",
@@ -3199,7 +3375,7 @@ export const KaohsiungHospitalList = [
         "endDate": "2026-06-28",
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/profile.php?id=61572653235703",
-        "verifiedAt": "2026-06-01"
+        "verifiedAt": "2026-06-10"
       }
     ]
   }
