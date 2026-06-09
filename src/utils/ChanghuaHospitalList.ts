@@ -66,15 +66,15 @@ export const ChanghuaHospitalList = [
     },
     "google": {
       "rating": "4.4",
-      "reviewCount": 166,
+      "reviewCount": 167,
       "mapsUrl": "https://www.google.com/maps/place/%E9%BE%8D%E8%B2%93%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.0488854,120.4404312,17z/data=!3m1!4b1!4m6!3m5!1s0x3442abc1c9d3db29:0xf01265a48ee1c083!8m2!3d24.0488854!4d120.4404312!16s%2Fg%2F11bwmsjt75",
       "reviewsUrl": "https://www.google.com/maps/place/%E9%BE%8D%E8%B2%93%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.0488854,120.4404312,17z/data=!4m8!3m7!1s0x3442abc1c9d3db29:0xf01265a48ee1c083!8m2!3d24.0488854!4d120.4404312!9m1!1b1!16s%2Fg%2F11bwmsjt75",
       "placeId": "0x3442abc1c9d3db29:0xf01265a48ee1c083",
-      "verifiedAt": "2026-06-03"
+      "verifiedAt": "2026-06-09"
     },
-    "clinicNotes": "提供犬貓醫療與非犬貓醫療服務；官方來源本次未明列特寵物種與專科細項，特殊寵物就診前建議先致電確認。\n門診時間為週一至週五 09:30–11:30、14:00–20:00，週六與週日休診。",
-    "updatedAt": "2026-06-01",
-    "last_checked": "2026-06-01"
+    "clinicNotes": "官方 Facebook 簡介明確標示提供犬貓醫療與非犬貓醫療服務；本次未見官方明列特寵物種與專科細項，特殊寵物就診前建議先致電確認。\n門診時間為週一至週五 09:30–11:30、14:00–20:00，週六與週日休診。",
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
   {
     "id": "changhua-tim-animal-hospital",
@@ -154,14 +154,14 @@ export const ChanghuaHospitalList = [
       "mapsUrl": "https://www.google.com/maps/place/%E6%8F%90%E5%A7%86%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.9045298,120.3632141,17z/data=!3m1!4b1!4m6!3m5!1s0x34694db622187c25:0x8ea15d9af3e0ce74!8m2!3d23.9045298!4d120.3632141!16s%2Fg%2F11ybdjgnbx",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%8F%90%E5%A7%86%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.9045298,120.3632141,17z/data=!4m8!3m7!1s0x34694db622187c25:0x8ea15d9af3e0ce74!8m2!3d23.9045298!4d120.3632141!9m1!1b1!16s%2Fg%2F11ybdjgnbx",
       "placeId": "0x34694db622187c25:0x8ea15d9af3e0ce74",
-      "verifiedAt": "2026-06-03"
+      "verifiedAt": "2026-06-09"
     },
     "clinicNotes": "預約優先制，可透過 LINE、電話或現場安排。\n週一休診；週二至週五 09:30-12:00、14:00-17:00、18:30-20:30，週六、週日 09:30-12:00、14:00-17:00。\n官方社群明確提及看診對象為狗、貓、兔子、天竺鼠與倉鼠。",
     "fb": {
       "last_fb_post_text": "這裡是 6 月的營業時間"
     },
-    "updatedAt": "2026-06-01",
-    "last_checked": "2026-06-01"
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
   {
     "id": "changhua-truelove-animal-hospital",
