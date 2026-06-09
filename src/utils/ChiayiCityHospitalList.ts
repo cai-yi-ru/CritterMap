@@ -488,15 +488,15 @@ export const ChiayiCityHospitalList = [
       "instagram": "https://www.instagram.com/mascot__0718/",
       "line": "https://line.me/R/ti/p/@096hytik"
     },
-    "clinicNotes": "門診可現場掛號；手術需提前預約至門診評估。鳥類內外科為預約制，建議先透過電話或 LINE 確認。\n官方 2026 年 6 月班表標示週一至週五最晚掛號 20:00，週六至週日最晚掛號 18:00。",
+    "clinicNotes": "官方網站首頁明確標示本院為犬貓鳥專科醫療團隊，診療項目列有鳥類內外科與貓／狗／鳥健康檢查、疫苗施打。\n門診可現場掛號；手術需提前預約至門診評估。鳥類內外科為預約制，建議先透過電話或 LINE 確認。\n官方 2026 年 6 月班表標示週一至週五最晚掛號 20:00，週六至週日最晚掛號 18:00。",
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "鳥類預約門診",
-      "note": "官方 Facebook 與 Google Maps 皆標示鳥類內外科／鳥門診需預約；犬貓一般門診可現場掛號。",
+      "note": "官方 Facebook 標示鳥類內外科為預約制；犬貓一般門診可現場掛號。",
       "reservationRequired": true,
       "sourceLabel": "官方 Facebook",
       "sourceUrl": "https://www.facebook.com/mascot0718/",
-      "verifiedAt": "2026-06-01"
+      "verifiedAt": "2026-06-09"
     },
     "announcements": [
       {
@@ -515,6 +515,6 @@ export const ChiayiCityHospitalList = [
       "last_fb_post_date": "2026-05-21",
       "last_fb_post_text": "【2026 6月 萌寵動物醫院 醫師班表】門診可現場掛號；手術請提前預約至門診評估；週一至週五 09:00-12:00、14:00-21:00，週六週日 09:00-12:00、14:00-19:00。"
     },
-    "last_checked": "2026-06-01"
+    "last_checked": "2026-06-09"
   }
 ];
