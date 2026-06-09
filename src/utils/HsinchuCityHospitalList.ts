@@ -79,10 +79,14 @@ export const HsinchuCityHospitalList: Hospital[] = [
       "placeId": "0x346835b984145369:0x9fa9ca6f78303a74",
       "verifiedAt": "2026-06-03"
     },
-    "clinicNotes": "門診時間週一至週六為 10:00–15:00、17:00–21:00，週日僅開放 17:00–21:00。\n市府動物友善標章名單標示本院服務犬、貓及其他非犬貓動物；特殊寵物實際可看診物種、預約方式與急症安排建議先電話確認。",
-    "updatedAt": "2026-06-01",
-    "last_checked": "2026-06-01"
+    "clinicNotes": "門診時間週一至週六為 10:00–15:00、17:00–21:00，週日僅開放 17:00–21:00。\n新竹市動物友善標章名單標示本院可入內寵物包含犬、貓及其他非犬貓動物；院方現行 Facebook 未列出特寵物種與服務細項，特殊寵物看診、預約方式與急症安排請先電話確認。",
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
+  /*
+   * 2026-06-09 查核：未找到院方可用官方來源確認特寵/非犬貓診療。
+   * 新竹市 2026-04-20 動物友善標章店家名單僅標示本院為犬、貓友善，
+   * 故先從特寵清單註解保留原資料，待院方官方資訊補強後再恢復。
   {
     "id": "quanyu-animal-hospital",
     "name": "全育動物醫院",
@@ -180,6 +184,11 @@ export const HsinchuCityHospitalList: Hospital[] = [
     "updatedAt": "2026-06-01",
     "last_checked": "2026-06-01"
   },
+  */
+  /*
+   * 2026-06-09 查核：官方 Facebook、MainPI 與 Google Maps 可確認營業資訊，
+   * 但未找到院方官方來源明確標示特寵/非犬貓診療或具體物種。
+   * 故先從特寵清單註解保留原資料，待院方官方資訊補強後再恢復。
   {
     "id": "anding-animal-hospital",
     "name": "安定動物醫院",
@@ -269,6 +278,7 @@ export const HsinchuCityHospitalList: Hospital[] = [
     "updatedAt": "2026-06-01",
     "last_checked": "2026-06-01"
   },
+  */
   {
     "id": "allweather-animal-hospital",
     "name": "全天候動物醫院",
@@ -355,6 +365,10 @@ export const HsinchuCityHospitalList: Hospital[] = [
     "updatedAt": "2026-06-01",
     "last_checked": "2026-06-01"
   },
+  /*
+   * 2026-06-09 查核：官方 Facebook 近期公告未明確標示特寵/非犬貓診療，
+   * 新竹市官方名冊僅能確認院所存在、地址與負責獸醫，電話來源亦有差異。
+   * 故先從特寵清單註解保留原資料，待院方官方資訊補強後再恢復。
   {
     "id": "happiness-animal-hospital",
     "name": "大福小幸動物醫院",
@@ -415,6 +429,7 @@ export const HsinchuCityHospitalList: Hospital[] = [
     "updatedAt": "2026-06-01",
     "last_checked": "2026-06-01"
   },
+  */
   {
     "id": "dodo-animal-hospital",
     "name": "度度鳥特殊寵物專科醫院",

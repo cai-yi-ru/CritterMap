@@ -456,17 +456,6 @@ export const HospitalUpdateList: HospitalUpdate[] = [
     verifiedAt: '2026-06-01',
   },
   {
-    id: 'update-hsinchu-anding-contact-2026-06-01',
-    hospitalId: 'anding-animal-hospital',
-    type: 'contact',
-    title: '地址與地圖資訊更新',
-    summary: '安定動物醫院地址已更新為新竹市東區公園路227巷28號，並同步校正地圖座標與 Google 商家資訊；前往前建議使用導航並先電話確認掛號安排。',
-    updatedAt: '2026-06-01',
-    sourceLabel: 'Google Maps、官方 Facebook',
-    sourceUrl: 'https://www.facebook.com/ANDING5712135/',
-    verifiedAt: '2026-06-01',
-  },
-  {
     id: 'update-hsinchu-newyork-hours-2026-06-01',
     hospitalId: 'newyork-animal-hospital',
     type: 'hours',
