@@ -11,7 +11,7 @@ export const TaoyuanHospitalList = [
     "typeText": "犬貓診療、特寵診療",
     "phone": "03-287-5484",
     "specialEvents": [],
-    "hours": "週二至週六 10:00–12:00、14:00–17:00、18:00–20:00；週日、週一休診",
+    "hours": "週二至週六 10:00–12:00、14:00–17:00、18:00–20:00；週日 10:00–12:00、14:00–17:00；週一休診；2026-07-01 起調整為週二至週六 09:00–12:00、14:00–17:00、18:00–20:00，週日、週一休診",
     "business_hours": {
       "mon": [],
       "tue": [
@@ -39,7 +39,10 @@ export const TaoyuanHospitalList = [
         "14:00-17:00",
         "18:00-20:00"
       ],
-      "sun": []
+      "sun": [
+        "10:00-12:00",
+        "14:00-17:00"
+      ]
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -83,8 +86,8 @@ export const TaoyuanHospitalList = [
       "reviewsUrl": "https://www.google.com/maps/place/%E7%B6%AD%E7%89%B9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0206853,121.2203014,17z/data=!4m8!3m7!1sUFggav-SLqzd1e8P-6at2Qo!8m2!3d25.0206853!4d121.2203014!9m1!1b1",
       "verifiedAt": "2026-06-03"
     },
-    "clinicNotes": "提供犬貓與兔、鼠、禽鳥診療，並有健檢、住院、鮮食、處方飼料與保險相關服務。院方已公告自 2026-07-01 起固定每週日、週一休診，門診調整為週二至週六 09:00-12:00、14:00-17:00、18:00-20:00。",
-    "last_checked": "2026-06-03",
+    "clinicNotes": "官方 Facebook 與 Instagram 明列犬、貓、兔、鼠、禽鳥診療，並有健檢、住院、鮮食、處方飼料與保險相關服務。院方已公告自 2026-07-01 起固定每週日、週一休診，門診調整為週二至週六 09:00-12:00、14:00-17:00、18:00-20:00。",
+    "last_checked": "2026-06-09",
     "fb": {
       "last_fb_post_date": "2026-05-28",
       "last_fb_post_text": "院方公告 6 月門診與休診安排，並說明自 2026-07-01 起調整固定休診日與門診時段。"
@@ -401,10 +404,10 @@ export const TaoyuanHospitalList = [
       "reviewCount": 586,
       "mapsUrl": "https://www.google.com/maps/place/%E9%80%97%E8%99%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E6%A1%83%E5%9C%92%E9%99%A2%E5%8D%80%EF%BC%89/@24.9911296,121.29731,17z/data=!3m1!4b1!4m6!3m5!1s0x34681f625a763151:0x3f811694e3a6ba13!8m2!3d24.9911296!4d121.29731!16s%2Fg%2F11gyymfyz1",
       "reviewsUrl": "https://www.google.com/maps/place/%E9%80%97%E8%99%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E6%A1%83%E5%9C%92%E9%99%A2%E5%8D%80%EF%BC%89/@24.9911296,121.29731,17z/data=!4m8!3m7!1s0x34681f625a763151:0x3f811694e3a6ba13!8m2!3d24.9911296!4d121.29731!9m1!1b1!16s%2Fg%2F11gyymfyz1",
-      "verifiedAt": "2026-06-02"
+      "verifiedAt": "2026-06-09"
     },
-    "clinicNotes": "提供犬貓與兔、天竺鼠、倉鼠、鳥類、松鼠、刺蝟、貂、蜜袋鼯等特殊寵物診療。門診採預約優先制，建議提前預約；院方公告自 2026-07-01 起營業時間調整為 09:00-20:30，營業時間外不再受理掛號及加班診療。",
-    "last_checked": "2026-06-02",
+    "clinicNotes": "官方網站明列犬、貓、兔、天竺鼠、倉鼠、鳥禽、松鼠、刺蝟、貂、蜜袋鼯等看診動物，並列有 Vetscan 特寵血檢設備與特寵磨牙設備。門診採預約優先制；院方公告自 2026-07-01 起營業時間調整為 09:00-20:30，營業時間外不再受理掛號及加班診療。",
+    "last_checked": "2026-06-09",
     "announcements": [
       {
         "id": "doghouse-taoyuan-hours-change-2026-07-01",
@@ -414,7 +417,7 @@ export const TaoyuanHospitalList = [
         "startDate": "2026-07-01",
         "sourceLabel": "官方網站",
         "sourceUrl": "https://www.doghouse.tw/news/single/20/%E9%80%97%E8%99%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9C%E7%87%9F%E6%A5%AD%E6%99%82%E9%96%93%E8%AA%BF%E6%95%B4%E5%85%AC%E5%91%8A.html",
-        "verifiedAt": "2026-06-02"
+        "verifiedAt": "2026-06-09"
       }
     ]
   },
@@ -588,34 +591,25 @@ export const TaoyuanHospitalList = [
     "nightClinic": true,
     "services": [
       "犬貓內外科門診",
-      "蜜袋鼯、貂、兔等內外科診療",
-      "預防針與健檢",
-      "骨外科（骨盤、骨科、關節腫瘤）",
-      "內分泌與全套生化檢查",
-      "彩色超音波、X光、心電圖",
-      "動物針灸、中藥治療",
-      "腹膜透析"
+      "兔科診療",
+      "鼠類與非犬貓小型哺乳類健康檢查"
     ],
     "pets": [
       "犬",
       "貓",
       "兔",
-      "貂",
-      "蜜袋鼯"
+      "鼠"
     ],
     "pet_category_group": [
       "狗",
       "貓",
       "兔",
-      "蜜袋鼯",
-      "貂"
+      "鼠"
     ],
     "specialties": [
       "犬貓內外科",
-      "特寵內外科診療",
-      "骨科與影像診斷",
-      "內分泌疾病",
-      "中醫針灸"
+      "兔科診療",
+      "鼠類與非犬貓小型哺乳類診療"
     ],
     "website": "",
     "appointmentLink": "",
@@ -630,8 +624,8 @@ export const TaoyuanHospitalList = [
       "reviewsUrl": "https://www.google.com/maps/place/%E5%93%B2%E5%AE%89%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.9910879,121.2962995,17z/data=!4m8!3m7!1s0x34681f1062daaf59:0xb4bbeebcf6a8a0e1!8m2!3d24.9910879!4d121.2962995!9m1!1b1!16s%2Fg%2F1pzszhfsr",
       "verifiedAt": "2026-06-02"
     },
-    "clinicNotes": "1️⃣ 提供犬、貓、蜜袋鼯、貂、兔等動物的內外科診療。\n2️⃣ 門診不需預約，直接到院即可掛號。\n3️⃣ 設有骨外科、影像、心腎檢查、針灸與中藥治療等多樣服務。\n4️⃣ 營業時間為週一至週六 09:00–21:00，週日休診。",
-    "last_checked": "2026-06-02"
+    "clinicNotes": "官方 Facebook 可支持犬貓、兔科與鼠類等非犬貓小型哺乳類診療；貂、蜜袋鼯與其他專科服務本次未找到現行官方明文，已先保守收斂。未預約者於繁忙時段可能需等待，建議出發前先電話確認。",
+    "last_checked": "2026-06-09"
   },
   {
     "id": "jijiang-animal-hospital",
@@ -683,23 +677,21 @@ export const TaoyuanHospitalList = [
     "nightClinic": true,
     "services": [
       "犬貓診療",
-      "鼠兔診療",
-      "外科手術",
-      "住院醫療",
-      "健康檢查",
-      "預防針施打"
+      "鼠、天竺鼠、兔診療"
     ],
     "pets": [
       "犬",
       "貓",
       "鼠",
+      "天竺鼠",
       "兔"
     ],
     "pet_category_group": [
       "狗",
       "貓",
       "兔",
-      "鼠"
+      "鼠",
+      "天竺鼠"
     ],
     "specialties": [],
     "website": "",
@@ -708,8 +700,8 @@ export const TaoyuanHospitalList = [
     "socialMedia": {
       "facebook": "https://www.facebook.com/jijiang110/"
     },
-    "clinicNotes": "提供犬貓與鼠兔診療，並有外科手術、住院醫療、健康檢查與預防針施打服務。週四固定休診，前往前建議先以官方 Facebook 或電話確認當日門診狀態。",
-    "last_checked": "2026-06-02"
+    "clinicNotes": "官方 Facebook 明列犬、貓、鼠、天竺鼠、兔診療。門診採預約優先制且僅提供電話預約，遲到超過 5 分鐘會改現場候位；週四固定休診，前往前建議先確認當日門診狀態。",
+    "last_checked": "2026-06-09"
   },
   {
     "id": "wild-animal-hospital",
@@ -1005,8 +997,8 @@ export const TaoyuanHospitalList = [
       "placeId": "0x3468223412604769:0xda1337d7ff032d74",
       "verifiedAt": "2026-06-02"
     },
-    "clinicNotes": "提供犬貓內外科與鼠兔專科診療，週日固定休診。臨時休診多以官方 Facebook 公告，前往前建議先確認當日門診狀態。",
-    "last_checked": "2026-06-02"
+    "clinicNotes": "官方 Facebook 明列犬貓內外科與鼠兔專科診療，週日固定休診。臨時休診多以官方 Facebook 公告，前往前建議先確認當日門診狀態。",
+    "last_checked": "2026-06-09"
   },
   {
     "id": "chisin-animal-hospital-gueishan",
@@ -1195,9 +1187,10 @@ export const TaoyuanHospitalList = [
       "facebook": "https://www.facebook.com/newcenturyvet/",
       "instagram": ""
     },
-    "clinicNotes": "提供犬、貓、寵物鳥與賽鴿醫療服務，採預約制且不提供線上問診；可電話預約 03-3328100 或 03-3341411。",
-    "last_checked": "2026-06-02"
+    "clinicNotes": "官方 Facebook 明列提供犬、貓、寵物鳥與賽鴿醫療服務，採預約制且不提供線上問診；可電話預約 03-3328100 或 03-3341411。",
+    "last_checked": "2026-06-09"
   },
+  /*
   {
     "id": "ho-yuan-animal-hospital",
     "name": "禾原動物醫院",
@@ -1287,4 +1280,5 @@ export const TaoyuanHospitalList = [
     },
     "last_checked": "2026-06-02"
   }
+  */
 ];

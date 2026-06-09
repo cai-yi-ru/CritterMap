@@ -136,6 +136,7 @@ export const HospitalUpdateList: HospitalUpdate[] = [
     sourceUrl: 'https://www.cherishvet.com/contactus.html',
     verifiedAt: '2026-06-02',
   },
+  /*
   {
     id: 'update-taoyuan-hoyuan-hours-2026-06-02',
     hospitalId: 'ho-yuan-animal-hospital',
@@ -147,6 +148,7 @@ export const HospitalUpdateList: HospitalUpdate[] = [
     sourceUrl: 'https://hoyuan.web66.com.tw/web/ContactUs',
     verifiedAt: '2026-06-02',
   },
+  */
   {
     id: 'update-taichung-featherforest-emergency-2026-06-02',
     hospitalId: 'featherforest-vet-taichung',
