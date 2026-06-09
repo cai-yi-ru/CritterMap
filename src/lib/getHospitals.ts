@@ -10,6 +10,7 @@ import { HsinchuCityHospitalList } from '@/utils/HsinchuCityHospitalList';
 import { MiaoliHospitalList } from '@/utils/MiaoliHospitalList';
 import { TaichungHospitalList } from '@/utils/TaichungHospitalList';
 import { ChanghuaHospitalList } from '@/utils/ChanghuaHospitalList';
+import { NantouHospitalList } from '@/utils/NantouHospitalList';
 import { YunlinHospitalList } from '@/utils/YunlinHospitalList';
 import { ChiayiCityHospitalList } from '@/utils/ChiayiCityHospitalList';
 import { TainanHospitalList } from '@/utils/TainanHospitalList';
@@ -31,6 +32,7 @@ export async function getHospitals(): Promise<Hospital[]> {
     ...MiaoliHospitalList,
     ...TaichungHospitalList,
     ...ChanghuaHospitalList,
+    ...NantouHospitalList,
     ...YunlinHospitalList,
     ...ChiayiCityHospitalList,
     ...TainanHospitalList,

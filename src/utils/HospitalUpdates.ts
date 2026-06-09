@@ -5,6 +5,17 @@ import type { HospitalUpdate } from '@/types/hospital';
 // Run `npm run prune:hospital-updates` to preview expired items, then use `:write` to prune.
 export const HospitalUpdateList: HospitalUpdate[] = [
   {
+    id: 'update-nantou-drlang-content-2026-06-09',
+    hospitalId: 'dr-lang-animal-hospital',
+    type: 'content',
+    title: '新增達特朗動物醫院',
+    summary: '新增達特朗動物醫院，院址為南投縣南投市漳興里祖祠路75號，電話 049-220-0605；官方 Facebook 與 Google Maps 顯示本院採預約優先，提供犬貓內外科與鼠兔家醫科，鼠兔與急症請先來電確認。',
+    updatedAt: '2026-06-09',
+    sourceLabel: '官方 Facebook、Google Maps',
+    sourceUrl: 'https://www.facebook.com/p/%E9%81%94%E7%89%B9%E6%9C%97%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-61574193084750/',
+    verifiedAt: '2026-06-09',
+  },
+  {
     id: 'update-miaoli-bobby-content-2026-06-09',
     hospitalId: 'bobby-animal-hospital',
     type: 'content',
