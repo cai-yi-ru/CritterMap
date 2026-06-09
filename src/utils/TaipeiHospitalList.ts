@@ -98,9 +98,9 @@ export const TaipeiHospitalList = [
     "socialMedia": {
       "facebook": "https://www.facebook.com/p/古亭動物醫院-100076144097985/"
     },
-    "clinicNotes": "本院採預約制，請提前致電預約掛號，尚未開放網路、傳真、留言或其他方式預約。\n為維持醫療品質，每日門診量有限，請準時前往；若遲到需重新預約。",
-    "updatedAt": "2026-06-04",
-    "last_checked": "2026-06-04"
+    "clinicNotes": "看診前請先來電預約。院方官網明列接受犬、貓、鼠、天竺鼠、兔掛號，並提供鼠兔門診；其他特殊寵物需求請先電話確認。",
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
   {
     "id": "brave-vet-exotic-animal-hospital",
@@ -387,8 +387,8 @@ export const TaipeiHospitalList = [
       "line": "https://lin.ee/7K5b7Tx"
     },
     "clinicNotes": "本院為鳥類專科醫院，提供賽鴿及寵物鳥疾病診療，採預約制。\n請至少提前 1 天以電話或官方 LINE 預約；當日不接受預約，現場掛號需依當日空檔安排。\n平日最晚掛號 19:30，週末與國定假日最晚掛號 17:30。",
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
   {
     "id": "casiwa-exotic-animal-clinic",
@@ -615,6 +615,8 @@ export const TaipeiHospitalList = [
     "updatedAt": "2026-06-02",
     "last_checked": "2026-06-02"
   },
+  // 官方公開資料未明確列特寵、兔或鼠診療，2026-06-09 暫停顯示。
+  /*
   {
     "id": "noah-animal-hospital",
     "name": "諾亞動物醫院",
@@ -697,10 +699,11 @@ export const TaipeiHospitalList = [
       "facebook": "https://www.facebook.com/p/%E8%AB%BE%E4%BA%9E%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-100063837950717/?locale=zh_TW",
       "line": "https://line.me/R/ti/p/%40848uswvx"
     },
-    "clinicNotes": "可透過官方 LINE 線上預約掛號與諮詢醫療問題，也可電話聯絡院所。\n固定門診為週一至週六 09:00-13:00、14:00-17:00、18:00-21:00，週日休診，無急診服務。\n兔、鼠就診前建議先以 LINE 或電話確認當日安排。",
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "clinicNotes": "官方 Facebook 與 LINE 目前可見公開資訊僅確認一般門診、住院治療與電話/LINE 預約；未見院方明確標示特寵、兔、鼠或非犬貓診療，特殊寵物需求請先電話或 LINE 確認。",
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
+  */
   {
     "id": "da-zhi-animal-hospital",
     "name": "大直動物醫院",
@@ -765,7 +768,7 @@ export const TaipeiHospitalList = [
       "鼠"
     ],
     "pet_category_group": [
-      "犬",
+      "狗",
       "貓",
       "兔",
       "鼠"
@@ -778,9 +781,9 @@ export const TaipeiHospitalList = [
       "facebook": "https://www.facebook.com/p/%E5%A4%A7%E7%9B%B4%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-100088472640168/",
       "instagram": "https://www.instagram.com/dazhiah468/"
     },
-    "clinicNotes": "提供犬、貓、鼠、兔診療，門診採現場掛號或電話預約，手術需提前預約。\n實際門診班表與臨時異動建議以官方 Facebook 公告為準。",
-    "updatedAt": "2026-06-04",
-    "last_checked": "2026-06-04"
+    "clinicNotes": "官方 Instagram 標示提供犬、貓、鼠、兔看診，診療項目包含內科、外科、產科、牙科、骨科、腫瘤科、X 光檢查與血液生化檢查。\n門診與預約規則建議出發前先電話或透過官方社群確認。",
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
   {
     "id": "ohohni-animal-hospital",
@@ -876,15 +879,15 @@ export const TaipeiHospitalList = [
       "instagram": "https://www.instagram.com/ohohni_animal/",
       "line": "https://line.me/R/ti/p/@390zcjlj"
     },
-    "clinicNotes": "採優先預約制，可電話或官方 LINE 預約。\n兔子看診建議預約吳君璞醫師；超過最後掛號時間將加收急診掛號費 500 元。",
+    "clinicNotes": "採優先預約制，可電話或官方 LINE 預約。\n官方目前明確支持兔相關診療，兔子看診建議預約吳君璞醫師；其他非犬貓物種未見官方公開說明，建議先電話確認。",
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "兔科特別門診",
       "note": "兔子看診請預約吳君璞醫師，建議先電話或官方 LINE 預約。",
       "reservationRequired": true,
       "sourceLabel": "官方 Facebook／六月醫師班表",
-      "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid02NdqUAiaJJsQeHhZr39tCbfdUkGVcYsbSKS4WmRU8XMF8L5fXjTRtxyTWYqcUQQGfl&id=61550481123457",
-      "verifiedAt": "2026-06-02"
+      "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid02Nu8W7SdkgCvhvBoNzvihY3Lf1D8UQ6eGRJbLBbpxpSw5cF1hFFShZujrUQt148VMl&id=61550481123457",
+      "verifiedAt": "2026-06-09"
     },
     "announcements": [
       {
@@ -899,8 +902,8 @@ export const TaipeiHospitalList = [
         "verifiedAt": "2026-06-02"
       }
     ],
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
   {
     "id": "jingxing-animal-hospital",
@@ -979,10 +982,12 @@ export const TaipeiHospitalList = [
     "socialMedia": {
       "facebook": "https://www.facebook.com/VetJXAH/"
     },
-    "clinicNotes": "提供犬、貓、鼠、兔醫療保健、住院治療、心臟內科、外科手術與兔子結紮服務。\n週二休診，其餘時間可致電預約看診；Facebook 近期內容需人工再確認是否仍作為院方公告管道。",
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "clinicNotes": "官方 Facebook 頁首明示提供犬、貓、鼠、兔醫療保健、住院治療、心臟內科、外科手術與兔子結紮服務；未見更廣泛特寵物種明示。\n週二休診，其餘時間可致電預約看診。",
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
+  // 未找到院方自有官方來源明確公告鳥類／特寵診療，2026-06-09 暫停顯示。
+  /*
   {
     "id": "quanyang-animal-hospital",
     "name": "全陽犬貓鳥類專科動物醫院",
@@ -1049,10 +1054,11 @@ export const TaipeiHospitalList = [
     "website": "",
     "appointmentLink": "",
     "transportTips": "鄰近捷運南京三民站，步行約10分鐘可達。",
-    "clinicNotes": "公開資訊較少，建議以電話確認當日門診與可看診物種。\n院方商家資訊提醒本院僅一位獸醫師，12:00-14:00 為休診時段，該時段電話不接聽。",
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "clinicNotes": "截至 2026-06-09，未找到院方官網或官方社群；可見 Facebook 頁面標示為非官方粉絲專頁。Google Maps 商家名稱含「鳥類專科」，另有鳥會救傷名單可作輔助，但仍缺院方官方自有來源明確公告鳥類／特寵診療，建議先電話確認可看診物種。",
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
+  */
   {
     "id": "anting-animal-hospital",
     "name": "安庭動物醫院",
@@ -1127,7 +1133,7 @@ export const TaipeiHospitalList = [
     "socialMedia": {
       "facebook": "https://www.facebook.com/p/%E5%AE%89%E5%BA%AD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-100063467964124/"
     },
-    "clinicNotes": "提供犬、貓、兔與寵物鼠診療，另有專業美容師造型服務。\n門診與手術採預約掛號；無預約或現場掛號可能加收掛號費。\n恕無急診服務，國定假日或研討會休診請先致電確認。",
+    "clinicNotes": "官方 Facebook 明確寫有提供犬、貓、兔與寵物鼠醫療，另有專業美容師造型服務；目前未見官方明寫更廣義特寵物種，其他非犬貓物種建議先電話確認。\n門診與手術採預約掛號；無預約或現場掛號可能加收掛號費。恕無急診服務，國定假日或研討會休診請先致電確認。",
     "announcements": [
       {
         "id": "anting-appointment-rules-2026-06",
@@ -1139,8 +1145,8 @@ export const TaipeiHospitalList = [
         "verifiedAt": "2026-06-02"
       }
     ],
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
   {
     "id": "ntu-veterinary-hospital",
@@ -1266,6 +1272,8 @@ export const TaipeiHospitalList = [
     "updatedAt": "2026-06-03",
     "last_checked": "2026-06-03"
   },
+  // 官方公開資訊未明確標示鳥類、特寵或非犬貓診療，2026-06-09 暫停顯示。
+  /*
   {
     "id": "san-diego-animal-hospital",
     "name": "聖地牙哥動物醫院",
@@ -1329,10 +1337,11 @@ export const TaipeiHospitalList = [
     "socialMedia": {
       "facebook": "https://www.facebook.com/p/%E8%81%96%E5%9C%B0%E7%89%99%E5%93%A5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-100063903073891/"
     },
-    "clinicNotes": "固定營業時間為週一至週五 13:30-21:00、週六 14:00-16:30、週日休診。\n公開服務資訊較少，就診前建議先電話確認當日門診與可看診物種。",
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "clinicNotes": "官方 Facebook 目前僅見基本聯絡資訊，未見現行公開服務清單或明確特寵／鳥類／非犬貓診療說明；Google Maps 評論曾提及鳥類、鼠類與爬蟲就診經驗，但仍建議就診前先電話確認可看診物種。",
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
+  */
   {
     "id": "maopai-le-animal-hospital",
     "name": "毛派樂動物醫院",
@@ -1394,7 +1403,8 @@ export const TaipeiHospitalList = [
       "鳥類"
     ],
     "specialties": [
-      "犬貓牙科"
+      "犬貓牙科",
+      "鳥類內外科"
     ],
     "website": "",
     "appointmentLink": "",
@@ -1403,7 +1413,7 @@ export const TaipeiHospitalList = [
       "facebook": "https://www.facebook.com/profile.php?id=100082532660991",
       "instagram": "https://www.instagram.com/maoparrot_animalhospital/"
     },
-    "clinicNotes": "主要資訊與公告以官方 Facebook、Instagram 為主，未找到可確認的獨立官網。\n6 月有臨時門診異動，就診前請先查看公告或電話確認。",
+    "clinicNotes": "官方 Facebook 與 Instagram 皆明列鳥類內外科；除鳥類外，其他非犬貓物種未見官方明確說明。\n主要資訊與公告以官方 Facebook、Instagram 為主，就診前請先查看公告或電話確認。",
     "fb": {
       "last_fb_post_date": "2026-06-02",
       "last_fb_post_text": "[公告] 毛派樂 6 月份門診時間：6/17 全院休診，6/27 門診休診；6/19 端午節正常門診。"
@@ -1421,8 +1431,8 @@ export const TaipeiHospitalList = [
         "verifiedAt": "2026-06-02"
       }
     ],
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
   {
     "id": "lite-animal-hospital",
@@ -1587,7 +1597,8 @@ export const TaipeiHospitalList = [
     ],
     "specialties": [
       "中西醫合併治療",
-      "動物針灸"
+      "動物針灸",
+      "犬貓兔針灸"
     ],
     "website": "",
     "appointmentLink": "",
@@ -1595,9 +1606,9 @@ export const TaipeiHospitalList = [
     "socialMedia": {
       "facebook": "https://www.facebook.com/acupuncturetaiwan/"
     },
-    "clinicNotes": "可透過電話或 Messenger 聯繫院方。\n現有固定時段與預約資訊建議出發前再向院方電話確認。",
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "clinicNotes": "官方 Facebook 明確可見「犬貓兔針灸」；目前未見官方明確列出兔以外特寵物種，其他非犬貓診療範圍建議先電話確認。\n可透過電話或 Messenger 聯繫院方，現有固定時段與預約資訊建議出發前再向院方電話確認。",
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
   {
     "id": "peteden-animal-hospital",
@@ -2013,7 +2024,7 @@ export const TaipeiHospitalList = [
     "socialMedia": {
       "facebook": "https://www.facebook.com/DumaAnimalHospital/"
     },
-    "clinicNotes": "本院採預約制，建議先來電安排看診時段。\n提供犬、貓與鼠兔門診，並有心臟影像、口腔治療、中獸醫、復健、貓行為諮詢與急重症照護等服務。\n鼠兔與特定門診需求，建議先致電確認時段。",
+    "clinicNotes": "本院採預約制，建議先來電安排看診時段。\n官網診療服務頁明確列有鼠兔門診；官方 Facebook 頁面簡介仍顯示目前服務對象為狗兒與貓，與官網資訊不一致，鼠兔就診前建議先電話確認時段。\n另有心臟影像、口腔治療、中獸醫、復健、貓行為諮詢與急重症照護等服務。",
     "announcements": [
       {
         "id": "duma-2026-anniversary-checkup",
@@ -2027,9 +2038,11 @@ export const TaipeiHospitalList = [
         "verifiedAt": "2026-06-02"
       }
     ],
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
+  // 官方公開資訊未明確標示兔、特寵或非犬貓診療，2026-06-09 暫停顯示。
+  /*
   {
     "id": "cambridge-animal-hospital-beitou",
     "name": "劍橋動物醫院",
@@ -2111,9 +2124,10 @@ export const TaipeiHospitalList = [
         "verifiedAt": "2026-06-02"
       }
     ],
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
+  */
   {
     "id": "national-vet-hospital-taipei",
     "name": "全國動物醫院 台北分院",
@@ -2162,12 +2176,13 @@ export const TaipeiHospitalList = [
     "emergencyHours": "21:30-08:30（夜間急診僅犬貓；兔急症請先致電確認）",
     "nightClinic": true,
     "services": [
-      "犬貓兔轉診與加護照護",
+      "急重症轉診後送醫療服務",
       "24H急診（僅犬貓）",
       "24H住院照護",
       "影像學檢查（彩色超音波、數位X光；可合作 MRI/CT）",
       "血液學檢查（IDEXX分析儀、快速試劑）",
       "外科手術",
+      "兔科門診",
       "貓科特別門診",
       "腫瘤專科約診",
       "犬復健治療"
@@ -2187,10 +2202,10 @@ export const TaipeiHospitalList = [
       "影像診斷",
       "外科手術",
       "24H住院照護",
+      "兔科",
       "貓科特別門診",
       "腫瘤診斷與治療",
-      "犬復健治療",
-      "兔住院/加護照護"
+      "犬復健治療"
     ],
     "website": "https://www.vet.com.tw/store_detail.php?Key=3",
     "appointmentLink": "",
@@ -2199,7 +2214,15 @@ export const TaipeiHospitalList = [
       "facebook": "https://www.facebook.com/people/全國動物醫院台北分院/100063778068908/",
       "instagram": "https://www.instagram.com/nvh_taiwan/"
     },
-    "clinicNotes": "台北分院 24H 營業，夜間 21:30-08:30 為急診時段且官方中文頁標示急診僅犬貓；兔相關急症或住院加護需求建議先致電確認。\n一般門診可預約或現場掛號，預約掛號至 21:00、現場掛號至 21:15；貓科特別門診與腫瘤專科約診需提前電話預約。",
+    "clinicNotes": "官方團隊頁明列台北分院提供兔科診療；夜間 21:30-08:30 為急診時段且官方中文頁標示急診僅犬貓，兔急症建議先電話確認。\n一般門診可預約或現場掛號，預約掛號至 21:00、現場掛號至 21:15；貓科特別門診與腫瘤專科約診需提前電話預約。",
+    "specialClinic": {
+      "hasExoticSpecialClinic": true,
+      "label": "兔科門診",
+      "note": "台北分院團隊頁列於特別門診區，由鄭玉津獸醫師提供兔科診療；實際看診時段依官網醫師班表。",
+      "sourceLabel": "官方分院團隊頁",
+      "sourceUrl": "https://www.vet.com.tw/store_detail2.php?cID=3",
+      "verifiedAt": "2026-06-09"
+    },
     "announcements": [
       {
         "id": "national-vet-taipei-oncology-clinic-2026",
@@ -2211,8 +2234,8 @@ export const TaipeiHospitalList = [
         "verifiedAt": "2026-06-02"
       }
     ],
-    "updatedAt": "2026-06-03",
-    "last_checked": "2026-06-03"
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
   {
     "id": "amazon-exotic-animal-hospital",
@@ -2644,14 +2667,12 @@ export const TaipeiHospitalList = [
     "pets": [
       "狗",
       "貓",
-      "兔",
-      "其他特寵"
+      "兔"
     ],
     "pet_category_group": [
       "狗",
       "貓",
-      "兔",
-      "其他特寵"
+      "兔"
     ],
     "specialties": [
       "高階影像診斷",
@@ -2668,18 +2689,18 @@ export const TaipeiHospitalList = [
       "instagram": "https://www.instagram.com/goboamc/",
       "line": "https://page.line.me/027dunqj"
     },
-    "clinicNotes": "本院採全預約制，公開資料明確列犬、貓、兔，其他特寵建議先透過 LINE 或電話確認。\n醫院為五層樓獨棟建築，犬貓分層診間與住院，並設有高階影像、心臟內科、微創內視鏡外科、預防醫學與特寵特約門診。",
+    "clinicNotes": "院方官網明確提供犬、貓、兔診療；官方 Facebook 與 Instagram 另寫有特寵特約門診。\n非犬貓就診範圍與時段未於官網完整列明，建議先以電話或 LINE 預約確認。",
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "特寵特約門診",
-      "note": "官方 FB/IG 標示提供特寵特約門診；公開資料明確列犬貓兔，其他特寵建議先透過 LINE 或電話預約確認。",
+      "note": "非犬貓診療以特約門診提供，官方明確列犬貓兔；其他特寵物種與時段建議先電話或 LINE 預約確認。",
       "reservationRequired": true,
       "sourceLabel": "官方 Facebook、官方 Instagram",
       "sourceUrl": "https://www.instagram.com/goboamc/",
-      "verifiedAt": "2026-06-02"
+      "verifiedAt": "2026-06-09"
     },
-    "updatedAt": "2026-06-03",
-    "last_checked": "2026-06-03"
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   },
   {
     "id": "lovecat-animal-hospital",
@@ -2869,8 +2890,8 @@ export const TaipeiHospitalList = [
     "socialMedia": {
       "facebook": "https://www.facebook.com/changhung173"
     },
-    "clinicNotes": "本院採預約看診，建議先電話確認門診安排；官方聯絡頁列有 02-2567-8939 與 02-2567-8839 兩支預約電話。\n官方網站標示主治犬、貓、兔等內外科、皮膚與產科，Google 商家目前顯示週一至週五有晚間門診，週六至下午診，週日休診。",
-    "updatedAt": "2026-06-02",
-    "last_checked": "2026-06-02"
+    "clinicNotes": "本院採預約看診，建議先電話確認門診安排；官方聯絡頁列有 02-2567-8939 與 02-2567-8839 兩支預約電話。\n官方網站標示主治犬、貓、兔等內外科、皮膚與產科；目前僅能確認兔，未見官方明示其他特寵物種，兔以外非犬貓個案建議先電話確認。",
+    "updatedAt": "2026-06-09",
+    "last_checked": "2026-06-09"
   }
 ];
