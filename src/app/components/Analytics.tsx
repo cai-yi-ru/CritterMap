@@ -2,8 +2,7 @@
 
 import Script from 'next/script';
 
-const GA_MEASUREMENT_ID = 'G-XXXXXXX'; 
-// const GA_MEASUREMENT_ID = 'G-3FL8VZDVZZ'; // 替換成你自己的 ID
+const GA_MEASUREMENT_ID = 'G-3FL8VZDVZZ';
 
 export default function Analytics() {
   return (
@@ -20,9 +19,7 @@ export default function Analytics() {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}', {
-              page_path: window.location.pathname,
-            });
+            gtag('config', '${GA_MEASUREMENT_ID}');
           `,
         }}
       />
