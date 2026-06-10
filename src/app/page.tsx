@@ -4,6 +4,7 @@ import { getHospitals } from "@/lib/getHospitals";
 import { getHospitalUpdates } from "@/lib/getHospitalUpdates";
 import { filterHospitals, summarizeHospitals } from "@/lib/hospitalSearch";
 import { defaultDescription, defaultTitle, siteName, siteUrl } from "@/lib/seo";
+import type { Hospital } from "@/types/hospital";
 
 export const metadata = {
   title: defaultTitle,
@@ -16,6 +17,46 @@ export const metadata = {
 type HomePageProps = {
   searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
+
+function parseDateOnly(value: string) {
+  const [year, month, day] = value.slice(0, 10).split("-").map(Number);
+
+  if (!year || !month || !day) {
+    return null;
+  }
+
+  return new Date(year, month - 1, day);
+}
+
+function getDisplayableHospitalDataDate(hospitals: Hospital[]) {
+  const dateValues = hospitals.flatMap((hospital) => [
+    hospital.updatedAt,
+    hospital.last_checked,
+    hospital.google?.verifiedAt,
+  ]);
+
+  const latestDate = dateValues
+    .filter((value): value is string => Boolean(value))
+    .map((value) => value.slice(0, 10))
+    .sort()
+    .at(-1);
+
+  if (!latestDate) {
+    return null;
+  }
+
+  const parsedLatestDate = parseDateOnly(latestDate);
+
+  if (!parsedLatestDate) {
+    return null;
+  }
+
+  const threeMonthsAgo = new Date();
+  threeMonthsAgo.setHours(0, 0, 0, 0);
+  threeMonthsAgo.setMonth(threeMonthsAgo.getMonth() - 3);
+
+  return parsedLatestDate >= threeMonthsAgo ? latestDate : null;
+}
 
 export default async function Home({ searchParams }: HomePageProps) {
   const params = await searchParams;
@@ -34,6 +75,7 @@ export default async function Home({ searchParams }: HomePageProps) {
   const initialHospitals = summarizeHospitals(filterHospitals(hospitals, { city: "台北市", petCategory: "all" }));
   const updateHospitalIds = new Set(updates.map((update) => update.hospitalId));
   const updateHospitals = summarizeHospitals(hospitals.filter((hospital) => updateHospitalIds.has(hospital.id)));
+  const latestHospitalDataDate = getDisplayableHospitalDataDate(hospitals);
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -67,6 +109,7 @@ export default async function Home({ searchParams }: HomePageProps) {
         url: siteUrl,
         inLanguage: "zh-Hant-TW",
         description: `小獸所整理 ${hospitals.length} 間支援特殊寵物的動物醫院，涵蓋 ${cities.length} 個縣市與多種寵物分類。`,
+        dateModified: latestHospitalDataDate || undefined,
         keywords: ["特寵醫院", "特殊寵物", "動物醫院", ...cities, ...pets.slice(0, 12)],
         isAccessibleForFree: true,
         creator: {
@@ -92,6 +135,7 @@ export default async function Home({ searchParams }: HomePageProps) {
         initialUpdates={updates}
         initialUpdateHospitals={updateHospitals}
         hospitalCount={hospitals.length}
+        latestHospitalDataDate={latestHospitalDataDate}
       />
     </>
   );

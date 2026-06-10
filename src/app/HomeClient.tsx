@@ -53,6 +53,7 @@ type HomeClientProps = {
   initialUpdates?: HospitalUpdate[];
   initialUpdateHospitals?: HospitalSummary[];
   hospitalCount?: number;
+  latestHospitalDataDate?: string | null;
 };
 
 export default function HomeClient({
@@ -61,6 +62,7 @@ export default function HomeClient({
   initialUpdates = [],
   initialUpdateHospitals = [],
   hospitalCount = initialHospitals.length,
+  latestHospitalDataDate = null,
 }: HomeClientProps) {
   const [isPending, startTransition] = useTransition();
   const [filteredHospitals, setFilteredHospitals] = useState<HospitalSummary[]>(initialHospitals);
@@ -132,7 +134,7 @@ export default function HomeClient({
                 依縣市、寵物類別、是否營業與預約條件快速篩選。出發前仍請致電醫院確認看診時段與收案狀況。
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-3 sm:flex sm:items-center">
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:flex lg:items-center">
               <div className="rounded-xl border border-sage-100 bg-sage-50 px-4 py-3">
                 <div className="text-xs font-medium text-stone-500">目前整理</div>
                 <div className="text-xl font-extrabold text-forest-900">{totalLabel}</div>
@@ -141,6 +143,14 @@ export default function HomeClient({
                 <div className="text-xs font-medium text-stone-500">搜尋結果</div>
                 <div className="text-xl font-extrabold text-forest-900">{resultLabel}</div>
               </div>
+              {latestHospitalDataDate && (
+                <div className="col-span-2 rounded-xl border border-sage-100 bg-white px-4 py-3 sm:col-span-1">
+                  <div className="text-xs font-medium text-stone-500">資料最近整理</div>
+                  <time className="text-lg font-extrabold text-forest-900" dateTime={latestHospitalDataDate}>
+                    {latestHospitalDataDate}
+                  </time>
+                </div>
+              )}
             </div>
           </div>
         </header>
