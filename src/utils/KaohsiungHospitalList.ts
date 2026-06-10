@@ -934,6 +934,7 @@ export const KaohsiungHospitalList = [
       }
     ]
   },
+  /*
   {
     "id": "aegis-vet-kaohsiung",
     "name": "伊吉森動物醫院",
@@ -1005,11 +1006,11 @@ export const KaohsiungHospitalList = [
       "label": "特寵專科門診",
       "note": "官方 Google 商家貼文列出特寵物種為鳥類、爬蟲類、鼠、兔、貂；特寵門診與醫師時段請依每月門診表或電話確認。",
       "reservationRequired": true,
-      "sourceLabel": "Google Maps 業主貼文、官方 Instagram",
+      "sourceLabel": "Google Maps 業主貼文、官方 Facebook",
       "sourceUrl": "https://www.google.com/maps/place/%E4%BC%8A%E5%90%89%E6%A3%AE%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E9%99%84%E8%A8%AD%E5%AF%B5%E7%89%A9%E7%BE%8E%E5%AE%B9%EF%BC%89/@22.6525158,120.2901196,17z/data=!3m1!4b1!4m6!3m5!1s0x346e05003ce2f313:0x183cba12fd300f75!8m2!3d22.6525158!4d120.2901196!16s%2Fg%2F11yskd_pxm",
       "verifiedAt": "2026-06-10"
     },
-    "clinicNotes": "官方 Facebook 試營運貼文與 Google 商家資料顯示本院提供犬貓與特殊寵物醫療；官方 Instagram 簡介列有犬貓家醫、一般內外科、牙科、骨科、特寵專科、健檢與慢性病照護。\n特寵物種以官方 Google 商家貼文可見的鳥類、爬蟲類、鼠、兔、貂為準；其他物種可先來電詢問。門診採預約制或預約優先，特寵醫師時段請依每月門診表與電話確認。",
+    "clinicNotes": "官方 Facebook 門診表與 Google 商家業主貼文明確列出特寵物種，包含鳥類、爬蟲類、鼠、兔、貂；如不屬上述物種，院方也提醒可先來電詢問。\n官方 Instagram 簡介列有犬貓家醫、內外科、心臟科、影像科、牙科、骨科、健檢、慢性病照護與寵物美容。門診採預約制或預約優先，特寵醫師時段請依每月門診表與電話確認。",
     "createdAt": "2026-06-10T00:00:00.000Z",
     "updatedAt": "2026-06-10T00:00:00.000Z",
     "last_checked": "2026-06-10",
@@ -1019,6 +1020,7 @@ export const KaohsiungHospitalList = [
     },
     "announcements": []
   },
+  */
   {
     "id": "huaxing-exotic-animal-medicine-department",
     "name": "華興非犬貓特殊寵物醫療門診部",
