@@ -17,6 +17,7 @@ import { TainanHospitalList } from '@/utils/TainanHospitalList';
 import { KaohsiungHospitalList } from '@/utils/KaohsiungHospitalList';
 import { PingtungHospitalList } from '@/utils/PingtungHospitalList';
 import { YilanHospitalList } from '@/utils/YilanHospitalList';
+import { HualienHospitalList } from '@/utils/HualienHospitalList';
 import { TaitungHospitalList } from '@/utils/TaitungHospitalList';
 import type { Hospital } from '@/types/hospital';
 
@@ -39,6 +40,7 @@ export async function getHospitals(): Promise<Hospital[]> {
     ...KaohsiungHospitalList,
     ...PingtungHospitalList,
     ...YilanHospitalList,
+    ...HualienHospitalList,
     ...TaitungHospitalList,
   ] as Hospital[];
 }

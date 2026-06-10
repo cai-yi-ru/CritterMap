@@ -5,6 +5,17 @@ import type { HospitalUpdate } from '@/types/hospital';
 // Run `npm run prune:hospital-updates` to preview expired items, then use `:write` to prune.
 export const HospitalUpdateList: HospitalUpdate[] = [
   {
+    id: 'update-hualien-takahashi-content-2026-06-10',
+    hospitalId: 'takahashi-animal-hospital-hualien',
+    type: 'content',
+    title: '新增高橋動物醫院',
+    summary: '新增花蓮市高橋動物醫院，院址為花蓮縣花蓮市中正路91號，電話 03-8358792；官方 Instagram / Threads 顯示本院設有特殊寵物門診，每週四、五 09:00-17:30，採預約制，建議先電話確認可看診物種。',
+    updatedAt: '2026-06-10',
+    sourceLabel: '官方 Instagram、官方 Threads、Google Maps、花蓮縣動植物防疫所',
+    sourceUrl: 'https://www.instagram.com/takahashi.hualien/',
+    verifiedAt: '2026-06-10',
+  },
+  {
     id: 'update-tainan-lkah-zhonghua-content-2026-06-10',
     hospitalId: 'tainan-lkah-zhonghua',
     type: 'content',
