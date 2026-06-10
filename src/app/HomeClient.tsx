@@ -47,6 +47,10 @@ export const cityCenterMap: Record<string, [number, number]> = {
     "all": [23.7, 120.9]
 }
 
+const cityZoomMap: Record<string, number> = {
+  all: 7,
+};
+
 type HomeClientProps = {
   embed?: boolean;
   initialHospitals?: HospitalSummary[];
@@ -70,7 +74,7 @@ export default function HomeClient({
   const [updateHospitals] = useState<HospitalSummary[]>(initialUpdateHospitals);
   const [selectedHospital, setSelectedHospital] = useState<Hospital | null>(null);
   const [selectedUpdate, setSelectedUpdate] = useState<{ update: HospitalUpdate; hospital: Hospital } | null>(null);
-  const [city, setCity] = useState("台北市");
+  const [city, setCity] = useState("all");
   const [type, setType] = useState("all");
   const [mapCenter, setMapCenter] = useState<[number, number]>(cityCenterMap['all']);
   const [reservationRequiredOnly, setReservationRequiredOnly] = useState(false);
@@ -116,6 +120,7 @@ export default function HomeClient({
 
   const totalLabel = hospitalCount > 0 ? `${hospitalCount} 間` : '整理中';
   const resultLabel = isPending ? '搜尋中' : filteredHospitals.length > 0 ? `${filteredHospitals.length} 間符合` : '沒有符合結果';
+  const mapZoom = cityZoomMap[city] ?? 12;
 
   return (
     <div className={`site-shell min-h-screen ${embed ? 'embed-shell' : ''}`}>
@@ -174,7 +179,7 @@ export default function HomeClient({
             <HospitalList hospitals={filteredHospitals} onHospitalClick={handleHospitalClick} />
           </aside>
           <section className={embed ? "order-1" : "order-1 lg:order-2"}>
-            <MapPanel hospitals={filteredHospitals} center={mapCenter} onHospitalClick={handleHospitalClick} embed={embed} />
+            <MapPanel hospitals={filteredHospitals} center={mapCenter} zoom={mapZoom} onHospitalClick={handleHospitalClick} embed={embed} />
           </section>
         </div>
 

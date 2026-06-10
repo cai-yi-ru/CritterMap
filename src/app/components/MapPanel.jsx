@@ -27,15 +27,15 @@ const createHospitalIcon = (isEmergency) => {
   });
 };
 
-function MapUpdater({ center }) {
+function MapUpdater({ center, zoom }) {
   const map = useMap();
   useEffect(() => {
-    map.setView(center, map.getZoom(), { animate: true });
-  }, [center]);
+    map.setView(center, zoom, { animate: true });
+  }, [center, zoom, map]);
   return null;
 }
 
-export default function MapPanel({ hospitals, center, onHospitalClick, embed = false }) {
+export default function MapPanel({ hospitals, center, zoom = 12, onHospitalClick, embed = false }) {
   useEffect(() => {
     delete L.Icon.Default.prototype._getIconUrl;
     L.Icon.Default.mergeOptions({
@@ -57,11 +57,11 @@ export default function MapPanel({ hospitals, center, onHospitalClick, embed = f
       <MapContainer
         key="main-map"
         center={center}
-        zoom={12}
+        zoom={zoom}
         scrollWheelZoom={true}
         className="h-[calc(100%-56px)] w-full rounded-xl"
       >
-        <MapUpdater center={center} />
+        <MapUpdater center={center} zoom={zoom} />
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors"
