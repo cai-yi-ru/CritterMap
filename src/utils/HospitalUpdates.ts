@@ -5,6 +5,17 @@ import type { HospitalUpdate } from '@/types/hospital';
 // Run `npm run prune:hospital-updates` to preview expired items, then use `:write` to prune.
 export const HospitalUpdateList: HospitalUpdate[] = [
   {
+    id: 'update-yilan-sunbaby-announcement-2026-06-10',
+    hospitalId: 'sunbaby-animal-hospital',
+    type: 'announcement',
+    title: '上寶貝動物醫院 6 月休診公告',
+    summary: '上寶貝動物醫院官方 Facebook 確認本院提供犬貓、鼠、兔、烏龜、刺蝟、蜜袋鼯與禽類診療，保留於宜蘭特寵清單；另公告 6/6–6/8、6/19–6/22 門診休息。',
+    updatedAt: '2026-06-10',
+    sourceLabel: '官方 Facebook、Google Maps',
+    sourceUrl: 'https://www.facebook.com/sunbabyah/',
+    verifiedAt: '2026-06-10',
+  },
+  {
     id: 'update-hualien-takahashi-content-2026-06-10',
     hospitalId: 'takahashi-animal-hospital-hualien',
     type: 'content',

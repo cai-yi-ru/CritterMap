@@ -77,19 +77,32 @@ export const YilanHospitalList = [
     },
     "google": {
       "rating": "4.7",
-      "reviewCount": 183,
+      "reviewCount": 185,
       "mapsUrl": "https://www.google.com/maps/place/%E4%B8%8A%E5%AF%B6%E8%B2%9D%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.6775742,121.7633005,17z/data=!3m1!4b1!4m6!3m5!1s0x3467e766662d3033:0x5a24bc5fd2406c2c!8m2!3d24.6775742!4d121.7633005!16s%2Fg%2F11splh15x4",
       "reviewsUrl": "https://www.google.com/maps/place/%E4%B8%8A%E5%AF%B6%E8%B2%9D%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.6775742,121.7633005,17z/data=!4m8!3m7!1s0x3467e766662d3033:0x5a24bc5fd2406c2c!8m2!3d24.6775742!4d121.7633005!9m1!1b1!16s%2Fg%2F11splh15x4",
-      "verifiedAt": "2026-06-01"
+      "verifiedAt": "2026-06-10"
     },
-    "clinicNotes": "提供犬貓獨立診間，並看診犬貓、鼠、兔、烏龜、刺蝟、蜜袋鼯與禽類。\n建議先電話預約；初診請先來電預約掛號，最晚掛號時間 18:00，預防針請於 16:30 前到院。\n固定門診為週二至週五 10:00–13:00、14:00–19:00；週六 10:00–13:00、14:00–17:00；週日與週一公休。\n院方公告不設急診與住院服務。",
+    "clinicNotes": "提供犬貓獨立診間，並看診犬貓、鼠、兔、烏龜、刺蝟、蜜袋鼯與禽類。\n建議先電話預約；初診建議於 17:00 前預約，最晚掛號時間 18:30，預防針請於 16:30 前到院。\n固定門診為週二至週五 10:00–13:00、14:00–19:00；週六 10:00–13:00、14:00–17:00；週日與週一公休。\n院方公告不設急診與住院服務。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-06-01T00:00:00.000Z",
-    "last_checked": "2026-06-01",
+    "updatedAt": "2026-06-10T00:00:00.000Z",
+    "last_checked": "2026-06-10",
     "fb": {
-      "last_fb_post_date": "",
-      "last_fb_post_text": "5 月門診時間與 5/2–5/4 休診提醒"
-    }
+      "last_fb_post_date": "2026-06-04",
+      "last_fb_post_text": "6/6–6/8 門診休息；6/19–6/22 門診休息。"
+    },
+    "announcements": [
+      {
+        "id": "sunbaby-june-2026-closure",
+        "type": "closure",
+        "title": "6 月休診公告",
+        "content": "6/6–6/8、6/19–6/22 門診休息。固定門診與特寵診療資訊仍建議出發前先以官方 Facebook 或電話確認。",
+        "startDate": "2026-06-06",
+        "endDate": "2026-06-22",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/sunbabyah/",
+        "verifiedAt": "2026-06-10"
+      }
+    ]
   },
   {
     "id": "pawsome-animal-hospital",
