@@ -865,6 +865,17 @@ export const HospitalUpdateList: HospitalUpdate[] = [
     verifiedAt: '2026-06-01',
   },
   {
+    id: 'update-kaohsiung-action-exotic-service-split-2026-06-10',
+    hospitalId: 'action-animal-hospital',
+    type: 'services',
+    title: '特寵門診分流提醒',
+    summary: '亞幸動物醫院 2026 年 6 月門診表顯示，6/1 起大山異寵動物醫院試營運並承接非犬貓專門門診；亞幸本院周明賢醫師看診項目仍含犬貓、爬蟲類、中獸醫與復健科，特殊寵物就診請先電話確認院區與時段。',
+    updatedAt: '2026-06-10',
+    sourceLabel: '官方 Facebook',
+    sourceUrl: 'https://www.facebook.com/action1218/',
+    verifiedAt: '2026-06-10',
+  },
+  {
     id: 'update-kaohsiung-mercy-exotic-announcement-2026-05-31',
     hospitalId: '8d652bb4-7f3a-4628-afbb-8e8e8f3f82a7',
     type: 'announcement',

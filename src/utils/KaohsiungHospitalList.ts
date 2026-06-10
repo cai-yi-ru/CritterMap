@@ -737,12 +737,6 @@ export const KaohsiungHospitalList = [
     "pets": [
       "貓",
       "狗",
-      "兔",
-      "鼠",
-      "天竺鼠",
-      "鳥類",
-      "刺蝟",
-      "蜜袋鼯",
       "烏龜",
       "守宮",
       "蜥蜴",
@@ -751,13 +745,7 @@ export const KaohsiungHospitalList = [
     "pet_category_group": [
       "狗",
       "貓",
-      "兔",
-      "鼠",
-      "天竺鼠",
-      "鳥類",
       "爬蟲",
-      "刺蝟",
-      "蜜袋鼯",
       "兩棲"
     ],
     "specialties": [
@@ -766,11 +754,7 @@ export const KaohsiungHospitalList = [
       "草藥食療",
       "復健推拿",
       "雷射與物理治療",
-      "爬蟲與特殊寵物醫療",
-      "小型哺乳類內外科",
       "兩棲爬蟲醫療",
-      "鳥禽類醫療",
-      "兔與囓齒類醫療",
       "ISFM 貓友善金牌",
       "貓友善醫療"
     ],
@@ -782,25 +766,34 @@ export const KaohsiungHospitalList = [
       "instagram": "https://www.instagram.com/actionah_2020/",
       "line": "https://lin.ee/qbHqTSH"
     },
-    "clinicNotes": "官方網站標示線上預約看診平台為 Facebook 與 Line，且所有診療均以現場看診為基礎；建議先透過電話、Facebook 或官方 Line 預約與確認醫師門診。2026 年 6 月犬貓醫師門診表標示週日無犬貓診；Google 商家仍列週日營業，週日或晚間就診請先致電確認。\n官方網站說明亞幸提供中西醫整合醫療，包含寵物針灸、中草藥食療、復健、雷射、特殊寵物科、腫瘤科、牙科、緩和醫療與長照等；官方醫師介紹與 Facebook 可見資訊支持小型哺乳類、兔與囓齒類、鳥禽、兩棲爬蟲等特寵診療。特殊寵物以爬寵特寵為主，官方列出烏龜、兔子、蜜袋鼯、蜥蜴、守宮與蛙類等，不含蛇類請先來電確認。\n大山異寵動物醫院已獨立於苓雅區凱旋二路139號試營運，與亞幸本院地址不同；大山門診請依大山官方社群與預約資訊確認。",
+    "clinicNotes": "官方網站標示線上預約看診平台為 Facebook 與 Line，且所有診療均以現場看診為基礎；建議先透過電話、Facebook 或官方 Line 預約與確認醫師門診。2026 年 6 月犬貓專科每週日休診；Google 商家仍列週日營業，週日或晚間就診請先致電確認。\n2026 年 6 月起大山異寵動物醫院已獨立於苓雅區凱旋二路139號試營運，承接非犬貓專門門診。亞幸本院 6 月門診表仍列周明賢醫師看診項目含犬貓、爬蟲類、中獸醫與復健科；兔、鳥、小型哺乳類等非犬貓特殊寵物建議優先依大山官方社群與預約資訊確認。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-06-01T00:00:00.000Z",
-    "last_checked": "2026-06-01",
+    "updatedAt": "2026-06-10T00:00:00.000Z",
+    "last_checked": "2026-06-10",
+    "specialClinic": {
+      "hasExoticSpecialClinic": true,
+      "label": "爬蟲／中獸醫門診",
+      "note": "2026 年 6 月亞幸本院門診表仍列周明賢醫師看診項目含犬貓、爬蟲類、中獸醫與復健科；非犬貓專門門診已由大山異寵動物醫院試營運承接，特殊寵物就診請先電話確認院區與時段。",
+      "reservationRequired": true,
+      "sourceLabel": "官方 Facebook",
+      "sourceUrl": "https://www.facebook.com/action1218/",
+      "verifiedAt": "2026-06-10"
+    },
     "fb": {
       "last_fb_post_date": "2026-06-01",
-      "last_fb_post_text": "官方 Facebook 可見 2026 年 6 月犬貓醫師門診表，並提醒大山異寵動物醫院試營運前可致電亞幸 07-7265577 預約大山門診。"
+      "last_fb_post_text": "官方 Facebook 可見 2026 年 6 月門診表：6/1 大山異寵動物醫院試營運，特寵專科醫師列於大山資訊；亞幸本院周明賢醫師看診項目仍含犬貓、爬蟲類、中獸醫與復健科。"
     },
     "announcements": [
       {
         "id": "action-june-2026-exotic-schedule",
         "type": "notice",
-        "title": "2026 年 6 月門診與大山異寵預約提醒",
-        "content": "官方 Facebook 可見 2026 年 6 月犬貓醫師門診表：週日無犬貓診；Google 商家仍列週日營業，實際看診請先預約確認。院方另分享大山異寵動物醫院試營運資訊，試營運期間可致電亞幸 07-7265577 預約大山異寵門診。大山院址為苓雅區凱旋二路139號，與亞幸本院地址不同。",
+        "title": "2026 年 6 月門診與大山異寵分流提醒",
+        "content": "官方 Facebook 2026 年 6 月門診表顯示：6/1 大山異寵動物醫院試營運，特寵專科醫師與非犬貓門診請優先依大山公告預約；亞幸本院周明賢醫師看診項目仍含犬貓、爬蟲類、中獸醫與復健科。犬貓專科每週日休診，實際看診請先電話確認院區與時段。",
         "startDate": "2026-06-01",
         "endDate": "2026-06-30",
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/action1218/",
-        "verifiedAt": "2026-06-01"
+        "verifiedAt": "2026-06-10"
       }
     ]
   },
