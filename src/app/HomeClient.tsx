@@ -183,15 +183,16 @@ export default function HomeClient({
           </section>
         </div>
 
-        {!embed && (
-          <>
-            <SponsoredSlot context="home" className="mt-5" />
-            <HospitalUpdates
-              updates={hospitalUpdates}
-              hospitals={updateHospitals}
-              onUpdateClick={handleUpdateClick}
-            />
-          </>
+        {!embed && <SponsoredSlot context="home" className="mt-5" />}
+        <HospitalUpdates
+          updates={hospitalUpdates}
+          hospitals={updateHospitals}
+          onUpdateClick={handleUpdateClick}
+        />
+        {embed && (
+          <div className="mt-5">
+            <DisclaimerSection />
+          </div>
         )}
       </main>
 
