@@ -1,6 +1,10 @@
 import type { Hospital } from '@/types/hospital';
 
 export const HsinchuCityHospitalList: Hospital[] = [
+  /*
+   * 2026-07-06 查核：Google Maps 可確認仍營業，官方 Facebook 也可確認院所身分、
+   * 地址與電話，但未找到院方官方來源明確標示特寵、特殊寵物或非犬貓門診。
+   * 故先從特寵清單註解保留原資料，待院方官方資訊補強後再恢復。
   {
     "id": "hsinchu-animal-hospital",
     "name": "新竺動物醫院",
@@ -73,16 +77,17 @@ export const HsinchuCityHospitalList: Hospital[] = [
     },
     "google": {
       "rating": "4.1",
-      "reviewCount": 420,
+      "reviewCount": 421,
       "mapsUrl": "https://www.google.com/maps/place/%E6%96%B0%E7%AB%B9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.8135629,120.9595005,17z/data=!3m1!4b1!4m6!3m5!1s0x346835b984145369:0x9fa9ca6f78303a74!8m2!3d24.8135629!4d120.9595005!16s%2Fg%2F11b6js5cmw",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%96%B0%E7%AB%B9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.8135629,120.9595005,17z/data=!4m8!3m7!1s0x346835b984145369:0x9fa9ca6f78303a74!8m2!3d24.8135629!4d120.9595005!9m1!1b1!16s%2Fg%2F11b6js5cmw",
       "placeId": "0x346835b984145369:0x9fa9ca6f78303a74",
-      "verifiedAt": "2026-06-03"
+      "verifiedAt": "2026-07-06"
     },
     "clinicNotes": "門診時間週一至週六為 10:00–15:00、17:00–21:00，週日僅開放 17:00–21:00。\n新竹市動物友善標章名單標示本院可入內寵物包含犬、貓及其他非犬貓動物；院方現行 Facebook 未列出特寵物種與服務細項，特殊寵物看診、預約方式與急症安排請先電話確認。",
-    "updatedAt": "2026-06-09",
-    "last_checked": "2026-06-09"
+    "updatedAt": "2026-07-06",
+    "last_checked": "2026-07-06"
   },
+  */
   /*
    * 2026-06-09 查核：未找到院方可用官方來源確認特寵/非犬貓診療。
    * 新竹市 2026-04-20 動物友善標章店家名單僅標示本院為犬、貓友善，
@@ -318,7 +323,7 @@ export const HsinchuCityHospitalList: Hospital[] = [
     "reservationRequired": false,
     "hasEmergencyService": true,
     "emergencyHours": "21:00–09:00 夜間急診；全年無休提供 24 小時急診服務",
-    "nightClinic": true,
+    "nightClinic": false,
     "services": [
       "犬貓鼠兔門診急診",
       "寵物內視鏡",
@@ -355,15 +360,43 @@ export const HsinchuCityHospitalList: Hospital[] = [
     },
     "google": {
       "rating": "4.0",
-      "reviewCount": 315,
+      "reviewCount": 331,
       "mapsUrl": "https://www.google.com/maps/place/%E5%85%A8%E5%A4%A9%E5%80%99%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.7878558,121.0200103,17z/data=!3m1!4b1!4m6!3m5!1s0x3468373460d55181:0xe0df728cd95621f1!8m2!3d24.7878558!4d121.0200103!16s%2Fg%2F11ssf7_d23",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%85%A8%E5%A4%A9%E5%80%99%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.7878558,121.0200103,17z/data=!4m8!3m7!1s0x3468373460d55181:0xe0df728cd95621f1!8m2!3d24.7878558!4d121.0200103!9m1!1b1!16s%2Fg%2F11ssf7_d23",
       "placeId": "0x3468373460d55181:0xe0df728cd95621f1",
-      "verifiedAt": "2026-06-03"
+      "verifiedAt": "2026-08-06"
     },
-    "clinicNotes": "全年無休，一般門診 09:00–21:00，21:00–09:00 為夜間急診時段。\n官方網站標示服務對象為犬、貓、鼠、兔，院內設有犬貓鼠兔獨立診間、ICU 氧氣病房、高壓氧治療中心、內視鏡、高階心臟超音波與外科手術設備。特殊需求或急症就診建議先電話確認。",
-    "updatedAt": "2026-06-01",
-    "last_checked": "2026-06-01"
+    "clinicNotes": "全年無休；09:00–21:00 為一般門診，21:00–09:00 為夜間急診。官方明列犬貓鼠兔門診急診，服務對象包含倉鼠與兔子；特殊需求或急症就診前可先致電 03-668-6356 確認。",
+    "fb": {
+      "last_fb_post_date": "8月（年份未顯示）",
+      "last_fb_post_text": "官方 Facebook 最新可見貼文公告 8 月門診表，頁面僅顯示約 3 天前，未提供可安全轉換的確切日期。"
+    },
+    "announcements": [
+      {
+        "id": "allweather-2026-07-schedule-notice",
+        "type": "notice",
+        "title": "2026 年 7 月班表提醒",
+        "content": "官方網站已公告 2026 年 7 月班表；本院維持全年無休，一般門診 09:00–21:00，21:00–09:00 為夜間急診，服務對象包含犬、貓、鼠、兔。",
+        "startDate": "2026-07-01",
+        "endDate": "2026-07-31",
+        "sourceLabel": "官方網站",
+        "sourceUrl": "https://www.allweathervet.com/paper/share_index.php?id=9291&useno=allweathervet&title_id=8946#page",
+        "verifiedAt": "2026-07-16"
+      },
+      {
+        "id": "allweather-2026-08-schedule-notice",
+        "type": "notice",
+        "title": "2026 年 8 月門診表",
+        "content": "官方網站與 Facebook 已公告 2026 年 8 月門診表；全年無休，一般門診 09:00–21:00，21:00–09:00 為夜間急診，犬貓鼠兔門診急診仍依院方公告與現場狀況安排。",
+        "startDate": "2026-08-01",
+        "endDate": "2026-08-31",
+        "sourceLabel": "官方網站、官方 Facebook",
+        "sourceUrl": "https://www.allweathervet.com/paper/share_index.php?id=9408&useno=allweathervet&title_id=8946#page",
+        "verifiedAt": "2026-08-06"
+      }
+    ],
+    "updatedAt": "2026-08-06",
+    "last_checked": "2026-08-06"
   },
   /*
    * 2026-06-09 查核：官方 Facebook 近期公告未明確標示特寵/非犬貓診療，
@@ -442,19 +475,19 @@ export const HsinchuCityHospitalList: Hospital[] = [
     "typeText": "特寵診療",
     "phone": "0965-109-093",
     "specialEvents": [],
-    "hours": "週三、週四、週六 12:00–21:00；週一、週二、週五、週日休診",
+    "hours": "週三、週四、週六 14:00–21:00；週一、週二、週五、週日休診",
     "business_hours": {
       "mon": [],
       "tue": [],
       "wed": [
-        "12:00-21:00"
+        "14:00-21:00"
       ],
       "thu": [
-        "12:00-21:00"
+        "14:00-21:00"
       ],
       "fri": [],
       "sat": [
-        "12:00-21:00"
+        "14:00-21:00"
       ],
       "sun": []
     },
@@ -475,25 +508,37 @@ export const HsinchuCityHospitalList: Hospital[] = [
       "非犬貓寵物門診醫療"
     ],
     "website": "",
-    "appointmentLink": "",
+    "appointmentLink": "https://line.me/R/ti/p/@978zickn",
     "transportTips": "位於新竹市東區西大路315巷，鄰近大遠百，建議使用導航前往，周邊有付費停車場。",
     "socialMedia": {
-      "facebook": "https://www.facebook.com/p/%E5%BA%A6%E5%BA%A6%E9%B3%A5%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2-100075739882784/"
+      "facebook": "https://www.facebook.com/p/%E5%BA%A6%E5%BA%A6%E9%B3%A5%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2-100075739882784/",
+      "line": "https://line.me/R/ti/p/@978zickn"
     },
     "google": {
       "rating": "4.6",
-      "reviewCount": 83,
+      "reviewCount": 86,
       "mapsUrl": "https://www.google.com/maps/place/%E5%BA%A6%E5%BA%A6%E9%B3%A5%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2%EF%BC%88%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@24.8011484,120.9657388,17z/data=!3m1!4b1!4m6!3m5!1s0x3468352128b95dd9:0xc08ffb7bf05aa8c6!8m2!3d24.8011484!4d120.9657388!16s%2Fg%2F11tc1s0zwy",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%BA%A6%E5%BA%A6%E9%B3%A5%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2%EF%BC%88%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@24.8011484,120.9657388,17z/data=!4m8!3m7!1s0x3468352128b95dd9:0xc08ffb7bf05aa8c6!8m2!3d24.8011484!4d120.9657388!9m1!1b1!16s%2Fg%2F11tc1s0zwy",
       "placeId": "0x3468352128b95dd9:0xc08ffb7bf05aa8c6",
-      "verifiedAt": "2026-06-03"
+      "verifiedAt": "2026-08-06"
     },
-    "clinicNotes": "提供非犬貓寵物門診醫療，不包含外科、住院與住宿服務。\n本院採預約制，不使用 Facebook 預約；官方 Facebook 標示可先加入 LINE ID @978zickn 詢問。Google 商家固定營業時間為週三、週四、週六 12:00–21:00。",
+    "clinicNotes": "提供非犬貓寵物門診醫療，不包含外科、住院與住宿服務。\n全預約制，不使用 Facebook 預約；請先加入官方 LINE（@978zickn）預約。週一、週二、週五、週日未營業；週三、週四、週六 14:00–21:00。",
     "fb": {
-      "last_fb_post_date": "2026-06-01",
-      "last_fb_post_text": "鳥類健康專題講座第三部曲公告，提醒有意參加者留意報名。"
+      "last_fb_post_date": "7月28日（年份未顯示）",
+      "last_fb_post_text": "官方 Facebook 最新可見貼文分享鸚鵡健康飲食與餵食指南。"
     },
-    "updatedAt": "2026-06-01",
-    "last_checked": "2026-06-01"
+    "announcements": [
+      {
+        "id": "dodo-line-reservation-notice",
+        "type": "notice",
+        "title": "預約方式提醒",
+        "content": "本院採預約制，不使用 Facebook 預約；請加入官方 LINE ID @978zickn 預約。院方明示提供非犬貓寵物門診醫療，不包含外科、住院與住宿服務。",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid02MseE7dH8gVV3xff25NtkgTD3ErDdTBgxN8qTC3mZTmcYYkGBR3qEVQFsMTRBNRmYl&id=100075739882784",
+        "verifiedAt": "2026-08-06"
+      }
+    ],
+    "updatedAt": "2026-08-06",
+    "last_checked": "2026-08-06"
   }
 ];
