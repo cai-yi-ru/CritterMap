@@ -135,10 +135,10 @@ export const TainanHospitalList = [
     },
     "google": {
       "rating": "4.2",
-      "reviewCount": 141,
+      "reviewCount": 143,
       "mapsUrl": "https://www.google.com/maps/place/%E7%AB%8B%E5%AE%89%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.9883641,120.191848,17z/data=!3m1!4b1!4m6!3m5!1s0x346e775ef092157b:0xbc2ff36c1a2c983d!8m2!3d22.9883641!4d120.191848!16s%2Fg%2F11sl2074jg",
       "reviewsUrl": "https://www.google.com/maps/place/%E7%AB%8B%E5%AE%89%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.9883641,120.191848,17z/data=!4m8!3m7!1s0x346e775ef092157b:0xbc2ff36c1a2c983d!8m2!3d22.9883641!4d120.191848!9m1!1b1!16s%2Fg%2F11sl2074jg",
-      "verifiedAt": "2026-06-03"
+      "verifiedAt": "2026-07-15"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -178,16 +178,16 @@ export const TainanHospitalList = [
       "label": "特寵諮詢",
       "note": "爬蟲類、鼠類、兔子、鳥類等非犬貓寵物請先諮詢海鯤院長。",
       "sourceLabel": "官方 Facebook",
-      "sourceUrl": "https://www.facebook.com/people/%E5%8F%B0%E5%8D%97%E7%AB%8B%E5%AE%89%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/100064250250423/",
-      "verifiedAt": "2026-06-10"
+      "sourceUrl": "https://www.facebook.com/profile.php?id=100064250250423&sk=about",
+      "verifiedAt": "2026-07-15"
     },
     "fb": {
-      "last_fb_post_date": "2026-06-03",
-      "last_fb_post_text": "貓咪按摩穴位大全｜每天10分鐘，貓咪更健康更黏人"
+      "last_fb_post_date": "2026-07-14",
+      "last_fb_post_text": "分享犬淋巴瘤化療後急性腫瘤溶解症候群的臨床衛教。"
     },
-    "clinicNotes": "門診時間為週一、二、四、五 09:30–12:00、15:00–21:00；週三 09:30–12:00、18:00–21:00；週六 09:30–12:00、15:00–18:00，週日休診。\n官方 Facebook 明示爬蟲類、鼠類、兔子、鳥類等非犬貓寵物請先諮詢海鯤院長；看診時段與可安排項目建議先電話確認。",
-    "updatedAt": "2026-06-10",
-    "last_checked": "2026-06-10"
+    "clinicNotes": "門診時間為週一、二、四、五 09:30–12:00、15:00–21:00；週三 09:30–12:00、18:00–21:00；週六 09:30–12:00、15:00–18:00，週日休診。\n一般門診照常提供；爬蟲類、鼠類、兔子、鳥類等非犬貓寵物目前仍需先諮詢海鯤院長，再確認可安排的看診時段與項目。",
+    "updatedAt": "2026-08-05",
+    "last_checked": "2026-08-05"
   },
   {
     "id": "tainan-lets-go-animal-hospital",
@@ -233,10 +233,10 @@ export const TainanHospitalList = [
     "google": {
       "rating": "4.7",
       "reviewCount": 87,
-      "mapsUrl": "https://www.google.com/maps/place/Let%E2%80%99s+go+%E9%82%A3%E9%9A%BB%E7%8B%97%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.9728414,120.218773,17z/data=!3m1!4b1!4m5!3m4!1s0x346e75d6170c1031:0xe38d921db6ffc47a!8m2!3d22.9728147!4d120.22096",
+      "mapsUrl": "https://www.google.com/maps/place/Let%E2%80%99s+go+%E9%82%A3%E9%9A%BB%E7%8B%97%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@22.9728414,120.2209617,17z/data=!3m1!4b1!4m6!3m5!1s0x346e75d6170c1031:0xe38d921db6ffc47a!8m2!3d22.9728414!4d120.2209617!16s%2Fg%2F11j1cjhtd6",
       "reviewsUrl": "https://www.google.com/maps/place/Let%E2%80%99s+go+%E9%82%A3%E9%9A%BB%E7%8B%97%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.9728414,120.218773,17z/data=!4m8!3m7!1s0x346e75d6170c1031:0xe38d921db6ffc47a!8m2!3d22.9728147!4d120.22096!9m1!1b1",
       "placeId": "ChIJMRAMF9Z1bjQResT_th2SjeM",
-      "verifiedAt": "2026-06-10"
+      "verifiedAt": "2026-07-15"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -270,9 +270,13 @@ export const TainanHospitalList = [
       "facebook": "https://www.facebook.com/p/Lets-go-%E9%82%A3%E9%9A%BB%E7%8B%97%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-100063623333402/",
       "instagram": "https://www.instagram.com/letsgo__animal_hospital/"
     },
-    "clinicNotes": "全面預約制，看診請先提早預約。官方 Facebook 明示可看狗、貓、兔、鼠與蜜袋鼯；非上述物種與實際可安排項目建議先電話確認。",
-    "updatedAt": "2026-06-10",
-    "last_checked": "2026-06-10"
+    "fb": {
+      "last_fb_post_date": "2026-07-05",
+      "last_fb_post_text": "鍾醫師說台南有「好感生活展」要帶我去看，結果一看到隔壁的爬蟲展就轉向去看爬蟲。"
+    },
+    "clinicNotes": "Google 商家頁以「預約制」顯示。官方 Facebook 明列可看狗、貓、兔、鼠與蜜袋鼯；其他物種與實際可安排項目建議先致電確認。",
+    "updatedAt": "2026-07-06",
+    "last_checked": "2026-08-05"
   },
   {
     "id": "tainan-bolo-animal-hospital",
@@ -319,8 +323,8 @@ export const TainanHospitalList = [
     "emergencyHours": "",
     "nightClinic": true,
     "services": [
-      "一般內科診療",
-      "一般外科手術",
+      "一般內科診療服務",
+      "一般外科手術服務",
       "牙科專業診療",
       "特殊寵物專科",
       "預防醫學與健康管理",
@@ -352,7 +356,7 @@ export const TainanHospitalList = [
     ],
     "specialties": [
       "犬貓牙科",
-      "特寵牙科"
+      "特殊寵物專科"
     ],
     "website": "https://www.bolovet.com/",
     "appointmentLink": "https://line.me/R/ti/p/@886qoseb",
@@ -364,43 +368,50 @@ export const TainanHospitalList = [
     },
     "google": {
       "rating": "5.0",
-      "reviewCount": 32,
+      "reviewCount": 35,
       "mapsUrl": "https://www.google.com/maps/place/%E6%B3%A2%E7%BE%85%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9C%E5%8F%B0%E5%8D%97%E7%8A%AC%E8%B2%93%E5%8F%8A%E7%89%B9%E5%AF%B5%E5%B0%88%E7%A7%91%EF%BD%9C%E7%8A%AC%E8%B2%93%E7%89%99%E7%A7%91+%E5%85%94%E5%AD%90+%E5%80%89%E9%BC%A0+%E5%A4%A9%E7%AB%BA%E9%BC%A0+%E8%B2%82+%E5%88%BA%E8%9D%9F+%E7%83%8F%E9%BE%9C+%E7%88%AC%E8%9F%B2+%E6%80%A5%E8%A8%BA/@22.9738733,120.2187245,17z/data=!3m1!4b1!4m6!3m5!1s0x346e753c53c61d87:0x5b3cfa2f392e06a3!8m2!3d22.9738733!4d120.2187245!16s%2Fg%2F11yftdtf47",
-      "verifiedAt": "2026-06-10"
+      "verifiedAt": "2026-07-15"
     },
     "announcements": [
       {
-        "id": "tainan-bolo-2026-06-15-closure",
+        "id": "tainan-bolo-2026-07-11-closure",
         "type": "closure",
-        "title": "6/15-6/21 醫師出國進修休診",
-        "content": "Google 商家業主更新顯示，2026-06-15 至 2026-06-21 醫師出國進修，休診 7 日；安排就診前請先確認當日門診狀態。",
-        "startDate": "2026-06-15",
-        "endDate": "2026-06-21",
-        "sourceLabel": "Google Maps 商家",
-        "sourceUrl": "https://www.google.com/maps/place/%E6%B3%A2%E7%BE%85%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9C%E5%8F%B0%E5%8D%97%E7%8A%AC%E8%B2%93%E5%8F%8A%E7%89%B9%E5%AF%B5%E5%B0%88%E7%A7%91%EF%BD%9C%E7%8A%AC%E8%B2%93%E7%89%99%E7%A7%91+%E5%85%94%E5%AD%90+%E5%80%89%E9%BC%A0+%E5%A4%A9%E7%AB%BA%E9%BC%A0+%E8%B2%82+%E5%88%BA%E8%9D%9F+%E7%83%8F%E9%BE%9C+%E7%88%AC%E8%9F%B2+%E6%80%A5%E8%A8%BA/@22.9738733,120.2187245,17z/data=!3m1!4b1!4m6!3m5!1s0x346e753c53c61d87:0x5b3cfa2f392e06a3!8m2!3d22.9738733!4d120.2187245!16s%2Fg%2F11yftdtf47",
-        "verifiedAt": "2026-06-10"
+        "title": "7/11-7/12 牙科研討會休診",
+        "content": "院方公告 2026-07-11 至 2026-07-12 因醫師北上參與牙科研討會，期間暫停門診服務二日。",
+        "startDate": "2026-07-11",
+        "endDate": "2026-07-12",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/BoloAH",
+        "verifiedAt": "2026-07-06"
       }
     ],
-    "clinicNotes": "官方網站明列犬、貓與兔子、天竺鼠、倉鼠、雪貂、刺蝟、蜜袋鼯、爬蟲類等特寵診療，並提供一般內外科、牙科、特寵醫療、住院照護與健康諮詢。\n門診採預約優先制，建議先以電話或官方 LINE 預約；Google 商家名稱雖有急診字樣，但官方網站未明確列出特寵急診，急症請先致電確認。",
+    "fb": {
+      "last_fb_post_date": "2026-07-03",
+      "last_fb_post_text": "休診公告：7/11-7/12 醫師北上參與牙科研討會，期間暫停門診服務二日。"
+    },
+    "clinicNotes": "官網與社群目前皆明列犬、貓與兔子、天竺鼠、倉鼠、刺蝟、貂、蜜袋鼯、爬蟲等特寵診療，門診採預約優先制，建議先以電話或官方 LINE 預約。\n就診時請繫牽繩或使用外出籠；汽車可停文化中心廣二停車場或文化中心立體停車場。官方未明確列出特寵急診，急症請先致電確認。",
     "createdAt": "2026-06-10",
-    "updatedAt": "2026-06-10",
-    "last_checked": "2026-06-10"
+    "updatedAt": "2026-07-15",
+    "last_checked": "2026-08-05"
   },
   {
     "id": "tainan-coobi-animal-hospital",
     "name": "酷比動物醫院",
     "city": "台南市",
-    "district": "南區",
-    "address": "702台南市南區夏林路210號",
-    "lat": 22.9797896,
-    "lng": 120.1949081,
+    "district": "東區",
+    "address": "701台南市東區崇德路124號",
+    "lat": 22.9797777,
+    "lng": 120.2191252,
     "type": "exotic",
     "typeText": "犬貓診療、特寵診療",
-    "phone": "06-2631058",
+    "phone": "06-2676333",
     "specialEvents": [],
-    "hours": "週二至週六 09:30–12:30、14:00–18:00、18:30–21:00；週日 09:30–12:30、14:00–18:00；週一公休",
+    "hours": "週一 09:30–12:30、14:00–18:00；週二至週六 09:30–12:30、14:00–18:00、18:30–21:00；週日 09:30–12:30、14:00–18:00",
     "business_hours": {
-      "mon": [],
+      "mon": [
+        "09:30-12:30",
+        "14:00-18:00"
+      ],
       "tue": [
         "09:30-12:30",
         "14:00-18:00",
@@ -433,12 +444,12 @@ export const TainanHospitalList = [
     },
     "google": {
       "rating": "4.7",
-      "reviewCount": 452,
-      "mapsUrl": "https://www.google.com/maps/place/%E9%85%B7%E6%AF%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%2F%E7%8A%AC%E8%B2%93%E5%85%A7%E5%A4%96%E7%A7%91%2F%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%2F%E7%8A%AC%E8%B2%93%E8%85%AB%E7%98%A4%E7%A7%91%E5%BF%83%E8%87%9F%E7%A7%91%2F%E9%AB%98%E5%A3%93%E6%B0%A7%E6%B2%BB%E7%99%82%E4%B8%AD%E5%BF%83/@22.9797896,120.1949081,17z/data=!3m1!4b1!4m6!3m5!1s0x346e75736fe99a13:0xcbcedc4e52733ca5!8m2!3d22.9797896!4d120.1949081!16s%2Fg%2F11q8jzw8qr",
-      "reviewsUrl": "https://www.google.com/maps/place/%E9%85%B7%E6%AF%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%2F%E7%8A%AC%E8%B2%93%E5%85%A7%E5%A4%96%E7%A7%91%2F%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%2F%E7%8A%AC%E8%B2%93%E8%85%AB%E7%98%A4%E7%A7%91%E5%BF%83%E8%87%9F%E7%A7%91%2F%E9%AB%98%E5%A3%93%E6%B0%A7%E6%B2%BB%E7%99%82%E4%B8%AD%E5%BF%83/@22.9797896,120.1949081,17z/data=!4m8!3m7!1s0x346e75736fe99a13:0xcbcedc4e52733ca5!8m2!3d22.9797896!4d120.1949081!9m1!1b1!16s%2Fg%2F11q8jzw8qr",
-      "verifiedAt": "2026-06-03"
+      "reviewCount": 457,
+      "mapsUrl": "https://www.google.com/maps/place/%E9%85%B7%E6%AF%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%2F%E7%8A%AC%E8%B2%93%E5%85%A7%E5%A4%96%E7%A7%91%2F%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%2F%E7%8A%AC%E8%B2%93%E8%85%AB%E7%98%A4%E7%A7%91%E5%BF%83%E8%87%9F%E7%A7%91%2F%E9%AB%98%E5%A3%93%E6%B0%A7%E6%B2%BB%E7%99%82%E4%B8%AD%E5%BF%83/@22.9797777,120.2191252,17z/data=!3m1!4b1!4m6!3m5!1s0x346e75736fe99a13:0xcbcedc4e52733ca5!8m2!3d22.9797777!4d120.2191252!16s%2Fg%2F11q8jzw8qr",
+      "reviewsUrl": "https://www.google.com/maps/place/%E9%85%B7%E6%AF%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%2F%E7%8A%AC%E8%B2%93%E5%85%A7%E5%A4%96%E7%A7%91%2F%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%2F%E7%8A%AC%E8%B2%93%E8%85%AB%E7%98%A4%E7%A7%91%E5%BF%83%E8%87%9F%E7%A7%91%2F%E9%AB%98%E5%A3%93%E6%B0%A7%E6%B2%BB%E7%99%82%E4%B8%AD%E5%BF%83/@22.9797777,120.2191252,17z/data=!4m8!3m7!1s0x346e75736fe99a13:0xcbcedc4e52733ca5!8m2!3d22.9797777!4d120.2191252!9m1!1b1!16s%2Fg%2F11q8jzw8qr",
+      "verifiedAt": "2026-07-15"
     },
-    "reservationRequired": true,
+    "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
     "nightClinic": true,
@@ -504,30 +515,54 @@ export const TainanHospitalList = [
     },
     "announcements": [
       {
-        "id": "coobi-2026-05-25-hours-update",
-        "type": "hours_change",
-        "title": "6 月起下午門診提前為 14:00 開始",
-        "content": "官方 Instagram 2026-05-25 班表貼文顯示，固定下午門診由 15:00 提前為 14:00 開始；週日僅看至 18:00。",
-        "startDate": "2026-05-25",
-        "sourceLabel": "官方 Instagram",
-        "sourceUrl": "https://www.instagram.com/coobihospital/p/DYwfky7TegQ/",
-        "verifiedAt": "2026-06-03"
+        "id": "coobi-2026-07-03-relocation",
+        "type": "notice",
+        "title": "7/3 起遷址試營運",
+        "content": "院方公告 2026-07-03 起遷至台南市東區崇德路124號試營運，電話改為 06-2676333；出發前建議先以電話確認當日門診。",
+        "startDate": "2026-07-03",
+        "sourceLabel": "官方網站、官方 Instagram、官方 Facebook",
+        "sourceUrl": "https://www.coobihospital.com/paper/promotions_index.php?id=17667#page",
+        "verifiedAt": "2026-07-15"
       },
       {
-        "id": "coobi-2026-05-25-service-update",
+        "id": "coobi-2026-07-hours-update",
+        "type": "hours_change",
+        "title": "7 月固定門診時間調整",
+        "content": "官方 7 月公告顯示週一恢復門診，週一為 09:30-12:30、14:00-18:00；週二至週六為 09:30-12:30、14:00-18:00、18:30-21:00；週日為 09:30-12:30、14:00-18:00。",
+        "startDate": "2026-07-01",
+        "sourceLabel": "官方網站、官方 Instagram",
+        "sourceUrl": "https://www.instagram.com/coobihospital/p/DZ7kpSJTFx3/",
+        "verifiedAt": "2026-07-15"
+      },
+      {
+        "id": "coobi-2026-07-service-update",
         "type": "service_change",
-        "title": "新增中獸醫門診，現行無鳥禽門診",
-        "content": "官方 Instagram 2026-05-25 貼文顯示，6 月起新增蔡宗翰獸醫師與中獸醫門診，並註明目前沒有鳥禽門診；特殊寵物門診建議提前預約。",
-        "startDate": "2026-05-25",
+        "title": "7 月特寵門診提醒",
+        "content": "官方 7 月班表註明目前沒有鳥禽門診，兔科門診目前院內醫師可看診；特殊寵物看診醫師與物種安排建議先電話確認。",
+        "startDate": "2026-07-01",
         "sourceLabel": "官方 Instagram",
-        "sourceUrl": "https://www.instagram.com/coobihospital/p/DYwfky7TegQ/",
-        "verifiedAt": "2026-06-03"
+        "sourceUrl": "https://www.instagram.com/coobihospital/p/DZ7kpSJTFx3/",
+        "verifiedAt": "2026-07-15"
       }
     ],
-    "clinicNotes": "採電話預約優先制，指定醫師與慢性疾病回診建議先電話預約；現場掛號無法指定醫師。\n特殊寵物門診建議提前預約，目前無鳥禽門診。\n週日僅看至 18:00，各診最後掛號時間為 12:00、17:30、20:30。",
-    "updatedAt": "2026-06-03",
-    "last_checked": "2026-06-03"
+    "specialClinic": {
+      "hasExoticSpecialClinic": true,
+      "label": "特寵特別門診",
+      "note": "特寵門診依醫師與物種安排，建議提前電話預約；現場掛號無法指定醫師。",
+      "reservationRequired": false,
+      "sourceLabel": "官方 Instagram",
+      "sourceUrl": "https://www.instagram.com/coobihospital/p/DZ7kpSJTFx3/",
+      "verifiedAt": "2026-07-15"
+    },
+    "fb": {
+      "last_fb_post_date": "2026-07-11",
+      "last_fb_post_text": "因應颱風假，7/11 營業時間臨時調整為 09:30-18:00。"
+    },
+    "clinicNotes": "建議電話預約，現場仍可掛號，但無法指定醫師。特殊寵物門診依醫師與物種安排，慢性病回診與指定醫師建議先電話預約。\n目前公開資料仍未列鳥禽門診；兔科門診目前院內醫師可看診。官方網站部分舊頁與新址、新電話資料仍有落差，前往前請先電話確認。",
+    "updatedAt": "2026-08-05",
+    "last_checked": "2026-08-05"
   },
+  /*
   {
     "id": "tainan-lkah-jinhua",
     "name": "慈愛動物醫院-金華分院",
@@ -622,6 +657,7 @@ export const TainanHospitalList = [
     "updatedAt": "2026-06-10",
     "last_checked": "2026-06-10"
   },
+  */
   {
     "id": "tainan-lkah-rende",
     "name": "慈愛動物醫院-仁德分院",
@@ -691,18 +727,31 @@ export const TainanHospitalList = [
     "socialMedia": {
       "facebook": "https://www.facebook.com/Petsworld002",
       "instagram": "",
-      "line": ""
+      "line": "https://line.me/R/ti/p/@140fjqcw"
     },
     "google": {
       "rating": "4.3",
-      "reviewCount": 354,
+      "reviewCount": 357,
       "mapsUrl": "https://www.google.com/maps/place/%E6%85%88%E6%84%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E4%BB%81%E5%BE%B7%E5%88%86%E9%99%A2%EF%BC%88%E7%8A%AC%E8%B2%93%E7%89%B9%E5%AF%B5/@22.9713018,120.2436173,17z/data=!3m1!4b1!4m6!3m5!1s0x346e7155a890e58d:0x3b9e9347c74e126d!8m2!3d22.9713018!4d120.2436173!16s%2Fg%2F1tdhbs3v?entry=ttu",
-      "verifiedAt": "2026-06-10"
+      "verifiedAt": "2026-07-15"
     },
-    "clinicNotes": "官方網站將仁德分院標示為犬貓/特寵院所，官方 Facebook 明列看診服務包含犬貓與特寵（鼠兔、鳥、龜）。\n特寵門診可先加 LINE @140fjqcw 預約；犬貓門診與當日醫師排班建議先電話確認，遇手術時醫療服務可能暫休。",
+    "fb": {
+      "last_fb_post_date": "2025-09-01",
+      "last_fb_post_text": "特寵門診 9/1 起正式開診，服務鼠兔、鳥、龜，提供健康檢查、疾病診療與飼養建議。"
+    },
+    "specialClinic": {
+      "hasExoticSpecialClinic": true,
+      "label": "鼠兔、鳥、龜特寵門診",
+      "note": "特寵門診提供健康檢查、疾病診療與飼養建議；建議先以官方 LINE 預約。",
+      "reservationRequired": true,
+      "sourceLabel": "官方 Facebook、官方網站",
+      "sourceUrl": "https://www.facebook.com/Petsworld002/posts/pfbid01BXDm9V6kfv9d1tNgFvUmKGmTC95rEMsvEtK5L93csrtW4YG7k8S6Mo7waaEknsil",
+      "verifiedAt": "2026-07-15"
+    },
+    "clinicNotes": "官方網站將仁德分院標示為犬貓/特寵院所，官方 Facebook 明列看診服務包含犬貓與特寵（鼠兔、鳥、龜）。\n特寵門診可先加 LINE @140fjqcw 預約；犬貓門診與當日醫師排班建議先電話確認，遇手術時醫療服務可能暫休。\nGoogle 營業時間顯示為每日 10:00-21:00，與官網週二休診不同，出發前建議先電話確認。",
     "createdAt": "2026-06-10",
-    "updatedAt": "2026-06-10",
-    "last_checked": "2026-06-10"
+    "updatedAt": "2026-07-15",
+    "last_checked": "2026-08-05"
   },
   {
     "id": "tainan-woodpecker-animal-hospital-linan",
@@ -794,31 +843,36 @@ export const TainanHospitalList = [
     "transportTips": "",
     "socialMedia": {
       "facebook": "https://www.facebook.com/woodpecker.ah/",
-      "instagram": "https://www.instagram.com/woodpecker3505902/"
+      "instagram": "https://www.instagram.com/woodpecker3505902/",
+      "line": "https://line.me/R/ti/p/@hfk7857h"
     },
     "google": {
-      "rating": "4.2",
+      "rating": "4.3",
       "reviewCount": 226,
       "mapsUrl": "https://www.google.com/maps/place/%E5%95%84%E6%9C%A8%E9%B3%A5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.0043632,120.2007642,17z/data=!3m1!4b1!4m6!3m5!1s0x346e774db3145d73:0x95aaa294df2de2de!8m2!3d23.0043632!4d120.2007642!16s%2Fg%2F11s0s32qhg",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%95%84%E6%9C%A8%E9%B3%A5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.0043632,120.2007642,17z/data=!4m8!3m7!1s0x346e774db3145d73:0x95aaa294df2de2de!8m2!3d23.0043632!4d120.2007642!9m1!1b1!16s%2Fg%2F11s0s32qhg",
-      "verifiedAt": "2026-06-03"
+      "verifiedAt": "2026-07-15"
     },
     "announcements": [
       {
-        "id": "woodpecker-linan-schedule-2026-05-25",
+        "id": "woodpecker-linan-schedule-2026-07-20",
         "type": "notice",
-        "title": "2026/05/25-06/21 門診表與掛號提醒",
-        "content": "官方 Facebook 公布 2026/05/25-06/21 門診表，並提醒休息前 30 分鐘停止掛號；如需看診或拿藥，建議先電話預約避免久候。",
-        "startDate": "2026-05-25",
-        "endDate": "2026-06-21",
+        "title": "2026/07/20-08/16 門診表與掛號提醒",
+        "content": "官方 Facebook 公布 2026/07/20-08/16 門診表，並提醒預約專線 06-3505902、休息前 30 分鐘停止掛號；如需看診或拿藥，建議先電話預約避免現場久候。官方 LINE：@hfk7857h。",
+        "startDate": "2026-07-20",
+        "endDate": "2026-08-16",
         "sourceLabel": "官方 Facebook",
-        "sourceUrl": "https://www.facebook.com/woodpecker.ah/posts/pfbid02sWuGVhyjKUHmky6Fx4jxxpprx8mxWJenvHQp2rmiacbmdGi6VyHxZiQVRkqQoCMpl",
-        "verifiedAt": "2026-06-03"
+        "sourceUrl": "https://www.facebook.com/photo/?fbid=1643271711135308&set=a.540276658101491",
+        "verifiedAt": "2026-07-15"
       }
     ],
-    "clinicNotes": "目前公開可見官方資訊顯示本院以電話預約為主，約診優先；如需看診或拿藥，建議先致電確認以避免久候。\n官方 Facebook 公告休息前 30 分鐘停止掛號；官方 LINE ID 為 @hfk7857h。",
-    "updatedAt": "2026-06-03",
-    "last_checked": "2026-06-03"
+    "fb": {
+      "last_fb_post_date": "2026-07-13",
+      "last_fb_post_text": "2026/07/20-08/16 門診表；預約專線 06-3505902，休息前 30 分鐘停止掛號；如需看診或拿藥，請先電話預約避免現場久候；官方 LINE：@hfk7857h。"
+    },
+    "clinicNotes": "目前公開可見官方資訊顯示本院以電話預約優先，預約專線為 06-3505902；休息前 30 分鐘停止掛號。官方 LINE 為 @hfk7857h。\n官方 Instagram 2026 年 6 月仍有鸚鵡、雪貂等非犬貓病例貼文，可作為特寵門診仍持續的近期佐證；如遇手術或門診異動，建議出發前先電話確認。",
+    "updatedAt": "2026-07-15",
+    "last_checked": "2026-08-05"
   },
   {
     "id": "tainan-kaixuan-animal-hospital",
@@ -856,10 +910,10 @@ export const TainanHospitalList = [
     },
     "google": {
       "rating": "4.0",
-      "reviewCount": 817,
+      "reviewCount": 828,
       "mapsUrl": "https://www.google.com/maps/place/%E5%87%B1%E6%97%8B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+24%E5%B0%8F%E6%99%82%E6%80%A5%E8%A8%BA+(%E8%B2%93+%E7%8B%97+%E9%BC%A0+%E5%85%94%E5%AD%90+%E9%B3%A5)%E2%80%94%E9%B8%9A%E9%B5%A1+%E5%80%89%E9%BC%A0+%E5%A4%A9%E7%AB%BA%E9%BC%A0+%E5%88%BA%E8%9D%9F+%E8%9C%9C%E8%A2%8B%E9%BC%AF+%E7%83%8F%E9%BE%9C+%E9%BE%8D%E8%B2%93+%E5%AE%88%E5%AE%AE+-%E9%B3%A5%E9%86%AB%E9%99%A2-%E9%BC%A0%E9%86%AB%E9%99%A2-%E5%85%94%E5%AD%90%E9%86%AB%E9%99%A2/@23.0126887,120.2113296,17z/data=!3m1!4b1!4m6!3m5!1s0x346e76fbcebf1743:0x51f252453a45b352!8m2!3d23.0126887!4d120.2113296!16s%2Fg%2F1pzrjprm_",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%87%B1%E6%97%8B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+24%E5%B0%8F%E6%99%82%E6%80%A5%E8%A8%BA+(%E8%B2%93+%E7%8B%97+%E9%BC%A0+%E5%85%94%E5%AD%90+%E9%B3%A5)%E2%80%94%E9%B8%9A%E9%B5%A1+%E5%80%89%E9%BC%A0+%E5%A4%A9%E7%AB%BA%E9%BC%A0+%E5%88%BA%E8%9D%9F+%E8%9C%9C%E8%A2%8B%E9%BC%AF+%E7%83%8F%E9%BE%9C+%E9%BE%8D%E8%B2%93+%E5%AE%88%E5%AE%AE+-%E9%B3%A5%E9%86%AB%E9%99%A2-%E9%BC%A0%E9%86%AB%E9%99%A2-%E5%85%94%E5%AD%90%E9%86%AB%E9%99%A2/@23.0126887,120.2113296,17z/data=!4m8!3m7!1s0x346e76fbcebf1743:0x51f252453a45b352!8m2!3d23.0126887!4d120.2113296!9m1!1b1!16s%2Fg%2F1pzrjprm_",
-      "verifiedAt": "2026-06-03"
+      "verifiedAt": "2026-07-15"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -906,9 +960,13 @@ export const TainanHospitalList = [
       "facebook": "https://www.facebook.com/p/%E5%87%B1%E6%97%8B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-100079019370302/",
       "instagram": ""
     },
-    "clinicNotes": "Google 商家名稱標示「24小時急診」，但 Google 營業時間表顯示週一至週六 09:00–00:00、週日休息。\n官方 Facebook 搜尋摘要與 Google 商家名稱可見非犬貓案例與物種名稱，但未見完整特寵門診範圍或特寵急診適用物種說明；特寵就診與急症仍建議先電話確認當日是否可受理。",
-    "updatedAt": "2026-06-10",
-    "last_checked": "2026-06-10"
+    "fb": {
+      "last_fb_post_date": "2022-05-26",
+      "last_fb_post_text": "我是一歲的雙冠蜥，因為虛弱又無食慾，主人帶我來請柯醫師治療，現在已經好多了。"
+    },
+    "clinicNotes": "Google 商家名稱仍標示「24小時急診」並列出貓、狗、鼠、兔子、鳥、鸚鵡、倉鼠、天竺鼠、刺蝟、蜜袋鼯、烏龜、龍貓、守宮等物種，但 Google 營業時間表顯示週一至週六 09:00–00:00、週日休息。\n官方 Facebook 公開可見雙冠蜥與陸龜等非犬貓案例，但近期未見 2026 年最新班表或休診公告；特寵門診範圍、夜間急症與 24 小時急診適用條件仍建議先電話確認。",
+    "updatedAt": "2026-07-06",
+    "last_checked": "2026-08-05"
   },
   {
     "id": "tainan-wildboar-animal-hospital",
@@ -962,10 +1020,10 @@ export const TainanHospitalList = [
     },
     "google": {
       "rating": "4.7",
-      "reviewCount": 679,
+      "reviewCount": 683,
       "mapsUrl": "https://www.google.com/maps/place/%E5%B1%B1%E8%B1%AC%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.9933356,120.1717964,17z/data=!3m1!4b1!4m6!3m5!1s0x346e772628f81351:0xb281867dbd3fc74b!8m2!3d22.9933356!4d120.1717964!16s%2Fg%2F11j19t6n7c",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%B1%B1%E8%B1%AC%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.9933356,120.1717964,17z/data=!4m8!3m7!1s0x346e772628f81351:0xb281867dbd3fc74b!8m2!3d22.9933356!4d120.1717964!9m1!1b1!16s%2Fg%2F11j19t6n7c",
-      "verifiedAt": "2026-06-03"
+      "verifiedAt": "2026-07-15"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -1008,9 +1066,26 @@ export const TainanHospitalList = [
       "facebook": "https://www.facebook.com/p/%E5%B1%B1%E8%B1%AC%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-100063831224971/",
       "instagram": "https://www.instagram.com/wildboarah/"
     },
-    "clinicNotes": "提供犬貓與特寵門診，另有心臟門診、X光、超音波與牙科X光檢查，以及犬貓結紮與手術諮詢。\n住院服務非 24 小時；健檢時段 14:00–16:00 採預約制，特寵就診建議先電話確認。",
-    "updatedAt": "2026-06-03",
-    "last_checked": "2026-06-03"
+    "fb": {
+      "last_fb_post_date": "2026-07-04",
+      "last_fb_post_text": "七月份班表出爐，本月 7/4、7/7、7/12 全天無爬蟲類門診，固定營業時間與電話地址同步列出。"
+    },
+    "announcements": [
+      {
+        "id": "wildboar-2026-07-reptile-clinic-limits",
+        "type": "service_change",
+        "title": "7 月部分日期無爬蟲門診",
+        "content": "院方公告 2026-07-04、2026-07-07、2026-07-12 全天無爬蟲類門診；固定營業時間仍為週一至週日 10:00-21:00，中午 13:00-15:00 與 17:00-18:00 休息，最後掛號 20:30。",
+        "startDate": "2026-07-04",
+        "endDate": "2026-07-12",
+        "sourceLabel": "官方 Instagram",
+        "sourceUrl": "https://www.instagram.com/wildboarah/p/DZ9LfBKRJnU/",
+        "verifiedAt": "2026-07-06"
+      }
+    ],
+    "clinicNotes": "提供犬貓與特寵門診，另有心臟門診、X光、超音波與牙科X光檢查，以及犬貓結紮與手術諮詢。\n官方社群 7 月班表提醒 7/4、7/7、7/12 全天無爬蟲類門診；重要貼文另說明目前不看鳥類、果子狸、飛鼠、浣熊、猴子等動物，特寵就診前請先電話確認可受理物種與醫師時段。\n兩隻以上動物檢查需提前一天預約；住院服務非 24 小時，健檢時段 14:00–16:00 採預約制。",
+    "updatedAt": "2026-07-15",
+    "last_checked": "2026-08-05"
   },
   {
     "id": "tainan-woodpecker-animal-hospital-annan",
@@ -1054,10 +1129,10 @@ export const TainanHospitalList = [
     },
     "google": {
       "rating": "4.5",
-      "reviewCount": 210,
+      "reviewCount": 212,
       "mapsUrl": "https://www.google.com/maps/place/%E5%95%84%E6%9C%A8%E9%B3%A5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2(%E5%AE%89%E5%8D%97%E5%88%86%E9%99%A2)/@23.0426724,120.2048047,17z/data=!3m1!4b1!4m6!3m5!1s0x346e77041fff15e3:0xce1985c94974cb85!8m2!3d23.0426724!4d120.2048047!16s%2Fg%2F11ff1yj35s",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%95%84%E6%9C%A8%E9%B3%A5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2(%E5%AE%89%E5%8D%97%E5%88%86%E9%99%A2)/@23.0426724,120.2048047,17z/data=!4m8!3m7!1s0x346e77041fff15e3:0xce1985c94974cb85!8m2!3d23.0426724!4d120.2048047!9m1!1b1!16s%2Fg%2F11ff1yj35s",
-      "verifiedAt": "2026-06-03"
+      "verifiedAt": "2026-07-15"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -1100,25 +1175,25 @@ export const TainanHospitalList = [
       "instagram": ""
     },
     "fb": {
-      "last_fb_post_date": "2026-05-17",
-      "last_fb_post_text": "# 2026/05/25-06/21 門診表；預約專線 06-2479292，休息前30分鐘停止掛號；如需看診或拿藥，請先以電話預約避免現場久候；官方LINE：@jbz5224v。"
+      "last_fb_post_date": "2026-07-13",
+      "last_fb_post_text": "2026/07/20-08/16 門診表；預約專線 06-2479292，休息前 30 分鐘停止掛號；如需看診或拿藥，請先電話預約。"
     },
     "announcements": [
       {
-        "id": "woodpecker-annan-schedule-2026-05-17",
+        "id": "woodpecker-annan-schedule-2026-07-20",
         "type": "notice",
-        "title": "2026/05/25-06/21 門診表與掛號提醒",
-        "content": "官方 Facebook 公布 2026/05/25-06/21 門診表，並提醒休息前 30 分鐘停止掛號；如需看診或拿藥，請先以電話預約避免現場久候。官方 LINE ID：@jbz5224v。",
-        "startDate": "2026-05-25",
-        "endDate": "2026-06-21",
+        "title": "2026/07/20-08/16 門診表與掛號提醒",
+        "content": "官方 Facebook 公布 2026/07/20-08/16 門診表，並提醒休息前 30 分鐘停止掛號；如需看診或拿藥，請先以電話預約避免現場久候。官方 LINE ID：@jbz5224v。",
+        "startDate": "2026-07-20",
+        "endDate": "2026-08-16",
         "sourceLabel": "官方 Facebook",
-        "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid028aUTaqN2wQMo4T44R5zjckNCStKw1ARKcTxJJBmmWFp1bgFSVk5Fegio5RkEnxVBl&id=100063950052137",
-        "verifiedAt": "2026-06-03"
+        "sourceUrl": "https://www.facebook.com/photo/?fbid=1480301157444872&set=a.421736993301299",
+        "verifiedAt": "2026-07-15"
       }
     ],
-    "clinicNotes": "官方 Facebook 2026-05-17 門診表提醒休息前 30 分鐘停止掛號；如需看診或拿藥，建議先電話預約避免現場久候。官方 LINE ID：@jbz5224v。",
-    "updatedAt": "2026-06-03",
-    "last_checked": "2026-06-03"
+    "clinicNotes": "近期 Facebook 仍持續更新，2026/07/20-08/16 門診表提醒休息前 30 分鐘停止掛號；如需看診或拿藥，建議先電話預約避免現場久候。官方 LINE ID：@jbz5224v。\n2026-07-05 貼文可見鸚鵡骨科手術案例，顯示仍受理非犬貓特寵門診；實際可受理物種與當日醫師時段建議先電話確認。",
+    "updatedAt": "2026-07-15",
+    "last_checked": "2026-08-05"
   },
   {
     "id": "tainan-shiny-exotic-animal-hospital",
@@ -1194,30 +1269,31 @@ export const TainanHospitalList = [
     },
     "google": {
       "rating": "4.8",
-      "reviewCount": 70,
+      "reviewCount": 75,
       "mapsUrl": "https://www.google.com/maps/place/%E5%B0%8F%E9%AF%A2%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@23.0255208,120.2597893,17z/data=!3m1!4b1!4m6!3m5!1s0x346e71004612c84b:0x7c2825a9b117260d!8m2!3d23.0255208!4d120.2597893!16s%2Fg%2F11y7qknvzx",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%B0%8F%E9%AF%A2%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@23.0255208,120.2597893,17z/data=!4m8!3m7!1s0x346e71004612c84b:0x7c2825a9b117260d!8m2!3d23.0255208!4d120.2597893!9m1!1b1!16s%2Fg%2F11y7qknvzx",
-      "verifiedAt": "2026-06-03"
+      "verifiedAt": "2026-07-15"
     },
     "fb": {
-      "last_fb_post_text": "6月門診時間表：週日、6/1、6/3休診，6/27僅上午門診；本院為預約制，臨時需求請先來電確認。"
+      "last_fb_post_date": "2026-07-10",
+      "last_fb_post_text": "7/11 因颱風假暫停門診，院方已陸續聯繫改約；未接到電話者請主動聯繫。"
     },
     "announcements": [
       {
-        "id": "shiny-june-2026-schedule",
+        "id": "shiny-july-2026-schedule",
         "type": "hours_change",
-        "title": "2026 年 6 月門診異動",
-        "content": "6 月休診日為週日、6/1、6/3，6/27 僅上午門診。\n院方提醒就診前先電話預約，臨時需求亦請先來電確認。",
-        "startDate": "2026-06-01",
-        "endDate": "2026-06-30",
+        "title": "2026 年 7 月門診異動",
+        "content": "7 月休診日為週日、7/18、7/29。院方提醒本院為特殊寵物醫院，不提供犬貓看診；就診前請先電話預約，以免久候或遇醫師手術撲空。",
+        "startDate": "2026-07-01",
+        "endDate": "2026-07-31",
         "sourceLabel": "官方 Facebook",
-        "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid0rh4vrvfWHZqyBgoRuJZpzFpQwj1YGoZgVohkr6kF5MKWHDiGRLyVBrJbZMFGzsUZl&id=61566423217759",
-        "verifiedAt": "2026-06-03"
+        "sourceUrl": "https://www.facebook.com/people/%E5%B0%8F%E9%AF%A2%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/61566423217759/",
+        "verifiedAt": "2026-07-15"
       }
     ],
     "clinicNotes": "本院為特殊寵物醫院，主要看診對象為兔、鼠、鳥類與兩棲爬蟲類，不開放犬貓門診。\n採預約制，如有臨時需求建議先電話確認能否加掛。\n醫院斜對面有停車場。",
-    "updatedAt": "2026-06-03",
-    "last_checked": "2026-06-03"
+    "updatedAt": "2026-07-15",
+    "last_checked": "2026-08-05"
   },
   {
     "id": "tainan-bunny-animal-hospital",
@@ -1253,10 +1329,10 @@ export const TainanHospitalList = [
     },
     "google": {
       "rating": "4.4",
-      "reviewCount": 443,
+      "reviewCount": 446,
       "mapsUrl": "https://www.google.com/maps/place/%E9%82%A6%E5%B0%BC%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.0194844,120.2473529,17z/data=!3m1!4b1!4m6!3m5!1s0x346e772c718b8249:0x968681cd9f6cc32c!8m2!3d23.0194844!4d120.2473529!16s%2Fg%2F11cjtxl2p6",
       "reviewsUrl": "https://www.google.com/maps/place/%E9%82%A6%E5%B0%BC%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.0194844,120.2473529,17z/data=!4m8!3m7!1s0x346e772c718b8249:0x968681cd9f6cc32c!8m2!3d23.0194844!4d120.2473529!9m1!1b1!16s%2Fg%2F11cjtxl2p6",
-      "verifiedAt": "2026-06-03"
+      "verifiedAt": "2026-08-05"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -1280,16 +1356,16 @@ export const TainanHospitalList = [
     "specialties": [
       "兔科內外科"
     ],
-    "website": "http://bunnyvet.myweb.hinet.net/index.htm",
+    "website": "",
     "appointmentLink": "",
     "transportTips": "",
     "socialMedia": {
       "facebook": "",
       "instagram": ""
     },
-    "clinicNotes": "本院以兔科診療為主，目前資料以兔子就診為保守收錄範圍，不外推至其他特寵物種。\n官方網站本次無法讀取正文；就診前建議先電話確認門診時間、預約方式與可安排服務。",
-    "updatedAt": "2026-06-10",
-    "last_checked": "2026-06-10"
+    "clinicNotes": "本院目前可保守確認仍以兔科診療為主，資料以兔子就診為收錄範圍，不外推至其他特寵物種。\n現有官網已無法讀取，Facebook 可見頁面為非官方粉絲專頁；Google 商家仍顯示正常營業。就診前建議先電話確認預約方式、可安排服務與當日門診狀況。",
+    "updatedAt": "2026-08-05",
+    "last_checked": "2026-08-05"
   },
   /*
   {
@@ -1380,6 +1456,7 @@ export const TainanHospitalList = [
     "last_checked": "2026-06-03"
   },
   */
+  /*
   {
     "id": "tainan-dawan-animal-hospital",
     "name": "大灣動物醫院",
@@ -1470,6 +1547,7 @@ export const TainanHospitalList = [
     "updatedAt": "2026-06-03",
     "last_checked": "2026-06-03"
   },
+  */
   {
     "id": "tainan-wethink-animal-hospital",
     "name": "惠馨動物醫院",
@@ -1482,7 +1560,7 @@ export const TainanHospitalList = [
     "typeText": "犬貓診療、特寵診療",
     "phone": "06-5854119",
     "specialEvents": [],
-    "hours": "週一至週日 09:00–12:00、14:00–20:30；中午休息 12:00–14:00",
+    "hours": "全年無休；每日 09:00–12:00、14:00–20:30；上午 11:30 停止掛號，下午建議 20:00 前完成掛號；中午休息 12:00–14:00",
     "business_hours": {
       "mon": [
         "09:00-12:00",
@@ -1515,10 +1593,10 @@ export const TainanHospitalList = [
     },
     "google": {
       "rating": "4.5",
-      "reviewCount": 512,
+      "reviewCount": 517,
       "mapsUrl": "https://www.google.com/maps/place/%E6%83%A0%E9%A6%A8%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.1301738,120.2961604,17z/data=!3m1!4b1!4m6!3m5!1s0x346e05c2f44a8643:0xf6b2d0b5fa394fa8!8m2!3d23.1301738!4d120.2961604!16s%2Fg%2F11ffv_x572",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%83%A0%E9%A6%A8%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.1301738,120.2961604,17z/data=!4m8!3m7!1s0x346e05c2f44a8643:0xf6b2d0b5fa394fa8!8m2!3d23.1301738!4d120.2961604!9m1!1b1!16s%2Fg%2F11ffv_x572",
-      "verifiedAt": "2026-06-03"
+      "verifiedAt": "2026-08-05"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -1559,16 +1637,33 @@ export const TainanHospitalList = [
       "老年動物",
       "慢性疾病"
     ],
-    "website": "https://wethinkah.com/",
+    "website": "https://huixin.ququshops.com/",
     "appointmentLink": "",
     "transportTips": "",
     "socialMedia": {
       "facebook": "https://www.facebook.com/wethinkah/",
       "instagram": "https://www.instagram.com/wethinkah/"
     },
-    "clinicNotes": "官方網站與 Facebook 均標示全年無休，固定門診為 09:00-12:00、14:00-20:30；Facebook 6 月門診表另提醒上午 11:30 停止掛號，下午建議 20:00 前完成掛號。\n院方公開資料明示提供犬貓門診、特寵門診與中獸醫門診，並列健康檢查、X 光、內視鏡、牙科 X 光、口腔疾病治療、絕育、外科、剖腹產、雷射、軟波與高壓氧等服務。\n特寵門診與避免久候建議先電話預約；公開來源未列明特寵物種，其他特寵請先致電確認。",
-    "updatedAt": "2026-06-03",
-    "last_checked": "2026-06-03"
+    "fb": {
+      "last_fb_post_date": "2026-06-30",
+      "last_fb_post_text": "七月門診表：全年無休，上午 09:00-12:00，11:30 停止掛號；下午 14:00-20:30，建議 20:00 前完成掛號。"
+    },
+    "announcements": [
+      {
+        "id": "tainan-wethink-animal-hospital-2026-08-schedule",
+        "type": "notice",
+        "title": "2026 年 8 月門診與掛號提醒",
+        "content": "官方 Facebook 最新可見 8 月門診資訊標示全年無休；每日 09:00-12:00、14:00-20:30，上午 11:30 停止掛號，下午請於 20:00 前完成掛號，建議先預約。查核時頁面顯示約 5 天前發布，未取得可穩定對應的確切日期。",
+        "startDate": "2026-08-01",
+        "endDate": "2026-08-31",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/wethinkah/posts/pfbid02MX7NiHkQJpj7HaUbqP4kHfwmXNar25xbVeE1mje7czE3mogB7meaUcy4i5qrUVDAl",
+        "verifiedAt": "2026-08-05"
+      }
+    ],
+    "clinicNotes": "官方 Facebook 最新可見 8 月門診資訊標示全年無休，固定門診為 09:00-12:00、14:00-20:30；上午 11:30 停止掛號，下午請於 20:00 前完成掛號，建議先預約。\n院方聯絡頁另標示每週三休診、只看約診，與 8 月 Facebook 及 Google 商家顯示的全年無休資訊互有衝突，出發前請先電話確認。\n院方公開資料明示提供犬貓門診、特寵門診與中獸醫門診，並列健康檢查、X 光、內視鏡、牙科 X 光、口腔疾病治療、絕育、外科、剖腹產、雷射、軟波與高壓氧等服務；其他特寵請先致電確認。",
+    "updatedAt": "2026-08-05",
+    "last_checked": "2026-08-05"
   },
   {
     "id": "tainan-maomao-animal-hospital-guiren",
@@ -1621,10 +1716,10 @@ export const TainanHospitalList = [
     },
     "google": {
       "rating": "4.6",
-      "reviewCount": 307,
+      "reviewCount": 311,
       "mapsUrl": "https://www.google.com/maps/place/%E6%AF%9B%E6%AF%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E5%8F%B0%E5%8D%97%E6%AD%B8%E4%BB%81%E5%88%86%E9%99%A2%EF%BD%9C%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E6%B2%BB%E7%99%82+%E7%8A%AC%E8%B2%93%E7%8D%B8%E9%86%AB%EF%BD%9CX%E5%85%89+%E8%B6%85%E9%9F%B3%E6%B3%A2%7C%E6%B4%97%E7%89%99+%E9%BA%BB%E9%86%89%7C%E4%BD%8F%E9%99%A2/@22.9694851,120.2887808,17z/data=!3m1!4b1!4m6!3m5!1s0x346e716be845495f:0x8fc72dd6d10516b3!8m2!3d22.9694851!4d120.2887808!16s%2Fg%2F11sryzm15_",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%AF%9B%E6%AF%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E5%8F%B0%E5%8D%97%E6%AD%B8%E4%BB%81%E5%88%86%E9%99%A2%EF%BD%9C%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E6%B2%BB%E7%99%82+%E7%8A%AC%E8%B2%93%E7%8D%B8%E9%86%AB%EF%BD%9CX%E5%85%89+%E8%B6%85%E9%9F%B3%E6%B3%A2%7C%E6%B4%97%E7%89%99+%E9%BA%BB%E9%86%89%7C%E4%BD%8F%E9%99%A2/@22.9694851,120.2887808,17z/data=!4m8!3m7!1s0x346e716be845495f:0x8fc72dd6d10516b3!8m2!3d22.9694851!4d120.2887808!9m1!1b1!16s%2Fg%2F11sryzm15_",
-      "verifiedAt": "2026-06-03"
+      "verifiedAt": "2026-07-15"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -1640,7 +1735,8 @@ export const TainanHospitalList = [
       "中獸醫科",
       "齒科",
       "復健科",
-      "骨科"
+      "骨科",
+      "出診服務"
     ],
     "pets": [
       "貓",
@@ -1673,9 +1769,26 @@ export const TainanHospitalList = [
       "instagram": "https://www.instagram.com/maomaogueiren/",
       "line": "https://lin.ee/ampRMTc"
     },
-    "clinicNotes": "可現場掛號，預約優先；為減少等候，建議先電話或 LINE 預約。\n中午 12:30-14:00、晚間 18:00-18:30 為休息時間，班表會公布於 IG 與 LINE 公告欄。\n特殊寵物與較少見物種看診前，建議先致電確認當日醫師與時段。",
-    "updatedAt": "2026-06-03",
-    "last_checked": "2026-06-03"
+    "fb": {
+      "last_fb_post_date": "2026-07-13",
+      "last_fb_post_text": "院方新增出診服務；如需出診，請透過官方 LINE @539icuap 預約。"
+    },
+    "announcements": [
+      {
+        "id": "maomao-guiren-2026-07-schedule",
+        "type": "notice",
+        "title": "2026 年 7 月門診班表",
+        "content": "官方 Facebook 與 Instagram 公布 7 月上、下半月班表；可現場掛號但預約優先，每個門診時間預估 30 分鐘，中午 12:30-14:00、晚上 18:00-18:30 為休息時間。",
+        "startDate": "2026-07-01",
+        "endDate": "2026-07-31",
+        "sourceLabel": "官方 Facebook、官方 Instagram",
+        "sourceUrl": "https://www.instagram.com/maomaogueiren/",
+        "verifiedAt": "2026-07-15"
+      }
+    ],
+    "clinicNotes": "可現場掛號，預約優先；為減少等候，建議先電話或 LINE 預約。\n官方 Facebook 與 Instagram 已公布 7 月上下半月班表；中午 12:30-14:00、晚間 18:00-18:30 為休息時間，班表也會公布於 IG 與 LINE 公告欄。\n院方已新增出診服務，如需出診請透過官方 LINE @539icuap 預約。特殊寵物與較少見物種看診前，建議先致電確認當日醫師與時段。\n官方網站另有夜間急診結束營運公告，但聯絡頁仍列週一至週六 18:30-21:00 晚診；特寵急症與夜間是否受理請先致電確認。",
+    "updatedAt": "2026-07-15",
+    "last_checked": "2026-08-05"
   },
   {
     "id": "hongjia-animal-hospital",
@@ -1719,10 +1832,10 @@ export const TainanHospitalList = [
     },
     "google": {
       "rating": "4.7",
-      "reviewCount": 609,
+      "reviewCount": 621,
       "mapsUrl": "https://www.google.com/maps/place/%E5%AE%8F%E5%AE%B6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.9616195,120.1907857,17z/data=!3m1!4b1!4m6!3m5!1s0x346e75d6f10c5bad:0xe80d5c143a3fd08c!8m2!3d22.9616195!4d120.1907857!16s%2Fg%2F12nqgnvbz",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%AE%8F%E5%AE%B6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.9616195,120.1907857,17z/data=!4m8!3m7!1s0x346e75d6f10c5bad:0xe80d5c143a3fd08c!8m2!3d22.9616195!4d120.1907857!9m1!1b1!16s%2Fg%2F12nqgnvbz",
-      "verifiedAt": "2026-06-03"
+      "verifiedAt": "2026-07-15"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -1753,32 +1866,32 @@ export const TainanHospitalList = [
       "instagram": ""
     },
     "fb": {
-      "last_fb_post_date": "2026-06-01",
-      "last_fb_post_text": "6月2日星期二早上11：00~12：20及6月3日星期三早上11：00~12：30兩天皆有預約手術，門診或回診請避開此時段，後續時段正常。"
+      "last_fb_post_date": "2026-07-11",
+      "last_fb_post_text": "7/11 因應颱風放假，上午 09:00-14:00 正常營業，後續時段休診。"
     },
     "announcements": [
       {
-        "id": "hongjia-2026-06-01-surgery-notice",
+        "id": "hongjia-2026-07-04-temporary-pause",
         "type": "notice",
-        "title": "6/2、6/3 上午部分時段有預約手術",
-        "content": "官方 Facebook 2026-06-01 貼文提醒，6/2 11:00–12:20 與 6/3 11:00–12:30 有預約手術，門診或回診請避開該時段，其餘時段正常。",
-        "startDate": "2026-06-01",
-        "endDate": "2026-06-03",
+        "title": "7/4 下午門診短暫暫停",
+        "content": "官方 Facebook 2026-07-04 貼文提醒，當日下午 17:00-18:00 門診暫停一小時，醫生需回診檢查。",
+        "startDate": "2026-07-04",
+        "endDate": "2026-07-04",
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/honghouse20120901",
-        "verifiedAt": "2026-06-03"
+        "verifiedAt": "2026-07-06"
       }
     ],
-    "clinicNotes": "官方 Facebook 與 Google Maps 顯示固定門診為週一至週五 09:00–13:00、15:00–20:30，週六 09:00–13:30、15:00–20:30，週日休診。\n官方 Facebook 可見鳥類相關就診與檢測公告；目前可明確確認鳥類非犬貓診療，其他特寵物種請先電話確認。\n近期官方 Facebook 另提醒 2026-06-02 與 2026-06-03 上午部分時段有預約手術，門診或回診建議避開該時段。",
-    "updatedAt": "2026-06-10",
-    "last_checked": "2026-06-10"
+    "clinicNotes": "官方 Facebook 與 Google Maps 顯示固定門診為週一至週五 09:00–13:00、15:00–20:30，週六 09:00–13:30、15:00–20:30，週日休診。\n官方 Facebook 與 Google 評論可見鳥類相關就診與檢測資訊；目前可明確確認鳥類非犬貓診療，其他特寵物種請先電話確認。\n近期官方 Facebook 另提醒 2026-07-04 下午曾因醫師回診檢查短暫暫停門診，安排就診仍建議出發前確認當日狀況。",
+    "updatedAt": "2026-07-15",
+    "last_checked": "2026-08-05"
   },
   {
     "id": "fiord-animal-hospital",
     "name": "峽灣動物醫院",
     "city": "台南市",
     "district": "北區",
-    "address": "台南市北區西門路四段442號",
+    "address": "台南市北區西門路四段440、442號",
     "lat": 23.0157708,
     "lng": 120.2105757,
     "type": "exotic",
@@ -1821,7 +1934,7 @@ export const TainanHospitalList = [
       "reviewCount": 66,
       "mapsUrl": "https://www.google.com/maps/place/%E5%B3%BD%E7%81%A3%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.0157708,120.2105757,17z/data=!3m1!4b1!4m6!3m5!1s0x346e772b6587bc6b:0xa0ed730a699f21ac!8m2!3d23.0157708!4d120.2105757!16s%2Fg%2F11x1lt4nx0",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%B3%BD%E7%81%A3%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.0157708,120.2105757,17z/data=!4m8!3m7!1s0x346e772b6587bc6b:0xa0ed730a699f21ac!8m2!3d23.0157708!4d120.2105757!9m1!1b1!16s%2Fg%2F11x1lt4nx0",
-      "verifiedAt": "2026-06-03"
+      "verifiedAt": "2026-07-15"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -1864,19 +1977,23 @@ export const TainanHospitalList = [
     },
     "announcements": [
       {
-        "id": "fiord-animal-hospital-june-schedule-2026-06-03",
+        "id": "fiord-animal-hospital-july-schedule-2026-07-06",
         "type": "notice",
-        "title": "6 月門診班表",
-        "content": "官方 Facebook 已公布 6 月門診班表；非預約門診不可指定看診醫師，預約請電話或官方 LINE @fiordah。",
-        "startDate": "2026-06-01",
-        "endDate": "2026-06-30",
+        "title": "7 月門診班表更新版",
+        "content": "官方 Facebook、Instagram 公布 7 月門診班表更新版；非預約門診不可指定看診醫師，預約請電話或官方 LINE @fiordah。",
+        "startDate": "2026-07-01",
+        "endDate": "2026-07-31",
         "sourceLabel": "官方 Facebook",
-        "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid0VVh24jFdU9agP3MmjfDmQUeLgYpQWz8C3W8QJYPuhSeYfZjHg4JRmbZaGLbTHVgZl&id=61565410292408",
-        "verifiedAt": "2026-06-03"
+        "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid0aX61kchyNjeBSgb7oAwHReS5UEpsvfeXxWj4HjiSXSzy2cDpMm87XBkC74iakvKHl&id=61565410292408",
+        "verifiedAt": "2026-07-15"
       }
     ],
-    "clinicNotes": "本院以特殊寵物醫療為主，提供鼠、兔、天竺鼠、龍貓、小型哺乳類、爬蟲類與兩棲類等動物診療，並提供病理診斷、飼養諮詢與課程講座。\n門診以預約優先，建議先致電 06-2517213 或加入官方 LINE @fiordah；非預約門診不可指定看診醫師。\n固定門診時間目前依官方 Facebook 近兩月門診班表整理為每日 10:30-13:00、15:00-21:00，出發前仍建議確認當月班表。",
-    "updatedAt": "2026-06-03",
-    "last_checked": "2026-06-03"
+    "fb": {
+      "last_fb_post_date": "2026-07-14",
+      "last_fb_post_text": "7/14 10:30-13:00 因手術進行停掛；緊急事項可透過官方 LINE 聯繫。"
+    },
+    "clinicNotes": "本院以特殊寵物醫療為主，官方列有鼠、兔、天竺鼠、龍貓、小型哺乳類、爬蟲類與兩棲類診療，並提供病理診斷、飼養諮詢與課程講座；官方目前未明列刺蝟，其他物種請先確認。\n門診以預約優先，建議先致電 06-2517213 或加入官方 LINE @fiordah；非預約門診不可指定看診醫師。\n固定門診時間目前依官方 Facebook 與 Instagram 7 月門診班表整理為每日 10:30-13:00、15:00-21:00；官方營業時間頁為圖片格式，出發前仍建議確認當月班表。",
+    "updatedAt": "2026-08-05",
+    "last_checked": "2026-08-05"
   }
 ];
