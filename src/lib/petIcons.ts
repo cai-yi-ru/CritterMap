@@ -32,21 +32,21 @@ export const petIconDefinitions: PetIconDefinition[] = [
   {
     key: "cat",
     label: "貓",
-    src: "/pet-icons/cat.webp",
+    src: "/pet-icons-v2/cat.webp",
     aliases: ["貓"],
     filterable: true,
   },
   {
     key: "dog",
     label: "狗",
-    src: "/pet-icons/dog.webp",
+    src: "/pet-icons-v2/dog.webp",
     aliases: ["狗", "犬"],
     filterable: true,
   },
   {
     key: "rabbit",
     label: "兔",
-    src: "/pet-icons/rabbit.webp",
+    src: "/pet-icons-v2/rabbit.webp",
     aliases: ["兔", "兔子"],
     filterable: true,
     isExotic: true,
@@ -54,7 +54,7 @@ export const petIconDefinitions: PetIconDefinition[] = [
   {
     key: "mouse",
     label: "鼠",
-    src: "/pet-icons/mouse.webp",
+    src: "/pet-icons-v2/mouse.webp",
     aliases: [
       "鼠",
       "鼠類",
@@ -73,7 +73,7 @@ export const petIconDefinitions: PetIconDefinition[] = [
   {
     key: "guinea-pig",
     label: "天竺鼠",
-    src: "/pet-icons/guinea-pig.webp",
+    src: "/pet-icons-v2/guinea-pig.webp",
     aliases: ["天竺鼠"],
     filterable: true,
     isExotic: true,
@@ -81,7 +81,7 @@ export const petIconDefinitions: PetIconDefinition[] = [
   {
     key: "bird",
     label: "鳥類",
-    src: "/pet-icons/bird.webp",
+    src: "/pet-icons-v2/bird.webp",
     aliases: ["鳥類", "鳥", "鳥禽", "鳥禽類", "禽鳥類", "禽類", "飛禽", "寵物鳥禽", "各種寵物鳥", "家禽", "賽鴿", "鴿子", "鸚鵡"],
     filterable: true,
     isExotic: true,
@@ -89,7 +89,7 @@ export const petIconDefinitions: PetIconDefinition[] = [
   {
     key: "reptile",
     label: "爬蟲",
-    src: "/pet-icons/reptile.webp",
+    src: "/pet-icons-v2/reptile.webp",
     aliases: [
       "爬蟲",
       "爬蟲類",
@@ -101,7 +101,7 @@ export const petIconDefinitions: PetIconDefinition[] = [
   {
     key: "lizard",
     label: "守宮（蜥蜴）",
-    src: "/pet-icons/lizard.webp",
+    src: "/pet-icons-v2/lizard.webp",
     aliases: [
       "蜥蜴",
       "守宮",
@@ -114,7 +114,7 @@ export const petIconDefinitions: PetIconDefinition[] = [
   {
     key: "snake",
     label: "蛇",
-    src: "/pet-icons/snake.webp",
+    src: "/pet-icons-v2/snake.webp",
     aliases: [
       "蛇",
       "各種蛇類",
@@ -125,7 +125,7 @@ export const petIconDefinitions: PetIconDefinition[] = [
   {
     key: "turtle",
     label: "烏龜",
-    src: "/pet-icons/turtle.webp",
+    src: "/pet-icons-v2/turtle.webp",
     aliases: [
       "烏龜",
       "龜",
@@ -140,7 +140,7 @@ export const petIconDefinitions: PetIconDefinition[] = [
   {
     key: "amphibian",
     label: "兩棲",
-    src: "/pet-icons/amphibian.webp",
+    src: "/pet-icons-v2/amphibian.webp",
     aliases: ["兩棲", "兩棲類", "蠑螈", "六角恐龍"],
     filterable: true,
     isExotic: true,
@@ -148,7 +148,7 @@ export const petIconDefinitions: PetIconDefinition[] = [
   {
     key: "frog",
     label: "蛙",
-    src: "/pet-icons/frog.webp",
+    src: "/pet-icons-v2/frog.webp",
     aliases: ["蛙", "蛙類", "青蛙", "角蛙"],
     filterable: true,
     isExotic: true,
@@ -156,7 +156,7 @@ export const petIconDefinitions: PetIconDefinition[] = [
   {
     key: "fish",
     label: "魚",
-    src: "/pet-icons/fish.webp",
+    src: "/pet-icons-v2/fish.webp",
     aliases: ["魚", "魚類", "水生動物"],
     filterable: true,
     isExotic: true,
@@ -164,7 +164,7 @@ export const petIconDefinitions: PetIconDefinition[] = [
   {
     key: "hedgehog",
     label: "刺蝟",
-    src: "/pet-icons/hedgehog.webp",
+    src: "/pet-icons-v2/hedgehog.webp",
     aliases: ["刺蝟"],
     filterable: true,
     isExotic: true,
@@ -172,7 +172,7 @@ export const petIconDefinitions: PetIconDefinition[] = [
   {
     key: "sugar-glider",
     label: "蜜袋鼯",
-    src: "/pet-icons/sugar-glider.webp",
+    src: "/pet-icons-v2/sugar-glider.webp",
     aliases: ["蜜袋鼯", "飛鼠"],
     filterable: true,
     isExotic: true,
@@ -180,7 +180,7 @@ export const petIconDefinitions: PetIconDefinition[] = [
   {
     key: "ferret",
     label: "貂",
-    src: "/pet-icons/ferret.webp",
+    src: "/pet-icons-v2/ferret.webp",
     aliases: ["貂", "雪貂"],
     filterable: true,
     isExotic: true,
@@ -188,7 +188,7 @@ export const petIconDefinitions: PetIconDefinition[] = [
   {
     key: "chinchilla",
     label: "龍貓",
-    src: "/pet-icons/chinchilla.webp",
+    src: "/pet-icons-v2/chinchilla.webp",
     aliases: ["龍貓"],
     filterable: true,
     isExotic: true,
@@ -196,7 +196,7 @@ export const petIconDefinitions: PetIconDefinition[] = [
   {
     key: "wild-animal",
     label: "野生動物",
-    src: "/pet-icons/wild-animal.webp",
+    src: "/pet-icons-v2/wild-animal.webp",
     aliases: [
       "野生動物",
       "浣熊",
@@ -219,7 +219,7 @@ export const petIconDefinitions: PetIconDefinition[] = [
   {
     key: "other-exotic",
     label: "其他特寵",
-    src: "/pet-icons/other-exotic.webp",
+    src: "/pet-icons-v2/other-exotic.webp",
     aliases: [
       "其他特寵",
       "其他",

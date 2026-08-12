@@ -11,7 +11,7 @@ import {
   SelectItem,
   SelectTrigger,
 } from "@/components/ui/select";
-import { SearchIcon } from "lucide-react";
+import { LoaderCircleIcon, RotateCcwIcon, SearchIcon } from "lucide-react";
 
 type FilterPanelProps = {
   city?: string;
@@ -26,6 +26,8 @@ type FilterPanelProps = {
   onOpenNowToggle?: (checked: boolean) => void;
   onHasEmergencyServiceToggle?: (checked: boolean) => void;
   onSearch?: () => void;
+  onReset?: () => void;
+  isSearching?: boolean;
 };
 
 const cityOptions = [
@@ -40,13 +42,18 @@ const cityOptions = [
   "台中市",
   "彰化縣",
   "南投縣",
+  "雲林縣",
   "嘉義市",
+  "嘉義縣",
   "台南市",
   "高雄市",
   "屏東縣",
   "宜蘭縣",
   "花蓮縣",
   "台東縣",
+  "澎湖縣",
+  "金門縣",
+  "連江縣",
 ];
 
 function getCityLabel(value: string) {
@@ -70,21 +77,30 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
   onOpenNowToggle,
   onHasEmergencyServiceToggle,
   onSearch,
+  onReset,
+  isSearching = false,
 }) => {
+  const hasActiveFilters =
+    city !== "all" ||
+    petCategory !== "all" ||
+    reservationRequiredOnly ||
+    openNowOnly ||
+    hasEmergencyServiceOnly;
+
   return (
     <section className={`mb-5 overflow-hidden rounded-2xl border border-sage-100 bg-card ${compact ? "p-4" : "p-4 sm:p-5"}`}>
       <div className="mb-4 flex flex-col gap-3 xl:flex-row xl:items-center xl:justify-between">
         <div>
           <h2 className="text-lg font-extrabold text-forest-900">篩選條件</h2>
-          <p className="mt-1 text-sm leading-6 text-stone-500">先用條件篩選，再致電確認門診時間與是否能看診。</p>
+          <p className="mt-1 text-sm leading-6 text-stone-600">設定條件後按搜尋，再致電確認門診時間與是否能看診。</p>
         </div>
         <div className="flex w-fit items-center gap-2 rounded-full border border-sage-100 bg-sage-50 px-3 py-2 text-xs font-bold text-stone-600">
-          <span className="inline-flex items-center gap-1.5"><span className="h-2.5 w-2.5 rounded-full bg-sage-500" />一般標記</span>
+          <span className="inline-flex items-center gap-1.5"><span className="h-2.5 w-2.5 rounded-full bg-forest-800" />一般標記</span>
           <span className="h-4 w-px bg-sage-200" />
           <span className="inline-flex items-center gap-1.5"><span className="h-2.5 w-2.5 rounded-full bg-petal-400" />急診標記</span>
         </div>
       </div>
-      <div className={`grid grid-cols-1 items-end gap-3 ${compact ? "md:grid-cols-2" : "xl:grid-cols-[240px_minmax(280px,1fr)_minmax(420px,2fr)_150px]"}`}>
+      <div className={`grid grid-cols-1 items-end gap-3 ${compact ? "md:grid-cols-2" : "xl:grid-cols-[220px_minmax(240px,1fr)_minmax(420px,2fr)_minmax(190px,auto)]"}`}>
         <div className="order-1">
           <label htmlFor="city" className="mb-2 block text-xs font-extrabold tracking-wide text-forest-900">
             城市
@@ -149,7 +165,7 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
                 />
                 <span>
                   <span className="block text-sm font-bold text-forest-900">非預約制</span>
-                  <span className="block text-xs text-stone-500">僅顯示可不預約資訊</span>
+                  <span className="block text-xs text-stone-600">僅顯示可不預約資訊</span>
                 </span>
             </label>
 
@@ -165,7 +181,7 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
                 />
                 <span>
                   <span className="block text-sm font-bold text-forest-900">目前營業中</span>
-                  <span className="block text-xs text-stone-500">依營業時間資料判斷</span>
+                  <span className="block text-xs text-stone-600">依營業時間資料判斷</span>
                 </span>
             </label>
 
@@ -181,20 +197,38 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
                 />
                 <span>
                   <span className="block text-sm font-bold text-forest-900">有急診服務</span>
-                  <span className="block text-xs text-stone-500">仍建議先電話確認</span>
+                  <span className="block text-xs text-stone-600">仍建議先電話確認</span>
                 </span>
             </label>
         </div>
 
-        <div className={compact ? "order-4 md:col-span-2" : "order-4 flex items-end xl:col-auto"}>
+        <div className={compact ? "order-4 grid gap-2 md:col-span-2 sm:grid-cols-[1fr_auto]" : "order-4 flex items-end gap-2 xl:col-auto"}>
           <Button
             onClick={onSearch}
+            disabled={isSearching}
             className="min-h-11 w-full font-extrabold"
             size="lg"
           >
-            <SearchIcon data-icon="inline-start" />
-            搜尋
+            {isSearching ? (
+              <LoaderCircleIcon data-icon="inline-start" className="animate-spin" />
+            ) : (
+              <SearchIcon data-icon="inline-start" />
+            )}
+            {isSearching ? "搜尋中" : "搜尋醫院"}
           </Button>
+          {hasActiveFilters && (
+            <Button
+              type="button"
+              onClick={onReset}
+              disabled={isSearching}
+              variant="ghost"
+              size="lg"
+              className="min-h-11 shrink-0 px-3 font-bold text-stone-700"
+            >
+              <RotateCcwIcon data-icon="inline-start" />
+              重設
+            </Button>
+          )}
         </div>
       </div>
     </section>

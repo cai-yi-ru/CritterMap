@@ -1,4 +1,5 @@
 import { getPetIconDefinition } from "@/lib/petIcons";
+import Image from "next/image";
 
 type PetIconProps = {
   pet: string;
@@ -18,11 +19,14 @@ export default function PetIcon({ pet, size = "md", showLabel = false, className
 
   return (
     <span className={`inline-flex items-center gap-1.5 ${className}`}>
-      <img
+      <Image
         src={icon.src}
-        alt={`${icon.label} icon`}
-        className={`${sizeClass[size]} shrink-0 rounded-full object-contain`}
+        alt={showLabel ? "" : `${icon.label}圖示`}
+        width={192}
+        height={192}
+        className={`${sizeClass[size]} shrink-0 object-contain`}
         loading="lazy"
+        decoding="async"
       />
       {showLabel && <span>{pet}</span>}
     </span>

@@ -1,8 +1,9 @@
 
 'use client';
 
-import { useCallback, useEffect, useTransition, useState } from 'react';
+import { useCallback, useTransition, useState } from 'react';
 import dynamic from 'next/dynamic';
+import { ListIcon, MapIcon } from 'lucide-react';
 import Navbar from './components/Navbar';
 import FilterPanel from './components/FilterPanel';
 import HospitalList from './components/HospitalList';
@@ -18,7 +19,12 @@ import type { Hospital, HospitalUpdate } from '@/types/hospital';
 import type { HospitalSummary } from '@/types/hospitalPublic';
 
 const MapPanel = dynamic(() => import('./components/MapPanel'), {
-  ssr: false
+  ssr: false,
+  loading: () => (
+    <div className="grid h-[440px] place-items-center rounded-2xl border border-sage-100 bg-card text-sm font-bold text-stone-600 sm:h-[520px] lg:h-[640px]">
+      地圖載入中
+    </div>
+  ),
 });
 
 export const cityCenterMap: Record<string, [number, number]> = {
@@ -68,7 +74,8 @@ export default function HomeClient({
   hospitalCount = initialHospitals.length,
   latestHospitalDataDate = null,
 }: HomeClientProps) {
-  const [isPending, startTransition] = useTransition();
+  const [isSearchPending, startSearchTransition] = useTransition();
+  const [, startDetailTransition] = useTransition();
   const [filteredHospitals, setFilteredHospitals] = useState<HospitalSummary[]>(initialHospitals);
   const hospitalUpdates = initialUpdates;
   const [updateHospitals] = useState<HospitalSummary[]>(initialUpdateHospitals);
@@ -77,14 +84,17 @@ export default function HomeClient({
   const [city, setCity] = useState("all");
   const [type, setType] = useState("all");
   const [mapCenter, setMapCenter] = useState<[number, number]>(cityCenterMap['all']);
+  const [mapZoom, setMapZoom] = useState(7);
   const [reservationRequiredOnly, setReservationRequiredOnly] = useState(false);
   const [openNowOnly, setOpenNowOnly] = useState(false);
   const [hasEmergencyServiceOnly, setHasEmergencyServiceOnly] = useState(false);
+  const [mobileView, setMobileView] = useState<'map' | 'list'>('map');
 
   const handleSearch = useCallback(() => {
     const newCenter = cityCenterMap[city] || cityCenterMap['all'];
     setMapCenter(newCenter);
-    startTransition(async () => {
+    setMapZoom(cityZoomMap[city] ?? 12);
+    startSearchTransition(async () => {
       const filtered = await searchHospitals({
         city,
         petCategory: type,
@@ -94,10 +104,31 @@ export default function HomeClient({
       });
       setFilteredHospitals(filtered);
     });
-  }, [city, hasEmergencyServiceOnly, openNowOnly, reservationRequiredOnly, startTransition, type]);
+  }, [city, hasEmergencyServiceOnly, openNowOnly, reservationRequiredOnly, startSearchTransition, type]);
+
+  const handleReset = useCallback(() => {
+    setCity('all');
+    setType('all');
+    setReservationRequiredOnly(false);
+    setOpenNowOnly(false);
+    setHasEmergencyServiceOnly(false);
+    setMapCenter(cityCenterMap.all);
+    setMapZoom(cityZoomMap.all);
+
+    startSearchTransition(async () => {
+      const filtered = await searchHospitals({
+        city: 'all',
+        petCategory: 'all',
+        reservationRequiredOnly: false,
+        openNowOnly: false,
+        hasEmergencyServiceOnly: false,
+      });
+      setFilteredHospitals(filtered);
+    });
+  }, [startSearchTransition]);
 
   const handleHospitalClick = (hospital: HospitalSummary) => {
-    startTransition(async () => {
+    startDetailTransition(async () => {
       const detail = await getHospitalDetail(hospital.id);
       if (detail) {
         setSelectedHospital(detail);
@@ -106,7 +137,7 @@ export default function HomeClient({
   };
 
   const handleUpdateClick = (update: HospitalUpdate, hospital: HospitalSummary) => {
-    startTransition(async () => {
+    startDetailTransition(async () => {
       const detail = await getHospitalDetail(hospital.id);
       if (detail) {
         setSelectedUpdate({ update, hospital: detail });
@@ -114,14 +145,8 @@ export default function HomeClient({
     });
   };
 
-  useEffect(() => {
-    handleSearch()
-  }, [handleSearch]);
-
   const totalLabel = hospitalCount > 0 ? `${hospitalCount} 間` : '整理中';
-  const resultLabel = isPending ? '搜尋中' : filteredHospitals.length > 0 ? `${filteredHospitals.length} 間符合` : '沒有符合結果';
-  const mapZoom = cityZoomMap[city] ?? 12;
-
+  const resultLabel = isSearchPending ? '搜尋中' : filteredHospitals.length > 0 ? `${filteredHospitals.length} 間符合` : '沒有符合結果';
   return (
     <div className={`site-shell min-h-screen ${embed ? 'embed-shell' : ''}`}>
       {!embed && <Navbar />}
@@ -141,16 +166,16 @@ export default function HomeClient({
             </div>
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:flex lg:items-center">
               <div className="rounded-xl border border-sage-100 bg-sage-50 px-4 py-3">
-                <div className="text-xs font-medium text-stone-500">目前整理</div>
+                <div className="text-xs font-medium text-stone-600">目前整理</div>
                 <div className="text-xl font-extrabold text-forest-900">{totalLabel}</div>
               </div>
               <div className="rounded-xl border border-honey-200 bg-honey-100 px-4 py-3">
-                <div className="text-xs font-medium text-stone-500">搜尋結果</div>
-                <div className="text-xl font-extrabold text-forest-900">{resultLabel}</div>
+                <div className="text-xs font-medium text-stone-600">搜尋結果</div>
+                <div className="text-xl font-extrabold text-forest-900" aria-live="polite">{resultLabel}</div>
               </div>
               {latestHospitalDataDate && (
                 <div className="col-span-2 rounded-xl border border-sage-100 bg-white px-4 py-3 sm:col-span-1">
-                  <div className="text-xs font-medium text-stone-500">資料最近整理</div>
+                  <div className="text-xs font-medium text-stone-600">資料最近整理</div>
                   <time className="text-lg font-extrabold text-forest-900" dateTime={latestHospitalDataDate}>
                     {latestHospitalDataDate}
                   </time>
@@ -172,15 +197,45 @@ export default function HomeClient({
           onReservationRequiredToggle={setReservationRequiredOnly}
           onOpenNowToggle={setOpenNowOnly}
           onHasEmergencyServiceToggle={setHasEmergencyServiceOnly}
-          onSearch={handleSearch} />
+          onSearch={handleSearch}
+          onReset={handleReset}
+          isSearching={isSearchPending}
+        />
+
+        {!embed && (
+          <div className="mb-3 grid grid-cols-2 gap-2 rounded-xl border border-sage-100 bg-card p-1 lg:hidden" aria-label="切換地圖或清單">
+            <button
+              type="button"
+              aria-pressed={mobileView === 'map'}
+              className={`flex min-h-10 items-center justify-center gap-2 rounded-lg text-sm font-bold transition ${
+                mobileView === 'map' ? 'bg-forest-800 text-white' : 'text-stone-700 hover:bg-sage-50'
+              }`}
+              onClick={() => setMobileView('map')}
+            >
+              <MapIcon className="size-4" aria-hidden="true" />
+              地圖
+            </button>
+            <button
+              type="button"
+              aria-pressed={mobileView === 'list'}
+              className={`flex min-h-10 items-center justify-center gap-2 rounded-lg text-sm font-bold transition ${
+                mobileView === 'list' ? 'bg-forest-800 text-white' : 'text-stone-700 hover:bg-sage-50'
+              }`}
+              onClick={() => setMobileView('list')}
+            >
+              <ListIcon className="size-4" aria-hidden="true" />
+              清單 {filteredHospitals.length}
+            </button>
+          </div>
+        )}
 
         <div className={embed ? "grid grid-cols-1 gap-4" : "grid grid-cols-1 gap-5 lg:grid-cols-[minmax(320px,420px)_1fr]"}>
-          <aside className={embed ? "order-2" : "order-2 lg:order-1"}>
-            <HospitalList hospitals={filteredHospitals} onHospitalClick={handleHospitalClick} />
+          <aside className={embed ? "order-2" : `${mobileView === 'list' ? 'block' : 'hidden'} order-2 lg:order-1 lg:block`}>
+            <HospitalList hospitals={filteredHospitals} onHospitalClick={handleHospitalClick} loading={isSearchPending} />
           </aside>
-          <section className={embed ? "order-1" : "order-1 lg:order-2"}>
-            <MapPanel hospitals={filteredHospitals} center={mapCenter} zoom={mapZoom} onHospitalClick={handleHospitalClick} embed={embed} />
-          </section>
+          <div className={embed ? "order-1" : `${mobileView === 'map' ? 'block' : 'hidden'} order-1 lg:order-2 lg:block`}>
+            <MapPanel hospitals={filteredHospitals} center={mapCenter} zoom={mapZoom} onHospitalClick={handleHospitalClick} embed={embed} loading={isSearchPending} />
+          </div>
         </div>
 
         {!embed && <SponsoredSlot context="home" className="mt-5" />}

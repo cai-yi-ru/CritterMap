@@ -2,7 +2,7 @@
 import HomeClient from './HomeClient';
 import { getHospitals } from "@/lib/getHospitals";
 import { getHospitalUpdates } from "@/lib/getHospitalUpdates";
-import { filterHospitals, summarizeHospitals } from "@/lib/hospitalSearch";
+import { summarizeHospitals } from "@/lib/hospitalSearch";
 import { defaultDescription, defaultTitle, siteName, siteUrl } from "@/lib/seo";
 import type { Hospital } from "@/types/hospital";
 
@@ -72,7 +72,7 @@ export default async function Home({ searchParams }: HomePageProps) {
   const pets = Array.from(
     new Set(hospitals.flatMap((hospital) => [...(hospital.pet_category_group || []), ...(hospital.pets || [])])),
   );
-  const initialHospitals = summarizeHospitals(filterHospitals(hospitals, { city: "台北市", petCategory: "all" }));
+  const initialHospitals = summarizeHospitals(hospitals);
   const updateHospitalIds = new Set(updates.map((update) => update.hospitalId));
   const updateHospitals = summarizeHospitals(hospitals.filter((hospital) => updateHospitalIds.has(hospital.id)));
   const latestHospitalDataDate = getDisplayableHospitalDataDate(hospitals);
