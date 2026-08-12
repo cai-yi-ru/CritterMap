@@ -75,7 +75,7 @@ export const KeelungHospitalList = [
       "天竺鼠疾病診療",
       "觀賞鳥類外科診療"
     ],
-    "website": "https://fanwen.site44.com/",
+    "website": "https://twstay.com.tw/panwen/",
     "appointmentLink": "",
     "transportTips": "位於基隆廟口附近，建議搭乘大眾運輸工具前往，或將車輛停放於火車站附近的付費停車場後步行前往。",
     "socialMedia": {
@@ -84,13 +84,13 @@ export const KeelungHospitalList = [
     },
     "google": {
       "rating": "3.8",
-      "reviewCount": 223,
+      "reviewCount": 222,
       "mapsUrl": "https://www.google.com/maps/place/%E5%9F%BA%E9%9A%86%E6%B1%8E%E6%B1%B6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.1274657,121.7426723,17z/data=!3m1!4b1!4m6!3m5!1s0x345d4f5a2df35191:0x97ca24c6286c09bd!8m2!3d25.1274657!4d121.7426723!16s%2Fg%2F11h1vdnhg6",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%9F%BA%E9%9A%86%E6%B1%8E%E6%B1%B6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.1274657,121.7426723,17z/data=!4m8!3m7!1s0x345d4f5a2df35191:0x97ca24c6286c09bd!8m2!3d25.1274657!4d121.7426723!9m1!1b1!16s%2Fg%2F11h1vdnhg6",
-      "verifiedAt": "2026-08-06"
+      "verifiedAt": "2026-08-10"
     },
-    "clinicNotes": "官網醫師頁列有犬、貓、寵物兔、寵物鼠、天竺鼠與觀賞鳥類相關診療；刺蝟、烏龜等其他特殊寵物僅見於 Google 評論，建議就診前先致電確認。\nGoogle 商家目前顯示每日 11:00–19:00；官網頁尾仍保留較早的 10:30–21:30 資訊，出發前建議以電話確認當日門診。",
-    "updatedAt": "2026-08-06T00:00:00.000Z",
-    "last_checked": "2026-08-06"
+    "clinicNotes": "現行官方網站列有寵物鼠、天竺鼠診療並標示請預約看診；舊官方醫師頁另列寵物兔與觀賞鳥類診療，其他特殊寵物建議先致電確認。\n現行官方網站與 Google Maps 均顯示每日 11:00–19:00；舊官網仍保留 10:30–21:30，應以現行來源及電話確認當日門診。",
+    "updatedAt": "2026-08-10T00:00:00.000Z",
+    "last_checked": "2026-08-10"
   }
 ];

@@ -88,7 +88,7 @@ export const TaitungHospitalList = [
       "reviewCount": 42,
       "mapsUrl": "https://www.google.com/maps/place/%E8%B0%B7%E7%B1%B3%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.0493686,121.1647317,17z/data=!3m1!4b1!4m6!3m5!1s0x346f090ac92a2465:0xb987fefbead3ed1!8m2!3d23.0493686!4d121.1647317!16s%2Fg%2F11vhcb5cx5",
       "reviewsUrl": "https://www.google.com/maps/place/%E8%B0%B7%E7%B1%B3%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.0493686,121.1647317,17z/data=!4m8!3m7!1s0x346f090ac92a2465:0xb987fefbead3ed1!8m2!3d23.0493686!4d121.1647317!9m1!1b1!16s%2Fg%2F11vhcb5cx5",
-      "verifiedAt": "2026-08-06"
+      "verifiedAt": "2026-08-10"
     },
     "specialClinic": {
       "hasExoticSpecialClinic": true,
@@ -97,13 +97,24 @@ export const TaitungHospitalList = [
       "reservationRequired": true,
       "sourceLabel": "官方 Facebook",
       "sourceUrl": "https://www.facebook.com/goodmile128/posts/pfbid0xE5CuZCh8TCQp2bvXgUe8YDh6sRK2FePUijysjYAsoXGAnoF2UEGxNZQqFFAthe3l",
-      "verifiedAt": "2026-08-06"
+      "verifiedAt": "2026-08-10"
     },
     "fb": {
-      "last_fb_post_date": "2026-07-30",
-      "last_fb_post_text": "官方 8 月班表列出特寵門診為 8/7（最晚看診至 16:00）及 8/24–8/26；吳醫師 8 月未安排門診，請先電話確認可受理物種與時段。"
+      "last_fb_post_date": "2026-08-06（頁面顯示 4 天前，依 2026-08-10 查核日推算）",
+      "last_fb_post_text": "官方 Facebook 最新可見貼文為用品資訊，未涉及停業或門診變更；置頂／重要 8 月班表仍列特寵門診為 8/7（最晚看診至 16:00）及 8/24–8/26，吳醫師 8 月未安排門診。"
     },
     "announcements": [
+      {
+        "id": "goodmile-august-2026-network-notice",
+        "type": "notice",
+        "title": "谷米 8/12 花東行動網路受阻通知",
+        "content": "官方 8 月班表貼文提醒 2026-08-12 13:30–14:00 花東行動網路可能受阻；如有疑問請撥 089-810253。",
+        "startDate": "2026-08-12",
+        "endDate": "2026-08-12",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/goodmile128/posts/pfbid0xMiisvERJyotQcYwMsDePbLuWMR5L8n2SvZrydDQ7dbXncedopNcbJnjTtvUjwBnl",
+        "verifiedAt": "2026-08-10"
+      },
       {
         "id": "goodmile-july-2026-schedule",
         "type": "notice",
@@ -124,11 +135,11 @@ export const TaitungHospitalList = [
         "endDate": "2026-08-26",
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/goodmile128/posts/pfbid0xE5CuZCh8TCQp2bvXgUe8YDh6sRK2FePUijysjYAsoXGAnoF2UEGxNZQqFFAthe3l",
-        "verifiedAt": "2026-08-06"
+        "verifiedAt": "2026-08-10"
       }
     ],
-    "clinicNotes": "本院採電話預約，實際獸醫看診日依每月班表；特寵門診非每日固定看診。官方 8 月班表列出特寵門診為 8/7（最晚看診至 16:00）及 8/24–8/26，吳醫師 8 月未安排門診；8 月最新文字未逐項列明物種，請先確認當日醫師與可受理物種。\n上午 11:30、下午 18:30 截止掛號；超過截止時間按急診掛號費計算，但院方未公布固定或 24 小時急診服務。",
-    "updatedAt": "2026-08-06",
-    "last_checked": "2026-08-06"
+    "clinicNotes": "本院採電話預約，實際獸醫看診日依每月班表；特寵門診非每日固定看診。官方 8 月班表列出特寵門診為 8/7（最晚看診至 16:00）及 8/24–8/26，吳醫師 8 月未安排門診；8 月最新文字未逐項列明物種，請先確認當日醫師與可受理物種。另提醒 8/12 13:30–14:00 花東行動網路可能受阻，有疑問請撥 089-810253。\n上午 11:30、下午 18:30 截止掛號；超過截止時間按急診掛號費計算，但院方未公布固定或 24 小時急診服務。",
+    "updatedAt": "2026-08-10",
+    "last_checked": "2026-08-10"
   }
 ];

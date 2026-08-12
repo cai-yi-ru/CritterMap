@@ -44,10 +44,10 @@ export const TaichungHospitalList = [
     },
     "google": {
       "rating": "4.6",
-      "reviewCount": 601,
+      "reviewCount": 603,
       "mapsUrl": "https://www.google.com/maps/place/%E7%BE%BD%E6%A3%AE%E6%9E%97%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%2F%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E9%86%AB%E9%99%A2%2F%E9%A0%90%E7%B4%84%E5%88%B6/@24.1464159,120.6993232,17z/data=!3m1!4b1!4m6!3m5!1s0x34693d13a34290cf:0xe9a02cb3a233cc26!8m2!3d24.1464159!4d120.6993232!16s%2Fg%2F11nfl0wllc",
       "reviewsUrl": "https://www.google.com/maps/place/%E7%BE%BD%E6%A3%AE%E6%9E%97%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%2F%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E9%86%AB%E9%99%A2%2F%E9%A0%90%E7%B4%84%E5%88%B6/@24.1464159,120.6993232,17z/data=!4m8!3m7!1s0x34693d13a34290cf:0xe9a02cb3a233cc26!8m2!3d24.1464159!4d120.6993232!9m1!1b1!16s%2Fg%2F11nfl0wllc",
-      "verifiedAt": "2026-08-06"
+      "verifiedAt": "2026-08-10"
     },
     "reservationRequired": true,
     "hasEmergencyService": true,
@@ -107,16 +107,16 @@ export const TaichungHospitalList = [
         "startDate": "2026-07-29",
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/featherforest2021/",
-        "verifiedAt": "2026-08-06"
+        "verifiedAt": "2026-08-10"
       }
     ],
     "clinicNotes": "本院以鳥類、爬蟲與非犬貓小型哺乳類等特寵診療為主，採預約制，建議至少提前一日致電安排；仍有名額時可現場候診。\n固定門診為週一至週日 09:00-12:00、15:00-20:00；急症或加掛須視當日狀況，請先電話確認是否可接診。",
     "fb": {
-      "last_fb_post_date": "2026-08-04",
-      "last_fb_post_text": "最新可見貼文為「阿呼帶你健檢去」影片；官方 LINE 維修完成後已恢復預約與訊息諮詢。"
+      "last_fb_post_date": "2026-08-03",
+      "last_fb_post_text": "最新可見貼文為 2026/8/3「阿呼帶你健檢去」影片；官方 LINE 7/29 維修完成後已恢復預約與訊息諮詢。"
     },
-    "updatedAt": "2026-08-06",
-    "last_checked": "2026-08-06"
+    "updatedAt": "2026-08-10",
+    "last_checked": "2026-08-10"
   },
   {
     "id": "nchu-vmth-taichung",
@@ -229,7 +229,7 @@ export const TaichungHospitalList = [
       "mapsUrl": "https://www.google.com/maps/place/%E4%B8%AD%E8%88%88%E5%A4%A7%E5%AD%B8%E7%8D%B8%E9%86%AB%E6%95%99%E5%AD%B8%E9%86%AB%E9%99%A2/@24.1466019,120.6639197,17z/data=!4m10!1m2!2m1!1z5ZyL56uL5Lit6IiI5aSn5a2454246Yar5pWZ5a246Yar6Zmi!3m6!1s0x34693d1d66e43737:0x222fef5f1bd06a4e!8m2!3d24.1466019!4d120.6686833!15sCiTlnIvnq4vkuK3oiIjlpKflrbjnjbjphqvmlZnlrbjphqvpmaKSAQ9hbmltYWxfaG9zcGl0YWzgAQA!16s%2Fg%2F11r_pgjls",
       "reviewsUrl": "https://www.google.com/maps/place/%E4%B8%AD%E8%88%88%E5%A4%A7%E5%AD%B8%E7%8D%B8%E9%86%AB%E6%95%99%E5%AD%B8%E9%86%AB%E9%99%A2/@24.1466019,120.6639197,17z/data=!4m8!3m7!1s0x34693d1d66e43737:0x222fef5f1bd06a4e!8m2!3d24.1466019!4d120.6639197!9m1!1b1!16s%2Fg%2F11r_pgjls",
       "placeId": "ChIJNzfkZh09aTQRTmrQG1_vLyI",
-      "verifiedAt": "2026-08-06"
+      "verifiedAt": "2026-08-10"
     },
     "specialClinic": {
       "hasExoticSpecialClinic": true,
@@ -238,7 +238,7 @@ export const TaichungHospitalList = [
       "reservationRequired": false,
       "sourceLabel": "官方門診表",
       "sourceUrl": "https://www.vmth.nchu.edu.tw/timetable/hsiangshang?id=87",
-      "verifiedAt": "2026-08-06"
+      "verifiedAt": "2026-08-10"
     },
     "announcements": [
       {
@@ -250,12 +250,12 @@ export const TaichungHospitalList = [
         "endDate": "2026-09-02",
         "sourceLabel": "官方門診表",
         "sourceUrl": "https://www.vmth.nchu.edu.tw/timetable/hsiangshang?id=87",
-        "verifiedAt": "2026-08-06"
+        "verifiedAt": "2026-08-10"
       }
     ],
     "clinicNotes": "一般門診非全預約制，固定掛號時間為週一至週五 08:00-11:30、13:00-16:00，週六、週日及國定假日休診。\n眼科、心臟科建議先來電，腫瘤科與中獸醫針灸門診採電話預約；行為門診為每週三線上預約。特殊寵物及野生動物門診仍有排班，但各醫師收治物種不同；鳥禽不含鴿子、鴕鳥，蛇類僅收無毒蛇，且未開辦寵物魚及寵物昆蟲門診。",
     "updatedAt": "2026-08-06",
-    "last_checked": "2026-08-06"
+    "last_checked": "2026-08-10"
   },
   {
     "id": "jurassic-eah-taichung",
@@ -357,7 +357,7 @@ export const TaichungHospitalList = [
       "rating": "4.1",
       "reviewCount": 1241,
       "mapsUrl": "https://www.google.com/maps/place/%E4%BE%8F%E5%84%B8%E7%B4%80%E9%87%8E%E7%94%9F%E5%8B%95%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2(%E9%99%A2%E4%BC%91:6%2F3%E3%80%816%2F9%E3%80%816%2F19)+%2F%2F%E9%A0%90%E7%B4%84%E5%88%B6%2F%2F%E5%A4%96%E7%A7%91%2F%E5%85%A7%E7%A7%91%2F%E4%B8%AD%E9%86%AB%2F%E9%87%9D%E7%81%B8%2F%E5%BD%B1%E5%83%8F%E5%AD%B8%2F%E6%96%B7%E5%B1%A4%E6%8E%83%E6%8F%8F%2F%2F%E5%85%94%E5%AD%90%2F%E9%BC%A0%E9%A1%9E%2F%E5%A4%A9%E7%AB%BA%E9%BC%A0%2F%E9%BE%8D%E8%B2%93%2F%E6%B0%B4%E8%B1%9A%2F%E7%8B%90%E7%8D%B4%2F%E8%B2%82%2F%E5%88%BA%E8%9D%9F%2F%E8%9C%9C%E8%A2%8B%E9%BC%AF%2F%E7%88%AC%E8%9F%B2%2F%E9%B3%A5%E9%A1%9E/@24.1420915,120.6660906,17z/data=!3m1!4b1!4m6!3m5!1s0x34693d79d446c311:0x4d23fa2ed4b31072!8m2!3d24.1420915!4d120.6660906!16s%2Fg%2F11b6_j22n0",
-      "verifiedAt": "2026-08-06"
+      "verifiedAt": "2026-08-10"
     },
     "specialClinic": {
       "hasExoticSpecialClinic": true,
@@ -378,7 +378,7 @@ export const TaichungHospitalList = [
         "endDate": "2026-08-31",
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/jurassicah.tw/",
-        "verifiedAt": "2026-08-06"
+        "verifiedAt": "2026-08-10"
       }
     ],
     "fb": {
@@ -387,7 +387,7 @@ export const TaichungHospitalList = [
     },
     "clinicNotes": "本院以非犬貓特殊寵物醫療為主，提供小型哺乳類、爬蟲與禽鳥等診療服務；依 2026 年 8 月班表分物種安排醫師門診。門診以電話預約為主，預約門診及急診優先，現場掛號會依當日人力與診療狀況安排，滿診即停止掛號。\n2026 年 8 月院休為 8/6、8/13、8/19、8/27。本院非 24 小時，夜間及營業時間外不提供門診與急診處理。",
     "updatedAt": "2026-08-06",
-    "last_checked": "2026-08-06"
+    "last_checked": "2026-08-10"
   },
   {
     "id": "island-animal-hospital-taichung",
@@ -438,7 +438,7 @@ export const TaichungHospitalList = [
       "mapsUrl": "https://www.google.com/maps/place/%E5%B0%8F%E5%B3%B6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9CLine%E6%88%96%E9%9B%BB%E8%A9%B1%E9%A0%90%E7%B4%84/@24.1306384,120.6658307,17z/data=!3m1!4b1!4m6!3m5!1s0x34693d266ab4a321:0x76806ee9053acc89!8m2!3d24.1306384!4d120.6658307!16s%2Fg%2F11qkb28f36",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%B0%8F%E5%B3%B6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9CLine%E6%88%96%E9%9B%BB%E8%A9%B1%E9%A0%90%E7%B4%84/@24.1306384,120.6658307,17z/data=!4m8!3m7!1s0x34693d266ab4a321:0x76806ee9053acc89!8m2!3d24.1306384!4d120.6658307!9m1!1b1!16s%2Fg%2F11qkb28f36",
       "placeId": "0x34693d266ab4a321:0x76806ee9053acc89",
-      "verifiedAt": "2026-08-06"
+      "verifiedAt": "2026-08-10"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -497,7 +497,7 @@ export const TaichungHospitalList = [
         "endDate": "2026-07-26",
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/IAH.tw/",
-        "verifiedAt": "2026-08-06"
+        "verifiedAt": "2026-08-10"
       }
     ],
     "clinicNotes": "本院提供特殊寵物內外科醫療、中藥與針灸治療；官方列明看診物種包含兔、龍貓、天竺鼠、倉鼠、刺蝟、蜜袋鼯、陸龜、水龜、蜥蜴、蛇與鸚鵡。\n預約及班表查詢請加入官方 LINE @iahtw 或致電確認；Facebook 與 Instagram 訊息功能及班表發布已停用。未見官方急診資訊，請依固定門診時段安排就診。",
@@ -506,7 +506,7 @@ export const TaichungHospitalList = [
       "last_fb_post_text": "7/10 正常營業至 18:00，7/11 院休；院休期間停止看診、不接電話、不回覆訊息。"
     },
     "updatedAt": "2026-08-06",
-    "last_checked": "2026-08-06"
+    "last_checked": "2026-08-10"
   },
   {
     "id": "darwin-animal-hospital-taichung",
@@ -592,7 +592,7 @@ export const TaichungHospitalList = [
       "reviewCount": 12,
       "mapsUrl": "https://www.google.com/maps/place/%E9%81%94%E7%88%BE%E6%96%87%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.1572854,120.6639797,17z/data=!3m1!4b1!4m6!3m5!1s0x34693d007b7aeeaf:0xdf9f26c7a343efcd!8m2!3d24.1572854!4d120.6639797!16s%2Fg%2F11njwxh9yf",
       "reviewsUrl": "https://www.google.com/maps/place/%E9%81%94%E7%88%BE%E6%96%87%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.1572854,120.6639797,17z/data=!4m8!3m7!1s0x34693d007b7aeeaf:0xdf9f26c7a343efcd!8m2!3d24.1572854!4d120.6639797!9m1!1b1!16s%2Fg%2F11njwxh9yf",
-      "verifiedAt": "2026-08-06"
+      "verifiedAt": "2026-08-10"
     },
     "specialClinic": {
       "hasExoticSpecialClinic": true,
@@ -641,7 +641,7 @@ export const TaichungHospitalList = [
       "last_fb_post_text": "8/5（三）晚上因開會休診；當日現場掛號已截止。"
     },
     "updatedAt": "2026-08-06",
-    "last_checked": "2026-08-06"
+    "last_checked": "2026-08-10"
   },
   {
     "id": "bunny-hall-vet-taichung",
@@ -688,7 +688,7 @@ export const TaichungHospitalList = [
       "reviewCount": 50,
       "mapsUrl": "https://www.google.com/maps/place/%E5%85%94%E5%85%94%E5%A0%82%E4%B8%AD%E8%A5%BF%E7%8D%B8%E9%86%AB%E5%85%94%E5%B0%88%E7%A7%91%E8%A8%BA%E6%89%80/@24.1458805,120.6689334,17z/data=!3m1!4b1!4m6!3m5!1s0x34693d0071500a45:0x598399cdaed6ca85!8m2!3d24.1458805!4d120.6689334!16s%2Fg%2F11x7n18_65",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%85%94%E5%85%94%E5%A0%82%E4%B8%AD%E8%A5%BF%E7%8D%B8%E9%86%AB%E5%85%94%E5%B0%88%E7%A7%91%E8%A8%BA%E6%89%80/@24.1458805,120.6689334,17z/data=!4m8!3m7!1s0x34693d0071500a45:0x598399cdaed6ca85!8m2!3d24.1458805!4d120.6689334!9m1!1b1!16s%2Fg%2F11x7n18_65",
-      "verifiedAt": "2026-08-06"
+      "verifiedAt": "2026-08-10"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -771,7 +771,7 @@ export const TaichungHospitalList = [
         "endDate": "2026-08-05",
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/profile.php?id=61573009299060",
-        "verifiedAt": "2026-08-06"
+        "verifiedAt": "2026-08-10"
       }
     ],
     "fb": {
@@ -780,7 +780,7 @@ export const TaichungHospitalList = [
     },
     "clinicNotes": "本院為兔科專科診所，採純預約制；服務以中西獸醫整合醫療為主，包含中獸醫、復健、針灸、推拿、中藥調理、健康檢查與病後調理。\n院方公開說明無外科、急診重症與住院服務。拿藥前請依公告提前 2 至 3 天透過 LINE 告知；額外院休與門診異動請先查看官方 Facebook 公告。",
     "updatedAt": "2026-08-06",
-    "last_checked": "2026-08-06"
+    "last_checked": "2026-08-10"
   },
   {
     "id": "grace-animal-hospital-taichung",
@@ -836,7 +836,7 @@ export const TaichungHospitalList = [
       "reservationRequired": false,
       "sourceLabel": "官方網站",
       "sourceUrl": "https://0423202590.weebly.com/38364260442486324681.html",
-      "verifiedAt": "2026-08-06"
+      "verifiedAt": "2026-08-10"
     },
     "hasEmergencyService": true,
     "emergencyHours": "每日 21:00–09:00",
@@ -894,14 +894,18 @@ export const TaichungHospitalList = [
     },
     "google": {
       "rating": "4.8",
-      "reviewCount": 327,
+      "reviewCount": 331,
       "mapsUrl": "https://www.google.com/maps/place/%E6%84%9F%E6%81%A9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.1616989,120.6631104,17z/data=!3m1!4b1!4m6!3m5!1s0x34693d822ace849d:0x698ce5020b13861!8m2!3d24.1616989!4d120.6631104!16s%2Fg%2F11s8klwjpx",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%84%9F%E6%81%A9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.1616989,120.6631104,17z/data=!4m8!3m7!1s0x34693d822ace849d:0x698ce5020b13861!8m2!3d24.1616989!4d120.6631104!9m1!1b1!16s%2Fg%2F11s8klwjpx",
-      "verifiedAt": "2026-08-06"
+      "verifiedAt": "2026-08-10"
     },
     "clinicNotes": "官方網站列犬貓一般門診與兔、鼠、鳥、兩棲爬蟲、蜜袋鼯等特寵診療，另有兔病與貓病特別門診、口腔保健、檢驗及行為門診。官方頁面列急診中心每日 21:00–09:00，並提供 24 小時急診專線 0931-784-894；特寵急症是否受理及當日門診安排請先電話確認。",
-    "updatedAt": "2026-08-06",
-    "last_checked": "2026-08-06"
+    "fb": {
+      "last_fb_post_date": "6月4日（年份未顯示）",
+      "last_fb_post_text": "官方 Facebook 最新可見貼文公告 6/10 院休一日、6/11 正常營業；年份未顯示。"
+    },
+    "updatedAt": "2026-08-10",
+    "last_checked": "2026-08-10"
   },
   {
     "id": "mowgli-animal-hospital-taichung",
@@ -951,10 +955,10 @@ export const TaichungHospitalList = [
     },
     "google": {
       "rating": "4.2",
-      "reviewCount": 661,
+      "reviewCount": 662,
       "mapsUrl": "https://www.google.com/maps/place/%E6%AF%9B%E5%85%8B%E5%88%A9%E9%87%8E%E7%94%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9C%E7%84%A1%E6%8F%90%E4%BE%9B%E6%80%A5%E8%A8%BA/@24.171651,120.6870864,17z/data=!3m1!4b1!4m6!3m5!1s0x346917df6bfc5719:0x407cde8ec07a1b6b!8m2!3d24.171651!4d120.6870864!16s%2Fg%2F11fvs9q2nl",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%AF%9B%E5%85%8B%E5%88%A9%E9%87%8E%E7%94%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9C%E7%84%A1%E6%8F%90%E4%BE%9B%E6%80%A5%E8%A8%BA/@24.171651,120.6870864,17z/data=!4m8!3m7!1s0x346917df6bfc5719:0x407cde8ec07a1b6b!8m2!3d24.171651!4d120.6870864!9m1!1b1!16s%2Fg%2F11fvs9q2nl",
-      "verifiedAt": "2026-08-06"
+      "verifiedAt": "2026-08-10"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -993,16 +997,16 @@ export const TaichungHospitalList = [
         "endDate": "2026-08-29",
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid029dZM7szWRMmjeJ7MTgTQs832AS3J7ipdXZ61vN84J3QWaSHVUuc9AETE1HX3q9SDl&id=100063622887336",
-        "verifiedAt": "2026-08-06"
+        "verifiedAt": "2026-08-10"
       }
     ],
     "clinicNotes": "本院為非犬貓動物醫院，提供小型哺乳類、鳥類與爬蟲類門診。近期官方貼文顯示當日掛號名額可能額滿；固定晚診在官方 8 月班表為 18:00–21:00，但 Google 商家顯示至 20:30，實際掛號截止與可看診時間請先電話確認。本院無提供急診。",
     "fb": {
-      "last_fb_post_date": "2026-08-05",
-      "last_fb_post_text": "2026 年 8 月 5 日掛號名額已滿，當日已截止掛號。"
+      "last_fb_post_date": "2026-08-08",
+      "last_fb_post_text": "2026/8/8 官方公告：8/9 現場掛號僅提供上午一組，下午及晚上無現場掛號，且無急診。"
     },
-    "updatedAt": "2026-08-06",
-    "last_checked": "2026-08-06"
+    "updatedAt": "2026-08-10",
+    "last_checked": "2026-08-10"
   },
   {
     "id": "kant-animal-hospital-taichung",
@@ -1040,7 +1044,7 @@ export const TaichungHospitalList = [
     },
     "reservationRequired": false,
     "hasEmergencyService": true,
-    "emergencyHours": "鼠兔／特寵急診為 21:00–06:00；犬貓急診時段在官方來源間有差異，出發前請先致電 04-2241-2700 確認。",
+    "emergencyHours": "犬貓急診約 09:00–翌日 06:00；鼠兔／特寵急診約 21:00–翌日 06:00；週三、週四 18:00 後休診；2026/8/13–8/15 公休。特寵急診是否受理請先致電 04-2241-2700 確認。",
     "nightClinic": true,
     "services": [
       "犬貓急診服務",
@@ -1073,10 +1077,10 @@ export const TaichungHospitalList = [
     },
     "google": {
       "rating": "3.9",
-      "reviewCount": 401,
+      "reviewCount": 402,
       "mapsUrl": "https://www.google.com/maps/place/%E5%BA%B7%E5%BE%B7%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E5%A4%9C%E9%96%93%E6%80%A5%E8%A8%BA-%E5%8F%B0%E4%B8%AD%E5%8C%97%E5%B1%AF%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%2F%E7%8D%B8%E9%86%AB%2F%E7%8A%AC%E8%B2%93%E9%BC%A0%E5%85%94+24%E5%B0%8F%E6%99%82%E4%BD%8F%E9%99%A2%E7%85%A7%E8%AD%B7%2F%E5%A4%9C%E9%96%93%E4%BD%8F%E9%99%A2%2F%E5%8A%A0%E8%AD%B7%2F%E6%80%A5%E8%A8%BA+%E7%8A%AC%E8%B2%93%E8%A1%80%E5%BA%AB%E4%B8%AD%E5%BF%83%2FX%E5%85%89%2F%E5%85%A7%E5%A4%96%E7%A7%91%2F%E8%B6%85%E9%9F%B3%E6%B3%A2+%E8%A9%95%E5%83%B9+PTT+Dcard/@24.175348,120.6859193,17z/data=!3m1!4b1!4m6!3m5!1s0x346917062745c30d:0xcf1d4c7339140057!8m2!3d24.175348!4d120.6859193!16s%2Fg%2F11fmqc3y0v",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%BA%B7%E5%BE%B7%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E5%A4%9C%E9%96%93%E6%80%A5%E8%A8%BA-%E5%8F%B0%E4%B8%AD%E5%8C%97%E5%B1%AF%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%2F%E7%8D%B8%E9%86%AB%2F%E7%8A%AC%E8%B2%93%E9%BC%A0%E5%85%94+24%E5%B0%8F%E6%99%82%E4%BD%8F%E9%99%A2%E7%85%A7%E8%AD%B7%2F%E5%A4%9C%E9%96%93%E4%BD%8F%E9%99%A2%2F%E5%8A%A0%E8%AD%B7%2F%E6%80%A5%E8%A8%BA+%E7%8A%AC%E8%B2%93%E8%A1%80%E5%BA%AB%E4%B8%AD%E5%BF%83%2FX%E5%85%89%2F%E5%85%A7%E5%A4%96%E7%A7%91%2F%E8%B6%85%E9%9F%B3%E6%B3%A2+%E8%A9%95%E5%83%B9+PTT+Dcard/@24.175348,120.6859193,17z/data=!4m8!3m7!1s0x346917062745c30d:0xcf1d4c7339140057!8m2!3d24.175348!4d120.6859193!9m1!1b1!16s%2Fg%2F11fmqc3y0v",
-      "verifiedAt": "2026-08-06"
+      "verifiedAt": "2026-08-10"
     },
     "specialClinic": {
       "hasExoticSpecialClinic": true,
@@ -1085,7 +1089,7 @@ export const TaichungHospitalList = [
       "reservationRequired": false,
       "sourceLabel": "官方 Instagram、Google Maps",
       "sourceUrl": "https://www.instagram.com/kant.animalhospital/",
-      "verifiedAt": "2026-08-06"
+      "verifiedAt": "2026-08-10"
     },
     "announcements": [
       {
@@ -1095,7 +1099,7 @@ export const TaichungHospitalList = [
         "content": "官方 Facebook 置頂公告週三及週四 18:00 後休診，住院與血庫照常服務；Google 逐日營業時間與官方公開時間互有差異，急診需求請先致電確認。",
         "sourceLabel": "官方 Facebook、官方 Instagram",
         "sourceUrl": "https://www.facebook.com/kantvet/posts/pfbid0gESdN6V1ZBzb1FHtaaj82rxXJZYQiZreUkFnuLj8sD2QGwmVpnkx6Pwnk1uB9vcYl",
-        "verifiedAt": "2026-08-06"
+        "verifiedAt": "2026-08-10"
       },
       {
         "id": "kant-august-2026-holiday-notice",
@@ -1106,12 +1110,16 @@ export const TaichungHospitalList = [
         "endDate": "2026-08-15",
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/kantvet/",
-        "verifiedAt": "2026-08-06"
+        "verifiedAt": "2026-08-10"
       }
     ],
     "clinicNotes": "日間門診為 09:00-18:00，鼠兔／倉鼠等特寵急診約 21:00-06:00，急診前請先電話或 LINE 聯絡；犬貓急診時段在官方來源間有差異。\n官方 Facebook 置頂公告週三、週四 18:00 後休診，住院與血庫照常；Google 逐日營業時間與官方 Facebook 的 24 小時標示互有衝突，且 8/13-8/15 公休，前往前請先致電確認。",
-    "updatedAt": "2026-08-06",
-    "last_checked": "2026-08-06"
+    "fb": {
+      "last_fb_post_date": "2026-08-01",
+      "last_fb_post_text": "官方 Facebook 2026/8/1 公告 8/13、8/14、8/15 公休；回診／領藥請提前告知，到院前請先電話確認。"
+    },
+    "updatedAt": "2026-08-10",
+    "last_checked": "2026-08-10"
   },
   {
     "id": "asiafirst-animal-hospital-taichung",
@@ -1204,11 +1212,15 @@ export const TaichungHospitalList = [
       "reviewCount": 152,
       "mapsUrl": "https://www.google.com/maps/place/%E5%8F%B0%E4%B8%AD%E4%BA%9E%E6%9D%B1%E7%B6%9C%E5%90%88%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.1666729,120.6936205,17z/data=!3m1!4b1!4m6!3m5!1s0x346917e6b94f9f41:0xf7dceed4a1553e5d!8m2!3d24.1666729!4d120.6936205!16s%2Fg%2F1pzpzxg2f",
       "placeId": "0x346917e6b94f9f41:0xf7dceed4a1553e5d",
-      "verifiedAt": "2026-08-06"
+      "verifiedAt": "2026-08-10"
     },
     "clinicNotes": "本院提供犬貓診療，以及龜蛇爬蟲、鼠兔貂類、鸚鵡與鳥類等特寵診療，另有內視鏡手術與動物皮膚專科。官方 Facebook 仍明列鳥類、爬蟲、鼠兔貂類診療，並可見鳥類與蛇類相關貼文。\n官方 Facebook 門診時間為週一至週六 09:00–12:00、17:00–19:45，12:00–17:00 休診，週日休診；Google Maps 顯示較短的 09:00–11:30、17:00–19:30，實際掛號與可看診物種請先電話確認。未見官方急診或夜間急診資訊。",
-    "updatedAt": "2026-08-06",
-    "last_checked": "2026-08-06"
+    "fb": {
+      "last_fb_post_date": "2025-01-28",
+      "last_fb_post_text": "官方 Facebook 最新可見貼文為「蛇類的腫瘤」；本次頁面未見 2026 年新貼文。"
+    },
+    "updatedAt": "2026-08-10",
+    "last_checked": "2026-08-10"
   },
   {
     "id": "ohana-exotic-animal-hospital-taichung",
@@ -1304,10 +1316,10 @@ export const TaichungHospitalList = [
     },
     "google": {
       "rating": "4.7",
-      "reviewCount": 147,
+      "reviewCount": 152,
       "mapsUrl": "https://www.google.com/maps/place/%E4%BC%B4%E5%BF%83%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2+%2F+%E9%A0%90%E7%B4%84%E5%84%AA%E5%85%88%E5%88%B6+%2F+%E8%AB%8B%E5%85%88%E4%BE%86%E9%9B%BB%E8%A9%A2%E5%95%8F+%EF%BC%887%2F15%E3%80%817%2F21%E9%99%A2%E4%BC%91%EF%BC%89/@24.150541,120.6469742,17z/data=!3m1!4b1!4m6!3m5!1s0x34693d8221071977:0x8efaf44d782879e2!8m2!3d24.150541!4d120.6469742!16s%2Fg%2F11y37brk2l",
       "reviewsUrl": "https://www.google.com/maps/place/%E4%BC%B4%E5%BF%83%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2+%2F+%E9%A0%90%E7%B4%84%E5%84%AA%E5%85%88%E5%88%B6+%2F+%E8%AB%8B%E5%85%88%E4%BE%86%E9%9B%BB%E8%A9%A2%E5%95%8F+%EF%BC%885%2F28%E3%80%816%2F11%E3%80%816%2F19%E9%99%A2%E4%BC%91%EF%BC%89/@24.150541,120.6469742,17z/data=!4m8!3m7!1s0x34693d8221071977:0x8efaf44d782879e2!8m2!3d24.150541!4d120.6469742!9m1!1b1!16s%2Fg%2F11y37brk2l",
-      "verifiedAt": "2026-08-06"
+      "verifiedAt": "2026-08-10"
     },
     "announcements": [
       {
@@ -1329,12 +1341,38 @@ export const TaichungHospitalList = [
         "startDate": "2026-08-04",
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/Ohana.vet.AH/posts/pfbid07hpYaNDCYpCJhhEvKMKWj9BCQzwKJdEo4crqhhL2aT4WQEyuyzkJMxhE4EmSh9PQl",
-        "verifiedAt": "2026-08-06"
+        "verifiedAt": "2026-08-10"
+      },
+      {
+        "id": "ohana-2026-08-10-emergency-closure",
+        "type": "closure",
+        "title": "8 月 10 日暫停現場掛號與急診",
+        "content": "官方 Facebook 2026/8/10 公告：因重症動物照護及輸血，當日不開放現場掛號及急診；預約門診安排請先電話確認。",
+        "startDate": "2026-08-10",
+        "endDate": "2026-08-10",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/photo/?fbid=122264583500141007&set=a.122131786496141007",
+        "verifiedAt": "2026-08-10"
+      },
+      {
+        "id": "ohana-2026-08-27-closure",
+        "type": "closure",
+        "title": "8 月 27 日院休",
+        "content": "Google Maps 業主提供的 2026 年 8 月班表標示 2026/8/27 院休；前往前請先電話確認。",
+        "startDate": "2026-08-27",
+        "endDate": "2026-08-27",
+        "sourceLabel": "Google Maps 業主文章",
+        "sourceUrl": "https://www.google.com/maps/place/%E4%BC%B4%E5%BF%83%E7%89%B9%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2",
+        "verifiedAt": "2026-08-10"
       }
     ],
-    "clinicNotes": "本院以鳥類、爬蟲類與小型哺乳類等特殊寵物診療為主，提供內科、外科與急重症照護。臺中市動物醫院官方名冊列營業時間急診免預約，但未支持 24 小時或夜間急診；實際急診與可看診物種請先電話確認。\n院休日以每月班表公告為準；2026-08-04 起停止線上預約、改採電話預約。官方 LINE 仍保留於院方社群資訊，但 8/4 後是否可作為預約入口未能重新確認，預約請以電話為準。",
-    "updatedAt": "2026-08-06",
-    "last_checked": "2026-08-06"
+    "clinicNotes": "本院以鳥類、爬蟲類與小型哺乳類等特殊寵物診療為主，提供內科、外科與急重症照護。臺中市動物醫院官方名冊列營業時間急診免預約，但未支持 24 小時或夜間急診；實際急診與可看診物種請先電話確認。\n院休日以每月班表公告為準；2026-08-04 起停止線上預約、改採電話預約。2026-08-10 因重症動物照護及輸血，當日暫停現場掛號與急診；官方 LINE 仍保留於院方社群資訊，但 8/4 後是否可作為預約入口未能重新確認，預約請以電話為準。",
+    "fb": {
+      "last_fb_post_date": "2026-08-10",
+      "last_fb_post_text": "官方 Facebook 2026/8/10 公告：因重症動物照護及輸血，當日不開放現場掛號及急診。"
+    },
+    "updatedAt": "2026-08-10",
+    "last_checked": "2026-08-10"
   },
   {
     "id": "legendpet-animal-hospital-taichung",
@@ -1373,8 +1411,8 @@ export const TaichungHospitalList = [
       ]
     },
     "reservationRequired": true,
-    "hasEmergencyService": false,
-    "emergencyHours": "",
+    "hasEmergencyService": true,
+    "emergencyHours": "營業時間急診免預約；不提供 24 小時或夜間急診，請先電話確認當日是否受理。",
     "nightClinic": true,
     "services": [
       "一般內科",
@@ -1420,7 +1458,7 @@ export const TaichungHospitalList = [
       "reviewCount": 615,
       "mapsUrl": "https://www.google.com/maps/place/%E5%82%B3%E9%A8%8F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2(%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%8C%E8%AB%8B%E5%85%88%E4%BE%86%E9%9B%BB%E8%A9%A2%E5%95%8F)/@24.1383415,120.6300872,17z/data=!3m1!4b1!4m6!3m5!1s0x34693d92567621b7:0xb595d27ef0084d97!8m2!3d24.1383415!4d120.6326621!16s%2Fg%2F11qq9dw9th",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%82%B3%E9%A8%8F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2(%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%8C%E8%AB%8B%E5%85%88%E4%BE%86%E9%9B%BB%E8%A9%A2%E5%95%8F)/@24.1383415,120.6326621,17z/data=!4m8!3m7!1s0x34693d92567621b7:0xb595d27ef0084d97!8m2!3d24.1383415!4d120.6326621!9m1!1b1!16s%2Fg%2F11qq9dw9th",
-      "verifiedAt": "2026-08-06"
+      "verifiedAt": "2026-08-10"
     },
     "specialClinic": {
       "hasExoticSpecialClinic": true,
@@ -1429,7 +1467,7 @@ export const TaichungHospitalList = [
       "reservationRequired": true,
       "sourceLabel": "官方網站",
       "sourceUrl": "https://www.legendpet.com.tw/news2detail_tw.php?id=6649",
-      "verifiedAt": "2026-08-06"
+      "verifiedAt": "2026-08-10"
     },
     "announcements": [
       {
@@ -1441,16 +1479,16 @@ export const TaichungHospitalList = [
         "endDate": "2026-08-31",
         "sourceLabel": "官方網站、官方 Facebook、官方 Instagram",
         "sourceUrl": "https://www.legendpet.com.tw/about_tw.php?id=12",
-        "verifiedAt": "2026-08-06"
+        "verifiedAt": "2026-08-10"
       }
     ],
     "clinicNotes": "本院提供犬貓內外科、微創手術、牙科、心臟科、腫瘤科、復健科與特寵門診；官方特寵資訊列有兔、天竺鼠、倉鼠、刺蝟、鳥類、蜥蜴、烏龜等物種。Google 商家與官方班表均提醒採預約制，特寵就診請先確認醫師時段與可受理物種。2026 年 8 月班表：8/8、8/22 李衛民獸醫師 12:00–18:00 休診，8/13 院內訓練 18:00 開始看診；本院無官方特寵急診證據。",
     "fb": {
-      "last_fb_post_date": "2026-07-08",
-      "last_fb_post_text": "7/10 18:00 至 7/11 因颱風休診；該異動已結束。"
+      "last_fb_post_date": "2026-08-01",
+      "last_fb_post_text": "官方 Facebook 2026/8/1 最新可見一般貼文為協尋黑狗，貼文內含院方電話；官方置頂／精選班表與官網一致，仍列 8 月特寵門診異動。"
     },
-    "updatedAt": "2026-08-06",
-    "last_checked": "2026-08-06"
+    "updatedAt": "2026-08-10",
+    "last_checked": "2026-08-10"
   },
   {
     "id": "national-vet-7th-branch-taichung",
@@ -1458,13 +1496,13 @@ export const TaichungHospitalList = [
     "city": "台中市",
     "district": "北區",
     "address": "台中市北區育樂街70號",
-    "lat": 24.1576863,
-    "lng": 120.6921967,
+    "lat": 24.1577054,
+    "lng": 120.6920528,
     "type": "general",
     "typeText": "犬貓診療、特寵診療",
     "phone": "04-2471-2853",
     "specialEvents": [],
-    "hours": "營業時間：週一、三、六、日 10:00–19:00；週二、四、五 10:00–21:00。門診時間：週一、日休診；週二、五 10:30–19:30；週三 10:30–16:00；週四 14:00–19:30；週六 10:30–12:00。",
+    "hours": "營業時間：週一、三、六、日 10:00–19:00；週二、四、五 10:00–21:00。門診時間：週一 10:30–15:00；週日休診；週二、五 10:30–19:30；週三 10:30–16:00；週四 14:00–19:30；週六 10:30–12:00。",
     "business_hours": {
       "mon": [
         "10:00-19:00"
@@ -1523,11 +1561,11 @@ export const TaichungHospitalList = [
       "line": "https://page.line.me/vbh1320b"
     },
     "google": {
-      "rating": "4.0",
-      "reviewCount": 279,
-      "mapsUrl": "https://www.google.com.tw/maps/place/404%E8%87%BA%E4%B8%AD%E5%B8%82%E5%8C%97%E5%8D%80%E9%8C%A6%E7%A5%A5%E9%87%8C%E8%82%B2%E6%A8%82%E8%A1%9770%E8%99%9F/@24.1576863,120.6921967,733m/data=!3m2!1e3!4b1!4m6!3m5!1s0x34693d5e4de37439:0x404870446c5be5dd!8m2!3d24.1576863!4d120.6921967!16s%2Fg%2F11rhw2ktst",
-      "reviewsUrl": "https://www.google.com.tw/maps/place/404%E8%87%BA%E4%B8%AD%E5%B8%82%E5%8C%97%E5%8D%80%E9%8C%A6%E7%A5%A5%E9%87%8C%E8%82%B2%E6%A8%82%E8%A1%9770%E8%99%9F/@24.1576863,120.6921967,733m/data=!4m8!3m7!1s0x34693d5e4de37439:0x404870446c5be5dd!8m2!3d24.1576863!4d120.6921967!9m1!1b1!16s%2Fg%2F11rhw2ktst",
-      "verifiedAt": "2026-08-06"
+      "rating": "4.1",
+      "reviewCount": 280,
+      "mapsUrl": "https://www.google.com/maps/place/%E5%85%A8%E5%9C%8B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E4%B8%83%E6%9C%9F%E5%88%86%E9%99%A2/@24.1577054,120.6920528,17z",
+      "reviewsUrl": "https://www.google.com/maps/place/%E5%85%A8%E5%9C%8B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E4%B8%83%E6%9C%9F%E5%88%86%E9%99%A2/@24.1577054,120.6920528,17z/reviews",
+      "verifiedAt": "2026-08-10"
     },
     "announcements": [
       {
@@ -1539,7 +1577,7 @@ export const TaichungHospitalList = [
         "endDate": "2026-08-31",
         "sourceLabel": "官方分院網站",
         "sourceUrl": "https://www.vet.com.tw/store_detail.php?Key=6",
-        "verifiedAt": "2026-08-06"
+        "verifiedAt": "2026-08-10"
       }
     ],
     "specialClinic": {
@@ -1549,11 +1587,11 @@ export const TaichungHospitalList = [
       "reservationRequired": false,
       "sourceLabel": "官方分院頁、官方團隊頁",
       "sourceUrl": "https://www.vet.com.tw/store_detail.php?Key=6",
-       "verifiedAt": "2026-08-06"
+       "verifiedAt": "2026-08-10"
     },
-    "clinicNotes": "本分院提供犬貓與兔科醫療照護，兔科為官方明列的特別門診服務，包含兔科內外科診療、住院照護、MLS 雷射治療與兔科心臟超音波檢查。\n官方資訊顯示可預約掛號也可現場掛號；預約掛號至門診前 30 分鐘截止，現場掛號至門診前 15 分鐘截止。2026 年 8 月輪值及週日休診依官方分院頁公告，且官方門診時間與 Google 商家顯示不完全一致，前往前建議先電話確認當日看診與掛號安排。",
-    "updatedAt": "2026-08-06",
-    "last_checked": "2026-08-06"
+    "clinicNotes": "本分院提供犬貓與兔科醫療照護，兔科為官方明列的特別門診服務，包含兔科內外科診療、住院照護、MLS 雷射治療與兔科心臟超音波檢查。\n官方資訊顯示可預約掛號也可現場掛號；預約掛號至門診前 30 分鐘截止，現場掛號至門診前 15 分鐘截止。2026 年 8 月輪值現列週一 10:30–15:00 門診、週日休診，依官方分院頁公告；官方門診時間與 Google 商家顯示不完全一致，前往前建議先電話確認當日看診與掛號安排。",
+    "updatedAt": "2026-08-10",
+    "last_checked": "2026-08-10"
   },
   {
     "id": "national-vet-fengyuan-branch",
@@ -1635,7 +1673,7 @@ export const TaichungHospitalList = [
       "reviewCount": 362,
       "mapsUrl": "https://www.google.com/maps/place/%E5%85%A8%E5%9C%8B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E8%B1%90%E5%8E%9F%E5%88%86%E9%99%A2/@24.260438,120.7255934,17z/data=!3m1!4b1!4m6!3m5!1s0x34691a6d328c7e1f:0xaa77b5f4002277c6!8m2!3d24.260438!4d120.7255934!16s%2Fg%2F1vfn4cwt?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%85%A8%E5%9C%8B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E8%B1%90%E5%8E%9F%E5%88%86%E9%99%A2/@24.260438,120.7255934,17z/data=!4m8!3m7!1s0x34691a6d328c7e1f:0xaa77b5f4002277c6!8m2!3d24.260438!4d120.7255934!9m1!1b1!16s%2Fg%2F1vfn4cwt?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D",
-      "verifiedAt": "2026-08-06"
+      "verifiedAt": "2026-08-10"
     },
     "announcements": [
       {
@@ -1645,7 +1683,7 @@ export const TaichungHospitalList = [
         "content": "每月第 1 週週三 10:30-15:00 為員工教育訓練時間，僅提供寄療服務；15:00 後恢復門診。",
         "sourceLabel": "官方分院頁",
         "sourceUrl": "https://www.vet.com.tw/store_detail.php?Key=13",
-        "verifiedAt": "2026-08-06"
+        "verifiedAt": "2026-08-10"
       },
       {
         "id": "national-vet-fengyuan-august-12-closure",
@@ -1656,7 +1694,7 @@ export const TaichungHospitalList = [
         "endDate": "2026-08-12",
         "sourceLabel": "官方分院頁",
         "sourceUrl": "https://www.vet.com.tw/store_detail.php?Key=13",
-        "verifiedAt": "2026-08-06"
+        "verifiedAt": "2026-08-10"
       }
     ],
     "specialClinic": {
@@ -1666,15 +1704,15 @@ export const TaichungHospitalList = [
       "reservationRequired": false,
       "sourceLabel": "官方分院頁、官方團隊頁",
       "sourceUrl": "https://www.vet.com.tw/store_detail2.php?cID=13",
-       "verifiedAt": "2026-08-06"
+       "verifiedAt": "2026-08-10"
     },
     "fb": {
-      "last_fb_post_date": "2026-08-04",
-      "last_fb_post_text": "體系最新可見貼文為中暑衛教；未見豐原分院近期門診異動。"
+      "last_fb_post_date": "2026-08-09",
+      "last_fb_post_text": "官方 Facebook 最新可見貼文約於 2026/8/9 發布，內容為台中場愛貓行為講座活動回顧；未見豐原分院專屬門診異動。"
     },
     "clinicNotes": "本分院提供犬貓與兔科診療，官方團隊頁列有家醫科、貓科、兔科、皮膚科、外科與影像科服務；兔科屬特別門診，建議先依門診班表與電話確認。\n可預約掛號也可現場掛號；預約掛號至門診前 30 分鐘截止，現場掛號至門診前 15 分鐘截止。每月第 1 週週三上午至 15:00 僅提供寄療服務，2026-08-12（三）休診；Google 商家地址顯示含 249、251 號，官網地址仍為圓環北路二段251號，且 Google 門診時間與官方資料不同，前往前建議先電話確認。",
-    "updatedAt": "2026-08-06",
-    "last_checked": "2026-08-06"
+    "updatedAt": "2026-08-10",
+    "last_checked": "2026-08-10"
   },
   {
     "id": "asia-university-veterinary-teaching-hospital",
@@ -1782,7 +1820,7 @@ export const TaichungHospitalList = [
       "mapsUrl": "https://www.google.com/maps/place/%E4%BA%9E%E6%B4%B2%E5%A4%A7%E5%AD%B8%E9%99%84%E5%B1%AC%E7%8D%B8%E9%86%AB%E6%95%99%E5%AD%B8%E9%86%AB%E9%99%A2/@24.0463388,120.6854073,17z/data=!3m1!4b1!4m6!3m5!1s0x34693b0985fabadb:0x245dbaf1fe95ce59!8m2!3d24.0463388!4d120.6854073!16s%2Fg%2F11v0ddnqvg",
       "reviewsUrl": "https://www.google.com/maps/place/%E4%BA%9E%E6%B4%B2%E5%A4%A7%E5%AD%B8%E9%99%84%E5%B1%AC%E7%8D%B8%E9%86%AB%E6%95%99%E5%AD%B8%E9%86%AB%E9%99%A2/@24.0463388,120.6854073,17z/data=!4m8!3m7!1s0x34693b0985fabadb:0x245dbaf1fe95ce59!8m2!3d24.0463388!4d120.6854073!9m1!1b1!16s%2Fg%2F11v0ddnqvg",
       "placeId": "0x34693b0985fabadb:0x245dbaf1fe95ce59",
-      "verifiedAt": "2026-08-06"
+      "verifiedAt": "2026-08-10"
     },
     "announcements": [
       {
@@ -1794,7 +1832,7 @@ export const TaichungHospitalList = [
         "endDate": "2026-08-07",
         "sourceLabel": "官方網站",
         "sourceUrl": "https://auvh.asia.edu.tw/zh_tw/schedule",
-        "verifiedAt": "2026-08-06"
+        "verifiedAt": "2026-08-10"
       },
       {
         "id": "asia-university-vmth-august-14-closure",
@@ -1805,7 +1843,7 @@ export const TaichungHospitalList = [
         "endDate": "2026-08-14",
         "sourceLabel": "官方網站",
         "sourceUrl": "https://auvh.asia.edu.tw/zh_tw/schedule",
-        "verifiedAt": "2026-08-06"
+        "verifiedAt": "2026-08-10"
       }
     ],
     "specialClinic": {
@@ -1815,11 +1853,11 @@ export const TaichungHospitalList = [
       "reservationRequired": true,
       "sourceLabel": "官方門診時間表、官方就診須知",
       "sourceUrl": "https://auvh.asia.edu.tw/zh_tw/firstvisit",
-      "verifiedAt": "2026-08-06"
+      "verifiedAt": "2026-08-10"
     },
     "clinicNotes": "本院採預約制，初診、複診及拿藥均須預約；如需特殊科別，請於預約時事先告知。官方仍明載野生動物與特殊寵物門診，包含鳥禽類、蜜袋鼯、貂、刺蝟、鼠、松鼠、兔、蛇、蜥蜴、烏龜與兩棲類；其他特殊寵物請先電話或 LINE 詢問。\n2026-08-07、2026-08-14 全校休診，請依官方門診時間表重新預約。急診請先電話告知；院方未公布固定急診時段，也未承諾 24 小時或所有物種均受理。",
     "updatedAt": "2026-08-06",
-    "last_checked": "2026-08-06"
+    "last_checked": "2026-08-10"
   },
   {
     "id": "versailles-pigeon-animal-hospital",
@@ -1827,33 +1865,38 @@ export const TaichungHospitalList = [
     "city": "台中市",
     "district": "西屯區",
     "address": "台中市西屯區重慶路8號",
-    "lat": 24.1626982,
-    "lng": 120.6542688,
+    "lat": 24.1628055,
+    "lng": 120.6543586,
     "type": "exotic",
     "typeText": "特寵診療",
     "phone": "04-23121880",
     "specialEvents": [],
-    "hours": "週一至五 09:30–12:00、14:30–20:00；週六 10:00–17:00；週日休診",
+    "hours": "週一至五 09:30–12:00、14:30–18:00、18:30–20:00；週六 10:00–17:00；週日休診",
     "business_hours": {
       "mon": [
         "09:30-12:00",
-        "14:30-20:00"
+        "14:30-18:00",
+        "18:30-20:00"
       ],
       "tue": [
         "09:30-12:00",
-        "14:30-20:00"
+        "14:30-18:00",
+        "18:30-20:00"
       ],
       "wed": [
         "09:30-12:00",
-        "14:30-20:00"
+        "14:30-18:00",
+        "18:30-20:00"
       ],
       "thu": [
         "09:30-12:00",
-        "14:30-20:00"
+        "14:30-18:00",
+        "18:30-20:00"
       ],
       "fri": [
         "09:30-12:00",
-        "14:30-20:00"
+        "14:30-18:00",
+        "18:30-20:00"
       ],
       "sat": [
         "10:00-17:00"
@@ -1921,7 +1964,7 @@ export const TaichungHospitalList = [
       "reviewCount": 629,
       "mapsUrl": "https://www.google.com/maps/place/%E5%8F%B0%E4%B8%AD%E5%87%A1%E8%B3%BD%E7%88%BE%E8%B3%BD%E9%B4%BF%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%2F%E6%96%B0%E9%99%A2%E5%9D%80/@24.1628055,120.6543586,17z/data=!3m1!4b1!4m6!3m5!1s0x34693d8c9efd6bdf:0x1327544770becad9!8m2!3d24.1628055!4d120.6543586!16s%2Fg%2F1td9n8bt",
       "placeId": "0x34693d8c9efd6bdf:0x1327544770becad9",
-      "verifiedAt": "2026-08-06"
+      "verifiedAt": "2026-08-10"
     },
     "announcements": [
       {
@@ -1933,16 +1976,16 @@ export const TaichungHospitalList = [
         "endDate": "2026-08-04",
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/TCPET.BIRD/posts/pfbid02CnGSYwfTavB2WL1gcMoQ1xyZKc8HeKRf3VMKjUSS63rtM1TGSsvEeNbLirNkfBcUl",
-        "verifiedAt": "2026-08-06"
+        "verifiedAt": "2026-08-10"
       }
     ],
-    "clinicNotes": "本院以鳥類、賽鴿、爬蟲類、兩棲與小型哺乳類等特殊寵物醫療為主，官方服務項目包含鳥類醫療、爬蟲類醫療、小型哺乳類醫療、專業內外科治療、精密影像診斷、住宿與術後照護。\n看診請先來電預約；平日上午最後掛號 11:45、晚間 19:45，週六 16:45。主要電話為 04-2312-1880，官方網站另列 04-2312-1881。Google 商家名稱顯示新院址但地址仍為台中市西屯區重慶路8號，與官方網站一致；急診請先電話說明狀況，未確認 24 小時急診。官方 Facebook 8/3 可見鳥類生殖與卡蛋衛教內容，前往前建議確認當日門診與預約安排。",
+    "clinicNotes": "本院以鳥類、賽鴿、爬蟲類、兩棲與小型哺乳類等特殊寵物醫療為主，官方服務項目包含鳥類醫療、爬蟲類醫療、小型哺乳類醫療、專業內外科治療、精密影像診斷、住宿與術後照護。\n看診請先來電預約；平日上午最後掛號 11:45、晚間 19:45，週六 16:45。主要電話為 04-2312-1880，官方網站另列 04-2312-1881。Google 商家名稱顯示新院址但地址仍為台中市西屯區重慶路8號，與官方網站一致；急診請先電話說明狀況，未確認 24 小時急診。官方 Facebook 2026/8/3–8/4 公告張院長 18:00 前休診、由莊醫師負責鳥禽門診，指定醫師請先電話詢問；前往前建議確認當日門診與預約安排。",
     "fb": {
       "last_fb_post_date": "2026-08-03",
-      "last_fb_post_text": "官方 Facebook 最新可見短片為鳥類生殖與卡蛋衛教內容。"
+      "last_fb_post_text": "官方 Facebook 2026/8/3–8/4 公告張院長 18:00 前休診、由莊醫師負責鳥禽門診，指定醫師請先電話詢問。"
     },
-    "updatedAt": "2026-08-06",
-    "last_checked": "2026-08-06"
+    "updatedAt": "2026-08-10",
+    "last_checked": "2026-08-10"
   },
   {
     "id": "rayray-animal-hospital",
@@ -1988,11 +2031,11 @@ export const TaichungHospitalList = [
       ]
     },
     "google": {
-      "rating": "4.7",
-      "reviewCount": 125,
+      "rating": "4.6",
+      "reviewCount": 126,
       "mapsUrl": "https://www.google.com/maps/place/%E7%91%9E%E7%91%9E%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E3%80%8A%E8%A5%BF%E5%B1%AF%E5%8D%80%E6%8E%A8%E8%96%A6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E3%80%8B%E9%86%AB%E5%B8%AB%E7%8F%AD%E8%A1%A8%E8%A9%B3%E8%A6%8BFB%E7%B2%89%E5%B0%88%EF%BD%9C%E6%9D%B1%E6%B5%B7%E9%99%84%E8%BF%91%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9C%E5%AF%B5%E7%89%A9%E6%B4%97%E7%89%99%E6%8B%94%E7%89%99%EF%BD%9C%E8%85%AB%E7%98%A4%E6%9A%A8%E5%A4%96%E7%A7%91%E9%96%80%E8%A8%BA%EF%BD%9C%E5%AF%B5%E7%89%A9%E4%B8%AD%E9%86%AB%E9%87%9D%E7%81%B8%EF%BD%9C%E4%B8%AD%E7%8D%B8%E9%86%AB%E9%96%80%E8%A8%BA%EF%BD%9C%E5%85%A9%E6%A3%B2%E7%88%AC%E8%9F%B2%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@24.1811972,120.619776,17z/data=!3m1!4b1!4m6!3m5!1s0x346915ca548eb32b:0x9d007dd3e0350186!8m2!3d24.1811972!4d120.619776!16s%2Fg%2F11ldmphpjr",
       "reviewsUrl": "https://www.google.com/maps/place/%E7%91%9E%E7%91%9E%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E3%80%8A%E8%A5%BF%E5%B1%AF%E5%8D%80%E6%8E%A8%E8%96%A6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E3%80%8B%E9%86%AB%E5%B8%AB%E7%8F%AD%E8%A1%A8%E8%A9%B3%E8%A6%8BFB%E7%B2%89%E5%B0%88%EF%BD%9C%E6%9D%B1%E6%B5%B7%E9%99%84%E8%BF%91%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9C%E5%AF%B5%E7%89%A9%E6%B4%97%E7%89%99%E6%8B%94%E7%89%99%EF%BD%9C%E8%85%AB%E7%98%A4%E6%9A%A8%E5%A4%96%E7%A7%91%E9%96%80%E8%A8%BA%EF%BD%9C%E5%AF%B5%E7%89%A9%E4%B8%AD%E9%86%AB%E9%87%9D%E7%81%B8%EF%BD%9C%E4%B8%AD%E7%8D%B8%E9%86%AB%E9%96%80%E8%A8%BA%EF%BD%9C%E5%85%A9%E6%A3%B2%E7%88%AC%E8%9F%B2%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@24.1811972,120.619776,17z/data=!4m8!3m7!1s0x346915ca548eb32b:0x9d007dd3e0350186!8m2!3d24.1811972!4d120.619776!9m1!1b1!16s%2Fg%2F11ldmphpjr",
-      "verifiedAt": "2026-08-06"
+      "verifiedAt": "2026-08-10"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -2038,8 +2081,8 @@ export const TaichungHospitalList = [
       "note": "兩棲爬蟲門診請預約楊醫師時段；每月班表可能異動，就診前請先確認。",
       "reservationRequired": true,
       "sourceLabel": "官方 Instagram、官方 Facebook",
-      "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid0yMGh1K93XPy1zaS1uGGLxoe63TQwNVmXhZTk1zeE6ptN4tf1ZX1SoUMZz75id3dSl&id=61556756609668",
-      "verifiedAt": "2026-08-06"
+      "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid0xzxgR2bZtNM5rC86zJb7AqQL8NN9KrR2YmrWLsbCHoiKf4mqPQP6ajFJ6utHHN2ql&id=61556756609668",
+      "verifiedAt": "2026-08-10"
     },
     "announcements": [
       {
@@ -2050,26 +2093,26 @@ export const TaichungHospitalList = [
         "startDate": "2026-08-01",
         "endDate": "2026-08-31",
         "sourceLabel": "官方 Instagram、官方 Facebook",
-        "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid0yMGh1K93XPy1zaS1uGGLxoe63TQwNVmXhZTk1zeE6ptN4tf1ZX1SoUMZz75id3dSl&id=61556756609668",
-        "verifiedAt": "2026-08-06"
+        "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid0xzxgR2bZtNM5rC86zJb7AqQL8NN9KrR2YmrWLsbCHoiKf4mqPQP6ajFJ6utHHN2ql&id=61556756609668",
+        "verifiedAt": "2026-08-10"
       },
       {
         "id": "rayray-line-outage-2026-07-28",
         "type": "notice",
         "title": "官方 LINE 故障，請改用電話聯絡",
-        "content": "官方 Facebook 2026-07-28 公告 LINE 故障、暫時無法回覆訊息；截至 2026-08-06 未找到明確恢復公告，預約與就診請直接致電 04-24630052。",
+        "content": "官方 Facebook 2026-07-28 公告 LINE 故障、暫時無法回覆訊息；截至 2026-08-10 未找到明確恢復公告，預約與就診請直接致電 04-24630052。",
         "startDate": "2026-07-28",
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/profile.php?id=61556756609668",
-        "verifiedAt": "2026-08-06"
+        "verifiedAt": "2026-08-10"
       }
     ],
     "fb": {
       "last_fb_post_date": "2026-07-31",
       "last_fb_post_text": "官方 Facebook 發布 8 月醫師班表：兩棲爬蟲預約楊醫師，中獸醫預約黃醫師，外科／腫瘤預約詹醫師，牙科預約徐醫師。"
     },
-    "clinicNotes": "本院採預約優先制；兩棲爬蟲門診請預約楊醫師，中獸醫為全預約制並請預約黃醫師，外科／腫瘤與牙科門診也需依指定醫師時段預約。2026 年 8 月班表已由官方 Facebook 發布，近期手術預約較多，院方提醒提早安排。\n官方 Facebook 2026-07-28 公告 LINE 故障、無法回覆訊息，截至 2026-08-06 未找到恢復公告，預約請直接電話聯絡。未見固定急診或 24 小時急診承諾，急症就診前請先電話確認。",
-    "updatedAt": "2026-08-06",
-    "last_checked": "2026-08-06"
+    "clinicNotes": "本院採預約優先制；兩棲爬蟲門診請預約楊醫師，中獸醫為全預約制並請預約黃醫師，外科／腫瘤與牙科門診也需依指定醫師時段預約。2026 年 8 月班表已由官方 Facebook 發布，近期手術預約較多，院方提醒提早安排。\n官方 Facebook 2026-07-28 公告 LINE 故障、無法回覆訊息，截至 2026-08-10 未找到恢復公告，預約請直接電話聯絡。未見固定急診或 24 小時急診承諾，急症就診前請先電話確認。",
+    "updatedAt": "2026-08-10",
+    "last_checked": "2026-08-10"
   }
 ];
