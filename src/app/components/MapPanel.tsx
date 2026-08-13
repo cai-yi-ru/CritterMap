@@ -3,7 +3,6 @@
 import { useEffect, useMemo } from "react";
 import L from "leaflet";
 import {
-  CircleMarker,
   MapContainer,
   Marker,
   Popup,
@@ -28,17 +27,6 @@ type MapUpdaterProps = {
   zoom: number;
 };
 
-const markerPalette = {
-  standard: {
-    fill: "#2f5d50",
-    ring: "#ffffff",
-  },
-  emergency: {
-    fill: "#b45353",
-    ring: "#ffffff",
-  },
-};
-
 function createHospitalIcon(isEmergency: boolean) {
   const label = isEmergency ? "可詢問急診服務的醫院" : "動物醫院";
 
@@ -46,9 +34,7 @@ function createHospitalIcon(isEmergency: boolean) {
     className: "hospital-marker-shell",
     html: `
       <span class="hospital-marker${isEmergency ? " hospital-marker--emergency" : ""}" role="img" aria-label="${label}">
-        <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18">
-          <path fill="currentColor" d="M7.4 9.2a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4Zm9.2 0a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4ZM4 13.1a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm16 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm-8 6.1c3.8 0 6.1-1.5 6.1-3.8 0-1.8-1.7-3.1-3-4.1-1.1-.9-1.8-1.4-3.1-1.4s-2 .5-3.1 1.4c-1.3 1-3 2.3-3 4.1 0 2.3 2.3 3.8 6.1 3.8Z" />
-        </svg>
+        <img src="/icons/hospital-paw.webp" alt="" width="22" height="22" aria-hidden="true" />
       </span>
     `,
     iconSize: [34, 40],
@@ -77,7 +63,6 @@ export default function MapPanel({
 }: MapPanelProps) {
   const standardIcon = useMemo(() => createHospitalIcon(false), []);
   const emergencyIcon = useMemo(() => createHospitalIcon(true), []);
-  const useCompactPoints = hospitals.length > 80;
 
   return (
     <section
@@ -93,7 +78,7 @@ export default function MapPanel({
         <div>
           <h2 className="text-lg font-extrabold text-forest-900">地圖</h2>
           <p className="text-xs font-medium text-stone-600">
-            {useCompactPoints ? "縮小地圖時以圓點顯示，放大後較容易辨識院所" : "點擊標記查看醫院摘要"}
+            點擊標記查看醫院摘要
           </p>
         </div>
         <span className="rounded-full border border-sage-100 bg-sage-50 px-3 py-1 text-xs font-bold text-forest-900">
@@ -104,7 +89,7 @@ export default function MapPanel({
       <MapContainer
         center={center}
         zoom={zoom}
-        scrollWheelZoom={false}
+        scrollWheelZoom
         className="min-h-0 w-full flex-1 rounded-xl"
       >
         <MapUpdater center={center} zoom={zoom} />
@@ -156,28 +141,6 @@ export default function MapPanel({
               </div>
             </Popup>
           );
-
-          if (useCompactPoints) {
-            const palette = hospital.hasEmergencyService
-              ? markerPalette.emergency
-              : markerPalette.standard;
-
-            return (
-              <CircleMarker
-                key={hospital.id}
-                center={[hospital.lat, hospital.lng]}
-                radius={hospital.hasEmergencyService ? 7 : 6}
-                pathOptions={{
-                  color: palette.ring,
-                  weight: 2,
-                  fillColor: palette.fill,
-                  fillOpacity: 0.9,
-                }}
-              >
-                {popup}
-              </CircleMarker>
-            );
-          }
 
           return (
             <Marker

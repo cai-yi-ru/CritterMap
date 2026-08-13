@@ -149,7 +149,10 @@ a {
   background: #b45353;
 }
 
-.hospital-marker svg {
+.hospital-marker img {
+  display: block;
+  width: 22px;
+  height: 22px;
   transform: rotate(45deg);
 }
 
