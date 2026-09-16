@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import type { HospitalUpdate } from '@/types/hospital';
 import type { HospitalSummary } from '@/types/hospitalPublic';
@@ -22,7 +21,7 @@ const updateTypeText: Record<HospitalUpdate['type'], string> = {
 
 export default function HospitalUpdates({ updates, hospitals, onUpdateClick }: HospitalUpdatesProps) {
   const [expanded, setExpanded] = useState(false);
-  const [defaultVisibleCount, setDefaultVisibleCount] = useState(9);
+  const [defaultVisibleCount, setDefaultVisibleCount] = useState(6);
   const hospitalById = useMemo(
     () => new Map(hospitals.map((hospital) => [hospital.id, hospital])),
     [hospitals],
@@ -38,9 +37,7 @@ export default function HospitalUpdates({ updates, hospitals, onUpdateClick }: H
 
   useEffect(() => {
     const updateVisibleCount = () => {
-      if (window.innerWidth >= 1024) {
-        setDefaultVisibleCount(9);
-      } else if (window.innerWidth >= 768) {
+      if (window.innerWidth >= 768) {
         setDefaultVisibleCount(6);
       } else {
         setDefaultVisibleCount(3);
@@ -61,55 +58,69 @@ export default function HospitalUpdates({ updates, hospitals, onUpdateClick }: H
   }
 
   return (
-    <section className="mt-5 rounded-2xl border border-sage-100 bg-card p-4">
-      <div className="mb-3 flex items-center justify-between gap-3">
+    <section id="latest-updates" aria-labelledby="latest-updates-title" className="mt-8 w-full scroll-mt-28 border-t border-sage-200 pt-6">
+      <div className="mb-4 flex items-end justify-between gap-4">
         <div>
-          <h2 className="text-lg font-extrabold text-forest-900">最新更新</h2>
-          <p className="text-xs font-medium text-stone-500">點開可先看更新內容，再進完整醫院資料</p>
+          <h2 id="latest-updates-title" className="text-lg font-bold text-forest-900">最新更新</h2>
+          <p className="mt-1 text-sm text-stone-600">近期整理的營業、公告與聯絡資訊</p>
         </div>
-        <Badge variant="outline" className="border-honey-200 bg-honey-100 text-clay-700">
-          顯示 {visibleUpdates.length} / {allVisibleUpdates.length} 筆
-        </Badge>
+        <span className="shrink-0 text-sm tabular-nums text-stone-500">
+          {visibleUpdates.length} / {allVisibleUpdates.length} 筆
+        </span>
       </div>
-      <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
-        {visibleUpdates.map(({ update, hospital }) => (
-          <article
-            key={update.id}
-            className="cursor-pointer rounded-xl border border-sage-100 bg-sage-50/70 p-4 transition hover:border-sage-300 hover:bg-white"
-            onClick={() => onUpdateClick(update, hospital)}
-          >
-            <div className="min-w-0">
-                <div className="flex flex-wrap items-center gap-2">
-                  <Badge variant="secondary" className="text-forest-900">
-                    {updateTypeText[update.type]}
-                  </Badge>
-                  <time className="text-xs font-medium text-stone-500" dateTime={update.updatedAt}>
-                    更新於 {update.updatedAt}
-                  </time>
-                </div>
-                <h3 className="mt-3 text-sm font-extrabold text-forest-900">{hospital.name}</h3>
-                <p className="mt-1 line-clamp-2 text-sm leading-6 text-stone-600">{update.summary}</p>
-            </div>
-            {update.sourceLabel && (
-              <div className="mt-3 text-xs font-medium text-stone-500">
-                來源：
-                {update.sourceUrl ? (
-                  <a
-                    href={update.sourceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-forest-800 hover:text-sage-600"
-                    onClick={(event) => event.stopPropagation()}
-                  >
-                    {update.sourceLabel}
-                  </a>
-                ) : (
-                  update.sourceLabel
+      <div className="grid border-t border-sage-100 lg:grid-cols-2 lg:gap-x-8">
+        {visibleUpdates.map(({ update, hospital }) => {
+          const summaryItems = update.summary
+            .split('；')
+            .map((item) => item.trim())
+            .filter(Boolean);
+
+          return (
+            <article
+              key={update.id}
+              className="min-w-0 border-b border-sage-100 py-5 lg:odd:border-r lg:odd:pr-8 lg:even:pl-8"
+            >
+              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 text-xs">
+                <span className="font-semibold text-forest-800">{updateTypeText[update.type]}</span>
+                <time className="text-stone-500" dateTime={update.updatedAt}>
+                  {update.updatedAt}
+                </time>
+                {update.sourceLabel && (
+                  <span className="text-stone-500 lg:ml-auto">
+                    來源：
+                    {update.sourceUrl ? (
+                      <a
+                        href={update.sourceUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-medium text-forest-800 hover:text-sage-600 hover:underline"
+                      >
+                        {update.sourceLabel}
+                      </a>
+                    ) : (
+                      update.sourceLabel
+                    )}
+                  </span>
                 )}
               </div>
-            )}
-          </article>
-        ))}
+              <button
+                type="button"
+                className="group mt-3 block w-full min-w-0 rounded-md text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-500 focus-visible:ring-offset-2"
+                onClick={() => onUpdateClick(update, hospital)}
+              >
+                <span className="block text-base font-semibold text-forest-900 transition-colors group-hover:text-sage-600">{hospital.name}</span>
+                <span role="list" className="mt-1 block space-y-1 text-sm leading-6 text-stone-600">
+                  {summaryItems.map((item, index) => (
+                    <span key={`${update.id}-summary-${index}`} role="listitem" className="grid grid-cols-[auto_minmax(0,1fr)] gap-2">
+                      <span aria-hidden="true" className="font-semibold text-sage-600">•</span>
+                      <span>{item}</span>
+                    </span>
+                  ))}
+                </span>
+              </button>
+            </article>
+          );
+        })}
       </div>
       {canExpand && (
         <div className="mt-4 flex justify-center">
@@ -117,6 +128,7 @@ export default function HospitalUpdates({ updates, hospitals, onUpdateClick }: H
             type="button"
             onClick={() => setExpanded((value) => !value)}
             variant="outline"
+            className="rounded-lg font-medium"
           >
             {expanded ? '收合最新更新' : `展開全部 ${allVisibleUpdates.length} 筆更新`}
           </Button>

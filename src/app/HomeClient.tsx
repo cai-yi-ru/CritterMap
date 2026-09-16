@@ -21,7 +21,7 @@ import type { HospitalSummary } from '@/types/hospitalPublic';
 const MapPanel = dynamic(() => import('./components/MapPanel'), {
   ssr: false,
   loading: () => (
-    <div className="grid h-[440px] place-items-center rounded-2xl border border-sage-100 bg-card text-sm font-bold text-stone-600 sm:h-[520px] lg:h-[640px]">
+    <div className="grid h-[440px] place-items-center rounded-xl border border-sage-100 bg-card text-sm font-semibold text-stone-600 sm:h-[520px] lg:h-[640px]">
       地圖載入中
     </div>
   ),
@@ -151,37 +151,38 @@ export default function HomeClient({
     <div className={`site-shell min-h-screen ${embed ? 'embed-shell' : ''}`}>
       {!embed && <Navbar />}
       <main className={embed ? "mx-auto w-full max-w-6xl px-3 py-3 sm:px-5" : "mx-auto w-full max-w-7xl px-4 pb-12 pt-20 sm:px-6 lg:px-8"}>
-        <header className={embed ? "mb-4 rounded-2xl border border-sage-100 bg-card p-4" : "mb-5 rounded-2xl border border-sage-100 bg-card p-5 sm:p-6"}>
-          <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
-            <div className="max-w-2xl">
-              <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-sage-100 bg-sage-50 px-3 py-1 text-xs font-semibold text-forest-900">
-                全台特寵醫療資訊整理
-              </div>
-              <h1 className="text-balance text-3xl font-extrabold tracking-normal text-forest-900 sm:text-4xl">
+        <header className={embed ? "mb-3 border-b border-sage-200 pb-4" : "mb-4 border-b border-sage-200 pb-5 pt-1"}>
+          <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+            <div className="max-w-3xl">
+              <h1 className="text-balance text-2xl font-bold tracking-normal text-forest-900 sm:text-3xl">
                 特寵動物醫院地圖查詢
               </h1>
-              <p className="mt-3 max-w-xl text-sm leading-7 text-stone-600 sm:text-base">
-                依縣市、寵物類別、是否營業與預約條件快速篩選。出發前仍請致電醫院確認看診時段與收案狀況。
+              <p className="mt-2 max-w-2xl text-sm leading-6 text-stone-600 sm:text-base">
+                依地區與寵物類別找醫院。門診與收案狀況可能臨時異動，出發前請先致電確認。
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:flex lg:items-center">
-              <div className="rounded-xl border border-sage-100 bg-sage-50 px-4 py-3">
-                <div className="text-xs font-medium text-stone-600">目前整理</div>
-                <div className="text-xl font-extrabold text-forest-900">{totalLabel}</div>
+            <dl className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-stone-600 sm:text-sm">
+              <div className="inline-flex items-baseline gap-1.5">
+                <dt>收錄</dt>
+                <dd className="font-semibold text-forest-900">{totalLabel}</dd>
               </div>
-              <div className="rounded-xl border border-honey-200 bg-honey-100 px-4 py-3">
-                <div className="text-xs font-medium text-stone-600">搜尋結果</div>
-                <div className="text-xl font-extrabold text-forest-900" aria-live="polite">{resultLabel}</div>
+              <div className="inline-flex items-baseline gap-1.5 border-l border-sage-200 pl-3">
+                <dt>目前結果</dt>
+                <dd className="font-semibold text-forest-900" aria-live="polite">{resultLabel}</dd>
               </div>
               {latestHospitalDataDate && (
-                <div className="col-span-2 rounded-xl border border-sage-100 bg-white px-4 py-3 sm:col-span-1">
-                  <div className="text-xs font-medium text-stone-600">資料最近整理</div>
-                  <time className="text-lg font-extrabold text-forest-900" dateTime={latestHospitalDataDate}>
+                <>
+                  <div className="inline-flex items-baseline gap-1.5 border-l border-sage-200 pl-3">
+                    <dt>最近整理</dt>
+                    <dd>
+                      <time className="font-semibold text-forest-900" dateTime={latestHospitalDataDate}>
                     {latestHospitalDataDate}
-                  </time>
-                </div>
+                      </time>
+                    </dd>
+                  </div>
+                </>
               )}
-            </div>
+            </dl>
           </div>
         </header>
         
@@ -203,12 +204,12 @@ export default function HomeClient({
         />
 
         {!embed && (
-          <div className="mb-3 grid grid-cols-2 gap-2 rounded-xl border border-sage-100 bg-card p-1 lg:hidden" aria-label="切換地圖或清單">
+          <div className="mb-3 grid grid-cols-2 border-b border-sage-200 lg:hidden" aria-label="切換地圖或清單">
             <button
               type="button"
               aria-pressed={mobileView === 'map'}
-              className={`flex min-h-10 items-center justify-center gap-2 rounded-lg text-sm font-bold transition ${
-                mobileView === 'map' ? 'bg-forest-800 text-white' : 'text-stone-700 hover:bg-sage-50'
+              className={`flex min-h-11 items-center justify-center gap-2 border-b-2 text-sm font-semibold transition-colors ${
+                mobileView === 'map' ? 'border-forest-800 text-forest-900' : 'border-transparent text-stone-600 hover:text-forest-900'
               }`}
               onClick={() => setMobileView('map')}
             >
@@ -218,8 +219,8 @@ export default function HomeClient({
             <button
               type="button"
               aria-pressed={mobileView === 'list'}
-              className={`flex min-h-10 items-center justify-center gap-2 rounded-lg text-sm font-bold transition ${
-                mobileView === 'list' ? 'bg-forest-800 text-white' : 'text-stone-700 hover:bg-sage-50'
+              className={`flex min-h-11 items-center justify-center gap-2 border-b-2 text-sm font-semibold transition-colors ${
+                mobileView === 'list' ? 'border-forest-800 text-forest-900' : 'border-transparent text-stone-600 hover:text-forest-900'
               }`}
               onClick={() => setMobileView('list')}
             >
@@ -229,7 +230,7 @@ export default function HomeClient({
           </div>
         )}
 
-        <div className={embed ? "grid grid-cols-1 gap-4" : "grid grid-cols-1 gap-5 lg:grid-cols-[minmax(320px,420px)_1fr]"}>
+        <div className={embed ? "grid grid-cols-1 gap-4" : "grid grid-cols-1 gap-4 lg:grid-cols-[minmax(320px,420px)_1fr]"}>
           <aside className={embed ? "order-2" : `${mobileView === 'list' ? 'block' : 'hidden'} order-2 lg:order-1 lg:block`}>
             <HospitalList hospitals={filteredHospitals} onHospitalClick={handleHospitalClick} loading={isSearchPending} />
           </aside>

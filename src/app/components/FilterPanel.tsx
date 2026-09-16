@@ -88,21 +88,15 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
     hasEmergencyServiceOnly;
 
   return (
-    <section className={`mb-5 overflow-hidden rounded-2xl border border-sage-100 bg-card ${compact ? "p-4" : "p-4 sm:p-5"}`}>
-      <div className="mb-4 flex flex-col gap-3 xl:flex-row xl:items-center xl:justify-between">
-        <div>
-          <h2 className="text-lg font-extrabold text-forest-900">篩選條件</h2>
-          <p className="mt-1 text-sm leading-6 text-stone-600">設定條件後按搜尋，再致電確認門診時間與是否能看診。</p>
-        </div>
-        <div className="flex w-fit items-center gap-2 rounded-full border border-sage-100 bg-sage-50 px-3 py-2 text-xs font-bold text-stone-600">
-          <span className="inline-flex items-center gap-1.5"><span className="h-2.5 w-2.5 rounded-full bg-forest-800" />一般標記</span>
-          <span className="h-4 w-px bg-sage-200" />
-          <span className="inline-flex items-center gap-1.5"><span className="h-2.5 w-2.5 rounded-full bg-petal-400" />急診標記</span>
-        </div>
+    <section className={`mb-4 border-b border-sage-200 bg-card ${compact ? "px-4 py-4" : "px-4 py-4 sm:px-5"}`}>
+      <div className="mb-3 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+        <h2 className="text-base font-semibold text-forest-900">找醫院</h2>
+        <p className="text-xs leading-5 text-stone-600">先選地區與寵物，其他條件可視需要加入。</p>
       </div>
-      <div className={`grid grid-cols-1 items-end gap-3 ${compact ? "md:grid-cols-2" : "xl:grid-cols-[220px_minmax(240px,1fr)_minmax(420px,2fr)_minmax(190px,auto)]"}`}>
-        <div className="order-1">
-          <label htmlFor="city" className="mb-2 block text-xs font-extrabold tracking-wide text-forest-900">
+
+      <div className={`grid grid-cols-1 items-end gap-3 ${compact ? "md:grid-cols-2" : "md:grid-cols-[minmax(180px,0.72fr)_minmax(240px,1fr)_auto]"}`}>
+        <div>
+          <label htmlFor="city" className="mb-1.5 block text-sm font-medium text-forest-900">
             城市
           </label>
           <Select
@@ -111,7 +105,7 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
               if (value) onCityChange?.(value);
             }}
           >
-            <SelectTrigger id="city" className="h-11 w-full rounded-xl border-sage-200 bg-sage-50 px-3 text-forest-900">
+            <SelectTrigger id="city" className="h-11 w-full rounded-lg border-sage-200 bg-white px-3 text-forest-900">
               <span className="truncate">{getCityLabel(city)}</span>
             </SelectTrigger>
             <SelectContent>
@@ -126,87 +120,37 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
           </Select>
         </div>
 
-        <div className="order-2">
-        <label htmlFor="petCategory" className="mb-2 block text-xs font-extrabold tracking-wide text-forest-900">
-            支援寵物類別
-        </label>
-        <Select
+        <div>
+          <label htmlFor="petCategory" className="mb-1.5 block text-sm font-medium text-forest-900">
+            寵物類別
+          </label>
+          <Select
             value={petCategory}
             onValueChange={(value) => {
               if (value) onPetCategoryChange?.(value);
             }}
-        >
-          <SelectTrigger id="petCategory" className="h-11 w-full rounded-xl border-sage-200 bg-sage-50 px-3 text-forest-900">
-            <span className="truncate">{getPetCategoryLabel(petCategory)}</span>
-          </SelectTrigger>
-          <SelectContent>
-            <SelectGroup>
-              <SelectItem value="all">全部類別</SelectItem>
-              {petCategoryFilterOptions.map((definition) => (
-                <SelectItem key={definition.key} value={definition.label}>
-                  {definition.label}
-                </SelectItem>
-              ))}
-            </SelectGroup>
-          </SelectContent>
-        </Select>
+          >
+            <SelectTrigger id="petCategory" className="h-11 w-full rounded-lg border-sage-200 bg-white px-3 text-forest-900">
+              <span className="truncate">{getPetCategoryLabel(petCategory)}</span>
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup>
+                <SelectItem value="all">全部類別</SelectItem>
+                {petCategoryFilterOptions.map((definition) => (
+                  <SelectItem key={definition.key} value={definition.label}>
+                    {definition.label}
+                  </SelectItem>
+                ))}
+              </SelectGroup>
+            </SelectContent>
+          </Select>
         </div>
 
-        <div className={`order-3 grid gap-3 sm:grid-cols-2 xl:grid-cols-3 ${compact ? "md:col-span-2" : ""}`}>
-            <label className={`flex min-h-14 cursor-pointer items-center gap-3 rounded-xl border px-4 py-3 transition ${
-              reservationRequiredOnly
-                ? "border-sage-300 bg-sage-50"
-                : "border-sage-100 bg-white hover:border-sage-200"
-            }`}>
-                <Checkbox
-                    id="reservationRequired"
-                    checked={reservationRequiredOnly}
-                    onCheckedChange={(checked) => onReservationRequiredToggle?.(checked === true)}
-                />
-                <span>
-                  <span className="block text-sm font-bold text-forest-900">非預約制</span>
-                  <span className="block text-xs text-stone-600">僅顯示可不預約資訊</span>
-                </span>
-            </label>
-
-            <label className={`flex min-h-14 cursor-pointer items-center gap-3 rounded-xl border px-4 py-3 transition ${
-              openNowOnly
-                ? "border-sage-300 bg-sage-50"
-                : "border-sage-100 bg-white hover:border-sage-200"
-            }`}>
-                <Checkbox
-                    id="openNow"
-                    checked={openNowOnly}
-                    onCheckedChange={(checked) => onOpenNowToggle?.(checked === true)}
-                />
-                <span>
-                  <span className="block text-sm font-bold text-forest-900">目前營業中</span>
-                  <span className="block text-xs text-stone-600">依營業時間資料判斷</span>
-                </span>
-            </label>
-
-            <label className={`flex min-h-14 cursor-pointer items-center gap-3 rounded-xl border px-4 py-3 transition ${
-              hasEmergencyServiceOnly
-                ? "border-petal-200 bg-petal-50"
-                : "border-sage-100 bg-white hover:border-sage-200"
-            }`}>
-                <Checkbox
-                    id="hasEmergencyService"
-                    checked={hasEmergencyServiceOnly}
-                    onCheckedChange={(checked) => onHasEmergencyServiceToggle?.(checked === true)}
-                />
-                <span>
-                  <span className="block text-sm font-bold text-forest-900">有急診服務</span>
-                  <span className="block text-xs text-stone-600">仍建議先電話確認</span>
-                </span>
-            </label>
-        </div>
-
-        <div className={compact ? "order-4 grid gap-2 md:col-span-2 sm:grid-cols-[1fr_auto]" : "order-4 flex items-end gap-2 xl:col-auto"}>
+        <div className={compact ? "grid gap-2 md:col-span-2 sm:grid-cols-[1fr_auto]" : "flex items-center gap-2"}>
           <Button
             onClick={onSearch}
             disabled={isSearching}
-            className="min-h-11 w-full font-extrabold"
+            className="min-h-11 w-full rounded-lg px-5 font-semibold md:w-auto"
             size="lg"
           >
             {isSearching ? (
@@ -223,13 +167,46 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
               disabled={isSearching}
               variant="ghost"
               size="lg"
-              className="min-h-11 shrink-0 px-3 font-bold text-stone-700"
+              className="min-h-11 shrink-0 rounded-lg px-3 font-medium text-stone-700"
             >
               <RotateCcwIcon data-icon="inline-start" />
               重設
             </Button>
           )}
         </div>
+      </div>
+
+      <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-sage-100 pt-3">
+        <label className="flex min-h-9 cursor-pointer items-center gap-2 text-sm text-stone-700">
+          <Checkbox
+            id="reservationRequired"
+            checked={reservationRequiredOnly}
+            onCheckedChange={(checked) => onReservationRequiredToggle?.(checked === true)}
+          />
+          <span className={reservationRequiredOnly ? "font-semibold text-forest-900" : ""}>可現場掛號</span>
+        </label>
+
+        <label className="flex min-h-9 cursor-pointer items-center gap-2 text-sm text-stone-700">
+          <Checkbox
+            id="openNow"
+            checked={openNowOnly}
+            onCheckedChange={(checked) => onOpenNowToggle?.(checked === true)}
+          />
+          <span className={openNowOnly ? "font-semibold text-forest-900" : ""}>目前營業中</span>
+        </label>
+
+        <label className="flex min-h-9 cursor-pointer items-center gap-2 text-sm text-stone-700">
+          <Checkbox
+            id="hasEmergencyService"
+            checked={hasEmergencyServiceOnly}
+            onCheckedChange={(checked) => onHasEmergencyServiceToggle?.(checked === true)}
+          />
+          <span className={hasEmergencyServiceOnly ? "font-semibold text-rose-700" : ""}>可詢問急診</span>
+        </label>
+
+        <p className="basis-full text-xs leading-5 text-stone-500 sm:basis-auto sm:ml-auto">
+          營業、掛號與急診資訊仍請電話確認
+        </p>
       </div>
     </section>
   );

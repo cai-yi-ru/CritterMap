@@ -88,11 +88,11 @@ export const ChiayiCityHospitalList = [
     },
     "google": {
       "rating": "4.5",
-      "reviewCount": 310,
+      "reviewCount": 315,
       "mapsUrl": "https://www.google.com/maps/place/%E4%BD%A0%E6%88%91%E7%89%A0%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E2%80%94%E9%AB%98%E5%A3%93%E6%B0%A7%E6%9B%81%E5%9B%9B%E7%B4%9A%E9%9B%B7%E5%B0%84%E9%87%8D%E7%97%87%E5%8A%A0%E8%AD%B7%E7%97%85%E6%88%BF%EF%BD%9C+%E9%BC%A0%E5%85%94%E9%96%80%E8%A8%BA%EF%BD%9C%E5%8B%95%E7%89%A9%E6%95%91%E6%8F%B4%EF%BD%9C%E5%AF%B5%E7%89%A9%E5%81%A5%E6%AA%A2/@23.4770594,120.4442613,17z/data=!3m1!4b1!4m6!3m5!1s0x346e9423f482027d:0x4c936138b0fff578!8m2!3d23.4770594!4d120.4442613!16s%2Fg%2F11cs9yw4yj",
       "reviewsUrl": "https://www.google.com/maps/place/%E4%BD%A0%E6%88%91%E7%89%A0%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.4770594,120.4442613,17z/data=!4m8!3m7!1s0x346e9423f482027d:0x4c936138b0fff578!8m2!3d23.4770594!4d120.4442613!9m1!1b1!16s%2Fg%2F11v03gjzkc",
       "placeId": "ChIJfQKC9COUbjQRePX_sDhhk0w",
-      "verifiedAt": "2026-08-10"
+      "verifiedAt": "2026-09-01"
     },
     "specialClinic": {
       "hasExoticSpecialClinic": true,
@@ -101,15 +101,15 @@ export const ChiayiCityHospitalList = [
       "reservationRequired": false,
       "sourceLabel": "官方網站",
       "sourceUrl": "https://058vet.com/%e9%bc%a0%e5%85%94%e9%96%80%e8%A8%BA/",
-      "verifiedAt": "2026-08-10"
+      "verifiedAt": "2026-09-01"
     },
     "clinicNotes": "本院採預約優先制，可來電預約或現場掛號；官方網站明確列有鼠兔門診。官方網站與 Google 均列每日營業至 20:30，無 24 小時門診；非門診時間是否受理急診需先透過電話或官方粉專詢問，特殊寵物就診建議先致電確認當日可看診安排。",
     "fb": {
       "last_fb_post_date": "2026-02-14",
       "last_fb_post_text": "官方 Facebook 最新可見貼文為 2026/2/14 公告：初五（2/21）起正常營業；屬已過期年節通知。"
     },
-    "updatedAt": "2026-08-10",
-    "last_checked": "2026-08-10"
+    "updatedAt": "2026-09-01",
+    "last_checked": "2026-09-01"
   },
   {
     "id": "chiayi-shang-zhe-animal-hospital",
@@ -184,7 +184,7 @@ export const ChiayiCityHospitalList = [
       "reviewCount": 117,
       "mapsUrl": "https://www.google.com/maps/place/%E4%B8%8A%E5%93%B2%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2(%E9%BC%A0%E5%85%94%E7%89%B9%E5%AF%B5%E5%B0%88%E7%A7%91)/@23.4803531,120.4529318,17z/data=!3m1!4b1!4m6!3m5!1s0x346e9433f7ba8d77:0xa034e91000d09f32!8m2!3d23.4803531!4d120.4529318!16s%2Fg%2F1vwllwsy",
       "reviewsUrl": "https://www.google.com/maps/place/%E4%B8%8A%E5%93%B2%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2(%E9%BC%A0%E5%85%94%E7%89%B9%E5%AF%B5%E5%B0%88%E7%A7%91)/@23.4803531,120.4529318,17z/data=!4m8!3m7!1s0x346e9433f7ba8d77:0xa034e91000d09f32!8m2!3d23.4803531!4d120.4529318!9m1!1b1!16s%2Fg%2F1vwllwsy",
-      "verifiedAt": "2026-08-10"
+      "verifiedAt": "2026-09-01"
     },
     "clinicNotes": "一般及非犬貓小動物門診建議提前來電預約。官方 Facebook 標示提供犬貓及非犬貓小動物醫療，Google 商家名稱與店家描述明確標示鼠兔特寵；目前沒有夜間急診服務，晚間時段不等於夜間急診。週三、週日固定休診，非犬貓小動物或特殊需求建議先電話確認當日可看診狀況。",
     "announcements": [
@@ -202,10 +202,10 @@ export const ChiayiCityHospitalList = [
     ],
     "fb": {
       "last_fb_post_date": "",
-      "last_fb_post_text": "官方 Facebook 最新可見公告內容：2026/8/3–8/6 上午休診，8/6 16:00 後恢復正常門診；貼文發布日期無法可靠讀取。"
+      "last_fb_post_text": "官方 Facebook 最新可見公告內容：2026/8/3–8/6 上午休診，8/6 16:00 後恢復正常門診；另可見「8/15（六）上哲休診一天」文字，但發布年份無法可靠讀取，因此未將其轉成 ISO 日期。"
     },
-    "updatedAt": "2026-08-10",
-    "last_checked": "2026-08-10"
+    "updatedAt": "2026-09-01",
+    "last_checked": "2026-09-01"
   },
   {
     "id": "chiayi-jia-le-animal-hospital",
@@ -277,13 +277,13 @@ export const ChiayiCityHospitalList = [
       "instagram": "https://www.instagram.com/jia_le_ah/"
     },
     "google": {
-      "rating": "3.6",
-      "reviewCount": 256,
+      "rating": "3.7",
+      "reviewCount": 274,
       "mapsUrl": "https://www.google.com/maps/place/%E5%98%89%E6%A8%82%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.4768224,120.4598707,17z/data=!3m1!4b1!4m6!3m5!1s0x346e957f1b7300cb:0x3efcd81abc924a95!8m2!3d23.4768224!4d120.4598707!16s%2Fg%2F11s4c_bxdh",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%98%89%E6%A8%82%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.4768224,120.4598707,17z/data=!4m8!3m7!1s0x346e957f1b7300cb:0x3efcd81abc924a95!8m2!3d23.4768224!4d120.4598707!9m1!1b1!16s%2Fg%2F11s4c_bxdh",
-      "verifiedAt": "2026-08-10"
+      "verifiedAt": "2026-09-01"
     },
-    "clinicNotes": "官方 Facebook 標示非犬貓特殊動物門診為週一至週六中午 12:00 起看診，Google 院方資訊列特寵掛號至 19:50；初診需先電話聯絡，由櫃台安排就診時間。已確認物種包含兔、鼠、鳥、蜜袋鼯、蛇、龜與蜥蜴。Google 院方資訊表示生命危險可直接到院掛急診，但未明確區分特寵急診，請先電話確認。",
+    "clinicNotes": "官方 Facebook 標示非犬貓特殊動物門診為週一至週六中午 12:00 起看診，Google 院方資訊列特寵掛號至 19:50；初診需先電話聯絡，由櫃台安排就診時間。已確認物種包含兔、鼠、鳥、蜜袋鼯、蛇、龜與蜥蜴。Google 院方資訊表示生命危險可直接到院掛急診，但未明確區分特寵急診，請先電話確認。官方 Instagram 2026/8/27 公告李醫師進修，9/19–9/21 特寵門診休診；陳醫師犬貓門診正常。",
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "非犬貓特殊動物門診",
@@ -291,7 +291,7 @@ export const ChiayiCityHospitalList = [
       "reservationRequired": true,
       "sourceLabel": "官方 Facebook",
       "sourceUrl": "https://www.facebook.com/ChiaYi.Jia.le.animal.hospital/",
-      "verifiedAt": "2026-08-10"
+      "verifiedAt": "2026-09-01"
     },
     "announcements": [
       {
@@ -305,20 +305,31 @@ export const ChiayiCityHospitalList = [
         "sourceUrl": "https://www.facebook.com/ChiaYi.Jia.le.animal.hospital/posts/1623664129768652/",
         "verifiedAt": "2026-08-10"
       },
+      {
+        "id": "chiayi-jia-le-september-19-21-exotic-closure-2026",
+        "type": "closure",
+        "title": "嘉樂 9/19–9/21 李醫師特寵門診休診",
+        "content": "官方 Instagram 2026/8/27 公告：李醫師進修，9/19–9/21 特寵門診休診；陳醫師犬貓門診正常。特寵就診前請先電話確認。",
+        "startDate": "2026-09-19",
+        "endDate": "2026-09-21",
+        "sourceLabel": "官方 Instagram",
+        "sourceUrl": "https://www.instagram.com/jia_le_ah/reel/DchvPIWI-TB/",
+        "verifiedAt": "2026-09-01"
+      },
     ],
     "fb": {
       "last_fb_post_date": "2026-08-07",
-      "last_fb_post_text": "官方 Facebook 2026/8/7 最新可見貼文為庫存照片分享，未見營業或特寵門診異動。"
+      "last_fb_post_text": "官方 Facebook 最新可見貼文顯示「18 小時前」，內容為生活短片，未見營業或特寵門診異動；因原頁未提供可可靠的絕對日期，日期欄保留最近可確認的 2026/8/7。官方 Instagram 2026/8/27 公告：9/19–9/21 李醫師特寵門診休診，陳醫師犬貓門診正常。"
     },
-    "updatedAt": "2026-08-10",
-    "last_checked": "2026-08-10"
+    "updatedAt": "2026-09-01",
+    "last_checked": "2026-09-01"
   },
   {
     "id": "chiayi-ncyu-animal-hospital",
     "name": "國立嘉義大學獸醫學院附設動物醫院",
     "city": "嘉義市",
     "district": "西區",
-    "address": "嘉義市西區新民路580號",
+    "address": "600 嘉義市西區美源里新民路580號",
     "lat": 23.4624135,
     "lng": 120.4438326,
     "type": "exotic",
@@ -410,17 +421,17 @@ export const ChiayiCityHospitalList = [
       "mapsUrl": "https://www.google.com/maps/place/%E5%9C%8B%E7%AB%8B%E5%98%89%E7%BE%A9%E5%A4%A7%E5%AD%B8%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.4624184,120.4412577,17z/data=!3m1!4b1!4m6!3m5!1s0x346e941ed7991247:0xe9c0b4cab3cd6bdc!8m2!3d23.4624135!4d120.4438326!16s%2Fg%2F11ckvkkj2_",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%9C%8B%E7%AB%8B%E5%98%89%E7%BE%A9%E5%A4%A7%E5%AD%B8%E7%8D%B8%E9%86%AB%E5%AD%B8%E9%99%A2%E9%99%84%E8%A8%AD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.4624135,120.4438326,17z/data=!4m6!3m5!1slEogaun9LKTh1e8P_riI8QU!8m2!3d23.4624135!4d120.4438326!9m1!1b1!16s%2FlEogaun9LKTh1e8P_riI8QU",
       "placeId": "lEogaun9LKTh1e8P_riI8QU",
-      "verifiedAt": "2026-08-10"
+      "verifiedAt": "2026-09-01"
     },
-    "clinicNotes": "門診採預約制與現場掛號並行，官方網路預約表單可選擇特殊寵物（非犬貓），建議先電話或網路登記預約。官方 115 年 8 月起班表顯示週二下午有董光中獸醫師特寵門診，預約報到時間為 13:30–16:30；特殊寵物科服務鳥類、小型哺乳動物、爬蟲類與兩棲類，實際時段以最新班表為準。Google 顯示週三另有 18:30–20:30 時段，但官方班表未列，不能據此認定晚診；未找到特寵急診或 24 小時服務證據。",
+    "clinicNotes": "門診採預約制與現場掛號並行，官方網路預約表單可選擇特殊寵物（非犬貓），建議先電話或網路登記預約。官方 115 年 8 月起班表顯示週二下午有董光中獸醫師特寵門診，預約報到時間為 13:30–16:30；特殊寵物科服務鳥類、小型哺乳動物、爬蟲類與兩棲類，實際時段以最新班表為準。Google 顯示週一、二、四、五上午 08:30–11:30、下午至 17:00，週三下午 13:30–17:00 並有 18:30–20:30 時段；官方班表為預約報到至 16:30，時間定義不同，仍以校方班表與預約安排為準。未找到特寵急診或 24 小時服務證據。官方 Facebook 2026 年 9 月公告 9/25 中秋節及 9/28 教師節休診；另有影像項目自 2026/9/1 起調整費用。",
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "特殊寵物科",
-      "note": "官方 115 年 8 月起班表顯示週二下午有董光中獸醫師特寵門診，預約報到時間為 13:30–16:30；服務鳥類、小型哺乳動物、爬蟲類與兩棲類，實際時段與醫師以最新班表為準。",
+      "note": "官方 115 年 8 月起班表顯示週二下午有董光中獸醫師特寵門診，預約報到時間為 13:30–16:30；服務鳥類、小型哺乳動物、爬蟲類與兩棲類，實際時段與醫師以最新班表為準。Google 顯示部分午後時段至 17:00，與官方預約報到截止時間不同，仍以校方班表與預約安排為準。",
       "reservationRequired": false,
       "sourceLabel": "官方網站",
       "sourceUrl": "https://website.ncyu.edu.tw/ncyuvh/Contents?nodeId=36959",
-      "verifiedAt": "2026-08-10"
+      "verifiedAt": "2026-09-01"
     },
     "announcements": [
       {
@@ -432,21 +443,42 @@ export const ChiayiCityHospitalList = [
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/photo/?fbid=1548060047119858&set=a.522320099693863",
         "verifiedAt": "2026-08-10"
+      },
+      {
+        "id": "ncyu-september-25-28-closure-2026",
+        "type": "closure",
+        "title": "嘉大附設動物醫院 9/25、9/28 休診",
+        "content": "官方 Facebook 2026 年 9 月公告：9/25 中秋節及 9/28 教師節休診，請提前準備藥品並依公告安排就診。",
+        "startDate": "2026-09-25",
+        "endDate": "2026-09-28",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/NCYUVH/posts/pfbid0pSwYmZnERGebEiXiUirMrDoXwXyYPX2zaFNQiajHjw88xBW8odqH3dDESGDRqtu7l",
+        "verifiedAt": "2026-09-01"
+      },
+      {
+        "id": "ncyu-imaging-fee-change-2026-09-01",
+        "type": "notice",
+        "title": "嘉大附設動物醫院 9/1 起影像項目費用調整",
+        "content": "官方 Facebook 公告影像項目自 2026/9/1 起調整費用；就診與檢查費用請依院方最新公告或現場說明為準。",
+        "startDate": "2026-09-01",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/photo/?fbid=1560235575902305&set=a.522320099693863",
+        "verifiedAt": "2026-09-01"
       }
     ],
     "fb": {
       "last_fb_post_date": "2026-07-29",
-      "last_fb_post_text": "官方 Facebook 最新可見貼文為檢驗費用調整公告：自 2026/8/17 起因試劑與耗材成本上升調整檢驗項目費用。"
+      "last_fb_post_text": "官方 Facebook 最新可見貼文頁面顯示「6 小時前」，內容公告 2026/9/25 中秋節及 9/28 教師節休診，日期欄因僅顯示相對時間未推成 ISO；另公告影像項目自 2026/9/1 起調整費用。既有 2026/8/17 檢驗費調整公告仍有效。"
     },
-    "updatedAt": "2026-08-06",
-    "last_checked": "2026-08-10"
+    "updatedAt": "2026-09-01",
+    "last_checked": "2026-09-01"
   },
   {
     "id": "mascot-animal-hospital",
     "name": "萌寵動物醫院",
     "city": "嘉義市",
     "district": "東區",
-    "address": "嘉義市東區大雅路二段563-5號",
+    "address": "600 嘉義市東區長竹里大雅路二段563-5號",
     "lat": 23.4773222,
     "lng": 120.4681494,
     "type": "exotic",
@@ -486,11 +518,11 @@ export const ChiayiCityHospitalList = [
     },
     "google": {
       "rating": "4.8",
-      "reviewCount": 617,
+      "reviewCount": 620,
       "mapsUrl": "https://www.google.com/maps/place/600%E5%98%89%E7%BE%A9%E5%B8%82%E6%9D%B1%E5%8D%80%E9%95%B7%E7%AB%B9%E9%87%8C%E5%A4%A7%E9%9B%85%E8%B7%AF%E4%BA%8C%E6%AE%B5563-5%E8%99%9F%E8%90%8C%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E8%85%AB%E7%98%A4%E6%B2%BB%E7%99%82%E4%B8%AD%E5%BF%83%EF%BC%89+-%7C%E5%B0%8F%E5%8B%95%E7%89%A9%E7%89%99%E7%A7%91%7C+%E5%B0%8F%E5%8B%95%E7%89%A9%E5%85%A7%E5%A4%96%E7%A7%91%7C%E8%85%B9%E8%85%94%E9%8F%A1%2F%E9%AA%A8%E7%A7%91%7C%E5%BF%83%E8%87%9F%E7%A7%91%7C%E9%B3%A5%E9%96%80%E8%A8%BA%E9%A0%90%E7%B4%84%7C%E6%B0%A3%E9%AB%94%E9%BA%BB%E9%86%89%7C%E9%AB%98%E5%A3%93%E6%B0%A7%E6%B2%BB%E7%99%82%7C/@23.4773222,120.4681494,3660a,13.1y/data=!4m2!3m1!1s0x346e950f948d6e6b:0xff7549d88e8bcedd",
       "reviewsUrl": "https://www.google.com/maps/place/600%E5%98%89%E7%BE%A9%E5%B8%82%E6%9D%B1%E5%8D%80%E9%95%B7%E7%AB%B9%E9%87%8C%E5%A4%A7%E9%9B%85%E8%B7%AF%E4%BA%8C%E6%AE%B5563-5%E8%99%9F%E8%90%8C%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E8%85%AB%E7%98%A4%E6%B2%BB%E7%99%82%E4%B8%AD%E5%BF%83%EF%BC%89+-%7C%E5%B0%8F%E5%8B%95%E7%89%A9%E7%89%99%E7%A7%91%7C+%E5%B0%8F%E5%8B%95%E7%89%A9%E5%85%A7%E5%A4%96%E7%A7%91%7C%E8%85%B9%E8%85%94%E9%8F%A1%2F%E9%AA%A8%E7%A7%91%7C%E5%BF%83%E8%87%9F%E7%A7%91%7C%E9%B3%A5%E9%96%80%E8%A8%BA%E9%A0%90%E7%B4%84%7C%E6%B0%A3%E9%AB%94%E9%BA%BB%E9%86%89%7C%E9%AB%98%E5%A3%93%E6%B0%A7%E6%B2%BB%E7%99%82%7C/@23.4773222,120.4681494,3660a,13.1y/data=!4m2!3m1!1s0x346e950f948d6e6b:0xff7549d88e8bcedd!9m1!1b1",
       "placeId": "ChIJa26NlA-VbjQR3c6LjthJdf8",
-      "verifiedAt": "2026-08-06"
+      "verifiedAt": "2026-09-01"
     },
     "reservationRequired": false,
     "hasEmergencyService": true,
@@ -543,15 +575,15 @@ export const ChiayiCityHospitalList = [
       "instagram": "https://www.instagram.com/mascot__0718/",
       "line": "https://line.me/R/ti/p/@096hytik"
     },
-    "clinicNotes": "官方網站首頁明確標示本院為犬貓鳥專科醫療團隊，診療項目列有鳥類內外科、鳥禽類骨科與鳥類重症急診加護。門診可現場掛號；手術需提前預約至門診評估，鳥類內外科為預約制，官方建議至少提前一週預約。現有 2026 年 8 月班表紀錄為週一至週五 09:00-12:00、14:00-21:00，週六、日 09:00-12:00、14:00-19:00；但官網首頁目前仍寫週一至週六上午至 13:00、週六晚間至 21:00，且本次無法重新取得班表原圖，兩者有衝突，前往前請再以電話或 LINE 確認。Google Maps 直接頁面本次無法讀取，現有評分與評論數未重新覆蓋。官方有鳥類緊急危重病患處理能力，但未公布 24 小時或固定夜間急診。",
+    "clinicNotes": "官方網站首頁明確標示本院為犬貓鳥專科醫療團隊，診療項目列有鳥類內外科、鳥禽類骨科與鳥類重症急診加護。門診可現場掛號；手術需提前預約至門診評估，鳥類內外科為預約制，官方建議至少提前一週預約。官方 Facebook 與 Instagram 的 2026 年 9 月班表列週一至週五 09:00-12:00、14:00-21:00，週六、日 09:00-12:00、14:00-19:00；最晚掛號分別為 20:00、18:00，住院探病為 11:00-12:00、18:00-19:00。官網每月班表頁仍顯示 8 月圖片，前往前請以 9 月社群公告或電話、LINE 確認。Google Maps 本次直接查得評分 4.8、評論 620，與上述 9 月時段一致。官方有鳥類緊急危重病患處理能力，但未公布 24 小時或固定夜間急診。",
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "鳥類預約門診",
-      "note": "官方鳥類內外科頁面與 2026 年 8 月班表確認鳥類內外科、鳥禽類骨科與鳥類重症急診加護；鳥類門診採預約制，犬貓一般門診可現場掛號，建議至少提前一週預約。",
+      "note": "官方鳥類內外科頁面與 2026 年 9 月班表確認鳥類內外科、鳥禽類骨科與鳥類重症急診加護；鳥類門診採預約制，犬貓一般門診可現場掛號，建議至少提前一週預約。9 月班表列週一至週五晚診至 21:00、週末晚診至 19:00，最晚掛號分別為 20:00、18:00。",
       "reservationRequired": true,
-      "sourceLabel": "官方網站 8 月班表",
+      "sourceLabel": "官方網站、官方 Facebook、官方 Instagram",
       "sourceUrl": "https://mascot-animal.com/%e9%b3%a5%e9%a1%9e%e5%85%a7%e5%a4%96%e7%a7%91/",
-      "verifiedAt": "2026-08-10"
+      "verifiedAt": "2026-09-01"
     },
     "announcements": [
       {
@@ -564,13 +596,24 @@ export const ChiayiCityHospitalList = [
         "sourceLabel": "官方網站、官方 Facebook、官方 Instagram",
         "sourceUrl": "https://mascot-animal.com/%e9%96%80%e8%a8%BA%e4%bb%8b%e7%b4%B9-%e6%AF%8f%e6%9C%88%e7%8F%AD%e8%A1%A8/",
         "verifiedAt": "2026-08-06"
+      },
+      {
+        "id": "mascot-september-2026-schedule",
+        "type": "hours_change",
+        "title": "萌寵 2026 年 9 月門診班表與掛號時間",
+        "content": "官方 Facebook 與 Instagram 2026 年 9 月班表：週一至週五 09:00-12:00、14:00-21:00，最晚掛號 20:00；週六、日 09:00-12:00、14:00-19:00，最晚掛號 18:00。住院探病時間為 11:00-12:00、18:00-19:00；門診可現場掛號，手術需提前預約至門診評估，鳥類內外科採預約制。",
+        "startDate": "2026-09-01",
+        "endDate": "2026-09-30",
+        "sourceLabel": "官方 Facebook、官方 Instagram",
+        "sourceUrl": "https://www.facebook.com/mascot0718/posts/pfbid02ue99e4oPb6o2iuDAv73vTUUVBmrvScZpRgVkMUWXKZFkAwWPkWbtKDbSbcCCkPCRl",
+        "verifiedAt": "2026-09-01"
       }
     ],
     "fb": {
       "last_fb_post_date": "",
-      "last_fb_post_text": "官方 Facebook 置頂／精選可見 2026 年 8 月班表；公開頁面日期被特殊字元遮蔽，未採用不可靠日期。內容與官方網站及 8/2 Instagram 班表一致：週末晚間至 19:00，最晚掛號 18:00。"
+      "last_fb_post_text": "官方 Facebook 精選與 Instagram 置頂可見 2026 年 9 月班表；Instagram 顯示「1 天前」，因未提供可靠絕對日期，日期欄維持空白。內容為週一至週五 09:00-12:00、14:00-21:00，最晚掛號 20:00；週六、日 09:00-12:00、14:00-19:00，最晚掛號 18:00；住院探病 11:00-12:00、18:00-19:00。"
     },
-    "updatedAt": "2026-08-10",
-    "last_checked": "2026-08-10"
+    "updatedAt": "2026-09-01",
+    "last_checked": "2026-09-01"
   }
 ];

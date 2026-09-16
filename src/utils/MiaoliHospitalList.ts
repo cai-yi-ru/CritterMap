@@ -59,19 +59,19 @@ export const MiaoliHospitalList = [
     },
     "google": {
       "rating": "4.6",
-      "reviewCount": 165,
+      "reviewCount": 166,
       "mapsUrl": "https://www.google.com/maps/place/%E9%B4%BB%E6%88%90%E8%B3%BD%E9%B4%BF%E9%86%AB%E9%99%A2/@24.4726105,120.8180314,17z/data=!3m1!4b1!4m6!3m5!1s0x346900a7a5da1d73:0x7053512859122594!8m2!3d24.4726105!4d120.8180314!16s%2Fg%2F1pp2x894r",
       "reviewsUrl": "https://www.google.com/maps/place/%E9%B4%BB%E6%88%90%E8%B3%BD%E9%B4%BF%E9%86%AB%E9%99%A2/@24.4726105,120.8180314,17z/data=!4m8!3m7!1s0x346900a7a5da1d73:0x7053512859122594!8m2!3d24.4726105!4d120.8180314!9m1!1b1!16s%2Fg%2F1pp2x894r",
       "placeId": "0x346900a7a5da1d73:0x7053512859122594",
-      "verifiedAt": "2026-08-10"
+      "verifiedAt": "2026-09-01"
     },
-    "clinicNotes": "本院以鳥類與賽鴿診療為主，官方 Facebook 類別標示為鳥類醫療服務。固定門診為週一至週五 09:00–12:00、14:00–17:00，週六、週日休診。官方最新可見貼文曾公告 7/3 外出休診一天，但頁面未顯示年份且該日期已過；前往前請先致電確認。目前未見官方明確列出其他非鳥類特寵物種、夜間門診或急診資訊。",
+    "clinicNotes": "本院以鳥類與賽鴿診療為主，官方 Facebook 類別標示為鳥類醫療服務。Google Maps 2026/9/1 顯示評分 4.6、評論數 166，營業時間為週一至週五 09:00–12:00、14:00–17:00，週六、週日休診，與現有資料一致。官方 Facebook 頁面仍標示鳥類醫療服務；可見貼文曾公告 7/3 外出休診一天，但頁面未顯示年份且該日期已過。未找到具絕對日期的 2026 年 9 月班表或臨時休診；前往前請先致電確認。目前未見官方明確列出其他非鳥類特寵物種、夜間門診或急診資訊。",
     "fb": {
       "last_fb_post_date": "7月（年份未顯示）",
       "last_fb_post_text": "官方 Facebook 最新可見貼文公告 7/3 因外出休診一天；頁面未顯示年份，該休診已過查核日。"
     },
-    "updatedAt": "2026-08-06",
-    "last_checked": "2026-08-10"
+    "updatedAt": "2026-09-01",
+    "last_checked": "2026-09-01"
   },
   /*
   {
@@ -262,25 +262,25 @@ export const MiaoliHospitalList = [
     },
     "google": {
       "rating": "4.2",
-      "reviewCount": 202,
+      "reviewCount": 205,
       "mapsUrl": "https://www.google.com/maps/place/%E6%AF%9B%E7%88%BE%E5%91%BC%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.6957207,120.9020705,17z/data=!3m1!4b1!4m6!3m5!1s0x34684ddca9096895:0xe349af4dbac032cc!8m2!3d24.6957207!4d120.9020705!16s%2Fg%2F11t1jytdtg",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%AF%9B%E7%88%BE%E5%91%BC%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.6957207,120.9020705,17z/data=!4m8!3m7!1s0x34684ddca9096895:0xe349af4dbac032cc!8m2!3d24.6957207!4d120.9020705!9m1!1b1!16s%2Fg%2F11t1jytdtg",
       "placeId": "0x34684ddca9096895:0xe349af4dbac032cc",
-      "verifiedAt": "2026-08-10"
+      "verifiedAt": "2026-09-04"
     },
-    "clinicNotes": "一般門診週一至週五 09:00–12:00、14:00–18:00、19:00–21:00；週六休診；週日 09:00–12:00、14:00–18:00。特寵門診看診兔、鼠、蜜袋鼯、雪貂等小型哺乳動物，實際日期依當月班表，請先致電 037-674-882 確認或預約。官方 115 年 8 月班表部分日期標示特寵門診；未見特寵急診資訊。",
+    "clinicNotes": "一般門診週一至週五、週日 09:00–12:00、14:00–21:00，週六休診；公開同步頁面將下午列為連續 14:00–21:00，與現有資料拆分 14:00–18:00、19:00–21:00 有差異，請先電話確認。官方 Facebook 最新可見 2026 年 9 月門診表；官方頁面簡介標示蔡芝瑄醫師於週一、二、四看診兔、鼠、蜜袋鼯、雪貂等小型哺乳動物，實際日期與時段依當月班表，請先致電 037-674-882 確認或預約。圖卡逐日細節未能可靠完整辨識，未見特寵急診資訊。",
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "特殊寵物門診",
-      "note": "每週一、二、四由特殊寵物獸醫師看診兔、鼠、蜜袋鼯、雪貂等小型哺乳動物；115 年 8 月班表部分日期另標示特寵門診，來診前建議先電話預約。",
+      "note": "官方頁面簡介標示蔡芝瑄醫師於每週一、二、四看診兔、鼠、蜜袋鼯、雪貂等小型哺乳動物；官方 Facebook 最新可見 2026 年 9 月門診表，實際日期與時段請先電話預約。",
       "reservationRequired": false,
       "sourceLabel": "官方 Facebook",
-      "sourceUrl": "https://www.facebook.com/Mrhoo674882/posts/pfbid02dNswZdQWiTeJjSDAQZBuhyDLPUuMqnyVYuyAWZ6k64YtNWC4MqpDxJWTnJYFZMX4l",
-      "verifiedAt": "2026-08-10"
+      "sourceUrl": "https://www.facebook.com/photo/?fbid=1063066143148327&set=a.126075070180777",
+      "verifiedAt": "2026-09-04"
     },
     "fb": {
-      "last_fb_post_date": "7月30日下午1:47（年份未顯示）",
-      "last_fb_post_text": "官方 Facebook 最新貼文為「2026年8月門診表供參」，圖卡標示 115 年 8 月；部分日期另標示特寵門診。"
+      "last_fb_post_date": "2026 年 9 月班表（絕對發布日期未顯示）",
+      "last_fb_post_text": "官方 Facebook 最新貼文為「2026年9月門診表供參」；官方頁面簡介標示蔡芝瑄醫師於週一、二、四看診兔、鼠、蜜袋鼯、雪貂等小型哺乳動物，圖卡逐日細節請先電話確認。"
     },
     "announcements": [
       {
@@ -293,9 +293,20 @@ export const MiaoliHospitalList = [
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/photo/?fbid=1035282879259987&set=a=126075070180777",
         "verifiedAt": "2026-08-10"
+      },
+      {
+        "id": "mrhoo-2026-09-schedule-notice",
+        "type": "notice",
+        "title": "毛爾呼 2026 年 9 月門診表",
+        "content": "毛爾呼官方 Facebook 最新可見 2026 年 9 月門診表；官方頁面簡介標示蔡芝瑄醫師於週一、二、四看診兔、鼠、蜜袋鼯、雪貂等小型哺乳動物，圖卡逐日細節請先電話確認或預約。",
+        "startDate": "2026-09-01",
+        "endDate": "2026-09-30",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/photo/?fbid=1063066143148327&set=a.126075070180777",
+        "verifiedAt": "2026-09-04"
       }
     ],
-    "updatedAt": "2026-08-10",
-    "last_checked": "2026-08-10"
+    "updatedAt": "2026-09-04",
+    "last_checked": "2026-09-04"
   }
 ];

@@ -57,7 +57,7 @@
   --chart-3: oklch(0.439 0 0);
   --chart-4: oklch(0.371 0 0);
   --chart-5: oklch(0.269 0 0);
-  --radius: 0.75rem;
+  --radius: 0.625rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
   --sidebar-primary: oklch(0.205 0 0);
@@ -162,12 +162,20 @@ a {
 }
 
 .hide-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  scrollbar-color: #c4dcc0 transparent;
+  scrollbar-width: thin;
 }
 
 .hide-scrollbar::-webkit-scrollbar {
-  display: none;
+  width: 8px;
+  height: 8px;
+}
+
+.hide-scrollbar::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: 9999px;
+  background: #c4dcc0;
+  background-clip: padding-box;
 }
 
 .text-balance {

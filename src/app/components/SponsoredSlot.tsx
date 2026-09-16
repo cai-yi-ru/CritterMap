@@ -105,53 +105,41 @@ export default function SponsoredSlot({ context, className }: SponsoredSlotProps
     };
   }, [isAdsenseReady, adsenseSlot]);
 
+  if (!isAdsenseReady) {
+    return null;
+  }
+
   return (
     <aside
       className={cn(
-        "rounded-2xl border border-honey-200 bg-accent/45 px-4 py-3 text-sm text-accent-foreground",
-        isAdsenseReady && "min-h-[120px]",
+        "min-h-[120px] rounded-xl border border-honey-200 bg-accent/35 px-4 py-3 text-sm text-accent-foreground",
         className,
       )}
-      aria-label={isAdsenseReady ? "廣告" : "贊助資訊版位"}
+      aria-label="廣告"
     >
-      {isAdsenseReady ? (
-        <div ref={slotRef}>
-          <div className="mb-2 flex items-center justify-between gap-3">
-            <Badge variant="outline" className="border-honey-200 bg-white/70 text-clay-700">
-              廣告
-            </Badge>
-            <span className="text-xs font-medium text-clay-700/80">{copy.title}</span>
-          </div>
-          <ins
-            key={`${adsenseClient}-${adsenseSlot}`}
-            className="adsbygoogle"
-            style={{ display: "block" }}
-            data-ad-client={adsenseClient}
-            data-ad-slot={adsenseSlot}
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-          />
-          {showAdFallback && (
-            <div className="flex min-h-[84px] flex-col items-center justify-center px-3 py-4 text-center">
-              <p className="text-sm font-bold text-forest-900">{adFallbackCopy.title}</p>
-              <p className="mt-1 max-w-[32rem] text-xs leading-6 text-clay-700">{adFallbackCopy.description}</p>
-            </div>
-          )}
+      <div ref={slotRef}>
+        <div className="mb-2 flex items-center justify-between gap-3">
+          <Badge variant="outline" className="rounded-md border-honey-200 bg-white/70 text-clay-700">
+            廣告
+          </Badge>
+          <span className="text-xs font-medium text-clay-700/80">{copy.title}</span>
         </div>
-      ) : (
-        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <div className="mb-1 flex items-center gap-2">
-              <Badge variant="outline" className="border-honey-200 bg-white/70 text-clay-700">
-                贊助資訊
-              </Badge>
-              <span className="font-bold text-forest-900">{copy.title}</span>
-            </div>
-            <p className="leading-6 text-clay-700">{copy.description}</p>
+        <ins
+          key={`${adsenseClient}-${adsenseSlot}`}
+          className="adsbygoogle"
+          style={{ display: "block" }}
+          data-ad-client={adsenseClient}
+          data-ad-slot={adsenseSlot}
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        />
+        {showAdFallback && (
+          <div className="flex min-h-[84px] flex-col items-center justify-center px-3 py-4 text-center">
+            <p className="text-sm font-semibold text-forest-900">{adFallbackCopy.title}</p>
+            <p className="mt-1 max-w-[32rem] text-xs leading-6 text-clay-700">{adFallbackCopy.description}</p>
           </div>
-          <span className="text-xs font-medium text-clay-700/80">預留版位</span>
-        </div>
-      )}
+        )}
+      </div>
     </aside>
   );
 }

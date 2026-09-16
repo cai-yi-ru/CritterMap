@@ -364,12 +364,12 @@ export const HsinchuCityHospitalList: Hospital[] = [
       "mapsUrl": "https://www.google.com/maps/place/%E5%85%A8%E5%A4%A9%E5%80%99%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.7878558,121.0200103,17z/data=!3m1!4b1!4m6!3m5!1s0x3468373460d55181:0xe0df728cd95621f1!8m2!3d24.7878558!4d121.0200103!16s%2Fg%2F11ssf7_d23",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%85%A8%E5%A4%A9%E5%80%99%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.7878558,121.0200103,17z/data=!4m8!3m7!1s0x3468373460d55181:0xe0df728cd95621f1!8m2!3d24.7878558!4d121.0200103!9m1!1b1!16s%2Fg%2F11ssf7_d23",
       "placeId": "0x3468373460d55181:0xe0df728cd95621f1",
-      "verifiedAt": "2026-08-10"
+      "verifiedAt": "2026-09-04"
     },
-    "clinicNotes": "全年無休；09:00–21:00 為一般門診，21:00–09:00 為夜間急診。官方明列犬貓鼠兔門診急診，服務對象包含倉鼠與兔子；特殊需求或急症就診前可先致電 03-668-6356 確認。",
+    "clinicNotes": "全年無休；09:00–21:00 為一般門診，21:00–09:00 為夜間急診。官方明列犬貓鼠兔門診急診，服務對象包含倉鼠與兔子；特殊需求或急症就診前可先致電 03-668-6356 確認。Google Maps 2026/9/4 顯示評分 4.0，評論數介面同時顯示 334（標題）與 331（更多評論），無法判定應採哪一個，故維持原評論數 331。Google 顯示 24 小時營業，與全年無休設定一致；官方 Facebook 最新可見「九月門診表」，但圖像逐日細節未能可靠完整辨識，休診或特寵異動請依院方公告與電話確認。",
     "fb": {
-      "last_fb_post_date": "2026-08-02",
-      "last_fb_post_text": "官方 Facebook 2026/8/2 發布「久等了，八月門診表來囉！」；固定一般門診 09:00–21:00、夜間急診 21:00–09:00。"
+      "last_fb_post_date": "9月（年份未確認）",
+      "last_fb_post_text": "官方 Facebook 最新可見內容為「九月門診表」；固定一般門診 09:00–21:00、夜間急診 21:00–09:00，但圖像逐日細節與貼文絕對發布日期未能可靠辨識。"
     },
     "announcements": [
       {
@@ -395,8 +395,8 @@ export const HsinchuCityHospitalList: Hospital[] = [
         "verifiedAt": "2026-08-10"
       }
     ],
-    "updatedAt": "2026-08-10",
-    "last_checked": "2026-08-10"
+    "updatedAt": "2026-09-04",
+    "last_checked": "2026-09-04"
   },
   /*
    * 2026-06-09 查核：官方 Facebook 近期公告未明確標示特寵/非犬貓診療，
@@ -520,9 +520,9 @@ export const HsinchuCityHospitalList: Hospital[] = [
       "mapsUrl": "https://www.google.com/maps/place/%E5%BA%A6%E5%BA%A6%E9%B3%A5%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2%EF%BC%88%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@24.8011484,120.9657388,17z/data=!3m1!4b1!4m6!3m5!1s0x3468352128b95dd9:0xc08ffb7bf05aa8c6!8m2!3d24.8011484!4d120.9657388!16s%2Fg%2F11tc1s0zwy",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%BA%A6%E5%BA%A6%E9%B3%A5%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2%EF%BC%88%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@24.8011484,120.9657388,17z/data=!4m8!3m7!1s0x3468352128b95dd9:0xc08ffb7bf05aa8c6!8m2!3d24.8011484!4d120.9657388!9m1!1b1!16s%2Fg%2F11tc1s0zwy",
       "placeId": "0x3468352128b95dd9:0xc08ffb7bf05aa8c6",
-      "verifiedAt": "2026-08-10"
+      "verifiedAt": "2026-09-01"
     },
-    "clinicNotes": "提供非犬貓寵物門診醫療，不包含外科、住院與住宿服務。\n全預約制，不使用 Facebook 預約；請先加入官方 LINE（@978zickn）預約。週一、週二、週五、週日未營業；週三、週四、週六 14:00–21:00。",
+    "clinicNotes": "提供非犬貓寵物門診醫療，不包含外科、住院與住宿服務。\n全預約制，不使用 Facebook 預約；請先加入官方 LINE（@978zickn）預約。週一、週二、週五、週日未營業；週三、週四、週六 14:00–21:00。Google Maps 2026/9/1 顯示評分 4.6、評論數 86，營業時段與現有資料一致；官方 Facebook 仍標示非犬貓門診，最新可見鸚鵡飲食貼文日期未顯示。本輪未取得可直接確認的 2026 年 9 月班表、休診或門診異動。",
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "非犬貓特寵門診",
@@ -530,11 +530,11 @@ export const HsinchuCityHospitalList: Hospital[] = [
       "reservationRequired": true,
       "sourceLabel": "官方 Facebook、官方 LINE",
       "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid02N1Hk5zJrs98UMuCLY2p4HrPNH45AL8Cek5RZix6mh9oe2MYXMfp5NmKnAVKYncNgl&id=100075739882784",
-      "verifiedAt": "2026-08-10"
+      "verifiedAt": "2026-09-01"
     },
     "fb": {
-      "last_fb_post_date": "7月28日（年份未顯示）",
-      "last_fb_post_text": "官方 Facebook 最新可見貼文分享鸚鵡健康飲食與餵食指南。"
+      "last_fb_post_date": "未確認（頁面未顯示絕對日期）",
+      "last_fb_post_text": "官方 Facebook 最新可見貼文分享鸚鵡健康飲食與餵食指南，發布日期未顯示。"
     },
     "announcements": [
       {
@@ -547,7 +547,7 @@ export const HsinchuCityHospitalList: Hospital[] = [
         "verifiedAt": "2026-08-10"
       }
     ],
-    "updatedAt": "2026-08-10",
-    "last_checked": "2026-08-10"
+    "updatedAt": "2026-09-01",
+    "last_checked": "2026-09-01"
   }
 ];

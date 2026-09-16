@@ -1,7 +1,6 @@
 "use client";
 
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -31,21 +30,20 @@ export default function HospitalModal({ hospital, onClose }: HospitalModalProps)
   const activeAnnouncements = getActiveAnnouncements(hospital.announcements);
   const specialClinic = hospital.specialClinic?.hasExoticSpecialClinic ? hospital.specialClinic : undefined;
   const hospitalTypeTags = getHospitalDisplayTags(hospital);
+  const googleReviewsUrl = hospital.google?.reviewsUrl
+    || hospital.google?.mapsUrl
+    || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${hospital.name} ${hospital.address}`)}`;
 
   return (
     <Dialog open={Boolean(hospital)} onOpenChange={(open) => !open && onClose()}>
       <DialogContent className="flex h-[calc(100dvh-1rem)] max-h-[calc(100dvh-1rem)] max-w-[calc(100vw-1rem)] flex-col gap-0 overflow-hidden border-sage-100 bg-card p-0 sm:h-[92vh] sm:max-h-[760px] sm:max-w-3xl">
         <DialogHeader className="shrink-0 border-b border-sage-100 p-5 pr-12 sm:p-6 sm:pr-14">
-          <div className="flex flex-wrap gap-2">
-            {hospitalTypeTags.map((tag) => (
-              <Badge key={tag} variant="secondary" className="text-forest-900">
-                {tag}
-              </Badge>
-            ))}
-            {hospital.hasEmergencyService && <Badge className="bg-petal-100 text-rose-700">夜間急診</Badge>}
-            {specialClinic && <Badge className="bg-petal-100 text-rose-700">{specialClinic.label || "特寵特別門診"}</Badge>}
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs">
+            {hospitalTypeTags.length > 0 && <span className="text-stone-600">{hospitalTypeTags.join('、')}</span>}
+            {hospital.hasEmergencyService && <span className="font-semibold text-rose-700">可詢問夜間急診</span>}
+            {specialClinic && <span className="font-semibold text-rose-700">{specialClinic.label || "特寵特別門診"}</span>}
           </div>
-          <DialogTitle className="text-2xl font-extrabold leading-8 text-forest-900">
+          <DialogTitle className="text-2xl font-bold leading-8 text-forest-900">
             {hospital.name}
           </DialogTitle>
           <DialogDescription className="leading-7 text-stone-600">
@@ -55,8 +53,8 @@ export default function HospitalModal({ hospital, onClose }: HospitalModalProps)
 
         <div className="hide-scrollbar min-h-0 flex-1 overflow-y-auto overscroll-contain px-5 py-5 sm:px-6">
           <div className="grid gap-4">
-            <section className="rounded-2xl border border-sage-100 bg-sage-50/70 p-4">
-              <h3 className="text-sm font-extrabold text-forest-900">就診前重點</h3>
+            <section className="border-b border-sage-100 pb-5">
+              <h3 className="text-sm font-semibold text-forest-900">就診前重點</h3>
               <div className="mt-3 grid gap-3 md:grid-cols-2">
                 <InfoLine label="電話" value={hospital.phone || "尚未整理"} icon={<PhoneIcon />} />
                 <InfoLine label="分類" value={getHospitalTypeDisplayText(hospital)} />
@@ -64,9 +62,18 @@ export default function HospitalModal({ hospital, onClose }: HospitalModalProps)
                 <BusinessHoursSummary businessHours={hospital.business_hours} fallbackHours={hospital.hours} />
                 {hospital.google?.rating && (
                   <div className="md:col-span-2">
-                    <div className="flex flex-col gap-1 rounded-xl border border-sage-100 bg-white p-3 sm:flex-row sm:items-end sm:justify-between">
+                    <a
+                      href={googleReviewsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`查看 ${hospital.name} 的 Google 評論`}
+                      className="group -mx-2 flex flex-col gap-1 rounded-md border-t border-sage-100 px-2 pt-3 transition-colors hover:bg-sage-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-500 focus-visible:ring-offset-2 sm:flex-row sm:items-end sm:justify-between"
+                    >
                       <div>
-                        <div className="text-xs font-bold text-stone-500">Google 參考</div>
+                        <div className="inline-flex items-center gap-1.5 text-xs font-medium text-stone-500 transition-colors group-hover:text-forest-800">
+                          Google 評論
+                          <ExternalLinkIcon className="size-3.5" aria-hidden="true" />
+                        </div>
                         <p className="mt-1 text-sm leading-7 text-stone-700">
                           ★ {hospital.google.rating}
                           {typeof hospital.google.reviewCount === "number" && `，${hospital.google.reviewCount.toLocaleString()} 則評論`}
@@ -77,15 +84,15 @@ export default function HospitalModal({ hospital, onClose }: HospitalModalProps)
                           確認日期：{hospital.google.verifiedAt}
                         </div>
                       )}
-                    </div>
+                    </a>
                   </div>
                 )}
               </div>
             </section>
 
             {hospital.hasEmergencyService && (
-              <Alert className="border-petal-200 bg-petal-100/70 text-rose-800">
-                <AlertTitle className="font-extrabold">此醫院提供夜間急診服務</AlertTitle>
+              <Alert className="rounded-lg border-petal-200 bg-petal-100/60 text-rose-800">
+                <AlertTitle className="font-semibold">可先電話詢問夜間急診</AlertTitle>
                 {hospital.emergencyHours && (
                   <AlertDescription className="mt-1 whitespace-pre-wrap text-stone-700">
                     {hospital.emergencyHours}
@@ -95,20 +102,20 @@ export default function HospitalModal({ hospital, onClose }: HospitalModalProps)
             )}
 
             {activeAnnouncements.length > 0 && (
-              <section className="rounded-2xl border border-petal-200 bg-white p-4">
-                <h3 className="text-sm font-extrabold text-forest-900">最新訊息</h3>
+              <section className="border-y border-petal-200 py-4">
+                <h3 className="text-sm font-semibold text-forest-900">最新訊息</h3>
                 <div className="mt-3 grid gap-3">
-                  {activeAnnouncements.map((announcement) => (
-                    <article key={announcement.id} className="rounded-xl border border-petal-200 bg-petal-100/50 p-3">
+                  {activeAnnouncements.map((announcement, index) => (
+                    <article key={announcement.id} className={index > 0 ? "border-t border-petal-200 pt-3" : ""}>
                       <div className="flex flex-wrap items-center gap-2">
-                        <Badge className="bg-white text-rose-700">{announcementTypeText(announcement.type)}</Badge>
+                        <span className="text-xs font-semibold text-rose-700">{announcementTypeText(announcement.type)}</span>
                         {(announcement.startDate || announcement.endDate) && (
                           <span className="text-xs text-stone-500">
                             {formatDateRange(announcement.startDate, announcement.endDate)}
                           </span>
                         )}
                       </div>
-                      <div className="mt-2 font-bold text-forest-900">{announcement.title}</div>
+                      <div className="mt-2 font-semibold text-forest-900">{announcement.title}</div>
                       {announcement.content && <p className="mt-1 whitespace-pre-wrap text-sm leading-6 text-stone-700">{announcement.content}</p>}
                       {announcement.sourceLabel && (
                         <div className="mt-2 text-xs text-stone-500">
@@ -131,24 +138,24 @@ export default function HospitalModal({ hospital, onClose }: HospitalModalProps)
 
             <div className="grid gap-4 md:grid-cols-2">
               {hospital.services && hospital.services.length > 0 && (
-                <section className="rounded-2xl border border-sage-100 bg-white p-4">
-                  <h3 className="text-sm font-extrabold text-forest-900">可提供服務 <span className="text-xs font-medium text-stone-500">僅供參考</span></h3>
-                  <div className="mt-3 flex flex-wrap gap-2">
+                <section className="border-t border-sage-100 pt-4">
+                  <h3 className="text-sm font-semibold text-forest-900">可提供服務 <span className="text-xs font-normal text-stone-500">僅供參考</span></h3>
+                  <div className="mt-3 flex flex-wrap gap-x-3 gap-y-2">
                     {hospital.services.map((service) => (
-                      <Badge key={service} variant="secondary" className="text-forest-900">
+                      <span key={service} className="text-sm text-stone-700">
                         {service}
-                      </Badge>
+                      </span>
                     ))}
                   </div>
                 </section>
               )}
 
               {hospital.pets && hospital.pets.length > 0 && (
-                <section className="rounded-2xl border border-sage-100 bg-white p-4">
-                  <h3 className="text-sm font-extrabold text-forest-900">適合寵物 <span className="text-xs font-medium text-stone-500">僅供參考</span></h3>
-                  <div className="mt-3 flex flex-wrap gap-2">
+                <section className="border-t border-sage-100 pt-4">
+                  <h3 className="text-sm font-semibold text-forest-900">適合寵物 <span className="text-xs font-normal text-stone-500">僅供參考</span></h3>
+                  <div className="mt-3 flex flex-wrap gap-x-3 gap-y-2">
                     {hospital.pets.map((pet) => (
-                      <span key={pet} className="inline-flex items-center gap-1 rounded-full border border-honey-200 bg-honey-100 px-2.5 py-1 text-xs font-semibold text-clay-700">
+                      <span key={pet} className="inline-flex items-center gap-1 text-xs font-medium text-clay-700">
                         <PetIcon pet={pet} size="sm" showLabel />
                       </span>
                     ))}
@@ -158,8 +165,8 @@ export default function HospitalModal({ hospital, onClose }: HospitalModalProps)
             </div>
 
             {specialClinic && (
-              <Alert className="border-petal-200 bg-petal-100/60">
-                <AlertTitle className="font-extrabold text-rose-700">
+              <Alert className="rounded-lg border-petal-200 bg-petal-100/60">
+                <AlertTitle className="font-semibold text-rose-700">
                   {specialClinic.label || "特寵特別門診"}
                   {specialClinic.reservationRequired && "，需預約"}
                 </AlertTitle>
@@ -168,8 +175,8 @@ export default function HospitalModal({ hospital, onClose }: HospitalModalProps)
             )}
 
             {hospital.clinicNotes && (
-              <section className="rounded-2xl border border-sage-100 bg-white p-4">
-                <h3 className="text-sm font-extrabold text-forest-900">備註 <span className="text-xs font-medium text-stone-500">僅供參考</span></h3>
+              <section className="border-t border-sage-100 pt-4">
+                <h3 className="text-sm font-semibold text-forest-900">備註 <span className="text-xs font-normal text-stone-500">僅供參考</span></h3>
                 <p className="mt-2 whitespace-pre-wrap text-sm leading-7 text-stone-700">{hospital.clinicNotes}</p>
               </section>
             )}
@@ -181,17 +188,17 @@ export default function HospitalModal({ hospital, onClose }: HospitalModalProps)
           </div>
         </div>
 
-        <DialogFooter className="mx-0 mb-0 shrink-0 rounded-none border-t border-sage-100 bg-white/85 p-4 sm:flex-row">
-          <Button nativeButton={false} render={<a href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(hospital.address)}`} target="_blank" rel="noopener noreferrer" />}>
-            <NavigationIcon data-icon="inline-start" />
-            導航路線
-          </Button>
+        <DialogFooter className="mx-0 mb-0 shrink-0 rounded-none border-t border-sage-100 bg-white p-4 sm:flex-row">
           {hospital.phone && (
-            <Button variant="outline" nativeButton={false} render={<a href={`tel:${hospital.phone}`} />}>
+            <Button nativeButton={false} render={<a href={`tel:${hospital.phone}`} />}>
               <PhoneIcon data-icon="inline-start" />
               撥打電話
             </Button>
           )}
+          <Button variant={hospital.phone ? "outline" : "default"} nativeButton={false} render={<a href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(hospital.address)}`} target="_blank" rel="noopener noreferrer" />}>
+            <NavigationIcon data-icon="inline-start" />
+            導航路線
+          </Button>
           {hospital.website && (
             <Button variant="outline" nativeButton={false} render={<a href={hospital.website} target="_blank" rel="noopener noreferrer" />}>
               <ExternalLinkIcon data-icon="inline-start" />
@@ -207,8 +214,8 @@ export default function HospitalModal({ hospital, onClose }: HospitalModalProps)
 function InfoLine({ label, value, icon }: { label: string; value: string; icon?: ReactNode }) {
   return (
     <div>
-      <div className="text-xs font-bold text-stone-500">{label}</div>
-      <div className="mt-1 flex items-center gap-2 text-sm font-semibold text-stone-700">
+      <div className="text-xs font-medium text-stone-500">{label}</div>
+      <div className="mt-1 flex items-center gap-2 text-sm font-medium text-stone-700">
         {icon}
         <span>{value}</span>
       </div>
