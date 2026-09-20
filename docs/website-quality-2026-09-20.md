@@ -50,7 +50,7 @@ Next.js 已能提供伺服器 HTML、靜態文章與按需載入的互動元件�
 ## SEO 與分享網址
 
 - 補完整首頁、文章列表與文章的標題、摘要、canonical、Open Graph／Twitter 資訊。
-- 部署核對 GitHub 設定與實際網站後，SEO 網址統一為 `https://paw-map.vercel.app`，修正原先指向不存在網域的 canonical 與 sitemap。
+- 主要網址為 `https://crittermap.snyr.tw`。9 月 20 日部署時只依 GitHub Homepage 誤判為 `paw-map.vercel.app`；9 月 21 日依使用者指出的自訂網域核對 DNS、HTTPS 與網站回應後，修正 canonical、分享資訊、結構化資料、robots 與 sitemap 的網址。GitHub Homepage 不應作為主要網域的唯一判斷依據。
 - 文章加入 BreadcrumbList、內部延伸閱讀與對應標題的目錄錨點；JSON-LD 統一安全序列化。
 - 讀取文章時統一換行格式，確保 Git 版本中的 Windows 換行不會影響段落與目錄解析。
 - 移除不正確的 SearchAction。網址支援縣市、物種及掛號／營業／急診條件，重新開啟分享網址可還原搜尋。

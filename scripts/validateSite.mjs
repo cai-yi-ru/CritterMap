@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 
 const base = process.argv[2] || 'http://127.0.0.1:3000';
-const site = 'https://paw-map.vercel.app';
+const site = 'https://crittermap.snyr.tw';
 let checks = 0;
 
 async function page(path) {
@@ -23,6 +23,8 @@ const home = await page('/');
 expect(home.includes('138') || /收錄/.test(home), 'Home includes hospital data');
 expect(home.includes('所有寵物類別'), 'Unfiltered home defaults to all pets');
 expect(home.includes(`rel="canonical" href="${site}"`) || home.includes(`rel="canonical" href="${site}/"`), 'Home canonical');
+expect(home.includes(`property="og:url" content="${site}"`) || home.includes(`property="og:url" content="${site}/"`), 'Social URL uses the primary custom domain');
+expect(!/(?:paw-map|critter-map)\.vercel\.app/.test(home), 'Home metadata does not promote a Vercel alias');
 expect((home.match(/<title>/g) || []).length === 1, 'One document title');
 expect(!home.includes('fonts.googleapis.com'), 'No external font stylesheet');
 expect(home.includes('跳到主要內容') && home.includes('id="main-content"'), 'Skip navigation target');
@@ -61,7 +63,11 @@ const missing = await fetch(`${base}/blog/does-not-exist`);
 expect(missing.status === 404, 'Unknown articles return HTTP 404');
 const robots = await page('/robots.txt');
 expect(!robots.includes('Disallow: /?embed'), 'Embed pages remain crawlable to expose noindex');
+expect(robots.includes(`Host: ${site}`), 'Robots host uses the primary custom domain');
+expect(robots.includes(`Sitemap: ${site}/sitemap.xml`), 'Robots sitemap uses the primary custom domain');
 const sitemap = await page('/sitemap.xml');
 expect(sitemap.includes(`${site}/blog/hamster-summer-cooling`), 'Published articles are in sitemap');
 expect(!sitemap.includes('?embed='), 'Sitemap excludes embeds');
+const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+expect(sitemapUrls.length > 0 && sitemapUrls.every((url) => new URL(url).origin === site), 'All sitemap URLs use the primary custom domain');
 console.log(`Passed ${checks} production response checks.`);
