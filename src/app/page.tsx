@@ -1,22 +1,26 @@
 
 import HomeClient from './HomeClient';
+import type { Metadata } from 'next';
 import { getHospitals } from "@/lib/getHospitals";
 import { getHospitalUpdates } from "@/lib/getHospitalUpdates";
-import { summarizeHospitals } from "@/lib/hospitalSearch";
-import { defaultDescription, defaultTitle, siteName, siteUrl } from "@/lib/seo";
+import { filterHospitals, summarizeHospitals } from "@/lib/hospitalSearch";
+import { isEmbedView, readHospitalFilters } from "@/lib/hospitalFilters";
+import { defaultDescription, defaultTitle, serializeJsonLd, siteName, siteUrl } from "@/lib/seo";
 import type { Hospital } from "@/types/hospital";
-
-export const metadata = {
-  title: defaultTitle,
-  description: defaultDescription,
-  alternates: {
-    canonical: "/",
-  },
-};
 
 type HomePageProps = {
   searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
+
+export async function generateMetadata({ searchParams }: HomePageProps): Promise<Metadata> {
+  const params = await searchParams;
+  return {
+    title: { absolute: defaultTitle },
+    description: defaultDescription,
+    alternates: { canonical: '/' },
+    ...(isEmbedView(params?.embed) ? { robots: { index: false, follow: true, googleBot: { index: false, follow: true } } } : {}),
+  };
+}
 
 function parseDateOnly(value: string) {
   const [year, month, day] = value.slice(0, 10).split("-").map(Number);
@@ -64,15 +68,13 @@ export default async function Home({ searchParams }: HomePageProps) {
     getHospitals(),
     getHospitalUpdates(30),
   ]);
-  const embedValue = params?.embed;
-  const embed = Array.isArray(embedValue)
-    ? embedValue.includes('1') || embedValue.includes('true')
-    : embedValue === '1' || embedValue === 'true';
+  const embed = isEmbedView(params?.embed);
+  const initialFilters = readHospitalFilters(params);
   const cities = Array.from(new Set(hospitals.map((hospital) => hospital.city).filter(Boolean)));
   const pets = Array.from(
     new Set(hospitals.flatMap((hospital) => [...(hospital.pet_category_group || []), ...(hospital.pets || [])])),
   );
-  const initialHospitals = summarizeHospitals(hospitals);
+  const initialHospitals = summarizeHospitals(filterHospitals(hospitals, initialFilters));
   const updateHospitalIds = new Set(updates.map((update) => update.hospitalId));
   const updateHospitals = summarizeHospitals(hospitals.filter((hospital) => updateHospitalIds.has(hospital.id)));
   const latestHospitalDataDate = getDisplayableHospitalDataDate(hospitals);
@@ -86,11 +88,6 @@ export default async function Home({ searchParams }: HomePageProps) {
         url: siteUrl,
         inLanguage: "zh-Hant-TW",
         description: defaultDescription,
-        potentialAction: {
-          "@type": "SearchAction",
-          target: `${siteUrl}/?city={city}&pet={pet}`,
-          "query-input": ["name=city", "name=pet"],
-        },
       },
       {
         "@type": "WebApplication",
@@ -126,10 +123,12 @@ export default async function Home({ searchParams }: HomePageProps) {
       {!embed && (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+          dangerouslySetInnerHTML={{ __html: serializeJsonLd(structuredData) }}
         />
       )}
       <HomeClient
+        key={JSON.stringify(initialFilters)}
+        initialFilters={initialFilters}
         embed={embed}
         initialHospitals={initialHospitals}
         initialUpdates={updates}

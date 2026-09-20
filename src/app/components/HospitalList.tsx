@@ -1,6 +1,7 @@
 import React from "react";
 import type { HospitalSummary } from '@/types/hospitalPublic';
-import { SearchXIcon } from 'lucide-react';
+import { ChevronRightIcon, SearchXIcon } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 import { getPetIconDefinition } from '@/lib/petIcons';
 import PetIcon from './PetIcon';
 
@@ -8,27 +9,29 @@ interface HospitalListProps {
   hospitals: HospitalSummary[];
   onHospitalClick: (hospital: HospitalSummary) => void;
   loading?: boolean;
+  onReset?: () => void;
 }
 
-const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick, loading = false }) => {
+const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick, loading = false, onReset }) => {
   if (hospitals.length === 0) {
     return (
-      <section className="rounded-xl border border-sage-100 bg-card p-6 text-center">
+      <section aria-busy={loading} className="rounded-xl border border-border bg-card px-6 py-12 text-center">
         <div className="mx-auto mb-3 flex size-10 items-center justify-center rounded-lg bg-petal-100 text-rose-700">
           <SearchXIcon className="size-6" aria-hidden="true" />
         </div>
-        <h2 className="text-lg font-semibold text-forest-900">沒有符合條件的醫院</h2>
-        <p className="mt-2 text-sm leading-6 text-stone-600">可以放寬城市、寵物類別或營業條件後再試一次。</p>
+        <h2 className="text-lg font-semibold text-forest-900">{loading ? '正在搜尋醫院' : '沒有符合條件的醫院'}</h2>
+        <p className="mt-2 text-sm leading-7 text-muted-foreground">試著選擇鄰近縣市，或取消營業與掛號條件。</p>
+        {onReset && <Button className="mt-5 min-h-11" variant="outline" onClick={onReset} disabled={loading}>清除條件，查看全部醫院</Button>}
       </section>
     );
   }
 
   return (
-    <section aria-busy={loading} className="relative flex max-h-[520px] flex-col rounded-xl border border-sage-100 bg-card sm:max-h-[580px] lg:h-[640px] lg:max-h-none">
+    <section aria-busy={loading} className="relative flex max-h-[640px] flex-col overflow-hidden rounded-xl border border-border bg-card lg:h-[640px]">
       <div className="flex items-center justify-between border-b border-sage-100 px-4 py-3">
         <div>
           <h2 className="text-base font-semibold text-forest-900">醫院清單</h2>
-          <p className="text-xs font-medium text-stone-600">點擊卡片查看詳細資訊</p>
+          <p className="mt-1 text-sm text-muted-foreground">查看電話、門診與看診物種</p>
         </div>
         <span className="text-sm font-semibold tabular-nums text-forest-900">{hospitals.length} 間</span>
       </div>
@@ -48,12 +51,14 @@ const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick,
           <button
             type="button"
             key={hospital.id}
-            aria-label={`查看${hospital.name}詳情`}
             className="block w-full border-b border-sage-100 bg-card px-4 py-4 text-left transition-colors last:border-b-0 hover:bg-sage-50/70 focus-visible:relative focus-visible:z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-sage-500"
             onClick={() => onHospitalClick(hospital)}
           >
             <div className="min-w-0">
-              <h3 className="text-base font-semibold leading-6 text-forest-900">{hospital.name}</h3>
+              <div className="flex items-start justify-between gap-3">
+                <h3 className="text-base font-semibold leading-7 text-forest-900">{hospital.name}</h3>
+                <ChevronRightIcon className="mt-1 size-4 shrink-0 text-muted-foreground" aria-hidden="true" />
+              </div>
               <p className="mt-0.5 line-clamp-2 text-sm leading-6 text-stone-600">{locationLabel || "地區整理中"}</p>
             </div>
 

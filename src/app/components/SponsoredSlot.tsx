@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Script from 'next/script';
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
@@ -31,8 +32,8 @@ const slotByContext: Record<SponsoredSlotProps["context"], string | undefined> =
 };
 
 const adFallbackCopy = {
-  title: "這裡預留給精選內容與合作推薦",
-  description: "廣告或合作內容暫時未顯示",
+  title: "目前沒有贊助內容",
+  description: "贊助內容不影響醫院搜尋結果與排序。",
 };
 
 declare global {
@@ -44,13 +45,26 @@ declare global {
 export default function SponsoredSlot({ context, className }: SponsoredSlotProps) {
   const slotRef = useRef<HTMLDivElement>(null);
   const [showAdFallback, setShowAdFallback] = useState(false);
+  const [isNearViewport, setIsNearViewport] = useState(false);
   const copy = copyByContext[context];
   const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
   const adsenseSlot = slotByContext[context];
   const isAdsenseReady = Boolean(adsenseClient && adsenseSlot);
 
   useEffect(() => {
-    if (!isAdsenseReady) {
+    if (!isAdsenseReady || !slotRef.current) return;
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsNearViewport(true);
+        observer.disconnect();
+      }
+    }, { rootMargin: '200px' });
+    observer.observe(slotRef.current);
+    return () => observer.disconnect();
+  }, [isAdsenseReady]);
+
+  useEffect(() => {
+    if (!isAdsenseReady || !isNearViewport) {
       setShowAdFallback(false);
       return;
     }
@@ -103,7 +117,7 @@ export default function SponsoredSlot({ context, className }: SponsoredSlotProps
       window.clearTimeout(fallbackTimer);
       observer.disconnect();
     };
-  }, [isAdsenseReady, adsenseSlot]);
+  }, [isAdsenseReady, isNearViewport, adsenseSlot]);
 
   if (!isAdsenseReady) {
     return null;
@@ -115,14 +129,20 @@ export default function SponsoredSlot({ context, className }: SponsoredSlotProps
         "min-h-[120px] rounded-xl border border-honey-200 bg-accent/35 px-4 py-3 text-sm text-accent-foreground",
         className,
       )}
-      aria-label="廣告"
+      aria-label="贊助資訊"
     >
       <div ref={slotRef}>
+        {isNearViewport && <Script
+          id="adsense-script"
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}`}
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />}
         <div className="mb-2 flex items-center justify-between gap-3">
           <Badge variant="outline" className="rounded-md border-honey-200 bg-white/70 text-clay-700">
-            廣告
+            贊助資訊
           </Badge>
-          <span className="text-xs font-medium text-clay-700/80">{copy.title}</span>
+          <span className="text-xs font-medium text-clay-700">{copy.title}</span>
         </div>
         <ins
           key={`${adsenseClient}-${adsenseSlot}`}

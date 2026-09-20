@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
@@ -8,14 +8,15 @@ import { MenuIcon, XIcon } from "lucide-react";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const menuButton = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
   const isBlog = pathname?.startsWith("/blog");
 
   return (
-    <nav className="fixed inset-x-0 top-0 z-50 border-b border-sage-100 bg-background">
+    <nav aria-label="主要導覽" onKeyDown={(event) => { if (event.key === 'Escape' && mobileMenuOpen) { setMobileMenuOpen(false); menuButton.current?.focus(); } }} className="fixed inset-x-0 top-0 z-50 border-b border-sage-100 bg-background">
       <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="group flex items-center gap-3" aria-label="回到小獸所首頁">
-          <div className="flex size-9 flex-col items-center justify-center rounded-lg bg-primary text-[11px] font-bold leading-[0.95] text-primary-foreground">
+        <Link href="/" className="group flex min-h-11 items-center gap-3">
+          <div aria-hidden="true" className="flex size-9 flex-col items-center justify-center rounded-lg bg-primary text-[11px] font-bold leading-[0.95] text-primary-foreground">
             <span>特</span>
             <span>寵</span>
           </div>
@@ -57,19 +58,21 @@ export default function Navbar() {
         </div>
 
         <Button
+          ref={menuButton}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           variant="outline"
           size="icon-lg"
           className="rounded-lg md:hidden"
           aria-label={mobileMenuOpen ? "關閉選單" : "開啟選單"}
           aria-expanded={mobileMenuOpen}
+          aria-controls="mobile-navigation"
         >
           {mobileMenuOpen ? <XIcon /> : <MenuIcon />}
         </Button>
       </div>
 
       {mobileMenuOpen && (
-        <div className="border-t border-sage-100 bg-background px-4 py-3 md:hidden">
+        <div id="mobile-navigation" className="border-t border-sage-100 bg-background px-4 py-3 md:hidden">
           <div className="mx-auto grid max-w-7xl divide-y divide-sage-100">
             <Link
               href="/"

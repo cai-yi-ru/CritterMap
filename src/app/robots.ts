@@ -7,11 +7,9 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/?embed=1", "/?embed=true"],
       },
     ],
     sitemap: `${siteUrl}/sitemap.xml`,
     host: siteUrl,
   };
 }
-

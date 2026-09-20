@@ -13,6 +13,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import type { BlogPost, BlogPostMeta } from "@/lib/blog";
+import { blogImages } from '@/lib/blogImages';
 
 export function BlogHero({
   title,
@@ -34,9 +35,8 @@ export function BlogHero({
           <h1 className="max-w-3xl text-balance text-3xl font-extrabold leading-tight text-forest-900 sm:text-4xl">{title}</h1>
           <p className="mt-4 max-w-2xl text-sm leading-7 text-stone-700 sm:text-base">{description}</p>
           <div className="mt-5 flex flex-wrap items-center gap-2 text-xs font-semibold text-stone-600">
-            <span className="rounded-full bg-honey-100 px-3 py-1.5 text-clay-700">文章僅供照護參考</span>
             {typeof postCount === "number" && (
-              <span className="rounded-full bg-sage-100 px-3 py-1.5 text-forest-900">{postCount} 篇已整理文章</span>
+              <span className="text-sm text-muted-foreground">共 {postCount} 篇照護文章</span>
             )}
           </div>
         </div>
@@ -48,12 +48,12 @@ export function BlogHero({
               </div>
               <p className="mt-4 text-sm font-bold leading-7 text-forest-900">看診前仍請致電醫院確認。</p>
               <p className="mt-2 text-sm leading-7 text-stone-700">
-                特寵狀況變化快，文章可以協助整理線索，但不能取代獸醫師診斷。
+                需要找醫院時，可以依縣市和寵物類別查詢，再打電話確認看診時段。
               </p>
             </div>
             <Link
               href="/"
-              className="inline-flex w-fit items-center gap-2 rounded-lg border border-sage-200 bg-card px-3 py-2 text-sm font-bold text-forest-900 transition hover:bg-sage-100 focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
+              className="inline-flex min-h-11 w-fit items-center gap-2 rounded-lg border border-sage-200 bg-card px-3 py-2 text-sm font-bold text-forest-900 transition hover:bg-sage-100 focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
             >
               查詢特寵醫院
               <ArrowUpRightIcon className="size-4" aria-hidden="true" />
@@ -76,11 +76,12 @@ export function BlogPostCard({ post, featured = false }: { post: BlogPostMeta; f
       <div className={`relative bg-sage-50 ${featured ? "aspect-[16/10] md:aspect-auto md:min-h-[280px]" : "aspect-[16/9]"}`}>
         {post.coverImage ? (
           <Image
-            src={post.coverImage}
+            src={blogImages[post.coverImage] || post.coverImage}
             alt={post.coverAlt || post.title}
             fill
             className="object-cover"
-            sizes="(min-width: 1024px) 33vw, 100vw"
+            sizes={featured ? '(min-width: 1280px) 420px, (min-width: 768px) 40vw, 100vw' : '(min-width: 768px) 420px, 100vw'}
+            priority={featured}
           />
         ) : (
           <div className="flex h-full items-center justify-center text-sm font-bold text-sage-600">無封面圖片</div>
@@ -123,13 +124,17 @@ export function BlogPostCard({ post, featured = false }: { post: BlogPostMeta; f
   );
 }
 
-export function BlogImage({ src, alt, caption }: { src: string; alt: string; caption?: string }) {
+export function BlogImage({ src, alt, caption, priority = false }: { src: string; alt: string; caption?: string; priority?: boolean }) {
+  const image = blogImages[src];
   return (
     <figure className="my-8 overflow-hidden rounded-xl border border-sage-100 bg-white">
       <div className="bg-sage-50">
-        {/* Preserve article image proportions so portrait infographics are not cropped. */}
+        {image ? <Image src={image} alt={alt} className="blog-article-image h-auto w-full" sizes="(min-width: 1024px) 740px, 100vw" priority={priority} /> : (
+        <>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={src} alt={alt} className="blog-article-image h-auto w-full" loading="lazy" decoding="async" />
+        </>
+        )}
       </div>
       {caption && <figcaption className="border-t border-sage-100 px-4 py-3 text-sm leading-6 text-stone-600">{caption}</figcaption>}
     </figure>
@@ -167,15 +172,15 @@ export function BlogRenderer({ post }: { post: BlogPost }) {
 
   return (
     <div className="prose-critter">
-      {blocks.map((block, index) => renderBlock(block.trim(), index))}
+      {blocks.map((block, index) => renderBlock(block.trim(), index, post.coverImage))}
     </div>
   );
 }
 
-function renderBlock(block: string, index: number) {
+function renderBlock(block: string, index: number, coverImage?: string) {
   const image = parseComponent(block, "BlogImage");
   if (image) {
-    return <BlogImage key={index} src={image.src || ""} alt={image.alt || ""} caption={image.caption} />;
+    return <BlogImage key={index} src={image.src || ""} alt={image.alt || ""} caption={image.caption} priority={image.src === coverImage} />;
   }
 
   const infoCard = parseComponent(block, "InfoCard");
@@ -193,7 +198,7 @@ function renderBlock(block: string, index: number) {
   }
 
   if (block.startsWith("## ")) {
-    return <h2 key={index}>{renderInline(block.slice(3))}</h2>;
+    return <h2 key={index} id={`section-${index}`}>{renderInline(block.slice(3))}</h2>;
   }
 
   if (block.startsWith("> ")) {

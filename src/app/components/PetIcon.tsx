@@ -24,6 +24,7 @@ export default function PetIcon({ pet, size = "md", showLabel = false, className
         alt={showLabel ? "" : `${icon.label}圖示`}
         width={192}
         height={192}
+        sizes={size === 'sm' ? '20px' : size === 'lg' ? '40px' : '28px'}
         className={`${sizeClass[size]} shrink-0 object-contain`}
         loading="lazy"
         decoding="async"

@@ -158,6 +158,13 @@ export function getPostModifiedDate(post: BlogPost) {
   return post.updatedAt || post.date;
 }
 
+export function getPostHeadings(post: BlogPost) {
+  return post.content.split(/\n{2,}/).filter(Boolean).flatMap((block, index) => {
+    const heading = /^## (.+)$/.exec(block.trim());
+    return heading ? [{ id: `section-${index}`, title: heading[1].replace(/\*\*/g, '') }] : [];
+  });
+}
+
 export function getPostTextStats(post: BlogPost): BlogPostTextStats {
   const plainText = post.content
     .replace(/```[\s\S]*?```/g, " ")

@@ -1,15 +1,7 @@
 import type { Metadata } from "next";
-import Script from "next/script";
-import { Noto_Sans_TC } from "next/font/google";
 import "./globals.css";
 import Analytics from './components/Analytics';
 import { defaultDescription, defaultTitle, siteName, siteUrl } from "@/lib/seo";
-
-const notoSansTc = Noto_Sans_TC({
-  variable: "--font-noto-sans-tc",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -53,24 +45,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
-
   return (
-    <html lang="zh-Hant" className={notoSansTc.variable}>
+    <html lang="zh-Hant">
       <head>
         <Analytics />
-        {adsenseClient && (
-          <Script
-            async
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}`}
-            crossOrigin="anonymous"
-            strategy="afterInteractive"
-          />
-        )}
       </head>
       <body
         className="antialiased"
       >
+        <a href="#main-content" className="skip-link">跳到主要內容</a>
         {children}
       </body>
     </html>

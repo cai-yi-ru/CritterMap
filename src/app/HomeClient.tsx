@@ -1,61 +1,41 @@
 
 'use client';
 
-import { useCallback, useTransition, useState } from 'react';
+import { useCallback, useRef, useSyncExternalStore, useTransition, useState } from 'react';
 import dynamic from 'next/dynamic';
-import { ListIcon, MapIcon } from 'lucide-react';
+import { ListIcon, MapIcon, LoaderCircleIcon, CircleAlertIcon } from 'lucide-react';
 import Navbar from './components/Navbar';
 import FilterPanel from './components/FilterPanel';
 import HospitalList from './components/HospitalList';
-import HospitalModal from './components/HospitalModal';
 import HospitalUpdates from './components/HospitalUpdates';
-import HospitalUpdateSheet from './components/HospitalUpdateSheet';
 import Footer from './components/Footer';
 import DisclaimerSection from './components/DisclaimerSection';
 import SponsoredSlot from './components/SponsoredSlot';
-
+import { Button } from '@/components/ui/button';
 import { getHospitalDetail, searchHospitals } from './actions/hospitals';
+import { cityCenterMap, defaultHospitalFilters, updateFilterUrl, type HospitalFilters } from '@/lib/hospitalFilters';
 import type { Hospital, HospitalUpdate } from '@/types/hospital';
 import type { HospitalSummary } from '@/types/hospitalPublic';
+
+const HospitalModal = dynamic(() => import('./components/HospitalModal'));
+const HospitalUpdateSheet = dynamic(() => import('./components/HospitalUpdateSheet'));
+
+function subscribeToDesktop(callback: () => void) {
+  const query = window.matchMedia('(min-width: 1024px)');
+  query.addEventListener('change', callback);
+  return () => query.removeEventListener('change', callback);
+}
+const getDesktopSnapshot = () => window.matchMedia('(min-width: 1024px)').matches;
+const getServerSnapshot = () => false;
 
 const MapPanel = dynamic(() => import('./components/MapPanel'), {
   ssr: false,
   loading: () => (
-    <div className="grid h-[440px] place-items-center rounded-xl border border-sage-100 bg-card text-sm font-semibold text-stone-600 sm:h-[520px] lg:h-[640px]">
-      地圖載入中
+    <div role="status" className="grid h-[440px] place-items-center rounded-xl border border-border bg-muted text-sm font-medium text-muted-foreground sm:h-[520px] lg:h-[640px]">
+      地圖載入中，你可以先查看醫院清單。
     </div>
   ),
 });
-
-export const cityCenterMap: Record<string, [number, number]> = {
-    "基隆市": [25.1283, 121.7419],
-    "台北市": [25.0330, 121.5654],
-    "新北市": [25.0169, 121.4628],
-    "桃園市": [24.9937, 121.3000],
-    "新竹市": [24.8039, 120.9647],
-    "新竹縣": [24.7039, 121.1252],
-    "苗栗縣": [24.5602, 120.8214],
-    "台中市": [24.1477, 120.6736],
-    "彰化縣": [24.0685, 120.5571],
-    "南投縣": [23.9160835, 120.6821056],
-    "雲林縣": [23.7092, 120.4313],
-    "嘉義市": [23.4801, 120.4491],
-    "嘉義縣": [23.4589, 120.5740],
-    "台南市": [22.999150190097566, 120.21641191482486],
-    "高雄市": [22.6273, 120.3014],
-    "屏東縣": [22.6687, 120.5048],
-    "宜蘭縣": [24.7021, 121.7378],
-    "花蓮縣": [23.970339, 121.5964929],
-    "台東縣": [23.023905725774426, 121.17445934255785],
-    "澎湖縣": [23.5713, 119.5798],
-    "金門縣": [24.4321, 118.3171],
-    "連江縣": [26.1608, 119.9484],
-    "all": [23.7, 120.9]
-}
-
-const cityZoomMap: Record<string, number> = {
-  all: 7,
-};
 
 type HomeClientProps = {
   embed?: boolean;
@@ -64,210 +44,157 @@ type HomeClientProps = {
   initialUpdateHospitals?: HospitalSummary[];
   hospitalCount?: number;
   latestHospitalDataDate?: string | null;
+  initialFilters?: HospitalFilters;
 };
 
 export default function HomeClient({
-  embed = false,
-  initialHospitals = [],
-  initialUpdates = [],
-  initialUpdateHospitals = [],
-  hospitalCount = initialHospitals.length,
-  latestHospitalDataDate = null,
+  embed = false, initialHospitals = [], initialUpdates = [], initialUpdateHospitals = [],
+  hospitalCount = initialHospitals.length, latestHospitalDataDate = null,
+  initialFilters = defaultHospitalFilters,
 }: HomeClientProps) {
   const [isSearchPending, startSearchTransition] = useTransition();
-  const [, startDetailTransition] = useTransition();
-  const [filteredHospitals, setFilteredHospitals] = useState<HospitalSummary[]>(initialHospitals);
-  const hospitalUpdates = initialUpdates;
-  const [updateHospitals] = useState<HospitalSummary[]>(initialUpdateHospitals);
+  const [filteredHospitals, setFilteredHospitals] = useState(initialHospitals);
+  const [filters, setFilters] = useState(initialFilters);
+  const [appliedFilters, setAppliedFilters] = useState(initialFilters);
+  const [searchError, setSearchError] = useState(false);
+  const [detailError, setDetailError] = useState(false);
+  const [detailLoading, setDetailLoading] = useState(false);
   const [selectedHospital, setSelectedHospital] = useState<Hospital | null>(null);
   const [selectedUpdate, setSelectedUpdate] = useState<{ update: HospitalUpdate; hospital: Hospital } | null>(null);
-  const [city, setCity] = useState("all");
-  const [type, setType] = useState("all");
-  const [mapCenter, setMapCenter] = useState<[number, number]>(cityCenterMap['all']);
-  const [mapZoom, setMapZoom] = useState(7);
-  const [reservationRequiredOnly, setReservationRequiredOnly] = useState(false);
-  const [openNowOnly, setOpenNowOnly] = useState(false);
-  const [hasEmergencyServiceOnly, setHasEmergencyServiceOnly] = useState(false);
-  const [mobileView, setMobileView] = useState<'map' | 'list'>('map');
+  const [mobileView, setMobileView] = useState<'map' | 'list'>('list');
+  const isDesktop = useSyncExternalStore(subscribeToDesktop, getDesktopSnapshot, getServerSnapshot);
+  const searchRequest = useRef(0);
+  const detailRequest = useRef(0);
+  const lastDetail = useRef<{ hospital: HospitalSummary; update?: HospitalUpdate } | null>(null);
+  const hasUnappliedChanges = JSON.stringify(filters) !== JSON.stringify(appliedFilters);
 
-  const handleSearch = useCallback(() => {
-    const newCenter = cityCenterMap[city] || cityCenterMap['all'];
-    setMapCenter(newCenter);
-    setMapZoom(cityZoomMap[city] ?? 12);
+  const runSearch = useCallback((nextFilters: HospitalFilters) => {
+    const request = ++searchRequest.current;
+    setSearchError(false);
     startSearchTransition(async () => {
-      const filtered = await searchHospitals({
-        city,
-        petCategory: type,
-        reservationRequiredOnly,
-        openNowOnly,
-        hasEmergencyServiceOnly,
-      });
-      setFilteredHospitals(filtered);
+      try {
+        const results = await searchHospitals(nextFilters);
+        if (request !== searchRequest.current) return;
+        setFilteredHospitals(results);
+        setAppliedFilters(nextFilters);
+        updateFilterUrl(nextFilters);
+      } catch {
+        if (request === searchRequest.current) setSearchError(true);
+      }
     });
-  }, [city, hasEmergencyServiceOnly, openNowOnly, reservationRequiredOnly, startSearchTransition, type]);
+  }, []);
 
   const handleReset = useCallback(() => {
-    setCity('all');
-    setType('all');
-    setReservationRequiredOnly(false);
-    setOpenNowOnly(false);
-    setHasEmergencyServiceOnly(false);
-    setMapCenter(cityCenterMap.all);
-    setMapZoom(cityZoomMap.all);
+    setFilters(defaultHospitalFilters);
+    runSearch(defaultHospitalFilters);
+  }, [runSearch]);
 
-    startSearchTransition(async () => {
-      const filtered = await searchHospitals({
-        city: 'all',
-        petCategory: 'all',
-        reservationRequiredOnly: false,
-        openNowOnly: false,
-        hasEmergencyServiceOnly: false,
-      });
-      setFilteredHospitals(filtered);
-    });
-  }, [startSearchTransition]);
-
-  const handleHospitalClick = (hospital: HospitalSummary) => {
-    startDetailTransition(async () => {
+  const loadDetail = async (hospital: HospitalSummary, update?: HospitalUpdate) => {
+    const request = ++detailRequest.current;
+    lastDetail.current = { hospital, update };
+    setDetailError(false);
+    setDetailLoading(true);
+    try {
       const detail = await getHospitalDetail(hospital.id);
-      if (detail) {
-        setSelectedHospital(detail);
-      }
-    });
+      if (request !== detailRequest.current) return;
+      if (!detail) throw new Error('Hospital not found');
+      if (update) setSelectedUpdate({ update, hospital: detail });
+      else setSelectedHospital(detail);
+    } catch {
+      if (request === detailRequest.current) setDetailError(true);
+    } finally {
+      if (request === detailRequest.current) setDetailLoading(false);
+    }
   };
 
-  const handleUpdateClick = (update: HospitalUpdate, hospital: HospitalSummary) => {
-    startDetailTransition(async () => {
-      const detail = await getHospitalDetail(hospital.id);
-      if (detail) {
-        setSelectedUpdate({ update, hospital: detail });
-      }
-    });
-  };
+  const resultSummary = [
+    appliedFilters.city === 'all' ? '全台' : appliedFilters.city,
+    appliedFilters.petCategory === 'all' ? '所有寵物類別' : appliedFilters.petCategory,
+    appliedFilters.reservationRequiredOnly && '可現場掛號',
+    appliedFilters.openNowOnly && '目前營業中',
+    appliedFilters.hasEmergencyServiceOnly && '可詢問急診',
+  ].filter(Boolean).join(' · ');
 
-  const totalLabel = hospitalCount > 0 ? `${hospitalCount} 間` : '整理中';
-  const resultLabel = isSearchPending ? '搜尋中' : filteredHospitals.length > 0 ? `${filteredHospitals.length} 間符合` : '沒有符合結果';
   return (
-    <div className={`site-shell min-h-screen ${embed ? 'embed-shell' : ''}`}>
+    <div className={`site-shell min-h-dvh ${embed ? 'embed-shell' : ''}`}>
       {!embed && <Navbar />}
-      <main className={embed ? "mx-auto w-full max-w-6xl px-3 py-3 sm:px-5" : "mx-auto w-full max-w-7xl px-4 pb-12 pt-20 sm:px-6 lg:px-8"}>
-        <header className={embed ? "mb-3 border-b border-sage-200 pb-4" : "mb-4 border-b border-sage-200 pb-5 pt-1"}>
-          <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-            <div className="max-w-3xl">
-              <h1 className="text-balance text-2xl font-bold tracking-normal text-forest-900 sm:text-3xl">
-                特寵動物醫院地圖查詢
-              </h1>
-              <p className="mt-2 max-w-2xl text-sm leading-6 text-stone-600 sm:text-base">
-                依地區與寵物類別找醫院。門診與收案狀況可能臨時異動，出發前請先致電確認。
-              </p>
-            </div>
-            <dl className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-stone-600 sm:text-sm">
-              <div className="inline-flex items-baseline gap-1.5">
-                <dt>收錄</dt>
-                <dd className="font-semibold text-forest-900">{totalLabel}</dd>
-              </div>
-              <div className="inline-flex items-baseline gap-1.5 border-l border-sage-200 pl-3">
-                <dt>目前結果</dt>
-                <dd className="font-semibold text-forest-900" aria-live="polite">{resultLabel}</dd>
-              </div>
-              {latestHospitalDataDate && (
-                <>
-                  <div className="inline-flex items-baseline gap-1.5 border-l border-sage-200 pl-3">
-                    <dt>最近整理</dt>
-                    <dd>
-                      <time className="font-semibold text-forest-900" dateTime={latestHospitalDataDate}>
-                    {latestHospitalDataDate}
-                      </time>
-                    </dd>
-                  </div>
-                </>
-              )}
-            </dl>
+      <main id="main-content" tabIndex={-1} className={embed ? 'mx-auto w-full max-w-6xl px-3 py-3 sm:px-5' : 'mx-auto w-full max-w-7xl px-4 pb-12 pt-24 sm:px-6 lg:px-8'}>
+        <header className="mb-6">
+          <h1 className="text-2xl font-bold leading-tight text-foreground sm:text-3xl">全台特寵醫院地圖</h1>
+          <p className="mt-3 max-w-2xl text-sm leading-7 text-muted-foreground sm:text-base">
+            找到能看你家小獸的醫院。先選縣市與寵物，再確認門診和預約方式。
+          </p>
+          <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted-foreground">
+            <span>收錄 <strong className="font-semibold tabular-nums text-foreground">{hospitalCount}</strong> 間醫院</span>
+            {latestHospitalDataDate && <span>最近整理 <time dateTime={latestHospitalDataDate}>{latestHospitalDataDate}</time></span>}
           </div>
         </header>
-        
-        <FilterPanel
-          city={city}
-          petCategory={type}
-          reservationRequiredOnly={reservationRequiredOnly}
-          openNowOnly={openNowOnly}
-          hasEmergencyServiceOnly={hasEmergencyServiceOnly}
-          compact={embed}
-          onCityChange={setCity}
-          onPetCategoryChange={setType}
-          onReservationRequiredToggle={setReservationRequiredOnly}
-          onOpenNowToggle={setOpenNowOnly}
-          onHasEmergencyServiceToggle={setHasEmergencyServiceOnly}
-          onSearch={handleSearch}
-          onReset={handleReset}
-          isSearching={isSearchPending}
+
+        <FilterPanel {...filters} compact={embed}
+          onCityChange={(city) => setFilters((current) => ({ ...current, city }))}
+          onPetCategoryChange={(petCategory) => setFilters((current) => ({ ...current, petCategory }))}
+          onReservationRequiredToggle={(reservationRequiredOnly) => setFilters((current) => ({ ...current, reservationRequiredOnly }))}
+          onOpenNowToggle={(openNowOnly) => setFilters((current) => ({ ...current, openNowOnly }))}
+          onHasEmergencyServiceToggle={(hasEmergencyServiceOnly) => setFilters((current) => ({ ...current, hasEmergencyServiceOnly }))}
+          onSearch={() => runSearch(filters)} onReset={handleReset} isSearching={isSearchPending}
         />
 
-        {!embed && (
-          <div className="mb-3 grid grid-cols-2 border-b border-sage-200 lg:hidden" aria-label="切換地圖或清單">
-            <button
-              type="button"
-              aria-pressed={mobileView === 'map'}
-              className={`flex min-h-11 items-center justify-center gap-2 border-b-2 text-sm font-semibold transition-colors ${
-                mobileView === 'map' ? 'border-forest-800 text-forest-900' : 'border-transparent text-stone-600 hover:text-forest-900'
-              }`}
-              onClick={() => setMobileView('map')}
-            >
-              <MapIcon className="size-4" aria-hidden="true" />
-              地圖
-            </button>
-            <button
-              type="button"
-              aria-pressed={mobileView === 'list'}
-              className={`flex min-h-11 items-center justify-center gap-2 border-b-2 text-sm font-semibold transition-colors ${
-                mobileView === 'list' ? 'border-forest-800 text-forest-900' : 'border-transparent text-stone-600 hover:text-forest-900'
-              }`}
-              onClick={() => setMobileView('list')}
-            >
-              <ListIcon className="size-4" aria-hidden="true" />
-              清單 {filteredHospitals.length}
-            </button>
+        {searchError && (
+          <div role="alert" className="mb-4 flex flex-wrap items-center gap-3 rounded-lg border border-petal-200 bg-petal-100 p-4 text-sm text-rose-900">
+            <CircleAlertIcon className="size-5 shrink-0" aria-hidden="true" />
+            <p className="flex-1">暫時無法更新搜尋結果，目前保留上次的清單。請確認網路後再試一次。</p>
+            <Button variant="outline" onClick={() => runSearch(filters)} disabled={isSearchPending}>重新搜尋</Button>
           </div>
         )}
 
-        <div className={embed ? "grid grid-cols-1 gap-4" : "grid grid-cols-1 gap-4 lg:grid-cols-[minmax(320px,420px)_1fr]"}>
-          <aside className={embed ? "order-2" : `${mobileView === 'list' ? 'block' : 'hidden'} order-2 lg:order-1 lg:block`}>
-            <HospitalList hospitals={filteredHospitals} onHospitalClick={handleHospitalClick} loading={isSearchPending} />
-          </aside>
-          <div className={embed ? "order-1" : `${mobileView === 'map' ? 'block' : 'hidden'} order-1 lg:order-2 lg:block`}>
-            <MapPanel hospitals={filteredHospitals} center={mapCenter} zoom={mapZoom} onHospitalClick={handleHospitalClick} embed={embed} loading={isSearchPending} />
+        <div className="mb-3 flex flex-wrap items-center justify-between gap-2 text-sm">
+          <p role="status" className="text-muted-foreground">
+            {isSearchPending ? '正在更新醫院清單…' : <><strong className="font-semibold tabular-nums text-foreground">{filteredHospitals.length} 間醫院</strong><span className="mx-2" aria-hidden="true">/</span>{resultSummary}</>}
+          </p>
+          {hasUnappliedChanges && !isSearchPending && <p className="text-clay-700">條件已變更，按「搜尋醫院」更新結果</p>}
+        </div>
+
+        {!embed && (
+          <div className="mb-4 flex rounded-lg bg-secondary p-1 lg:hidden" role="group" aria-label="檢視方式">
+            {(['list', 'map'] as const).map((view) => (
+              <button key={view} type="button" aria-pressed={mobileView === view}
+                aria-controls={view === 'list' ? 'hospital-list' : 'hospital-map'}
+                className={`flex min-h-11 flex-1 items-center justify-center gap-2 rounded-md text-sm font-semibold transition-colors ${mobileView === view ? 'bg-primary text-primary-foreground' : 'text-secondary-foreground hover:bg-sage-200'}`}
+                onClick={() => setMobileView(view)}>
+                {view === 'list' ? <ListIcon className="size-4" aria-hidden="true" /> : <MapIcon className="size-4" aria-hidden="true" />}
+                {view === 'list' ? '醫院清單' : '地圖位置'}
+              </button>
+            ))}
+          </div>
+        )}
+
+        <div className={embed ? 'grid grid-cols-1 gap-4' : 'grid grid-cols-1 gap-4 lg:grid-cols-[minmax(320px,400px)_minmax(0,1fr)]'}>
+          <div id="hospital-list" className={embed ? 'order-2' : `${mobileView === 'list' ? 'block' : 'hidden'} min-w-0 lg:block`}>
+            <HospitalList hospitals={filteredHospitals} onHospitalClick={(hospital) => void loadDetail(hospital)} loading={isSearchPending} onReset={handleReset} />
+          </div>
+          <div id="hospital-map" className={embed ? 'order-1' : `${mobileView === 'map' ? 'block' : 'hidden'} min-w-0 lg:block`}>
+            {(isDesktop || embed || mobileView === 'map') && <MapPanel hospitals={filteredHospitals} center={cityCenterMap[appliedFilters.city]} zoom={appliedFilters.city === 'all' ? 7 : 12} onHospitalClick={(hospital) => void loadDetail(hospital)} embed={embed} loading={isSearchPending} />}
           </div>
         </div>
 
         {!embed && <SponsoredSlot context="home" className="mt-5" />}
-        <HospitalUpdates
-          updates={hospitalUpdates}
-          hospitals={updateHospitals}
-          onUpdateClick={handleUpdateClick}
-        />
-        {embed && (
-          <div className="mt-5">
-            <DisclaimerSection />
-          </div>
-        )}
+        <HospitalUpdates updates={initialUpdates} hospitals={initialUpdateHospitals} onUpdateClick={(update, hospital) => void loadDetail(hospital, update)} />
+        {embed && <DisclaimerSection />}
       </main>
 
-      <HospitalUpdateSheet
-        update={selectedUpdate?.update || null}
-        hospital={selectedUpdate?.hospital || null}
-        open={Boolean(selectedUpdate)}
-        onOpenChange={(open) => {
-          if (!open) setSelectedUpdate(null);
-        }}
-        onViewHospitalDetail={(hospital) => {
-          setSelectedUpdate(null);
-          setSelectedHospital(hospital);
-        }}
-      />
-
-      {selectedHospital && (
-        <HospitalModal hospital={selectedHospital} onClose={() => setSelectedHospital(null)} />
+      {(detailLoading || detailError) && (
+        <div className="fixed inset-x-4 bottom-5 z-50 mx-auto flex max-w-lg items-center gap-3 rounded-xl border border-border bg-card p-4 text-sm text-foreground">
+          {detailLoading ? <><LoaderCircleIcon className="size-5 shrink-0 animate-spin" aria-hidden="true" /><p role="status">正在開啟醫院資訊…</p></> : <>
+            <p role="alert" className="flex-1">醫院資訊暫時無法開啟，請再試一次。</p>
+            <Button variant="outline" onClick={() => { const last = lastDetail.current; if (last) void loadDetail(last.hospital, last.update); }}>重試</Button>
+            <Button variant="ghost" onClick={() => setDetailError(false)}>關閉</Button>
+          </>}
+        </div>
       )}
+      {selectedUpdate && <HospitalUpdateSheet update={selectedUpdate.update} hospital={selectedUpdate.hospital}
+        open={Boolean(selectedUpdate)} onOpenChange={(open) => { if (!open) setSelectedUpdate(null); }}
+        onViewHospitalDetail={(hospital) => { setSelectedUpdate(null); setSelectedHospital(hospital); }} />}
+      {selectedHospital && <HospitalModal hospital={selectedHospital} onClose={() => setSelectedHospital(null)} />}
       {!embed && <DisclaimerSection />}
       {!embed && <Footer />}
     </div>

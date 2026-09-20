@@ -6,15 +6,16 @@ import Footer from "../components/Footer";
 import SponsoredSlot from "../components/SponsoredSlot";
 import { BlogHero, BlogPostCard } from "./components";
 import { getFilteredPosts, getPetCategories, getPostModifiedDate, getTopicTags } from "@/lib/blog";
-import { absoluteUrl, siteName } from "@/lib/seo";
+import { absoluteUrl, blogDescription, serializeJsonLd, siteName } from "@/lib/seo";
 
 type BlogPageProps = {
   searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
 export const metadata = {
-  title: "照護文章",
-  description: "小獸所整理的特寵照護、看診準備與醫療資訊文章。",
+  title: "特寵照護文章與看診準備",
+  description: blogDescription,
+  twitter: { card: 'summary' as const, title: '特寵照護文章與看診準備｜小獸所', description: blogDescription },
   alternates: {
     canonical: "/blog",
   },
@@ -22,8 +23,9 @@ export const metadata = {
     type: "website",
     url: absoluteUrl("/blog"),
     siteName,
-    title: "照護文章｜小獸所",
-    description: "小獸所整理的特寵照護、看診準備與醫療資訊文章。",
+    title: "特寵照護文章與看診準備｜小獸所",
+    description: blogDescription,
+    locale: 'zh_TW',
   },
 };
 
@@ -59,13 +61,13 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
     <div className="min-h-screen">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(structuredData) }}
       />
       <Navbar />
-      <main className="mx-auto max-w-7xl px-4 pb-14 pt-24 sm:px-6 lg:px-8">
+      <main id="main-content" tabIndex={-1} className="mx-auto max-w-7xl px-4 pb-14 pt-24 sm:px-6 lg:px-8">
         <BlogHero
           title="照護文章"
-          description="把看診前準備、日常觀察和特寵照護觀念整理成容易保存的筆記。文章僅供參考，不取代獸醫師診斷。"
+          description="住得舒不舒服、行為有沒有改變，從每天看得到的小事認識你的小獸。這裡整理日常照護與看診準備，供飼主參考，不取代獸醫師診斷。"
           postCount={posts.length}
         />
 
@@ -101,12 +103,12 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
             <div className="flex flex-col gap-2 border-b border-sage-100 pb-4 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <p className="text-base font-extrabold text-forest-900">{activeFilterLabel}</p>
-                <p className="mt-1 text-sm leading-6 text-stone-600">依更新日期排序，優先顯示最近整理的照護內容。</p>
+                <p className="mt-1 text-sm leading-6 text-stone-600">依發布日期排列，從最近的文章開始讀。</p>
               </div>
               {(petCategory || topicTag) && (
                 <Link
                   href="/blog"
-                  className="inline-flex w-fit rounded-lg border border-sage-100 bg-card px-3 py-2 text-sm font-bold text-forest-900 transition hover:bg-sage-50 focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
+                  className="inline-flex min-h-11 w-fit items-center rounded-lg border border-sage-100 bg-card px-3 py-2 text-sm font-bold text-forest-900 transition hover:bg-sage-50 focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
                 >
                   清除篩選
                 </Link>
@@ -162,7 +164,8 @@ function FilterLink({ href, active, children }: { href: string; active?: boolean
   return (
     <Link
       href={href}
-      className={`inline-flex min-h-8 items-center rounded-lg border px-3 py-1.5 text-xs font-bold transition focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50 lg:w-full ${
+      aria-current={active ? 'page' : undefined}
+      className={`inline-flex min-h-11 items-center rounded-lg border px-3 py-2 text-sm font-medium transition focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50 lg:w-full ${
         active ? "border-forest-800 bg-forest-800 text-white" : "border-sage-100 bg-sage-50 text-forest-900 hover:bg-sage-100"
       }`}
     >

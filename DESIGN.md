@@ -16,7 +16,7 @@
 
 ## Typography
 
-使用 Noto Sans TC 一套字體。產品 UI 使用固定 rem 尺度，不使用大型流動標題。標題重在清楚與掃描性，文章內文行長控制在 65 到 75 字元。
+優先使用裝置已安裝的 Noto Sans TC，依序退回 PingFang TC、Microsoft JhengHei 與系統無襯線字體，不下載網頁字體，避免手機慢速網路等待中文字體。產品 UI 使用固定 rem 尺度，不使用大型流動標題。標題重在清楚與掃描性，文章內文行長控制在 65 到 75 字元。
 
 ## Shape And Elevation
 

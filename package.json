@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint src",
+    "check:site": "node scripts/validateSite.mjs",
     "prune:hospital-updates": "node scripts/pruneHospitalUpdates.cjs",
     "prune:hospital-updates:write": "node scripts/pruneHospitalUpdates.cjs --write"
   },

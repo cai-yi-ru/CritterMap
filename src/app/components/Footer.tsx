@@ -16,12 +16,12 @@ export default function Footer() {
                         </div>
                     </div>
                     <p className="mt-4 max-w-xl text-sm leading-7 text-stone-600">
-                        我們整理全台特寵友善醫療資訊，幫助飼主更快找到可詢問的醫療資源。資料仍可能異動，出發前請以醫院公告與電話確認為準。
+                        找醫院、查門診，也讀一點日常照護。小獸所整理全台特寵醫院資訊；看診物種與時段，請再向醫院確認。
                     </p>
                 </div>
                 <div className="flex flex-col gap-3 text-sm font-semibold text-stone-600 md:items-end">
-                    <Link href="/" className="hover:text-forest-900">找醫院</Link>
-                    <Link href="/blog" className="hover:text-forest-900">照護文章</Link>
+                    <Link href="/" className="inline-flex min-h-11 items-center hover:text-forest-900">查詢特寵醫院</Link>
+                    <Link href="/blog" className="inline-flex min-h-11 items-center hover:text-forest-900">閱讀照護文章</Link>
                     <p className="pt-2 text-xs font-medium text-stone-500">© 2026 小獸所. 版權所有.</p>
                 </div>
             </div>

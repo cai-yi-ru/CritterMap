@@ -45,7 +45,7 @@ function MapUpdater({ center, zoom }: MapUpdaterProps) {
   const map = useMap();
 
   useEffect(() => {
-    map.setView(center, zoom, { animate: true });
+    map.setView(center, zoom, { animate: !window.matchMedia('(prefers-reduced-motion: reduce)').matches });
   }, [center, map, zoom]);
 
   return null;
@@ -95,7 +95,7 @@ export default function MapPanel({
       <MapContainer
         center={center}
         zoom={zoom}
-        scrollWheelZoom
+        scrollWheelZoom={false}
         className="min-h-0 w-full flex-1"
       >
         <MapUpdater center={center} zoom={zoom} />
