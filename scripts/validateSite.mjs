@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 
 const base = process.argv[2] || 'http://127.0.0.1:3000';
-const site = 'https://critter-map.vercel.app';
+const site = 'https://paw-map.vercel.app';
 let checks = 0;
 
 async function page(path) {

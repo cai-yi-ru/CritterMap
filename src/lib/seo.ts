@@ -1,4 +1,4 @@
-export const siteUrl = "https://critter-map.vercel.app";
+export const siteUrl = "https://paw-map.vercel.app";
 export const siteName = "小獸所";
 export const defaultTitle = "全台特寵醫院地圖｜兔、倉鼠、鳥類與爬蟲看診查詢｜小獸所";
 export const defaultDescription = "依縣市與寵物類別查詢全台特寵動物醫院，比較門診、預約與急診聯絡資訊，查看醫院公告及照護文章。出發前請先致電確認看診物種與時段。";
