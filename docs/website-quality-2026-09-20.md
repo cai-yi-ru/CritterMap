@@ -51,6 +51,7 @@ Next.js 已能提供伺服器 HTML、靜態文章與按需載入的互動元件�
 
 - 補完整首頁、文章列表與文章的標題、摘要、canonical、Open Graph／Twitter 資訊。
 - 文章加入 BreadcrumbList、內部延伸閱讀與對應標題的目錄錨點；JSON-LD 統一安全序列化。
+- 讀取文章時統一換行格式，確保 Git 版本中的 Windows 換行不會影響段落與目錄解析。
 - 移除不正確的 SearchAction。網址支援縣市、物種及掛號／營業／急診條件，重新開啟分享網址可還原搜尋。
 - 嵌入模式回傳 `noindex, follow`，robots.txt 允許爬取，讓搜尋引擎讀到 noindex。[Google robots meta tag](https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag)。
 - sitemap 使用實際資料修改日期，文章列表取所有文章的最新修改日，不使用請求當下時間。[Google sitemap 更新時間建議](https://developers.google.com/search/blog/2014/10/best-practices-for-xml-sitemaps-rssatom)。

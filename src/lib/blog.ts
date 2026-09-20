@@ -89,7 +89,7 @@ function parseFrontmatter(source: string): BlogPost {
 
   return {
     ...(meta as BlogPostMeta),
-    content: content.trim(),
+    content: content.replace(/\r\n?/g, "\n").trim(),
   };
 }
 

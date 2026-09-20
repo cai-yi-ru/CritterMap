@@ -37,7 +37,8 @@ const invalid = await page('/?pet=unknown&city=unknown');
 expect(invalid.includes('所有寵物類別'), 'Invalid pet falls back to all');
 const filtered = await page(`/?city=${encodeURIComponent('臺北市')}&pet=${encodeURIComponent('倉鼠')}`);
 expect(filtered.includes('台北市 · 鼠'), 'Shared URL applies aliases on the server');
-expect(!filtered.includes('查看樂蹦動物醫院詳情'), 'Shared URL excludes other cities');
+const hospitalList = filtered.match(/<div id="hospital-list"[^>]*>([\s\S]*?)<div id="hospital-map"/);
+expect(Boolean(hospitalList) && !hospitalList[1].includes('樂蹦動物醫院'), 'Shared URL excludes other cities from the hospital list');
 
 const listing = await page('/blog');
 expect(listing.includes(`rel="canonical" href="${site}/blog"`), 'Blog canonical');
@@ -50,7 +51,7 @@ for (const slug of ['hamster-bar-biting', 'hamster-summer-cooling']) {
   expect(data.some((item) => item['@type'] === 'Article'), 'Article JSON-LD');
   expect(data.some((item) => item['@type'] === 'BreadcrumbList'), 'Breadcrumb JSON-LD');
   const anchors = [...article.matchAll(/href="#(section-\d+)"/g)].map((match) => match[1]);
-  expect(anchors.length > 0 && anchors.every((id) => article.includes(`id="${id}"`)), 'Every TOC anchor resolves');
+  expect(anchors.length > 0 && anchors.every((id) => article.includes(`id="${id}"`)), `${slug}: every TOC anchor resolves`);
   const images = [...article.matchAll(/<img\b[^>]*>/g)].map((match) => match[0]);
   expect(images.every((img) => /width="\d+"/.test(img) && /height="\d+"/.test(img)), 'Article images reserve dimensions');
   expect(!article.includes('DEV：約'), 'No development copy in production');
