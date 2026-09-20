@@ -1,8 +1,8 @@
-import React from "react";
+import { useEffect, useRef, useState } from "react";
 import type { HospitalSummary } from '@/types/hospitalPublic';
 import { ChevronRightIcon, SearchXIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { getPetIconDefinition } from '@/lib/petIcons';
+import { getHospitalPetPreview } from '@/lib/hospitalPetPreview';
 import PetIcon from './PetIcon';
 
 interface HospitalListProps {
@@ -10,9 +10,25 @@ interface HospitalListProps {
   onHospitalClick: (hospital: HospitalSummary) => void;
   loading?: boolean;
   onReset?: () => void;
+  selectedPet?: string;
+  paginate?: boolean;
 }
 
-const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick, loading = false, onReset }) => {
+const PAGE_SIZE = 10;
+
+export default function HospitalList({ hospitals, onHospitalClick, loading = false, onReset, selectedPet = 'all', paginate = true }: HospitalListProps) {
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+  const nextFocusIndex = useRef<number | null>(null);
+  const firstNewCard = useRef<HTMLButtonElement | null>(null);
+  const visibleHospitals = paginate ? hospitals.slice(0, visibleCount) : hospitals;
+
+  useEffect(() => {
+    if (nextFocusIndex.current !== null) {
+      firstNewCard.current?.focus();
+      nextFocusIndex.current = null;
+    }
+  }, [visibleCount]);
+
   if (hospitals.length === 0) {
     return (
       <section aria-busy={loading} className="rounded-xl border border-border bg-card px-6 py-12 text-center">
@@ -27,7 +43,7 @@ const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick,
   }
 
   return (
-    <section aria-busy={loading} className="relative flex max-h-[640px] flex-col overflow-hidden rounded-xl border border-border bg-card lg:h-[640px]">
+    <section aria-busy={loading} aria-label="醫院清單" className="relative flex flex-col rounded-xl border border-border bg-card lg:h-[640px] lg:overflow-hidden">
       <div className="flex items-center justify-between border-b border-sage-100 px-4 py-3">
         <div>
           <h2 className="text-base font-semibold text-forest-900">醫院清單</h2>
@@ -35,15 +51,9 @@ const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick,
         </div>
         <span className="text-sm font-semibold tabular-nums text-forest-900">{hospitals.length} 間</span>
       </div>
-      <div className={`hide-scrollbar min-h-0 flex-1 overflow-y-auto transition-opacity ${loading ? 'opacity-50' : ''}`}>
-      {hospitals.map((hospital) => {
-        const visiblePets = hospital.pets || [];
-        const uniquePets = Array.from(
-          new Map(visiblePets.map((pet) => {
-            const definition = getPetIconDefinition(pet);
-            return [definition.key, definition];
-          })).values(),
-        ).slice(0, 3);
+      <div className={`min-h-0 flex-1 rounded-b-xl lg:overflow-y-auto transition-opacity ${loading ? 'opacity-50' : ''}`}>
+      {visibleHospitals.map((hospital, index) => {
+        const petPreview = getHospitalPetPreview(hospital.pets || [], selectedPet);
         const locationLabel = [hospital.city, hospital.district].filter(Boolean).join(" ");
         const reservationTone = hospital.reservationTone;
 
@@ -51,7 +61,9 @@ const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick,
           <button
             type="button"
             key={hospital.id}
-            className="block w-full border-b border-sage-100 bg-card px-4 py-4 text-left transition-colors last:border-b-0 hover:bg-sage-50/70 focus-visible:relative focus-visible:z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-sage-500"
+            ref={(element) => { if (index === nextFocusIndex.current) firstNewCard.current = element; }}
+            className="block w-full scroll-mt-20 border-b border-sage-100 px-4 py-4 text-left transition-colors last:rounded-b-xl last:border-b-0 hover:bg-sage-50/70 focus-visible:relative focus-visible:z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-sage-500"
+            disabled={loading}
             onClick={() => onHospitalClick(hospital)}
           >
             <div className="min-w-0">
@@ -85,20 +97,21 @@ const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick,
             </div>
 
             <div className="mt-3 flex flex-wrap items-center justify-between gap-x-4 gap-y-2 border-t border-sage-100 pt-3">
-              <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-stone-600">
-                {uniquePets.length > 0 ? (
-                  uniquePets.map((pet) => (
-                    <span key={pet.key} className="inline-flex items-center gap-1">
-                      <PetIcon pet={pet.label} size="sm" />
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-stone-600">
+                {petPreview.visible.length > 0 ? (
+                  petPreview.visible.map((pet) => (
+                    <span key={pet.key} className={`inline-flex items-center gap-1 ${pet.key === petPreview.selectedKey ? 'rounded-md bg-secondary px-1.5 py-0.5 font-semibold text-foreground' : ''}`}>
+                      <PetIcon pet={pet.label} size="sm" decorative />
                       <span>{pet.label}</span>
                     </span>
                   ))
                 ) : (
                   <span className="inline-flex items-center gap-1">
-                    <PetIcon pet="其他特寵" size="sm" />
+                    <PetIcon pet="其他特寵" size="sm" decorative />
                     <span>其他特寵</span>
                   </span>
                 )}
+                {petPreview.remaining > 0 && <span className="text-xs text-muted-foreground">＋{petPreview.remaining} 種<span className="sr-only">，開啟醫院詳情查看</span></span>}
               </div>
               {hospital.googleRating && (
                 <span className="text-xs text-stone-500">
@@ -111,6 +124,12 @@ const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick,
         );
       })}
       </div>
+      {paginate && hospitals.length > PAGE_SIZE && (
+        <div className="rounded-b-xl border-t border-border px-4 py-4 text-center">
+          <p role="status" className="text-xs text-muted-foreground">已顯示 {visibleHospitals.length} / {hospitals.length} 間醫院</p>
+          {visibleCount < hospitals.length && <Button type="button" variant="outline" disabled={loading} className="mt-3 min-h-11 w-full" onClick={() => { nextFocusIndex.current = visibleCount; setVisibleCount((count) => count + PAGE_SIZE); }}>再顯示 {Math.min(PAGE_SIZE, hospitals.length - visibleCount)} 間醫院</Button>}
+        </div>
+      )}
       {loading && (
         <div className="pointer-events-none absolute inset-0 grid place-items-center rounded-xl bg-white/75" aria-hidden="true">
           <span className="rounded-lg bg-forest-900 px-4 py-2 text-sm font-semibold text-white">正在更新結果</span>
@@ -118,6 +137,4 @@ const HospitalList: React.FC<HospitalListProps> = ({ hospitals, onHospitalClick,
       )}
     </section>
   );
-};
-
-export default HospitalList;
+}

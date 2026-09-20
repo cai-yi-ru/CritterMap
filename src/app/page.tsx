@@ -1,5 +1,6 @@
 
 import HomeClient from './HomeClient';
+import HospitalDiscovery from './components/HospitalDiscovery';
 import type { Metadata } from 'next';
 import { getHospitals } from "@/lib/getHospitals";
 import { getHospitalUpdates } from "@/lib/getHospitalUpdates";
@@ -7,6 +8,7 @@ import { filterHospitals, summarizeHospitals } from "@/lib/hospitalSearch";
 import { isEmbedView, readHospitalFilters } from "@/lib/hospitalFilters";
 import { defaultDescription, defaultTitle, serializeJsonLd, siteName, siteUrl } from "@/lib/seo";
 import type { Hospital } from "@/types/hospital";
+import { getCityDirectories } from '@/lib/hospitalDirectory';
 
 type HomePageProps = {
   searchParams?: Promise<Record<string, string | string[] | undefined>>;
@@ -14,10 +16,19 @@ type HomePageProps = {
 
 export async function generateMetadata({ searchParams }: HomePageProps): Promise<Metadata> {
   const params = await searchParams;
+  const filters = readHospitalFilters(params);
+  const city = getCityDirectories(await getHospitals()).find((entry) => entry.name === filters.city);
+  const isSimpleFilter = filters.petCategory === 'all' && !filters.openNowOnly && !filters.reservationRequiredOnly;
+  let canonical = '/';
+  if (isSimpleFilter) {
+    if (filters.hasEmergencyServiceOnly && filters.city === 'all') canonical = '/emergency';
+    else if (filters.hasEmergencyServiceOnly && city?.slug === 'taipei') canonical = '/emergency/taipei';
+    else if (!filters.hasEmergencyServiceOnly && city) canonical = `/hospitals/${city.slug}`;
+  }
   return {
     title: { absolute: defaultTitle },
     description: defaultDescription,
-    alternates: { canonical: '/' },
+    alternates: { canonical: isEmbedView(params?.embed) ? '/' : canonical },
     ...(isEmbedView(params?.embed) ? { robots: { index: false, follow: true, googleBot: { index: false, follow: true } } } : {}),
   };
 }
@@ -135,6 +146,7 @@ export default async function Home({ searchParams }: HomePageProps) {
         initialUpdateHospitals={updateHospitals}
         hospitalCount={hospitals.length}
         latestHospitalDataDate={latestHospitalDataDate}
+        discoveryContent={!embed ? <HospitalDiscovery hospitals={hospitals} /> : undefined}
       />
     </>
   );

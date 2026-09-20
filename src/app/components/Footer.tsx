@@ -21,6 +21,8 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-col gap-3 text-sm font-semibold text-stone-600 md:items-end">
                     <Link href="/" className="inline-flex min-h-11 items-center hover:text-forest-900">查詢特寵醫院</Link>
+                    <Link href="/hospitals" className="inline-flex min-h-11 items-center hover:text-forest-900">各縣市特寵醫院名單</Link>
+                    <Link href="/emergency" className="inline-flex min-h-11 items-center hover:text-forest-900">特寵急診聯絡</Link>
                     <Link href="/blog" className="inline-flex min-h-11 items-center hover:text-forest-900">閱讀照護文章</Link>
                     <p className="pt-2 text-xs font-medium text-stone-500">© 2026 小獸所. 版權所有.</p>
                 </div>

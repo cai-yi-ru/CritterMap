@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { getAllPosts, getPostModifiedDate } from "@/lib/blog";
 import { getHospitals } from "@/lib/getHospitals";
 import { absoluteUrl, latestDate } from "@/lib/seo";
+import { getCityDirectories, getHospitalDataDate } from '@/lib/hospitalDirectory';
 
 export const revalidate = 300;
 
@@ -14,6 +15,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     hospital.updatedAt, hospital.last_checked, hospital.google?.verifiedAt,
   ]));
   const latestPostUpdate = latestDate(posts.map(getPostModifiedDate));
+  const emergencyHospitals = hospitals.filter((hospital) => hospital.hasEmergencyService === true);
 
   return [
     {
@@ -21,6 +23,30 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: latestHospitalCheck,
       changeFrequency: "daily",
       priority: 1,
+    },
+    {
+      url: absoluteUrl('/hospitals'),
+      lastModified: getHospitalDataDate(hospitals),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    ...getCityDirectories(hospitals).map((city) => ({
+      url: absoluteUrl(`/hospitals/${city.slug}`),
+      lastModified: getHospitalDataDate(city.hospitals),
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    })),
+    {
+      url: absoluteUrl('/emergency'),
+      lastModified: getHospitalDataDate(emergencyHospitals),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: absoluteUrl('/emergency/taipei'),
+      lastModified: getHospitalDataDate(emergencyHospitals.filter((hospital) => hospital.city === '台北市')),
+      changeFrequency: 'weekly',
+      priority: 0.7,
     },
     {
       url: absoluteUrl("/blog"),

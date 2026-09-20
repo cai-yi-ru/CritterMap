@@ -55,7 +55,7 @@ export function summarizeHospital(hospital: Hospital): HospitalSummary {
     district: hospital.district,
     lat: hospital.lat,
     lng: hospital.lng,
-    pets: (hospital.pets || []).slice(0, 4),
+    pets: Array.from(new Set([...(hospital.pets || []), ...(hospital.pet_category_group || [])].map(getCanonicalPetCategory))),
     displayTags: getHospitalDisplayTags(hospital),
     reservationLabel: getHospitalReservationLabel(hospital),
     reservationTone: getHospitalReservationTone(hospital),

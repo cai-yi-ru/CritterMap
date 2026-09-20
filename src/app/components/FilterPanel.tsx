@@ -1,19 +1,13 @@
 "use client";
 
-import React from "react";
+import { useState } from "react";
 import { petCategoryFilterOptions } from "@/lib/petIcons";
 import { cityOptions } from "@/lib/hospitalFilters";
-import PetIcon from './PetIcon';
+import PetIcon from "./PetIcon";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectTrigger,
-} from "@/components/ui/select";
-import { LoaderCircleIcon, RotateCcwIcon, SearchIcon } from "lucide-react";
+import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger } from "@/components/ui/select";
+import { ChevronDownIcon, EllipsisIcon, LoaderCircleIcon, PawPrintIcon, RotateCcwIcon, SearchIcon, SlidersHorizontalIcon } from "lucide-react";
 
 type FilterPanelProps = {
   city?: string;
@@ -32,177 +26,99 @@ type FilterPanelProps = {
   isSearching?: boolean;
 };
 
-function getCityLabel(value: string) {
-  return value === "all" ? "全部縣市" : value;
-}
+const commonPets = ["兔", "鼠", "天竺鼠", "鳥類", "爬蟲", "烏龜"];
+const morePets = petCategoryFilterOptions
+  .filter((pet) => !commonPets.includes(pet.label))
+  .sort((a, b) => Number(Boolean(b.isExotic)) - Number(Boolean(a.isExotic)));
 
-function getPetCategoryLabel(value: string) {
-  return value === "all" ? "全部類別" : value;
-}
-
-const FilterPanel: React.FC<FilterPanelProps> = ({
-  city = "台北市",
-  petCategory = "all",
-  reservationRequiredOnly = false,
-  openNowOnly = false,
-  hasEmergencyServiceOnly = false,
-  compact = false,
-  onCityChange,
-  onPetCategoryChange,
-  onReservationRequiredToggle,
-  onOpenNowToggle,
-  onHasEmergencyServiceToggle,
-  onSearch,
-  onReset,
-  isSearching = false,
-}) => {
-  const hasActiveFilters =
-    city !== "all" ||
-    petCategory !== "all" ||
-    reservationRequiredOnly ||
-    openNowOnly ||
-    hasEmergencyServiceOnly;
+export default function FilterPanel({
+  city = "all", petCategory = "all", reservationRequiredOnly = false,
+  openNowOnly = false, hasEmergencyServiceOnly = false, compact = false,
+  onCityChange, onPetCategoryChange, onReservationRequiredToggle,
+  onOpenNowToggle, onHasEmergencyServiceToggle, onSearch, onReset, isSearching = false,
+}: FilterPanelProps) {
+  const advancedCount = [reservationRequiredOnly, openNowOnly, hasEmergencyServiceOnly].filter(Boolean).length;
+  const [advancedOpen, setAdvancedOpen] = useState(advancedCount > 0);
+  const hasActiveFilters = city !== "all" || petCategory !== "all" || advancedCount > 0;
+  const selectedMorePet = morePets.find((pet) => pet.label === petCategory);
+  const petButtonClass = (selected: boolean) => `flex min-h-16 min-w-0 flex-col items-center justify-center gap-1 rounded-lg border px-1 py-2 text-sm font-medium transition-colors disabled:opacity-50 ${selected ? "border-primary bg-secondary text-foreground ring-1 ring-primary" : "border-transparent bg-muted/60 text-muted-foreground hover:border-input hover:bg-secondary"}`;
 
   return (
-    <form role="search" aria-label="搜尋特寵醫院" onSubmit={(event) => { event.preventDefault(); if (!isSearching) onSearch?.(); }} className={`mb-5 rounded-xl border border-border bg-card ${compact ? "p-4" : "p-4 sm:p-5"}`}>
-      <div className="mb-3 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-        <h2 className="text-base font-semibold text-forest-900">找醫院</h2>
-        <p className="hidden text-sm leading-6 text-muted-foreground sm:block">選好條件後，按「搜尋醫院」。</p>
+    <form role="search" aria-label="搜尋特寵醫院" onSubmit={(event) => { event.preventDefault(); if (!isSearching) onSearch?.(); }} className="mb-4 rounded-xl border border-border bg-card p-4 sm:p-5">
+      <div className={`grid gap-4 ${compact ? "" : "lg:grid-cols-[minmax(180px,0.55fr)_minmax(0,2fr)]"}`}>
+        <div className="min-w-0">
+          <label htmlFor="city" className="mb-2 block text-sm font-semibold text-foreground">縣市</label>
+          <Select disabled={isSearching} value={city} onValueChange={(value) => { if (value) onCityChange?.(value); }}>
+            <SelectTrigger id="city" className="min-h-11 w-full rounded-lg bg-card px-3 text-base">
+              <span>{city === "all" ? "全部縣市" : city}</span>
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup>
+                {cityOptions.map((option) => <SelectItem key={option} value={option} className="min-h-11">{option === "all" ? "全部縣市" : option}</SelectItem>)}
+              </SelectGroup>
+            </SelectContent>
+          </Select>
+        </div>
+
+        <fieldset className="min-w-0">
+          <legend className="mb-2 text-sm font-semibold text-foreground">寵物類別</legend>
+          <div className={`grid grid-cols-4 gap-2 ${compact ? "" : "sm:grid-cols-8"}`}>
+            <button type="button" disabled={isSearching} aria-pressed={petCategory === "all"} onClick={() => onPetCategoryChange?.("all")} className={petButtonClass(petCategory === "all")}>
+              <span className="flex size-8 items-center justify-center"><PawPrintIcon className="size-5" aria-hidden="true" /></span>
+              全部
+            </button>
+            {commonPets.map((pet) => (
+              <button key={pet} type="button" disabled={isSearching} aria-pressed={petCategory === pet} onClick={() => onPetCategoryChange?.(pet)} className={petButtonClass(petCategory === pet)}>
+                <PetIcon pet={pet} size="md" decorative />
+                <span>{pet}</span>
+              </button>
+            ))}
+            <Select disabled={isSearching} value={selectedMorePet?.label ?? null} onValueChange={(value) => { if (value) onPetCategoryChange?.(value); }}>
+              <SelectTrigger id="petCategory" aria-label={selectedMorePet ? `更多物種，目前選擇${selectedMorePet.label}` : "更多物種"} className={`${petButtonClass(Boolean(selectedMorePet))} h-auto w-full whitespace-normal data-[size=default]:h-auto [&>svg]:hidden`}>
+                {selectedMorePet ? <PetIcon pet={selectedMorePet.label} size="md" decorative /> : <span className="flex size-8 items-center justify-center"><EllipsisIcon className="size-5" aria-hidden="true" /></span>}
+                <span className="text-center leading-5">{selectedMorePet?.label ?? "更多"}</span>
+              </SelectTrigger>
+              <SelectContent align="end" alignItemWithTrigger={false} className="w-56">
+                <SelectGroup>
+                  {morePets.map((pet) => <SelectItem key={pet.key} value={pet.label} className="min-h-12 px-3"><PetIcon pet={pet.label} size="md" showLabel /></SelectItem>)}
+                </SelectGroup>
+              </SelectContent>
+            </Select>
+          </div>
+        </fieldset>
       </div>
 
-      <div className={`grid grid-cols-2 items-end gap-3 ${compact ? "" : "md:grid-cols-[minmax(160px,0.72fr)_minmax(200px,1fr)_auto]"}`}>
-        <div className="min-w-0">
-          <label htmlFor="city" className="mb-1.5 block text-sm font-medium text-forest-900">
-            縣市
-          </label>
-          <Select
-            disabled={isSearching}
-            value={city}
-            onValueChange={(value) => {
-              if (value) onCityChange?.(value);
-            }}
-          >
-            <SelectTrigger id="city" className="min-h-11 w-full rounded-lg border-input bg-card px-3 text-base text-foreground">
-              <span className="truncate">{getCityLabel(city)}</span>
-            </SelectTrigger>
-            <SelectContent>
-              <SelectGroup>
-                {cityOptions.map((option) => (
-                  <SelectItem key={option} value={option}>
-                    {getCityLabel(option)}
-                  </SelectItem>
-                ))}
-              </SelectGroup>
-            </SelectContent>
-          </Select>
+      <div className="mt-3 border-t border-border/70 pt-1">
+        <button type="button" aria-expanded={advancedOpen} aria-controls="additional-filters" onClick={() => setAdvancedOpen((open) => !open)} className="flex min-h-11 w-full items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground">
+          <SlidersHorizontalIcon className="size-4" aria-hidden="true" />其他條件
+          {advancedCount > 0 && <span className="rounded-full bg-secondary px-2 py-0.5 text-xs text-foreground">已選 {advancedCount} 項</span>}
+          <ChevronDownIcon className={`ml-auto size-4 transition-transform ${advancedOpen ? "rotate-180" : ""}`} aria-hidden="true" />
+        </button>
+        <div id="additional-filters" hidden={!advancedOpen}>
+          <div className="flex flex-wrap gap-x-5 gap-y-1 pb-2">
+            <label className="flex min-h-11 cursor-pointer items-center gap-2 text-sm text-stone-700">
+              <Checkbox disabled={isSearching} checked={reservationRequiredOnly} onCheckedChange={(checked) => onReservationRequiredToggle?.(checked === true)} />可現場掛號
+            </label>
+            <label className="flex min-h-11 cursor-pointer items-center gap-2 text-sm text-stone-700">
+              <Checkbox disabled={isSearching} checked={openNowOnly} onCheckedChange={(checked) => onOpenNowToggle?.(checked === true)} />目前營業中
+            </label>
+            <label className="flex min-h-11 cursor-pointer items-center gap-2 text-sm text-stone-700">
+              <Checkbox disabled={isSearching} checked={hasEmergencyServiceOnly} onCheckedChange={(checked) => onHasEmergencyServiceToggle?.(checked === true)} />可詢問急診
+            </label>
+          </div>
         </div>
+      </div>
 
-        <div className="min-w-0">
-          <label htmlFor="petCategory" className="mb-1.5 block text-sm font-medium text-forest-900">
-            寵物類別
-          </label>
-          <Select
-            disabled={isSearching}
-            value={petCategory}
-            onValueChange={(value) => {
-              if (value) onPetCategoryChange?.(value);
-            }}
-          >
-            <SelectTrigger id="petCategory" className="min-h-11 w-full rounded-lg border-input bg-card px-3 text-base text-foreground">
-              <span className="truncate">{getPetCategoryLabel(petCategory)}</span>
-            </SelectTrigger>
-            <SelectContent>
-              <SelectGroup>
-                <SelectItem value="all">全部類別</SelectItem>
-                {petCategoryFilterOptions.map((definition) => (
-                  <SelectItem key={definition.key} value={definition.label}>
-                    {definition.label}
-                  </SelectItem>
-                ))}
-              </SelectGroup>
-            </SelectContent>
-          </Select>
-        </div>
-
-        <div className={`col-span-2 flex min-w-0 items-center gap-2 ${compact ? '' : 'md:col-span-1'}`}>
-          <Button
-            type="submit"
-            disabled={isSearching}
-            className="min-h-11 min-w-0 flex-1 rounded-lg px-5 font-semibold"
-            size="lg"
-          >
-            {isSearching ? (
-              <LoaderCircleIcon data-icon="inline-start" className="animate-spin" />
-            ) : (
-              <SearchIcon data-icon="inline-start" />
-            )}
+      <div className="mt-1 flex flex-col-reverse gap-2 sm:flex-row sm:items-center sm:justify-between">
+        <p className="text-center text-xs leading-5 text-muted-foreground sm:text-left">出發前，請先致電確認能否看診。</p>
+        <div className="flex items-center gap-2 sm:min-w-60">
+          {hasActiveFilters && <Button type="button" onClick={onReset} disabled={isSearching} variant="ghost" className="min-h-11 rounded-lg px-3"><RotateCcwIcon data-icon="inline-start" />清除</Button>}
+          <Button type="submit" disabled={isSearching} className="min-h-11 flex-1 rounded-lg px-6 font-semibold" size="lg">
+            {isSearching ? <LoaderCircleIcon data-icon="inline-start" className="animate-spin" /> : <SearchIcon data-icon="inline-start" />}
             {isSearching ? "搜尋中" : "搜尋醫院"}
           </Button>
-          {hasActiveFilters && (
-            <Button
-              type="button"
-              onClick={onReset}
-              disabled={isSearching}
-              variant="ghost"
-              size="lg"
-              className="min-h-11 shrink-0 rounded-lg px-3 font-medium text-stone-700"
-            >
-              <RotateCcwIcon data-icon="inline-start" />
-              清除
-            </Button>
-          )}
         </div>
-      </div>
-
-      {!compact && (
-        <div className="mt-4 flex flex-wrap gap-2" role="group" aria-label="常用寵物類別">
-          {['兔', '鼠', '天竺鼠', '鳥類', '爬蟲', '烏龜'].map((pet) => (
-            <button key={pet} type="button" disabled={isSearching} aria-pressed={petCategory === pet}
-              onClick={() => onPetCategoryChange?.(petCategory === pet ? 'all' : pet)}
-              className={`inline-flex min-h-11 items-center gap-1.5 rounded-lg border px-3 text-sm font-medium transition-colors disabled:opacity-50 ${petCategory === pet ? 'border-primary bg-secondary text-foreground' : 'border-transparent bg-muted/60 text-muted-foreground hover:border-input hover:bg-secondary'}`}>
-              <PetIcon pet={pet} size="md" showLabel />
-            </button>
-          ))}
-        </div>
-      )}
-
-      <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-1 border-t border-sage-100 pt-2">
-        <label className="flex min-h-11 cursor-pointer items-center gap-2 text-sm text-stone-700">
-          <Checkbox
-            id="reservationRequired"
-            disabled={isSearching}
-            checked={reservationRequiredOnly}
-            onCheckedChange={(checked) => onReservationRequiredToggle?.(checked === true)}
-          />
-          <span className={reservationRequiredOnly ? "font-semibold text-forest-900" : ""}>可現場掛號</span>
-        </label>
-
-        <label className="flex min-h-11 cursor-pointer items-center gap-2 text-sm text-stone-700">
-          <Checkbox
-            id="openNow"
-            disabled={isSearching}
-            checked={openNowOnly}
-            onCheckedChange={(checked) => onOpenNowToggle?.(checked === true)}
-          />
-          <span className={openNowOnly ? "font-semibold text-forest-900" : ""}>目前營業中</span>
-        </label>
-
-        <label className="flex min-h-11 cursor-pointer items-center gap-2 text-sm text-stone-700">
-          <Checkbox
-            id="hasEmergencyService"
-            disabled={isSearching}
-            checked={hasEmergencyServiceOnly}
-            onCheckedChange={(checked) => onHasEmergencyServiceToggle?.(checked === true)}
-          />
-          <span className={hasEmergencyServiceOnly ? "font-semibold text-rose-700" : ""}>可詢問急診</span>
-        </label>
-
-        <p className="basis-full text-sm leading-6 text-muted-foreground sm:ml-auto sm:basis-auto">
-          出發前，請先致電確認能否看診。
-        </p>
       </div>
     </form>
   );
-};
-
-export default FilterPanel;
+}

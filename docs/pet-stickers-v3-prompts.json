@@ -1,0 +1,156 @@
+{
+    "generator":  "OpenAI image_gen (built-in)",
+    "style":  "Cute die-cut chat stickers; transparent alpha background",
+    "assets":  [
+                   {
+                       "key":  "rabbit",
+                       "prompt":  "Use case: stylized-concept. Asset type: production animal icon for a Taiwan exotic-pet hospital finder. Generate ONE adorable rabbit die-cut sticker icon, square 1:1 composition, centered isolated full-body character filling 82% of the canvas with a safe clear margin. A plump cream-white bunny with two upright long ears, pale pink ear interiors, tiny rounded paws, dot eyes, a small smiling mouth and peach blush. Cute Taiwanese/Japanese chat-sticker illustration style: clean confident warm dark-brown rounded outlines, flat pastel colors with minimal soft shading, chunky simple recognizable silhouette, playful friendly expression. A narrow crisp white die-cut sticker border around the character, no shadow. GENUINELY TRANSPARENT background with alpha, no checkerboard pattern and no colored backdrop. Designed to remain legible at 32 px. No words, numbers, watermark, badge, surrounding sparkles, hearts, accessories or scene. Deliver the single icon as a transparent PNG.",
+                       "source":  "assets/pet-stickers/rabbit.png",
+                       "web":  "public/pet-icons-v3/rabbit.webp"
+                   },
+                   {
+                       "key":  "mouse",
+                       "subject":  "a round golden Syrian HAMSTER, golden caramel back and cream belly, small round ears, chubby cheek pouches, tiny paws, no visible long tail; unmistakably a hamster",
+                       "prompt":  "Use case: stylized-concept. Asset type: production animal sticker icon for a Taiwan exotic-pet hospital finder. The attached rabbit image is a STYLE REFERENCE ONLY; draw the following different subject, not a rabbit: a round golden Syrian HAMSTER, golden caramel back and cream belly, small round ears, chubby cheek pouches, tiny paws, no visible long tail; unmistakably a hamster. Generate ONE single isolated animal full-body die-cut sticker, square composition, centered, filling about 80% of the canvas with clear safe padding around every edge. Match the reference\u0027s adorable Taiwanese/Japanese chat-sticker character design: thick clean warm dark-brown rounded outlines, cute expressive dark eyes, tiny smiling mouth, soft peach blush, flat pastel fills, restrained soft shading, crisp thin white die-cut border. Species silhouette must be immediately identifiable at 32px. GENUINELY TRANSPARENT background with alpha, no checkerboard pattern, no colored background, no cast shadow. No words, numbers, text, watermark, badge, props, surrounding symbols or scene. Deliver a single transparent PNG icon.",
+                       "style_reference":  "assets/pet-stickers/rabbit.png",
+                       "source":  "assets/pet-stickers/mouse.png",
+                       "web":  "public/pet-icons-v3/mouse.webp"
+                   },
+                   {
+                       "key":  "guinea-pig",
+                       "subject":  "a plump tricolor GUINEA PIG, rounded loaf-shaped full body with cream, caramel and cocoa patches, small folded ears, blunt muzzle, tiny paws and no tail; unmistakably a guinea pig rather than a hamster",
+                       "prompt":  "Use case: stylized-concept. Asset type: production animal sticker icon for a Taiwan exotic-pet hospital finder. The attached rabbit image is a STYLE REFERENCE ONLY; draw the following different subject, not a rabbit: a plump tricolor GUINEA PIG, rounded loaf-shaped full body with cream, caramel and cocoa patches, small folded ears, blunt muzzle, tiny paws and no tail; unmistakably a guinea pig rather than a hamster. Generate ONE single isolated animal full-body die-cut sticker, square composition, centered, filling about 80% of the canvas with clear safe padding around every edge. Match the reference\u0027s adorable Taiwanese/Japanese chat-sticker character design: thick clean warm dark-brown rounded outlines, cute expressive dark eyes, tiny smiling mouth, soft peach blush, flat pastel fills, restrained soft shading, crisp thin white die-cut border. Species silhouette must be immediately identifiable at 32px. GENUINELY TRANSPARENT background with alpha, no checkerboard pattern, no colored background, no cast shadow. No words, numbers, text, watermark, badge, props, surrounding symbols or scene. Deliver a single transparent PNG icon.",
+                       "style_reference":  "assets/pet-stickers/rabbit.png",
+                       "source":  "assets/pet-stickers/guinea-pig.png",
+                       "web":  "public/pet-icons-v3/guinea-pig.webp"
+                   },
+                   {
+                       "key":  "bird",
+                       "subject":  "a round pale yellow COCKATIEL, distinct upright feather crest, orange cheek patches, small grey wing tips and little feet, short rounded tail",
+                       "prompt":  "Use case: stylized-concept. Asset type: production animal sticker icon for a Taiwan exotic-pet hospital finder. The attached rabbit image is a STYLE REFERENCE ONLY; draw the following different subject, not a rabbit: a round pale yellow COCKATIEL, distinct upright feather crest, orange cheek patches, small grey wing tips and little feet, short rounded tail. Generate ONE single isolated animal full-body die-cut sticker, square composition, centered, filling about 80% of the canvas with clear safe padding around every edge. Match the reference\u0027s adorable Taiwanese/Japanese chat-sticker character design: thick clean warm dark-brown rounded outlines, cute expressive dark eyes, tiny smiling mouth, soft peach blush, flat pastel fills, restrained soft shading, crisp thin white die-cut border. Species silhouette must be immediately identifiable at 32px. GENUINELY TRANSPARENT background with alpha, no checkerboard pattern, no colored background, no cast shadow. No words, numbers, text, watermark, badge, props, surrounding symbols or scene. Deliver a single transparent PNG icon.",
+                       "style_reference":  "assets/pet-stickers/rabbit.png",
+                       "source":  "assets/pet-stickers/bird.png",
+                       "web":  "public/pet-icons-v3/bird.webp"
+                   },
+                   {
+                       "key":  "reptile",
+                       "subject":  "a cute mint-green CHAMELEON representing reptiles, full squat body with four short legs, characteristic tightly curled tail and round friendly eyes",
+                       "prompt":  "Use case: stylized-concept. Asset type: production animal sticker icon for a Taiwan exotic-pet hospital finder. The attached rabbit image is a STYLE REFERENCE ONLY; draw the following different subject, not a rabbit: a cute mint-green CHAMELEON representing reptiles, full squat body with four short legs, characteristic tightly curled tail and round friendly eyes. Generate ONE single isolated animal full-body die-cut sticker, square composition, centered, filling about 80% of the canvas with clear safe padding around every edge. Match the reference\u0027s adorable Taiwanese/Japanese chat-sticker character design: thick clean warm dark-brown rounded outlines, cute expressive dark eyes, tiny smiling mouth, soft peach blush, flat pastel fills, restrained soft shading, crisp thin white die-cut border. Species silhouette must be immediately identifiable at 32px. GENUINELY TRANSPARENT background with alpha, no checkerboard pattern, no colored background, no cast shadow. No words, numbers, text, watermark, badge, props, surrounding symbols or scene. Deliver a single transparent PNG icon.",
+                       "style_reference":  "assets/pet-stickers/rabbit.png",
+                       "source":  "assets/pet-stickers/reptile.png",
+                       "web":  "public/pet-icons-v3/reptile.webp"
+                   },
+                   {
+                       "key":  "turtle",
+                       "subject":  "a small friendly TORTOISE with sage green head and four stubby legs, warm olive and honey segmented domed shell, three-quarter view",
+                       "prompt":  "Use case: stylized-concept. Asset type: production animal sticker icon for a Taiwan exotic-pet hospital finder. The attached rabbit image is a STYLE REFERENCE ONLY; draw the following different subject, not a rabbit: a small friendly TORTOISE with sage green head and four stubby legs, warm olive and honey segmented domed shell, three-quarter view. Generate ONE single isolated animal full-body die-cut sticker, square composition, centered, filling about 80% of the canvas with clear safe padding around every edge. Match the reference\u0027s adorable Taiwanese/Japanese chat-sticker character design: thick clean warm dark-brown rounded outlines, cute expressive dark eyes, tiny smiling mouth, soft peach blush, flat pastel fills, restrained soft shading, crisp thin white die-cut border. Species silhouette must be immediately identifiable at 32px. GENUINELY TRANSPARENT background with alpha, no checkerboard pattern, no colored background, no cast shadow. No words, numbers, text, watermark, badge, props, surrounding symbols or scene. Deliver a single transparent PNG icon.",
+                       "style_reference":  "assets/pet-stickers/rabbit.png",
+                       "source":  "assets/pet-stickers/turtle.png",
+                       "web":  "public/pet-icons-v3/turtle.webp"
+                   },
+                   {
+                       "key":  "cat",
+                       "subject":  "a plump cream and caramel CAT, triangular ears, small whiskers and a curled tail, sitting facing front",
+                       "prompt":  "Use case: stylized-concept. Asset type: production animal sticker icon for a Taiwan exotic-pet hospital finder. The attached rabbit image is a STYLE REFERENCE ONLY; draw the following different subject, not a rabbit: a plump cream and caramel CAT, triangular ears, small whiskers and a curled tail, sitting facing front. Generate ONE single isolated animal full-body die-cut sticker, square composition, centered, filling about 80% of the canvas with clear safe padding around every edge. Match the reference\u0027s adorable Taiwanese/Japanese chat-sticker character design: thick clean warm dark-brown rounded outlines, cute expressive dark eyes, tiny smiling mouth, soft peach blush, flat pastel fills, restrained soft shading, crisp thin white die-cut border. Species silhouette must be immediately identifiable at 32px. GENUINELY TRANSPARENT background with alpha, no checkerboard pattern, no colored background, no cast shadow. No words, numbers, text, watermark, badge, props, surrounding symbols or scene. Deliver a single transparent PNG icon.",
+                       "style_reference":  "assets/pet-stickers/rabbit.png",
+                       "source":  "assets/pet-stickers/cat.png",
+                       "web":  "public/pet-icons-v3/cat.webp"
+                   },
+                   {
+                       "key":  "dog",
+                       "subject":  "a small cream and honey floppy-eared PUPPY, short rounded muzzle, little paws and wagging curved tail, sitting facing front",
+                       "prompt":  "Use case: stylized-concept. Asset type: production animal sticker icon for a Taiwan exotic-pet hospital finder. The attached rabbit image is a STYLE REFERENCE ONLY; draw the following different subject, not a rabbit: a small cream and honey floppy-eared PUPPY, short rounded muzzle, little paws and wagging curved tail, sitting facing front. Generate ONE single isolated animal full-body die-cut sticker, square composition, centered, filling about 80% of the canvas with clear safe padding around every edge. Match the reference\u0027s adorable Taiwanese/Japanese chat-sticker character design: thick clean warm dark-brown rounded outlines, cute expressive dark eyes, tiny smiling mouth, soft peach blush, flat pastel fills, restrained soft shading, crisp thin white die-cut border. Species silhouette must be immediately identifiable at 32px. GENUINELY TRANSPARENT background with alpha, no checkerboard pattern, no colored background, no cast shadow. No words, numbers, text, watermark, badge, props, surrounding symbols or scene. Deliver a single transparent PNG icon.",
+                       "style_reference":  "assets/pet-stickers/rabbit.png",
+                       "source":  "assets/pet-stickers/dog.png",
+                       "web":  "public/pet-icons-v3/dog.webp"
+                   },
+                   {
+                       "key":  "lizard",
+                       "subject":  "a yellow LEOPARD GECKO with a few clear dark cocoa spots, broad smiling head, four splayed tiny feet and thick gently curved tail, three-quarter view; no curled chameleon tail",
+                       "prompt":  "Use case: stylized-concept. Asset type: production animal sticker icon for a Taiwan exotic-pet hospital finder. The attached rabbit image is a STYLE REFERENCE ONLY; draw the following different subject, not a rabbit: a yellow LEOPARD GECKO with a few clear dark cocoa spots, broad smiling head, four splayed tiny feet and thick gently curved tail, three-quarter view; no curled chameleon tail. Generate ONE single isolated animal full-body die-cut sticker, square composition, centered, filling about 80% of the canvas with clear safe padding around every edge. Match the reference\u0027s adorable Taiwanese/Japanese chat-sticker character design: thick clean warm dark-brown rounded outlines, cute expressive dark eyes, tiny smiling mouth, soft peach blush, flat pastel fills, restrained soft shading, crisp thin white die-cut border. Species silhouette must be immediately identifiable at 32px. GENUINELY TRANSPARENT background with alpha, no checkerboard pattern, no colored background, no cast shadow. No words, numbers, text, watermark, badge, props, surrounding symbols or scene. Deliver a single transparent PNG icon.",
+                       "style_reference":  "assets/pet-stickers/rabbit.png",
+                       "source":  "assets/pet-stickers/lizard.png",
+                       "web":  "public/pet-icons-v3/lizard.webp"
+                   },
+                   {
+                       "key":  "snake",
+                       "subject":  "a friendly peach and cream CORN SNAKE, curled in one simple compact coil, rounded raised head, gentle smile, no arms or legs",
+                       "prompt":  "Use case: stylized-concept. Asset type: production animal sticker icon for a Taiwan exotic-pet hospital finder. The attached rabbit image is a STYLE REFERENCE ONLY; draw the following different subject, not a rabbit: a friendly peach and cream CORN SNAKE, curled in one simple compact coil, rounded raised head, gentle smile, no arms or legs. Generate ONE single isolated animal full-body die-cut sticker, square composition, centered, filling about 80% of the canvas with clear safe padding around every edge. Match the reference\u0027s adorable Taiwanese/Japanese chat-sticker character design: thick clean warm dark-brown rounded outlines, cute expressive dark eyes, tiny smiling mouth, soft peach blush, flat pastel fills, restrained soft shading, crisp thin white die-cut border. Species silhouette must be immediately identifiable at 32px. GENUINELY TRANSPARENT background with alpha, no checkerboard pattern, no colored background, no cast shadow. No words, numbers, text, watermark, badge, props, surrounding symbols or scene. Deliver a single transparent PNG icon.",
+                       "style_reference":  "assets/pet-stickers/rabbit.png",
+                       "source":  "assets/pet-stickers/snake.png",
+                       "web":  "public/pet-icons-v3/snake.webp"
+                   },
+                   {
+                       "key":  "amphibian",
+                       "subject":  "a pale pink AXOLOTL with three short feathery coral-pink external gills on each side of its broad smiling head, tiny legs and a gently curved tail",
+                       "prompt":  "Use case: stylized-concept. Asset type: production animal sticker icon for a Taiwan exotic-pet hospital finder. The attached rabbit image is a STYLE REFERENCE ONLY; draw the following different subject, not a rabbit: a pale pink AXOLOTL with three short feathery coral-pink external gills on each side of its broad smiling head, tiny legs and a gently curved tail. Generate ONE single isolated animal full-body die-cut sticker, square composition, centered, filling about 80% of the canvas with clear safe padding around every edge. Match the reference\u0027s adorable Taiwanese/Japanese chat-sticker character design: thick clean warm dark-brown rounded outlines, cute expressive dark eyes, tiny smiling mouth, soft peach blush, flat pastel fills, restrained soft shading, crisp thin white die-cut border. Species silhouette must be immediately identifiable at 32px. GENUINELY TRANSPARENT background with alpha, no checkerboard pattern, no colored background, no cast shadow. No words, numbers, text, watermark, badge, props, surrounding symbols or scene. Deliver a single transparent PNG icon.",
+                       "style_reference":  "assets/pet-stickers/rabbit.png",
+                       "source":  "assets/pet-stickers/amphibian.png",
+                       "web":  "public/pet-icons-v3/amphibian.webp"
+                   },
+                   {
+                       "key":  "frog",
+                       "subject":  "a round sage-green TREE FROG, two clearly raised eyes, pale cream throat and belly, compact crouching pose with visible simple toe pads",
+                       "prompt":  "Use case: stylized-concept. Asset type: production animal sticker icon for a Taiwan exotic-pet hospital finder. The attached rabbit image is a STYLE REFERENCE ONLY; draw the following different subject, not a rabbit: a round sage-green TREE FROG, two clearly raised eyes, pale cream throat and belly, compact crouching pose with visible simple toe pads. Generate ONE single isolated animal full-body die-cut sticker, square composition, centered, filling about 80% of the canvas with clear safe padding around every edge. Match the reference\u0027s adorable Taiwanese/Japanese chat-sticker character design: thick clean warm dark-brown rounded outlines, cute expressive dark eyes, tiny smiling mouth, soft peach blush, flat pastel fills, restrained soft shading, crisp thin white die-cut border. Species silhouette must be immediately identifiable at 32px. GENUINELY TRANSPARENT background with alpha, no checkerboard pattern, no colored background, no cast shadow. No words, numbers, text, watermark, badge, props, surrounding symbols or scene. Deliver a single transparent PNG icon.",
+                       "style_reference":  "assets/pet-stickers/rabbit.png",
+                       "source":  "assets/pet-stickers/frog.png",
+                       "web":  "public/pet-icons-v3/frog.webp"
+                   },
+                   {
+                       "key":  "fish",
+                       "subject":  "a plump orange and cream GOLDFISH with a rounded body, simple broad fan tail and fins, side view turned slightly toward the viewer, no water or bubbles",
+                       "prompt":  "Use case: stylized-concept. Asset type: production animal sticker icon for a Taiwan exotic-pet hospital finder. The attached rabbit image is a STYLE REFERENCE ONLY; draw the following different subject, not a rabbit: a plump orange and cream GOLDFISH with a rounded body, simple broad fan tail and fins, side view turned slightly toward the viewer, no water or bubbles. Generate ONE single isolated animal full-body die-cut sticker, square composition, centered, filling about 80% of the canvas with clear safe padding around every edge. Match the reference\u0027s adorable Taiwanese/Japanese chat-sticker character design: thick clean warm dark-brown rounded outlines, cute expressive dark eyes, tiny smiling mouth, soft peach blush, flat pastel fills, restrained soft shading, crisp thin white die-cut border. Species silhouette must be immediately identifiable at 32px. GENUINELY TRANSPARENT background with alpha, no checkerboard pattern, no colored background, no cast shadow. No words, numbers, text, watermark, badge, props, surrounding symbols or scene. Deliver a single transparent PNG icon.",
+                       "style_reference":  "assets/pet-stickers/rabbit.png",
+                       "source":  "assets/pet-stickers/fish.png",
+                       "web":  "public/pet-icons-v3/fish.webp"
+                   },
+                   {
+                       "key":  "hedgehog",
+                       "subject":  "a round HEDGEHOG, cream face and belly, cocoa-brown back with a small number of broad soft triangular spines, little pointed nose and tiny paws",
+                       "prompt":  "Use case: stylized-concept. Asset type: production animal sticker icon for a Taiwan exotic-pet hospital finder. The attached rabbit image is a STYLE REFERENCE ONLY; draw the following different subject, not a rabbit: a round HEDGEHOG, cream face and belly, cocoa-brown back with a small number of broad soft triangular spines, little pointed nose and tiny paws. Generate ONE single isolated animal full-body die-cut sticker, square composition, centered, filling about 80% of the canvas with clear safe padding around every edge. Match the reference\u0027s adorable Taiwanese/Japanese chat-sticker character design: thick clean warm dark-brown rounded outlines, cute expressive dark eyes, tiny smiling mouth, soft peach blush, flat pastel fills, restrained soft shading, crisp thin white die-cut border. Species silhouette must be immediately identifiable at 32px. GENUINELY TRANSPARENT background with alpha, no checkerboard pattern, no colored background, no cast shadow. No words, numbers, text, watermark, badge, props, surrounding symbols or scene. Deliver a single transparent PNG icon.",
+                       "style_reference":  "assets/pet-stickers/rabbit.png",
+                       "source":  "assets/pet-stickers/hedgehog.png",
+                       "web":  "public/pet-icons-v3/hedgehog.webp"
+                   },
+                   {
+                       "key":  "sugar-glider",
+                       "subject":  "a small silver-grey SUGAR GLIDER, huge round dark eyes, clear dark stripe from forehead toward nose, pink nose, round ears and a soft curved tail, front seated pose with a hint of side gliding membrane",
+                       "prompt":  "Use case: stylized-concept. Asset type: production animal sticker icon for a Taiwan exotic-pet hospital finder. The attached rabbit image is a STYLE REFERENCE ONLY; draw the following different subject, not a rabbit: a small silver-grey SUGAR GLIDER, huge round dark eyes, clear dark stripe from forehead toward nose, pink nose, round ears and a soft curved tail, front seated pose with a hint of side gliding membrane. Generate ONE single isolated animal full-body die-cut sticker, square composition, centered, filling about 80% of the canvas with clear safe padding around every edge. Match the reference\u0027s adorable Taiwanese/Japanese chat-sticker character design: thick clean warm dark-brown rounded outlines, cute expressive dark eyes, tiny smiling mouth, soft peach blush, flat pastel fills, restrained soft shading, crisp thin white die-cut border. Species silhouette must be immediately identifiable at 32px. GENUINELY TRANSPARENT background with alpha, no checkerboard pattern, no colored background, no cast shadow. No words, numbers, text, watermark, badge, props, surrounding symbols or scene. Deliver a single transparent PNG icon.",
+                       "style_reference":  "assets/pet-stickers/rabbit.png",
+                       "source":  "assets/pet-stickers/sugar-glider.png",
+                       "web":  "public/pet-icons-v3/sugar-glider.webp"
+                   },
+                   {
+                       "key":  "ferret",
+                       "subject":  "a sable FERRET, long cream and cocoa body curled into a compact seated pose, dark bandit face mask, rounded ears, pink nose and curved furry tail",
+                       "prompt":  "Use case: stylized-concept. Asset type: production animal sticker icon for a Taiwan exotic-pet hospital finder. The attached rabbit image is a STYLE REFERENCE ONLY; draw the following different subject, not a rabbit: a sable FERRET, long cream and cocoa body curled into a compact seated pose, dark bandit face mask, rounded ears, pink nose and curved furry tail. Generate ONE single isolated animal full-body die-cut sticker, square composition, centered, filling about 80% of the canvas with clear safe padding around every edge. Match the reference\u0027s adorable Taiwanese/Japanese chat-sticker character design: thick clean warm dark-brown rounded outlines, cute expressive dark eyes, tiny smiling mouth, soft peach blush, flat pastel fills, restrained soft shading, crisp thin white die-cut border. Species silhouette must be immediately identifiable at 32px. GENUINELY TRANSPARENT background with alpha, no checkerboard pattern, no colored background, no cast shadow. No words, numbers, text, watermark, badge, props, surrounding symbols or scene. Deliver a single transparent PNG icon.",
+                       "style_reference":  "assets/pet-stickers/rabbit.png",
+                       "source":  "assets/pet-stickers/ferret.png",
+                       "web":  "public/pet-icons-v3/ferret.webp"
+                   },
+                   {
+                       "key":  "chinchilla",
+                       "subject":  "a round fluffy silver-grey CHINCHILLA with very large round ears, pale belly, short whiskers and a thick fluffy curled tail, compact seated pose",
+                       "prompt":  "Use case: stylized-concept. Asset type: production animal sticker icon for a Taiwan exotic-pet hospital finder. The attached rabbit image is a STYLE REFERENCE ONLY; draw the following different subject, not a rabbit: a round fluffy silver-grey CHINCHILLA with very large round ears, pale belly, short whiskers and a thick fluffy curled tail, compact seated pose. Generate ONE single isolated animal full-body die-cut sticker, square composition, centered, filling about 80% of the canvas with clear safe padding around every edge. Match the reference\u0027s adorable Taiwanese/Japanese chat-sticker character design: thick clean warm dark-brown rounded outlines, cute expressive dark eyes, tiny smiling mouth, soft peach blush, flat pastel fills, restrained soft shading, crisp thin white die-cut border. Species silhouette must be immediately identifiable at 32px. GENUINELY TRANSPARENT background with alpha, no checkerboard pattern, no colored background, no cast shadow. No words, numbers, text, watermark, badge, props, surrounding symbols or scene. Deliver a single transparent PNG icon.",
+                       "style_reference":  "assets/pet-stickers/rabbit.png",
+                       "source":  "assets/pet-stickers/chinchilla.png",
+                       "web":  "public/pet-icons-v3/chinchilla.webp"
+                   },
+                   {
+                       "key":  "wild-animal",
+                       "subject":  "a cute caramel CAPYBARA representing wildlife, rounded rectangular blunt muzzle, very small round ears, stocky rounded body and short legs, compact seated three-quarter view",
+                       "prompt":  "Use case: stylized-concept. Asset type: production animal sticker icon for a Taiwan exotic-pet hospital finder. The attached rabbit image is a STYLE REFERENCE ONLY; draw the following different subject, not a rabbit: a cute caramel CAPYBARA representing wildlife, rounded rectangular blunt muzzle, very small round ears, stocky rounded body and short legs, compact seated three-quarter view. Generate ONE single isolated animal full-body die-cut sticker, square composition, centered, filling about 80% of the canvas with clear safe padding around every edge. Match the reference\u0027s adorable Taiwanese/Japanese chat-sticker character design: thick clean warm dark-brown rounded outlines, cute expressive dark eyes, tiny smiling mouth, soft peach blush, flat pastel fills, restrained soft shading, crisp thin white die-cut border. Species silhouette must be immediately identifiable at 32px. GENUINELY TRANSPARENT background with alpha, no checkerboard pattern, no colored background, no cast shadow. No words, numbers, text, watermark, badge, props, surrounding symbols or scene. Deliver a single transparent PNG icon.",
+                       "style_reference":  "assets/pet-stickers/rabbit.png",
+                       "source":  "assets/pet-stickers/wild-animal.png",
+                       "web":  "public/pet-icons-v3/wild-animal.webp"
+                   },
+                   {
+                       "key":  "other-exotic",
+                       "subject":  "a neutral friendly FANTASY LITTLE PET mascot representing unspecified exotic pets, small rounded lavender furry body, two small round ears, cream face and belly, tiny paws and a little rounded tuft; simple animal shape, no question marks or symbols",
+                       "prompt":  "Use case: stylized-concept. Asset type: production animal sticker icon for a Taiwan exotic-pet hospital finder. The attached rabbit image is a STYLE REFERENCE ONLY; draw the following different subject, not a rabbit: a neutral friendly FANTASY LITTLE PET mascot representing unspecified exotic pets, small rounded lavender furry body, two small round ears, cream face and belly, tiny paws and a little rounded tuft; simple animal shape, no question marks or symbols. Generate ONE single isolated animal full-body die-cut sticker, square composition, centered, filling about 80% of the canvas with clear safe padding around every edge. Match the reference\u0027s adorable Taiwanese/Japanese chat-sticker character design: thick clean warm dark-brown rounded outlines, cute expressive dark eyes, tiny smiling mouth, soft peach blush, flat pastel fills, restrained soft shading, crisp thin white die-cut border. Species silhouette must be immediately identifiable at 32px. GENUINELY TRANSPARENT background with alpha, no checkerboard pattern, no colored background, no cast shadow. No words, numbers, text, watermark, badge, props, surrounding symbols or scene. Deliver a single transparent PNG icon.",
+                       "style_reference":  "assets/pet-stickers/rabbit.png",
+                       "source":  "assets/pet-stickers/other-exotic.png",
+                       "web":  "public/pet-icons-v3/other-exotic.webp"
+                   }
+               ]
+}

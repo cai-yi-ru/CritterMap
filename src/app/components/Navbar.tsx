@@ -10,7 +10,12 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const menuButton = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
-  const isBlog = pathname?.startsWith("/blog");
+  const links = [
+    { href: '/', label: '找醫院', active: pathname === '/' },
+    { href: '/hospitals', label: '縣市名單', active: pathname?.startsWith('/hospitals') },
+    { href: '/emergency', label: '急診聯絡', active: pathname?.startsWith('/emergency') },
+    { href: '/blog', label: '照護文章', active: pathname?.startsWith('/blog') },
+  ];
 
   return (
     <nav aria-label="主要導覽" onKeyDown={(event) => { if (event.key === 'Escape' && mobileMenuOpen) { setMobileMenuOpen(false); menuButton.current?.focus(); } }} className="fixed inset-x-0 top-0 z-50 border-b border-sage-100 bg-background">
@@ -27,28 +32,11 @@ export default function Navbar() {
         </Link>
 
         <div className="hidden h-full items-center gap-6 md:flex">
-          <Link
-            href="/"
-            aria-current={!isBlog ? "page" : undefined}
-            className={`flex h-full items-center border-b-2 px-0.5 text-sm font-medium transition-colors ${
-              isBlog
-                ? "border-transparent text-stone-600 hover:text-forest-900"
-                : "border-forest-800 text-forest-900"
-            }`}
-          >
-            找醫院
-          </Link>
-          <Link
-            href="/blog"
-            aria-current={isBlog ? "page" : undefined}
-            className={`flex h-full items-center border-b-2 px-0.5 text-sm font-medium transition-colors ${
-              isBlog
-                ? "border-forest-800 text-forest-900"
-                : "border-transparent text-stone-600 hover:text-forest-900"
-            }`}
-          >
-            照護文章
-          </Link>
+          {links.map((link) => <Link key={link.href} href={link.href}
+            aria-current={pathname === link.href ? 'page' : link.active ? 'location' : undefined}
+            className={`flex h-full items-center border-b-2 px-0.5 text-sm font-medium transition-colors ${link.active ? 'border-forest-800 text-forest-900' : 'border-transparent text-stone-600 hover:text-forest-900'}`}>
+            {link.label}
+          </Link>)}
         </div>
 
         <div className="hidden items-center gap-3 md:flex">
@@ -74,26 +62,12 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div id="mobile-navigation" className="border-t border-sage-100 bg-background px-4 py-3 md:hidden">
           <div className="mx-auto grid max-w-7xl divide-y divide-sage-100">
-            <Link
-              href="/"
-              aria-current={!isBlog ? "page" : undefined}
-              className={`px-1 py-3 text-sm font-medium ${
-                isBlog ? "text-stone-600" : "text-forest-900"
-              }`}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              找醫院
-            </Link>
-            <Link
-              href="/blog"
-              aria-current={isBlog ? "page" : undefined}
-              className={`px-1 py-3 text-sm font-medium ${
-                isBlog ? "text-forest-900" : "text-stone-600"
-              }`}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              照護文章
-            </Link>
+            {links.map((link) => <Link key={link.href} href={link.href}
+              aria-current={pathname === link.href ? 'page' : link.active ? 'location' : undefined}
+              className={`min-h-11 px-1 py-3 text-sm font-medium ${link.active ? 'text-forest-900' : 'text-stone-600'}`}
+              onClick={() => setMobileMenuOpen(false)}>
+              {link.label}
+            </Link>)}
             <div className="bg-honey-100/55 px-1 py-3 text-xs font-medium leading-6 text-clay-700">
               資訊僅供參考，實際看診與門診時段請以醫院公告為準。
             </div>

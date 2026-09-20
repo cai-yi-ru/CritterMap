@@ -1,7 +1,8 @@
 
 'use client';
 
-import { useCallback, useRef, useSyncExternalStore, useTransition, useState } from 'react';
+import { useCallback, useEffect, useRef, useSyncExternalStore, useTransition, useState } from 'react';
+import type { ReactNode } from 'react';
 import dynamic from 'next/dynamic';
 import { ListIcon, MapIcon, LoaderCircleIcon, CircleAlertIcon } from 'lucide-react';
 import Navbar from './components/Navbar';
@@ -45,12 +46,14 @@ type HomeClientProps = {
   hospitalCount?: number;
   latestHospitalDataDate?: string | null;
   initialFilters?: HospitalFilters;
+  discoveryContent?: ReactNode;
 };
 
 export default function HomeClient({
   embed = false, initialHospitals = [], initialUpdates = [], initialUpdateHospitals = [],
   hospitalCount = initialHospitals.length, latestHospitalDataDate = null,
   initialFilters = defaultHospitalFilters,
+  discoveryContent,
 }: HomeClientProps) {
   const [isSearchPending, startSearchTransition] = useTransition();
   const [filteredHospitals, setFilteredHospitals] = useState(initialHospitals);
@@ -65,6 +68,8 @@ export default function HomeClient({
   const isDesktop = useSyncExternalStore(subscribeToDesktop, getDesktopSnapshot, getServerSnapshot);
   const searchRequest = useRef(0);
   const detailRequest = useRef(0);
+  const resultHeading = useRef<HTMLParagraphElement | null>(null);
+  const revealResults = useRef(false);
   const lastDetail = useRef<{ hospital: HospitalSummary; update?: HospitalUpdate } | null>(null);
   const hasUnappliedChanges = JSON.stringify(filters) !== JSON.stringify(appliedFilters);
 
@@ -77,12 +82,22 @@ export default function HomeClient({
         if (request !== searchRequest.current) return;
         setFilteredHospitals(results);
         setAppliedFilters(nextFilters);
+        revealResults.current = true;
         updateFilterUrl(nextFilters);
       } catch {
         if (request === searchRequest.current) setSearchError(true);
       }
     });
   }, []);
+
+  useEffect(() => {
+    if (!revealResults.current || isSearchPending) return;
+    revealResults.current = false;
+    if (!isDesktop) {
+      resultHeading.current?.focus({ preventScroll: true });
+      resultHeading.current?.scrollIntoView({ block: 'start', behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+    }
+  }, [filteredHospitals, isSearchPending, isDesktop]);
 
   const handleReset = useCallback(() => {
     setFilters(defaultHospitalFilters);
@@ -118,13 +133,13 @@ export default function HomeClient({
   return (
     <div className={`site-shell min-h-dvh ${embed ? 'embed-shell' : ''}`}>
       {!embed && <Navbar />}
-      <main id="main-content" tabIndex={-1} className={embed ? 'mx-auto w-full max-w-6xl px-3 py-3 sm:px-5' : 'mx-auto w-full max-w-7xl px-4 pb-12 pt-24 sm:px-6 lg:px-8'}>
-        <header className="mb-6">
-          <h1 className="text-2xl font-bold leading-tight text-foreground sm:text-3xl">全台特寵醫院地圖</h1>
-          <p className="mt-3 max-w-2xl text-sm leading-7 text-muted-foreground sm:text-base">
-            找到能看你家小獸的醫院。先選縣市與寵物，再確認門診和預約方式。
+      <main id="main-content" tabIndex={-1} className={embed ? 'mx-auto w-full max-w-6xl px-3 py-3 sm:px-5' : 'mx-auto w-full max-w-7xl px-4 pb-12 pt-20 sm:px-6 sm:pt-24 lg:px-8'}>
+        <header className="mb-4 sm:mb-5">
+          <h1 className="text-2xl font-bold leading-tight text-foreground sm:text-3xl">全台特寵醫院查詢</h1>
+          <p className="mt-2 max-w-2xl text-sm leading-6 text-muted-foreground sm:text-base">
+            依縣市與物種，查詢電話、門診與急診聯絡資訊。
           </p>
-          <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted-foreground">
+          <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-muted-foreground sm:text-sm">
             <span>收錄 <strong className="font-semibold tabular-nums text-foreground">{hospitalCount}</strong> 間醫院</span>
             {latestHospitalDataDate && <span>最近整理 <time dateTime={latestHospitalDataDate}>{latestHospitalDataDate}</time></span>}
           </div>
@@ -148,7 +163,7 @@ export default function HomeClient({
         )}
 
         <div className="mb-3 flex flex-wrap items-center justify-between gap-2 text-sm">
-          <p role="status" className="text-muted-foreground">
+          <p ref={resultHeading} role="status" tabIndex={-1} className="scroll-mt-20 rounded-sm text-muted-foreground">
             {isSearchPending ? '正在更新醫院清單…' : <><strong className="font-semibold tabular-nums text-foreground">{filteredHospitals.length} 間醫院</strong><span className="mx-2" aria-hidden="true">/</span>{resultSummary}</>}
           </p>
           {hasUnappliedChanges && !isSearchPending && <p className="text-clay-700">條件已變更，按「搜尋醫院」更新結果</p>}
@@ -170,7 +185,7 @@ export default function HomeClient({
 
         <div className={embed ? 'grid grid-cols-1 gap-4' : 'grid grid-cols-1 gap-4 lg:grid-cols-[minmax(320px,400px)_minmax(0,1fr)]'}>
           <div id="hospital-list" className={embed ? 'order-2' : `${mobileView === 'list' ? 'block' : 'hidden'} min-w-0 lg:block`}>
-            <HospitalList hospitals={filteredHospitals} onHospitalClick={(hospital) => void loadDetail(hospital)} loading={isSearchPending} onReset={handleReset} />
+            <HospitalList key={JSON.stringify(appliedFilters)} hospitals={filteredHospitals} selectedPet={appliedFilters.petCategory} paginate={!isDesktop} onHospitalClick={(hospital) => void loadDetail(hospital)} loading={isSearchPending} onReset={handleReset} />
           </div>
           <div id="hospital-map" className={embed ? 'order-1' : `${mobileView === 'map' ? 'block' : 'hidden'} min-w-0 lg:block`}>
             {(isDesktop || embed || mobileView === 'map') && <MapPanel hospitals={filteredHospitals} center={cityCenterMap[appliedFilters.city]} zoom={appliedFilters.city === 'all' ? 7 : 12} onHospitalClick={(hospital) => void loadDetail(hospital)} embed={embed} loading={isSearchPending} />}
@@ -178,6 +193,7 @@ export default function HomeClient({
         </div>
 
         {!embed && <SponsoredSlot context="home" className="mt-5" />}
+        {!embed && discoveryContent}
         <HospitalUpdates updates={initialUpdates} hospitals={initialUpdateHospitals} onUpdateClick={(update, hospital) => void loadDetail(hospital, update)} />
         {embed && <DisclaimerSection />}
       </main>
