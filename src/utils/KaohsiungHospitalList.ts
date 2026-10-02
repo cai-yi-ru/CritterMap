@@ -43,7 +43,7 @@ export const KaohsiungHospitalList = [
       "mapsUrl": "https://www.google.com/maps/place/%E6%A8%82%E8%B9%A6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6123012,120.3027957,17z/data=!3m1!4b1!4m6!3m5!1s0x346e039434bd1921:0xa0e8f422b0b736d5!8m2!3d22.6123012!4d120.3027957!16s%2Fg%2F11pb2htp84",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%A8%82%E8%B9%A6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6123012,120.3027957,17z/data=!4m8!3m7!1s0x346e039434bd1921:0xa0e8f422b0b736d5!8m2!3d22.6123012!4d120.3027957!9m1!1b1!16s%2Fg%2F11pb2htp84",
       "placeId": "ChIJIRm9NJQDbjQR1Ta3sCL06KA",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -136,10 +136,10 @@ export const KaohsiungHospitalList = [
     },
     "google": {
       "rating": "4.8",
-      "reviewCount": 452,
+      "reviewCount": 454,
       "mapsUrl": "https://www.google.com/maps/place/%E7%AA%A9%E7%AA%A9%E5%85%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E5%85%94%E5%B0%88%E7%A7%91%E3%80%81%E9%BC%A0%E5%B0%88%E7%A7%91+%E3%80%81%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E7%A7%91(%E9%A0%90%E7%B4%84%E5%84%AA%E5%85%88%E5%88%B6)/@22.630432,120.326095,17z/data=!3m1!4b1!4m6!3m5!1s0x346e05c110c2e6ad:0xc88126388bf0d28b!8m2!3d22.630432!4d120.326095!16s%2Fg%2F11r9nqcnbw",
       "reviewsUrl": "https://www.google.com/maps/place/%E7%AA%A9%E7%AA%A9%E5%85%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E5%85%94%E5%B0%88%E7%A7%91%E3%80%81%E9%BC%A0%E5%B0%88%E7%A7%91+%E3%80%81%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E7%A7%91(%E9%A0%90%E7%B4%84%E5%84%AA%E5%85%88%E5%88%B6)/@22.630432,120.326095,17z/data=!4m8!3m7!1s0x346e05c110c2e6ad:0xc88126388bf0d28b!8m2!3d22.630432!4d120.326095!9m1!1b1!16s%2Fg%2F11r9nqcnbw",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -198,7 +198,7 @@ export const KaohsiungHospitalList = [
     },
     "clinicNotes": "採預約優先制，不提供當日預約；當日就診請現場掛號，額滿可能停止掛號，現場掛號不可指定醫師。不提供夜間或休診日急診，非營業時間不回應電話或訊息。\n週二、週三、週五 12:30–16:30 為手術時段，暫停接聽電話。就診請到建民路176號，Instagram 簡介中的67號為舊址。付款限現金或線上轉帳。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-09-20T17:11:15.938Z",
+    "updatedAt": "2026-10-02T05:29:26.033Z",
     "last_checked": "2026-09-16",
     "fb": {
       "last_fb_post_date": "2026-08-30",
@@ -257,6 +257,17 @@ export const KaohsiungHospitalList = [
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/photo/?fbid=1407769368113584&set=a.406534628237068",
         "verifiedAt": "2026-09-20"
+      },
+      {
+        "id": "wowo-rabbit-october-2026-hours",
+        "type": "hours_change",
+        "title": "2026 年 10 月門診時段調整",
+        "content": "10 月每週一公休。10/10 門診為 10:00–12:00、14:00–17:30；10/13–10/16 為 14:00–17:30、19:00–20:30；10/24、10/31 為 10:00–12:00、14:00–17:30、19:00–20:30，並加開假日手術日。預約時可選擇獸醫師，現場掛號不可指定醫師。",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-31",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/photo/?fbid=1433887042168483&set=a.406534628237068",
+        "verifiedAt": "2026-10-02"
       }
     ]
   },
@@ -420,11 +431,11 @@ export const KaohsiungHospitalList = [
     },
     "google": {
       "rating": "4.4",
-      "reviewCount": 1972,
+      "reviewCount": 1978,
       "mapsUrl": "https://www.google.com/maps/place/%E6%A2%85%E8%A5%BF%E5%8B%95%E7%89%A9%E9%86%AB%E7%99%82%E4%B8%AD%E5%BF%83/@22.6913366,120.3167105,17z/data=!3m1!4b1!4m6!3m5!1s0x346e059894835b87:0xeea6eea3954f52db!8m2!3d22.6913366!4d120.3167105!16s%2Fg%2F11qn956kg5",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%A2%85%E8%A5%BF%E5%8B%95%E7%89%A9%E9%86%AB%E7%99%82%E4%B8%AD%E5%BF%83/@22.6913366,120.3167105,17z/data=!4m8!3m7!1s0x346e059894835b87:0xeea6eea3954f52db!8m2!3d22.6913366!4d120.3167105!9m1!1b1!16s%2Fg%2F11qn956kg5",
       "placeId": "ChIJh1uDlJgFbjQR21JPlaPupu4",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -503,11 +514,11 @@ export const KaohsiungHospitalList = [
       "note": "位於五樓，採電話預約制；每週五上午、週日晚間休診，其他異動依當月特寵科班表。",
       "reservationRequired": true,
       "sourceLabel": "官方網站、官方 Facebook、官方 Instagram",
-      "sourceUrl": "https://www.facebook.com/Exo.JS16/posts/1673609811438565",
-      "verifiedAt": "2026-09-20"
+      "sourceUrl": "https://www.instagram.com/exoticjs16/p/Ddgsql3E9_l/",
+      "verifiedAt": "2026-10-02"
     },
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-09-20T17:11:15.938Z",
+    "updatedAt": "2026-10-02T05:37:52.564Z",
     "last_checked": "2026-09-01",
     "fb": {
       "last_fb_post_date": "2026-08-20",
@@ -545,7 +556,7 @@ export const KaohsiungHospitalList = [
         "endDate": "2026-10-31",
         "sourceLabel": "官方 Instagram",
         "sourceUrl": "https://www.instagram.com/exoticjs16/p/Ddgsql3E9_l/",
-        "verifiedAt": "2026-09-20"
+        "verifiedAt": "2026-10-02"
       }
     ]
   },
@@ -592,11 +603,11 @@ export const KaohsiungHospitalList = [
     },
     "google": {
       "rating": "4.4",
-      "reviewCount": 854,
+      "reviewCount": 855,
       "mapsUrl": "https://www.google.com/maps/place/%E4%B8%AD%E8%88%88%E8%BE%B2%E5%8D%81%E5%85%AD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6546566,120.29792,17z/data=!3m1!4b1!4m6!3m5!1s0x346e04ff51a4f8ff:0xb884a5c74180e3b0!8m2!3d22.6546566!4d120.29792!16s%2Fg%2F11b6362bd3",
       "reviewsUrl": "https://www.google.com/maps/place/%E4%B8%AD%E8%88%88%E8%BE%B2%E5%8D%81%E5%85%AD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6546566,120.29792,17z/data=!3m1!4b1!4m6!3m5!1s0x346e04ff51a4f8ff:0xb884a5c74180e3b0!8m2!3d22.6546566!4d120.29792!9m1!1b1!16s%2Fg%2F11b6362bd3",
       "placeId": "ChIJ__ikUf8EbjQRsOOAQcelhLg",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -675,14 +686,14 @@ export const KaohsiungHospitalList = [
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "農十六特別寵物科",
-      "note": "採電話預約制。9 月部分週二、週三上午另有門診，須依月表預約；週一、週四、週五上午及週日全天休診，9/25 晚間休診。",
+      "note": "採電話預約制，不提供訊息約診及問診；上午診次依當月班表安排，週日全天休診。",
       "reservationRequired": true,
       "sourceLabel": "官方網站、官方 Facebook、官方 Instagram",
-      "sourceUrl": "https://www.facebook.com/Exo.JS16/posts/1673609811438565",
-      "verifiedAt": "2026-09-20"
+      "sourceUrl": "https://www.instagram.com/exoticjs16/p/Ddgsql3E9_l/",
+      "verifiedAt": "2026-10-02"
     },
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-09-20T17:11:15.938Z",
+    "updatedAt": "2026-10-02T05:37:52.564Z",
     "last_checked": "2026-09-01",
     "fb": {
       "last_fb_post_date": "2026-08-20",
@@ -713,14 +724,14 @@ export const KaohsiungHospitalList = [
       },
       {
         "id": "nong16-exotic-october-2026-schedule",
-        "type": "notice",
+        "type": "hours_change",
         "title": "2026 年 10 月農十六特寵門診表",
         "content": "10 月週二、週三、週六上午門診為 09:00–12:30，週一至週六下午與晚間為 14:00–17:30、18:30–21:00；週一、週四、週五上午及週日全天休診。採電話預約制，不提供訊息約診與問診，醫師診次依當月班表安排。",
         "startDate": "2026-10-01",
         "endDate": "2026-10-31",
         "sourceLabel": "官方 Instagram",
         "sourceUrl": "https://www.instagram.com/exoticjs16/p/Ddgsql3E9_l/",
-        "verifiedAt": "2026-09-20"
+        "verifiedAt": "2026-10-02"
       }
     ]
   },
@@ -736,7 +747,7 @@ export const KaohsiungHospitalList = [
     "typeText": "犬貓診療、特寵診療",
     "phone": "07-726-5577",
     "specialEvents": [],
-    "hours": "週一、二、四、五 10:00–13:00 / 14:00–21:00\n週三、六 10:00–13:00 / 14:00–19:00\n週日休診；特寵診次依當月醫師班表。",
+    "hours": "週一、二、四、五 10:00–13:00 / 14:00–21:00\n週三、六、日 10:00–13:00 / 14:00–19:00\n週日僅提供犬貓門診，最後掛號為 12:30、18:30；週日特寵請至大山異寵動物醫院。特寵診次依當月醫師班表。",
     "business_hours": {
       "mon": [
         "10:00-13:00",
@@ -762,15 +773,18 @@ export const KaohsiungHospitalList = [
         "10:00-13:00",
         "14:00-19:00"
       ],
-      "sun": []
+      "sun": [
+        "10:00-13:00",
+        "14:00-19:00"
+      ]
     },
     "google": {
       "rating": "4.6",
-      "reviewCount": 1175,
+      "reviewCount": 1080,
       "mapsUrl": "https://www.google.com/maps/place/%E4%BA%9E%E5%B9%B8%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.618895,120.3177324,17z/data=!3m1!4b1!4m6!3m5!1s0x346e0522f72a9771:0xc09195bac2639013!8m2!3d22.618895!4d120.3177324!16s%2Fg%2F11r975s6hh",
       "reviewsUrl": "https://www.google.com/maps/place/%E4%BA%9E%E5%B9%B8%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.618895,120.3177324,17z/data=!4m8!3m7!1s%2Fg%2F11r975s6hh!8m2!3d22.618895!4d120.3177324!9m1!1b1",
       "placeId": "ChIJcZcq9yIFbjQRE5BjwrqVkcA",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -825,15 +839,15 @@ export const KaohsiungHospitalList = [
     },
     "clinicNotes": "預約皆採電話，初診也可預約；本院不接急診。特寵及爬蟲門診請先確認醫師與院區，部分非犬貓專門門診由大山承接。晚班醫師 18:00–18:30 休息，助理休息時間為 18:00–19:00。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-09-20T17:11:15.938Z",
+    "updatedAt": "2026-10-02T05:57:39.077Z",
     "last_checked": "2026-09-01",
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "爬蟲／中獸醫門診",
-      "note": "亞幸有特寵及爬蟲門診，部分非犬貓專門門診由大山異寵動物醫院承接。2026 年 9 月周明賢醫師提供犬貓、爬蟲類、中獸醫與復健科門診，請先向院方確認可看診的物種與院區。",
-      "sourceLabel": "官方網站、官方 Facebook",
-      "sourceUrl": "https://www.facebook.com/action1218/posts/pfbid034S3TxKf89UqQjky5BQmbrnAXPaiHdjM86Wv4H9YBf37ud9w3ATEmqiGUirmeBSfml",
-      "verifiedAt": "2026-09-20"
+      "note": "部分非犬貓專門門診由大山異寵動物醫院承接。周明賢醫師的犬貓、爬蟲類、中獸醫與復健科門診依當月班表安排；10/7、10/17 周醫師休診，特寵看診請至大山。週日僅提供犬貓門診。",
+      "sourceLabel": "官方 Facebook",
+      "sourceUrl": "https://www.facebook.com/action1218/posts/pfbid02xmtGuBYbf3mM1grqxgUPYuxRDo22tmbjZWxChFVd319XN43ky5UjRmKAcCcdEtahl",
+      "verifiedAt": "2026-10-02"
     },
     "fb": {
       "last_fb_post_text": "10 月 1 日起，週日犬貓門診為 10:00–13:00、14:00–19:00，最後掛號為 12:30、18:30。週日特寵門診請至大山異寵動物醫院（07-223-5666）。"
@@ -869,7 +883,40 @@ export const KaohsiungHospitalList = [
         "startDate": "2026-10-01",
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/photo/?fbid=1661122186022455&set=a.488227896645229",
-        "verifiedAt": "2026-09-20"
+        "verifiedAt": "2026-10-02"
+      },
+      {
+        "id": "action-closure-2026-10-11",
+        "type": "closure",
+        "title": "10 月 11 日全院休診",
+        "content": "10/11 全體醫師進修，亞幸全院休診。",
+        "startDate": "2026-10-11",
+        "endDate": "2026-10-11",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/action1218/posts/pfbid02xmtGuBYbf3mM1grqxgUPYuxRDo22tmbjZWxChFVd319XN43ky5UjRmKAcCcdEtahl",
+        "verifiedAt": "2026-10-02"
+      },
+      {
+        "id": "action-exotic-referral-2026-10-07",
+        "type": "service_change",
+        "title": "10 月 7 日特寵看診請至大山",
+        "content": "10/7 周明賢醫師休診；特寵看診請至大山異寵動物醫院。",
+        "startDate": "2026-10-07",
+        "endDate": "2026-10-07",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/action1218/posts/pfbid02xmtGuBYbf3mM1grqxgUPYuxRDo22tmbjZWxChFVd319XN43ky5UjRmKAcCcdEtahl",
+        "verifiedAt": "2026-10-02"
+      },
+      {
+        "id": "action-exotic-referral-2026-10-17",
+        "type": "service_change",
+        "title": "10 月 17 日特寵看診請至大山",
+        "content": "10/17 周明賢醫師休診；特寵看診請至大山異寵動物醫院。",
+        "startDate": "2026-10-17",
+        "endDate": "2026-10-17",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/action1218/posts/pfbid02xmtGuBYbf3mM1grqxgUPYuxRDo22tmbjZWxChFVd319XN43ky5UjRmKAcCcdEtahl",
+        "verifiedAt": "2026-10-02"
       }
     ]
   },
@@ -885,7 +932,7 @@ export const KaohsiungHospitalList = [
     "typeText": "特寵診療",
     "phone": "07-223-5666",
     "specialEvents": [],
-    "hours": "週一、二、四、五、六、日 10:00–13:00 / 14:00–17:30 / 18:30–21:00\n週三 10:00–13:00 / 14:00–19:00（Google；9 月官方班表一般時段列至 21:00，實際請電話確認）\n9/13、9/20 營業至 19:00\n門診預約優先，預約請致電 07-223-5666。",
+    "hours": "週一、二、四、五、六、日 10:00–13:00 / 14:00–17:30 / 18:30–21:00\n週三 10:00–13:00 / 14:00–19:00\n門診預約優先，預約請致電 07-223-5666。",
     "business_hours": {
       "mon": [
         "10:00-13:00",
@@ -924,11 +971,11 @@ export const KaohsiungHospitalList = [
     },
     "google": {
       "rating": "4.7",
-      "reviewCount": 47,
+      "reviewCount": 50,
       "mapsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E5%B1%B1%E7%95%B0%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6292518,120.3217156,17z/data=!3m1!4b1!4m6!3m5!1s0x346e05000103b1ff:0x8db5419d774f920b!8m2!3d22.6292518!4d120.3217156!16s%2Fg%2F11zc4r1kr1",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E5%B1%B1%E7%95%B0%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6292518,120.3217156,17z/data=!4m8!3m7!1s0x346e05000103b1ff:0x8db5419d774f920b!8m2!3d22.6292518!4d120.3217156!9m1!1b1!16s%2Fg%2F11zc4r1kr1",
       "placeId": "ChIJ_7EDAQAFbjQRC5JPd51BtY0",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -937,17 +984,23 @@ export const KaohsiungHospitalList = [
     "services": [
       "特殊寵物診療",
       "健康管理",
-      "飼養建議"
+      "飼養建議",
+      "異寵病房",
+      "中西醫整合治療"
     ],
     "pets": [
       "小型哺乳類",
       "鳥類",
       "爬蟲類",
+      "烏龜",
+      "兩棲類",
       "非犬貓特殊寵物"
     ],
     "pet_category_group": [
       "鳥類",
       "爬蟲",
+      "烏龜",
+      "兩棲",
       "其他特寵"
     ],
     "specialties": [
@@ -965,7 +1018,7 @@ export const KaohsiungHospitalList = [
       "facebook": "https://www.facebook.com/61591452929319/",
       "instagram": "https://www.instagram.com/mountain___vet/"
     },
-    "clinicNotes": "門診採預約優先制，請電話預約；掛號費每隻 200 元，最晚掛號為 12:30、17:00、20:30。龜類、兩棲類請預約指定醫師；若時段沒有龜類醫師，請洽亞幸周明賢醫師。週三門診結束時間請先電話確認，當月異動依公告安排。",
+    "clinicNotes": "門診採預約優先制，請電話預約；掛號費每隻 200 元，最晚掛號為 12:30、17:00、20:30。龜類、兩棲類請預約指定醫師；若時段沒有龜類醫師，請洽亞幸周明賢醫師。當月異動依公告安排。",
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "龜類／兩棲類指定門診",
@@ -976,7 +1029,7 @@ export const KaohsiungHospitalList = [
       "verifiedAt": "2026-09-20"
     },
     "createdAt": "2026-05-31T00:00:00.000Z",
-    "updatedAt": "2026-09-20T13:11:24.415Z",
+    "updatedAt": "2026-10-02T05:57:39.078Z",
     "last_checked": "2026-09-01",
     "fb": {
       "last_fb_post_date": "2026-09-15",
@@ -1035,6 +1088,28 @@ export const KaohsiungHospitalList = [
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid02SdK5F6Qq4fjcmzjk24mqRukSyX6kF2EhGvCdGsDmQANk6ZFGfn1UGZ8LyvTG4Djxl&id=61591452929319",
         "verifiedAt": "2026-09-20"
+      },
+      {
+        "id": "dashan-exotic-october-2026-schedule",
+        "type": "hours_change",
+        "title": "大山 2026 年 10 月門診班表",
+        "content": "10 月營業時間為 10:00–21:00，週三至 19:00；門診預約優先，請先來電。各醫師診次依當月班表安排。",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-31",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid0xzt6vXFwZoVi44SQLLMatCcRkN5xEZQAzrAma3ZP2qwVta2HSz3XyJJ3jfqCsctCl&id=61591452929319",
+        "verifiedAt": "2026-10-02"
+      },
+      {
+        "id": "dashan-rabbit-clinic-2026-10-07",
+        "type": "service_change",
+        "title": "10 月 7 日朱哲助醫師兔科門診",
+        "content": "朱哲助醫師 10 月僅於 10/7 提供兔科門診，名額有限，請先電話預約。",
+        "startDate": "2026-10-07",
+        "endDate": "2026-10-07",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid0xzt6vXFwZoVi44SQLLMatCcRkN5xEZQAzrAma3ZP2qwVta2HSz3XyJJ3jfqCsctCl&id=61591452929319",
+        "verifiedAt": "2026-10-02"
       }
     ]
   },
@@ -1171,7 +1246,7 @@ export const KaohsiungHospitalList = [
       "mapsUrl": "https://www.google.com/maps/place/%E8%8F%AF%E8%88%88%E7%89%B9%E5%AF%B5%22%E9%9D%9E%E7%8A%AC%E8%B2%93%22%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E9%86%AB%E7%99%82%E9%96%80%E8%A8%BA%E9%83%A8+%EF%BC%88%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@22.5959287,120.3322277,17z/data=!3m1!4b1!4m6!3m5!1s0x346e0354d80b3c4b:0x79652541938a6747!8m2!3d22.5959287!4d120.3322277!16s%2Fg%2F11xcfgt_jy",
       "reviewsUrl": "https://www.google.com/maps/place/%E8%8F%AF%E8%88%88%E7%89%B9%E5%AF%B5%22%E9%9D%9E%E7%8A%AC%E8%B2%93%22%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E9%86%AB%E7%99%82%E9%96%80%E8%A8%BA%E9%83%A8+%EF%BC%88%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@22.5959287,120.3322277,17z/data=!4m8!3m7!1s0x346e0354d80b3c4b:0x79652541938a6747!8m2!3d22.5959287!4d120.3322277!9m1!1b1!16s%2Fg%2F11xcfgt_jy",
       "placeId": "ChIJSzwL2FQDbjQRR2eKk0ElZXk",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -1276,41 +1351,41 @@ export const KaohsiungHospitalList = [
     "typeText": "犬貓診療、特寵診療",
     "phone": "07-7809102",
     "specialEvents": [],
-    "hours": "2026 年 9 月犬貓與特寵門診時段為 09:30–12:00、13:00–17:30、18:30–21:00；停止掛號時間為 11:30、17:00、20:30。\n特寵門診依醫師班表預約，9/6、9/19、9/20 無特寵門診。各日診次與醫師安排請依當月班表確認。",
+    "hours": "門診時段為 09:30–12:00、13:00–17:30、18:30–21:00；停止掛號時間為 11:30、17:00、20:30。\n特寵門診採預約制，醫師與診次依當月班表安排。",
     "business_hours": {
       "mon": [
-        "09:00-11:30",
-        "13:00-17:00",
-        "18:30-20:30"
+        "09:30-12:00",
+        "13:00-17:30",
+        "18:30-21:00"
       ],
       "tue": [
-        "09:00-11:30",
-        "13:00-17:00",
-        "18:30-20:30"
+        "09:30-12:00",
+        "13:00-17:30",
+        "18:30-21:00"
       ],
       "wed": [
-        "09:00-11:30",
-        "13:00-17:00",
-        "18:30-20:30"
+        "09:30-12:00",
+        "13:00-17:30",
+        "18:30-21:00"
       ],
       "thu": [
-        "09:00-11:30",
-        "13:00-17:00",
-        "18:30-20:30"
+        "09:30-12:00",
+        "13:00-17:30",
+        "18:30-21:00"
       ],
       "fri": [
-        "09:00-11:30",
-        "13:00-17:00",
-        "18:30-20:30"
+        "09:30-12:00",
+        "13:00-17:30",
+        "18:30-21:00"
       ],
       "sat": [
-        "09:00-11:30",
-        "13:00-17:00",
-        "18:30-20:30"
+        "09:30-12:00",
+        "13:00-17:30",
+        "18:30-21:00"
       ],
       "sun": [
-        "09:00-11:30",
-        "13:00-17:00",
+        "09:30-12:00",
+        "13:00-17:30",
         "18:30-21:00"
       ]
     },
@@ -1320,7 +1395,7 @@ export const KaohsiungHospitalList = [
       "mapsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E6%AF%9B%E5%B0%8F%E6%AF%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%7C+%E7%8A%AC%E8%B2%93%E7%89%B9%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.639686,120.3486158,17z/data=!3m1!4b1!4m6!3m5!1s0x346e1b2dc2aca2a9:0xa2e9b73e0e330bcb!8m2!3d22.639686!4d120.3486158!16s%2Fg%2F11f5v0r3h1",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E6%AF%9B%E5%B0%8F%E6%AF%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%7C+%E7%8A%AC%E8%B2%93%E7%89%B9%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.639686,120.3486158,17z/data=!3m1!4b1!4m8!3m7!1s0x346e1b2dc2aca2a9:0xa2e9b73e0e330bcb!8m2!3d22.639686!4d120.3486158!9m1!1b1!16s%2Fg%2F11f5v0r3h1",
       "placeId": "ChIJqaKswi0bbjQRywszDj636aI",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -1388,15 +1463,15 @@ export const KaohsiungHospitalList = [
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "特寵門診",
-      "note": "特寵門診依當月醫師班表安排，採預約制，請先來電確認物種與診次。9 月 6、19、20 日無特寵門診；林醫師於 9 月結束後離開。",
+      "note": "特寵門診依當月醫師班表安排，採預約制，請先來電確認物種與診次。",
       "reservationRequired": true,
       "sourceLabel": "官方 Facebook",
-      "sourceUrl": "https://www.facebook.com/photo/?fbid=1583966076852440&set=a.784023930179996",
-      "verifiedAt": "2026-09-20"
+      "sourceUrl": "https://www.facebook.com/photo/?fbid=1610621400853574&set=a.784023930179996",
+      "verifiedAt": "2026-10-02"
     },
     "clinicNotes": "本院採預約制，請先來電或透過官方 LINE 預約。若無法前來，請於診前一小時電話取消；同位飼主兩次未到診，之後無法預約，僅能現場安排。\n提前於當診次以前預約，並於預約時間內報到（提供 10 分鐘緩衝），可適用準時預約掛號費優惠。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-09-20T17:11:15.938Z",
+    "updatedAt": "2026-10-02T06:09:01.520Z",
     "last_checked": "2026-09-01",
     "fb": {
       "last_fb_post_date": "2026-08-31",
@@ -1411,7 +1486,7 @@ export const KaohsiungHospitalList = [
         "startDate": "2026-02-01",
         "sourceLabel": "官方 Instagram",
         "sourceUrl": "https://www.instagram.com/monsterah62/p/DTt99kcgREP/",
-        "verifiedAt": "2026-09-16"
+        "verifiedAt": "2026-10-02"
       },
       {
         "id": "monsterah62-night-clinic-suspended",
@@ -1445,6 +1520,17 @@ export const KaohsiungHospitalList = [
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/photo/?fbid=1583966076852440&set=a.784023930179996",
         "verifiedAt": "2026-09-20"
+      },
+      {
+        "id": "monsterah62-october-2026-exotic-schedule",
+        "type": "notice",
+        "title": "2026 年 10 月特寵門診班表",
+        "content": "10 月特寵醫師依當月班表看診。森孟柔醫師特約門診為 10/7、10/14、10/23、10/28 的 13:00–20:30。門診採預約制，無法前來請先電話取消；無故未到兩次將失去預約資格。",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-31",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/photo/?fbid=1610621400853574&set=a.784023930179996",
+        "verifiedAt": "2026-10-02"
       }
     ]
   },
@@ -1496,11 +1582,11 @@ export const KaohsiungHospitalList = [
     },
     "google": {
       "rating": "5.0",
-      "reviewCount": 109,
+      "reviewCount": 111,
       "mapsUrl": "https://www.google.com/maps/place/%E6%8B%BE%E8%B2%B3%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2(%E7%95%B6%E6%9C%88%E7%87%9F%E6%A5%AD%E6%97%A5%E5%85%AC%E5%91%8A%E8%AB%8B%E8%A6%8BFB%2FIG)/@22.6516743,120.285007,17z/data=!3m1!4b1!4m6!3m5!1s0x346e05ac2efc9b5b:0xa9f2488d51672786!8m2!3d22.6516743!4d120.285007!16s%2Fg%2F11lng5trbf",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%8B%BE%E8%B2%B3%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2(%E7%95%B6%E6%9C%88%E7%87%9F%E6%A5%AD%E6%97%A5%E5%85%AC%E5%91%8A%E8%AB%8B%E8%A6%8BFB%2FIG)/@22.6516743,120.285007,17z/data=!4m8!3m7!1s0x346e05ac2efc9b5b:0xa9f2488d51672786!8m2!3d22.6516743!4d120.285007!9m1!1b1!16s%2Fg%2F11lng5trbf",
       "placeId": "ChIJW5v8LqwFbjQRhidnUY1I8qk",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -1550,7 +1636,7 @@ export const KaohsiungHospitalList = [
     },
     "clinicNotes": "原官方 LINE 提供自動化掛號、看診進度、電子帳單及預約提醒；醫療照護疑問、門診諮詢與專人服務請使用真人諮詢 LINE https://lin.ee/XZdceYt。Facebook 與 Instagram 私訊不回覆。\n實際營業日請依當月公告及預約系統安排；特寵物種請於預約時確認。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-09-20T17:11:15.938Z",
+    "updatedAt": "2026-10-02T06:09:01.521Z",
     "last_checked": "2026-09-01",
     "announcements": [
       {
@@ -1637,10 +1723,10 @@ export const KaohsiungHospitalList = [
     },
     "google": {
       "rating": "4.4",
-      "reviewCount": 285,
+      "reviewCount": 286,
       "mapsUrl": "https://www.google.com/maps/place/%E6%9C%AC%E4%B8%B8%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E8%88%87%E8%B2%93%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@22.6062397,120.3332996,17z/data=!3m1!4b1!4m6!3m5!1s0x346e03288b0c988f:0xd450b600ebbec960!8m2!3d22.6062397!4d120.3332996!16s%2Fg%2F11rr2pry1w",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%9C%AC%E4%B8%B8%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E8%88%87%E8%B2%93%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@22.6062397,120.3332996,17z/data=!4m8!3m7!1s0x346e03288b0c988f:0xd450b600ebbec960!8m2!3d22.6062397!4d120.3332996!9m1!1b1!16s%2Fg%2F11rr2pry1w",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -1685,7 +1771,7 @@ export const KaohsiungHospitalList = [
     },
     "clinicNotes": "初診以現場掛號為主，預約方式及複診規則請先致電確認。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-09-16T00:00:00.000Z",
+    "updatedAt": "2026-10-02T06:09:01.521Z",
     "last_checked": "2026-09-01"
   },
   {
@@ -1729,11 +1815,11 @@ export const KaohsiungHospitalList = [
     },
     "google": {
       "rating": "4.2",
-      "reviewCount": 602,
+      "reviewCount": 604,
       "mapsUrl": "https://www.google.com/maps/place/%E8%93%8B%E4%BA%9E%E9%87%8E%E7%94%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/data=!4m2!3m1!1s0x0:0x21978790a330ab29?sa=X&ved=1t:2428&ictx=111",
       "reviewsUrl": "https://www.google.com/maps/place/%E8%93%8B%E4%BA%9E%E9%87%8E%E7%94%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6481341,120.3191231,17z/data=!4m8!3m7!1s0x346e04e76ca10ca7:0x21978790a330ab29!8m2!3d22.6481341!4d120.3191231!9m1!1b1!16s%2Fg%2F11xs835jv",
       "placeId": "ChIJpwyhbOcEbjQRKaswo5CHlyE",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -1779,7 +1865,7 @@ export const KaohsiungHospitalList = [
     },
     "clinicNotes": "提供兔子、囓齒類（倉鼠、大小鼠等）、刺蝟、蜜袋鼯、鳥類、爬蟲類（烏龜、蜥蜴等）與其他非犬貓寵物診療，不看犬貓。院方於 2026-08-07 補充不看大豬、魚、雪貂，以及劇毒或攻擊力強的危險動物；其他特殊寵物請先來電確認。\n平日可現場掛號或電話預約，初診須現場掛號；週六僅現場掛號，額滿停掛。遇緊急手術或門診額滿可能提早關門。每組限兩人進入醫院及診間，有呼吸道症狀者請戴口罩。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-09-20T17:11:15.938Z",
+    "updatedAt": "2026-10-02T06:24:19.125Z",
     "last_checked": "2026-09-01",
     "fb": {
       "last_fb_post_date": "2026-08-29",
@@ -1807,6 +1893,28 @@ export const KaohsiungHospitalList = [
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/gaiavet/posts/pfbid0EYQMJq4Y4L5YVqFrBW5TcGrHrR9ceNCQZzDQ3RPT3YLbAS46vRjM4xMGfomGyag1l",
         "verifiedAt": "2026-09-20"
+      },
+      {
+        "id": "gaia-closure-2026-10-12",
+        "type": "closure",
+        "title": "10 月 12 日補休",
+        "content": "10/12 雙十補休，全院休診。",
+        "startDate": "2026-10-12",
+        "endDate": "2026-10-12",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/photo/?fbid=1670553977760078&set=a.667177871431032",
+        "verifiedAt": "2026-10-02"
+      },
+      {
+        "id": "gaia-closure-2026-10-25-26",
+        "type": "closure",
+        "title": "10 月 25–26 日連休",
+        "content": "10/25–10/26 月底連休，全院休診。",
+        "startDate": "2026-10-25",
+        "endDate": "2026-10-26",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/photo/?fbid=1670553977760078&set=a.667177871431032",
+        "verifiedAt": "2026-10-02"
       }
     ]
   },
@@ -2034,7 +2142,7 @@ export const KaohsiungHospitalList = [
       "mapsUrl": "https://www.google.com/maps/place/%E6%8D%B7%E9%A3%9B%E9%81%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6851727,120.3219956,17z/data=!3m1!4b1!4m6!3m5!1s0x346e0542c061374b:0x9f63263d1abb3fc9!8m2!3d22.6851727!4d120.3219956!16s%2Fg%2F1pzqfh8j_",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%8D%B7%E9%A3%9B%E9%81%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6851727,120.3219956,17z/data=!4m8!3m7!1s0x346e0542c061374b:0x9f63263d1abb3fc9!8m2!3d22.6851727!4d120.3219956!9m1!1b1!16s%2Fg%2F1pzqfh8j_",
       "placeId": "ChIJSzdhwEIFbjQRyT-7Gj0mY58",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -2116,38 +2224,38 @@ export const KaohsiungHospitalList = [
     "typeText": "犬貓診療、特寵診療",
     "phone": "07-374-0964 #20",
     "specialEvents": [],
-    "hours": "Google 顯示週一、二、四、五、六、日 09:30–01:30；週三 09:30–12:30 / 16:30–01:30。官方門診列週一、二、四、五、六、日 09:30–02:00、週三 09:30–12:30 / 16:30–02:00，01:30 為止掛時間；急診 21:00–02:00 需加收急診費，止掛以現場掛號為主。\n2026/09/22、09/23 員工旅遊，仁武總院調整為 09:30–21:30，請改用官方 LINE 預約。",
+    "hours": "週一、二、四、五、六、日 09:30–翌日 01:30；週三 09:30–12:30、16:30–翌日 01:30。\n一般急診時段為 21:00–翌日 01:30，需加收急診費。週一、二、四、五、六、日 01:00 停止掛號，須到現場報到；週三上午 12:00 停止掛號。鼠兔急症是否受理，請先確認。",
     "business_hours": {
       "mon": [
-        "09:30-02:00"
+        "09:30-01:30"
       ],
       "tue": [
-        "09:30-02:00"
+        "09:30-01:30"
       ],
       "wed": [
         "09:30-12:30",
-        "16:30-02:00"
+        "16:30-01:30"
       ],
       "thu": [
-        "09:30-02:00"
+        "09:30-01:30"
       ],
       "fri": [
-        "09:30-02:00"
+        "09:30-01:30"
       ],
       "sat": [
-        "09:30-02:00"
+        "09:30-01:30"
       ],
       "sun": [
-        "09:30-02:00"
+        "09:30-01:30"
       ]
     },
     "google": {
       "rating": "4.6",
-      "reviewCount": 732,
+      "reviewCount": 736,
       "mapsUrl": "https://www.google.com/maps/place/%E8%81%AF%E7%9B%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E4%BB%81%E6%AD%A6%E7%B8%BD%E9%99%A2/@22.6978568,120.3469454,17z/data=!3m1!4b1!4m6!3m5!1s0x346e117d43f4fcb5:0x506d0adb3a6c32e9!8m2!3d22.6978568!4d120.3469454!16s%2Fg%2F11kz1z0z79",
       "reviewsUrl": "https://www.google.com/maps/place/%E8%81%AF%E7%9B%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E4%BB%81%E6%AD%A6%E7%B8%BD%E9%99%A2/@22.6978568,120.3469454,17z/data=!4m8!3m7!1s0x346e117d43f4fcb5:0x506d0adb3a6c32e9!8m2!3d22.6978568!4d120.3469454!9m1!1b1!16s%2Fg%2F11kz1z0z79",
       "placeId": "ChIJtfz0Q30RbjQR6TJsOtsKbVA",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -2199,7 +2307,7 @@ export const KaohsiungHospitalList = [
       "instagram": "https://www.instagram.com/alliance.veterinary/",
       "line": "https://lin.ee/oaESnXp"
     },
-    "clinicNotes": "鼠兔特寵門診由吳蘇安獸醫師看診，依官方即時排班安排；可透過仁武總院 LINE 預約及諮詢。\n夜間門診結束與止掛時間請先致電確認；鼠兔急症亦請先確認是否受理。週三上午 12:00 止掛，12:30–16:30 休診。",
+    "clinicNotes": "鼠兔特寵門診由吳蘇安獸醫師看診，依官方即時排班安排；可透過仁武總院 LINE 預約及諮詢。\n鼠兔急症是否受理，請先確認。週三上午 12:00 停止掛號，12:30–16:30 休診。",
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "鼠兔特寵門診",
@@ -2207,10 +2315,10 @@ export const KaohsiungHospitalList = [
       "reservationRequired": false,
       "sourceLabel": "官方網站即時排班",
       "sourceUrl": "https://vet.pet100pa.com/vet",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-09-20T14:36:15.659Z",
+    "updatedAt": "2026-10-02T06:24:19.139Z",
     "last_checked": "2026-09-04",
     "announcements": [
       {
@@ -2288,7 +2396,7 @@ export const KaohsiungHospitalList = [
       "mapsUrl": "https://www.google.com/maps/place/%E5%BC%98%E8%8B%91%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2(%E7%9C%8B%E8%A8%BA%E8%AB%8B%E9%A0%90%E7%B4%84%EF%BC%8C%E5%85%AC%E4%BC%91%E7%9C%8BFB)/@22.7841022,120.2792344,17z/data=!3m1!4b1!4m6!3m5!1s0x346e0e9bb64e3a6d:0x478a32e30c32d26!8m2!3d22.7841022!4d120.2818093!16s%2Fg%2F1q6bd_gcz",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%BC%98%E8%8B%91%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2(%E7%9C%8B%E8%A8%BA%E8%AB%8B%E9%A0%90%E7%B4%84%EF%BC%8C%E5%85%AC%E4%BC%91%E7%9C%8BFB)/@22.7841022,120.2818093,17z/data=!4m8!3m7!1s0x346e0e9bb64e3a6d:0x478a32e30c32d26!8m2!3d22.7841022!4d120.2818093!9m1!1b1!16s%2Fg%2F1q6bd_gcz",
       "placeId": "ChIJbTpOtpsObjQRJi3DMC6jeAQ",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -2394,11 +2502,11 @@ export const KaohsiungHospitalList = [
     },
     "google": {
       "rating": "4.5",
-      "reviewCount": 118,
+      "reviewCount": 121,
       "mapsUrl": "https://www.google.com/maps/place/%E9%9F%93%E7%89%B9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E8%88%87%E7%89%B9%E5%AF%B5%E9%86%AB%E7%99%82/@22.619086,120.2975687,17z/data=!3m1!4b1!4m6!3m5!1s0x346e054a08a32f2b:0xa246aa895995192d!8m2!3d22.619086!4d120.2975687!16s%2Fg%2F11v03gjzkc",
       "reviewsUrl": "https://www.google.com/maps/place/%E9%9F%93%E7%89%B9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E8%88%87%E7%89%B9%E5%AF%B5%E9%86%AB%E7%99%82/@22.619086,120.2975687,17z/data=!4m8!3m7!1s0x346e054a08a32f2b:0xa246aa895995192d!8m2!3d22.619086!4d120.2975687!9m1!1b1!16s%2Fg%2F11v03gjzkc",
       "placeId": "ChIJKy-jCEoFbjQRLRmVWYmqRqI",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -2439,7 +2547,7 @@ export const KaohsiungHospitalList = [
     },
     "clinicNotes": "無急診服務及線上訊息回覆；初診、預約與回診可使用官方 LINE。12:00–13:30 為休息時段，有手術時可能延至 15:00；實際門診依當月班表安排。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-09-20T14:41:43.501Z",
+    "updatedAt": "2026-10-02T06:34:00.751Z",
     "last_checked": "2026-09-01",
     "fb": {
       "last_fb_post_date": "2026-08-24",
@@ -2478,6 +2586,17 @@ export const KaohsiungHospitalList = [
         "sourceLabel": "官方 Facebook、官方 Instagram",
         "sourceUrl": "https://www.facebook.com/photo/?fbid=1087212887589362&set=a.193352500308743",
         "verifiedAt": "2026-09-20"
+      },
+      {
+        "id": "huntah-october-2026-schedule",
+        "type": "notice",
+        "title": "2026 年 10 月門診與預約提醒",
+        "content": "週一至週六 10:00–21:00，週日 10:00–18:00，週四休診。12:00–13:30 休息；有手術時，休息時段可能延至 15:00。可透過官方 LINE 提前預約，院方不提供急診及線上訊息回覆。",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-31",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/photo/?fbid=1118843887759595&set=a.193352500308743",
+        "verifiedAt": "2026-10-02"
       }
     ]
   },
@@ -2591,11 +2710,11 @@ export const KaohsiungHospitalList = [
     },
     "google": {
       "rating": "3.8",
-      "reviewCount": 1579,
+      "reviewCount": 1584,
       "mapsUrl": "https://www.google.com/maps/place/%E5%AE%8F%E5%8A%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6600018,120.3247709,17z/data=!3m5!1s0x346e0523dd5f2dd3:0x4fde243b4849de61!8m2!3d22.6600018!4d120.3247709!16s%2Fg%2F1pzq_cfys",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%AE%8F%E5%8A%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6600018,120.3247709,17z/data=!4m8!3m7!1s0x346e0523dd5f2dd3:0x4fde243b4849de61!8m2!3d22.6600018!4d120.3247709!9m1!1b1!16s%2Fg%2F1pzq_cfys",
       "placeId": "ChIJ0y1f3SMFbjQRYd5JSDsk3k8",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "clinicNotes": "張天立獸醫師提供特殊寵物與水生動物醫療；特寵看診與急症請先致電確認可接診醫師及時段。住院探病陪伴採預約制，請電洽櫃台安排。",
     "specialClinic": {
@@ -2607,7 +2726,7 @@ export const KaohsiungHospitalList = [
       "verifiedAt": "2026-09-20"
     },
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-09-20T17:11:15.938Z",
+    "updatedAt": "2026-10-02T06:34:00.751Z",
     "last_checked": "2026-09-01",
     "fb": {
       "last_fb_post_date": "2026-08-28",
@@ -2645,6 +2764,17 @@ export const KaohsiungHospitalList = [
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/hunglivet/posts/pfbid0bzJDKH4RZF3LPsgNPpmgHLqeu1BLjapHi4NYJuMTgiPxCgCqqB5BvppE2kWLqXxil",
         "verifiedAt": "2026-09-20"
+      },
+      {
+        "id": "hungli-october-2026-schedule",
+        "type": "hours_change",
+        "title": "2026 年 10 月一般門診與急診時段",
+        "content": "一般門診週一至週六為 09:00–12:00、13:00–18:00、19:00–22:00，週日為 09:00–12:00、13:00–18:00。一般急診週一至週六為 08:00–09:00、12:00–13:00、18:00–19:00、22:00–00:00，週日為 08:00–09:00、12:00–13:00、18:00–00:00。住院探病陪伴採預約制，請電洽櫃台安排。",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-31",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/photo/?fbid=1675300604605660&set=pcb.1675300921272295",
+        "verifiedAt": "2026-10-02"
       }
     ]
   },
@@ -2759,9 +2889,9 @@ export const KaohsiungHospitalList = [
     },
     "google": {
       "rating": "4.5",
-      "reviewCount": 369,
+      "reviewCount": 373,
       "mapsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E7%A4%BE%E6%AF%9B%E6%AF%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.731948,120.3464925,17z/data=!3m1!4b1!4m6!3m5!1s0x346e117e7dbd0995:0xe55e8ad09b0fd866!8m2!3d22.731948!4d120.3464925!16s%2Fg%2F11k7j9s2t8",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "specialClinic": {
       "hasExoticSpecialClinic": true,
@@ -2774,7 +2904,7 @@ export const KaohsiungHospitalList = [
     },
     "clinicNotes": "可現場掛號，預約優先；每診預估約 30 分鐘，實際等候時間依動物病況調整。特寵門診依醫師班表安排，請透過電話或官方 LINE 確認物種與診次。\n院方依檢傷分類安排看診，生命危險的動物優先。休息時間為 12:00–14:00、17:30–18:30，請避免於休息時間至現場購買商品或詢問問題。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-09-17T00:00:00.000Z",
+    "updatedAt": "2026-10-02T06:46:47.256Z",
     "last_checked": "2026-09-01",
     "fb": {
       "last_fb_post_text": "9 月班表已公布，特寵門診依醫師班表安排。可現場掛號，預約優先，每診預估約 30 分鐘；班表同步 Instagram 與 LINE VOOM。"
@@ -2808,6 +2938,17 @@ export const KaohsiungHospitalList = [
         "sourceLabel": "官方 Facebook、官方 Instagram",
         "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid05FDxGKW64pn4kS7Be1huXQocpt1FJ6iSWmm16Ko17rgPfQNnjNf9acoPbpUG3aizl&id=61582486468405",
         "verifiedAt": "2026-09-20"
+      },
+      {
+        "id": "maomao-dashe-october-2026-schedule",
+        "type": "notice",
+        "title": "2026 年 10 月門診與醫師研習提醒",
+        "content": "10 月上半月醫師診次依院方班表安排，可來電或透過官方 LINE 預約。10 月下半月張、許、林醫師外出研習；需長期包藥或檢查者，請提前預約醫師門診討論治療。",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-31",
+        "sourceLabel": "官方 Instagram",
+        "sourceUrl": "https://www.instagram.com/dsmaomaoah/p/Ddsf1Mgn7gI/",
+        "verifiedAt": "2026-10-02"
       }
     ]
   },
@@ -3033,23 +3174,23 @@ export const KaohsiungHospitalList = [
     },
     "google": {
       "rating": "4.4",
-      "reviewCount": 447,
+      "reviewCount": 456,
       "mapsUrl": "https://www.google.com/maps/place/%E6%98%9F%E7%BE%BD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E4%B8%89%E6%B0%91%E9%99%A2-24%E5%B0%8F%E6%99%82%E6%80%A5%E9%87%8D%E7%97%87%E5%8B%95%E7%89%A9%E7%85%A7%E8%AD%B7%E9%86%AB%E9%99%A2%7C%E7%8A%AC%E8%B2%93%E6%9A%A8%E7%89%B9%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%7C%E5%AF%B5%E7%89%A9%E6%B4%97%E7%89%99%7C%E5%AF%B5%E7%89%A9%E7%B5%90%E7%B4%AE%7C%E9%B8%9A%E9%B5%A1%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%7C%E9%BC%A0%E5%85%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%7C%E5%AF%B5%E7%89%A9%E5%A4%96%E7%A7%91%7C%E9%AB%98%E9%9B%84%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E6%8E%A8%E8%96%A6/@22.6471426,120.3387335,17z/data=!3m1!4b1!4m6!3m5!1s0x346e05004e7eb425:0x4da909ae87edda82!8m2!3d22.6471426!4d120.3387335!16s%2Fg%2F11w232msk0",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%98%9F%E7%BE%BD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E4%B8%89%E6%B0%91%E9%99%A2-24%E5%B0%8F%E6%99%82%E6%80%A5%E9%87%8D%E7%97%87%E5%8B%95%E7%89%A9%E7%85%A7%E8%AD%B7%E9%86%AB%E9%99%A2%7C%E7%8A%AC%E8%B2%93%E6%9A%A8%E7%89%B9%E5%AF%B5%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%7C%E5%AF%B5%E7%89%A9%E6%B4%97%E7%89%99%7C%E5%AF%B5%E7%89%A9%E7%B5%90%E7%B4%AE%7C%E9%B8%9A%E9%B5%A1%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%7C%E9%BC%A0%E5%85%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%7C%E5%AF%B5%E7%89%A9%E5%A4%96%E7%A7%91%7C%E9%AB%98%E9%9B%84%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E6%8E%A8%E8%96%A6/@22.6471426,120.3387335,17z/data=!4m8!3m7!1s0x346e05004e7eb425:0x4da909ae87edda82!8m2!3d22.6471426!4d120.3387335!9m1!1b1!16s%2Fg%2F11w232msk0",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "鳥禽、鼠兔與爬蟲特寵門診",
-      "note": "提供鳥禽、鼠兔／小型哺乳類與爬蟲類內外科；官方 2026 年 9 月公告列出 9/5、9/6、9/9、9/12、9/15、9/17、9/19、9/22、9/26、9/29 夜診無特寵醫師，9/30 下午不接門診及手術。採預約優先，實際特寵醫師與診次請先電話確認；院方未承諾每日特寵急診。",
+      "note": "提供鳥禽、鼠兔／小型哺乳類與爬蟲類內外科；特寵夜診為 21:30–翌日 02:00，依當月醫師班表安排。採預約優先，實際特寵醫師與診次請先電話確認；院方未承諾每日特寵急診。",
       "reservationRequired": false,
-      "sourceLabel": "官方 Instagram、官方 Facebook",
-      "sourceUrl": "https://www.instagram.com/starfeather.ah_sanmin/p/DckKY6lk-AC/",
-      "verifiedAt": "2026-09-20"
+      "sourceLabel": "官方 Instagram",
+      "sourceUrl": "https://www.instagram.com/starfeather.ah_sanmin/p/Dd6zpjbE0ft/",
+      "verifiedAt": "2026-10-02"
     },
-    "clinicNotes": "本院採預約優先制，請於就診前一天的人員上班時間來電預約；現場掛號依櫃檯安排候診。提供現金及轉帳支付，轉帳請於結帳時告知櫃檯。\n犬貓與特寵夜診為 21:30–02:00，特寵醫師依當月班表安排；晚間就診前請先電話確認。犬貓及特寵皆有 24 小時住院照護。",
+    "clinicNotes": "本院採預約優先制，請於就診前一天的人員上班時間來電預約；現場掛號依櫃檯安排候診。提供現金及轉帳支付，轉帳請於結帳時告知櫃檯。\n犬貓與特寵夜診為 21:30–02:00，特寵醫師依當月班表安排；晚間就診前請先電話確認。犬貓及特寵皆有 24 小時住院照護。\n日診休診前 30 分鐘加收急診掛號費 500 元。每月最後一週的星期三下午不接門診及手術。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-09-20T14:50:04.045Z",
+    "updatedAt": "2026-10-02T06:46:47.256Z",
     "last_checked": "2026-09-04",
     "fb": {
       "last_fb_post_text": "因特寵醫師下午有緊急手術，9 月 15 日特寵下午診不接現場掛號。"
@@ -3086,6 +3227,28 @@ export const KaohsiungHospitalList = [
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/photo/?fbid=122147992292414622&set=a.122094224846414622",
         "verifiedAt": "2026-09-17"
+      },
+      {
+        "id": "star-feather-sanmin-october-2026-exotic-night-clinic",
+        "type": "hours_change",
+        "title": "2026 年 10 月部分日期無特寵夜診",
+        "content": "10/1、10/6、10/12、10/18–10/23、10/25、10/31 夜診無特寵醫師，當晚不提供特寵夜診。特寵夜診時段為 21:30–翌日 02:00，實際診次依當月班表安排。",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-31",
+        "sourceLabel": "官方 Instagram",
+        "sourceUrl": "https://www.instagram.com/starfeather.ah_sanmin/p/Dd6zpjbE0ft/",
+        "verifiedAt": "2026-10-02"
+      },
+      {
+        "id": "star-feather-sanmin-afternoon-closure-2026-10-28",
+        "type": "hours_change",
+        "title": "10 月 28 日下午暫停門診與手術",
+        "content": "10/28 下午安排院內會議與教育訓練，不接門診及手術。",
+        "startDate": "2026-10-28",
+        "endDate": "2026-10-28",
+        "sourceLabel": "官方 Instagram",
+        "sourceUrl": "https://www.instagram.com/starfeather.ah_sanmin/p/Dd6zpjbE0ft/",
+        "verifiedAt": "2026-10-02"
       }
     ]
   },
@@ -3101,7 +3264,7 @@ export const KaohsiungHospitalList = [
     "typeText": "犬貓診療、特寵診療",
     "phone": "07-641-3309",
     "specialEvents": [],
-    "hours": "週一至週六\n早診 10:00–13:00\n午診 14:00–17:00\n晚診 18:00–21:00\n週日看診至17:00，週三公休",
+    "hours": "週一、二、四、五、六 10:00–13:00、14:00–17:00、18:00–21:00；週日 10:00–13:00、14:00–17:00，週三休診。",
     "business_hours": {
       "mon": [
         "10:00-13:00",
@@ -3136,11 +3299,11 @@ export const KaohsiungHospitalList = [
     },
     "google": {
       "rating": "4.6",
-      "reviewCount": 534,
+      "reviewCount": 537,
       "mapsUrl": "https://www.google.com/maps/place/%E6%98%9F%E7%BE%BD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9C%E5%A4%A7%E5%AF%AE%E9%99%A2/@22.5454859,120.4111253,17z/data=!3m1!4b1!4m6!3m5!1s0x3471e3e511802209:0x2fbef8ea5e652b4b!8m2!3d22.5454859!4d120.4111253!16s%2Fg%2F11mvsg3xgz",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%98%9F%E7%BE%BD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9C%E5%A4%A7%E5%AF%AE%E9%99%A2/@22.5454859,120.4111253,17z/data=!4m8!3m7!1s0x3471e3e511802209:0x2fbef8ea5e652b4b!8m2!3d22.5454859!4d120.4111253!9m1!1b1!16s%2Fg%2F11mvsg3xgz",
       "placeId": "ChIJCSKAEeXjcTQRSytlXur4vi8",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -3213,12 +3376,12 @@ export const KaohsiungHospitalList = [
       "note": "特寵門診依當月醫師班表安排，採預約優先制；請於預約前一天上班時間來電預約，現場掛號依櫃檯安排。",
       "reservationRequired": false,
       "sourceLabel": "官方 Facebook",
-      "sourceUrl": "https://www.facebook.com/photo/?fbid=1501292888685880&set=pcb.1501288772019625",
-      "verifiedAt": "2026-09-20"
+      "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid029oRJdzXsnQDMzNPUdEUV5gGkvpE8UQnuoVMZddVcmkgrRWb7gnF4oYUochrLAeqBl&id=100064155485163",
+      "verifiedAt": "2026-10-02"
     },
     "clinicNotes": "採預約優先制，請於就診前一天的人員上班時間來電預約；現場掛號依櫃檯安排候診。休診前 30 分鐘加收急診掛號費 500 元，特寵急症請先電話確認是否受理。另可撥打 07-641-3808 聯絡。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-09-20T14:55:59.855Z",
+    "updatedAt": "2026-10-02T06:46:47.256Z",
     "last_checked": "2026-09-04",
     "fb": {
       "last_fb_post_date": "2026-08-27",
@@ -3257,6 +3420,17 @@ export const KaohsiungHospitalList = [
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/photo/?fbid=1501292888685880&set=pcb.1501288772019625",
         "verifiedAt": "2026-09-20"
+      },
+      {
+        "id": "star-feather-daliao-october-2026-schedule",
+        "type": "hours_change",
+        "title": "2026 年 10 月犬貓與特寵門診異動",
+        "content": "10/17、10/22 犬貓門診至 17:00，當日無犬貓晚診且不接手術。10/4、10/5、10/6、10/7、10/8、10/14、10/15、10/18、10/21、10/24、10/28、10/29 沒有特寵醫師；其餘特寵診次依當月班表安排。",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-31",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid029oRJdzXsnQDMzNPUdEUV5gGkvpE8UQnuoVMZddVcmkgrRWb7gnF4oYUochrLAeqBl&id=100064155485163",
+        "verifiedAt": "2026-10-02"
       }
     ]
   },
@@ -3308,11 +3482,11 @@ export const KaohsiungHospitalList = [
     },
     "google": {
       "rating": "4.5",
-      "reviewCount": 208,
+      "reviewCount": 210,
       "mapsUrl": "https://www.google.com/maps/place/%E5%9F%B9%E6%98%B1%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.5989478,120.3268014,17z/data=!3m1!4b1!4m6!3m5!1s0x346e03da3309fe6b:0x21e745c316224bcc!8m2!3d22.5989478!4d120.3268014!16s%2Fg%2F11t4c9k49x",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%9F%B9%E6%98%B1%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.5989478,120.3268014,17z/data=!4m8!3m7!1s0x346e03da3309fe6b:0x21e745c316224bcc!8m2!3d22.5989478!4d120.3268014!9m1!1b1!16s%2Fg%2F11t4c9k49x",
       "placeId": "ChIJa_4JM9oDbjQRzEsiFsNF5yE",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -3357,10 +3531,10 @@ export const KaohsiungHospitalList = [
       "reservationRequired": false,
       "sourceLabel": "野境官方 Facebook",
       "sourceUrl": "https://www.facebook.com/100093719420116/posts/888515450949094/",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-09-20T14:55:59.855Z",
+    "updatedAt": "2026-10-02T06:56:47.090Z",
     "last_checked": "2026-09-01"
   },
   {
@@ -3456,15 +3630,15 @@ export const KaohsiungHospitalList = [
     },
     "google": {
       "rating": "4.9",
-      "reviewCount": 108,
+      "reviewCount": 109,
       "mapsUrl": "https://www.google.com/maps/place/%E5%B0%8F%E9%B3%B4%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.615284,120.314047,17z/data=!3m1!4b1!4m6!3m5!1s0x346e058ee7cb5525:0xc904ec5ba4d78b30!8m2!3d22.615284!4d120.314047!16s%2Fg%2F11w7dgb48c",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%B0%8F%E9%B3%B4%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.615284,120.314047,17z/data=!4m8!3m7!1s0x346e058ee7cb5525:0xc904ec5ba4d78b30!8m2!3d22.615284!4d120.314047!9m1!1b1!16s%2Fg%2F11w7dgb48c",
       "placeId": "ChIJJVXL544FbjQRMIvXpFvsBMk",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "clinicNotes": "門診採預約優先制，可透過電話或官方 LINE 預約。預約額滿時，每個早、午、晚診各限收 3 名現場掛號，依到院順序發放號碼牌，再按病情檢傷分類；急症優先查看，其餘現場一般門診需等候預約門診結束。實際看診醫師與診次請依當月班表安排。\n本院未提供住院服務，危急病況請至有住院服務之特寵急診院所。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-09-17T00:00:00.000Z",
+    "updatedAt": "2026-10-02T06:56:47.090Z",
     "last_checked": "2026-09-04",
     "announcements": [
       {
@@ -3486,6 +3660,17 @@ export const KaohsiungHospitalList = [
         "verifiedAt": "2026-09-20",
         "startDate": "2026-08-01",
         "endDate": "2026-09-30"
+      },
+      {
+        "id": "tomeetyou-morning-closure-2026-10-03",
+        "type": "hours_change",
+        "title": "10 月 3 日上午門診停診",
+        "content": "10 月 3 日上午門診停診，午診與晚診照常。",
+        "startDate": "2026-10-03",
+        "endDate": "2026-10-03",
+        "sourceLabel": "官方網站門診資訊",
+        "sourceUrl": "https://www.tomeetyouah.com/門診資訊",
+        "verifiedAt": "2026-10-02"
       }
     ]
   },
@@ -3592,7 +3777,7 @@ export const KaohsiungHospitalList = [
       "mapsUrl": "https://www.google.com/maps/place/%E9%99%BD%E6%98%8E%E5%B0%8F%E6%80%AA%E7%8D%B8%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6377648,120.3409321,17z/data=!3m1!4b1!4m6!3m5!1s0x346e050047525a7f:0xbfb3f21d7f78a7ab!8m2!3d22.6377648!4d120.3409321!16s%2Fg%2F11wp51nb55",
       "reviewsUrl": "https://www.google.com/maps/place/%E9%99%BD%E6%98%8E%E5%B0%8F%E6%80%AA%E7%8D%B8%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6377648,120.3409321,17z/data=!4m8!3m7!1s0x346e050047525a7f:0xbfb3f21d7f78a7ab!8m2!3d22.6377648!4d120.3409321!9m1!1b1!16s%2Fg%2F11wp51nb55",
       "placeId": "ChIJf1pSRwAFbjQRq6d4fx3ys78",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "specialClinic": {
       "hasExoticSpecialClinic": true,
@@ -3668,15 +3853,15 @@ export const KaohsiungHospitalList = [
     },
     "google": {
       "rating": "4.6",
-      "reviewCount": 107,
-      "mapsUrl": "https://www.google.com/maps/place/%E7%A5%88%E7%99%92%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6838825,120.3425544,17z/data=!3m5!1s0x346e05003ce6a051:0x94164279a3292100!8m2!3d22.6838825!4d120.3425544!16s%2Fg%2F11l_5dxqrn",
+      "reviewCount": 108,
+      "mapsUrl": "https://www.google.com/maps/place/%E7%A5%88%E7%99%92%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6838874,120.3399795,17z/data=!3m1!4b1!4m6!3m5!1s0x346e05003ce6a051:0x94164279a3292100!8m2!3d22.6838825!4d120.3425544!16s%2Fg%2F11l_5dxqrn",
       "reviewsUrl": "https://www.google.com/maps/place/%E7%A5%88%E7%99%92%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6838825,120.3425544,17z/data=!4m8!3m7!1s0x346e05003ce6a051:0x94164279a3292100!8m2!3d22.6838825!4d120.3425544!9m1!1b1!16s%2Fg%2F11l_5dxqrn",
       "placeId": "ChIJUaDmPAAFbjQRACEpo3lCFpQ",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
-    "emergencyHours": "每日 21:30 後及週日 17:00 後（官方 9 月班表標示急診時段，掛號費 500 元；特寵是否受理請先電話確認）",
+    "emergencyHours": "每日 21:30 後及週日 17:00 後（官方 10 月班表標示急診時段，掛號費 500 元；特寵是否受理請先電話確認）",
     "nightClinic": true,
     "services": [
       "一般門診",
@@ -3747,15 +3932,15 @@ export const KaohsiungHospitalList = [
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "特寵門診與鼠兔醫療",
-      "note": "特寵門診依 9 月醫師班表安排，採預約優先制，請先確認當日可看診的物種與時段。每日 21:30 後及週日 17:00 後為急診時段，掛號費 500 元；特寵是否能看急診，請先電話確認。",
+      "note": "特寵門診依當月醫師班表安排，採預約優先制，請先確認當日可看診的物種與時段。每日 21:30 後及週日 17:00 後為急診時段，掛號費 500 元；特寵是否能看急診，請先電話確認。",
       "reservationRequired": false,
       "sourceLabel": "官方 Facebook、官方 Instagram",
       "sourceUrl": "https://www.instagram.com/wishingstar_ah/p/Dcs4mqqDwXQ/",
       "verifiedAt": "2026-09-20"
     },
-    "clinicNotes": "提供犬貓、爬蟲類、小型哺乳類與馬匹門診。非犬貓特寵包含陸龜、澤龜、蜥蜴、變色龍、守宮、蛇、兔、天竺鼠、倉鼠、蜜袋鼯與刺蝟；一般門診可透過電話或 LINE @268vukdh 預約。上午、下午、晚上的最後掛號時間分別為12:30、17:00、21:30。9月班表列每日21:30後及週日17:00後急診掛號費500元；特寵急症是否受理請先電話確認。",
+    "clinicNotes": "提供犬貓、爬蟲類、小型哺乳類與馬匹門診。非犬貓特寵包含陸龜、澤龜、蜥蜴、變色龍、守宮、蛇、兔、天竺鼠、倉鼠、蜜袋鼯與刺蝟；一般門診可透過電話或 LINE @268vukdh 預約。上午、下午、晚上的最後掛號時間分別為12:30、17:00、21:30。10月班表列每日21:30後及週日17:00後急診掛號費500元；特寵急症是否受理請先電話確認。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-09-20T17:11:15.938Z",
+    "updatedAt": "2026-10-02T07:07:35.697Z",
     "last_checked": "2026-09-01",
     "fb": {
       "last_fb_post_text": "9月班表已公布；9/10、9/24增開週四下午及晚上門診，9/29下午延後至15:00。一般門診可透過電話或LINE預約；特寵急症是否受理請先電話確認。"
@@ -3815,6 +4000,39 @@ export const KaohsiungHospitalList = [
         "verifiedAt": "2026-09-20",
         "startDate": "2026-09-01",
         "endDate": "2026-09-30"
+      },
+      {
+        "id": "wishing-star-hours-change-2026-10-08",
+        "type": "hours_change",
+        "title": "10 月 8 日加開週四門診",
+        "content": "10 月 8 日加開 14:00–17:30、18:00–22:00 門診。",
+        "startDate": "2026-10-08",
+        "endDate": "2026-10-08",
+        "sourceLabel": "官方 Instagram",
+        "sourceUrl": "https://www.instagram.com/wishingstar_ah/p/Ddwd7RRkykg/",
+        "verifiedAt": "2026-10-02"
+      },
+      {
+        "id": "wishing-star-hours-change-2026-10-22",
+        "type": "hours_change",
+        "title": "10 月 22 日加開週四門診",
+        "content": "10 月 22 日加開 14:00–17:30、18:00–22:00 門診。",
+        "startDate": "2026-10-22",
+        "endDate": "2026-10-22",
+        "sourceLabel": "官方 Instagram",
+        "sourceUrl": "https://www.instagram.com/wishingstar_ah/p/Ddwd7RRkykg/",
+        "verifiedAt": "2026-10-02"
+      },
+      {
+        "id": "wishing-star-hours-change-2026-10-28",
+        "type": "hours_change",
+        "title": "10 月 28 日午診延後至 15:00",
+        "content": "10 月 28 日因院務會議，午診延後至 15:00–17:30；上午 09:30–13:00、晚間 18:00–22:00 門診照常。",
+        "startDate": "2026-10-28",
+        "endDate": "2026-10-28",
+        "sourceLabel": "官方 Instagram",
+        "sourceUrl": "https://www.instagram.com/wishingstar_ah/p/Ddwd7RRkykg/",
+        "verifiedAt": "2026-10-02"
       }
     ]
   },
@@ -3865,9 +4083,9 @@ export const KaohsiungHospitalList = [
     },
     "google": {
       "rating": "4.6",
-      "reviewCount": 9,
+      "reviewCount": 10,
       "mapsUrl": "https://www.google.com/maps/place/野境特殊寵物醫院/@22.6015979,120.3326332,17z/data=!3m1!4b1!4m6!3m5!1s0x346e03f76f1ef27b:0x731bf578227a9b9!8m2!3d22.6015979!4d120.3326332!16s%2Fg%2F11nqm1_dgc",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-02"
     },
     "reservationRequired": false,
     "nightClinic": true,
@@ -3898,11 +4116,12 @@ export const KaohsiungHospitalList = [
     "website": "https://www.facebook.com/profile.php?id=100093719420116",
     "socialMedia": {
       "facebook": "https://www.facebook.com/profile.php?id=100093719420116",
-      "line": "https://lin.ee/nTNUUa4"
+      "line": "https://lin.ee/nTNUUa4",
+      "instagram": "https://www.instagram.com/agbug1127/"
     },
     "clinicNotes": "由培昱動物醫院的特寵部門獨立設院，僅提供特殊寵物醫療。門診採預約優先制，LINE 提供自動化預約；約診與訂藥請提前聯絡，休診時暫停電話服務。與培昱、陽明小怪獸為姊妹院，共用病歷資料庫。",
     "createdAt": "2026-09-16T00:00:00.000Z",
-    "updatedAt": "2026-09-16T00:00:00.000Z",
+    "updatedAt": "2026-10-02T07:07:35.697Z",
     "announcements": [
       {
         "id": "wilderland-closure-2026-09-26",
@@ -3914,6 +4133,37 @@ export const KaohsiungHospitalList = [
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/photo/?fbid=958283197305652&set=a.144771171990196",
         "verifiedAt": "2026-09-20"
+      },
+      {
+        "id": "wilderland-closure-2026-10-10",
+        "type": "closure",
+        "title": "10 月 10 日雙十節休診",
+        "content": "10 月 10 日休診，回診請提前安排。",
+        "startDate": "2026-10-10",
+        "endDate": "2026-10-10",
+        "sourceLabel": "官方 Instagram",
+        "sourceUrl": "https://www.instagram.com/agbug1127/p/Dd5CGipE2kT/",
+        "verifiedAt": "2026-10-02"
+      },
+      {
+        "id": "wilderland-ding-leave-2026-09-30",
+        "type": "notice",
+        "title": "丁肇彣獸醫師 9/30–10/6 休假",
+        "content": "丁醫師 9 月 30 日至 10 月 6 日休假，其他門診照常；定期回診請提前安排。",
+        "startDate": "2026-09-30",
+        "endDate": "2026-10-06",
+        "sourceLabel": "官方 Instagram",
+        "sourceUrl": "https://www.instagram.com/agbug1127/p/DckGruPm_T4/",
+        "verifiedAt": "2026-10-02"
+      },
+      {
+        "id": "wilderland-chen-overseas-study-2026-10",
+        "type": "notice",
+        "title": "陳泓志獸醫師 10 月 6 日後赴海外進修",
+        "content": "陳泓志獸醫師將於 10 月 6 日後赴海外進修。院內病歷資料可互通，陳醫師會陸續交接就診動物的狀況。",
+        "sourceLabel": "官方 Instagram",
+        "sourceUrl": "https://www.instagram.com/agbug1127/p/Dd5CGipE2kT/",
+        "verifiedAt": "2026-10-02"
       }
     ],
     "appointmentLink": "https://lin.ee/nTNUUa4"
