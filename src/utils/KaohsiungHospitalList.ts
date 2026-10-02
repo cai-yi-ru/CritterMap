@@ -3668,8 +3668,8 @@ export const KaohsiungHospitalList = [
         "content": "10 月 3 日上午門診停診，午診與晚診照常。",
         "startDate": "2026-10-03",
         "endDate": "2026-10-03",
-        "sourceLabel": "官方網站門診資訊",
-        "sourceUrl": "https://www.tomeetyouah.com/門診資訊",
+        "sourceLabel": "官方 Instagram",
+        "sourceUrl": "https://www.instagram.com/tomeetyouah/p/Dd-ug_4AYCV/",
         "verifiedAt": "2026-10-02"
       }
     ]

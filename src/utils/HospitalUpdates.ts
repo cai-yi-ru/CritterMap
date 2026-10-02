@@ -5,6 +5,75 @@ import type { HospitalUpdate } from '@/types/hospital';
 // Run `npm run prune:hospital-updates` to preview expired items, then use `:write` to prune.
 export const HospitalUpdateList: HospitalUpdate[] = [
   {
+    "id": "update-tainan-guangci-animal-hospital-added-2026-10-02",
+    "hospitalId": "tainan-guangci-animal-hospital",
+    "type": "content",
+    "title": "新增收錄廣慈動物醫院",
+    "summary": "新增收錄廣慈動物醫院，兔、天竺鼠、倉鼠、蜜袋鼯與松鼠依醫師科別看診；平日12:00–15:00手術須提前來電預約。",
+    "updatedAt": "2026-10-02",
+    "sourceLabel": "官方 Facebook",
+    "sourceUrl": "https://www.facebook.com/photo/?fbid=1473377544592033&set=pb.100057594042133.-2207520000",
+    "verifiedAt": "2026-10-02"
+  },
+  {
+    "id": "update-tainan-quanfeng-animal-hospital-added-2026-10-02",
+    "hospitalId": "tainan-quanfeng-animal-hospital",
+    "type": "content",
+    "title": "新增收錄全鋒動物醫院",
+    "summary": "新增收錄新市區全鋒動物醫院；院方明列犬貓、鴿類中西獸醫診療，以及鳥、兔、鼠治療保健。",
+    "updatedAt": "2026-10-02",
+    "sourceLabel": "官方 Facebook",
+    "sourceUrl": "https://www.facebook.com/profile.php?id=100064013532447",
+    "verifiedAt": "2026-10-02"
+  },
+
+  {
+    "id": "update-tainan-fiord-october-closures-2026-10-02",
+    "hospitalId": "fiord-animal-hospital",
+    "type": "announcement",
+    "title": "峽灣 10/20、10/31 休診",
+    "summary": "10/20、10/31 休診。門診以預約為主，非預約及初診不可指定醫師；預約無故未到且未通知，將取消往後預約資格。",
+    "updatedAt": "2026-10-02",
+    "sourceLabel": "官方網站、官方 Instagram",
+    "sourceUrl": "https://www.instagram.com/fiord_animal_hospital/p/DdtEbNRo7S-/",
+    "verifiedAt": "2026-10-02"
+  },
+
+  {
+    "id": "update-tainan-shiny-national-day-closure-2026-10-02",
+    "hospitalId": "tainan-shiny-exotic-animal-hospital",
+    "type": "announcement",
+    "title": "小鯢 10/9–10 休診",
+    "summary": "10/9、10/10 休診，每週日亦休診。僅看特寵，採預約制；臨時需求請先來電確認能否加掛。",
+    "updatedAt": "2026-10-02",
+    "sourceLabel": "官方 Instagram",
+    "sourceUrl": "https://www.instagram.com/shinyexotic/p/Dd8HfAFMdVQ/",
+    "verifiedAt": "2026-10-02"
+  },
+
+  {
+    "id": "update-tainan-wildboar-october-reptile-clinic-2026-10-02",
+    "hospitalId": "tainan-wildboar-animal-hospital",
+    "type": "announcement",
+    "title": "山豬 10 月爬蟲門診異動",
+    "summary": "10/3、10/11、10/12 全天無爬蟲門診；10/5 爬蟲門診只到 17:00。",
+    "updatedAt": "2026-10-02",
+    "sourceLabel": "官方 Instagram",
+    "sourceUrl": "https://www.instagram.com/wildboarah/p/Dd58dmWzmSL/",
+    "verifiedAt": "2026-10-02"
+  },
+  {
+    id: "update-tainan-lets-go-october-closure-2026-10-02",
+    hospitalId: "tainan-lets-go-animal-hospital",
+    type: "announcement",
+    title: "那隻狗 10/24–10/28 休診",
+    summary: "10 月 24 日至 28 日全院休診；門診採預約制，請先來電約診。",
+    updatedAt: "2026-10-02",
+    sourceLabel: "官方 Facebook",
+    sourceUrl: "https://www.facebook.com/photo/?fbid=1783358667128227&set=a.764881162309321",
+    verifiedAt: "2026-10-02"
+  },
+  {
     id: "update-kaohsiung-wishing-star-october-hours-2026-10-02",
     hospitalId: "wishing-star-animal-hospital",
     type: "announcement",
@@ -33,8 +102,8 @@ export const HospitalUpdateList: HospitalUpdate[] = [
     title: "小鳴 10 月 3 日上午門診停診",
     summary: "10 月 3 日上午門診停診，午診與晚診照常。",
     updatedAt: "2026-10-02",
-    sourceLabel: "官方網站門診資訊",
-    sourceUrl: "https://www.tomeetyouah.com/門診資訊",
+    sourceLabel: "官方 Instagram",
+    sourceUrl: "https://www.instagram.com/tomeetyouah/p/Dd-ug_4AYCV/",
     verifiedAt: "2026-10-02"
   },
   {
@@ -442,7 +511,7 @@ export const HospitalUpdateList: HospitalUpdate[] = [
     updatedAt: "2026-09-04",
     sourceLabel: "官方 Facebook",
     sourceUrl: "https://www.facebook.com/100063950052137/posts/1527228522752135/",
-    verifiedAt: "2026-09-21"
+    verifiedAt: "2026-10-02"
   },
   {
     id: "update-tainan-shiny-september-2026-09-04",

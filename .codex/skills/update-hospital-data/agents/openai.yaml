@@ -1,0 +1,4 @@
+interface:
+  display_name: "更新醫院資料"
+  short_description: "依官方來源更新與補漏特寵醫院資料，用台灣繁中整理就診資訊與每月 Threads 文案"
+  default_prompt: "使用 $update-hospital-data 依當期官方來源查核並更新指定醫院、欄位或縣市名單；縣市更新須搜尋清單外特寵院所，去重並核實後新增，保留未確認資料；醫院資訊文字須用 $humanizer-zh-tw 潤飾並核對語意，最後回報來源與驗證結果，並用已確認的當月重點產出經 $humanizer-zh-tw 潤飾的 Threads 文案。"
