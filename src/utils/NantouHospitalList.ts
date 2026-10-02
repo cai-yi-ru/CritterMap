@@ -11,7 +11,7 @@ export const NantouHospitalList = [
     "typeText": "犬貓診療、特寵診療",
     "phone": "049-220-0605",
     "specialEvents": [],
-    "hours": "Google Maps 顯示週一至週五 10:10–12:30、13:30–19:30；週六 10:10–12:30、13:30–18:00；週日休息。院名標示預約優先制，特殊寵物請先電話確認。",
+    "hours": "週一至週五 10:10–12:30、13:30–19:30；週六 10:10–12:30、13:30–18:00；週日休診。預約優先，特寵請先確認門診安排。",
     "business_hours": {
       "mon": [
         "10:10-12:30",
@@ -78,27 +78,39 @@ export const NantouHospitalList = [
     },
     "google": {
       "rating": "5.0",
-      "reviewCount": 93,
+      "reviewCount": 96,
       "mapsUrl": "https://www.google.com/maps/place/%E9%81%94%E7%89%B9%E6%9C%97%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9C%E9%A0%90%E7%B4%84%E5%84%AA%E5%85%88%E5%88%B6%EF%BD%9C%E5%AF%B5%E7%89%A9%E4%BF%9D%E9%9A%AA%E7%89%B9%E7%B4%84%E9%86%AB%E9%99%A2/@23.9160835,120.6821056,17z/data=!3m1!4b1!4m6!3m5!1s0x346931519c0ef7f7:0x866a764944450744!8m2!3d23.9160835!4d120.6821056!16s%2Fg%2F11m756sr5b",
       "reviewsUrl": "https://www.google.com/maps/place/%E9%81%94%E7%89%B9%E6%9C%97%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9C%E9%A0%90%E7%B4%84%E5%84%AA%E5%85%88%E5%88%B6%EF%BD%9C%E5%AF%B5%E7%89%A9%E4%BF%9D%E9%9A%AA%E7%89%B9%E7%B4%84%E9%86%AB%E9%99%A2/@23.9160835,120.6821056,17z/data=!4m8!3m7!1s0x346931519c0ef7f7:0x866a764944450744!8m2!3d23.9160835!4d120.6821056!9m1!1b1!16s%2Fg%2F11m756sr5b",
-      "placeId": "0x346931519c0ef7f7:0x866a764944450744",
-      "verifiedAt": "2026-09-02"
+      "verifiedAt": "2026-09-21"
     },
-    "clinicNotes": "官方 Instagram @langlang_vet 簡介明列「犬貓｜特殊寵物」，並連結至本院 Google Maps 商家，支持重新列入南投特寵清單。Google Maps 目前顯示地址為 540 南投縣南投市漳興里祖祠路75號、電話 049-220-0605，院名標示預約優先制。官方 Instagram 可見貼文提到已可使用官方 LINE 預約看診，但本次未取得可直接填入的 LINE 連結。公開簡介未完整列出特寵物種與特寵門診時段，鼠兔請先電話確認；官方 Facebook 本次頁面未能載入完整最新貼文，未以其推定現行特寵時段。",
+    "clinicNotes": "採預約優先制，可透過官方 LINE 預約。特寵就診前請先確認可看診物種、醫師與時段。",
+    "announcements": [
+      {
+        "id": "dr-lang-mid-autumn-2026-hours",
+        "type": "hours_change",
+        "title": "9/25–9/27 中秋門診異動",
+        "content": "2026/9/25 營業時間改為 10:30–17:00，9/26、9/27 休診，9/28 正常看診。",
+        "startDate": "2026-09-25",
+        "endDate": "2026-09-27",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/photo/?fbid=122180751656806436&set=a.122124041990806436",
+        "verifiedAt": "2026-09-21"
+      }
+    ],
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "特寵門診",
-      "note": "官方 Instagram 簡介明列「犬貓｜特殊寵物」；公開簡介未列出完整物種與門診時段，請先電話確認。",
+      "note": "提供特寵門診，完整物種與時段尚未明確，請先電話確認。",
       "reservationRequired": true,
       "sourceLabel": "官方 Instagram",
       "sourceUrl": "https://www.instagram.com/langlang_vet/",
       "verifiedAt": "2026-09-02"
     },
-    "updatedAt": "2026-09-02",
+    "updatedAt": "2026-09-20T20:39:24.939Z",
     "last_checked": "2026-09-02",
     "fb": {
-      "last_fb_post_date": "2025-12-03",
-      "last_fb_post_text": "院方提醒冬季貓咪泌尿道問題，並公告 12/21–12/24 醫師外訪研習公休、12/31–1/1 正常營業。"
+      "last_fb_post_date": "9月7日（年份未確認）",
+      "last_fb_post_text": "2026 年九月除週日固定公休外，9/15 因醫師進修休診；9/25 營業 10:30–17:00，9/26、9/27 休診，9/28 正常看診。"
     }
   }
 ];

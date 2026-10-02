@@ -11,7 +11,7 @@ export const TaitungHospitalList = [
     "typeText": "犬貓診療、特寵診療",
     "phone": "08-9810253",
     "specialEvents": [],
-    "hours": "週一至週六 09:00–12:00、14:00–19:00，週日休息；上午 11:30、下午 18:30 截止掛號。實際獸醫看診日依每月 Facebook 班表。",
+    "hours": "營業時段為週一至週六 09:00–12:00、14:00–19:00，週日休息；有門診時於 11:30、18:30 截止掛號。部分日期僅開店，沒有醫師排班，請先確認當月門診表。",
     "business_hours": {
       "mon": [
         "09:00-12:00",
@@ -76,7 +76,7 @@ export const TaitungHospitalList = [
     ],
     "specialties": [],
     "website": "",
-    "appointmentLink": "",
+    "appointmentLink": "tel:089810253",
     "transportTips": "",
     "socialMedia": {
       "facebook": "https://www.facebook.com/goodmile128/",
@@ -88,27 +88,38 @@ export const TaitungHospitalList = [
       "reviewCount": 44,
       "mapsUrl": "https://www.google.com/maps/place/%E8%B0%B7%E7%B1%B3%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.0493686,121.1647317,17z/data=!3m1!4b1!4m6!3m5!1s0x346f090ac92a2465:0xb987fefbead3ed1!8m2!3d23.0493686!4d121.1647317!16s%2Fg%2F11vhcb5cx5",
       "reviewsUrl": "https://www.google.com/maps/place/%E8%B0%B7%E7%B1%B3%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.0493686,121.1647317,17z/data=!4m8!3m7!1s0x346f090ac92a2465:0xb987fefbead3ed1!8m2!3d23.0493686!4d121.1647317!9m1!1b1!16s%2Fg%2F11vhcb5cx5",
-      "verifiedAt": "2026-09-04"
+      "verifiedAt": "2026-09-21"
     },
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "特寵門診",
-      "note": "官方 Facebook 最新可見 2026 年 9 月門診表列特寵門診日期為 9/2、9/15；最新內容未逐項列明物種與醫師，請先電話或 LINE 預約確認。",
+      "note": "2026 年九月特寵門診為 9/2、9/15，物種與醫師請先電話或 LINE 預約確認。",
       "reservationRequired": true,
       "sourceLabel": "官方 Facebook、Google Maps",
       "sourceUrl": "https://www.facebook.com/goodmile128/posts/pfbid029ZyD9f7a1YffeWzzBSjzLLpjCJ5nE1xJ38L3wVeRas2GDkjhRGY36PWHFK13wz4ul",
       "verifiedAt": "2026-09-04"
     },
     "fb": {
-      "last_fb_post_date": "2026-09（月份班表；貼文發布日期未可靠顯示）",
-      "last_fb_post_text": "官方 Facebook 最新可見「2026九月份門診表」，明列特寵門診日期為 9/2、9/15；貼文未逐項列明物種與醫師，請先電話或 LINE 預約確認。"
+      "last_fb_post_date": "9/1（發布年份未確認）",
+      "last_fb_post_text": "2026 年九月特寵門診為 9/2、9/15；9/5、9/12、9/19、9/25、9/29 僅開店，9/26 休息。實際醫師、物種及預約安排請先電話確認。"
     },
     "announcements": [
+      {
+        "id": "goodmile-september-2026-store-days",
+        "type": "notice",
+        "title": "九月僅開店及休息日期",
+        "content": "2026/9/5、9/12、9/19、9/25、9/29 僅開店，沒有醫師排班；9/26 休息，週日固定休息。需要看診請先確認醫師與物種。",
+        "startDate": "2026-09-01",
+        "endDate": "2026-09-30",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/goodmile128/posts/pfbid029ZyD9f7a1YffeWzzBSjzLLpjCJ5nE1xJ38L3wVeRas2GDkjhRGY36PWHFK13wz4ul",
+        "verifiedAt": "2026-09-21"
+      },
       {
         "id": "goodmile-august-2026-network-notice",
         "type": "notice",
         "title": "谷米 8/12 花東行動網路受阻通知",
-        "content": "官方 8 月班表貼文提醒 2026-08-12 13:30–14:00 花東行動網路可能受阻；如有疑問請撥 089-810253。",
+        "content": "2026/8/12 13:30–14:00 花東行動網路可能受阻，如有疑問請撥 089-810253。",
         "startDate": "2026-08-12",
         "endDate": "2026-08-12",
         "sourceLabel": "官方 Facebook",
@@ -130,7 +141,7 @@ export const TaitungHospitalList = [
         "id": "goodmile-august-2026-exotic-schedule",
         "type": "notice",
         "title": "谷米 8 月特寵門診與吳醫師停診提醒",
-        "content": "官方 8 月班表列出特寵門診為 8/7（最晚看診至 16:00）及 8/24–8/26；吳醫師 8 月未安排門診，請先電話確認可受理物種與時段。",
+        "content": "八月特寵門診為 8/7（最晚至 16:00）及 8/24–8/26；吳醫師當月未安排門診，物種與時段請先電話確認。",
         "startDate": "2026-08-07",
         "endDate": "2026-08-26",
         "sourceLabel": "官方 Facebook",
@@ -141,16 +152,16 @@ export const TaitungHospitalList = [
         "id": "goodmile-september-2026-exotic-schedule",
         "type": "hours_change",
         "title": "谷米 2026 年 9 月特寵門診日期",
-        "content": "官方 Facebook 最新「2026九月份門診表」列特寵門診日期為 9/2、9/15；實際可受理物種、醫師與掛號時段請先電話或 LINE 預約確認。",
+        "content": "2026 年九月特寵門診為 9/2、9/15；物種、醫師及掛號時段請先電話或 LINE 確認。",
         "startDate": "2026-09-02",
         "endDate": "2026-09-15",
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/goodmile128/posts/pfbid029ZyD9f7a1YffeWzzBSjzLLpjCJ5nE1xJ38L3wVeRas2GDkjhRGY36PWHFK13wz4ul",
-        "verifiedAt": "2026-09-04"
+        "verifiedAt": "2026-09-21"
       }
     ],
-    "clinicNotes": "Google Maps 查核（2026-09-04）顯示地址為 956004 臺東縣關山鎮中福里和平路128號，週一至週六 09:00–12:00／14:00–19:00，週日休息，電話與 4.6 顆星／44 則評論均已核對；上午 11:30、下午 18:30 截止掛號。\n官方 Facebook 最新「2026九月份門診表」列特寵門診日期為 9/2、9/15；實際獸醫看診日依每月班表，最新內容未逐項列明物種與醫師，請先電話或 LINE 預約確認。院方未公布固定或 24 小時急診服務。",
-    "updatedAt": "2026-09-04",
+    "clinicNotes": "醫師依每月班表看診，部分營業日僅開店，請先電話或 LINE 確認醫師、物種及預約安排。有門診時於 11:30、18:30 截止掛號，逾時以急診掛號費計算；特寵急症請先確認能否受理。",
+    "updatedAt": "2026-09-21T04:42:56.762Z",
     "last_checked": "2026-09-04"
   }
 ];

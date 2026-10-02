@@ -42,7 +42,8 @@ export const ChanghuaHospitalList = [
     "nightClinic": false,
     "services": [
       "犬貓醫療",
-      "非犬貓醫療"
+      "非犬貓醫療",
+      "雷射治療"
     ],
     "pets": [
       "貓",
@@ -66,13 +67,12 @@ export const ChanghuaHospitalList = [
     },
     "google": {
       "rating": "4.3",
-      "reviewCount": 169,
+      "reviewCount": 167,
       "mapsUrl": "https://www.google.com/maps/place/%E9%BE%8D%E8%B2%93%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.0488854,120.4404312,17z/data=!3m1!4b1!4m6!3m5!1s0x3442abc1c9d3db29:0xf01265a48ee1c083!8m2!3d24.0488854!4d120.4404312!16s%2Fg%2F11bwmsjt75?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D",
       "reviewsUrl": "https://www.google.com/maps/place/%E9%BE%8D%E8%B2%93%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.0488854,120.4404312,17z/data=!4m8!3m7!1s0x3442abc1c9d3db29:0xf01265a48ee1c083!8m2!3d24.0488854!4d120.4404312!9m1!1b1!16s%2Fg%2F11bwmsjt75",
-      "placeId": "0x3442abc1c9d3db29:0xf01265a48ee1c083",
-      "verifiedAt": "2026-09-01"
+      "verifiedAt": "2026-09-21"
     },
-    "clinicNotes": "官方 Facebook 簡介明確標示提供犬貓醫療與非犬貓醫療服務；Google 近期評論可見烏龜、陸龜、蜜袋鼯就診案例，但未見官方重新明列龍貓、兔、鼠等特定物種與專科細項，特殊寵物就診前建議先致電確認。Google Maps 2026/9/1 顯示評分 4.3、評論數 169，門診時間為週一至週五 09:30–11:30、14:00–20:00，週六與週日休診。官方 Facebook 最新可見休診內容提到 8/25 上午休診、下午恢復門診，但貼文年份未確認；未找到可確認年份的 2026 年 9 月班表或休診公告。未確認固定夜間門診或急診服務。",
+    "clinicNotes": "提供犬貓、非犬貓診療及雷射治療；特寵可看診物種與適用療程請先電話確認。門診為週一至週五 09:30–11:30、14:00–20:00，週末休診。臨時休診或急症是否收案，請先向院方詢問。",
     "announcements": [
       {
         "id": "changhua-chinchilla-july-2026-closure",
@@ -88,9 +88,9 @@ export const ChanghuaHospitalList = [
     ],
     "fb": {
       "last_fb_post_date": "未確認（最新休診內容日期年份未取得）",
-      "last_fb_post_text": "官方 Facebook 最新可見休診內容提到 8/25 上午休診、下午恢復門診，但貼文年份未確認；精選內容可見雷射治療介紹，日期受 Facebook 顯示干擾。"
+      "last_fb_post_text": "院方曾公告 8/25 上午休診、下午恢復門診，年份尚未確認；另有雷射治療介紹，發布日期不明。"
     },
-    "updatedAt": "2026-09-01",
+    "updatedAt": "2026-09-20T20:21:22.848Z",
     "last_checked": "2026-09-01"
   },
   {
@@ -141,7 +141,7 @@ export const ChanghuaHospitalList = [
     "hasEmergencyService": false,
     "emergencyHours": "",
     "nightClinic": true,
-    "services": [],
+    "services": ["犬貓診療","兔科診療","天竺鼠與倉鼠診療"],
     "pets": [
       "貓",
       "狗",
@@ -171,10 +171,9 @@ export const ChanghuaHospitalList = [
       "reviewCount": 79,
       "mapsUrl": "https://www.google.com/maps/place/%E6%8F%90%E5%A7%86%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.9045298,120.3632141,17z/data=!3m1!4b1!4m6!3m5!1s0x34694db622187c25:0x8ea15d9af3e0ce74!8m2!3d23.9045298!4d120.3632141!16s%2Fg%2F11ybdjgnbx",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%8F%90%E5%A7%86%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@23.9045298,120.3632141,17z/data=!4m8!3m7!1s0x34694db622187c25:0x8ea15d9af3e0ce74!8m2!3d23.9045298!4d120.3632141!9m1!1b1!16s%2Fg%2F11ybdjgnbx",
-      "placeId": "0x34694db622187c25:0x8ea15d9af3e0ce74",
-      "verifiedAt": "2026-09-04"
+      "verifiedAt": "2026-09-21"
     },
-    "clinicNotes": "官方 Facebook 與 Instagram 簡介明確寫有狗、貓、兔子、天竺鼠及倉鼠門診，未找到鳥類或爬蟲門診證據。Google Maps 2026/9/4 顯示評分 4.8、評論數 79；2026 年 9 月官方班表每週一休診，週二至週五 09:30–12:00、14:00–17:00、18:30–20:30，週六、週日 09:30–12:00、14:00–17:00，中秋連假不打烊。官方採預約優先制，可透過 LINE、電話或現場安排；未找到固定急診或 24 小時急診服務證據。",
+    "clinicNotes": "提供犬、貓、兔、天竺鼠與倉鼠門診，採預約優先制，可透過 LINE、電話或現場安排。2026 年九月每週一休診；週二至週五 09:30–12:00、14:00–17:00、18:30–20:30，週六、週日 09:30–12:00、14:00–17:00，中秋連假照常看診。鳥類、爬蟲及急症是否收案，請先電話確認。",
     "announcements": [
       {
         "id": "changhua-tim-august-2026-hours",
@@ -191,19 +190,19 @@ export const ChanghuaHospitalList = [
         "id": "changhua-tim-september-2026-hours",
         "type": "notice",
         "title": "2026 年 9 月營業時間與預約提醒",
-        "content": "官方 2026 年 9 月班表：每週一休診；週二至週五 09:30–12:00、14:00–17:00、18:30–20:30，週六、週日 09:30–12:00、14:00–17:00；中秋連假不打烊。預約優先制，可透過 LINE、電話或現場安排。",
+        "content": "2026 年九月每週一休診；週二至週五 09:30–12:00、14:00–17:00、18:30–20:30，週六、週日 09:30–12:00、14:00–17:00，中秋連假照常看診。採預約優先制，可透過 LINE、電話或現場安排。",
         "startDate": "2026-09-01",
         "endDate": "2026-09-30",
         "sourceLabel": "官方 Instagram",
         "sourceUrl": "https://www.instagram.com/timah.2025/p/DckSSdIjeAB/",
-        "verifiedAt": "2026-09-01"
+        "verifiedAt": "2026-09-21"
       }
     ],
     "fb": {
-      "last_fb_post_date": "未確認（Facebook 日期年份未取得；Instagram 顯示 4 天前）",
-      "last_fb_post_text": "官方 Instagram 已發布 2026 年 9 月班表：每週一休診，週二至週五晚間有 18:30–20:30 門診，週末白天門診，中秋連假不打烊；Facebook 最新可見內容顯示 8/28 但年份未確認。"
+      "last_fb_post_date": "8月28日（年份未確認）",
+      "last_fb_post_text": "2026 年九月班表列每週一休診，週二至週五另有 18:30–20:30 晚診，週末只有白天門診，中秋連假照常看診。Facebook 貼文顯示 8/28，年份尚未確認。"
     },
-    "updatedAt": "2026-09-04",
+    "updatedAt": "2026-09-20T20:24:48.902Z",
     "last_checked": "2026-09-04"
   },
   {
@@ -218,7 +217,7 @@ export const ChanghuaHospitalList = [
     "typeText": "犬貓診療、特寵診療",
     "phone": "04-723-9939",
     "specialEvents": [],
-    "hours": "週一至週日 09:00–12:00、13:30–16:30、17:30–20:30",
+    "hours": "每日掛號時段為 09:00–12:00、13:30–16:30、17:30–20:30；特寵門診採全預約制，請先確認醫師時段。",
     "business_hours": {
       "mon": [
         "09:00-12:00",
@@ -303,7 +302,7 @@ export const ChanghuaHospitalList = [
       "特殊寵物診療"
     ],
     "website": "https://truelovepethospital.com/",
-    "appointmentLink": "",
+    "appointmentLink": "tel:047239939",
     "transportTips": "",
     "socialMedia": {
       "facebook": "https://www.facebook.com/truelove7239939/",
@@ -312,13 +311,12 @@ export const ChanghuaHospitalList = [
     },
     "google": {
       "rating": "4.6",
-      "reviewCount": 916,
+      "reviewCount": 917,
       "mapsUrl": "https://www.google.com/maps/place/%E7%AF%89%E6%84%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E5%BD%B0%E5%8C%96%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%7C24HR%E4%BD%8F%E9%99%A2%E7%85%A7%E8%AD%B7%7C%E7%8A%AC%E8%B2%93%E8%A1%80%E5%BA%AB%7C%E7%89%99%E7%A7%91%E6%B2%BB%E7%99%82%7C%E5%BF%83%E8%87%9F%E7%A7%91%E5%9C%98%E9%9A%8A%7C%E5%85%A7%E8%A6%96%E9%8F%A1%7C%E7%89%B9%E5%AF%B5%E5%85%A8%E9%A0%90%E7%B4%84%E5%88%B6%7C%E9%87%9D%E7%81%B8/@24.0731829,120.541977,17z/data=!3m1!4b1!4m6!3m5!1s0x3469388f01504ea5:0xf21a5cfc07c2684c!8m2!3d24.0731829!4d120.541977!16s%2Fg%2F11hcx8ng_x",
       "reviewsUrl": "https://www.google.com/maps/place/%E7%AF%89%E6%84%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E5%BD%B0%E5%8C%96%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%7C24HR%E4%BD%8F%E9%99%A2%E7%85%A7%E8%AD%B7%7C%E7%8A%AC%E8%B2%93%E8%A1%80%E5%BA%AB%7C%E7%89%99%E7%A7%91%E6%B2%BB%E7%99%82%7C%E5%BF%83%E8%87%9F%E7%A7%91%E5%9C%98%E9%9A%8A%7C%E5%85%A7%E8%A6%96%E9%8F%A1%7C%E7%89%B9%E5%AF%B5%E5%85%A8%E9%A0%90%E7%B4%84%E5%88%B6%7C%E9%87%9D%E7%81%B8/@24.0731829,120.541977,17z/data=!4m8!3m7!1s0x3469388f01504ea5:0xf21a5cfc07c2684c!8m2!3d24.0731829!4d120.541977!9m1!1b1!16s%2Fg%2F11hcx8ng_x",
-      "placeId": "0x3469388f01504ea5:0xf21a5cfc07c2684c",
-      "verifiedAt": "2026-09-01"
+      "verifiedAt": "2026-09-21"
     },
-    "clinicNotes": "一般門診可電話預約、看診後現場預約，也可於門診時段現場掛號；不接受 Facebook 私訊預約。Google Maps 2026/9/1 顯示評分 4.6、評論數 916，營業時間每日 09:00–12:00、13:30–16:30、17:30–20:30。特寵門診為賴奕欣醫師週一、二、三、五約 09:00–11:00，全預約制，下午為手術時間；2026 年 9 月班表另列 9/14、9/28 針灸門診休診、9/22 眼科門診休診，未標示特寵或全院休診。未看診需提前 3 天取消，未提前取消累積 2 次後 3 個月內不可再預約。非掛號時間僅受理急診掛號，須由醫師評估並依急診收費，未確認特寵固定夜間急診。",
+    "clinicNotes": "一般門診可電話預約、看診後現場預約或於掛號時段現場掛號，不接受 Facebook 私訊預約。每日掛號時段為 09:00–12:00、13:30–16:30、17:30–20:30。特寵由賴奕欣醫師於週一、二、三、五約 09:00–11:00 看診，採全預約制，下午為手術時間。無法到診須提前 3 天取消；未提前取消累積 2 次，3 個月內不能再預約。非掛號時間只受理經醫師評估的急診，依急診收費；特寵是否收案請先確認。",
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "特寵特別門診",
@@ -344,19 +342,19 @@ export const ChanghuaHospitalList = [
         "id": "changhua-truelove-september-2026-schedule",
         "type": "hours_change",
         "title": "2026 年 9 月門診班表與專科異動",
-        "content": "官方 2026 年 9 月班表：9/14、9/28 針灸門診休診；9/22 眼科門診休診。特寵門診仍由賴奕欣醫師依班表提供，採全預約制，請先致電確認。",
+        "content": "2026/9/14、9/28 針灸門診休診，9/22 眼科門診休診。特寵由賴奕欣醫師依班表看診，採全預約制，請致電 04-723-9939 預約。",
         "startDate": "2026-09-01",
         "endDate": "2026-09-30",
         "sourceLabel": "官方 Facebook、官方網站",
         "sourceUrl": "https://truelovepethospital.com/paper/promotions_index.php?id=15442#page",
-        "verifiedAt": "2026-09-01"
+        "verifiedAt": "2026-09-21"
       }
     ],
     "fb": {
       "last_fb_post_date": "未確認（Facebook 僅顯示相對時間）",
-      "last_fb_post_text": "官方 Facebook／網站已發布 2026 年 9 月班表：9/14、9/28 針灸門診休診，9/22 眼科門診休診；特寵門診由賴奕欣醫師依班表提供並採全預約制。Facebook 最新貼文絕對日期未確認。"
+      "last_fb_post_text": "2026 年九月班表列 9/14、9/28 針灸門診休診，9/22 眼科門診休診；特寵由賴奕欣醫師依班表看診，採全預約制。貼文發布日期尚未確認。"
     },
-    "updatedAt": "2026-09-01",
+    "updatedAt": "2026-09-20T20:24:48.914Z",
     "last_checked": "2026-09-01"
   },
   {
@@ -425,7 +423,7 @@ export const ChanghuaHospitalList = [
       "安寧照護"
     ],
     "website": "",
-    "appointmentLink": "",
+    "appointmentLink": "tel:047384978",
     "transportTips": "",
     "socialMedia": {
       "facebook": "https://www.facebook.com/p/%E5%BF%AB%E6%A8%82%E5%AF%B5%E7%89%A9%E9%86%AB%E9%99%A2-100057637141803/",
@@ -433,21 +431,20 @@ export const ChanghuaHospitalList = [
     },
     "google": {
       "rating": "4.5",
-      "reviewCount": 252,
+      "reviewCount": 254,
       "mapsUrl": "https://www.google.com/maps/place/%E5%BF%AB%E6%A8%82%E5%AF%B5%E7%89%A9%E9%86%AB%E9%99%A2/@24.0856669,120.5570643,17z/data=!3m1!4b1!4m6!3m5!1s0x3469393e72a276a7:0x6cce17525d8ec404!8m2!3d24.0856669!4d120.5570643!16s%2Fg%2F11s3xyvz22?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%BF%AB%E6%A8%82%E5%AF%B5%E7%89%A9%E9%86%AB%E9%99%A2/@24.0856669,120.5570643,17z/data=!4m8!3m7!1s0x3469393e72a276a7:0x6cce17525d8ec404!8m2!3d24.0856669!4d120.5570643!9m1!1b1!16s%2Fg%2F11s3xyvz22",
-      "placeId": "0x3469393e72a276a7:0x6cce17525d8ec404",
-      "verifiedAt": "2026-09-01"
+      "verifiedAt": "2026-09-21"
     },
-    "clinicNotes": "官方 Facebook 簡介提到犬貓與特寵診療，特寵包含龜、爬蟲、鼠、兔、小型哺乳類、鳥、蛇等；並提到重症治療、安寧照護，以及加護病房、高壓氧、超音波、X 光、PCR 檢驗設備。Google Maps 2026/9/1 顯示評分 4.5、評論數 252，營業時間為週一至週五 12:00–20:30、週六 12:00–19:30、週日休息。2026 年 9 月特寵班表列陳弈凱醫師 9/2、9/5、9/9、9/12、9/16、9/18、9/23、9/26、9/30 看診，郭昱德醫師自 9/9 起加入特寵門診；其他日期沒有特寵門診，需先預約。未發現固定 24 小時或夜間急診證據。",
+    "clinicNotes": "特寵門診須先預約，只有每月班表標示日期可看診。2026 年九月由陳弈凱與郭昱德醫師排診；郭醫師看龜、鳥、鼠、守宮及蛇，請先確認醫師與物種。夜間急症請先電話確認。",
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "特寵特別門診",
-      "note": "2026 年 8 月特寵門診依官方班表安排：陳弈凱醫師 8/6、8/8、8/11、8/15、8/18、8/21、8/25、8/28、8/29；郭昱德醫師 8/3、8/4、8/6、8/8、8/11、8/15，且郭醫師只看鳥、龜、鼠。特寵門診需先電話或私訊預約。",
+      "note": "特寵須先預約，僅在每月班表標示日期看診。2026 年九月由陳弈凱與郭昱德醫師排診；郭醫師看龜、鳥、鼠、守宮及蛇，請先確認醫師與物種。",
       "reservationRequired": true,
-      "sourceLabel": "官方 Facebook",
-      "sourceUrl": "https://www.facebook.com/photo/?fbid=1500499215214636&set=a=490317266232841",
-      "verifiedAt": "2026-09-01"
+      "sourceLabel": "官方 Instagram",
+      "sourceUrl": "https://www.instagram.com/happypethospital/p/DdGfomKk007/",
+      "verifiedAt": "2026-09-21"
     },
     "announcements": [
       {
@@ -465,19 +462,19 @@ export const ChanghuaHospitalList = [
         "id": "changhua-happy-pet-september-2026-exotic-schedule",
         "type": "notice",
         "title": "2026 年 9 月特寵門診班表",
-        "content": "官方 Facebook 2026 年 9 月特寵班表列陳弈凱醫師 9/2、9/5、9/9、9/12、9/16、9/18、9/23、9/26、9/30 看診；郭昱德醫師自 9/9 起加入特寵門診。其他日期沒有特寵門診，請先預約；貼文文案中的月份文字有誤，以圖卡 2026 年 9 月標示為準。",
+        "content": "2026 年九月陳弈凱醫師於 9/2、9/5、9/9、9/12、9/16、9/18、9/23、9/26、9/30 看診；郭昱德醫師於 9/9、9/10、9/11、9/14、9/15、9/16、9/17、9/18、9/22、9/23、9/24、9/25、9/26、9/30 看診，受理龜、鳥、鼠、守宮及蛇。僅班表標示日期有特寵門診，請先預約。",
         "startDate": "2026-09-01",
         "endDate": "2026-09-30",
-        "sourceLabel": "官方 Facebook",
-        "sourceUrl": "https://www.facebook.com/photo/?fbid=1523044246293466&set=a=490317266232841",
-        "verifiedAt": "2026-09-01"
+        "sourceLabel": "官方 Instagram",
+        "sourceUrl": "https://www.instagram.com/happypethospital/p/DdGfomKk007/",
+        "verifiedAt": "2026-09-21"
       }
     ],
     "fb": {
       "last_fb_post_date": "未確認（最新貼文顯示 8 月 30 日但年份未確認）",
-      "last_fb_post_text": "官方 Facebook 最新可見 2026 年 9 月特寵班表：陳弈凱醫師 9/2、9/5、9/9、9/12、9/16、9/18、9/23、9/26、9/30 看診；郭昱德醫師自 9/9 起加入特寵門診。其他日期沒有特寵門診，需先預約；最新貼文顯示 8 月 30 日但年份未確認。"
+      "last_fb_post_text": "2026 年九月特寵班表：陳弈凱醫師於 9/2、9/5、9/9、9/12、9/16、9/18、9/23、9/26、9/30 看診，郭昱德醫師自 9/9 加入。其他日期沒有特寵門診，須先預約；貼文顯示 8/30，年份尚未確認。"
     },
-    "updatedAt": "2026-09-01",
+    "updatedAt": "2026-09-20T20:31:26.514Z",
     "last_checked": "2026-09-01"
   },
   {
@@ -565,21 +562,20 @@ export const ChanghuaHospitalList = [
       "特殊寵物診療"
     ],
     "website": "",
-    "appointmentLink": "",
+    "appointmentLink": "tel:048333232",
     "transportTips": "",
     "socialMedia": {
       "facebook": "https://www.facebook.com/CJChen.junglevet/",
       "instagram": "https://www.instagram.com/exotic.vet.dr.chen/"
     },
     "google": {
-      "rating": "4.0",
-      "reviewCount": 41,
-      "mapsUrl": "https://www.google.com/maps/place/%E5%8F%A2%E6%9E%97%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@23.9641221,120.5841312,17z/data=!3m1!4b1!4m6!3m5!1s0x346937003d6310ef:0x5fa6a2a20d1d4d13!8m2!3d23.9641221!4d120.5841312!16s%2Fg%2F11ymkwyw_m?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D",
-      "reviewsUrl": "https://www.google.com/maps/place/%E5%8F%A2%E6%9E%97%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@23.9641221,120.5841312,17z/data=!4m8!3m7!1s0x346937003d6310ef:0x5fa6a2a20d1d4d13!8m2!3d23.9641221!4d120.5841312!9m1!1b1!16s%2Fg%2F11ymkwyw_m",
-      "placeId": "0x346937003d6310ef:0x5fa6a2a20d1d4d13",
-      "verifiedAt": "2026-09-01"
+      "rating": "4.6",
+      "reviewCount": 52,
+      "mapsUrl": "https://www.google.com/maps/place/叢林特殊寵物專科醫院JungleExotic/@23.9641383,120.5841267,17z/data=!3m1!4b1!4m6!3m5!1s0x6a9ffafcbae9bc19:0x93786011de6d5fa0!8m2!3d23.9641383!4d120.5841267!16s%2Fg%2F11ntp83q34",
+      "reviewsUrl": "https://www.google.com/maps/place/叢林特殊寵物專科醫院JungleExotic/@23.9641383,120.5841267,17z/data=!4m8!3m7!1s0x6a9ffafcbae9bc19:0x93786011de6d5fa0!8m2!3d23.9641383!4d120.5841267!9m1!1b1!16s%2Fg%2F11ntp83q34",
+      "verifiedAt": "2026-09-21"
     },
-    "clinicNotes": "官方明列鼠、兔、鳥禽、鸚鵡、刺蝟、蜜袋鼯、天竺鼠、龍貓、貂、龜、蛇、蜥蜴等特寵診療；Instagram 也確認小型哺乳類、爬蟲類與鳥科服務。Google Maps 2026/9/1 顯示評分 4.0、評論數 41，營業時間每日 10:00–20:00，未分午休；官方公告分段為 10:00–13:00、14:30–20:00，早診最後掛號 12:30、午診 19:30，兩者時間定義不同，前往前請電話確認。2026 年 9 月官方班表：9/8–9/13 年度員工旅遊；9/18 院內會議及聚餐，早診營業至 15:00、14:30 止掛，中午不休。未開放線上預約，請於營業時間來電；初診須現場掛號候位，超過止掛時間視為急診並收取急診掛號費，是否接診仍依當日門診量。",
+    "clinicNotes": "早診 12:30、午診 19:30 停止掛號；門診量過多時可能提早停掛。沒有線上預約，請於營業時間來電，診間休息時不接電話。初診須現場掛號候位，無法提前預約。預約時間是估計時間，遇急重症或手術可能調整。超過最後掛號時間依急診收費，是否接診仍須看當日門診量。",
     "announcements": [
       {
         "id": "changhua-jungle-july-2026-hours-notice",
@@ -618,19 +614,19 @@ export const ChanghuaHospitalList = [
         "id": "changhua-jungle-september-2026-hours-notice",
         "type": "notice",
         "title": "2026 年 9 月門診與院休提醒",
-        "content": "官方 2026 年 9 月班表：9/8–9/13 年度員工旅遊；9/18 院內會議及聚餐，早診營業至 15:00、14:30 止掛，中午不休。未開放線上預約，初診須現場掛號候位，超過止掛時間視為急診並收取急診掛號費。",
+        "content": "2026/9/8–9/13 員工旅遊休診；9/18 因院內會議及聚餐，看診至 15:00，14:30 停止掛號，中午不休。初診須現場掛號候位，沒有提前預約；超過止掛時間依急診收費，是否接診仍看當日狀況。",
         "startDate": "2026-09-01",
         "endDate": "2026-09-30",
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/photo/?fbid=1086760763910920&set=a.234679652452373",
-        "verifiedAt": "2026-09-01"
+        "verifiedAt": "2026-09-21"
       }
     ],
     "fb": {
-      "last_fb_post_date": "未確認（Facebook 僅顯示 8/31 或相對日期）",
-      "last_fb_post_text": "官方 Facebook 2026 年 9 月班表：9/8–9/13 年度員工旅遊；9/18 院內會議及聚餐，早診營業至 15:00、14:30 止掛，中午不休。最新貼文顯示 8/31，但年份未確認。"
+      "last_fb_post_date": "8月29日（年份未確認）",
+      "last_fb_post_text": "2026 年九月班表：9/8–9/13 員工旅遊休診；9/18 因院內會議及聚餐，看診至 15:00，14:30 停止掛號，中午不休。"
     },
-    "updatedAt": "2026-09-01",
+    "updatedAt": "2026-09-20T20:31:26.527Z",
     "last_checked": "2026-09-01"
   }
 ];
