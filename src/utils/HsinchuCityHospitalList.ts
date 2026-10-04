@@ -360,11 +360,11 @@ export const HsinchuCityHospitalList: Hospital[] = [
       "facebook": "https://www.facebook.com/allweathervet/"
     },
     "google": {
-      "rating": "4.0",
-      "reviewCount": 338,
+      "rating": "3.9",
+      "reviewCount": 340,
       "mapsUrl": "https://www.google.com/maps/place/%E5%85%A8%E5%A4%A9%E5%80%99%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.7878558,121.0200103,17z/data=!3m1!4b1!4m6!3m5!1s0x3468373460d55181:0xe0df728cd95621f1!8m2!3d24.7878558!4d121.0200103!16s%2Fg%2F11ssf7_d23",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%85%A8%E5%A4%A9%E5%80%99%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.7878558,121.0200103,17z/data=!4m8!3m7!1s0x3468373460d55181:0xe0df728cd95621f1!8m2!3d24.7878558!4d121.0200103!9m1!1b1!16s%2Fg%2F11ssf7_d23",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "clinicNotes": "全年無休，提供犬、貓、鼠、兔門診與急診。一般門診為 09:00–21:00，夜間急診為 21:00–09:00；急診掛號費 600 元，醫療費用加成 50%。特殊需求、特寵醫師安排或急症，請先電話確認。",
     "fb": {
@@ -404,9 +404,20 @@ export const HsinchuCityHospitalList: Hospital[] = [
         "sourceLabel": "官方網站",
         "sourceUrl": "https://www.allweathervet.com/paper/share_index.php?id=9593&useno=allweathervet&title_id=8946#page",
         "verifiedAt": "2026-09-21"
+      },
+      {
+        "id": "allweather-2026-10-schedule-notice",
+        "type": "notice",
+        "title": "2026 年十月醫師班表",
+        "content": "十月醫師班表列出早班 09:00–17:00、晚班 14:00–22:00、夜班 21:00–09:00 的安排。",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-31",
+        "sourceLabel": "官方網站",
+        "sourceUrl": "https://www.allweathervet.com/paper/share_index.php?id=9740&useno=allweathervet&title_id=8946#page",
+        "verifiedAt": "2026-10-03"
       }
     ],
-    "updatedAt": "2026-09-20T19:06:59.493Z",
+    "updatedAt": "2026-10-03T05:57:04.434Z",
     "last_checked": "2026-09-04"
   },
   /*
@@ -527,10 +538,10 @@ export const HsinchuCityHospitalList: Hospital[] = [
     },
     "google": {
       "rating": "4.6",
-      "reviewCount": 86,
+      "reviewCount": 87,
       "mapsUrl": "https://www.google.com/maps/place/%E5%BA%A6%E5%BA%A6%E9%B3%A5%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2%EF%BC%88%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@24.8011484,120.9657388,17z/data=!3m1!4b1!4m6!3m5!1s0x3468352128b95dd9:0xc08ffb7bf05aa8c6!8m2!3d24.8011484!4d120.9657388!16s%2Fg%2F11tc1s0zwy",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%BA%A6%E5%BA%A6%E9%B3%A5%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2%EF%BC%88%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@24.8011484,120.9657388,17z/data=!4m8!3m7!1s0x3468352128b95dd9:0xc08ffb7bf05aa8c6!8m2!3d24.8011484!4d120.9657388!9m1!1b1!16s%2Fg%2F11tc1s0zwy",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "clinicNotes": "提供非犬貓寵物門診，不提供外科、住院或住宿服務。採全預約制，請透過官方 LINE（@978zickn）預約，Facebook 不接受預約。門診為週三、週四、週六 14:00–21:00，其餘日期休診。",
     "specialClinic": {
@@ -538,9 +549,9 @@ export const HsinchuCityHospitalList: Hospital[] = [
       "label": "非犬貓特寵門診",
       "note": "非犬貓寵物門診採全預約制，週三、週四、週六 14:00–21:00 看診，不提供外科、住院或住宿服務。請透過官方 LINE（@978zickn）預約，Facebook 不接受預約。",
       "reservationRequired": true,
-      "sourceLabel": "官方 Facebook、官方 LINE",
+      "sourceLabel": "官方 Facebook",
       "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid02N1Hk5zJrs98UMuCLY2p4HrPNH45AL8Cek5RZix6mh9oe2MYXMfp5NmKnAVKYncNgl&id=100075739882784",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "fb": {
       "last_fb_post_date": "未確認（頁面未顯示絕對日期）",
@@ -554,10 +565,75 @@ export const HsinchuCityHospitalList: Hospital[] = [
         "content": "本院採預約制，不使用 Facebook 預約；請加入官方 LINE ID @978zickn 預約。院方明示提供非犬貓寵物門診醫療，不包含外科、住院與住宿服務。",
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid02MseE7dH8gVV3xff25NtkgTD3ErDdTBgxN8qTC3mZTmcYYkGBR3qEVQFsMTRBNRmYl&id=100075739882784",
-        "verifiedAt": "2026-09-21"
+        "verifiedAt": "2026-10-03"
       }
     ],
-    "updatedAt": "2026-09-20T19:06:59.501Z",
+    "updatedAt": "2026-10-03T05:57:04.435Z",
     "last_checked": "2026-09-01"
-  }
+  },
+  {
+    "id": "lumos-animal-hospital-hsinchu",
+    "name": "耀眼動物醫院",
+    "city": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區忠孝路279-3號",
+    "lat": 24.8048242,
+    "lng": 120.9857631,
+    "type": "exotic",
+    "typeText": "犬貓診療、特寵診療",
+    "phone": "03-5726688",
+    "website": "https://www.lumosdvm.com/",
+    "appointmentLink": "https://line.me/ti/p/@338nwwiz",
+    "hours": "門診時段為 09:30–12:30、13:30–17:30、18:30–21:30；實際診次及最後掛號時間請依當月班表。",
+    "nightClinic": true,
+    "pets": [
+      "犬",
+      "貓",
+      "其他特寵"
+    ],
+    "pet_category_group": [
+      "狗",
+      "貓",
+      "其他特寵"
+    ],
+    "services": [
+      "犬貓及特寵分科診療"
+    ],
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/profile.php?id=61568072156559",
+      "instagram": "https://www.instagram.com/lumosdvm/",
+      "line": "https://line.me/ti/p/@338nwwiz"
+    },
+    "google": {
+      "rating": "4.5",
+      "reviewCount": 79,
+      "mapsUrl": "https://www.google.com/maps/place/%E8%80%80%E7%9C%BC%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.8048242,120.9857631,17z/data=!4m15!1m8!3m7!1s0x346835d8cea31b09:0x2b8ff6dc379733c4!2zMzAw5paw56u55biC5p2x5Yui6YeM5b-g5a2d6LevMjc5LTPomZ8!3b1!8m2!3d24.8048242!4d120.9857631!16s%2Fg%2F11pd1w12t6!3m5!1s0x3468359759f79b9b:0x3376d2ea63008f8!8m2!3d24.8048242!4d120.9857631!16s%2Fg%2F11x1qkghcy",
+      "reviewsUrl": "https://www.google.com/maps/place/%E8%80%80%E7%9C%BC%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.8048242,120.9857631,17z/data=!4m17!1m8!3m7!1s0x346835d8cea31b09:0x2b8ff6dc379733c4!2zMzAw5paw56u55biC5p2x5Yui6YeM5b-g5a2d6LevMjc5LTPomZ8!3b1!8m2!3d24.8048242!4d120.9857631!16s%2Fg%2F11pd1w12t6!3m7!1s0x3468359759f79b9b:0x3376d2ea63008f8!8m2!3d24.8048242!4d120.9857631!9m1!1b1!16s%2Fg%2F11x1qkghcy",
+      "verifiedAt": "2026-10-03"
+    },
+    "clinicNotes": "採電話預約優先制，指定醫師請先告知櫃檯；特寵診次依當月醫師門診表安排。",
+    "specialClinic": {
+      "hasExoticSpecialClinic": true,
+      "label": "特寵門診",
+      "note": "特寵診次依當月醫師門診表，指定醫師需求建議提前預約。",
+      "sourceLabel": "官方網站",
+      "sourceUrl": "https://www.lumosdvm.com/paper/promotions_index.php?id=4191",
+      "verifiedAt": "2026-10-03"
+    },
+    "announcements": [
+      {
+        "id": "lumos-exotic-clinic-october-2026",
+        "type": "notice",
+        "title": "2026 年十月特寵診次與掛號時間",
+        "content": "十月班表列蘇泰宇醫師於 10/1、10/8、10/15、10/22、10/29 午診及晚診看診，時段為 13:30–17:30、18:30–21:30；指定醫師需求建議提前預約。當月圖卡列最後掛號時間為早診 11:30、午診 16:30、晚診 20:30。",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-31",
+        "sourceLabel": "官方網站",
+        "sourceUrl": "https://www.lumosdvm.com/paper/promotions_index.php?id=4191",
+        "verifiedAt": "2026-10-03"
+      }
+    ],
+    "createdAt": "2026-10-03T05:56:27.075Z",
+    "updatedAt": "2026-10-03T05:56:27.075Z"
+  },
 ];

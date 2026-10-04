@@ -1,5 +1,31 @@
 export const KaohsiungHospitalList = [
   {
+    "id": "kaohsiung-jiayuan-animal-hospital",
+    "name": "佳園動物醫院",
+    "city": "高雄市",
+    "district": "彌陀區",
+    "address": "高雄市彌陀區彌壽里中正西路43號",
+    "phone": "07-610-6899",
+    "lat": 22.7794572,
+    "lng": 120.2473739,
+    "type": "exotic",
+    "typeText": "犬貓診療、特寵診療",
+    "pets": ["狗", "貓", "魚類"],
+    "pet_category_group": ["狗", "貓", "魚"],
+    "website": "https://www.facebook.com/profile.php?id=100064061588168",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/profile.php?id=100064061588168"
+    },
+    "google": {
+      "rating": "4.9",
+      "reviewCount": 25,
+      "mapsUrl": "https://www.google.com/maps/place/%E4%BD%B3%E5%9C%92%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.7794572,120.2473739,17z/data=!3m1!4b1!4m6!3m5!1s0x346e094adf91aa91:0x26aa1a702951d3eb!8m2!3d22.7794572!4d120.2473739!16s%2Fg%2F11g0z9124h",
+      "verifiedAt": "2026-10-03"
+    },
+    "createdAt": "2026-10-03T15:18:45.000Z",
+    "updatedAt": "2026-10-03T15:18:45.000Z"
+  },
+  {
     "id": "cb069d91-23ee-4721-9487-c910f950f2d5",
     "name": "樂蹦動物醫院",
     "city": "高雄市",
@@ -1471,7 +1497,7 @@ export const KaohsiungHospitalList = [
     },
     "clinicNotes": "本院採預約制，請先來電或透過官方 LINE 預約。若無法前來，請於診前一小時電話取消；同位飼主兩次未到診，之後無法預約，僅能現場安排。\n提前於當診次以前預約，並於預約時間內報到（提供 10 分鐘緩衝），可適用準時預約掛號費優惠。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-10-02T06:09:01.520Z",
+    "updatedAt": "2026-10-03T14:16:53.000Z",
     "last_checked": "2026-09-01",
     "fb": {
       "last_fb_post_date": "2026-08-31",
@@ -1525,12 +1551,12 @@ export const KaohsiungHospitalList = [
         "id": "monsterah62-october-2026-exotic-schedule",
         "type": "notice",
         "title": "2026 年 10 月特寵門診班表",
-        "content": "10 月特寵醫師依當月班表看診。森孟柔醫師特約門診為 10/7、10/14、10/23、10/28 的 13:00–20:30。門診採預約制，無法前來請先電話取消；無故未到兩次將失去預約資格。",
+        "content": "10 月特寵醫師依當月班表看診。森孟柔醫師特約門診為 10/7、10/14、10/23、10/28 的 13:00–20:30，建議先預約。無法前來請先電話取消；無故未到兩次將失去預約資格。",
         "startDate": "2026-10-01",
         "endDate": "2026-10-31",
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/photo/?fbid=1610621400853574&set=a.784023930179996",
-        "verifiedAt": "2026-10-02"
+        "verifiedAt": "2026-10-03"
       }
     ]
   },
@@ -3190,7 +3216,7 @@ export const KaohsiungHospitalList = [
     },
     "clinicNotes": "本院採預約優先制，請於就診前一天的人員上班時間來電預約；現場掛號依櫃檯安排候診。提供現金及轉帳支付，轉帳請於結帳時告知櫃檯。\n犬貓與特寵夜診為 21:30–02:00，特寵醫師依當月班表安排；晚間就診前請先電話確認。犬貓及特寵皆有 24 小時住院照護。\n日診休診前 30 分鐘加收急診掛號費 500 元。每月最後一週的星期三下午不接門診及手術。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-10-02T06:46:47.256Z",
+    "updatedAt": "2026-10-03T14:16:53.000Z",
     "last_checked": "2026-09-04",
     "fb": {
       "last_fb_post_text": "因特寵醫師下午有緊急手術，9 月 15 日特寵下午診不接現場掛號。"
@@ -3236,8 +3262,8 @@ export const KaohsiungHospitalList = [
         "startDate": "2026-10-01",
         "endDate": "2026-10-31",
         "sourceLabel": "官方 Instagram",
-        "sourceUrl": "https://www.instagram.com/starfeather.ah_sanmin/p/Dd6zpjbE0ft/",
-        "verifiedAt": "2026-10-02"
+        "sourceUrl": "https://www.instagram.com/p/DeBxqKykwKs/?img_index=1",
+        "verifiedAt": "2026-10-03"
       },
       {
         "id": "star-feather-sanmin-afternoon-closure-2026-10-28",
@@ -3247,8 +3273,8 @@ export const KaohsiungHospitalList = [
         "startDate": "2026-10-28",
         "endDate": "2026-10-28",
         "sourceLabel": "官方 Instagram",
-        "sourceUrl": "https://www.instagram.com/starfeather.ah_sanmin/p/Dd6zpjbE0ft/",
-        "verifiedAt": "2026-10-02"
+        "sourceUrl": "https://www.instagram.com/p/DeBxqKykwKs/?img_index=1",
+        "verifiedAt": "2026-10-03"
       }
     ]
   },
@@ -3381,7 +3407,7 @@ export const KaohsiungHospitalList = [
     },
     "clinicNotes": "採預約優先制，請於就診前一天的人員上班時間來電預約；現場掛號依櫃檯安排候診。休診前 30 分鐘加收急診掛號費 500 元，特寵急症請先電話確認是否受理。另可撥打 07-641-3808 聯絡。",
     "createdAt": "2024-01-01T00:00:00.000Z",
-    "updatedAt": "2026-10-02T06:46:47.256Z",
+    "updatedAt": "2026-10-03T14:10:00.000Z",
     "last_checked": "2026-09-04",
     "fb": {
       "last_fb_post_date": "2026-08-27",
@@ -3425,12 +3451,12 @@ export const KaohsiungHospitalList = [
         "id": "star-feather-daliao-october-2026-schedule",
         "type": "hours_change",
         "title": "2026 年 10 月犬貓與特寵門診異動",
-        "content": "10/17、10/22 犬貓門診至 17:00，當日無犬貓晚診且不接手術。10/4、10/5、10/6、10/7、10/8、10/14、10/15、10/18、10/21、10/24、10/28、10/29 沒有特寵醫師；其餘特寵診次依當月班表安排。",
+        "content": "10/17、10/22 犬貓門診至 17:00，當日無犬貓晚診且不接手術。10/4、10/6、10/7、10/8、10/14、10/15、10/18、10/21、10/24、10/28、10/29 沒有特寵醫師；其餘特寵診次依當月班表安排。",
         "startDate": "2026-10-01",
         "endDate": "2026-10-31",
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid029oRJdzXsnQDMzNPUdEUV5gGkvpE8UQnuoVMZddVcmkgrRWb7gnF4oYUochrLAeqBl&id=100064155485163",
-        "verifiedAt": "2026-10-02"
+        "verifiedAt": "2026-10-03"
       }
     ]
   },

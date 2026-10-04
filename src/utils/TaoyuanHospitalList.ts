@@ -81,15 +81,27 @@ export const TaoyuanHospitalList = [
       "reviewCount": 144,
       "mapsUrl": "https://www.google.com/maps/place/%E7%B6%AD%E7%89%B9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0206853,121.2203014,17z/data=!3m1!4b1!4m6!3m5!1s0x346821a017f8a15f:0xe3dd89acddd0a378!8m2!3d25.0206853!4d121.2203014!16s%2Fg%2F11pr7grtq2",
       "reviewsUrl": "https://www.google.com/maps/place/%E7%B6%AD%E7%89%B9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0206853,121.2203014,17z/data=!4m8!3m7!1s0x346821a017f8a15f:0xe3dd89acddd0a378!8m2!3d25.0206853!4d121.2203014!9m1!1b1!16s%2Fg%2F11pr7grtq2",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "clinicNotes": "提供犬、貓、兔、鼠與禽鳥診療。每週日、週一休診；就診前可先電話詢問當日醫師安排，急症是否收案也請先確認。",
     "last_checked": "2026-09-04",
-    "updatedAt": "2026-09-20T18:08:31.228Z",
+    "updatedAt": "2026-10-03T06:49:22Z",
     "fb": {
       "last_fb_post_text": "2026 年 9 月每週日、週一休診，日期為 9/6、7、13、14、20、21、27、28。其餘依週二至週六 09:00–12:00、14:00–17:00、18:00–20:00 看診。"
     },
     "announcements": [
+      {
+        "id": "vetoria-october-2026-closure",
+        "type": "closure",
+        "title": "10/17–21 門診休診",
+        "content": "2026/10/17–21 門診休診，其中 10/18、19 為原本週日、週一休診日。10/17、20、21 原門診時段仍有人員協助預約、問題解說及商品購買；慢性病備藥請提早聯絡。",
+        "startDate": "2026-10-17",
+        "endDate": "2026-10-21",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/VetoriaAnimalHospital/posts/pfbid02um9aQuyCGVSUZa4A5YP9f8T5zMmscZKCZCbqfvXqdWZwrKUHb5hC9PJscTGX6hzkl",
+        "verifiedAt": "2026-10-03"
+      },
+
       {
         "id": "vetoria-hours-change-2026-07-01",
         "type": "hours_change",
@@ -206,9 +218,9 @@ export const TaoyuanHospitalList = [
     },
     "google": {
       "rating": "4.8",
-      "reviewCount": 619,
+      "reviewCount": 620,
       "mapsUrl": "https://www.google.com/maps/place/%E5%BB%A3%E5%96%AC%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0080957,121.2940768,17z/data=!3m1!4b1!4m6!3m5!1s0x34681fa5ef6826e7:0x6992310a0b63edcb!8m2!3d25.0080957!4d121.2940768!16s%2Fg%2F123453lxy",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "clinicNotes": "兔科門診為每週一、四、六，手術日為每週三、五，由張醫師看診；兔科只有上午、下午門診。兔科採預約制，犬貓門診採預約優先制，均請直接來電，線上無法預約。\n各時段最後掛號時間為 12:00、16:30、19:00；所有寵物的手術門診均收取掛號費。兔子有緊急狀況時，請先來電確認醫師能否處理。臨時休診會公布於班表，出發前請先查看。",
     "specialClinic": {
@@ -221,7 +233,7 @@ export const TaoyuanHospitalList = [
       "verifiedAt": "2026-09-21"
     },
     "last_checked": "2026-09-01",
-    "updatedAt": "2026-09-20T18:08:31.229Z",
+    "updatedAt": "2026-10-03T06:49:22Z",
     "fb": {
       "last_fb_post_date": "2026-08-06",
       "last_fb_post_text": "2026/8/6 公告：8/7 上午休診，下午兔科正常看診；8/7–8/8 犬貓全日休診。"
@@ -332,9 +344,9 @@ export const TaoyuanHospitalList = [
     },
     "google": {
       "rating": "4.4",
-      "reviewCount": 948,
+      "reviewCount": 949,
       "mapsUrl": "https://www.google.com/maps/place/%E6%99%AE%E7%BE%85%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.9911507,121.2988655,17z/data=!3m1!4b1!4m6!3m5!1s0x34681f1484cc11e9:0x191a4f6447b2b70c!8m2!3d24.9911507!4d121.2988655!16s%2Fg%2F1tgm0lm8",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "clinicNotes": "犬貓門診採現場掛號，特寵門診須電話預約。牙骨外科、心臟內外科、眼科腫瘤科及復健特約，須電話預約或由門診轉診安排。下午門診 15:30 開始，當日醫師與特寵時段請依班表預約；急症請先來電確認能否收案。",
     "specialClinic": {
@@ -343,15 +355,27 @@ export const TaoyuanHospitalList = [
       "note": "特寵門診須電話預約。院方列明全院特寵醫師皆可提供各物種診療，但不收魚類、昆蟲、毒蛇及鱷魚。",
       "reservationRequired": true,
       "sourceLabel": "官方 Facebook",
-      "sourceUrl": "https://www.facebook.com/provet99/posts/pfbid06M1na2YBuLpkrwEdSbyK47Pc5XTksdnmTNTCD2EK1CuQxq2DKiQCuA6MAcJxmz63l",
-      "verifiedAt": "2026-09-21"
+      "sourceUrl": "https://www.facebook.com/provet99/posts/pfbid02cEHy7sdeDajt9kaEKaLS34X9J4xmXuhbq4a4hgnJhtuBtEBmWaKyxQippQkEuCdyl",
+      "verifiedAt": "2026-10-03"
     },
     "last_checked": "2026-09-04",
-    "updatedAt": "2026-09-20T18:17:23.102Z",
+    "updatedAt": "2026-10-03T07:04:15.363Z",
     "fb": {
       "last_fb_post_text": "2026/9/21–9/27 班表：9/25 中秋節全院休診；圖卡列 9/26 營業至 17:00、晚間休診。貼文內文另寫 9/29，日期與圖卡不一致，預約時請再確認。犬貓採現場掛號，特寵須電話預約。"
     },
     "announcements": [
+      {
+        "id": "pro-national-day-2026-10-10",
+        "type": "hours_change",
+        "title": "10/10 門診至 17:00，晚間休診",
+        "content": "2026/10/10 國慶日營業時間為 09:30–17:00，晚間休診。犬貓現場掛號，特寵門診須電話預約；需要回診或備藥請提早安排。",
+        "startDate": "2026-10-10",
+        "endDate": "2026-10-10",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/provet99/posts/pfbid02cEHy7sdeDajt9kaEKaLS34X9J4xmXuhbq4a4hgnJhtuBtEBmWaKyxQippQkEuCdyl",
+        "verifiedAt": "2026-10-03"
+      },
+
       {
         "id": "pro-2026-08-10-16-doctor-schedule",
         "type": "notice",
@@ -483,7 +507,7 @@ export const TaoyuanHospitalList = [
       "mapsUrl": "https://www.google.com/maps/place/%E9%80%97%E8%99%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E6%A1%83%E5%9C%92%E9%99%A2%E5%8D%80%EF%BC%89/@24.9911296,121.29731,17z/data=!3m1!4b1!4m6!3m5!1s0x34681f625a763151:0x3f811694e3a6ba13!8m2!3d24.9911296!4d121.29731!16s%2Fg%2F11gyymfyz1",
       "reviewsUrl": "https://www.google.com/maps/place/%E9%80%97%E8%99%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E6%A1%83%E5%9C%92%E9%99%A2%E5%8D%80%EF%BC%89/@24.9911296,121.29731,17z/data=!4m8!3m7!1s0x34681f625a763151:0x3f811694e3a6ba13!8m2!3d24.9911296!4d121.29731!9m1!1b1!16s%2Fg%2F11gyymfyz1",
       "placeId": "ChIJUTF2WmIfaDQRE7qm45QWgT8",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "clinicNotes": "門診採預約優先制，可現場、電話或透過 LINE 預約。每個預約時段為 30 分鐘，第一個時段為 09:30–10:00，最後為 20:00–20:30。桃園院區電話分機為 #100，LINE 帳號為 @dog.house，訊息不一定即時回覆。營業時間外不受理掛號及加班診療，也沒有 24 小時門診或住院照護；特寵急症請先電話確認能否收案。",
     "last_checked": "2026-09-04",
@@ -501,7 +525,7 @@ export const TaoyuanHospitalList = [
         "startDate": "2026-07-01",
         "sourceLabel": "官方網站",
         "sourceUrl": "https://www.doghouse.tw/news/single/20/%E9%80%97%E8%99%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9C%E7%87%9F%E6%A5%AD%E6%99%82%E9%96%93%E8%AA%BF%E6%95%B4%E5%85%AC%E5%91%8A.html",
-        "verifiedAt": "2026-09-21"
+        "verifiedAt": "2026-10-03"
       }
     ]
   },
@@ -566,7 +590,8 @@ export const TaoyuanHospitalList = [
       "松鼠",
       "刺蝟",
       "貂",
-      "蜜袋鼯"
+      "蜜袋鼯",
+      "爬蟲"
     ],
     "pet_category_group": [
       "狗",
@@ -578,7 +603,8 @@ export const TaoyuanHospitalList = [
       "刺蝟",
       "蜜袋鼯",
       "貂",
-      "其他特寵"
+      "其他特寵",
+      "爬蟲"
     ],
     "specialties": [
       "一般內外科",
@@ -599,14 +625,14 @@ export const TaoyuanHospitalList = [
     },
     "google": {
       "rating": "4.6",
-      "reviewCount": 332,
+      "reviewCount": 335,
       "mapsUrl": "https://www.google.com/maps/place/%E9%80%97%E8%99%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E5%8D%97%E5%B4%81%E9%99%A2%E5%8D%80%EF%BC%89/@25.043508,121.295991,17z/data=!3m1!4b1!4m6!3m5!1s0x34681f693a5b29ef:0xc9f015ee0c2e6856!8m2!3d25.043508!4d121.295991!16s%2Fg%2F11k4x0m7wx",
       "reviewsUrl": "https://www.google.com/maps/place/%E9%80%97%E8%99%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E5%8D%97%E5%B4%81%E9%99%A2%E5%8D%80%EF%BC%89/@25.043508,121.295991,17z/data=!4m8!3m7!1s0x34681f693a5b29ef:0xc9f015ee0c2e6856!8m2!3d25.043508!4d121.295991!9m1!1b1!16s%2Fg%2F11k4x0m7wx",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "clinicNotes": "門診採預約優先制，也接受現場掛號，可現場、電話或透過 LINE 預約。每個預約時段為 30 分鐘，第一個時段為 09:30–10:00，最後為 20:00–20:30。南崁院區電話分機為 #200，LINE 帳號為 @dog.house.nk，訊息不一定即時回覆。營業時間外不受理掛號及加班診療，也沒有 24 小時門診或住院照護；特寵急症請先電話確認能否收案。",
     "last_checked": "2026-09-04",
-    "updatedAt": "2026-09-20T18:22:55.193Z",
+    "updatedAt": "2026-10-03T07:04:15.365Z",
     "fb": {
       "last_fb_post_date": "2026-07-10",
       "last_fb_post_text": "2026/7/11 颱風期間營業時間調整為 11:00–19:00，住院照護正常。"
@@ -620,7 +646,7 @@ export const TaoyuanHospitalList = [
         "startDate": "2026-07-01",
         "sourceLabel": "官方網站",
         "sourceUrl": "https://www.doghouse.tw/news/single/20/%E9%80%97%E8%99%9F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9C%E7%87%9F%E6%A5%AD%E6%99%82%E9%96%93%E8%AA%BF%E6%95%B4%E5%85%AC%E5%91%8A.html",
-        "verifiedAt": "2026-09-21"
+        "verifiedAt": "2026-10-03"
       }
     ]
   },
@@ -701,7 +727,7 @@ export const TaoyuanHospitalList = [
       "reviewCount": 122,
       "mapsUrl": "https://www.google.com/maps/place/%E5%93%B2%E5%AE%89%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.9910879,121.2962995,17z/data=!3m1!4b1!4m6!3m5!1s0x34681f1062daaf59:0xb4bbeebcf6a8a0e1!8m2!3d24.9910879!4d121.2962995!16s%2Fg%2F1pzszhfsr",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%93%B2%E5%AE%89%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.9910879,121.2962995,17z/data=!4m8!3m7!1s0x34681f1062daaf59:0xb4bbeebcf6a8a0e1!8m2!3d24.9910879!4d121.2962995!9m1!1b1!16s%2Fg%2F1pzszhfsr",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "clinicNotes": "週一至週六看診，週日休診。兔、鼠等特寵就診前，請先電話確認是否收案、當日醫師及掛號安排；急症也請先來電詢問。",
     "last_checked": "2026-09-01",
@@ -790,13 +816,13 @@ export const TaoyuanHospitalList = [
     },
     "google": {
       "rating": "4.7",
-      "reviewCount": 233,
+      "reviewCount": 232,
       "mapsUrl": "https://www.google.com/maps/place/%E6%A1%94%E9%86%AC%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E9%A0%90%E7%B4%84%E5%84%AA%E5%85%88%E5%88%B6%EF%BC%89/@24.9125614,121.1470415,17z/data=!3m1!4b1!4m6!3m5!1s0x346825fdfba7d8d5:0x97c35662dbf19faf!8m2!3d24.9125614!4d121.1470415!16s%2Fg%2F11rwwtphcq",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "clinicNotes": "提供犬、貓、鼠、天竺鼠與兔的診療。門診採預約優先制，目前僅提供電話預約，預約保留 5 分鐘；遲到或未預約者須現場候診。週四固定休診，週日 09:30–14:30，中午不休診。出發前請留意休診公告，急症請先來電確認能否收案。",
     "last_checked": "2026-09-01",
-    "updatedAt": "2026-09-20T18:27:58.627Z",
+    "updatedAt": "2026-10-03T07:17:09.352Z",
     "fb": {
       "last_fb_post_date": "2026-07-16",
       "last_fb_post_text": "2026 年 9 月行事曆列 9/11、9/23 公休，固定週四休診。可電話預約，遲到超過 5 分鐘改現場候診。"
@@ -844,7 +870,7 @@ export const TaoyuanHospitalList = [
         "endDate": "2026-10-25",
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/photo/?fbid=1098518255878199&set=a.121382713591763",
-        "verifiedAt": "2026-09-21"
+        "verifiedAt": "2026-10-03"
       },
       {
         "id": "jijiang-2026-10-26-11-05-closure",
@@ -855,7 +881,7 @@ export const TaoyuanHospitalList = [
         "endDate": "2026-11-05",
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/photo/?fbid=1098518255878199&set=a.121382713591763",
-        "verifiedAt": "2026-09-21"
+        "verifiedAt": "2026-10-03"
       }
     ]
   },
@@ -865,8 +891,8 @@ export const TaoyuanHospitalList = [
     "city": "桃園市",
     "district": "平鎮區",
     "address": "桃園市平鎮區廣德街12號",
-    "lat": 24.9565728,
-    "lng": 121.2048712,
+    "lat": 24.9565681,
+    "lng": 121.2048637,
     "type": "exotic",
     "typeText": "特寵診療",
     "phone": "03-4942020 #10",
@@ -922,7 +948,11 @@ export const TaoyuanHospitalList = [
       "小型哺乳類",
       "鳥類",
       "爬蟲類",
-      "兩棲類"
+      "兩棲類",
+      "蛇",
+      "守宮",
+      "蜥蜴",
+      "烏龜"
     ],
     "pet_category_group": [
       "兔",
@@ -930,7 +960,10 @@ export const TaoyuanHospitalList = [
       "鳥類",
       "爬蟲",
       "兩棲",
-      "其他特寵"
+      "其他特寵",
+      "蛇",
+      "守宮（蜥蜴）",
+      "烏龜"
     ],
     "specialties": [
       "特寵專科",
@@ -951,14 +984,14 @@ export const TaoyuanHospitalList = [
     },
     "google": {
       "rating": "4.6",
-      "reviewCount": 640,
+      "reviewCount": 642,
       "mapsUrl": "https://www.google.com/maps/place/%E5%8E%9F%E9%87%8E%E5%8B%95%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@24.9565681,121.202675,17z/data=!3m1!4b1!4m6!3m5!1s0x346823cc9e922439:0xebbfed15543ad636!8m2!3d24.9565681!4d121.2048637!16s%2Fg%2F11jcm6m9r9",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%8E%9F%E9%87%8E%E5%8B%95%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@24.9565681,121.202675,17z/data=!4m8!3m7!1s0x346823cc9e922439:0xebbfed15543ad636!8m2!3d24.9565681!4d121.2048637!9m1!1b1!16s%2Fg%2F11jcm6m9r9",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "clinicNotes": "廣德街 12 號為特寵院區，提供鼠兔、小型哺乳類、禽鳥、爬蟲與兩棲類診療，可透過官方 LINE 或電話預約。每日門診為 10:15–13:00、14:30–21:00；每月最後一個週二院休，前一營業日看診至 19:00，國定假日另行公告。特定醫師、物種與急症收案，請先向院方確認。",
     "last_checked": "2026-09-04",
-    "updatedAt": "2026-09-20T18:27:58.627Z",
+    "updatedAt": "2026-10-03T07:17:09.353Z",
     "fb": {
       "last_fb_post_date": "2026-08-05",
       "last_fb_post_text": "2026/8/5 發布爬蟲泌尿道結石衛教文章。"
@@ -971,7 +1004,7 @@ export const TaoyuanHospitalList = [
         "content": "每月最後一個週二固定院休；院休前營業日門診至 19:00；國定假日另行公告。",
         "sourceLabel": "官方網站",
         "sourceUrl": "https://wild-ah.com/about-us/",
-        "verifiedAt": "2026-09-21"
+        "verifiedAt": "2026-10-03"
       }
     ]
   },
@@ -1092,10 +1125,10 @@ export const TaoyuanHospitalList = [
     },
     "google": {
       "rating": "4.5",
-      "reviewCount": 373,
+      "reviewCount": 377,
       "mapsUrl": "https://www.google.com/maps/place/%E9%87%8E%E6%A3%AE%E9%9D%9E%E7%8A%AC%E8%B2%93%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@24.9630142,121.2176308,17z/data=!3m1!4b1!4m6!3m5!1s0x346823c51ffb2ef7:0x98bb29148ab5a500!8m2!3d24.9630142!4d121.2176308!16s%2Fg%2F11n7hgr9zw",
       "reviewsUrl": "https://www.google.com/maps/place/%E9%87%8E%E6%A3%AE%E9%9D%9E%E7%8A%AC%E8%B2%93%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@24.9630142,121.2176308,17z/data=!4m8!3m7!1s0x346823c51ffb2ef7:0x98bb29148ab5a500!8m2!3d24.9630142!4d121.2176308!9m1!1b1!16s%2Fg%2F11n7hgr9zw",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "clinicNotes": "僅接診非犬貓動物，不接診犬、貓、毒蛇、靈長類與節肢動物。門診以預約為主，現場看診須視當日門診量，建議先電話預約；超過營業時間的現場診察費為 1.5 倍。Instagram 不接受私訊，醫師時段與臨時異動請查看官方班表，急症請先來電確認能否收案。",
     "specialClinic": {
@@ -1108,7 +1141,7 @@ export const TaoyuanHospitalList = [
       "verifiedAt": "2026-09-21"
     },
     "last_checked": "2026-09-01",
-    "updatedAt": "2026-09-20T18:40:10.934Z",
+    "updatedAt": "2026-10-03T07:31:21.036Z",
     "fb": {
       "last_fb_post_date": "未確認（頁面未顯示絕對日期）",
       "last_fb_post_text": "院方已公布九月醫師班表，各物種及指定醫師時段請先電話確認。"
@@ -1214,7 +1247,7 @@ export const TaoyuanHospitalList = [
       "mapsUrl": "https://www.google.com/maps/place/%E5%BA%B7%E6%B7%87%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.9625872,121.2215505,17z/data=!3m1!4b1!4m6!3m5!1s0x3468223412604769:0xda1337d7ff032d74!8m2!3d24.9625872!4d121.2215505!16s%2Fg%2F11b7wc54c5",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%BA%B7%E6%B7%87%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.9625872,121.2215505,17z/data=!4m8!3m7!1s0x3468223412604769:0xda1337d7ff032d74!8m2!3d24.9625872!4d121.2215505!9m1!1b1!16s%2Fg%2F11b7wc54c5",
       "placeId": "0x3468223412604769:0xda1337d7ff032d74",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "clinicNotes": "提供犬貓及鼠兔診療，週一至週六 10:00–17:00、18:30–21:30 看診，週日休診。其他特寵物種、預約安排與急症是否受理，請先電話確認；臨時休診會公布於官方 Facebook。",
     "last_checked": "2026-09-01",
@@ -1285,7 +1318,8 @@ export const TaoyuanHospitalList = [
       "中獸醫針灸",
       "心臟科診療",
       "內視鏡檢查",
-      "特殊寵物健康檢查"
+      "特殊寵物健康檢查",
+      "特殊寵物電腦斷層檢查"
     ],
     "pets": [
       "犬",
@@ -1340,12 +1374,12 @@ export const TaoyuanHospitalList = [
       "instagram": "https://www.instagram.com/chisin_animal_hospital_/"
     },
     "google": {
-      "rating": "4.6",
-      "reviewCount": 269,
+      "rating": "4.5",
+      "reviewCount": 273,
       "mapsUrl": "https://www.google.com/maps/place/%E7%90%AA%E6%AC%A3%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E9%BE%9C%E5%B1%B1%E5%88%86%E9%99%A2%EF%BD%9C%E7%89%99%E7%A7%91%EF%BD%9C%E4%B8%AD%E8%A5%BF%E7%8D%B8%E9%86%AB%EF%BD%9C%E7%89%B9%E5%AF%B5%E7%A7%91%EF%BD%9C%E6%95%99%E8%82%B2%E4%B8%AD%E5%BF%83/@25.0584073,121.341163,15z/data=!4m10!1m2!2m1!1z55Cq5qyj5YuV54mp6Yar6ZmiLem-nOWxseWIhumZog!3m6!1s0x3442a737349a5925:0xf756759e1d01899f!8m2!3d25.0584073!4d121.3602174!15sCh_nkKrmrKPli5XnianphqvpmaIt6b6c5bGx5YiG6ZmiWiYiJOeQqiDmrKMg5YuV54mpIOmGq-mZoiDpvpwg5bGxIOWIhumZopIBD2FuaW1hbF9ob3NwaXRhbJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuVFVSSkxUbFlaVVJuRUFF4AEA-gEECEgQIQ!16s%2Fg%2F11bw2h1ypp",
       "reviewsUrl": "https://www.google.com/maps/place/%E7%90%AA%E6%AC%A3%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E9%BE%9C%E5%B1%B1%E5%88%86%E9%99%A2%EF%BD%9C%E7%89%99%E7%A7%91%EF%BD%9C%E4%B8%AD%E8%A5%BF%E7%8D%B8%E9%86%AB%EF%BD%9C%E7%89%B9%E5%AF%B5%E7%A7%91%EF%BD%9C%E6%95%99%E8%82%B2%E4%B8%AD%E5%BF%83/@25.0584073,121.3602174,17z/data=!4m8!3m7!1s0x3442a737349a5925:0xf756759e1d01899f!8m2!3d25.0584073!4d121.3602174!9m1!1b1!16s%2Fg%2F11bw2h1ypp",
       "placeId": "ChIJJVmaNDenQjQRn4kBHZ51Vvc",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "clinicNotes": "特寵門診由陳勇惟醫師看診，採預約優先，目前暫不接受鳥禽類。未列出的特殊物種請先電話詢問；醫師時段與臨時異動請依官方班表確認。",
     "specialClinic": {
@@ -1355,10 +1389,10 @@ export const TaoyuanHospitalList = [
       "reservationRequired": true,
       "sourceLabel": "官方預約頁",
       "sourceUrl": "https://terrymon.nxvet.ai/clinic/1047",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "last_checked": "2026-09-01",
-    "updatedAt": "2026-09-20T18:54:15.957Z",
+    "updatedAt": "2026-10-03T07:31:21.036Z",
     "fb": {
       "last_fb_post_date": "8月（年份未顯示）",
       "last_fb_post_text": "院方分享貓咪是否需要洗澡的衛教資訊，頁面顯示 8/4，未標年份。"
@@ -1400,7 +1434,7 @@ export const TaoyuanHospitalList = [
     "typeText": "犬貓診療、特寵診療",
     "phone": "03-3328100",
     "specialEvents": [],
-    "hours": "週一至週五 10:00–20:00；週六 10:00–16:00；週日休診",
+    "hours": "週一至週五 10:00–20:00；週六 10:00–17:00；週日休診",
     "business_hours": {
       "mon": [
         "10:00-20:00"
@@ -1418,7 +1452,7 @@ export const TaoyuanHospitalList = [
         "10:00-20:00"
       ],
       "sat": [
-        "10:00-16:00"
+        "10:00-17:00"
       ],
       "sun": []
     },
@@ -1427,12 +1461,12 @@ export const TaoyuanHospitalList = [
       "reviewCount": 318,
       "mapsUrl": "https://www.google.com/maps/place/%E6%96%B0%E4%B8%96%E7%B4%80%E7%8D%B8%E9%86%AB%E9%99%A2/@24.9907622,121.3193228,17z/data=!3m1!4b1!4m6!3m5!1s0x34681f2032b62b4b:0x35f2dd5d2140c928!8m2!3d24.9907622!4d121.3193228!16s%2Fg%2F11fr4vw0qk",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%96%B0%E4%B8%96%E7%B4%80%E7%8D%B8%E9%86%AB%E9%99%A2/@24.9907622,121.3193228,17z/data=!4m8!3m7!1s0x34681f2032b62b4b:0x35f2dd5d2140c928!8m2!3d24.9907622!4d121.3193228!9m1!1b1!16s%2Fg%2F11fr4vw0qk",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
-    "nightClinic": false,
+    "nightClinic": true,
     "services": [
       "犬貓診療",
       "寵物鳥與賽鴿診療"
@@ -1458,7 +1492,7 @@ export const TaoyuanHospitalList = [
     },
     "clinicNotes": "提供犬、貓、寵物鳥與賽鴿診療，採電話預約制，不提供線上問診。可撥 03-3328100 或 03-3341411 預約；其他特寵物種與急症是否受理，請先電話確認。",
     "last_checked": "2026-09-01",
-    "updatedAt": "2026-09-20T18:54:15.958Z",
+    "updatedAt": "2026-10-03T12:13:01.558Z",
     "fb": {
       "last_fb_post_date": "7月（年份未顯示）",
       "last_fb_post_text": "院方曾公告颱風期間調整門診：7/10 上午看診、7/11 休診、7/12 依原定安排休診；貼文年份尚未確認。"
@@ -1474,6 +1508,17 @@ export const TaoyuanHospitalList = [
         "sourceLabel": "Google Maps 商家營業時間",
         "sourceUrl": "https://www.google.com/maps/place/新世紀獸醫院/@24.9907622,121.3193228,17z/data=!3m1!4b1!4m6!3m5!1s0x34681f2032b62b4b:0x35f2dd5d2140c928!8m2!3d24.9907622!4d121.3193228!16s%2Fg%2F11fr4vw0qk",
         "verifiedAt": "2026-09-21"
+      },
+      {
+        "id": "new-century-2026-10-09-holiday-hours",
+        "type": "hours_change",
+        "title": "10/9 國慶補假營業至 16:00",
+        "content": "Google 商家列 2026/10/9 國慶日補假營業時間為 10:00–16:00；醫師門診及預約安排請先向院方確認。",
+        "startDate": "2026-10-09",
+        "endDate": "2026-10-09",
+        "sourceLabel": "Google Maps 商家營業時間",
+        "sourceUrl": "https://www.google.com/maps/place/%E6%96%B0%E4%B8%96%E7%B4%80%E7%8D%B8%E9%86%AB%E9%99%A2/@24.9907622,121.3193228,17z/data=!3m1!4b1!4m6!3m5!1s0x34681f2032b62b4b:0x35f2dd5d2140c928!8m2!3d24.9907622!4d121.3193228!16s%2Fg%2F11fr4vw0qk",
+        "verifiedAt": "2026-10-03"
       }
     ]
   },
@@ -1568,4 +1613,139 @@ export const TaoyuanHospitalList = [
     "last_checked": "2026-06-02"
   }
   */
+  {
+    "id": "dawn-animal-hospital-taoyuan",
+    "name": "大安動物醫院",
+    "city": "桃園市",
+    "district": "桃園區",
+    "address": "330 桃園市桃園區三民路一段24號",
+    "phone": "03-333-5025、03-275-5029",
+    "type": "exotic",
+    "typeText": "犬貓診療、特寵診療",
+    "pets": [
+      "狗",
+      "貓",
+      "鼠",
+      "兔"
+    ],
+    "pet_category_group": [
+      "狗",
+      "貓",
+      "鼠",
+      "兔"
+    ],
+    "services": [
+      "犬貓診療",
+      "鼠兔基本醫療檢查",
+      "鼠兔外科手術"
+    ],
+    "website": "https://www.dawnah.co/",
+    "hours": "週一至週五 09:00–12:00、14:00–21:00；週日休診。週六時段與臨時調整請依當月班表。",
+    "reservationRequired": false,
+    "nightClinic": true,
+    "clinicNotes": "接受預約，也可現場看診。鼠、兔提供基本醫療檢查及外科手術。",
+    "lat": 24.9969014,
+    "lng": 121.3226652,
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/dawnvettw"
+    },
+    "google": {
+      "rating": "4.3",
+      "reviewCount": 261,
+      "mapsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E5%AE%89%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.9969014,121.3226652,17z/data=!3m1!4b1!4m6!3m5!1s0x34681ef6354f62e1:0xe8b2f7adea22cfbf!8m2!3d24.9969014!4d121.3226652!16s%2Fg%2F1wnbvrhl",
+      "verifiedAt": "2026-10-03"
+    },
+    "announcements": [
+      {
+        "id": "dawn-october-2026-hours",
+        "type": "hours_change",
+        "title": "十月門診時間調整",
+        "content": "2026/10/6、10/20 午診休診，晚診於 18:00 恢復。10/9、10、24、26 晚診至 18:00；10/17 全日休診。",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-31",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/dawnvettw/posts/pfbid04driWXqLY5WR4Rq5q8aKKc4X2qDfPCeyiTzJxCTb639zTF6QLe8J2PgeZ9XqZ51Ul",
+        "verifiedAt": "2026-10-03"
+      },
+      {
+        "id": "dawn-october-2026-registration",
+        "type": "notice",
+        "title": "十月班表掛號截止時間",
+        "content": "2026 年十月班表列上午最後掛號時間為 11:30，下午及晚診為 20:30；個別日期調整請依院方公告。",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-31",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/photo/?fbid=122289122078077454&set=pcb.122289122228077454",
+        "verifiedAt": "2026-10-03"
+      }
+    ],
+    "createdAt": "2026-10-03T06:41:22Z",
+    "updatedAt": "2026-10-03T06:52:45.108Z"
+  },
+  {
+    "id": "anxin-animal-hospital-taoyuan",
+    "name": "安欣動物醫院",
+    "city": "桃園市",
+    "district": "桃園區",
+    "address": "330 桃園市桃園區中福街60號1樓",
+    "phone": "03-3367775",
+    "type": "exotic",
+    "typeText": "犬貓診療、特寵診療",
+    "pets": [
+      "犬",
+      "貓",
+      "兔",
+      "鼠"
+    ],
+    "pet_category_group": [
+      "狗",
+      "貓",
+      "兔",
+      "鼠"
+    ],
+    "services": [
+      "犬貓診療",
+      "兔鼠口腔疾病治療",
+      "兔鼠消化道及呼吸道疾病治療",
+      "兔鼠眼睛及皮膚疾病治療",
+      "兔鼠生殖系統疾病治療"
+    ],
+    "specialties": [
+      "兔/鼠科"
+    ],
+    "website": "https://icreatepet.com.tw/",
+    "hours": "週一、二、四、五、六 10:00–21:00；週三 13:00–21:00，週日休診。",
+    "business_hours": {
+      "mon": [
+        "10:00-21:00"
+      ],
+      "tue": [
+        "10:00-21:00"
+      ],
+      "wed": [
+        "13:00-21:00"
+      ],
+      "thu": [
+        "10:00-21:00"
+      ],
+      "fri": [
+        "10:00-21:00"
+      ],
+      "sat": [
+        "10:00-21:00"
+      ],
+      "sun": []
+    },
+    "nightClinic": true,
+    "lat": 24.9974325,
+    "lng": 121.3042581,
+    "google": {
+      "rating": "4.7",
+      "reviewCount": 468,
+      "mapsUrl": "https://www.google.com/maps/place/%E5%AE%89%E6%AC%A3%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.9974325,121.3042581,17z/data=!3m1!4b1!4m6!3m5!1s0x34681efc1dd43ecf:0xa9b98ddc9ec6a9d8!8m2!3d24.9974325!4d121.3042581!16s%2Fg%2F1hm2xh0qy",
+      "verifiedAt": "2026-10-03"
+    },
+    "createdAt": "2026-10-03T06:49:22Z",
+    "updatedAt": "2026-10-03T06:49:22Z"
+  }
 ];

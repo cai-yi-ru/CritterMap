@@ -30,6 +30,20 @@ expect(!home.includes('fonts.googleapis.com'), 'No external font stylesheet');
 expect(home.includes('跳到主要內容') && home.includes('id="main-content"'), 'Skip navigation target');
 expect(schemas(home).some((item) => item['@graph']?.some((entry) => entry['@type'] === 'WebSite')), 'Valid home JSON-LD');
 
+const reviewResponse = await fetch(`${base}/review/threads`);
+expect(reviewResponse.status === 200, 'Threads review workspace is available');
+expect(/noindex/.test(reviewResponse.headers.get('x-robots-tag') ?? ''), 'Review response has an HTTP noindex directive');
+const reviewHtml = await reviewResponse.text();
+for (const name of ['robots', 'googlebot']) {
+  expect(new RegExp(`name="${name}" content="[^"]*noindex`).test(reviewHtml), `${name}: review metadata excludes indexing`);
+}
+expect(reviewHtml.includes(`rel="canonical" href="${site}/review/threads"`), 'Review workspace has its own canonical');
+expect(!/name="(?:robots|googlebot)" content="[^"]*noindex/.test(home), 'Public home remains indexable');
+const publicResponse = await fetch(`${base}/`);
+expect(!/noindex/.test(publicResponse.headers.get('x-robots-tag') ?? ''), 'Review HTTP directive does not affect public pages');
+expect(!(await page('/sitemap.xml')).includes('/review/'), 'Review workspace is excluded from sitemap');
+expect(!/disallow:\s*\/(?:review|$)/im.test(await page('/robots.txt')), 'Crawlers can read review noindex directives');
+
 for (const query of ['embed=1', 'city=%E5%8F%B0%E5%8C%97%E5%B8%82&embed=true']) {
   const embed = await page(`/?${query}`);
   expect(/name="robots" content="noindex, follow"/.test(embed), 'Embed noindex regardless of parameter order');

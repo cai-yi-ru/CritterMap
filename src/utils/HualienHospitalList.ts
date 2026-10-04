@@ -53,7 +53,14 @@ export const HualienHospitalList = [
       "鼠",
       "鳥類",
       "爬蟲",
-      "其他特寵"
+      "其他特寵",
+      "天竺鼠",
+      "倉鼠",
+      "刺蝟",
+      "蜜袋鼯",
+      "守宮",
+      "蜥蜴",
+      "烏龜"
     ],
     "pet_category_group": [
       "狗",
@@ -62,7 +69,10 @@ export const HualienHospitalList = [
       "鼠",
       "鳥類",
       "爬蟲",
-      "其他特寵"
+      "其他特寵",
+      "天竺鼠",
+      "刺蝟",
+      "蜜袋鼯"
     ],
     "specialties": [
       "特殊寵物門診"
@@ -78,18 +88,18 @@ export const HualienHospitalList = [
     },
     "google": {
       "rating": "4.3",
-      "reviewCount": 539,
+      "reviewCount": 540,
       "mapsUrl": "https://www.google.com/maps/place/%E9%AB%98%E6%A9%8B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2(%E6%8E%A1%E9%A0%90%E7%B4%84%E5%88%B6%E3%80%81%E7%84%A1%E7%BE%8E%E5%AE%B9%E6%9C%8D%E5%8B%99)/@23.970339,121.5917293,17z/data=!4m10!1m2!2m1!1z6auY5qmL5YuV54mp6Yar6ZmiIOiKseiTruW4guS4reato-i3rzkx6Jmf!3m6!1s0x34689f91068b0379:0xedbabdb78ef916d3!8m2!3d23.970339!4d121.5964929!15sCirpq5jmqYvli5XnianphqvpmaIg6Iqx6JOu5biC5Lit5q2j6LevOTHomZ-SAQ9hbmltYWxfaG9zcGl0YWzgAQA!16s%2Fg%2F11x9m1dyr",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "特寵門診",
-      "note": "特寵醫師於每週四、週五 09:00–17:30 看診，提供兔、天竺鼠、倉鼠及爬蟲的健檢、疾病診療與絕育手術。請提前電話預約，並確認可看診物種。",
+      "note": "特寵門診為每週四、週五 09:00–17:30，受理兔、天竺鼠、倉鼠、刺蝟、蜜袋鼯、守宮、蜥蜴與烏龜，健檢、疾病及絕育手術需求依物種評估。請先電話預約，其他物種請先詢問。",
       "reservationRequired": true,
       "sourceLabel": "官方 Instagram",
-      "sourceUrl": "https://www.instagram.com/takahashi.hualien/p/DcjD1k9jMuZ/",
-      "verifiedAt": "2026-09-21"
+      "sourceUrl": "https://www.instagram.com/takahashi.hualien/p/DdoeeW2jStr/",
+      "verifiedAt": "2026-10-03"
     },
     "announcements": [
       {
@@ -161,7 +171,7 @@ export const HualienHospitalList = [
     ],
     "clinicNotes": "採預約制，犬與特寵請撥 03-8358792，貓咪門診請撥 03-8358018。特寵門診為週四、週五 09:00–17:30，提供兔、天竺鼠、倉鼠及爬蟲的健檢、疾病診療與絕育手術；請先確認收案物種、醫師及當日時間。就診地址為花蓮市中正路 91 號。",
     "createdAt": "2026-06-10T00:00:00.000Z",
-    "updatedAt": "2026-09-21T04:42:56.756Z",
+    "updatedAt": "2026-10-03T06:23:30.109Z",
     "last_checked": "2026-09-01",
     "fb": {
       "last_fb_post_date": "2026-07-12",

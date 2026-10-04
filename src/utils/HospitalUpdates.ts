@@ -5,11 +5,519 @@ import type { HospitalUpdate } from '@/types/hospital';
 // Run `npm run prune:hospital-updates` to preview expired items, then use `:write` to prune.
 export const HospitalUpdateList: HospitalUpdate[] = [
   {
+    "id": "update-jiayuan-first-listed-2026-10",
+    "hospitalId": "kaohsiung-jiayuan-animal-hospital",
+    "type": "content",
+    "title": "新增收錄佳園動物醫院",
+    "summary": "新增收錄彌陀區佳園動物醫院，院方明列犬貓及魚類看診。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook 院所介紹",
+    "sourceUrl": "https://www.facebook.com/profile.php?id=100064061588168",
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "update-noah-restored-2026-10",
+    "hospitalId": "noah-animal-hospital",
+    "type": "content",
+    "title": "恢復收錄台北諾亞動物醫院",
+    "summary": "恢復收錄中山區吉林路諾亞動物醫院，院方介紹明列犬、貓、鼠、兔一般內外科診療。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "院方 104 介紹",
+    "sourceUrl": "https://www.104.com.tw/company/1a2x6bnfnl",
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "update-noah-october-closures-2026",
+    "hospitalId": "noah-animal-hospital",
+    "type": "announcement",
+    "title": "諾亞 10/10、10/26 休診",
+    "summary": "2026 年 10 月 10 日及 26 日全院休診，可透過院方電話或官方 LINE 預約其他門診日期。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook",
+    "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid0HfGHNPLS4zTW6EmBT5ihw6bjoB5L3QegUzYqowFRVxgkM2htH7KsWtikDCdAXTKgl&id=100063837950717",
+    "verifiedAt": "2026-10-03"
+  },
+
+  {
+    "id": "update-verypet-first-listed-2026-10",
+    "hospitalId": "verypet-animal-hospital-taipei",
+    "type": "content",
+    "title": "新增收錄寵博健康動物醫院",
+    "summary": "松山區寵博健康動物醫院新增收錄，設有不定期鳥科特約門診，全院採預約制。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方網站特約門診",
+    "sourceUrl": "https://www.verypet.tw/service/%E5%81%A5%E5%BA%B7%E6%AA%A2%E6%9F%A5",
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "update-verypet-wednesday-night-clinic-2026-10",
+    "hospitalId": "verypet-animal-hospital-taipei",
+    "type": "hours",
+    "title": "寵博十月起加開週三夜診",
+    "summary": "2026 年十月起，每週三由林孟潔獸醫師加開夜間門診。採預約制，最晚預約時間至 20:00。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Instagram",
+    "sourceUrl": "https://www.instagram.com/verypet_ah/p/Dd20eQYxG9t/",
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "update-veca-first-listed-2026-10",
+    "hospitalId": "veca-animal-hospital-taipei",
+    "type": "content",
+    "title": "新增收錄遠見動物醫院",
+    "summary": "大安區遠見動物醫院新增收錄，提供兔、鼠及珍奇寵物眼科診療。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方網站",
+    "sourceUrl": "https://www.veca.tw/",
+    "verifiedAt": "2026-10-03"
+  },
+
+  {
+    "id": "update-taipei-versele-laga-closures-2026-10",
+    "hospitalId": "versele-laga-bird-clinic",
+    "type": "announcement",
+    "title": "凡賽爾十月六天休診",
+    "summary": "2026/10/5、10/9、10/15、10/21、10/26、10/30 休診。當日不接受預約掛號，預約請至少提前一天聯絡。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Instagram",
+    "sourceUrl": "https://www.instagram.com/versele_laga_avian_hospital/p/DdqXSi_RRXx/",
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "update-taipei-versele-laga-line-booking-2026-10",
+    "hospitalId": "versele-laga-bird-clinic",
+    "type": "contact",
+    "title": "凡賽爾官方LINE開放線上預約",
+    "summary": "手機號碼綁定官方 LINE 後，可查看醫師時段並送出線上預約，仍須醫護審核。2023 年 7 月以前曾來院、且自 2023 年 7 月起未再回診者，需重新綁定資料。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Instagram",
+    "sourceUrl": "https://www.instagram.com/versele_laga_avian_hospital/p/Ddp4PmCRY8U/",
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "update-taipei-casiwa-closures-2026-10",
+    "hospitalId": "casiwa-exotic-animal-clinic",
+    "type": "announcement",
+    "title": "沐沐10/13、10/27全院休診",
+    "summary": "2026/10/13、10/27 全院休診；10/9–10/10 正常營業。門診採預約制，就診前請事先聯繫院方。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook",
+    "sourceUrl": "https://www.facebook.com/photo/?fbid=1542558394341082&set=a.547840097146255",
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "update-taipei-eden-chen-ling-an-2026-10-17",
+    "hospitalId": "eden-animal-hospital",
+    "type": "announcement",
+    "title": "伊甸園10/17陳凌安醫師休診",
+    "summary": "2026 年十月班表註明特寵醫師陳凌安 10/17 休診。請先來電確認當日特寵門診安排，並非全院休診。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook",
+    "sourceUrl": "https://www.facebook.com/EdenAnimalHosp/posts/pfbid02wbX6hYinLanNsoYqWtGjBY1YDR5Ur22mijVRU7ASgu8X1ZXRhkQ4g87YABPZudS2l?locale=zh_TW",
+    "verifiedAt": "2026-10-03"
+  },
+
+  {
+    "id": "update-taipei-brave-closure-2026-10-11",
+    "hospitalId": "brave-vet-exotic-animal-hospital",
+    "type": "announcement",
+    "title": "不萊梅10/11全日休診",
+    "summary": "2026/10/11 全日休診。門診採全預約制，請以電話或現場預約。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook",
+    "sourceUrl": "https://www.facebook.com/Bravevetnew/posts/pfbid0RkRyLHKLBdAzHadepsQfKLGMrS471nTd6HJdyJhmir3Mivhd9SmUEjXxPU4AQRMBl",
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "update-taipei-lumos-schedule-2026-10",
+    "hospitalId": "lumos-exotic-animal-clinic",
+    "type": "announcement",
+    "title": "牧光十月休診與眼科門診提醒",
+    "summary": "2026/10/9 休診；10/16、10/21、10/28、10/30 提早於 18:00 收診。10/18 為張雅斐醫師眼科門診，須至少提前 3 天來電預約。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Instagram",
+    "sourceUrl": "https://www.instagram.com/lumos_exotic_animal_clinic/p/Dd3A4hvEYZ2/",
+    "verifiedAt": "2026-10-03"
+  },
+
+  {
+    "id": "update-newtaipei-petsmile-fasava-closure-2026-10-31",
+    "hospitalId": "petsmile-animal-hospital",
+    "type": "announcement",
+    "title": "史麥10/31–11/2全院休診",
+    "summary": "2026/10/31–11/2 全院醫師參加 FASAVA 國際獸醫年會，休診三天；慢性病處方與常備藥請提早回診準備。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Instagram",
+    "sourceUrl": "https://www.instagram.com/petsmilehospital/p/Dd5-RCFE1Db/",
+    "verifiedAt": "2026-10-03"
+  },
+
+  {
+    "id": "update-newtaipei-capybara-tsai-yirong-2026-10",
+    "hospitalId": "capybara-exotic-animal-hospital",
+    "type": "announcement",
+    "title": "小水豚蔡依蓉醫師加入十月班表",
+    "summary": "蔡依蓉醫師加入 2026 年十月班表；院內有兩位蔡醫師，預約時請確認醫師姓名。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook",
+    "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid036Rpk12YTUqfScDMLWrd5SmQB6i9aJNgxS2LHEep2sTrQk9VJGMBEnc1LQtcviTEol&id=61550968787419",
+    "verifiedAt": "2026-10-03"
+  },
+
+  {
+    "id": "update-newtaipei-midorino-pan-clinic-2026-10-03",
+    "hospitalId": "midorino-exotic-vet",
+    "type": "announcement",
+    "title": "綠野潘醫師10/3、10/31可約診",
+    "summary": "2026 年十月班表列潘盈臻醫師 10/3、10/31 可約診，請以 02-29468818 電話預約。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook",
+    "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid0A2RA6ZtKXgRSVX4JvYNscKEcssL3XaPzfSfHwUryecy9xiY46noqFcXsTVkBqTrul&id=100087608167806",
+    "verifiedAt": "2026-10-03"
+  },
+
+  {
+    "id": "update-newtaipei-topvet-october-closures-2026-10-09",
+    "hospitalId": "topvet",
+    "type": "announcement",
+    "title": "頂點10/9–11及10/26休診",
+    "summary": "2026/10/9–11 國慶連假及 10/26 光復節補假休診；門診預約優先，也可現場候診，初診僅接受現場掛號。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook",
+    "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid02FEGnhX5E7N6x1xWR4Y4uXdxNYyKSg2Rnpb6A4BR8yGM9yqHFZVZ7FWBE8x4Rh4mgl&id=100075817671654",
+    "verifiedAt": "2026-10-03"
+  },
+
+  {
+    "id": "update-newtaipei-banxin-october-hours-2026-10-03",
+    "hospitalId": "banxin-animal-hospital",
+    "type": "announcement",
+    "title": "板新10/3正常看診，10/4、10/9休診",
+    "summary": "2026/10/3 正常看診，10/4 因醫師進修休診，10/9 也公休；門診須預約，各診提前半小時停止掛號。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook",
+    "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid02QFcD6hmErqMdDKhm1xxxiRUbVayrA3sWh5GK5FEBzSWMfdceCX5CPxAM3t3fyJLel&id=100057630391826",
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "update-newtaipei-jia-an-october-closures-2026-10-10",
+    "hospitalId": "jia-an-animal-hospital",
+    "type": "announcement",
+    "title": "佳安10/10及10/19休診",
+    "summary": "2026/10/10 國慶日及 10/19 院休，兩日均休診；平時每週日公休。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook",
+    "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid0qRy2sEcpHZu6NtH9aeUgiDA3CYo5BRiokL7EnfcVowYnDKw5e4ACYi4ywg2GiA8jl&id=100057687570646",
+    "verifiedAt": "2026-10-03"
+  },
+
+  {
+    "id": "update-taoyuan-new-century-holiday-hours-2026-10-09",
+    "hospitalId": "new-century-animal-hospital",
+    "type": "announcement",
+    "title": "新世紀 10/9 營業至 16:00",
+    "summary": "2026/10/9 國慶日補假，Google 商家列營業時間為 10:00–16:00；醫師門診及預約安排請先向院方確認。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "Google Maps 商家營業時間",
+    "sourceUrl": "https://www.google.com/maps/place/%E6%96%B0%E4%B8%96%E7%B4%80%E7%8D%B8%E9%86%AB%E9%99%A2/@24.9907622,121.3193228,17z/data=!3m1!4b1!4m6!3m5!1s0x34681f2032b62b4b:0x35f2dd5d2140c928!8m2!3d24.9907622!4d121.3193228!16s%2Fg%2F11fr4vw0qk",
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "update-newtaipei-daxin-added-2026-10-03",
+    "hospitalId": "daxin-animal-hospital-wugu",
+    "type": "content",
+    "title": "新增收錄五股大新動物醫院",
+    "summary": "提供犬貓、鼠兔一般內外科、產科與牙科診療；官網另明列倉鼠與天竺鼠。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方網站",
+    "sourceUrl": "https://www.ichuah.com/",
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "update-newtaipei-daxin-october-2026-closures",
+    "hospitalId": "daxin-animal-hospital-wugu",
+    "type": "announcement",
+    "title": "大新 10/9、14、21、28 公休",
+    "summary": "2026/10/9、10/14、10/21、10/28 公休。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Instagram",
+    "sourceUrl": "https://www.instagram.com/daxin1104/p/Dd8JxXNTezB/",
+    "verifiedAt": "2026-10-03"
+  },
+
+  {
+    "id": "update-taoyuan-pro-national-day-2026-10-10",
+    "hospitalId": "pro-animal-hospital",
+    "type": "announcement",
+    "title": "普羅 10/10 至 17:00，晚間休診",
+    "summary": "2026/10/10 營業時間為 09:30–17:00，晚間休診。特寵門診須電話預約，回診或備藥請提早安排。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook",
+    "sourceUrl": "https://www.facebook.com/provet99/posts/pfbid02cEHy7sdeDajt9kaEKaLS34X9J4xmXuhbq4a4hgnJhtuBtEBmWaKyxQippQkEuCdyl",
+    "verifiedAt": "2026-10-03"
+  },
+
+  {
+    "id": "update-taoyuan-anxin-added-2026-10-03",
+    "hospitalId": "anxin-animal-hospital-taoyuan",
+    "type": "content",
+    "title": "新增收錄桃園安欣動物醫院",
+    "summary": "新增收錄桃園區中福街的安欣動物醫院，院方列有犬、貓、兔與鼠門診，並設兔／鼠科服務。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方網站",
+    "sourceUrl": "https://icreatepet.com.tw/about_detail_14",
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "update-taoyuan-vetoria-october-2026-closure",
+    "hospitalId": "vetoria-animal-hospital",
+    "type": "announcement",
+    "title": "維特 10/17–21 門診休診",
+    "summary": "2026/10/17–21 門診休診。除原本週日、週一休診日外，原門診時段仍有人員協助預約及商品購買；慢性病備藥請提早聯絡。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook",
+    "sourceUrl": "https://www.facebook.com/VetoriaAnimalHospital/posts/pfbid02um9aQuyCGVSUZa4A5YP9f8T5zMmscZKCZCbqfvXqdWZwrKUHb5hC9PJscTGX6hzkl",
+    "verifiedAt": "2026-10-03"
+  },
+
+  {
+    "id": "update-taitung-huaian-added-2026-10-03",
+    "hospitalId": "huaian-animal-hospital-taitung",
+    "type": "content",
+    "title": "新增收錄台東懷恩動物醫院",
+    "summary": "新增收錄台東市開封街的懷恩動物醫院，院方列有犬貓診療及特寵預約門診；特寵受理物種請先來電確認。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "院方 104 公司頁",
+    "sourceUrl": "https://www.104.com.tw/company/1a2x6bn8d7",
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "update-taoyuan-dawn-added-2026-10-03",
+    "hospitalId": "dawn-animal-hospital-taoyuan",
+    "type": "content",
+    "title": "新增收錄桃園大安動物醫院",
+    "summary": "新增收錄桃園區三民路的大安動物醫院，提供犬貓診療，以及鼠兔基本醫療檢查和外科手術。接受預約，也可現場看診。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方網站",
+    "sourceUrl": "https://www.dawnah.co/",
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "update-taoyuan-dawn-october-2026-hours",
+    "hospitalId": "dawn-animal-hospital-taoyuan",
+    "type": "hours",
+    "title": "大安十月休診與晚診調整",
+    "summary": "2026/10/17 全日休診；10/9、10、24、26 晚診至 18:00。10/6、20 午診休診，晚診 18:00 恢復。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook",
+    "sourceUrl": "https://www.facebook.com/dawnvettw/posts/pfbid04driWXqLY5WR4Rq5q8aKKc4X2qDfPCeyiTzJxCTb639zTF6QLe8J2PgeZ9XqZ51Ul",
+    "verifiedAt": "2026-10-03"
+  },
+
+  {
+    "id": "update-yilan-sanbao-added-2026-10-03",
+    "hospitalId": "sanbao-animal-hospital-yilan",
+    "type": "content",
+    "title": "新增收錄宜蘭三寶動物醫院",
+    "summary": "新增收錄宜蘭五結的三寶動物醫院，院方資料列有犬、貓與兔子診療。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "院方 104 公司頁",
+    "sourceUrl": "https://www.104.com.tw/company/1a2x6bn05q",
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "update-taitung-goodmile-october-2026-clinic-days",
+    "hospitalId": "goodmile-animal-hospital",
+    "type": "announcement",
+    "title": "谷米十月休診、僅開店與特寵診次",
+    "summary": "2026/10/3 休診，10/2、5、10、17、23、24 僅開店，十月每週日休診。蔡孟柔醫師於 10/22、30、31 看禽鳥、爬蟲、鼠、貂及龍貓；兔、天竺鼠、鼠可依陳鄭立醫師診次安排，請先向院方確認物種、醫師及預約。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook",
+    "sourceUrl": "https://www.facebook.com/goodmile128/posts/pfbid02dkRgUfLsFYMdqwLoFBwrKTeEqv6U766tE4Z813W8NjS6XK8RiQqpvVpPJA2FJ3C6l",
+    "verifiedAt": "2026-10-03"
+  },
+
+  {
+    "id": "update-yilan-sunbaby-october-2026-closures",
+    "hospitalId": "sunbaby-animal-hospital",
+    "type": "announcement",
+    "title": "上寶貝 10/10–12、10/24–26 休診",
+    "summary": "2026/10/10–12、10/24–26 休診。十月平日下午門診至 18:30、掛號至 18:00；週六下午至 17:00。初診請先電話預約，院方不設急診或住院。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook",
+    "sourceUrl": "https://www.facebook.com/photo/?fbid=1133360852583826&set=a.176635894922998",
+    "verifiedAt": "2026-10-03"
+  },
+
+  {
+    "id": "update-hsinchu-lumos-added-2026-10-03",
+    "hospitalId": "lumos-animal-hospital-hsinchu",
+    "type": "content",
+    "title": "新增收錄新竹耀眼動物醫院",
+    "summary": "新增收錄新竹市東區的耀眼動物醫院，提供犬貓及特寵分科診療。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Instagram 簡介",
+    "sourceUrl": "https://www.instagram.com/lumosdvm/",
+    "verifiedAt": "2026-10-03"
+  },
+
+  {
+    "id": "update-miaoli-zhonghua-added-2026-10-03",
+    "hospitalId": "zhonghua-animal-hospital-miaoli",
+    "type": "content",
+    "title": "新增收錄頭份中華動物醫院",
+    "summary": "新增收錄苗栗頭份的中華動物醫院，院方列明提供犬、貓、兔、鼠及小型哺乳類醫療服務。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook 簡介",
+    "sourceUrl": "https://www.facebook.com/p/中華動物醫院-100068645246288/",
+    "verifiedAt": "2026-10-03"
+  },
+
+  {
+    "id": "update-miaoli-mrhoo-closure-2026-10-03",
+    "hospitalId": "mrhoo-animal-hospital",
+    "type": "announcement",
+    "title": "毛爾呼 10/4 全日休診",
+    "summary": "2026/10/4 全日休診；特寵門診依當月班表，建議先電話詢問或預約。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook",
+    "sourceUrl": "https://www.facebook.com/photo/?fbid=1091061173682157&set=a.126075070180777",
+    "verifiedAt": "2026-10-03"
+  },
+
+  {
+    "id": "update-taichung-fengyuan-october-2026-10-03",
+    "hospitalId": "national-vet-fengyuan-branch",
+    "type": "announcement",
+    "title": "全國豐原十月輪值表休診提醒",
+    "summary": "官方 2026 年十月輪值表在 10/24、10/26 標示休診；請先電話確認當日門診及兔科安排。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方豐原分院輪值表",
+    "sourceUrl": "https://www.vet.com.tw/store_detail.php?Key=13",
+    "verifiedAt": "2026-10-03"
+  },
+
+  {
+    "id": "update-taichung-legendpet-training-2026-10-03",
+    "hospitalId": "legendpet-animal-hospital-taichung",
+    "type": "announcement",
+    "title": "傳騏 10/22 延後開診",
+    "summary": "10/22 因院內訓練，18:00 才開始看診；請先預約或來電確認。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook",
+    "sourceUrl": "https://www.facebook.com/LegendPet/posts/pfbid0ABhb52gGHD9Sd12QXThyVvjELV561t6JjdvAP7KoGdjCacUoYpm5f9uC3n9QnD8nl",
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "update-taichung-national-7th-october-2026-10-03",
+    "hospitalId": "national-vet-7th-branch-taichung",
+    "type": "announcement",
+    "title": "全國七期十月輪值表休診提醒",
+    "summary": "官方 2026 年十月輪值表在 10/17、10/28、10/31 標示休診；請先電話確認看診及兔科安排。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方七期分院輪值表",
+    "sourceUrl": "https://www.vet.com.tw/store_detail.php?Key=6",
+    "verifiedAt": "2026-10-03"
+  },
+
+  {
+    "id": "update-taichung-island-closure-2026-10-03",
+    "hospitalId": "island-animal-hospital-taichung",
+    "type": "announcement",
+    "title": "小島動物醫院 10/14 全日院休",
+    "summary": "2026/10/14 全日院休，不對外營業、不接電話或回覆 LINE 訊息。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook 公告（粉專頁面）",
+    "sourceUrl": "https://www.facebook.com/IAH.tw/",
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "update-taichung-darwin-october-closures-2026-10-03",
+    "hospitalId": "darwin-animal-hospital-taichung",
+    "type": "announcement",
+    "title": "達爾文 10/9 提早結束、10/10 休診",
+    "summary": "2026/10/9 因晚間開會，看診至 17:00，當日下午現場掛號前請先電話確認；10/10 國慶日休診。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook",
+    "sourceUrl": "https://www.facebook.com/darwinvmhp/posts/pfbid025KcKpKJEsLfVZUKNmmVuFCjnFFkQ2usCqTaq1p1FoU1DRppWUH6AwHUZiaTwrtG4l",
+    "verifiedAt": "2026-10-03"
+  },
+
+  {
+    "id": "update-taichung-nchu-national-day-closure-2026-10-03",
+    "hospitalId": "nchu-vmth-taichung",
+    "type": "announcement",
+    "title": "中興大學獸醫教學醫院 10/9 休診",
+    "summary": "2026/10/9 國慶日休診，院方當週門診表上午、下午均不開診。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方當週門診表",
+    "sourceUrl": "https://www.vmth.nchu.edu.tw/timetable/hsiangshang?id=96",
+    "verifiedAt": "2026-10-03"
+  },
+
+  {
+    "id": "update-enlight-taichung-added-2026-10-03",
+    "hospitalId": "enlight-animal-hospital-taichung",
+    "type": "content",
+    "title": "新增收錄迎光動物醫院",
+    "summary": "台中北屯迎光動物醫院提供犬、貓與兔的眼科診療。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方網站",
+    "sourceUrl": "https://enlightah.blogspot.com/2026/02/blog-post.html",
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "update-prosight-taichung-added-2026-10-03",
+    "hospitalId": "prosight-animal-hospital-taichung",
+    "type": "content",
+    "title": "新增收錄透視動物醫院",
+    "summary": "台中西區透視動物醫院提供犬、貓與特寵眼科診療，全院採預約制；特寵收案物種請先向院方確認。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方網站",
+    "sourceUrl": "https://www.prosightvetcenter.com.tw/",
+    "verifiedAt": "2026-10-03"
+  },
+
+  {
+    "id": "update-dandelion-xindian-added-2026-10-03",
+    "hospitalId": "dandelion-animal-hospital-xindian",
+    "type": "content",
+    "title": "新增收錄新店蒲公英動物醫院",
+    "summary": "新店蒲公英動物醫院受理犬、貓、鸚鵡與蛇，採預約制、分時段看診；目前沒有住院或住宿服務。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook",
+    "sourceUrl": "https://www.facebook.com/profile.php?id=61577472224889",
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "update-ncyu-october-closures-2026-10-03",
+    "hospitalId": "chiayi-ncyu-animal-hospital",
+    "type": "announcement",
+    "title": "嘉大附設動物醫院 10/9、10/26 暫停門診",
+    "summary": "配合國慶日及臺灣光復節補假，2026/10/9、10/26 暫停門診，請提前準備藥品。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook",
+    "sourceUrl": "https://www.facebook.com/NCYUVH/posts/pfbid0XsUPPvKYUXZzB1SfhsPxXPjnxB35xhnc4SYevVpdKkLE1YdtMgLgLpomkSQBdDCVl",
+    "verifiedAt": "2026-10-03"
+  },
+
+  {
+    "id": "update-npust-vmth-october-closures-2026-10-03",
+    "hospitalId": "npust-vmth",
+    "type": "announcement",
+    "title": "屏科大城中院區 10/9、10/26 休診",
+    "summary": "10/9、10/26 連假休診；十月章愛梅老師特寵門診排在 10/6、10/14、10/27 下午 14:00–16:30。初診先電話說明狀況，由院方協助預約，地點為屏東市信義路 151 號城中院區。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook",
+    "sourceUrl": "https://www.facebook.com/vmthnpust/posts/pfbid02d6kMyWKX8Caf3wwWYsfkcbp3sPWktx8ZJBoXrqpxbwfso6is6dkeHkQNkKT1u3ipl",
+    "verifiedAt": "2026-10-03"
+  },
+  {
     "id": "update-tainan-guangci-animal-hospital-added-2026-10-02",
     "hospitalId": "tainan-guangci-animal-hospital",
     "type": "content",
-    "title": "新增收錄廣慈動物醫院",
-    "summary": "新增收錄廣慈動物醫院，兔、天竺鼠、倉鼠、蜜袋鼯與松鼠依醫師科別看診；平日12:00–15:00手術須提前來電預約。",
+    "title": "恢復收錄廣慈動物醫院",
+    "summary": "恢復收錄廣慈動物醫院，兔、天竺鼠、倉鼠、蜜袋鼯與松鼠依醫師科別看診；平日12:00–15:00手術須提前來電預約。",
     "updatedAt": "2026-10-02",
     "sourceLabel": "官方 Facebook",
     "sourceUrl": "https://www.facebook.com/photo/?fbid=1473377544592033&set=pb.100057594042133.-2207520000",
@@ -111,11 +619,11 @@ export const HospitalUpdateList: HospitalUpdate[] = [
     hospitalId: "star-feather-animal-hospital-daliao",
     type: "announcement",
     title: "星羽大寮院 10 月部分門診異動",
-    summary: "10/17、10/22 犬貓門診至 17:00，當日無犬貓晚診且不接手術。10/4、10/5、10/6、10/7、10/8、10/14、10/15、10/18、10/21、10/24、10/28、10/29 沒有特寵醫師；其餘特寵診次依當月班表安排。",
+    summary: "10/17、10/22 犬貓門診至 17:00，當日無犬貓晚診且不接手術。10/4、10/6、10/7、10/8、10/14、10/15、10/18、10/21、10/24、10/28、10/29 沒有特寵醫師；其餘特寵診次依當月班表安排。",
     updatedAt: "2026-10-02",
     sourceLabel: "官方 Facebook",
     sourceUrl: "https://www.facebook.com/permalink.php?story_fbid=pfbid029oRJdzXsnQDMzNPUdEUV5gGkvpE8UQnuoVMZddVcmkgrRWb7gnF4oYUochrLAeqBl&id=100064155485163",
-    verifiedAt: "2026-10-02"
+    verifiedAt: "2026-10-03"
   },
   {
     id: "update-kaohsiung-star-feather-sanmin-october-2026-10-02",
@@ -125,8 +633,8 @@ export const HospitalUpdateList: HospitalUpdate[] = [
     summary: "10/6、10/12、10/18–10/23、10/25、10/31 不提供特寵夜診；10/28 下午不接門診及手術。",
     updatedAt: "2026-10-02",
     sourceLabel: "官方 Instagram",
-    sourceUrl: "https://www.instagram.com/starfeather.ah_sanmin/p/Dd6zpjbE0ft/",
-    verifiedAt: "2026-10-02"
+    sourceUrl: "https://www.instagram.com/p/DeBxqKykwKs/?img_index=1",
+    verifiedAt: "2026-10-03"
   },
   {
     id: "update-kaohsiung-gaia-october-closures-2026-10-02",
@@ -203,7 +711,7 @@ export const HospitalUpdateList: HospitalUpdate[] = [
     updatedAt: '2026-09-21',
     sourceLabel: '官方 Instagram',
     sourceUrl: 'https://www.instagram.com/pawsome.ah/p/DdXwBcGx3Og/',
-    verifiedAt: '2026-09-21',
+    verifiedAt: "2026-10-03",
   },
   {
     id: 'update-pingtung-tatung-mid-autumn-2026-09-25',
@@ -225,7 +733,7 @@ export const HospitalUpdateList: HospitalUpdate[] = [
     updatedAt: '2026-09-21',
     sourceLabel: '官方 Facebook',
     sourceUrl: 'https://www.facebook.com/ChiaYi.Jia.le.animal.hospital/posts/pfbid02pjzEtqcRoJJb7pUNzdXPqT7xX2TFc6H4GFpHFMuDgEsxqyMfFoK5FwQTWsWk6HVbl',
-    verifiedAt: '2026-09-21',
+    verifiedAt: "2026-10-03",
   },
   {
     id: 'update-nantou-dr-lang-mid-autumn-2026-09-25',
@@ -236,18 +744,18 @@ export const HospitalUpdateList: HospitalUpdate[] = [
     updatedAt: '2026-09-21',
     sourceLabel: '官方 Facebook',
     sourceUrl: 'https://www.facebook.com/photo/?fbid=122180751656806436&set=a.122124041990806436',
-    verifiedAt: '2026-09-21',
+    verifiedAt: "2026-10-03",
   },
   {
     id: 'update-taichung-ohana-renovation-2026-09-29',
     hospitalId: 'ohana-exotic-animal-hospital-taichung',
     type: 'announcement',
-    title: '伴心 10/3–10/22 施工休診，9/29 起調整門診',
-    summary: '2026/9/29–10/1 視情況受理門診與領藥，不收急重症及住院；10/2 僅供慢性病與備用藥最後領藥，10/3–10/22 全面休診。10/23 恢復營業，全天現場候診並開放後續預約，10/24 恢復正常預約掛號。',
-    updatedAt: '2026-09-21',
+    title: "伴心 10/3–10/22 施工休診，10/23 上午 9:30 恢復營業",
+    summary: "10/3–10/22 全面休診施工。10/23 上午 9:30 恢復營業，全天現場候診、不開放當日預約，並開放後續日期預約；10/24 恢復正常營運與掛號。",
+    updatedAt: "2026-10-03",
     sourceLabel: '官方 Facebook',
-    sourceUrl: 'https://www.facebook.com/Ohana.vet.AH/posts/pfbid0onBXkVqkqN9gSBGitHMePzy8qVTcA6QvdLRrSAL7gAYCdEb56Qv82TaqiaFfUAhgl',
-    verifiedAt: '2026-09-21',
+    sourceUrl: "https://www.facebook.com/Ohana.vet.AH/posts/pfbid031uPh81v2cLjzJDQLYnB2LGjQakYBiwZ1wbz8MeMYo3mfAU8Fumm3rdi6wxH4ruDcl",
+    verifiedAt: "2026-10-03",
   },
   {
     id: 'update-miaoli-mrhoo-closure-2026-09-27',
@@ -291,7 +799,7 @@ export const HospitalUpdateList: HospitalUpdate[] = [
     updatedAt: '2026-09-21',
     sourceLabel: '官方 Facebook',
     sourceUrl: 'https://www.facebook.com/photo/?fbid=1098518255878199&set=a.121382713591763',
-    verifiedAt: '2026-09-21',
+    verifiedAt: "2026-10-03",
   },
   {
     id: 'update-taoyuan-pro-hours-2026-09-25-26',
@@ -312,8 +820,8 @@ export const HospitalUpdateList: HospitalUpdate[] = [
     summary: '2026 年 10 月 7 日、21 日下午因院內進修休診，兩天皆於晚上 18:30 後恢復看診。',
     updatedAt: '2026-09-21',
     sourceLabel: '官方 Facebook',
-    sourceUrl: 'https://www.facebook.com/photo/?fbid=122318075792032292&set=a.122129048090032292',
-    verifiedAt: '2026-09-21',
+    sourceUrl: "https://www.facebook.com/permalink.php?story_fbid=pfbid02WpeD93g1n7ifSMcbLsCdqN3pm2Ga33zuFfbtbVMAVmsG88Q7NYGgVQPZYbkQqozel&id=61550968787419",
+    verifiedAt: "2026-10-03",
   },
   {
     id: 'update-newtaipei-mingjia-hours-2026-09-25',
@@ -466,8 +974,8 @@ export const HospitalUpdateList: HospitalUpdate[] = [
     summary: '現場掛號人多時可能提前截止，出發前請先電話確認。院方不提供急診或夜間急診；爬蟲看診須配合特定醫師時段。',
     updatedAt: '2026-09-04',
     sourceLabel: '官方 Facebook',
-    sourceUrl: 'https://www.facebook.com/darwinvmhp/posts/pfbid0zRSNoDF3pUBZEZF1D9okdBfwb6KQvQDEbXjrG1KgkW3oZADDDWa7h3Hb4Ebkea6Vl',
-    verifiedAt: '2026-09-21',
+    sourceUrl: "https://www.facebook.com/darwinvmhp/posts/pfbid0zpNviJLENYksmJudSPRM1kBbiVAjzxm65wenP3QTGHKcQEWkiqCxzi9SH3PFrwYyl",
+    verifiedAt: "2026-10-03",
   },
   {
     id: 'update-taichung-grace-2026-09-07-closure-2026-09-04',
@@ -1173,4 +1681,59 @@ export const HospitalUpdateList: HospitalUpdate[] = [
     sourceLabel: "官方 Facebook",
     sourceUrl: "https://www.facebook.com/photo/?fbid=1591997426271283&set=a.366036048867433"
   },
+  {
+    "id": "update-taipei-ntu-october-schedule-2026",
+    "hospitalId": "ntu-veterinary-hospital",
+    "type": "announcement",
+    "title": "台大附設：十月休診與特寵特約門診",
+    "summary": "2026/10/9、10/26 全院休診。林瑋貞 10/7、鍾亞樺 10/8、10/22 改為特約門診，請先完成預約；特寵初診須填表，複診洽分機 1160、1163。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook",
+    "sourceUrl": "https://www.facebook.com/vh.ntu.edu.tw/posts/pfbid034xkQo9c2HL87maS7xz1RuGo7YVTXQ8PR3W7wZEyhfskEAzADXKizXWf9zcQrrX1Hl",
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "update-taipei-maopai-le-october-schedule-2026",
+    "hospitalId": "maopai-le-animal-hospital",
+    "type": "announcement",
+    "title": "毛派樂：十月休診與鳥類醫師異動",
+    "summary": "2026/10/7、10/21–10/22、10/31–11/2 全院休診；10/15 鳥類門診醫師張佳倖請假，當日仍有王醫師犬貓門診。鳥類看診請依張醫師班表安排。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook",
+    "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid08rAKH8pH93YHUKUuc7QRRDAc8nhqnoytPGskZNWCLVrpLvhkHWrE4Pvr6tXUa4mQl&id=100082532660991",
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "update-taipei-peteden-october-schedule-2026",
+    "hospitalId": "peteden-animal-hospital",
+    "type": "announcement",
+    "title": "寵樂：10/10 休診、10/21 午後開診",
+    "summary": "2026/10/10 全院休診；10/21 門診為 13:00–21:00，由陳醫師代班。全院採預約制，請來電 02-2708-7967 確認時段。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Instagram",
+    "sourceUrl": "https://www.instagram.com/p/Dd5iHyDvSrD/",
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "update-taipei-z3-2026-10-19-hours",
+    "hospitalId": "z3-animal-hospital",
+    "type": "announcement",
+    "title": "芝山：10/19 早診休診、15:00 開診",
+    "summary": "2026/10/19 全院進修，早診休診；當日門診為 15:00–18:00、19:00–21:00。需預約的服務請提前來電，社群私訊不受理。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Facebook",
+    "sourceUrl": "https://www.facebook.com/z3vet/posts/pfbid0oKsQtepnNV8sCnR1pEoJ77ti6hfWeAQcCmraLDLdC3P7WTdfFzV14rTPbXVj6a1Bl",
+    "verifiedAt": "2026-10-03"
+  },
+  {
+    "id": "update-taipei-amazon-october-special-clinic-2026",
+    "hospitalId": "amazon-exotic-animal-hospital",
+    "type": "announcement",
+    "title": "亞馬森：十月朱哲助特約門診已滿",
+    "summary": "2026 年 10 月朱哲助醫師特約門診回診已滿，不開放新名額；11 月門診於 10/25 開放預約。候補依填單順序安排，有取消才依序通知。名額優先留給重症、老年及回診病患，不受理一般健康檢查；最終名額依實際門診狀況調整。",
+    "updatedAt": "2026-10-03",
+    "sourceLabel": "官方 Instagram",
+    "sourceUrl": "https://www.instagram.com/amazonah311/p/DdsxFD1DG-_",
+    "verifiedAt": "2026-10-03"
+  }
 ];

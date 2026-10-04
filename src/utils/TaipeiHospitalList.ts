@@ -54,7 +54,7 @@ export const TaipeiHospitalList = [
       "mapsUrl": "https://www.google.com/maps/place/%E5%8F%A4%E4%BA%AD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0259758,121.5229545,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a98c002d5cbd:0xa3193cea1acf1e14!8m2!3d25.0259758!4d121.5229545!16s%2Fg%2F1tnpc3dw",
       "reviewsUrl": "https://search.google.com/local/reviews?placeid=ChIJvVwtAIypQjQRFB7PGuo8GaM",
       "placeId": "ChIJvVwtAIypQjQRFB7PGuo8GaM",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -158,10 +158,10 @@ export const TaipeiHospitalList = [
     },
     "google": {
       "rating": "4.4",
-      "reviewCount": 908,
+      "reviewCount": 910,
       "mapsUrl": "https://www.google.com/maps?cid=3419267701860598380",
       "reviewsUrl": "https://www.google.com/maps/place/%E4%B8%8D%E8%90%8A%E6%A2%85%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@25.0631701,121.5121234,17z/data=!4m8!3m7!1s0x3442a93f056892d3:0x2f73addbd95e026c!8m2!3d25.0631701!4d121.5121234!9m1!1b1!16s%2Fg%2F11c1q4drmg",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -206,9 +206,20 @@ export const TaipeiHospitalList = [
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/photo/?fbid=1562333379022359&set=a=563421268913580",
         "verifiedAt": "2026-09-20"
+      },
+      {
+        "id": "brave-2026-10-11-closure",
+        "type": "closure",
+        "title": "10/11 全日休診",
+        "content": "2026/10/11 全日休診，其餘門診依院方十月班表。",
+        "startDate": "2026-10-11",
+        "endDate": "2026-10-11",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/Bravevetnew/posts/pfbid0RkRyLHKLBdAzHadepsQfKLGMrS471nTd6HJdyJhmir3Mivhd9SmUEjXxPU4AQRMBl",
+        "verifiedAt": "2026-10-03"
       }
     ],
-    "updatedAt": "2026-09-20T15:25:52.422Z",
+    "updatedAt": "2026-10-03T09:17:44.838Z",
     "last_checked": "2026-09-03"
   },
   {
@@ -249,10 +260,10 @@ export const TaipeiHospitalList = [
     },
     "google": {
       "rating": "4.2",
-      "reviewCount": 233,
+      "reviewCount": 237,
       "mapsUrl": "https://www.google.com/maps/place/%E7%89%A7%E5%85%89%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@25.0686728,121.5187188,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a9824fd03fe5:0x22df439a7018763b!8m2!3d25.0686728!4d121.5187188!16s%2Fg%2F11s03x50gq",
       "reviewsUrl": "https://www.google.com/maps/place/%E7%89%A7%E5%85%89%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@25.0686728,121.5187188,17z/data=!4m8!3m7!1s0x3442a9824fd03fe5:0x22df439a7018763b!8m2!3d25.0686728!4d121.5187188!9m1!1b1!16s%2Fg%2F11s03x50gq",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -302,15 +313,15 @@ export const TaipeiHospitalList = [
       "facebook": "https://www.facebook.com/LumosEAC/",
       "instagram": "https://www.instagram.com/lumos_exotic_animal_clinic/"
     },
-    "clinicNotes": "本院門診採電話預約制，初診請提前 10-15 分鐘報到。\n眼科門診需至少提前 3 天來電預約；取消或改約請提前 1 日通知，遲到超過 10 分鐘不保留預約。臨時取消累計 3 次後，未來僅接受現場候診。\n診療動物包含兔、貂、刺蝟、蜜袋鼯、天竺鼠、龍貓、黃金鼠、其他齧齒類、陸龜、箱龜、水龜、守宮、蜥蜴、各種蛇類與寵物鳥；院內不開放犬貓進入。\n捷運圓山站 1 號出口步行約 5 分鐘，附近停車較不方便，建議搭乘大眾交通工具前往。",
+    "clinicNotes": "本院門診採電話預約制，初診請提前 10-15 分鐘報到。\n眼科門診需至少提前 3 天來電預約；取消或改約請提前 1 日通知，遲到超過 10 分鐘不保留預約。當日臨時取消累計 3 次後，未來僅接受現場候診。\n診療動物包含兔、貂、刺蝟、蜜袋鼯、天竺鼠、龍貓、黃金鼠、其他齧齒類、陸龜、箱龜、水龜、守宮、蜥蜴、各種蛇類與寵物鳥；院內不開放犬貓進入。\n捷運圓山站 1 號出口步行約 5 分鐘，附近停車較不方便，建議搭乘大眾交通工具前往。",
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "眼科特別門診",
       "note": "張雅斐醫師眼科門診採全預約制，請至少提前 3 天來電預約。",
       "reservationRequired": true,
-      "sourceLabel": "官方 Facebook",
-      "sourceUrl": "https://www.facebook.com/photo/?fbid=1065995672593244&set=a.165757099283777",
-      "verifiedAt": "2026-09-20"
+      "sourceLabel": "官方 Instagram",
+      "sourceUrl": "https://www.instagram.com/lumos_exotic_animal_clinic/p/Dd3A4hvEYZ2/",
+      "verifiedAt": "2026-10-03"
     },
     "fb": {
       "last_fb_post_date": "2026-08-24",
@@ -338,9 +349,20 @@ export const TaipeiHospitalList = [
         "sourceLabel": "官方 Facebook、官方 Instagram",
         "sourceUrl": "https://www.facebook.com/photo/?fbid=1065995672593244&set=a=165757099283777",
         "verifiedAt": "2026-09-20"
+      },
+      {
+        "id": "lumos-2026-10-schedule-notice",
+        "type": "hours_change",
+        "title": "十月休診、提早收診與眼科門診",
+        "content": "2026/10/9 休診；10/2、10/16、10/21、10/28、10/30 營業至 18:00。10/18 有張雅斐醫師眼科門診，採全預約制，請至少提前 3 天來電預約。其餘門診依院方十月班表。",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-31",
+        "sourceLabel": "官方 Instagram",
+        "sourceUrl": "https://www.instagram.com/lumos_exotic_animal_clinic/p/Dd3A4hvEYZ2/",
+        "verifiedAt": "2026-10-03"
       }
     ],
-    "updatedAt": "2026-09-20T15:37:27.314Z",
+    "updatedAt": "2026-10-03T09:17:44.839Z",
     "last_checked": "2026-09-04"
   },
   {
@@ -388,10 +410,10 @@ export const TaipeiHospitalList = [
     },
     "google": {
       "rating": "4.2",
-      "reviewCount": 1097,
+      "reviewCount": 1096,
       "mapsUrl": "https://www.google.com/maps/place/%E5%87%A1%E8%B3%BD%E7%88%BE%E8%B3%BD%E9%B4%BF%E5%AF%B5%E7%89%A9%E9%B3%A5%E9%86%AB%E9%99%A2/@25.0686729,121.519024,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a9461ce50fad:0x53ad5f9f0b3afadb!8m2!3d25.0686729!4d121.519024!16s%2Fg%2F124t47qb9",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%87%A1%E8%B3%BD%E7%88%BE%E8%B3%BD%E9%B4%BF%E5%AF%B5%E7%89%A9%E9%B3%A5%E9%86%AB%E9%99%A2/@25.0686729,121.519024,17z/data=!4m8!3m7!1s0x3442a9461ce50fad:0x53ad5f9f0b3afadb!8m2!3d25.0686729!4d121.519024!9m1!1b1!16s%2Fg%2F124t47qb9",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-03"
     },
     "reservationRequired": false,
     "hasEmergencyService": true,
@@ -421,13 +443,13 @@ export const TaipeiHospitalList = [
     ],
     "website": "https://birdclinic.com.tw/",
     "appointmentLink": "https://lin.ee/qL960x4",
-    "transportTips": "捷運圓山站1號出口步行約5分鐘，鄰近民族西路與承德路口。",
+    "transportTips": "捷運圓山站1號出口步行約5分鐘，鄰近民族西路與承德路口。 開車前請先確認周邊停車場並預留交通時間；若可能無法準時抵達預約時間，請主動告知院方。",
     "socialMedia": {
       "facebook": "https://www.facebook.com/verselelaga.petbird/",
       "instagram": "https://www.instagram.com/versele_laga_avian_hospital/",
       "line": "https://lin.ee/qL960x4"
     },
-    "clinicNotes": "本院為鳥類專科醫院，提供賽鴿及寵物鳥疾病診療，採預約優先制。請至少提前 1 天以電話或官方 LINE 預約，當日不接受預約掛號；現場掛號依當日空檔安排，無法保證等候時間。\n取消或更改預約請提前 1 日通知；遲到或當日多帶鳥隻，須改為現場掛號。早診最後掛號為 13:30；晚診平日為 19:30，週末及國定假日為 17:30。",
+    "clinicNotes": "本院為鳥類專科醫院，提供賽鴿及寵物鳥疾病診療，採預約優先制。請至少提前 1 天以電話或官方 LINE 預約，當日不接受預約掛號；現場掛號依當日空檔安排，無法保證等候時間。\n取消或更改預約請提前 1 日通知；遲到或當日多帶鳥隻，須改為現場掛號。早診最後掛號為 13:30；晚診平日為 19:30，週末及國定假日為 17:30。\n綁定手機號碼與官方 LINE 後，可查看醫師時段並送出線上預約，仍須院方審核。2023 年 7 月以前曾來院、且自 2023 年 7 月起未再回診者，需重新綁定資料。",
     "fb": {
       "last_fb_post_date": "2026-08-25",
       "last_fb_post_text": "官方 8/25 公告 9 月醫師班表與預約提醒；請至少提前 1 天以電話或官方 LINE 預約，實際醫師與日期依官方班表。"
@@ -454,9 +476,29 @@ export const TaipeiHospitalList = [
         "sourceLabel": "官方 Instagram",
         "sourceUrl": "https://www.instagram.com/versele_laga_avian_hospital/p/DcdPj8JxgLy/",
         "verifiedAt": "2026-09-20"
+      },
+      {
+        "id": "versele-laga-2026-10-closures",
+        "type": "hours_change",
+        "title": "十月休診日",
+        "content": "2026/10/5、10/9、10/15、10/21、10/26、10/30 休診。預約請至少提前一天以電話或官方 LINE 聯絡；當日僅接受現場排隊掛號，依門診空檔安排，預約者優先。",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-31",
+        "sourceLabel": "官方 Instagram",
+        "sourceUrl": "https://www.instagram.com/versele_laga_avian_hospital/p/DdqXSi_RRXx/",
+        "verifiedAt": "2026-10-03"
+      },
+      {
+        "id": "versele-laga-line-booking-upgrade-2026-09",
+        "type": "service_change",
+        "title": "官方 LINE 開放送出線上預約",
+        "content": "院方於 2026/9/24 公告預約系統已升級。手機號碼綁定官方 LINE 後，可查看醫師時段並送出線上預約，仍須醫護審核。2023 年 7 月以前曾來院、且自 2023 年 7 月起未再回診者，需重新綁定資料。",
+        "sourceLabel": "官方 Instagram",
+        "sourceUrl": "https://www.instagram.com/versele_laga_avian_hospital/p/Ddp4PmCRY8U/",
+        "verifiedAt": "2026-10-03"
       }
     ],
-    "updatedAt": "2026-09-20T15:37:27.314Z",
+    "updatedAt": "2026-10-03T09:30:23.049Z",
     "last_checked": "2026-09-03"
   },
   {
@@ -500,11 +542,11 @@ export const TaipeiHospitalList = [
     },
     "google": {
       "rating": "4.7",
-      "reviewCount": 327,
+      "reviewCount": 328,
       "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJk6hwKBarQjQRDg249hYC_d8",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%B2%90%E6%B2%90%E9%BC%A0%E5%85%94%E9%B3%A5%E7%88%AC%E5%B0%88%E7%A7%91%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@25.0513725,121.540314,8z/data=!4m8!3m7!1s0x3442ab162870a893:0xdffd0216f6b80d0e!8m2!3d25.0513725!4d121.540314!9m1!1b1!16s%2Fg%2F11h2489zn6",
       "placeId": "ChIJk6hwKBarQjQRDg249hYC_d8",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -532,8 +574,8 @@ export const TaipeiHospitalList = [
       "note": "全院電話預約，醫師時段依每月門診表。",
       "reservationRequired": true,
       "sourceLabel": "官方 Facebook",
-      "sourceUrl": "https://www.facebook.com/casiwaclinic/",
-      "verifiedAt": "2026-09-20"
+      "sourceUrl": "https://www.facebook.com/photo/?fbid=1542558394341082&set=a.547840097146255",
+      "verifiedAt": "2026-10-03"
     },
     "website": "https://www.facebook.com/casiwaclinic/",
     "appointmentLink": "tel:0277137707",
@@ -578,9 +620,20 @@ export const TaipeiHospitalList = [
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/photo/?fbid=1524781522785436&set=a.547840097146255",
         "verifiedAt": "2026-09-20"
+      },
+      {
+        "id": "casiwa-2026-10-schedule",
+        "type": "hours_change",
+        "title": "十月休診與特約門診提醒",
+        "content": "2026/10/9–10/10 正常營業；10/13、10/27 全院休診。10/31 王若禪醫師休診，當日仍有高醫師門診。十月每週三 12:00 後不開放特約門診；全院採預約制，就診前請事先聯繫院方。",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-31",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/photo/?fbid=1542558394341082&set=a.547840097146255",
+        "verifiedAt": "2026-10-03"
       }
     ],
-    "updatedAt": "2026-09-20T15:44:52.994Z",
+    "updatedAt": "2026-10-03T12:06:21.140Z",
     "last_checked": "2026-09-03"
   },
   {
@@ -635,14 +688,14 @@ export const TaipeiHospitalList = [
     },
     "google": {
       "rating": "3.7",
-      "reviewCount": 1248,
+      "reviewCount": 1250,
       "mapsUrl": "https://www.google.com/maps/place/%E4%BC%8A%E7%94%B8%E5%9C%92%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0801714,121.5496049,17z/data=!3m1!4b1!4m6!3m5!1s0x3442ac0f75ed0417:0x9af551e1e92fd50d!8m2!3d25.0801714!4d121.5496049!16s%2Fg%2F12qfz1gb9",
       "reviewsUrl": "https://www.google.com/maps/place/%E4%BC%8A%E7%94%B8%E5%9C%92%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0801714,121.5496049,17z/data=!4m8!3m7!1s0x3442ac0f75ed0417:0x9af551e1e92fd50d!8m2!3d25.0801714!4d121.5496049!9m1!1b1!16s%2Fg%2F12qfz1gb9",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
-    "emergencyHours": "夜間急診 21:00–10:00，限犬貓，請先電話聯絡；特寵無急診服務。",
+    "emergencyHours": "犬貓提供 24 小時急診（全年無休），請先電話聯絡；特寵無急診服務。",
     "nightClinic": true,
     "services": [
       "一般內科",
@@ -693,7 +746,7 @@ export const TaipeiHospitalList = [
       "reservationRequired": true,
       "sourceLabel": "官方網站",
       "sourceUrl": "https://eden-vet.com/treatment2.php",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-03"
     },
     "website": "https://eden-vet.com/",
     "appointmentLink": "tel:0285092579",
@@ -702,7 +755,7 @@ export const TaipeiHospitalList = [
       "facebook": "https://www.facebook.com/EdenAnimalHosp/?locale=zh_TW",
       "instagram": "https://www.instagram.com/edenanimalhosp/"
     },
-    "clinicNotes": "門診採預約制，就診前請先來電，初診也可預約。提供兔、貂、鳥、猴、魚、爬蟲及兩棲類特寵門診。特寵無急診服務；夜間急診 21:00–10:00 限犬貓，請先電話聯絡。",
+    "clinicNotes": "門診採預約制，就診前請先來電，初診也可預約。提供兔、貂、鳥、猴、魚、爬蟲及兩棲類特寵門診。特寵無急診服務；犬貓提供 24 小時急診（全年無休），請先電話聯絡。",
     "fb": {
       "last_fb_post_date": "2026-08-28",
       "last_fb_post_text": "官方 2026 年 9 月門診時間表：全院採預約制，請先來電，初診也可預約。"
@@ -729,9 +782,20 @@ export const TaipeiHospitalList = [
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/EdenAnimalHosp/posts/pfbid02jjFy7zEeoysN9Xi4vCYZ5EaFLxe4VEse4ASw9yAKKCtLfCEVn2d4jX6ZCe8i9Xf6l",
         "verifiedAt": "2026-09-20"
+      },
+      {
+        "id": "eden-chen-ling-an-closure-2026-10-17",
+        "type": "notice",
+        "title": "10/17 陳凌安醫師休診",
+        "content": "2026 年十月門診表註明陳凌安醫師 10/17 休診。預約特寵門診前，請先來電確認當日安排；此為個別醫師休診。",
+        "startDate": "2026-10-17",
+        "endDate": "2026-10-17",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/EdenAnimalHosp/posts/pfbid02wbX6hYinLanNsoYqWtGjBY1YDR5Ur22mijVRU7ASgu8X1ZXRhkQ4g87YABPZudS2l?locale=zh_TW",
+        "verifiedAt": "2026-10-03"
       }
     ],
-    "updatedAt": "2026-09-20T17:06:49.089Z",
+    "updatedAt": "2026-10-03T09:30:23.050Z",
     "last_checked": "2026-09-03"
   },
   // 官方公開資料未明確列特寵、兔或鼠診療，2026-06-09 暫停顯示。
@@ -864,12 +928,12 @@ export const TaipeiHospitalList = [
       "reviewCount": 58,
       "mapsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E7%9B%B4%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0795824,121.5448441,17z/data=!3m1!4b1!4m6!3m5!1s0x3442ad064b4c0c05:0x4560eb6afbb7ce7d!8m2!3d25.0795824!4d121.5448441!16s%2Fg%2F11tj6gdzwk",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E7%9B%B4%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0795824,121.5448441,17z/data=!4m8!3m7!1s0x3442ad064b4c0c05:0x4560eb6afbb7ce7d!8m2!3d25.0795824!4d121.5448441!9m1!1b1",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-03"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
-    "nightClinic": false,
+    "nightClinic": true,
     "services": [
       "一般內科",
       "一般外科",
@@ -907,7 +971,7 @@ export const TaipeiHospitalList = [
       "last_fb_post_date": "2025-02-13",
       "last_fb_post_text": "貼文分享犬隻針灸、復健與紅外線理療影片。"
     },
-    "updatedAt": "2026-09-20T17:06:49.089Z",
+    "updatedAt": "2026-10-03T09:39:45.847Z",
     "last_checked": "2026-09-03"
   },
   {
@@ -965,7 +1029,7 @@ export const TaipeiHospitalList = [
       "reviewCount": 335,
       "mapsUrl": "https://www.google.com/maps/place/%E6%AD%90%E6%AD%90%E5%A6%AE%E7%8A%AC%E8%B2%93%E5%85%94%E5%8B%95%E7%89%A9%E9%86%AB/@25.0841814,121.5486615,15z/data=!4m6!3m5!1s0x3442adf914bc144f:0x8b4c00ba76214a7d!8m2!3d25.083404!4d121.548919!16s%2Fg%2F11vbgpl0bm",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%AD%90%E6%AD%90%E5%A6%AE%E7%8A%AC%E8%B2%93%E5%85%94%E5%8B%95%E7%89%A9%E9%86%AB/@25.0841814,121.5486615,15z/data=!4m8!3m7!1s0x3442adf914bc144f:0x8b4c00ba76214a7d!8m2!3d25.0841814!4d121.5486615!9m1!1b1!16s%2Fg%2F11vbgpl0bm",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-03"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -1092,12 +1156,12 @@ export const TaipeiHospitalList = [
       "reviewCount": 236,
       "mapsUrl": "https://www.google.com/maps/place/%E6%99%AF%E8%88%88%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.9951507,121.5457155,17z/data=!3m1!4b1!4m6!3m5!1s0x3442aa05b57d37e9:0xb070094946633421!8m2!3d24.9951507!4d121.5457155!16s%2Fg%2F1q673s51b",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%99%AF%E8%88%88%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.9951507,121.5457155,17z/data=!4m8!3m7!1s0x3442aa05b57d37e9:0xb070094946633421!8m2!3d24.9951507!4d121.5457155!9m1!1b1!16s%2Fg%2F1q673s51b",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
     "emergencyHours": "",
-    "nightClinic": false,
+    "nightClinic": true,
     "services": [
       "犬貓鼠兔醫療保健",
       "心臟內科",
@@ -1122,7 +1186,7 @@ export const TaipeiHospitalList = [
       "外科手術"
     ],
     "website": "",
-    "appointmentLink": "",
+    "appointmentLink": "tel:0229330600",
     "transportTips": "鄰近捷運景美站，步行約10分鐘可達。",
     "socialMedia": {
       "facebook": "https://www.facebook.com/VetJXAH/"
@@ -1132,7 +1196,7 @@ export const TaipeiHospitalList = [
       "last_fb_post_date": "2026-09-01",
       "last_fb_post_text": "Reel 未提及營業時間、休診或特寵服務異動。院方另列犬、貓、鼠、兔醫療保健及兔子結紮服務。"
     },
-    "updatedAt": "2026-09-20T17:06:49.089Z",
+    "updatedAt": "2026-10-03T09:39:45.848Z",
     "last_checked": "2026-09-03"
   },
   // 未找到院方自有官方來源明確公告鳥類／特寵診療，2026-06-09 暫停顯示。
@@ -1244,10 +1308,10 @@ export const TaipeiHospitalList = [
     },
     "google": {
       "rating": "4.7",
-      "reviewCount": 331,
+      "reviewCount": 332,
       "mapsUrl": "https://www.google.com/maps/place/%E5%AE%89%E5%BA%AD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0297087,121.52666,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a984a6cb4cb5:0x98a4532e68166e8e!8m2!3d25.0297087!4d121.52666!16s%2Fg%2F12qh15f2b",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%AE%89%E5%BA%AD%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0297087,121.52666,17z/data=!4m8!3m7!1s0x3442a984a6cb4cb5:0x98a4532e68166e8e!8m2!3d25.0297087!4d121.52666!9m1!1b1!16s%2Fg%2F12qh15f2b",
-      "verifiedAt": "2026-09-20"
+      "verifiedAt": "2026-10-03"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -1289,10 +1353,10 @@ export const TaipeiHospitalList = [
         "content": "門診與手術採預約掛號；無預約或現場掛號可能加收 200-1000 元掛號費。恕無急診服務，國定假日或研討會休診另行公告。",
         "sourceLabel": "官方 Facebook 精選",
         "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid0284ayF4JF6Ce9JxGDCaD5StGex3TjKEyxjkPVSyftojqGfxhZcsqTnwhqBBHwN6aKl&id=100063467964124",
-        "verifiedAt": "2026-09-20"
+        "verifiedAt": "2026-10-03"
       }
     ],
-    "updatedAt": "2026-09-20T15:59:37.189Z",
+    "updatedAt": "2026-10-03T09:56:30.304Z",
     "last_checked": "2026-09-03"
   },
   {
@@ -1334,11 +1398,11 @@ export const TaipeiHospitalList = [
     },
     "google": {
       "rating": "3.7",
-      "reviewCount": 956,
+      "reviewCount": 958,
       "mapsUrl": "https://www.google.com/maps/place/%E5%8F%B0%E5%A4%A7%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/data=!4m7!3m6!1s0x3442aa2407400001:0xc9a66439a4b69c1d!8m2!3d25.0156319!4d121.5430757!16s%2Fg%2F11kj3f09z4!19sChIJAQBABySqQjQRHZy2pDlkpsk",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%8F%B0%E5%A4%A7%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0156319,121.5430757,17z/data=!4m8!3m7!1s0x3442aa2407400001:0xc9a66439a4b69c1d!8m2!3d25.0156319!4d121.5430757!9m1!1b1!16s%2Fg%2F11kj3f09z4",
       "placeId": "ChIJAQBABySqQjQRHZy2pDlkpsk",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -1417,8 +1481,8 @@ export const TaipeiHospitalList = [
       "note": "非犬貓特殊寵物初診需完成預約並填寫初診表單；複診洽 02-2739-6828 分機 1160、1163。",
       "reservationRequired": true,
       "sourceLabel": "官方網站",
-      "sourceUrl": "https://reg.vh.ntu.edu.tw/OINetReg.WebRwd/Reg/DeptCalendar?DeptId=10",
-      "verifiedAt": "2026-09-21"
+      "sourceUrl": "https://www.vh.ntu.edu.tw/index.php?lang=tw&do=guide&id=201",
+      "verifiedAt": "2026-10-03"
     },
     "fb": {
       "last_fb_post_date": "2026-07-27",
@@ -1446,9 +1510,20 @@ export const TaipeiHospitalList = [
         "sourceLabel": "官方網站",
         "sourceUrl": "https://www.vh.ntu.edu.tw/index.php?lang=tw&do=guide&id=223",
         "verifiedAt": "2026-09-21"
+      },
+      {
+        "id": "ntu-exotic-october-schedule-2026",
+        "type": "hours_change",
+        "title": "十月休診與特寵特約門診",
+        "content": "2026/10/9、10/26 全院休診。特寵門診林瑋貞醫師 10/7 改為特約；鍾亞樺醫師 10/8、10/22 改為特約。李家芊醫師週四、週五上午及鍾亞樺醫師週四下午不開放現場門診。特寵初診須完成預約並填寫初診表單，複診請於上班時間電洽 02-2739-6828 分機 1160、1163；班表如有調整，以院方網頁與現場公告為準。",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-31",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/vh.ntu.edu.tw/posts/pfbid034xkQo9c2HL87maS7xz1RuGo7YVTXQ8PR3W7wZEyhfskEAzADXKizXWf9zcQrrX1Hl",
+        "verifiedAt": "2026-10-03"
       }
     ],
-    "updatedAt": "2026-09-20T17:06:49.089Z",
+    "updatedAt": "2026-10-03T09:56:30.305Z",
     "last_checked": "2026-09-03"
   },
   // 官方公開資訊未明確標示鳥類、特寵或非犬貓診療，2026-06-09 暫停顯示。
@@ -1560,12 +1635,12 @@ export const TaipeiHospitalList = [
       "reviewCount": 141,
       "mapsUrl": "https://www.google.com/maps/place/%E6%AF%9B%E6%B4%BE%E6%A8%82%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0288536,121.5400524,17z/data=!3m1!4b1!4m6!3m5!1s0x3442ab04b80f1165:0x7c7a8a31c0f1db2a!8m2!3d25.0288536!4d121.5400524!16s%2Fg%2F11t0lys14v",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%AF%9B%E6%B4%BE%E6%A8%82%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0288536,121.5400524,17z/data=!4m8!3m7!1s0x3442ab04b80f1165:0x7c7a8a31c0f1db2a!8m2!3d25.0288536!4d121.5400524!9m1!1b1!16s%2Fg%2F11t0lys14v",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
-    "nightClinic": false,
+    "nightClinic": true,
     "services": [
       "犬貓內外科",
       "鳥類內外科",
@@ -1598,9 +1673,9 @@ export const TaipeiHospitalList = [
       "hasExoticSpecialClinic": true,
       "label": "鳥類門診",
       "note": "鳥類由張佳倖醫師看診，時段依每月門診表；其他非犬貓物種請先詢問是否收案。",
-      "sourceLabel": "官方 Facebook、官方 Instagram",
-      "sourceUrl": "https://www.facebook.com/photo/?fbid=1057898886971190&set=a=115280224566399",
-      "verifiedAt": "2026-09-21"
+      "sourceLabel": "官方 Facebook",
+      "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid08rAKH8pH93YHUKUuc7QRRDAc8nhqnoytPGskZNWCLVrpLvhkHWrE4Pvr6tXUa4mQl&id=100082532660991",
+      "verifiedAt": "2026-10-03"
     },
     "clinicNotes": "提供犬貓內外科、牙科、心臟科與鳥類內外科。鳥類由張佳倖醫師看診，時段依每月門診表；其他非犬貓物種請先詢問是否收案。",
     "fb": {
@@ -1629,9 +1704,31 @@ export const TaipeiHospitalList = [
         "sourceLabel": "官方 Facebook、官方 Instagram",
         "sourceUrl": "https://www.facebook.com/photo/?fbid=1057898886971190&set=a=115280224566399",
         "verifiedAt": "2026-09-21"
+      },
+      {
+        "id": "maopai-le-2026-10-hours-change",
+        "type": "hours_change",
+        "title": "十月門診異動與休診",
+        "content": "十月每週三全日休診、週四上午休診、週日公休；2026/10/7、10/21–10/22 全院休診。10/9–10/10、10/26 正常門診；10/10、10/13 王醫師休診。10/15 鳥類門診醫師張佳倖請假，當日由王醫師看犬貓全日門診。鳥類就診請依當月張醫師班表安排。",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-31",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid08rAKH8pH93YHUKUuc7QRRDAc8nhqnoytPGskZNWCLVrpLvhkHWrE4Pvr6tXUa4mQl&id=100082532660991",
+        "verifiedAt": "2026-10-03"
+      },
+      {
+        "id": "maopai-le-2026-10-31-11-02-closure",
+        "type": "closure",
+        "title": "10/31 至 11/2 全院休診",
+        "content": "2026/10/31–11/2 全院休診，醫師參加 FASAVA 亞洲小動物獸醫師年會。",
+        "startDate": "2026-10-31",
+        "endDate": "2026-11-02",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid08rAKH8pH93YHUKUuc7QRRDAc8nhqnoytPGskZNWCLVrpLvhkHWrE4Pvr6tXUa4mQl&id=100082532660991",
+        "verifiedAt": "2026-10-03"
       }
     ],
-    "updatedAt": "2026-09-20T17:06:49.089Z",
+    "updatedAt": "2026-10-03T09:56:30.305Z",
     "last_checked": "2026-09-03"
   },
   {
@@ -1682,10 +1779,10 @@ export const TaipeiHospitalList = [
     },
     "google": {
       "rating": "4.7",
-      "reviewCount": 328,
+      "reviewCount": 330,
       "mapsUrl": "https://www.google.com/maps/place/%E8%90%8A%E7%89%B9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91/@25.0202109,121.5304394,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a987533d1419:0xa8bfef7e08b1071f!8m2!3d25.0202109!4d121.5304394!16s%2Fg%2F11s8b66508",
       "reviewsUrl": "https://www.google.com/maps/place/%E8%90%8A%E7%89%B9%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91/@25.0202109,121.5304394,17z/data=!4m8!3m7!1s0x3442a987533d1419:0xa8bfef7e08b1071f!8m2!3d25.0202109!4d121.5304394!9m1!1b1!16s%2Fg%2F11s8b66508",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -1723,7 +1820,7 @@ export const TaipeiHospitalList = [
       "last_fb_post_date": "2026-07-17",
       "last_fb_post_text": "官方公告：8/14（五）、8/15（六）、8/29（六）院休。"
     },
-    "updatedAt": "2026-09-20T16:12:55.102Z",
+    "updatedAt": "2026-10-03T10:05:32.534Z",
     "last_checked": "2026-09-03"
   },
   {
@@ -1769,7 +1866,7 @@ export const TaipeiHospitalList = [
       "reviewCount": 7,
       "mapsUrl": "https://www.google.com/maps/place/%E4%BB%81%E6%84%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.037394,121.552162,17z/data=!3m1!4b1!4m6!3m5!1s0x3442ab00108c2031:0xc50a4f5eac7e35fb!8m2!3d25.037394!4d121.552162!16s%2Fg%2F11lmkypyvt",
       "reviewsUrl": "https://www.google.com/maps/place/%E4%BB%81%E6%84%9B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.037394,121.552162,17z/data=!4m8!3m7!1s0x3442ab00108c2031:0xc50a4f5eac7e35fb!8m2!3d25.037394!4d121.552162!9m1!1b1!16s%2Fg%2F11lmkypyvt",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -1797,7 +1894,7 @@ export const TaipeiHospitalList = [
       "犬貓兔針灸"
     ],
     "website": "",
-    "appointmentLink": "",
+    "appointmentLink": "tel:0227029165",
     "transportTips": "鄰近捷運信義安和站，步行約10分鐘可達。",
     "socialMedia": {
       "facebook": "https://www.facebook.com/acupuncturetaiwan/"
@@ -1820,7 +1917,7 @@ export const TaipeiHospitalList = [
         "verifiedAt": "2026-08-10"
       }
     ],
-    "updatedAt": "2026-09-20T16:12:55.102Z",
+    "updatedAt": "2026-10-03T10:05:32.534Z",
     "last_checked": "2026-09-03"
   },
   {
@@ -1870,10 +1967,10 @@ export const TaipeiHospitalList = [
     },
     "google": {
       "rating": "4.7",
-      "reviewCount": 209,
+      "reviewCount": 210,
       "mapsUrl": "https://www.google.com/maps/place/%E5%AF%B5%E6%A8%82%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0327814,121.5517474,17z/data=!3m1!4b1!4m6!3m5!1s0x3442abcc4e5b141f:0xa1264513b21cdd8a!8m2!3d25.0327814!4d121.5517474!16s%2Fg%2F11c4nvwnzw",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%AF%B5%E6%A8%82%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0327814,121.5517474,17z/data=!4m8!3m7!1s0x3442abcc4e5b141f:0xa1264513b21cdd8a!8m2!3d25.0327814!4d121.5517474!9m1!1b1!16s%2Fg%2F11c4nvwnzw",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -1919,7 +2016,7 @@ export const TaipeiHospitalList = [
       "instagram": "https://www.instagram.com/peteden188/",
       "line": "https://lin.ee/Sy7gUul"
     },
-    "clinicNotes": "採預約制，電話為 02-2708-7967、02-2708-8473。提供鼠兔門診，非犬貓就診前請先電話確認。\n9 月醫師安排：張醫師 9/2–9/4 不在院，廖醫師 9/10–9/12 休診；9/5 劉醫師休診、廖醫師 18:00 下診，當日門診為 11:00–18:00。其他特殊門診與復健、水療時段依班表安排，均需預約。\n另有犬貓內外科、健康檢查、長照安養、住宿安親與復健服務。長照安養僅接受電話或到院預約諮詢，不提供線上報價。",
+    "clinicNotes": "採預約制，電話為 02-2708-7967、02-2708-8473。提供鼠兔門診，非犬貓就診前請先電話確認。\n其他特殊門診與復健、水療時段依班表安排，均需預約。\n另有犬貓內外科、健康檢查、長照安養、住宿安親與復健服務。長照安養僅接受電話或到院預約諮詢，不提供線上報價。",
     "fb": {
       "last_fb_post_date": "2026-08-26",
       "last_fb_post_text": "9 月門診異動：張醫師 9/2–9/4 不在院，廖醫師 9/10–9/12 休診；9/5 劉醫師休診、廖醫師 18:00 下診，當日門診為 11:00–18:00。全院採預約制，電話為 02-2708-7967、02-2708-8473。"
@@ -1946,9 +2043,20 @@ export const TaipeiHospitalList = [
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/peteden168/posts/pfbid0xoqPHt5n4JgXwaHaq9oUWBLHWoswU1WeRwp1Pa5kXJdWFguNW6VrTBpahMJU4ffsl",
         "verifiedAt": "2026-09-21"
+      },
+      {
+        "id": "peteden-october-schedule-2026",
+        "type": "hours_change",
+        "title": "十月休診與門診異動",
+        "content": "2026/10/10 全院休診，不對外營業。10/21 劉醫師、張醫師休診，由陳醫師代班，當日門診為 13:00–21:00；10/3、10/31 劉醫師休診，10/6、10/20 陳醫師休診，10/23 張醫師休診。全院採預約制，請來電 02-2708-7967 確認醫師與時段。",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-31",
+        "sourceLabel": "官方 Instagram",
+        "sourceUrl": "https://www.instagram.com/p/Dd5iHyDvSrD/",
+        "verifiedAt": "2026-10-03"
       }
     ],
-    "updatedAt": "2026-09-20T17:06:49.089Z",
+    "updatedAt": "2026-10-03T10:05:32.534Z",
     "last_checked": "2026-09-04"
   },
   {
@@ -1963,41 +2071,41 @@ export const TaipeiHospitalList = [
     "typeText": "犬貓診療、特寵診療",
     "phone": "02-2832-8385",
     "specialEvents": [],
-    "hours": "週一至週日 10:00–12:20 / 14:00–17:50 / 19:00–21:00；早診最後掛號 12:00、午診 17:30。非掛號時段為急診時段，特寵受理範圍請先電話確認。",
+    "hours": "週一至週日 10:00–12:30 / 14:00–18:00 / 19:00–21:00；早診最後掛號 12:00、午診 17:30。非掛號時段為急診時段，特寵受理範圍請先電話確認。",
     "business_hours": {
       "mon": [
-        "10:00-12:20",
-        "14:00-17:50",
+        "10:00-12:30",
+        "14:00-18:00",
         "19:00-21:00"
       ],
       "tue": [
-        "10:00-12:20",
-        "14:00-17:50",
+        "10:00-12:30",
+        "14:00-18:00",
         "19:00-21:00"
       ],
       "wed": [
-        "10:00-12:20",
-        "14:00-17:50",
+        "10:00-12:30",
+        "14:00-18:00",
         "19:00-21:00"
       ],
       "thu": [
-        "10:00-12:20",
-        "14:00-17:50",
+        "10:00-12:30",
+        "14:00-18:00",
         "19:00-21:00"
       ],
       "fri": [
-        "10:00-12:20",
-        "14:00-17:50",
+        "10:00-12:30",
+        "14:00-18:00",
         "19:00-21:00"
       ],
       "sat": [
-        "10:00-12:20",
-        "14:00-17:50",
+        "10:00-12:30",
+        "14:00-18:00",
         "19:00-21:00"
       ],
       "sun": [
-        "10:00-12:20",
-        "14:00-17:50",
+        "10:00-12:30",
+        "14:00-18:00",
         "19:00-21:00"
       ]
     },
@@ -2007,7 +2115,7 @@ export const TaipeiHospitalList = [
       "reviewCount": 742,
       "mapsUrl": "https://www.google.com/maps/place/%E8%8A%9D%E5%B1%B1%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.103596,121.519959,17z/data=!3m1!4b1!4m6!3m5!1s0x3442ae979dda8e8f:0xcc44b912e6a01315!8m2!3d25.103596!4d121.519959!16s%2Fg%2F11cn650g09",
       "reviewsUrl": "https://www.google.com/maps/place/%E8%8A%9D%E5%B1%B1%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.103596,121.519959,17z/data=!4m8!3m7!1s0x3442ae979dda8e8f:0xcc44b912e6a01315!8m2!3d25.103596!4d121.519959!9m1!1b1!16s%2Fg%2F11cn650g09",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "hasEmergencyService": true,
     "emergencyHours": "非掛號時間為急診時段；特寵急診受理範圍請先電話確認。",
@@ -2067,7 +2175,7 @@ export const TaipeiHospitalList = [
       "sourceUrl": "https://www.facebook.com/photo/?fbid=1532232735589067&set=a.420478086764543",
       "verifiedAt": "2026-09-21"
     },
-    "clinicNotes": "採電話預約，社群私訊不受理；預約時間為報到時間，實際看診依現場狀況安排，無法到診請提前電話取消。\n健檢、中獸醫門診、復健療程、手術及寄療服務須提前預約。特寵依醫師分科看診，請預約時確認物種與醫師。\n門診為每日 10:00–12:20、14:00–17:50、19:00–21:00；早診最後掛號 12:00、午診 17:30。非掛號時段為急診時段，急診掛號費 1,000 元；特寵急診受理範圍請先電話確認。",
+    "clinicNotes": "採電話預約，社群私訊不受理；預約時間為報到時間，實際看診依現場狀況安排，無法到診請提前電話取消。\n健檢、中獸醫門診、復健療程、手術及寄療服務須提前預約。特寵依醫師分科看診，請預約時確認物種與醫師。\n門診為每日 10:00–12:30、14:00–18:00、19:00–21:00；早診最後掛號 12:00、午診 17:30。非掛號時段為急診時段，急診掛號費 1,000 元；特寵急診受理範圍請先電話確認。",
     "fb": {
       "last_fb_post_date": "2026-07-28",
       "last_fb_post_text": "官方 8 月班表公告：每日 10:00–12:30、14:00–18:00、19:00–21:00；特寵依醫師分科，需先電話預約，社群私訊不受理預約；非掛號時間為急診，急診掛號費 1,000 元。"
@@ -2094,9 +2202,20 @@ export const TaipeiHospitalList = [
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/photo/?fbid=1532232735589067&set=a.420478086764543",
         "verifiedAt": "2026-09-21"
+      },
+      {
+        "id": "z3-2026-10-19-hours-change",
+        "type": "hours_change",
+        "title": "10/19 進修日早診休診",
+        "content": "2026/10/19 全院進修，早診休診；當日門診調整為 15:00–18:00、19:00–21:00。健檢、中獸醫、復健、手術與寄療服務須提前電話預約，社群私訊不受理。",
+        "startDate": "2026-10-19",
+        "endDate": "2026-10-19",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/z3vet/posts/pfbid0oKsQtepnNV8sCnR1pEoJ77ti6hfWeAQcCmraLDLdC3P7WTdfFzV14rTPbXVj6a1Bl",
+        "verifiedAt": "2026-10-03"
       }
     ],
-    "updatedAt": "2026-09-20T17:06:49.089Z",
+    "updatedAt": "2026-10-03T10:15:52.903Z",
     "last_checked": "2026-09-01"
   },
   {
@@ -2137,15 +2256,15 @@ export const TaipeiHospitalList = [
     },
     "google": {
       "rating": "3.8",
-      "reviewCount": 471,
+      "reviewCount": 475,
       "mapsUrl": "https://www.google.com/maps/place/%E5%B8%83%E9%81%94%E7%BE%8A%E6%80%A5%E8%A8%BA%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.1053842,121.5282977,17z/data=!3m1!4b1!4m6!3m5!1s0x3442afd1deaca98f:0x5cb54f72bcb53265!8m2!3d25.1053842!4d121.5282977!16s%2Fg%2F11j6t0qhx7",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%B8%83%E9%81%94%E7%BE%8A%E6%80%A5%E8%A8%BA%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.1053842,121.5282977,17z/data=!4m8!3m7!1s0x3442afd1deaca98f:0x5cb54f72bcb53265!8m2!3d25.1053842!4d121.5282977!9m1!1b1!16s%2Fg%2F11j6t0qhx7",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "reservationRequired": false,
     "hasEmergencyService": true,
     "emergencyHours": "夜間急診 21:00–09:00；24 小時醫療服務。",
-    "nightClinic": false,
+    "nightClinic": true,
     "services": [
       "24小時犬貓鼠兔一般門診、急診",
       "24小時住院加護",
@@ -2199,9 +2318,20 @@ export const TaipeiHospitalList = [
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/photo/?fbid=1516317230514869&set=a=448594653953804",
         "verifiedAt": "2026-09-21"
+      },
+      {
+        "id": "boulderyard-2026-10-schedule",
+        "type": "notice",
+        "title": "2026 年十月醫師班表",
+        "content": "2026 年十月醫師班表已公布，請依院方圖卡確認值班醫師。犬、貓、鼠、兔全天看診，提供 24 小時急診與重症加護服務。",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-31",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/boulderyard24/posts/pfbid0KdwCkRSthRHKJCfx3ogDsyXHhhGC39Y7jq85VEVRwhXeEL2vNPERF9hhVBemQh8vl",
+        "verifiedAt": "2026-10-03"
       }
     ],
-    "updatedAt": "2026-09-20T17:06:49.089Z",
+    "updatedAt": "2026-10-03T10:15:52.904Z",
     "last_checked": "2026-09-04"
   },
   {
@@ -2216,36 +2346,49 @@ export const TaipeiHospitalList = [
     "typeText": "犬貓診療、特寵診療",
     "phone": "02-2897-7779",
     "specialEvents": [],
-    "hours": "週一至週六 10:00–21:00，週日 10:00–17:00；採預約制，請先電話安排看診時段。",
+    "hours": "週一至週六 10:00–13:00、14:00–17:00、18:00–21:00；週日 10:00–13:00、14:00–17:00。採預約制，請先電話安排看診時段。",
     "business_hours": {
       "mon": [
-        "10:00-21:00"
+        "10:00-13:00",
+        "14:00-17:00",
+        "18:00-21:00"
       ],
       "tue": [
-        "10:00-21:00"
+        "10:00-13:00",
+        "14:00-17:00",
+        "18:00-21:00"
       ],
       "wed": [
-        "10:00-21:00"
+        "10:00-13:00",
+        "14:00-17:00",
+        "18:00-21:00"
       ],
       "thu": [
-        "10:00-21:00"
+        "10:00-13:00",
+        "14:00-17:00",
+        "18:00-21:00"
       ],
       "fri": [
-        "10:00-21:00"
+        "10:00-13:00",
+        "14:00-17:00",
+        "18:00-21:00"
       ],
       "sat": [
-        "10:00-21:00"
+        "10:00-13:00",
+        "14:00-17:00",
+        "18:00-21:00"
       ],
       "sun": [
-        "10:00-17:00"
+        "10:00-13:00",
+        "14:00-17:00"
       ]
     },
     "google": {
       "rating": "4.6",
-      "reviewCount": 245,
+      "reviewCount": 246,
       "mapsUrl": "https://www.google.com/maps/place/%E6%9D%9C%E7%91%AA%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E5%85%A8%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@25.1354176,121.4965108,17z/data=!3m1!4b1!4m6!3m5!1s0x3442ae522db542d1:0xa8fc017906c9ddf7!8m2!3d25.1354176!4d121.4965108!16s%2Fg%2F1pp2ty6fg",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%9D%9C%E7%91%AA%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E5%85%A8%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@25.1354176,121.4965108,17z/data=!4m8!3m7!1s0x3442ae522db542d1:0xa8fc017906c9ddf7!8m2!3d25.1354176!4d121.4965108!9m1!1b1!16s%2Fg%2F1pp2ty6fg",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -2327,7 +2470,7 @@ export const TaipeiHospitalList = [
         "verifiedAt": "2026-09-01"
       }
     ],
-    "updatedAt": "2026-09-20T16:24:50.000Z",
+    "updatedAt": "2026-10-03T10:15:52.904Z",
     "last_checked": "2026-09-01"
   },
   // 官方公開資訊未明確標示兔、特寵或非犬貓診療，2026-06-09 暫停顯示。
@@ -2458,7 +2601,7 @@ export const TaipeiHospitalList = [
       "reviewCount": 474,
       "mapsUrl": "https://www.google.com/maps/place/%E5%85%A8%E5%9C%8B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E5%8F%B0%E5%8C%97%E5%88%86%E9%99%A2/@25.0577448,121.5803163,17z/data=!3m5!1s0x3442ab075a9087f7:0x2b6eb56813ed0417!8m2!3d25.0577448!4d121.5803163",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%85%A8%E5%9C%8B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+%E5%8F%B0%E5%8C%97%E5%88%86%E9%99%A2/@25.0577448,121.5803163,17z/data=!4m7!3m6!1s0x3442ab075a9087f7:0x2b6eb56813ed0417!8m2!3d25.0577448!4d121.5803163!9m1!1b1",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -2507,10 +2650,10 @@ export const TaipeiHospitalList = [
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "兔科門診",
-      "note": "兔科鄭玉津獸醫師於 2026 年 9/2、9/5、9/9、9/12、9/16、9/19、9/23、9/26、9/30 輪值。實際看診時段與其他物種是否收案，請先電話確認。",
-      "sourceLabel": "官方分院團隊頁、官方 2026 年 9 月輪值表",
-      "sourceUrl": "https://www.vet.com.tw/store_detail2.php?cID=3",
-      "verifiedAt": "2026-09-21"
+      "note": "兔科鄭玉津獸醫師於 2026 年 10/3、10/7、10/10、10/14、10/17、10/21、10/24、10/28、10/31 輪值。實際看診時段與其他物種是否收案，請先電話確認。",
+      "sourceLabel": "官方台北分院輪值表",
+      "sourceUrl": "https://www.vet.com.tw/store_detail.php?Key=3",
+      "verifiedAt": "2026-10-03"
     },
     "announcements": [
       {
@@ -2520,7 +2663,7 @@ export const TaipeiHospitalList = [
         "content": "台北分院自 2026 年 2 月起安排腫瘤專科獸醫師李繼忠駐診，採電話預約。已公布的駐診日期為 2026-09-04、09-18、10-16、10-30。",
         "sourceLabel": "官方網站",
         "sourceUrl": "https://www.vet.com.tw/news/announcements-ntp-0121",
-        "verifiedAt": "2026-09-21"
+        "verifiedAt": "2026-10-03"
       },
       {
         "id": "national-vet-taipei-september-roster-2026",
@@ -2532,9 +2675,20 @@ export const TaipeiHospitalList = [
         "sourceLabel": "官方網站",
         "sourceUrl": "https://www.vet.com.tw/store_detail.php?Key=3",
         "verifiedAt": "2026-09-21"
+      },
+      {
+        "id": "national-vet-taipei-october-roster-2026",
+        "type": "notice",
+        "title": "2026 年十月台北分院兔科輪值",
+        "content": "兔科鄭玉津醫師於 10/3、10/7、10/10、10/14、10/17、10/21、10/24、10/28、10/31 輪值，實際時段請先電話確認。21:30–08:30 夜間急診限犬貓，非犬貓急症請先電話確認是否收案。",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-31",
+        "sourceLabel": "官方台北分院輪值表",
+        "sourceUrl": "https://www.vet.com.tw/store_detail.php?Key=3",
+        "verifiedAt": "2026-10-03"
       }
     ],
-    "updatedAt": "2026-09-20T17:06:49.089Z",
+    "updatedAt": "2026-10-03T10:26:00.882Z",
     "last_checked": "2026-09-01"
   },
   {
@@ -2585,12 +2739,12 @@ export const TaipeiHospitalList = [
       "reviewCount": 677,
       "mapsUrl": "https://www.google.com/maps/place/%E4%BA%9E%E9%A6%AC%E6%A3%AE%E7%89%B9%E5%AF%B5%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@25.0790168,121.5798869,17z/data=!3m1!4b1!4m6!3m5!1s0x3442acec8ace5c1d:0x133340624804a0e5!8m2!3d25.0790168!4d121.5798869!16s%2Fg%2F1tj43lph",
       "reviewsUrl": "https://www.google.com/maps/place/%E4%BA%9E%E9%A6%AC%E6%A3%AE%E7%89%B9%E5%AF%B5%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2/@25.0790168,121.5798869,17z/data=!4m8!3m7!1s0x3442acec8ace5c1d:0x133340624804a0e5!8m2!3d25.0790168!4d121.5798869!9m1!1b1!16s%2Fg%2F1tj43lph",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": true,
     "emergencyHours": "急門診與急診需求請先來電 02-8792-3248 確認人力與可接診狀況；未預約或未先來電可能無法安排看診。",
-    "nightClinic": false,
+    "nightClinic": true,
     "services": [
       "鼠兔診療",
       "小型哺乳類診療",
@@ -2643,15 +2797,15 @@ export const TaipeiHospitalList = [
       "instagram": "https://www.instagram.com/amazonah311/",
       "line": "https://lin.ee/ZRVrLtX"
     },
-    "clinicNotes": "提供鼠、兔、小型哺乳類、爬蟲類、兩棲類、鳥禽類等特殊寵物內外科診療，並有心臟專科、急重症醫療、影像診斷與住院照護。\n2026 年 8 月起全面預約制，不提供一般現場掛號；急門診或急診需求請先電話確認人力與可接診狀況，未預約直接到院可能無法安排。朱哲助醫師特約門診 9 月僅釋出 1 個名額，候補依填單時間安排，不受理一般健康檢查，最終依門診狀況調整。",
+    "clinicNotes": "提供鼠、兔、小型哺乳類、爬蟲類、兩棲類、鳥禽類等特殊寵物內外科診療，並有心臟專科、急重症醫療、影像診斷與住院照護。\n2026 年 8 月起全面預約制，不提供一般現場掛號。填寫表單後，須接到電話確認時間才算預約成功；急門診或急診請先來電確認當日是否能接診，未預約或未先電話確認就到院，可能無法安排。\n2026 年 10 月朱哲助醫師特約門診回診已滿，不開放新名額；11 月門診於 10/25 開放預約。候補依填單順序安排，有取消才依序通知。名額優先留給重症、老年及回診病患，不受理一般健康檢查；最終名額依實際門診狀況調整。",
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "朱哲助醫師特約門診",
-      "note": "2026 年 9 月開放預約時間為 8/25，因回診較多僅釋出 1 個名額；候補依填單時間安排，特約門診不受理一般健康檢查，最終開放名額依門診狀況調整。",
+      "note": "2026 年 10 月朱哲助醫師特約門診回診已滿，不開放新名額；11 月門診於 10/25 開放預約。候補依填單順序安排，有取消才依序通知。名額優先留給重症、老年及回診病患，不受理一般健康檢查；最終名額依實際門診狀況調整。",
       "reservationRequired": true,
-      "sourceLabel": "官方 Facebook",
-      "sourceUrl": "https://www.facebook.com/amazonvet1/posts/pfbid02w1SQsKNPR51kvKMWZ2K7sr71pGo9hMat22xwyTkfMSt8f22rNZTQja2CfdwXddvHl",
-      "verifiedAt": "2026-09-21"
+      "sourceLabel": "官方 Instagram",
+      "sourceUrl": "https://www.instagram.com/amazonah311/p/DdsxFD1DG-_",
+      "verifiedAt": "2026-10-03"
     },
     "fb": {
       "last_fb_post_date": "2026-07-28",
@@ -2666,7 +2820,7 @@ export const TaipeiHospitalList = [
         "startDate": "2026-08-01",
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/amazonvet1/posts/pfbid0AZBcinfWtCMosQpuoxNNiMfAdH1jXB1JFWXrZvD9fFvRUEU5Bfr7zJGnRwSgXfCnl",
-        "verifiedAt": "2026-09-21"
+        "verifiedAt": "2026-10-03"
       },
       {
         "id": "amazon-september-2026-doctor-schedule",
@@ -2678,9 +2832,20 @@ export const TaipeiHospitalList = [
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/amazonvet1/posts/pfbid02w1SQsKNPR51kvKMWZ2K7sr71pGo9hMat22xwyTkfMSt8f22rNZTQja2CfdwXddvHl",
         "verifiedAt": "2026-09-21"
+      },
+      {
+        "id": "amazon-october-2026-special-clinic",
+        "type": "notice",
+        "title": "十月朱哲助特約門診額滿及十一月預約安排",
+        "content": "2026 年 10 月朱哲助醫師特約門診回診已滿，不開放新名額；11 月門診於 10/25 開放預約。候補依填單順序安排，有取消才依序通知。名額優先留給重症、老年及回診病患，不受理一般健康檢查；最終名額依實際門診狀況調整。 填寫預約表單後，須接到電話確認時間才算預約成功。",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-31",
+        "sourceLabel": "官方 Instagram",
+        "sourceUrl": "https://www.instagram.com/amazonah311/p/DdsxFD1DG-_",
+        "verifiedAt": "2026-10-03"
       }
     ],
-    "updatedAt": "2026-09-20T17:06:49.089Z",
+    "updatedAt": "2026-10-03T10:26:00.882Z",
     "last_checked": "2026-09-01"
   },
   {
@@ -2721,11 +2886,11 @@ export const TaipeiHospitalList = [
     },
     "google": {
       "rating": "4.3",
-      "reviewCount": 661,
+      "reviewCount": 663,
       "mapsUrl": "https://www.google.com/maps/place/%E4%B8%AD%E7%A0%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.053629,121.616422,19z/data=!4m6!3m5!1s0x3442ab59c3010d17:0x8ce1abf7898f5d8e!8m2!3d25.0536899!4d121.616113!16s%2Fg%2F1tdf8t9h",
       "reviewsUrl": "https://www.google.com/maps/place/%E4%B8%AD%E7%A0%94%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.053629,121.616422,19z/data=!4m8!3m7!1s0x3442ab59c3010d17:0x8ce1abf7898f5d8e!8m2!3d25.0536899!4d121.616113!9m1!1b1!16s%2Fg%2F1tdf8t9h",
       "placeId": "ChIJFw0Bw1mrQjQRjl2Pifer4Yw",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
@@ -2770,7 +2935,7 @@ export const TaipeiHospitalList = [
     "appointmentLink": "",
     "transportTips": "鄰近捷運南港展覽館站，步行約5分鐘可達。",
     "clinicNotes": "採現場候位制，如需指定獸醫師，請先致電確認班表。\n診療資訊列有犬貓一般內外科、兔科、鼠科、爬蟲類與特寵外科。急症、特殊寵物與出國檢疫需求，請在出發前電話確認。",
-    "updatedAt": "2026-09-20T17:06:49.089Z",
+    "updatedAt": "2026-10-03T10:26:00.882Z",
     "last_checked": "2026-09-04"
   },
   {
@@ -2821,7 +2986,7 @@ export const TaipeiHospitalList = [
       "reviewCount": 644,
       "mapsUrl": "https://www.google.com/maps/place/%E4%BA%9E%E5%90%84%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E9%86%AB%E9%99%A2/@25.0517736,121.6166635,17z/data=!3m5!1s0x3442ab6d2f3b1319:0x9be7a5a95b0bff5e!8m2!3d25.0517736!4d121.6166635!16s%2Fg%2F11srh7h_2p",
       "reviewsUrl": "https://www.google.com/maps/place/%E4%BA%9E%E5%90%84%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E9%86%AB%E9%99%A2/@25.0517736,121.6166635,17z/data=!4m8!3m7!1s0x3442ab6d2f3b1319:0x9be7a5a95b0bff5e!8m2!3d25.0517736!4d121.6166635!9m1!1b1!16s%2Fg%2F11srh7h_2p",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -2920,9 +3085,20 @@ export const TaipeiHospitalList = [
         "sourceLabel": "官方 Facebook、官方 Instagram",
         "sourceUrl": "https://www.facebook.com/photo/?fbid=1026057287100524&set=pb.100090887855945.-2207520000",
         "verifiedAt": "2026-09-21"
+      },
+      {
+        "id": "ark-2026-10-schedule",
+        "type": "notice",
+        "title": "2026 年十月門診班表",
+        "content": "十月門診班表已公布。門診採預約制，可透過 LINE 或電話預約；動物狀況較緊急時，請先來電 02-2653-3636 詢問。",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-31",
+        "sourceLabel": "官方 Instagram",
+        "sourceUrl": "https://www.instagram.com/earkvet10112/p/Ddq_UuITRtR/",
+        "verifiedAt": "2026-10-03"
       }
     ],
-    "updatedAt": "2026-09-20T16:39:52.620Z",
+    "updatedAt": "2026-10-03T10:35:21.089Z",
     "last_checked": "2026-09-01"
   },
   {
@@ -2977,10 +3153,10 @@ export const TaipeiHospitalList = [
     },
     "google": {
       "rating": "4.8",
-      "reviewCount": 68,
+      "reviewCount": 71,
       "mapsUrl": "https://www.google.com/maps/place/%E5%9C%8B%E5%AF%B6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+GOBO+Animal+Medical+Center/@25.0468344,121.5402743,17z/data=!3m1!5s0x3442abd923d5bc77:0xb5233ffa7213720f!4m6!3m5!1s0x3442a900473aa517:0xf81d70c342df5ea!8m2!3d25.0468344!4d121.5402743!16s%2Fg%2F11x7p0dlqb",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%9C%8B%E5%AF%B6%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2+GOBO+Animal+Medical+Center/@25.0468344,121.5402743,17z/data=!4m7!3m6!1s0x3442a900473aa517:0xf81d70c342df5ea!8m2!3d25.0468344!4d121.5402743!9m1!1b1",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -3062,9 +3238,20 @@ export const TaipeiHospitalList = [
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/goboamc/posts/pfbid0y9HSSN8ychkoKsMPEhmUCvWFQB6TGNxYozVUGtbD5Xa2tLmfdvuCcPrAFGPdGXNrl",
         "verifiedAt": "2026-09-21"
+      },
+      {
+        "id": "gobo-october-schedule-2026",
+        "type": "notice",
+        "title": "2026 年十月門診班表",
+        "content": "十月門診班表已公布，犬、貓、兔可預約健康檢查，請透過私訊、電話或官方 LINE 諮詢預約。",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-31",
+        "sourceLabel": "官方 Instagram",
+        "sourceUrl": "https://www.instagram.com/goboamc/p/DdtM8iqPTjl/",
+        "verifiedAt": "2026-10-03"
       }
     ],
-    "updatedAt": "2026-09-20T17:06:49.089Z",
+    "updatedAt": "2026-10-03T10:35:21.090Z",
     "last_checked": "2026-09-01"
   },
   {
@@ -3105,11 +3292,11 @@ export const TaipeiHospitalList = [
     },
     "google": {
       "rating": "4.3",
-      "reviewCount": 115,
+      "reviewCount": 118,
       "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ8QWxJ8urQjQRhK2S4XdL2jk",
       "reviewsUrl": "https://search.google.com/local/reviews?placeid=ChIJ8QWxJ8urQjQRhK2S4XdL2jk",
       "placeId": "ChIJ8QWxJ8urQjQRhK2S4XdL2jk",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -3173,7 +3360,7 @@ export const TaipeiHospitalList = [
       "reservationRequired": true,
       "sourceLabel": "官方網站",
       "sourceUrl": "https://www.lovecat.com.tw/pages/%E2%9C%9A%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-%E6%9C%8D%E5%8B%99%E9%A0%85%E7%9B%AE%E5%B0%8F%E5%8B%95%E7%89%A9%E7%A7%91",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "fb": {
       "last_fb_post_text": "愛貓園澄清，網路流傳的相關貼文並非公司發布，也未發布相關販售或結束營業資訊。"
@@ -3189,7 +3376,7 @@ export const TaipeiHospitalList = [
         "verifiedAt": "2026-09-21"
       }
     ],
-    "updatedAt": "2026-09-20T17:06:49.089Z",
+    "updatedAt": "2026-10-03T10:35:21.090Z",
     "last_checked": "2026-09-04"
   },
   {
@@ -3242,7 +3429,7 @@ export const TaipeiHospitalList = [
       "reviewCount": 491,
       "mapsUrl": "https://www.google.com/maps/place/%E9%95%B7%E5%AE%8F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@25.0593544,121.5303654,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a95c3c6b6a4b:0x9e3bb49e95b4a643!8m2!3d25.0593544!4d121.5303654!16s%2Fg%2F1z3t9cmyn",
       "reviewsUrl": "https://www.google.com/maps/place/%E9%95%B7%E5%AE%8F%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BC%88%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89/@25.0593544,121.5303654,17z/data=!4m8!3m7!1s0x3442a95c3c6b6a4b:0x9e3bb49e95b4a643!8m2!3d25.0593544!4d121.5303654!9m1!1b1!16s%2Fg%2F1z3t9cmyn",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "reservationRequired": true,
     "hasEmergencyService": false,
@@ -3285,5 +3472,258 @@ export const TaipeiHospitalList = [
     },
     "updatedAt": "2026-09-20T16:51:23.248Z",
     "last_checked": "2026-09-04"
+  },
+  {
+    "id": "verypet-animal-hospital-taipei",
+    "name": "寵博健康動物醫院",
+    "address": "台北市松山區三民路108之30號1樓",
+    "city": "台北市",
+    "district": "松山區",
+    "phone": "02-8768-3086",
+    "type": "exotic",
+    "typeText": "犬貓診療、特寵診療",
+    "services": [
+      "犬貓健康檢查",
+      "特寵飼養建議及疾病諮詢（兔、倉鼠、刺蝟、龍貓、守宮、烏龜）",
+      "鳥科特約門診（不定期）"
+    ],
+    "pets": [
+      "狗",
+      "貓",
+      "鳥類"
+    ],
+    "pet_category_group": [
+      "狗",
+      "貓",
+      "鳥類"
+    ],
+    "website": "https://www.verypet.tw/",
+    "hours": "全院採預約制，門診時間依醫師班表安排。自 2026 年十月起，每週三另有夜間門診，最晚預約時間至 20:00。",
+    "reservationRequired": true,
+    "nightClinic": true,
+    "appointmentLink": "https://lin.ee/oz0bg1n",
+    "clinicNotes": "鳥科特約門診不定期開診，請先透過電話或官方 LINE 預約，並等候客服回覆。兔、倉鼠、刺蝟、龍貓、守宮與烏龜的服務為飼養建議及疾病諮詢。週三夜診由林孟潔獸醫師看診；20:00 為最晚預約時間，實際收診時間與受理物種請先詢問院方。",
+    "specialClinic": {
+      "hasExoticSpecialClinic": true,
+      "label": "鳥科特約門診",
+      "note": "不定期開診；全院採預約制，請先向院方確認門診日期。",
+      "reservationRequired": true,
+      "sourceLabel": "官方網站特約門診",
+      "sourceUrl": "https://www.verypet.tw/service/%E5%81%A5%E5%BA%B7%E6%AA%A2%E6%9F%A5",
+      "verifiedAt": "2026-10-03"
+    },
+    "lat": 25.0579489,
+    "lng": 121.5638189,
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/verypetanimalhospital/",
+      "instagram": "https://www.instagram.com/verypet_ah/",
+      "line": "https://lin.ee/oz0bg1n"
+    },
+    "google": {
+      "rating": "4.9",
+      "reviewCount": 68,
+      "mapsUrl": "https://www.google.com/maps/place/%E5%AF%B5%E5%8D%9A%E5%81%A5%E5%BA%B7%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0579489,121.5638189,17z/data=!3m1!4b1!4m6!3m5!1s0x3442abd68631cd29:0x70a21692e790f4a9!8m2!3d25.0579489!4d121.5638189!16s%2Fg%2F11vj7qvms1",
+      "verifiedAt": "2026-10-03"
+    },
+    "createdAt": "2026-10-03T10:51:32.193Z",
+    "updatedAt": "2026-10-03T10:51:32.193Z",
+    "announcements": [
+      {
+        "id": "verypet-wednesday-night-clinic-2026",
+        "type": "hours_change",
+        "title": "十月起每週三加開夜間門診",
+        "content": "自 2026 年十月起，每週三由林孟潔獸醫師加開夜間門診。採預約制，最晚預約時間至 20:00，請提前預約。",
+        "sourceLabel": "官方 Instagram",
+        "sourceUrl": "https://www.instagram.com/verypet_ah/p/Dd20eQYxG9t/",
+        "verifiedAt": "2026-10-03"
+      }
+    ]
+  },
+  {
+    "id": "veca-animal-hospital-taipei",
+    "name": "遠見動物醫院",
+    "address": "台北市大安區和平東路二段68號1樓",
+    "city": "台北市",
+    "district": "大安區",
+    "phone": "02-2377-5388",
+    "type": "exotic",
+    "typeText": "犬貓診療、特寵診療",
+    "services": [
+      "眼科專科診療（含兔、鼠及珍奇寵物）",
+      "犬貓一般內科、外科與保健"
+    ],
+    "pets": [
+      "狗",
+      "貓",
+      "兔",
+      "鼠",
+      "其他特寵"
+    ],
+    "pet_category_group": [
+      "狗",
+      "貓",
+      "兔",
+      "鼠",
+      "其他特寵"
+    ],
+    "website": "https://www.veca.tw/",
+    "hours": "Google 商家列週一至週六 10:00–13:00、14:00–21:00；週日 10:00–13:00、14:00–18:00。門診採約診制，請先電話預約。",
+    "business_hours": {
+      "mon": [
+        "10:00-13:00",
+        "14:00-21:00"
+      ],
+      "tue": [
+        "10:00-13:00",
+        "14:00-21:00"
+      ],
+      "wed": [
+        "10:00-13:00",
+        "14:00-21:00"
+      ],
+      "thu": [
+        "10:00-13:00",
+        "14:00-21:00"
+      ],
+      "fri": [
+        "10:00-13:00",
+        "14:00-21:00"
+      ],
+      "sat": [
+        "10:00-13:00",
+        "14:00-21:00"
+      ],
+      "sun": [
+        "10:00-13:00",
+        "14:00-18:00"
+      ]
+    },
+    "reservationRequired": true,
+    "clinicNotes": "特寵服務限眼科，官網明列兔、鼠及珍奇寵物眼科疾病。一般內科、外科與保健服務為犬貓。門診採約診制，請先致電 02-2377-5388 預約。",
+    "lat": 25.0252831,
+    "lng": 121.5389954,
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/profile.php?id=100051782036240",
+      "instagram": "https://www.instagram.com/vision.eyecare.center/"
+    },
+    "google": {
+      "rating": "4.4",
+      "reviewCount": 871,
+      "mapsUrl": "https://www.google.com/maps/place/%E9%81%A0%E8%A6%8B%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0252831,121.5389954,17z/data=!3m1!4b1!4m6!3m5!1s0x3442aa29bb1a3907:0x40b63d1428affa4f!8m2!3d25.0252831!4d121.5389954!16s%2Fg%2F11xvfpfqm",
+      "verifiedAt": "2026-10-03"
+    },
+    "createdAt": "2026-10-03T10:51:32.193Z",
+    "updatedAt": "2026-10-03T10:51:32.193Z"
+  },
+  {
+    "id": "noah-animal-hospital",
+    "name": "諾亞動物醫院",
+    "address": "台北市中山區吉林路166號",
+    "city": "台北市",
+    "district": "中山區",
+    "phone": "02-2564-2121",
+    "type": "exotic",
+    "typeText": "犬貓診療、特寵診療",
+    "services": [
+      "犬貓鼠兔一般內科、外科"
+    ],
+    "pets": [
+      "狗",
+      "貓",
+      "鼠",
+      "兔"
+    ],
+    "pet_category_group": [
+      "狗",
+      "貓",
+      "鼠",
+      "兔"
+    ],
+    "website": "https://www.facebook.com/p/%E8%AB%BE%E4%BA%9E%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-100063837950717/",
+    "hours": "Google 商家列週一至週六 09:00–13:00、14:00–17:00、18:00–21:00；週日休診。可透過電話或官方 LINE 預約，當月休診與醫師安排請查看院方公告。",
+    "business_hours": {
+      "mon": [
+        "09:00-13:00",
+        "14:00-17:00",
+        "18:00-21:00"
+      ],
+      "tue": [
+        "09:00-13:00",
+        "14:00-17:00",
+        "18:00-21:00"
+      ],
+      "wed": [
+        "09:00-13:00",
+        "14:00-17:00",
+        "18:00-21:00"
+      ],
+      "thu": [
+        "09:00-13:00",
+        "14:00-17:00",
+        "18:00-21:00"
+      ],
+      "fri": [
+        "09:00-13:00",
+        "14:00-17:00",
+        "18:00-21:00"
+      ],
+      "sat": [
+        "09:00-13:00",
+        "14:00-17:00",
+        "18:00-21:00"
+      ],
+      "sun": []
+    },
+    "nightClinic": true,
+    "appointmentLink": "https://lin.ee/k6wtM0i",
+    "clinicNotes": "提供犬、貓、鼠、兔一般內外科診療，可透過電話或官方 LINE 預約。2026 年 10 月 10 日及 26 日休診；哈醫師 10 月 16–24 日出國休診，其他醫師安排請查看當月班表。",
+    "lat": 25.0567612,
+    "lng": 121.5300425,
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/p/%E8%AB%BE%E4%BA%9E%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2-100063837950717/",
+      "line": "https://lin.ee/k6wtM0i"
+    },
+    "google": {
+      "rating": "4.7",
+      "reviewCount": 576,
+      "mapsUrl": "https://www.google.com/maps/place/%E8%AB%BE%E4%BA%9E%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@25.0567612,121.5300425,17z/data=!3m1!4b1!4m6!3m5!1s0x140dd0e5dc4582bb:0xee4d30a7b04efd07!8m2!3d25.0567612!4d121.5300425!16s%2Fg%2F11b6scl3y0",
+      "verifiedAt": "2026-10-03"
+    },
+    "updatedAt": "2026-10-03T11:01:22.265Z",
+    "announcements": [
+      {
+        "id": "noah-closure-2026-10-10",
+        "type": "closure",
+        "title": "10/10 國慶日休診",
+        "content": "2026 年 10 月 10 日國慶日休診。",
+        "startDate": "2026-10-10",
+        "endDate": "2026-10-10",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid0HfGHNPLS4zTW6EmBT5ihw6bjoB5L3QegUzYqowFRVxgkM2htH7KsWtikDCdAXTKgl&id=100063837950717",
+        "verifiedAt": "2026-10-03"
+      },
+      {
+        "id": "noah-closure-2026-10-26",
+        "type": "closure",
+        "title": "10/26 光復節補假休診",
+        "content": "2026 年 10 月 26 日光復節補假休診。",
+        "startDate": "2026-10-26",
+        "endDate": "2026-10-26",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid0HfGHNPLS4zTW6EmBT5ihw6bjoB5L3QegUzYqowFRVxgkM2htH7KsWtikDCdAXTKgl&id=100063837950717",
+        "verifiedAt": "2026-10-03"
+      },
+      {
+        "id": "noah-dr-ha-leave-2026-10",
+        "type": "closure",
+        "title": "哈醫師 10/16–24 休診",
+        "content": "哈醫師 2026 年 10 月 16–24 日出國休診。此為個別醫師安排，請依當月門診表預約。",
+        "startDate": "2026-10-16",
+        "endDate": "2026-10-24",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/permalink.php?story_fbid=pfbid0HfGHNPLS4zTW6EmBT5ihw6bjoB5L3QegUzYqowFRVxgkM2htH7KsWtikDCdAXTKgl&id=100063837950717",
+        "verifiedAt": "2026-10-03"
+      }
+    ]
   }
 ];

@@ -78,10 +78,10 @@ export const NantouHospitalList = [
     },
     "google": {
       "rating": "5.0",
-      "reviewCount": 96,
+      "reviewCount": 97,
       "mapsUrl": "https://www.google.com/maps/place/%E9%81%94%E7%89%B9%E6%9C%97%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9C%E9%A0%90%E7%B4%84%E5%84%AA%E5%85%88%E5%88%B6%EF%BD%9C%E5%AF%B5%E7%89%A9%E4%BF%9D%E9%9A%AA%E7%89%B9%E7%B4%84%E9%86%AB%E9%99%A2/@23.9160835,120.6821056,17z/data=!3m1!4b1!4m6!3m5!1s0x346931519c0ef7f7:0x866a764944450744!8m2!3d23.9160835!4d120.6821056!16s%2Fg%2F11m756sr5b",
       "reviewsUrl": "https://www.google.com/maps/place/%E9%81%94%E7%89%B9%E6%9C%97%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%EF%BD%9C%E9%A0%90%E7%B4%84%E5%84%AA%E5%85%88%E5%88%B6%EF%BD%9C%E5%AF%B5%E7%89%A9%E4%BF%9D%E9%9A%AA%E7%89%B9%E7%B4%84%E9%86%AB%E9%99%A2/@23.9160835,120.6821056,17z/data=!4m8!3m7!1s0x346931519c0ef7f7:0x866a764944450744!8m2!3d23.9160835!4d120.6821056!9m1!1b1!16s%2Fg%2F11m756sr5b",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "clinicNotes": "採預約優先制，可透過官方 LINE 預約。特寵就診前請先確認可看診物種、醫師與時段。",
     "announcements": [
@@ -94,7 +94,7 @@ export const NantouHospitalList = [
         "endDate": "2026-09-27",
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/photo/?fbid=122180751656806436&set=a.122124041990806436",
-        "verifiedAt": "2026-09-21"
+        "verifiedAt": "2026-10-03"
       }
     ],
     "specialClinic": {

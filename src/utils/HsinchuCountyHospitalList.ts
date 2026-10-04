@@ -11,40 +11,35 @@ export const HsinchuCountyHospitalList = [
     "typeText": "犬貓診療、特寵診療",
     "phone": "03-5103210",
     "specialEvents": [],
-    "hours": "週一、二、四、五、六 09:30–12:00、14:00–17:00、18:00–20:00；週三、週日休診",
+    "hours": "週一、二、四、五、六 09:30–12:00、14:00–20:30；週三、週日休診",
     "business_hours": {
       "mon": [
         "09:30-12:00",
-        "14:00-17:00",
-        "18:00-20:00"
+        "14:00-20:30"
       ],
       "tue": [
         "09:30-12:00",
-        "14:00-17:00",
-        "18:00-20:00"
+        "14:00-20:30"
       ],
       "wed": [],
       "thu": [
         "09:30-12:00",
-        "14:00-17:00",
-        "18:00-20:00"
+        "14:00-20:30"
       ],
       "fri": [
         "09:30-12:00",
-        "14:00-17:00",
-        "18:00-20:00"
+        "14:00-20:30"
       ],
       "sat": [
         "09:30-12:00",
-        "14:00-17:00",
-        "18:00-20:00"
+        "14:00-20:30"
       ],
       "sun": []
     },
     "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
-    "nightClinic": false,
+    "nightClinic": true,
     "services": [
       "犬貓鼠兔動物醫療",
       "雷射治療"
@@ -74,11 +69,11 @@ export const HsinchuCountyHospitalList = [
     },
     "google": {
       "rating": "4.5",
-      "reviewCount": 226,
+      "reviewCount": 228,
       "mapsUrl": "https://www.google.com/maps/place/%E6%9C%B5%E6%A6%B4%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/data=!4m7!3m6!1s0x3468473e9b1d7fab:0xf5e5a4cb4c0ade18!8m2!3d24.7230384!4d121.0921439!16s%2Fg%2F11fqylqbcl!19sChIJq38dmz5HaDQRGN4KTMuk5fU",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%9C%B5%E6%A6%B4%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.7452181,121.076142,14z/data=!4m12!1m2!2m1!1z5pyx5qa05YuV54mp6Yar6ZmiIOaWsOeruee4o-erueadsemOruS4reixkOi3r-S6jOautTIyNeiZnw!3m8!1s0x3468473e9b1d7fab:0xf5e5a4cb4c0ade18!8m2!3d24.7230384!4d121.0921439!9m1!1b1!15sCjrmnLHmprTli5XnianphqvpmaIg5paw56u557ij56u55p2x6Y6u5Lit6LGQ6Lev5LqM5q61MjI16JmfWkoiSOacsSDmprQg5YuV54mpIOmGq-mZoiDmlrDnq7kg57ijIOeruSDmnbEg6Y6uIOS4rSDosZAg6LevIOS6jCDmrrUgMjI1IOiZn5IBD2FuaW1hbF9ob3NwaXRhbJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VOSU5WazJRMkozRUFF4AEA-gEECAAQGw!16s%2Fg%2F11fqylqbcl",
       "placeId": "ChIJq38dmz5HaDQRGN4KTMuk5fU",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "clinicNotes": "提供犬、貓、鼠、兔診療。週一、二、四、五、六看診，週三、週日休診；每月可能另有縮短時段，出發前請先確認班表。預約請致電 03-510-3210。官方 LINE 用於病歷綁定、衛教及營業資訊，不是即時客服，也不提供線上醫療診斷。",
     "fb": {
@@ -109,7 +104,7 @@ export const HsinchuCountyHospitalList = [
         "verifiedAt": "2026-08-10"
       }
     ],
-    "updatedAt": "2026-09-20T19:00:51.899Z",
+    "updatedAt": "2026-10-03T04:44:04.221Z",
     "last_checked": "2026-09-01"
   },
   {
@@ -219,10 +214,10 @@ export const HsinchuCountyHospitalList = [
     },
     "google": {
       "rating": "4.6",
-      "reviewCount": 392,
+      "reviewCount": 395,
       "mapsUrl": "https://www.google.com/maps/place/%E7%A7%98%E5%A2%83%E9%87%8E%E7%94%9F%E5%8B%95%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2+%5B%E9%A0%90%E7%B4%84%E5%84%AA%E5%85%88%5D+-+%E9%BC%A0%E3%80%81%E5%85%94%E3%80%81%E8%B2%82%E3%80%81%E5%85%A9%E6%A3%B2%E9%A1%9E%E3%80%81%E7%88%AC%E8%9F%B2%E3%80%81%E9%BE%9C%E3%80%81%E8%9C%A5%E8%9C%B4%E3%80%81%E6%B0%B4%E6%97%8F%E3%80%81%E9%B3%A5%E9%A1%9E%E3%80%81%E8%9C%9C%E8%A2%8B%E9%BC%AF%E3%80%81%E5%88%BA%E8%9D%9F%E3%80%81%E9%9D%9E%E7%8A%AC%E8%B2%93%E3%80%81%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E9%86%AB%E9%99%A2/@24.8197575,121.0255115,17z/data=!3m1!4b1!4m6!3m5!1s0x3468375ee2d8f659:0x48cff3eadb58d0b9!8m2!3d24.8197575!4d121.0255115!16s%2Fg%2F11rjsvl9pt",
       "reviewsUrl": "https://www.google.com/maps/place/%E7%A7%98%E5%A2%83%E9%87%8E%E7%94%9F%E5%8B%95%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2+%5B%E9%A0%90%E7%B4%84%E5%84%AA%E5%85%88%5D+-+%E9%BC%A0%E3%80%81%E5%85%94%E3%80%81%E8%B2%82%E3%80%81%E5%85%A9%E6%A3%B2%E9%A1%9E%E3%80%81%E7%88%AC%E8%9F%B2%E3%80%81%E9%BE%9C%E3%80%81%E8%9C%A5%E8%9C%B4%E3%80%81%E6%B0%B4%E6%97%8F%E3%80%81%E9%B3%A5%E9%A1%9E%E3%80%81%E8%9C%9C%E8%A2%8B%E9%BC%AF%E3%80%81%E5%88%BA%E8%9D%9F%E3%80%81%E9%9D%9E%E7%8A%AC%E8%B2%93%E3%80%81%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E9%86%AB%E9%99%A2/@24.8197575,121.0255115,17z/data=!4m8!3m7!1s0x3468375ee2d8f659:0x48cff3eadb58d0b9!8m2!3d24.8197575!4d121.0255115!9m1!1b1!16s%2Fg%2F11rjsvl9pt",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "clinicNotes": "僅提供非犬貓特寵診療，院內不接受犬貓進入。請電話預約，Facebook、Instagram 與 LINE 不接受預約；現場掛號可能久候或無法接診，預約遲到則改為現場候診。水族門診只接受預約。超過各時段最後加掛時間視為急診，須由醫師評估，無法指定醫師；候診時請讓動物全程待在外出籠內。",
     "specialClinic": {
@@ -232,7 +227,7 @@ export const HsinchuCountyHospitalList = [
       "reservationRequired": true,
       "sourceLabel": "官方 Facebook",
       "sourceUrl": "https://www.facebook.com/photo/?fbid=1091445686723418&set=a.178672871334042",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "fb": {
       "last_fb_post_date": "7天前（絕對日期未確認）",
@@ -270,10 +265,10 @@ export const HsinchuCountyHospitalList = [
         "endDate": "2026-10-31",
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/photo/?fbid=1091445686723418&set=a.178672871334042",
-        "verifiedAt": "2026-09-21"
+        "verifiedAt": "2026-10-03"
       }
     ],
-    "updatedAt": "2026-09-20T19:00:51.899Z",
+    "updatedAt": "2026-10-03T04:44:04.221Z",
     "last_checked": "2026-09-01"
   }
 ];

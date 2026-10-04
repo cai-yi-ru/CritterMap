@@ -2514,7 +2514,6 @@ export const TainanHospitalList = [
       "mapsUrl": "https://www.google.com/maps/place/%E5%BB%A3%E6%85%88%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.9915872,120.1922208,17z/data=!3m1!4b1!4m6!3m5!1s0x346e76706ae54153:0xea9161dddf4f17aa!8m2!3d22.9915872!4d120.1922208!16s%2Fg%2F11xkjbw_t",
       "verifiedAt": "2026-10-02"
     },
-    "createdAt": "2026-10-02T13:37:35.702Z",
     "updatedAt": "2026-10-02T13:37:35.702Z"
   },
   {

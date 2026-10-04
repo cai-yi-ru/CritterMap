@@ -68,7 +68,7 @@ export const PingtungHospitalList = [
       "reviewCount": 162,
       "mapsUrl": "https://www.google.com/maps/place/%E8%82%AF%E4%BA%9E%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2(%E9%A0%90%E7%B4%84%E5%88%B6)/@22.6886608,120.4754441,17z/data=!3m5!1s0x346e170639ad6011:0xada9b60289bc0afe!8m2!3d22.6886608!4d120.4754441!16s%2Fg%2F11tgbs89mj",
       "reviewsUrl": "https://www.google.com/maps/place/%E8%82%AF%E4%BA%9E%E7%89%B9%E6%AE%8A%E5%AF%B5%E7%89%A9%E5%B0%88%E7%A7%91%E9%86%AB%E9%99%A2(%E9%A0%90%E7%B4%84%E5%88%B6)/@22.6886608,120.4754441,17z/data=!4m8!3m7!1s0x346e170639ad6011:0xada9b60289bc0afe!8m2!3d22.6886608!4d120.4754441!9m1!1b1!16s%2Fg%2F11tgbs89mj",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "clinicNotes": "採全預約制，請提前一天來電；當天需要看診，請先詢問能否安排。最後預約時間為 20:30。國定假日急診掛號費 400 元，急症請先來電確認能否受理。",
     "specialClinic": {
@@ -103,10 +103,10 @@ export const PingtungHospitalList = [
       }
     ],
     "fb": {
-      "last_fb_post_date": "8月3日（年份未確認）",
-      "last_fb_post_text": "八月屏東院班表列 16:00–17:30、18:30–21:00，最後預約時間為 20:30。採預約制，請於下午一點後致電 08-765-6655；當天需要看診可先來電詢問。"
+      "last_fb_post_date": "發布日期未確認（頁面僅顯示相對日期）",
+      "last_fb_post_text": "10/1 晚診因醫師身體不適暫停一次；院方會協助已預約的飼主調整後續看診安排。"
     },
-    "updatedAt": "2026-09-21T04:20:48.333Z",
+    "updatedAt": "2026-10-02T17:24:09.323Z",
     "last_checked": "2026-09-01"
   },
   {
@@ -121,23 +121,28 @@ export const PingtungHospitalList = [
     "typeText": "特寵診療",
     "phone": "08-777-6262",
     "specialEvents": [],
-    "hours": "週三、週日休診，門診採預約制；各日實際時段請於預約時確認。",
+    "hours": "週一、週二、週四至週六 09:00–12:00、13:00–15:00；週三、週日休診，採預約制。",
     "business_hours": {
       "mon": [
-        "09:00-11:50"
+        "09:00-12:00",
+        "13:00-15:00"
       ],
       "tue": [
-        "09:00-11:50"
+        "09:00-12:00",
+        "13:00-15:00"
       ],
       "wed": [],
       "thu": [
-        "09:00-11:50"
+        "09:00-12:00",
+        "13:00-15:00"
       ],
       "fri": [
-        "09:00-11:50"
+        "09:00-12:00",
+        "13:00-15:00"
       ],
       "sat": [
-        "09:00-11:50"
+        "09:00-12:00",
+        "13:00-15:00"
       ],
       "sun": []
     },
@@ -169,7 +174,7 @@ export const PingtungHospitalList = [
       "reviewCount": 430,
       "mapsUrl": "https://www.google.com/maps/place/%E8%82%AF%E4%BA%9E%E9%87%8E%E5%8B%95%E5%80%89%E5%BA%AB/@22.5994038,120.4907844,17z/data=!3m5!1s0x346e18e7a193b1bd:0x341c9e77d688310!8m2!3d22.5994038!4d120.4907844!16s%2Fg%2F11f0l1z8tj",
       "reviewsUrl": "https://www.google.com/maps/place/%E8%82%AF%E4%BA%9E%E9%87%8E%E5%8B%95%E5%80%89%E5%BA%AB/@22.5994038,120.4907844,17z/data=!4m8!3m7!1s0x346e18e7a193b1bd:0x341c9e77d688310!8m2!3d22.5994038!4d120.4907844!9m1!1b1!16s%2Fg%2F11f0l1z8tj",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "clinicNotes": "萬丹院採網路預約制，可透過官方粉專預約，或致電 08-777-6262 詢問。週三、週日休診；實際門診時間與可看診物種請於預約時確認，當天急需看診可先來電詢問能否安排。",
     "specialClinic": {
@@ -177,15 +182,15 @@ export const PingtungHospitalList = [
       "label": "特寵預約門診",
       "note": "採網路預約制，週三、週日休診。請透過官方粉專預約，先確認物種及當日門診時間；當天急需看診可先來電詢問。",
       "reservationRequired": true,
-      "sourceLabel": "官方 Facebook、官方 Instagram",
+      "sourceLabel": "官方 Facebook",
       "sourceUrl": "https://www.facebook.com/100071957917553/",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "fb": {
       "last_fb_post_date": "2025-06-24",
       "last_fb_post_text": "院方曾公告 6/25–6/29 醫師休診，並公布七月班表。萬丹院採網路預約制。"
     },
-    "updatedAt": "2026-09-21T04:27:17.841Z",
+    "updatedAt": "2026-10-02T17:24:09.323Z",
     "last_checked": "2026-09-01"
   },
   {
@@ -270,6 +275,7 @@ export const PingtungHospitalList = [
     ],
     "specialties": [
       "犬貓與特殊寵物診療",
+      "小型哺乳類診療",
       "貓友善醫院金獎認證",
       "心臟科",
       "牙科",
@@ -287,20 +293,21 @@ export const PingtungHospitalList = [
     "socialMedia": {
       "facebook": "https://www.facebook.com/ttahpt/",
       "instagram": "https://www.instagram.com/tatung_animal_hospital/",
-      "line": "https://line.me/R/ti/p/@466aiaxl"
+      "line": "https://line.me/R/ti/p/@466aiaxl",
+      "threads": "https://www.threads.com/@tatung_animal_hospital"
     },
     "google": {
       "rating": "4.8",
-      "reviewCount": 450,
+      "reviewCount": 455,
       "mapsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E5%90%8C%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E3%80%8A%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E6%8E%A8%E8%96%A6%E3%80%8B%E5%B1%8F%E6%9D%B1%E5%AF%B5%E7%89%A9%E5%85%A7%E8%A6%96%E9%8F%A1%EF%BD%9C%E7%8B%97%E8%B2%93%E7%B5%90%E7%B4%AE%EF%BD%9C%E8%B2%93%E5%8F%8B%E5%96%84%E9%86%AB%E9%99%A2%EF%BD%9C%E5%AF%B5%E7%89%A9%E5%81%A5%E6%AA%A2%EF%BD%9C%E9%AA%A8%E5%A4%96%E7%A7%91%EF%BD%9C%E5%AF%B5%E7%89%A9%E7%89%99%E7%A7%91%EF%BD%9C%E5%AF%B5%E7%89%A9%E5%BF%83%E8%87%9F%E7%A7%91%EF%BD%9C%E9%9B%BB%E8%85%A6%E6%96%B7%E5%B1%A4/data=!4m7!3m6!1s0x346e17001afa5f35:0x4330063f72ef4af6!8m2!3d22.6715525!4d120.476358!16s%2Fg%2F11wnd4_rpg!19sChIJNV_6GgAXbjQR9krvcj8GMEM",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%A4%A7%E5%90%8C%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E3%80%8A%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2%E6%8E%A8%E8%96%A6%E3%80%8B%E5%B1%8F%E6%9D%B1%E5%AF%B5%E7%89%A9%E5%85%A7%E8%A6%96%E9%8F%A1%EF%BD%9C%E7%8B%97%E8%B2%93%E7%B5%90%E7%B4%AE%EF%BD%9C%E8%B2%93%E5%8F%8B%E5%96%84%E9%86%AB%E9%99%A2%EF%BD%9C%E5%AF%B5%E7%89%A9%E5%81%A5%E6%AA%A2%EF%BD%9C%E9%AA%A8%E5%A4%96%E7%A7%91%EF%BD%9C%E5%AF%B5%E7%89%A9%E7%89%99%E7%A7%91%EF%BD%9C%E5%AF%B5%E7%89%A9%E5%BF%83%E8%87%9F%E7%A7%91%EF%BD%9C%E9%9B%BB%E8%85%A6%E6%96%B7%E5%B1%A4/@22.6715525,120.476358,17z/data=!4m8!3m7!1s0x346e17001afa5f35:0x4330063f72ef4af6!8m2!3d22.6715525!4d120.476358!9m1!1b1!16s%2Fg%2F11wnd4_rpg",
       "placeId": "ChIJNV_6GgAXbjQR9krvcj8GMEM",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "clinicNotes": "犬貓與特寵分開候診、看診及住院。可於營業時間電話或 LINE 預約；預約時間為報到時間，仍須依現場安排候診，過號由櫃檯重新安排。各診於 12:45、17:15、21:45 截止掛號；超過門診時間依急診辦理，掛號費 500 元，特寵急症請先確認能否受理。另有聯絡電話 08-7320290。",
     "fb": {
       "last_fb_post_date": "發布日期未確認（頁面僅顯示相對日期）",
-      "last_fb_post_text": "9/21–9/27 班表列中秋節營業至 17:00，當晚沒有門診。一般早、午、晚診於 12:45、17:15、21:45 截止掛號；週三 13:00–15:00 院內進修。可於營業時間來電預約，預約時間為報到時間，過號由櫃檯安排。"
+      "last_fb_post_text": "施柏宏獸醫師的專長包括小型哺乳類診療，以及犬貓急重症、外科、骨外科與內視鏡微創外科。"
     },
     "announcements": [
       {
@@ -346,7 +353,7 @@ export const PingtungHospitalList = [
         "verifiedAt": "2026-07-15"
       }
     ],
-    "updatedAt": "2026-09-21T04:27:17.853Z",
+    "updatedAt": "2026-10-02T17:24:09.323Z",
     "last_checked": "2026-09-04"
   },
   {
@@ -392,7 +399,7 @@ export const PingtungHospitalList = [
     "reservationRequired": false,
     "hasEmergencyService": false,
     "emergencyHours": "",
-    "nightClinic": false,
+    "nightClinic": true,
     "services": [
       "一般內外科",
       "預防注射",
@@ -413,7 +420,7 @@ export const PingtungHospitalList = [
       "鳥禽公母鑑定",
       "鳥禽 PCR 檢驗",
       "高壓氧治療",
-      "寵物美容",
+      "犬貓美容",
       "寵物用品販售"
     ],
     "pets": [
@@ -449,7 +456,7 @@ export const PingtungHospitalList = [
       "reviewCount": 181,
       "mapsUrl": "https://www.google.com/maps/place/%E7%A6%8F%E7%88%BE%E6%91%A9%E8%8E%8E%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6156551,120.5698075,17z/data=!3m5!1s0x346e22e3734afbf7:0x4c1f78b8cef6af38!8m2!3d22.6156551!4d120.5698075!16s%2Fg%2F1tlk93rc",
       "reviewsUrl": "https://www.google.com/maps/place/%E7%A6%8F%E7%88%BE%E6%91%A9%E8%8E%8E%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@22.6156551,120.5698075,17z/data=!4m8!3m7!1s0x346e22e3734afbf7:0x4c1f78b8cef6af38!8m2!3d22.6156551!4d120.5698075!9m1!1b1!16s%2Fg%2F1tlk93rc",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "clinicNotes": "可提前 1–2 個工作天電話預約，預約可免掛號費；到院後依序掛號，危急個案優先。初診請攜帶身分證明文件並填寫初診單。一般掛號費 100 元，急診掛號費 500 元；特寵急症請先確認能否受理。另有聯絡電話 08-810-3818。",
     "specialClinic": {
@@ -465,7 +472,7 @@ export const PingtungHospitalList = [
       "last_fb_post_date": "2023-12-03",
       "last_fb_post_text": "院方分享特寵診療研討會紀錄。"
     },
-    "updatedAt": "2026-09-21T04:36:08.816Z",
+    "updatedAt": "2026-10-02T17:33:40.648Z",
     "last_checked": "2026-09-01"
   },
   {
@@ -544,21 +551,21 @@ export const PingtungHospitalList = [
       "mapsUrl": "https://maps.google.com/?cid=2794687083347293685",
       "reviewsUrl": "https://www.google.com/maps/place/%E5%9C%8B%E7%AB%8B%E5%B1%8F%E6%9D%B1%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8%E9%99%84%E8%A8%AD%E7%8D%B8%E9%86%AB%E6%95%99%E5%AD%B8%E9%86%AB%E9%99%A2+(%E5%9F%8E%E4%B8%AD%E9%99%A2%E5%8D%80)/@22.6778265,120.4887745,17z/data=!4m7!3m6!1s0x346e179be91f5aa5:0x26c8b9186d49b5f5!8m2!3d22.6778265!4d120.4887745!9m1!1b1",
       "placeId": "ChIJpVof6ZsXbjQR9bVJbRi5yCY",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "clinicNotes": "伴侶動物科與特寵科於 2025 年九月搬至城中院區，地址為屏東市信義路 151 號；大動物與野生動物服務仍在內埔院區。複診優先，初診先來電說明狀況，由院方安排預約；現場掛號依候診情形安排。預約掛號費 100 元，現場掛號費 400 元。取消預約請在前一天中午 12:00 前通知，三次預約未到將取消預約資格，改採現場候診。初診請攜帶身分證明文件，填寫初診單與問卷；轉診可先請原獸醫師填妥轉診單，寄至醫院信箱。",
     "fb": {
-      "last_fb_post_date": "8/31（發布年份未確認）",
-      "last_fb_post_text": "九月班表列 9/21 下午特寵門診，9/25 中秋節及教師節連假休診。複診優先，初診先電話評估安排；現場掛號依候診情形安排。預約掛號費 100 元，現場掛號費 400 元。"
+      "last_fb_post_date": "發布日期未確認（頁面僅顯示相對日期）",
+      "last_fb_post_text": "十月特寵門診排在 10/6、10/14、10/27 下午，10/9、10/26 休診。初診先電話評估安排，複診優先；預約掛號 100 元、現場掛號 400 元。"
     },
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "特殊寵物門診",
-      "note": "特寵科位於城中院區，九月班表列有特寵門診。初診須先電話評估安排，預約優先；現場掛號依當日候診情形，物種與診次請先確認。",
+      "note": "十月章愛梅老師特寵門診為 10/6、10/14、10/27 下午 14:00–16:30，地點在城中院區。初診先電話說明狀況，由院方協助預約；複診優先，現場掛號依候診情形安排。",
       "reservationRequired": true,
-      "sourceLabel": "官方網站、官方 Facebook、Google Maps",
-      "sourceUrl": "https://www.facebook.com/vmthnpust/posts/pfbid0rxJKr5hAEiL6VVdY1SaVX82coJhLTQ9zju8TgryWWGnDAddvtg6QEGZ7UinLBsi5l",
-      "verifiedAt": "2026-09-01"
+      "sourceLabel": "官方 Facebook",
+      "sourceUrl": "https://www.facebook.com/vmthnpust/posts/pfbid02d6kMyWKX8Caf3wwWYsfkcbp3sPWktx8ZJBoXrqpxbwfso6is6dkeHkQNkKT1u3ipl",
+      "verifiedAt": "2026-10-03"
     },
     "announcements": [
       {
@@ -601,9 +608,20 @@ export const PingtungHospitalList = [
         "sourceUrl": "https://www.facebook.com/vmthnpust/posts/pfbid02LLJCEVdmcAxhCinjcjWW5nxd7xF24deCuiHNF79q8a6JU4PWzEeR3Vv8iLUXLTCml",
         "endDate": "2026-07-31",
         "verifiedAt": "2026-07-15"
+      },
+      {
+        "id": "npust-vmth-october-2026-schedule",
+        "type": "notice",
+        "title": "屏科大城中院區十月特寵門診與休診日期",
+        "content": "章愛梅老師的特寵門診排在 10/6、10/14、10/27 下午 14:00–16:30；10/9 國慶連假、10/26 光復節連假休診。初診先致電 08-774-0270 說明狀況，由院方協助預約；複診優先安排，現場掛號依候診情形。看診地點為屏東市信義路 151 號城中院區。",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-31",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/vmthnpust/posts/pfbid02d6kMyWKX8Caf3wwWYsfkcbp3sPWktx8ZJBoXrqpxbwfso6is6dkeHkQNkKT1u3ipl",
+        "verifiedAt": "2026-10-03"
       }
     ],
-    "updatedAt": "2026-09-21T04:36:08.828Z",
+    "updatedAt": "2026-10-02T17:33:40.649Z",
     "last_checked": "2026-09-01"
   }
 ];

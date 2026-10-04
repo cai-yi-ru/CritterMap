@@ -62,7 +62,7 @@ export const MiaoliHospitalList = [
       "reviewCount": 167,
       "mapsUrl": "https://www.google.com/maps/place/%E9%B4%BB%E6%88%90%E8%B3%BD%E9%B4%BF%E9%86%AB%E9%99%A2/@24.4726105,120.8180314,17z/data=!3m1!4b1!4m6!3m5!1s0x346900a7a5da1d73:0x7053512859122594!8m2!3d24.4726105!4d120.8180314!16s%2Fg%2F1pp2x894r",
       "reviewsUrl": "https://www.google.com/maps/place/%E9%B4%BB%E6%88%90%E8%B3%BD%E9%B4%BF%E9%86%AB%E9%99%A2/@24.4726105,120.8180314,17z/data=!4m8!3m7!1s0x346900a7a5da1d73:0x7053512859122594!8m2!3d24.4726105!4d120.8180314!9m1!1b1!16s%2Fg%2F1pp2x894r",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
     "clinicNotes": "以鳥類與賽鴿診療為主，週一至週五 09:00–12:00、14:00–17:00 看診，週六、週日休診。其他特寵是否收案，以及晚間門診或急診安排，請先電話詢問；出發前也請確認當日是否有臨時休診。",
     "fb": {
@@ -261,24 +261,24 @@ export const MiaoliHospitalList = [
     },
     "google": {
       "rating": "4.2",
-      "reviewCount": 205,
+      "reviewCount": 207,
       "mapsUrl": "https://www.google.com/maps/place/%E6%AF%9B%E7%88%BE%E5%91%BC%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.6957207,120.9020705,17z/data=!3m1!4b1!4m6!3m5!1s0x34684ddca9096895:0xe349af4dbac032cc!8m2!3d24.6957207!4d120.9020705!16s%2Fg%2F11t1jytdtg",
       "reviewsUrl": "https://www.google.com/maps/place/%E6%AF%9B%E7%88%BE%E5%91%BC%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.6957207,120.9020705,17z/data=!4m8!3m7!1s0x34684ddca9096895:0xe349af4dbac032cc!8m2!3d24.6957207!4d120.9020705!9m1!1b1!16s%2Fg%2F11t1jytdtg",
-      "verifiedAt": "2026-09-21"
+      "verifiedAt": "2026-10-03"
     },
-    "clinicNotes": "週六休診，週日晚間休診。蔡芝瑄醫師看診兔、鼠、蜜袋鼯、雪貂等小型哺乳動物，特寵門診依當月班表安排，請先電話詢問或預約；急症也請先確認是否收案。",
+    "clinicNotes": "週六休診，週日晚間休診。蔡芝瑄醫師看診兔、鼠、蜜袋鼯、雪貂等小型哺乳動物，特寵門診依當月班表安排，建議先電話詢問或預約；急症也請先確認是否收案。",
     "specialClinic": {
       "hasExoticSpecialClinic": true,
       "label": "特殊寵物門診",
-      "note": "蔡芝瑄醫師看診兔、鼠、蜜袋鼯、雪貂等小型哺乳動物，門診原則上安排於週一、二、四，實際日期與時段請依當月班表確認，並先電話詢問或預約。",
+      "note": "蔡芝瑄獸醫師看診兔、鼠、蜜袋鼯、雪貂等小型哺乳動物，門診每週一、二、四；實際日期依每月門診表，來診前建議先來電詢問或預約。",
       "reservationRequired": false,
       "sourceLabel": "官方 Facebook",
-      "sourceUrl": "https://www.facebook.com/photo/?fbid=1063066143148327&set=a.126075070180777",
-      "verifiedAt": "2026-09-21"
+      "sourceUrl": "https://www.facebook.com/Mrhoo674882/posts/pfbid02d7x4cyG9BAt9yTgc1sEZo73SWVLiCjibP32zEjDga8pzvJauFtUWaEFqnrHwXfNol",
+      "verifiedAt": "2026-10-03"
     },
     "fb": {
-      "last_fb_post_date": "2026 年 9 月班表（絕對發布日期未顯示）",
-      "last_fb_post_text": "2026 年 9 月門診表已公告，特寵日期請依班表標示，先電話詢問或預約；9/27 因中秋節全日休診。"
+      "last_fb_post_date": "未確認（貼文僅顯示相對日期）",
+      "last_fb_post_text": "2026 年十月門診表：10/4 全日休診，特寵門診日期依圖卡標示，建議先電話詢問或預約。"
     },
     "announcements": [
       {
@@ -313,9 +313,72 @@ export const MiaoliHospitalList = [
         "sourceLabel": "官方 Facebook",
         "sourceUrl": "https://www.facebook.com/photo/?fbid=1063066143148327&set=a.126075070180777",
         "verifiedAt": "2026-09-21"
+      },
+      {
+        "id": "mrhoo-2026-10-schedule-notice",
+        "type": "notice",
+        "title": "2026 年十月特寵門診表",
+        "content": "十月特寵門診為 10/1、5、6、8、12、13、15、19、20、22、26、27、29，時段為 09:00–12:00、14:00–18:00、19:00–21:00。建議提前電話詢問或預約；10/4 全日休診。",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-31",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/photo/?fbid=1091061173682157&set=a.126075070180777",
+        "verifiedAt": "2026-10-03"
+      },
+      {
+        "id": "mrhoo-2026-10-04-closure",
+        "type": "closure",
+        "title": "10/4 全日休診",
+        "content": "2026/10/4 全日休診。",
+        "startDate": "2026-10-04",
+        "endDate": "2026-10-04",
+        "sourceLabel": "官方 Facebook",
+        "sourceUrl": "https://www.facebook.com/photo/?fbid=1091061173682157&set=a.126075070180777",
+        "verifiedAt": "2026-10-03"
       }
     ],
-    "updatedAt": "2026-09-20T19:11:39.930Z",
+    "updatedAt": "2026-10-03T04:27:53.690Z",
     "last_checked": "2026-09-04"
+  },
+  {
+    "id": "zhonghua-animal-hospital-miaoli",
+    "name": "中華動物醫院",
+    "city": "苗栗縣",
+    "district": "頭份市",
+    "address": "苗栗縣頭份市中華路1307號",
+    "lat": 24.6921777,
+    "lng": 120.9139103,
+    "type": "exotic",
+    "typeText": "犬貓診療、特寵診療",
+    "phone": "037-690020",
+    "services": [
+      "犬貓兔鼠及小型哺乳類醫療服務"
+    ],
+    "pets": [
+      "犬",
+      "貓",
+      "兔",
+      "鼠",
+      "小型哺乳類"
+    ],
+    "pet_category_group": [
+      "狗",
+      "貓",
+      "兔",
+      "鼠",
+      "其他特寵"
+    ],
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/p/中華動物醫院-100068645246288/"
+    },
+    "google": {
+      "rating": "3.8",
+      "reviewCount": 119,
+      "mapsUrl": "https://www.google.com/maps/place/%E9%A0%AD%E4%BB%BD%E4%B8%AD%E8%8F%AF%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.6921777,120.9139103,17z/data=!3m1!4b1!4m6!3m5!1s0x34684cbea4d43edd:0x83464460d8753fd6!8m2!3d24.6921777!4d120.9139103!16s%2Fg%2F11b6zqgghg?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D",
+      "reviewsUrl": "https://www.google.com/maps/place/%E9%A0%AD%E4%BB%BD%E4%B8%AD%E8%8F%AF%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/@24.6921777,120.9139103,17z/data=!3m1!4b1!4m8!3m7!1s0x34684cbea4d43edd:0x83464460d8753fd6!8m2!3d24.6921777!4d120.9139103!9m1!1b1!16s%2Fg%2F11b6zqgghg?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D",
+      "verifiedAt": "2026-10-03"
+    },
+    "createdAt": "2026-10-03T04:43:52.785Z",
+    "updatedAt": "2026-10-03T04:43:52.786Z"
   }
 ];
